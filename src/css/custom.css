@@ -1,0 +1,66 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ed1940;
+  --ifm-color-primary-dark: #c20f30;
+  --ifm-color-primary-darker: #910b24;
+  --ifm-color-primary-darkest: #610718;
+  --ifm-color-primary-light: #f04766;
+  --ifm-color-primary-lighter: #f4758c;
+  --ifm-color-primary-lightest: ##f7a3b2;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.heroBanner {
+  background-color: white;
+}
+.sectionDark {
+  /* background-color: #4c4c4e; */
+  background-color: rgb(68, 73, 80);
+  margin: 0;
+  padding: 0;
+}
+.sectionDarkTitle {
+  color: white;
+}
+.sectionDarkTitle a {
+  color: var(--ifm-color-primary-lighter);
+}
+.sectionVideo {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.featuredOrg {
+  margin: 10px;
+  text-align: center;
+}
+.featuredOrg img {
+  width: 96px;
+  vertical-align: middle;
+}
