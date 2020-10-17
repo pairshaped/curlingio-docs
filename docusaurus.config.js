@@ -1,12 +1,13 @@
 module.exports = {
   title: 'Curling I/O',
   tagline: 'Curling registration and league management made easy.',
-  url: 'https://curling.io',
+  // url: 'https://curling.io',
+  url: 'https://docs.curling.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'curlingio', // Usually your GitHub org/user name.
-  projectName: 'curlingio', // Usually your repo name.
+  organizationName: 'pairshaped', // Usually your GitHub org/user name.
+  projectName: 'curlingio-docs', // Usually your repo name.
   themeConfig: {
     colorMode: {
       disableSwitch: true,
