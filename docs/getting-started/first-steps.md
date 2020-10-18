@@ -9,7 +9,7 @@ We make it easy for clubs to accept member registrations online, manage your dra
 
 Here are the steps to follow when evaluating if Curling I/O is a fit for your club.
 
-## 1. Review our Videos and / or Documentation
+## 1. Review our Videos and Documentation
 
 During your onboarding session, the primary focus should be on how best to set it up for your club.
 For the vast majority of curling clubs it's extremely quick and simple to get you up and running, however Curling I/O is a very flexible platform, and the time it takes can vary from club to club due to differences in membership fees, leagues, and discounts.
@@ -18,7 +18,7 @@ A great place to start that is relevant for all clubs is the [Leagues and Compet
 
 [You can find all of our tutorials videos listed here.](https://www.youtube.com/channel/UChVVi0PxRcavHZO-CCwrT5A)
 
-## 2. Understand our Pricing
+## 2. Understanding our Pricing
 
 Our pricing is simple and straightforward: **2.9% + $0.30 for online payments**, which **includes credit card processing fees**.
 [Please see our pricing section for more details.](/docs/getting-started/pricing)
