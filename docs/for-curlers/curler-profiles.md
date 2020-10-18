@@ -38,4 +38,4 @@ You can now edit your curler profile(s).
 
 Rest assured that the Curling I/O business model isn't to inundate you with advertisements like some other popular online platforms.
 
-If you concerned about who will see your Curler data however, you should review our [privacy statement](/privacy) and [terms of use](/terms).
+If you're concerned about who will see your Curler data however, please review our [privacy statement](/privacy) and [terms of use](/terms) for more details.
