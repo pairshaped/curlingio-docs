@@ -170,7 +170,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">Curling I/O is THE online registration and league management platform purpose built for curling clubs. Our mission is to simplify the day to day operations for curling clubs and their members. Brought to you (and used) by Curling Canada.</h2>
+                  <h2 className="sectionDarkTitle">Curling I/O is THE online registration and league management platform purpose built for curling clubs. We simplify the day to day operations for curling clubs and their members. Brought to you (and used) by Curling Canada.</h2>
                 </div>
               </div>
             </div>
