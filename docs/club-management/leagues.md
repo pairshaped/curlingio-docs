@@ -17,12 +17,12 @@ To create a league, click the **New League** or **New Competition** button.
 
 To update an existing league or competition, click the **Edit** link next to it.
 
-![Edit](/img/docs/club-management/leagues/edit.png)
+![Edit](/img/docs/club-management/shared/edit.png)
 
 To copy an existing league or competition for a new season, click the **Copy** link next to it.
 More details can be found in the [Copying section](#copying-a-league-for-the-new-season).
 
-![Copy](/img/docs/club-management/leagues/copy.png)
+![Copy](/img/docs/club-management/shared/copy.png)
 
 ## Instructional Video
 
@@ -84,7 +84,7 @@ When you set the pricing for your league or competition, we highly recommend bre
 
 There is a handy tax calculator which will show you what your total with tax will be in case you want to untangle taxes from your existing pricing.
 
-![Tax Calculator](/img/docs/club-management/leagues/tax-calculator.png)
+![Tax Calculator](/img/docs/club-management/shared/tax-calculator.png)
 
 For league registrations you will also want to break out the affiliate fees and let Curling I/O handle them for you.
 If you include the affiliate fees as required in the [Addons section](#assigning-fees--addons) then Curling I/O will ensure that every curler who registers for the league will also pay the affiliate fees.
@@ -109,7 +109,7 @@ If it's a team registration (does not require a curler profile) then this should
 
 ### Requiring a Curler Profile
 
-When you require a curler profile you are forcing registrations to be *individual* only.
+When you require a curler profile you are forcing registrations to be **individual** only.
 
 We highly recommend requiring a curler profile for your league registrations.
 It's required for the system to apply seasonal membership and affiliate fees, and multiple league discounts.
@@ -154,7 +154,7 @@ For a competition / bonspiel registration you might want to add some custom fiel
 Like fees, keep in mind that custom fields are not automatically added to all of your leagues and competitions.
 You need to specify which custom fields are relevant for each league or competition, as this will often vary between events.
 
-![Custom Fields](/img/docs/club-management/leagues/custom-fields.png)
+![Custom Fields](/img/docs/club-management/shared/custom-fields.png)
 
 
 ### Assigning Discounts
@@ -192,7 +192,7 @@ We keep the previous season's leagues and competitions for their historical data
 Instead what you'll want to do is simply **Copy** your leagues and competitions from the previous season.
 The **Copy** option is found next to each of your leagues and competitions in their respective list views.
 
-![Copy](/img/docs/club-management/leagues/copy.png)
+![Copy](/img/docs/club-management/shared/copy.png)
 
 When you copy a league or competition, you are presented with a pre-filled form.
 The start, end, registration open, and registration close dates will be prefilled with one year added to each of them.
@@ -207,4 +207,4 @@ Usually that's all you'll need to do to set up your leagues and competitions for
 You can click the **Purchases** link next to one of your existing leagues or competitions. It will take you to our reports session filtered by the league or competition.
 This will show you all of the registrations for it.
 
-![Purchased](/img/docs/club-management/leagues/purchased.png)
+![Purchased](/img/docs/club-management/shared/purchased.png)
