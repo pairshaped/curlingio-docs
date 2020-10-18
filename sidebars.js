@@ -4,6 +4,7 @@ module.exports = {
       'getting-started/first-steps',
       'getting-started/pricing',
       'getting-started/book-an-onboarding-session',
+      'getting-started/support-and-feedback',
       'getting-started/faq',
     ],
     "For Curlers": [
