@@ -4,13 +4,13 @@ title: Support and Feedback
 slug: /getting-started/support
 ---
 
-We offer three options for help and support with Curling I/O.
+We offer three options available for help and support with Curling I/O.
 
 ## Online Documentation
 
 Our online documentation and F.A.Q. should be your first stop if you're having trouble with one of our features.
 
-You're on our online documentation site right now!
+You're on our online documentation site right now! Documentation topics are found in the left hand navigation.
 
 ## Email Support
 

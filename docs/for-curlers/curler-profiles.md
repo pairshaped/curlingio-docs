@@ -33,3 +33,9 @@ Make sure you login with the same email address you used to create the profile, 
 Click on the "Curler(s)" link in the top navigation or in the top right "Account" dropdown.
 
 You can now edit your curler profile(s).
+
+## Privacy Concerns
+
+Rest assured that the Curling I/O business model isn't to inundate you with advertisements like some other popular online platforms.
+
+If you concerned about who will see your Curler data however, you should review our [privacy statement](/privacy) and [terms of use](/terms).
