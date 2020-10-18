@@ -6,7 +6,7 @@ slug: /club-management/curlers
 
 You can see a list of all the curlers who have registered at your club, regardless of season, by clicking on **Curlers** in the top navigation.
 
-![enter image description here](/static/img/docs/club-management/curlers/navigation.png)
+![Curlers Navigation](/img/docs/club-management/curlers/navigation.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjkzNTQ4MSw3OTAyMDkyMjddfQ==
+eyJoaXN0b3J5IjpbLTQ3NTYyODUwOSw3OTAyMDkyMjddfQ==
 -->
