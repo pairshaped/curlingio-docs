@@ -202,7 +202,7 @@ You will also want to remove the "(Copy)" from the name (we do this to make it o
 Usually that's all you'll need to do to set up your leagues and competitions for the new season.
 
 
-## Who Registered / Purchased a League or Competition?
+## Who Purchased a League or Competition?
 
 You can click the **Purchases** link next to one of your existing leagues or competitions. It will take you to our reports session filtered by the league or competition.
 This will show you all of the registrations for it.
