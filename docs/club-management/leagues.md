@@ -35,7 +35,7 @@ This is the name that will be displayed to your members when they come to regist
 
 For leagues we recommend including the Day of the week, night or day, and type of league here. E.g. "Monday Night Men's".
 
-Some clubs will also include the year, but this is generally unecessary and entirely at your preference since leagues and competitions are filtered by season when member's visit see their listing pages. E.g. "Monday Night Men's - 2020"
+Some clubs will also include the year, but this is generally unnecessary and entirely at your preference since leagues and competitions are filtered by season when member's visit the listing pages. E.g. "Monday Night Men's - 2020"
 
 
 ### Start & End Dates
@@ -49,13 +49,13 @@ These aren't to be confused with when the league or competition registration ope
 When you enter a summary, it will show up on the list view of your leagues or competitions when members come to Curling I/O.
 For leagues, we recommend entering your draw times. E.g. 7:00 & 9:00 PM
 
-The description shows up when your members click on the name of the league or competition and also when they assigned a curler profile or fill in required information for it.
+The description shows up when your members click on the name of the league or competition and also when they assign a curler profile or fill in required information for it.
 Keep in mind that member's may just add the league or competition to their cart without clicking on it's name.
 
 
 ### Sponsorship
 
-You can optionaly upload a sponsor image and provide a Sponsored By line. This will only appear in the detailed view of your league or competition when member's click on the name.
+You can optionally upload a sponsor image and provide a Sponsored By line. This will only appear in the detailed view of your league or competition when member's click on the name.
 
 ## Registration
 
@@ -76,35 +76,71 @@ When you set the pricing for your league or competition, we highly recommend bre
 
 There is a handy tax calculator which will show you what your total with tax will be in case you want to untangle taxes from your existing pricing.
 
-For league registrations you will also want to break out the affilaite fees and let Curling I/O handle them for you.
-If you inlcude the affiliate fees as required in the [Addons section](#assigning-fees--addons) then Curling I/O will ensure that every curler who registers for the league will also pay the affiliate fees.
-We also make sure they only pay them once per season, by ommiting seasonal fees in future league registrations for the same season.
+For league registrations you will also want to break out the affiliate fees and let Curling I/O handle them for you.
+If you include the affiliate fees as required in the [Addons section](#assigning-fees--addons) then Curling I/O will ensure that every curler who registers for the league will also pay the affiliate fees.
+We also make sure they only pay them once per season, by omitting seasonal fees in future league registrations for the same season.
 It's also much easier to report on for bookkeeping and when it comes to figuring out your club's remittance.
 
 
 ### Restrictions
 
-Coming soon!
+#### Min and Max Age
+
+If you are requiring a curler profile (individual instead of team registration) then you can restrict the age of curlers who can register.
+The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
+Age restrictions use July 1st as the cutoff for the current season. So if a curler is not 18 or older on July 1st of the current season's start year then they will be prevented from registering for a league with a min age of 18.
+
+#### Spots Available
+
+You can restrict the number of registrations for your event.
+If it's an individual registration (requires a curler profile) then this should be how many curlers can register for it.
+If it's a team registration (does not require a curler profile) then this should be the number of teams that can register for it.
 
 
 ### Requiring a Curler Profile
 
-Coming soon!
+When you require a curler profile you are forcing registrations to be *individual* only.
+
+We highly recommend requiring a curler profile for your league registrations.
+It's required for the system to apply seasonal membership and affiliate fees, and multiple league discounts.
+The system needs to know who (curler profile) has paid their fees already for the season so that they aren't charged again in future registrations.
+
+As an example, if Sue registers for the Monday Night Ladies league and pays her membership and affiliate fees, then later registers for a Wednesday Night Mixed league, the system is smart enough not to double charge her membership and affiliate fees.
+Also if Sue's club was running a multi-league discount like %20 off your second league, then the system needs to know how many leagues she has already purchased in order to apply this discount to her second league registration.
+
+For competition / bonspiel registrations you usually do not want to require a curler profile, since these are usually team registrations and membership or affiliate fees are irrelevant.
 
 
 ### Team or Skip Name
 
-Coming soon!
+If you want to leverage Curling I/O team recommendations then you must ask for either a team or a skip name during registration.
+Our team recommendations just make it easier and automate team creation if that's a feature you want to use.
+
+If you aren't planning to use Curling I/O to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
 
 ### Assigning Fees & Addons
 
-Coming soon!
+All fees and addons that should be added to the cost of the league or competition can be added here.
+Keep in mind that just creating a fee doesn't not automatically associate it to your leagues and competitions.
+You need to specify which fees and addons are relevant for each league or competition, as this will almost always vary between events.
+E.g. junior and learn to curl leagues may not have any fees.
+
+Examples of fees are your provincial and national affiliate fees, but also any membership or capital improvement fees you may have at the club.
+
+Examples of addons are lockers, grippers, helmets. Any product that you want to include as a required or optional addon to the league or competition.
 
 
 ### Adding Custom Fields
 
-Coming soon!
+Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.
+
+Keep in mind that for individual registration where you require a curler profile, you shouldn't need to add custom fields for general curler data as this will already be associated with the registration.
+
+For a competition / bonspiel registration you might want to add some custom fields to capture contact information should you need it.
+
+Like fees, keep in mind that custom fields are not automatically added to all of your leagues and competitions.
+You need to specify which custom fields are relevant for each league or competition, as this will often vary between events.
 
 
 ## Copying a League for the new Season
@@ -120,7 +156,7 @@ The start, end, registration open, and registration close dates will be prefille
 You will want to tweak these dates to make the weekday's line up for the new season.
 You will also want to remove the "(Copy)" from the name (we do this to make it obvious you are copying).
 
-Usually that's all you'll need to do to setup your leagues and competitions for the new season.
+Usually that's all you'll need to do to set up your leagues and competitions for the new season.
 
 
 ## Who Registered / Purchased a League or Competition?
