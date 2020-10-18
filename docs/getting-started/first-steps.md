@@ -18,7 +18,7 @@ For the vast majority of curling clubs it's extremely quick and simple to get yo
 
 ## 2. Understand our Pricing
 
-Our pricing is simple and straightforward: **2.9% + $0.30 per online payments**, which **includes credit card processing fees**.
+Our pricing is simple and straightforward: **2.9% + $0.30 for online payments**, which **includes credit card processing fees**.
 [Please see our pricing section for more details.](/docs/getting-started/pricing)
 
 

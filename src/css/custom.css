@@ -35,6 +35,7 @@
 }
 .sectionDarkTitle {
   color: white;
+  line-height: 1.5em;
 }
 .sectionDarkTitle a {
   color: var(--ifm-color-primary-lighter);

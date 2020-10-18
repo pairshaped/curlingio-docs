@@ -34,17 +34,7 @@ const features = [
     imageUrl: 'img/league_management.svg',
     description: (
       <>
-      Manage your leagues and bonspiels with us. Assemble teams, round robins, draw schedules, score your games, and even publish your results online.
-      </>
-    ),
-  },
-  {
-    title: 'Used Across Canada',
-    imageUrl: 'img/used_across_canada.svg',
-    description: (
-      <>
-        Curling I/O is the system of choice for Curling Canada as well as most of the provincial membership associations.
-        You're in good hands.
+      Manage your leagues and bonspiels with us. Assemble teams, round robins, draw schedules, score your games, and even publish your results online. No more draw spreadsheets!
       </>
     ),
   },
@@ -63,7 +53,17 @@ const features = [
     imageUrl: 'img/secure_and_stable.svg',
     description: (
       <>
-      We've taken measures to ensure your data is secure, and eliminated entire attack vectors like insecure passwords by using our <a href="/docs/for-curlers/how-do-i-login">passwordless authentication for login</a>.
+        We handle tens of thousands of requests per minute without breaking a sweat, and we go above and beyond to ensure your data is secure by eliminating attack vectors like insecure passwords.
+      </>
+    ),
+  },
+  {
+    title: 'Used Across Canada',
+    imageUrl: 'img/used_across_canada.svg',
+    description: (
+      <>
+        Curling I/O is the system of choice for Curling Canada as well as the provincial membership associations.
+        You're in good hands.
       </>
     ),
   },
@@ -166,11 +166,11 @@ function Home() {
       </header>
       <main>
         <div className="sectionDark margin-vert--md">
-          <div className="container padding-vert--sm">
+          <div className="container padding-vert--md">
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">If you're just trying to register with your curling club, <a href="https://clubs.curling.io">you can look for them here.</a></h2>
+                  <h2 className="sectionDarkTitle">Curling I/O is THE online registration and league management platform purpose built for curling clubs. Our mission is to simplify the day to day operations for curling clubs and their members. Brought to you (and used) by Curling Canada.</h2>
                 </div>
               </div>
             </div>
