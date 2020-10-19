@@ -65,3 +65,7 @@
   width: 96px;
   vertical-align: middle;
 }
+
+.markdown img {
+  border: solid 1px #ccccce;
+}
