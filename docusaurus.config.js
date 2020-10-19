@@ -13,9 +13,9 @@ module.exports = {
       disableSwitch: true,
     },
     image: 'img/curlingio-logo-small.png',
-    // googleAnalytics: {
-    //   trackingID: 'UA-155232740-1',
-    // },
+    googleAnalytics: {
+      trackingID: 'UA-180808279-1',
+    },
     navbar: {
       title: 'Curling I/O',
       logo: {
