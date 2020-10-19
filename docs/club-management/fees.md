@@ -91,6 +91,7 @@ The days after open criteria is how you would implement a **Late Fee*.
 
 For example, a value of 30 means that if someone registers for a league implementing this fee, they will be required to pay the fee if they register 30 or more days after registration opened.
 
+
 ## Adding Custom Fields
 
 Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.
@@ -108,12 +109,6 @@ You can apply discounts to your fees that depend on the registrant meeting speci
 
 The criteria is extremely flexible, and more details and examples can be found in the [discounts section.](/docs/club-management/discounts)
 
-## Deleting Fees
-
-To remove a fee, click the **Delete** link next to it.
-
-![Delete](/img/docs/club-management/shared/delete.png)
-
 
 ## Who Purchased a Fee?
 
@@ -121,3 +116,11 @@ You can click the **Purchases** link next to one of your existing fees. It will 
 This will show you all of the registrations for it.
 
 ![Purchased](/img/docs/club-management/shared/purchased.png)
+
+
+## Deleting Fees
+
+To remove a fee, click the **Delete** link next to it.
+
+![Delete](/img/docs/club-management/shared/delete.png)
+

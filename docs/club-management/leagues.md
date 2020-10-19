@@ -19,22 +19,20 @@ To update an existing league or competition, click the **Edit** link next to it.
 
 ![Edit](/img/docs/club-management/shared/edit.png)
 
-To copy an existing league or competition for a new season, click the **Copy** link next to it.
-More details can be found in the [Copying section](#copying-a-league-for-the-new-season).
-
-![Copy](/img/docs/club-management/shared/copy.png)
 
 ## Instructional Video
 
 The following video will take you through the basics of creating a league and opening up registrations.
 Competitions are identical except that for a competition you will usually not require a curler profile, as they will be team based registrations.
 
+If you're just learning about Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+
 <div className="text--center videoWrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/LSuo6UbLBJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 
 
-## The Basics
+## Filling in the Form
 
 
 ### Naming your League or Competition
@@ -52,6 +50,12 @@ The start and end dates indicate when your league or competition runs.
 These aren't to be confused with when the league or competition registration opens and closes.
 
 
+### Active
+
+If you need to disable a league or competition temporarily you can uncheck the **Active** box.
+When a league or competition is disabled it cannot be seen or purchased by your curlers.
+
+
 ### Summary & Description
 
 When you enter a summary, it will show up on the list view of your leagues or competitions when members come to Curling I/O.
@@ -64,8 +68,6 @@ Keep in mind that member's may just add the league or competition to their cart 
 ### Sponsorship
 
 You can optionally upload a sponsor image and provide a Sponsored By line. This will only appear in the detailed view of your league or competition when member's click on the name.
-
-## Registration
 
 
 ### Open & Close Dates
@@ -92,15 +94,14 @@ We also make sure they only pay them once per season, by omitting seasonal fees 
 It's also much easier to report on for bookkeeping and when it comes to figuring out your club's remittance.
 
 
-### Restrictions
-
-#### Min and Max Age
+### Min and Max Age
 
 If you are requiring a curler profile (individual instead of team registration) then you can restrict the age of curlers who can register.
 The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
 Age restrictions use July 1st as the cutoff for the current season. So if a curler is not 18 or older on July 1st of the current season's start year then they will be prevented from registering for a league with a min age of 18.
 
-#### Spots Available
+
+### Spots Available
 
 You can restrict the number of registrations for your event.
 If it's an individual registration (requires a curler profile) then this should be how many curlers can register for it.
@@ -129,21 +130,83 @@ Our team recommendations just make it easier and automate team creation if that'
 If you aren't planning to use Curling I/O to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
 
-### Assigning Fees & Addons
+### Curler's Position
+
+If you ask for the curlers position and are using our team recommendations for a league or competitions, then the position your curlers choose will be reflected in the recommended teams.
+
+
+### Lineups & Number of Alternates
+
+Usually you wouldn't want to ask for lineup information for individual league registrations otherwise every member of the team will be entering it in duplicate and triplicate when each of the register.
+
+However, this can be useful for competitions that are typically done as team registrations if you need to know who will be participating.
+
+
+### Publish Registrations
+
+If you would like to publicly show who has registered for a league or competition you can check this box.
+Only the curler's name, team or skip name, position, and lineup will be shown.
+No other information collected through custom fields or from the curler's profile will be shown.
+
+The reason to publish registrations is so that other curlers can see who has already registered, like a friend or family member, when they are deciding to register themself.
+Similar to a bulletin board at the club.
+
+
+### Publish Schedule and Results
+
+If you are using Curling I/O's team assembly, round robin generation, draw schedules, and scoring then you'll likey want to check this box.
+This will publish your schedule, standings, and teams on the public side of your site.
+
+If you are not planning to use these features within Curling I/O, we recommend you leave this unchecked to avoid confusion.
+
+
+### Allow Spares
+
+Curling I/O has a sparing feature where curlers can check off which leagues and competitions they are available to spare for.
+The use of this feature does not require curlers to have purchased anything, but simply to have added a curler profile and accepted your waivers.
+Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
+Similar to a bulletin board at the club.
+
+![Sparing](/img/docs/club-management/leagues/sparing.png)
+
+The above screen shot shows how a curler can specify their sparing availability.
+
+
+### Private
+
+You can check this box to make a league or competition available **only** to those that have been given a unique URL to click.
+This is typically used to offer early access to a league or competition for returning members.
+
+If you check this box then once you save the league or competition, a unique URL will be generated for it.
+You can copy this unique URL and send it to the subset of curlers you want to be able to purchase it.
+To find this URL simply click on the name of the league or competition on the administrator product listing page.
+
+
+### Notification email
+
+If you'd like someone to be notified every time the league or competition is purchased you can enter their email address here.
+You can enter more than one email address separated by commas.
+
+We don't perform any email validations on this field, so please make sure you don't have a typo or a defunct email address or they won't receive the notifications.
+
+We also don't recommend using this feature for fellow managers since they will have access to the same information from within the admin area, and sending notification emails get spammy.
+
+
+## Assigning Fees & Addons
 
 All fees and addons that should be added to the cost of the league or competition can be added here.
 Keep in mind that just creating a fee doesn't not automatically associate it to your leagues and competitions.
 You need to specify which fees and addons are relevant for each league or competition, as this will almost always vary between events.
 E.g. junior and learn to curl leagues may not have any fees.
 
-![Addons and Fees](/img/docs/club-management/leagues/addons-and-fees.png)
+![Addons and Fees](/img/docs/club-management/shared/addons-and-fees.png)
 
 Examples of fees are your provincial and national affiliate fees, but also any membership or capital improvement fees you may have at the club.
 
 Examples of addons are lockers, grippers, helmets. Any product that you want to include as a required or optional addon to the league or competition.
 
 
-### Adding Custom Fields
+## Adding Custom Fields
 
 Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.
 
@@ -157,13 +220,14 @@ You need to specify which custom fields are relevant for each league or competit
 ![Custom Fields](/img/docs/club-management/shared/custom-fields.png)
 
 
-### Assigning Discounts
+## Assigning Discounts
 
 You can apply discounts to your leagues and competitions that depend on the registrant meeting specific criteria.
 
 ![Assigning Discounts](/img/docs/club-management/leagues/discounts.png)
 
-The criteria is extremely flexible, here are some examples:
+
+### Examples of Discounts
 
 #### Example 1: Second League Purchased
 
@@ -205,6 +269,6 @@ Usually that's all you'll need to do to set up your leagues and competitions for
 ## Who Purchased a League or Competition?
 
 You can click the **Purchases** link next to one of your existing leagues or competitions. It will take you to our reports session filtered by the league or competition.
-This will show you all of the registrations for it.
+This will show you all of the purchases for it.
 
 ![Purchased](/img/docs/club-management/shared/purchased.png)
