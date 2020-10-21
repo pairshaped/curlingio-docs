@@ -11,7 +11,7 @@ The assumption being that you're ready to get started using Curling I/O.
 (Our pricing is too low for steak dinner sales, and we pass those savings on to you.)
 
 The onboarding process is a screenshare where we walk through the club setup with you in real time and make sure you're ready to start taking registrations by the end of it.
-Multiple stackeholders can and should attend the same session.
+Multiple stakeholders can and should attend the same session.
 
 Please understand that we cannot run multiple onboarding sessions for your club due to key stakeholders not attending.
 Everyone who will be using our platform should have some familiarity with Curling I/O (please have them watch some videos) and be present during your onboarding session.

@@ -20,7 +20,6 @@ module.exports = {
       'club-management/fees',
       'club-management/discounts',
       'club-management/orders',
-      'club-management/online-payments',
       'club-management/curlers',
       'club-management/reports',
       'club-management/custom-fields',

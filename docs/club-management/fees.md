@@ -6,18 +6,18 @@ slug: /club-management/fees
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can setup membership and capital improvement fees for your club.
+You can set up membership and capital improvement fees for your club.
 
 Most fees are seasonal, but they aren't required to be.
-For example a Competitor Card Fee for provincial competitions is typically not a seasonal fee and can therefor be purchased multiple times per season.
+For example a Competitor Card Fee for provincial competitions is typically not a seasonal fee and can therefore be purchased multiple times per season.
 
-Fees are not automatically associated to your leagues, competitions, and products.
-They must be associated excplicitly to each league, competition, and product where they will be applied.
+Fees are not automatically associated with your leagues, competitions, and products.
+They must be associated explicitly to each league, competition, and product where they will be applied.
 You do this by editing the league, competition, or product and adding the relevant fees in the **Addons and Fees** section.
 
 You will see any affiliate fees you are inheriting from your membership association here.
 Like the Curling Canada fee and the relevant membership association fee.
-You cannot edit or delete these inherited fees, but like all other fees, they are not automatically associated to your league, products, or competitions, and must be explicitly assigned.
+You cannot edit or delete these inherited fees, but like all other fees, they are not automatically associated with your leagues, products, or competitions, and must be explicitly assigned.
 
 
 ## Finding your Fees
@@ -59,7 +59,7 @@ When you require a curler profile you are forcing the fee to only be applied for
 You'll want to check this box for membership type fees.
 This is checked by default for new fees.
 
-If the requires a curler profile option is selected you can also specify whether or not the fee is seasonal per curler.
+If the _requires a curler profile_ option is selected you can also specify whether or not the fee is seasonal per curler.
 By checking the seasonal per curler box you are ensuring that the curler won't be asked to purchase this fee more than once in a given season.
 This is checked by default for new fees.
 

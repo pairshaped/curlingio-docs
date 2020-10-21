@@ -9,7 +9,7 @@ You can create discounts to reduce the cost of your leagues, competitions, and p
 
 For example, you can give curler's a 20% discount on their second league, then 50% off on their third league, or a Junior discount to curlers under the age of 18.
 
-There is a ton of flexibility with discounts, but keep in mind that having an excessive number of discounts, can easily make it very hard to verfiy who should be receiving one.
+There is a ton of flexibility with discounts, but keep in mind that having an excessive number of discounts, can easily make it very hard to verify who should be receiving one.
 
 ## Finding your Discounts
 
@@ -44,7 +44,7 @@ Discounts can and should be reused between seasons, so there's no need to includ
 
 ### Percent or Fixed Amount
 
-You can choose to make your discount a percentage of the amount of the item being discounts (league, product, or competition), or you can make it fixed amount.
+You can choose to make your discount a percentage of the amount of the items being discounted (league, product, or competition), or you can make it a fixed amount.
 Usually percentage based discounts are easier to manage, for example if you were running a multiple league discount, but your league had different prices.
 
 You can't specify both percent and fixed amount.
@@ -80,7 +80,7 @@ Age criteria is evaluated as of July 1st in the current season. If a curler is 1
 
 This allows you to discount the 2nd, 3rd, 4th, 5th + league that a curler purchases during the current season.
 
-You can even have _stepping_ discounts, where for example 2 leagues is 20% off, 3 leagues is 50% off, and 4+ leagues is 100% off (making 4, 5, 6, etc. free).
+You can even have _stepping_ discounts, where for example the 2nd league is 20% off, the 3rd league is 50% off, and the 4th or higher leagues are 100% off (making them free).
 
 ### Matching a Custom Field Value
 
@@ -94,7 +94,7 @@ Another example would be a coupon code. You could have a free text custom field 
 ### Fee
 
 Allows you to give a discount to curlers who have already paid, or are about to pay a fee.
-For example to offer a discount to members on non-member leagues or products.
+For example, to offer a discount to members on non-member leagues or products.
 
 ### Product
 
@@ -110,7 +110,7 @@ The higher discount is typically the one you would select here.
 ### Exclusive of All Other Discounts
 
 If the curler is receiving any other discount for the item being discounted, they won't receive this one.
-If all discounts they are receiving are exclusive, then the greatest discount amoung them will be applied.
+If all discounts they are receiving are exclusive, then the greatest discount among them will be applied.
 
 This is useful if you have a large discount that you never want to stack regardless of whether the curler meets the criteria for any other.
 

@@ -22,7 +22,7 @@ We offer email support for all of our clubs on an ongoind basis through the Curl
 
 ## Feedback
 
-We also have a feeback board where you can submit feature requests and vote on feature requests that other clubs and curlers have submitted.
+We also have a feedback board where you can submit feature requests and vote on feature requests that other clubs and curlers have submitted.
 
 If your request starts with _"It would be nice if..."_ or _"Can you add..."_ then it's probably a feature request!
 
