@@ -5,7 +5,7 @@ slug: /club-management/products
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Accessing a Product
+## Finding your Products
 
 Within your admin area, click on **Products** in the top bar.
 
