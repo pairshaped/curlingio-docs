@@ -24,7 +24,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/getting-started/first-steps',
+          to: 'docs/getting-started/overview',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
@@ -44,7 +44,7 @@ module.exports = {
           items: [
             {
               label: 'For Clubs',
-              to: 'docs/getting-started/first-steps',
+              to: 'docs/getting-started/overview',
             },
             {
               label: 'For Curlers',

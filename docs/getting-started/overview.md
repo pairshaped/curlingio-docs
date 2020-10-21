@@ -1,0 +1,62 @@
+---
+id: overview
+title: Overview
+slug: /getting-started/overview
+---
+
+Curling I/O is the best in class curling club management and registration platform brought to you by Curling Canada.
+Our focus is to make it easy for clubs to manage both their registration online and manager their leagues.
+
+We also have extremely affordable (and simple) pricing for clubs of all sizes, with no montly or setup fees.
+
+## Online Registration
+
+Curling I/O was built from the ground up to manage curler registration.
+It's intuitive and seamless for curlers all ages to use season after season.
+In fact, our national curler database makes it even easier to register again after the first season as they won't need to re-key all of their information.
+
+We also make it easy for clubs to accept payments online.
+We integrate with the industry leaguer, extremely secure, and well regarded payment processor [Stripe](https://stripe.com/).
+It only takes around 5 minutes to get your club setup for online payments.
+
+
+## League and Competition Management
+
+We've developed some innovative features to help you manage your clubs leagues.
+
+- Automated team recommendations and assembly.
+- Round Robin generation.
+- Our drag and drop Playoff Bracket Builder (coming soon)
+- Draw schedule generation with manual override.
+- A curler opt-in spares engine.
+- Game scoring.
+- Publishing the results.
+- Extensive permission system so you can invite third parties to manage your leagues and competitions.
+
+Curling I/O manages the competitions for membership associations across Canada and for Curling Canada itself.
+If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](http://curling.ca), then you've already seen Curling I/O in action.
+
+
+## Bookeeping and Reports
+
+We have an extensive reports section that bookkeepers love.
+
+Our reports help you figure out your taxes on registrations and really dig down into the data to see how your club is performing financially.
+
+
+## First Class Support and Documentation
+
+Email support for Curling I/O is provided by Curling Canada through our online Help Desk.
+
+We also have feedback boards, online documentation (right here), and video tutorials to get you up and running.
+
+
+## Next Steps
+
+1. To find out more about our pricing, [see our pricing section.](/docs/getting-started/pricing)
+
+2. [You can find all of our tutorials videos listed here.](https://www.youtube.com/channel/UChVVi0PxRcavHZO-CCwrT5A)
+
+3. Peruse our [Club Management documentation](/docs/club-management/leagues) to get a better feel for the Curling I/O platform.
+
+4. And finally once you've reviewed our documentation and turotials you're ready to [book an oboarding session with us](/docs/getting-started/book-an-onboarding-session).
