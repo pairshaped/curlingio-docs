@@ -1,13 +1,17 @@
 ---
 id: dashboard
-title: Dashboard
+title: The Dashboard
 slug: /club-management/dashboard
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 When you first log in to the administrator area of Curling I/O you will be presented with your dashboard.
 On the dashboard you will see a collection of statistics meant to give you a quick summary of the current season.
 
 By clicking on any of these dashboard links, you will be taken to their relevant section or report.
+
+![Dashboard](/img/docs/club-management/dashboard/dashboard.png)
+
 
 ## Collected
 
