@@ -12,29 +12,29 @@ We also have extremely affordable (and simple) pricing for clubs of all sizes, w
 ## Online Registration
 
 Curling I/O was built from the ground up to manage curler registration.
-It's intuitive and seamless for curlers all ages to use season after season.
+It's intuitive and seamless for curlers of all ages to use season after season.
 In fact, our national curler database makes it even easier to register again after the first season as they won't need to re-key all of their information.
 
 We also make it easy for clubs to accept payments online.
-We integrate with the industry leaguer, extremely secure, and well regarded payment processor [Stripe](https://stripe.com/).
+We integrate with the industry leader, extremely secure, and well regarded payment processor [Stripe](https://stripe.com/).
 It only takes around 5 minutes to get your club setup for online payments.
 
 
 ## League and Competition Management
 
-We've developed some innovative features to help you manage your clubs leagues.
+We've developed some innovative features to help you manage your leagues and competitions.
 
 - Automated team recommendations and assembly.
-- Round Robin generation.
-- Our drag and drop Playoff Bracket Builder (coming soon)
+- Round robin generation.
+- Drag and drop playoff bracket builder (coming soon)
 - Draw schedule generation with manual override.
-- A curler opt-in spares engine.
+- Curler opt-in spares engine.
 - Game scoring.
-- Publishing the results.
-- Extensive permission system so you can invite third parties to manage your leagues and competitions.
+- Results publication.
+- Extensive permissions system for third parties to manage your leagues and competitions.
 
-Curling I/O manages the competitions for membership associations across Canada and for Curling Canada itself.
-If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](http://curling.ca), then you've already seen Curling I/O in action.
+Curling I/O manages the competitions for membership associations across Canada and for Curling Canada.
+If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](https://www.curling.ca/scoreboard), then you've already seen Curling I/O in action.
 
 
 ## Bookeeping and Reports
