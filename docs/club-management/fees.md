@@ -19,12 +19,12 @@ You will also see any affiliate fees you are inheriting from your membership ass
 Like the Curling Canada fee and the relevant membership association fee.
 You cannot edit or delete these inherited fees, but like all other fees, they are not automatically associated to your league, products, or competitions, and must be explicitly assigned.
 
+
+## Accessing a Fee
+
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Fees**.
 
 ![Navigation](/img/docs/club-management/fees/navigation.png)
-
-
-## Creating and Updating a Fee
 
 To create a fee click on the **New Fee** button.
 
