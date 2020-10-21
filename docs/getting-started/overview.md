@@ -5,15 +5,15 @@ slug: /getting-started/overview
 ---
 
 Curling I/O is the best in class curling club management and registration platform brought to you by Curling Canada.
-Our focus is to make it easy for clubs to manage both their registration online and manager their leagues.
+Our focus is to make it easy for clubs to manage both their registration online and manage their leagues.
 
-We also have extremely affordable (and simple) pricing for clubs of all sizes, with no montly or setup fees.
+We also have extremely affordable (and simple) pricing for clubs of all sizes, with no monthly or setup fees.
 
 ## Online Registration
 
 Curling I/O was built from the ground up to manage curler registration.
 It's intuitive and seamless for curlers of all ages to use season after season.
-In fact, our national curler database makes it even easier to register again after the first season as they won't need to re-key all of their information.
+In fact, our national curler database makes it even easier to register again after the first season as they won't need to rekey all of their information.
 
 We also make it easy for clubs to accept payments online.
 We integrate with the industry leader, extremely secure, and well regarded payment processor [Stripe](https://stripe.com/).
@@ -37,7 +37,7 @@ Curling I/O manages the competitions for membership associations across Canada a
 If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](https://www.curling.ca/scoreboard), then you've already seen Curling I/O in action.
 
 
-## Bookeeping and Reports
+## Bookkeeping and Reports
 
 We have an extensive reports section that bookkeepers love.
 
@@ -59,4 +59,4 @@ We also have feedback boards, online documentation (right here), and video tutor
 
 3. Peruse our [Club Management documentation](/docs/club-management/leagues) to get a better feel for the Curling I/O platform.
 
-4. And finally once you've reviewed our documentation and turotials you're ready to [book an oboarding session with us](/docs/getting-started/book-an-onboarding-session).
+4. And finally once you've reviewed our documentation and tutorials you're ready to [book an onboarding session with us](/docs/getting-started/book-an-onboarding-session).
