@@ -5,7 +5,7 @@ slug: /club-management/leagues
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Creating and Updating a League or Competition
+## Accessing a League or Competition
 
 Within your admin area, click on **Leagues** or **Competitions** in the top bar.
 
