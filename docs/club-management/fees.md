@@ -3,24 +3,24 @@
 id: fees  
 title: Fees  
 slug: /club-management/fees
-
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This is where you can setup membership and capital improvement fees for your club.
+You can setup membership and capital improvement fees for your club.
 
-Most fees are seasonal, but they don't have to be.
+Most fees are seasonal, but they aren't required to be.
 For example a Competitor Card Fee for provincial competitions is typically not a seasonal fee and can therefor be purchased multiple times per season.
 
-Note, that fees are not automatically associated to your leagues, competitions, and products.
+Fees are not automatically associated to your leagues, competitions, and products.
 They must be associated excplicitly to each league, competition, and product where they will be applied.
 You do this by editing the league, competition, or product and adding the relevant fees in the **Addons and Fees** section.
 
-You will also see any affiliate fees you are inheriting from your membership association here.
+You will see any affiliate fees you are inheriting from your membership association here.
 Like the Curling Canada fee and the relevant membership association fee.
 You cannot edit or delete these inherited fees, but like all other fees, they are not automatically associated to your league, products, or competitions, and must be explicitly assigned.
 
 
-## Accessing a Fee
+## Finding your Fees
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Fees**.
 
@@ -112,7 +112,7 @@ The criteria is extremely flexible, and more details and examples can be found i
 
 ## Who Purchased a Fee?
 
-You can click the **Purchases** link next to one of your existing fees. It will take you to our reports session filtered by the fee.
+You can click the **Purchases** link next to one of your fees. It will take you to our reports session filtered by the fee.
 This will show you all of the registrations for it.
 
 ![Purchased](/img/docs/club-management/shared/purchased.png)
