@@ -27,25 +27,25 @@ module.exports = {
       'club-management/waivers',
       'club-management/settings',
     ],
-    "Event Management": [
-      'event-management/registrations',
-      'event-management/spares',
-      'event-management/curlers',
-      'event-management/teams',
-      'event-management/stages',
-      'event-management/draw-schedule',
-      'event-management/scores',
-      'event-management/event-managers',
-    ],
-    "Advanced Features": [
-      'advanced/widgets',
-      'advanced/alerts',
-      'advanced/email-templates',
-    ],
-    API: [
-      'api/leagues',
-      'api/competitions',
-      'api/products',
-    ]
+    // "Event Management": [
+    //   'event-management/registrations',
+    //   'event-management/spares',
+    //   'event-management/curlers',
+    //   'event-management/teams',
+    //   'event-management/stages',
+    //   'event-management/draw-schedule',
+    //   'event-management/scores',
+    //   'event-management/event-managers',
+    // ],
+    // "Advanced Features": [
+    //   'advanced/widgets',
+    //   'advanced/alerts',
+    //   'advanced/email-templates',
+    // ],
+    // API: [
+    //   'api/leagues',
+    //   'api/competitions',
+    //   'api/products',
+    // ]
   },
 };
