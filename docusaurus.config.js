@@ -1,8 +1,7 @@
 module.exports = {
   title: 'Curling I/O',
   tagline: 'Curling registration and league management made easy.',
-  // url: 'https://curling.io',
-  url: 'https://docs.curling.io',
+  url: 'https://curling.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
