@@ -8,7 +8,6 @@ The goal of an onboarding session is to get the leagues, fees, discounts, and pr
 
 **We require that attendees review our tutorial videos and documentation prior to booking an onboarding session.**
 The assumption is that you're ready to get started using Curling I/O.
-(Our pricing is too low for steak dinner sales, and we pass those savings on to you.)
 
 The onboarding process is a screenshare where we walk through the club setup with you in real time and make sure you're ready to start taking registrations by the end of it.
 Multiple stakeholders can and should attend the same session.
