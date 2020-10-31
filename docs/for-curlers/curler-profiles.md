@@ -10,7 +10,7 @@ Curler profiles in Curling I/O are persistent and can be used again for future r
 
 You can also create profiles for your children or someone you are a legal guardian for, all on the same account.
 
-When creating a curler profile something to keep in mind is that if you have more than one email address, you can enter them in the primary and secondary email address fields.
+When creating a curler profile if you have more than one email address, you can enter them in the primary and secondary email address fields.
 Doing so, will ensure that if you accidentally login with one of these alternative email addresses, you will still be able to see and use your curler profile for registrations.
 
 
