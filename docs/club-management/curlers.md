@@ -34,6 +34,17 @@ If you spot one of these duplicates, you can **mark** one of them as a duplicate
 ![Mark as Duplicate](/img/docs/club-management/curlers/mark-as-dupe.png)
 
 
+## Loggin in as a Curler
+
+You are able to login (temporarily pretend) as a curler in order to help them complete their registration if they're struggling to do it themselves.
+
+Just click the "Login as" link below the curler account's email / name.
+
+Note: This only works with curlers for accounts that have already logged into the system.
+If instead you need to perform the registration for a curler that has never created an account, you can simply add your email address to the curler's profile,
+and then you will see and be able to register with that profile from your own account.
+
+
 ## What did a Curler Purchase?
 
 Next to each curler there is a **Purchased** link.
