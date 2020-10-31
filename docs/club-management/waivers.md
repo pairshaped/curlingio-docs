@@ -6,7 +6,7 @@ slug: /club-management/waivers
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Curling I/O by default will ask your curlers to accept a waiver during registration, but only once per season.
-We also keep a snapshot of the waiver that was accepted for future reference if it's ever needs.
+We also keep a snapshot of the waiver that was accepted for future reference if it's ever needed.
 These snapshots along with which waivers have been accepted can be found in the [Reports section](/docs/club-management/reports).
 
 You can customize or completely replace these waivers, or you can simply disable our waivers if you'd rather manage that process yourself at the club.
