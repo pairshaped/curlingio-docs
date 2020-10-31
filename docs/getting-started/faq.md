@@ -51,7 +51,7 @@ Coaches should NOT be registering their team's curlers as they are not considere
 In the curlers section you can flag profiles as duplicates, and we regularly merge these duplicate profiles.
 You only need to flag one of them.
 
-### What is an Account
+### What is an Account?
 
 An account is just an email address and possibly a name to go along with it.
 When someone first logs in (signs up) to Curling I/O, an account is created for them with the email address they logged in with.
@@ -73,9 +73,9 @@ Some people have and may login with multiple email addresses.
 
 #### Example 2
 1. Jane logs into Curling I/O with jane-hack@gmail.com.
-2. Jane creates a curler profile for herself and another curler profile for her son Jimmy.
+2. Jane creates a curler profile for herself and another curler profile for her 17 year old son Jimmy.
 3. Her son Jimmy, while a youth curler, has his own email address jimme-hack@gmail.com, and Jane enters that email address into his curler profile.
-4. Jane register herself and her son in a couple leagues.
-5. Her son Jimmy logs into Curler I/O a month later to register for another Junior league.
+4. Jane registers herself and her son in a league.
+5. Her son Jimmy logs into Curler I/O a month later to register for another league.
 6. During registration Jimmy sees and is able to use the curler profile that his mother created for him earlier.
 
