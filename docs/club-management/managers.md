@@ -3,5 +3,30 @@ id: managers
 title: Managers
 slug: /club-management/managers
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Coming soon!
+Clubs can have multiple managers for Curling I/O.
+Each of the managers is granted the same level of access.
+
+## Finding Managers
+
+You can access the list of all the managers at your club, by clicking on **Managers** in the top right **Club** dropdown in the top navigation bar.
+
+![Curlers Navigation](/img/docs/club-management/managers/navigation.png)
+
+## Adding Managers
+
+You can add another manager to your club by entering their name and email address into the form at the top of the screen and clicking the **Create Manager** button.
+
+![Curlers Navigation](/img/docs/club-management/managers/create-manager.png)
+
+Curling I/O will send an email to the email address entered inviting them to join the club management (admin) area.
+The email will contain a link to the admin dashboard.
+
+We recommend managers bookmark the admin area to avoid confusion between the public and administration sections of your Curling I/O site.
+
+## Removing Managers
+
+We highly recommend that you remove staff from your Curling I/O management when they are no longer with the club.
+You can do so by clicking the **Delete** link next to the manager you wish to remove.
+This doesn't delete their account, as they may have curler profiles and participate in leagues themselves, but it does remove them from your club management.
