@@ -31,7 +31,7 @@ Occasionally you will end up with duplicate profiles. This can and will happen f
 Usually it's because someone registered again at a later date but logged in with a different email address than last time that also wasn't entered on the profile.
 If you spot one of these duplicates, you can **mark** one of them as a duplicate and eventually it'll get merged and / or removed.
 
-![Mark as Duplicate](/img/docs/club-management/curlers/mark-as-duple.png)
+![Mark as Duplicate](/img/docs/club-management/curlers/mark-as-dupe.png)
 
 
 ## What did a Curler Purchase?
