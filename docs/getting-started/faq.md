@@ -50,3 +50,32 @@ Coaches should NOT be registering their team's curlers as they are not considere
 
 In the curlers section you can flag profiles as duplicates, and we regularly merge these duplicate profiles.
 You only need to flag one of them.
+
+### What is an Account
+
+An account is just an email address and possibly a name to go along with it.
+When someone first logs in (signs up) to Curling I/O, an account is created for them with the email address they logged in with.
+Essentially you can think of an account as a **login**.
+
+Every account may own one or more curler profiles.
+Accounts will also be able to see and register with any curler profile that has a primary or secondary email matching the account's email.
+
+This means that when a curler profile is added to the Curling I/O, it could be shared between mutliple logins.
+Some people have and may login with multiple email addresses.
+
+#### Example 1
+1. Hurly has two email addresses; hurly-buttons@gmail.com and hurly-rocks@hotmail.com.
+2. Hurly logs into Curling I/O with hurly-buttons@gmail.com.
+3. Hurly creates a curler profile and enters hurly-rocks@hotmail.com as his secondary email address.
+4. Months later Hurly logs back into Curling I/O using his hurly-rocks@hotmail.com email.
+5. Curling I/O creates a new account for hurly-rocks@hotmail.com.
+6. Hurly goes to register for another league, and still sees and uses the curler profile he created earlier with his other account.
+
+#### Example 2
+1. Jane logs into Curling I/O with jane-hack@gmail.com.
+2. Jane creates a curler profile for herself and another curler profile for her son Jimmy.
+3. Her son Jimmy, while a youth curler, has his own email address jimme-hack@gmail.com, and Jane enters that email address into his curler profile.
+4. Jane register herself and her son in a couple leagues.
+5. Her son Jimmy logs into Curler I/O a month later to register for another Junior league.
+6. During registration Jimmy sees and is able to use the curler profile that his mother created for him earlier.
+
