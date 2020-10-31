@@ -49,7 +49,7 @@ You can edit these later if you're not sure of the deposit date, or it changed.
 You can also optionally add notes to the payment for your own future reference.
 For example; _Hurly gave Sue a cheque for $180.80 at the bar._
 
-If you're club has online payments set up and enabled, then you'll have the option of using a Credit / Debit card to process the payment.
+If your club has online payments set up and enabled, then you'll have the option of using a Credit / Debit card to process the payment.
 This is useful if a curler calls in with a credit card or brings in a credit card and you don't already have a point of sale system.
 
 ## Refunds
@@ -78,17 +78,37 @@ The system will also autofill the time it was withdrawn and how it was refunded.
 You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.
 
 
-## Adjustments
+## Adjusting Submitted Orders
 
-Coming soon!
+For submitted (unpaid) orders only, you can add **adjustments** to change the total.
+An adjustment records as a new line item for the order where you can enter an amount (negative amounts reduce the total) and a description.
+
+Adjustments are typically used to correct a mistake during registration without asking the curler to redo their order.
+Adjustments can increase bookkeeping effort when balancing your books, so we recommend redoing orders instead, even if you need to login as the curler and order on their behalf.
+
+## Sending an Order back to the Account's Cart
+
+For submitted (unpaid) orders only, you can send the order back to the registering account's cart.
+
+You may want to do this when a mistake was made during registration and you'd like the curler to correct the mistake themself, or correct it for them using the **Login as** feature.
 
 
-## Deleting Offline Orders
+## Deleting Submitted Orders
 
-Coming soon!
+You can delete submitted (unpaid) orders. This is useful when testing out your discounts and pricing, which we highly recommend doing before sending your curlers to register.
+
+You cannot delete paid orders as this would most definitely unbalance your bookkeeping reports.
+If an order has offline payments however, you can delete those payments first, and then delete the order itself, as it will be moved back into a submitted state.
 
 
 ## Transferring Orders
 
-Coming soon!
+You can transfer orders to another account at any time.
+An account is basically a login represented by an email address.
+You can only transfer orders to accounts that have been created within Curling I/O and thus verified their email address.
+You cannot transfer an order to a curler who has never logged in.
+
+The reason for transferring an order is to have it show up within the accounts order history.
+For example, if a curler registered at the club under a dedicated club registration login, you may later want to transfer that order to them once they're using Curling I/O.
+
 
