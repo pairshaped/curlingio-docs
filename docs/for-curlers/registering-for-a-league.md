@@ -4,6 +4,8 @@ title: Registering for a League
 slug: /for-curlers/registering-for-a-league
 ---
 
+## Step by Step
+
 1. Find the league you want to join in the leagues section.
 2. Click on the "Add to cart" or "Register" button next to the league. If you don't see a button, then the league is either sold out, and hasn't opened up registrations yet.
 3. Next you'll be asked to login or sign up. All you need for this step is an email address. Click the "Login / Sign Up" button to continue. If you run into issues logging in, please see our How do I Login? article.
@@ -14,7 +16,10 @@ slug: /for-curlers/registering-for-a-league
 8. You should now be taken back to your cart. If this is the first time registering a curler this season you will probably see some additional fees automatically added to your cart.
 9. You can now complete your registration by selecting a payment method: "Credit / Debit" or "Cash / Cheque". If you choose the "Cash / Cheque" option you'll need to make arrangements to pay us the amount owed.
 
-## Instructional Video
+## Walkthrough Video
+
+The following video will take you through the basics of registration for a league.
+If you're new to Curling I/O and struggling, it might be worth watching.
 
 <div className="text--center videoWrapper">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

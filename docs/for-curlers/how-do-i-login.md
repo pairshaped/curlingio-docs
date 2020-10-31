@@ -8,6 +8,8 @@ It's simple, but first you need an email address.
 
 If you don't have an email address, you can easily get a free one from Gmail, FastMail, Microsoft, ProtonMail, and about a hundred or so others. You can also ask your internet service provider if they can set you up with one.
 
+## Step by Step
+
 1. Click the Login link in the top right of this screen. If you don't see a "Login" link, then you're probably already logged in, and can skip the rest of these instructions.
 2. You should now see a screen giving you two options: Send me a Login Link and Login with Gmail.
 3. If you use Gmail then the fastest way to login is simply selecting the red Login with Gmail button and you'll be logged in, and can skip the rest of these instructions.
@@ -17,6 +19,13 @@ If you don't have an email address, you can easily get a free one from Gmail, Fa
 
 That's all there is to it. You should now be logged in, and most likely back on your "Cart" screen.
 
+## Walkthrough Video
+
+The following short video will take you through the basics of logging in.
+If you're new to Curling I/O and struggling, it might be worth watching.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
 ## Passwordless Authentication
 
 Curling I/O doesn't use passwords, because passwords are the primary cause of most data breaches on the internet.
@@ -24,7 +33,3 @@ Curling I/O doesn't use passwords, because passwords are the primary cause of mo
 You'll never have to remember a password with our system. This means your personal information is more secure with us than other registration systems.
 
 [Read more about passwordless logins and their increased security here.](https://auth0.com/blog/is-passwordless-authentication-more-secure-than-passwords/)
-
-## Instructional Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

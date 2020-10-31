@@ -8,11 +8,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Clubs can have multiple managers for Curling I/O.
 Each of the managers is granted the same level of access.
 
+If you want to give access to an outside party for just a specific league or competition, then you don't add them as a club manager.
+[You can find information about event managers here](/docs/event-management/event-managers).
+
+
 ## Finding Managers
 
 You can access the list of all the managers at your club, by clicking on **Managers** in the top right **Club** dropdown in the top navigation bar.
 
 ![Curlers Navigation](/img/docs/club-management/managers/navigation.png)
+
 
 ## Adding Managers
 
@@ -24,6 +29,7 @@ Curling I/O will send an email to the email address entered inviting them to joi
 The email will contain a link to the admin dashboard.
 
 We recommend managers bookmark the admin area to avoid confusion between the public and administration sections of your Curling I/O site.
+
 
 ## Removing Managers
 

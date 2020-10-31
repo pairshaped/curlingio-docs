@@ -11,6 +11,15 @@ For example, you can give curler's a 20% discount on their second league, then 5
 
 There is a ton of flexibility with discounts, but keep in mind that having an excessive number of discounts, can easily make it very hard to verify who should be receiving one.
 
+## Walkthrough Video
+
+The following video will take you through the basics of setting up your discounts.
+If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+
+<div className="text--center videoWrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3h7oZzkYfkM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
 ## Finding your Discounts
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Discounts**.
@@ -25,12 +34,6 @@ To update an existing discount, click the **Edit** link next to it.
 
 ![Edit](/img/docs/club-management/shared/edit.png)
 
-
-## Instructional Video
-
-<div className="text--center videoWrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3h7oZzkYfkM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
 
 ## The Basics
 

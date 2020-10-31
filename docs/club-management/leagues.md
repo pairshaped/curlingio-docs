@@ -5,6 +5,17 @@ slug: /club-management/leagues
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+## Walkthrough Video
+
+The following video will take you through the basics of creating a league and opening up registrations.
+Competitions are identical except that for a competition you will usually not require a curler profile, as they will be team based registrations.
+If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+
+<div className="text--center videoWrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/LSuo6UbLBJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+
 ## Finding your Leagues and Competitions
 
 Within your admin area, click on **Leagues** or **Competitions** in the top bar.
@@ -18,18 +29,6 @@ To create a league, click the **New League** or **New Competition** button.
 To update an existing league or competition, click the **Edit** link next to it.
 
 ![Edit](/img/docs/club-management/shared/edit.png)
-
-
-## Instructional Video
-
-The following video will take you through the basics of creating a league and opening up registrations.
-Competitions are identical except that for a competition you will usually not require a curler profile, as they will be team based registrations.
-
-If you're just learning about Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
-
-<div className="text--center videoWrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/LSuo6UbLBJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
 
 
 ## Filling in the Form
@@ -205,6 +204,8 @@ Examples of fees are your provincial and national affiliate fees, but also any m
 
 Examples of addons are lockers, grippers, helmets. Any product that you want to include as a required or optional addon to the league or competition.
 
+[You can find information about fees here.](/docs/club-management/fees)
+
 
 ## Adding Custom Fields
 
@@ -219,13 +220,16 @@ You need to specify which custom fields are relevant for each league or competit
 
 ![Custom Fields](/img/docs/club-management/shared/custom-fields.png)
 
+[You can find information about custom fields here.](/docs/club-management/custom-fields)
+
 
 ## Assigning Discounts
 
 You can apply discounts to your leagues and competitions that depend on the registrant meeting specific criteria.
+Keep in mind that just creating a discount doesn't not automatically associate it to your leagues and competitions.
+You need to specify which discounts are relevant for each league and competition, as this will often vary.
 
 ![Assigning Discounts](/img/docs/club-management/leagues/discounts.png)
-
 
 ### Examples of Discounts
 

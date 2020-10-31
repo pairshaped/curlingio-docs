@@ -5,6 +5,16 @@ slug: /club-management/products
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+## Walkthrough Video
+
+The following video will take you through the basics of creating a product or addon.
+If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+
+<div className="text--center videoWrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y5VX4pQCot4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+
 ## Finding your Products
 
 Within your admin area, click on **Products** in the top bar.
@@ -22,17 +32,6 @@ To update an existing product, click the **Edit** link next to it.
 To copy an existing product, click the **Copy** link next to it.
 
 ![Copy](/img/docs/club-management/shared/copy.png)
-
-
-## Instructional Video
-
-The following video will take you through the basics of creating a product or addon.
-
-If you're just learning about Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
-
-<div className="text--center videoWrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y5VX4pQCot4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
 
 
 ## Filling in the Form
@@ -145,6 +144,8 @@ Examples of fees are your provincial and national affiliate fees, but also any m
 
 Please note, that you cannot add fees to a product that has a type of *both* or *addon* since this could cause inception, and we may start questioning whether we exist in _the real!_
 
+[You can find information about fees here.](/docs/club-management/fees)
+
 
 ## Adding Custom Fields
 
@@ -153,9 +154,20 @@ Custom fields allow you to ask your curlers questions specific to your club that
 Keep in mind that for individual registration where you require a curler profile, you shouldn't need to add custom fields for general curler data as this will already be associated with the registration.
 
 Like fees, keep in mind that custom fields are not automatically added to all of your products.
-You need to specify which custom fields are relevant for each product, as this will often vary between products.
+You need to specify which custom fields are relevant for each product, as this will often vary.
 
 ![Custom Fields](/img/docs/club-management/shared/custom-fields.png)
+
+[You can find information about custom fields here.](/docs/club-management/custom-fields)
+
+
+## Assigning Discounts
+
+You can apply discounts to your products that depend on the registrant meeting specific criteria.
+Keep in mind that just creating a discount doesn't not automatically associate it to your products.
+You need to specify which discounts are relevant for each product, as this will almost always vary between products.
+
+[You can find information about discounts here.](/docs/club-management/discounts)
 
 
 ## Who Purchased a Product?
