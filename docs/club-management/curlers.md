@@ -10,7 +10,7 @@ Members can they reuse their curler profiles for registration across multiple se
 
 ## Finding Curler Profiles
 
-You can see a list of all the curler profiles who have registered at your club, regardless of season, by clicking on **Curlers** in the top navigation.
+You can access the list of all the curler profiles who have registered at your club, regardless of season, by clicking on **Curlers** in the top navigation.
 
 ![Curlers Navigation](/img/docs/club-management/curlers/navigation.png)
 
