@@ -34,9 +34,9 @@ If you spot one of these duplicates, you can **mark** one of them as a duplicate
 ![Mark as Duplicate](/img/docs/club-management/curlers/mark-as-dupe.png)
 
 
-## Loggin in as a Curler
+## Login as a Curler
 
-You are able to login (temporarily pretend) as a curler in order to help them complete their registration if they're struggling to do it themselves.
+You are able to login as one of the curlers at your club in order to help them complete their registration if they're struggling to do it themselves.
 
 Just click the "Login as" link below the curler account's email / name.
 
