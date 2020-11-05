@@ -49,3 +49,4 @@ You can add or modify the team's:
 - Lineup
 
 You can also pre-create your teams before or while registrations are coming in if you want to setup your round robins and draw schedules ahead of time.
+You don't need to assign curlers to teams to have round robins, draw schedules, and scores.
