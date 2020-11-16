@@ -87,7 +87,7 @@ Age restrictions use July 1st as the cutoff for the current season. So if a curl
 
 ### Days after open
 
-The days after open criteria is how you would implement a **Late Fee*.
+The days after open criteria is how you would implement a *Late Fee*.
 
 For example, a value of 30 means that if someone registers for a league implementing this fee, they will be required to pay the fee if they register 30 or more days after registration opened.
 

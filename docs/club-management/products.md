@@ -90,7 +90,7 @@ It's unlikely you'd even require a curler profile for products like that.
 
 ### Lifetime per curler
 
-This is for a product that should never be purchase more than once per curler. Usefull if you are selling a lifetime membership or similar product.
+This is for a product that should never be purchased more than once per curler. Usefull if you are selling a lifetime membership or similar product.
 
 Checking this box also means that discounts based on it's purchase can run across multiple seasons.
 

@@ -116,7 +116,7 @@ It's required for the system to apply seasonal membership and affiliate fees, an
 The system needs to know who (curler profile) has paid their fees already for the season so that they aren't charged again in future registrations.
 
 As an example, if Sue registers for the Monday Night Ladies league and pays her membership and affiliate fees, then later registers for a Wednesday Night Mixed league, the system is smart enough not to double charge her membership and affiliate fees.
-Also if Sue's club was running a multi-league discount like %20 off your second league, then the system needs to know how many leagues she has already purchased in order to apply this discount to her second league registration.
+Also if Sue's club was running a multi-league discount like 20% off the second league, then the system needs to know how many leagues she has already purchased in order to apply this discount to her second league registration.
 
 For competition / bonspiel registrations you usually do not want to require a curler profile, since these are usually team registrations and membership or affiliate fees are irrelevant.
 
