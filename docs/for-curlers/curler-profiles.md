@@ -36,6 +36,6 @@ You can now edit your curler profile(s).
 
 ## Privacy Concerns
 
-Rest assured that the Curling I/O business model isn't to inundate you with advertisements like some other popular online platforms.
+Rest assured that the Curling I/O business model isn't to inundate you with advertisements, monopolize your attention, or sell your data like some other popular online platforms.
 
 If you're concerned about who will see your Curler data however, please review our [privacy statement](/privacy) and [terms of use](/terms) for more details.
