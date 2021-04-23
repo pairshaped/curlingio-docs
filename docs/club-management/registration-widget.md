@@ -24,7 +24,7 @@ The embed our widget on one of you pages, you simply copy and paste the javascri
 
 There are two variables above you must replace for this to work.
 - `[url]` is your Curling I/O base URL. For example; `https://club.curling.io`
-- `[section]` is the section from Curling I/O you want to display. This must be `leagues`, `competitions`, or `products`. This allows you show different section on different pages of your website.
+- `[section]` is the section from Curling I/O you want to display. This must be `leagues`, `competitions`, or `products`. This is how you show different section on different pages of your website.
 
 ### WordPress
 
