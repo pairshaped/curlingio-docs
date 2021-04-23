@@ -26,6 +26,7 @@ module.exports = {
       'club-management/managers',
       'club-management/waivers',
       'club-management/settings',
+      'club-management/registration-widget',
     ],
     "Event Management": [
       'event-management/registrations',
