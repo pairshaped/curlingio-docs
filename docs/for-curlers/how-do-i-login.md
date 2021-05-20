@@ -24,7 +24,9 @@ That's all there is to it. You should now be logged in, and most likely back on 
 The following short video will take you through the basics of logging in.
 If you're new to Curling I/O and struggling, it might be worth watching.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ## Passwordless Authentication
 
