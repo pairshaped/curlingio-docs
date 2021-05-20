@@ -58,5 +58,5 @@ The content of your articles are entered using markdown or HTML. (http://chibico
 
 ## SEO
 
-Any pages and articles you create will be published in your sitemap.xml (used by search engines) and have appropriate meta tags and titles.
+Any pages and articles you create will be published in your sitemap.xml (used by search engines like Google) and have appropriate meta tags and titles.
 
