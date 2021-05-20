@@ -6,7 +6,7 @@ slug: /club-management/curlers
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 In Curling I/O, curler profiles belong to your members themselves.
-Members can they reuse their curler profiles for registration across multiple seasons at your club, and also at other clubs, provincial, and even national competitions they may participate in.
+Members can reuse their curler profiles for registration across multiple seasons at your club, and also at other clubs, provincial, and even national competitions they may participate in.
 
 ## Finding Curler Profiles
 
