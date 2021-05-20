@@ -11,7 +11,7 @@ The following video will take you through the basics of scoring for a league or 
 If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/sjSN5mhLZVo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+  <iframe width="100%" src="https://www.youtube.com/embed/sjSN5mhLZVo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 
 ## Finding the Scores Section

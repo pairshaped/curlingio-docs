@@ -17,7 +17,7 @@ The following video will take you through the basics of setting up your discount
 If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3h7oZzkYfkM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+  <iframe width="100%" src="https://www.youtube.com/embed/3h7oZzkYfkM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 
 ## Finding your Discounts
