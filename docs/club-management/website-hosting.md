@@ -39,24 +39,24 @@ You can also change the landing page for your Curling I/O to have it point to yo
 
 ## Pages
 
-Add as many pages as you like and specify the order that they appear in.
+Each page has a title, a position (order), whether or not it's published (or a draft), an optional image, and the body content.
 
-You can *restrict* individual pages so that they can only be seen by paying members, or even specify the product or fee they must have purchased in order to see a page.
+You can *restrict* individual pages so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see a page.
 By default pages are unrestricted.
 
-The content of your pages are entered using markdown or HTML. (http://chibicode.github.io/markdown-toolbar-cheatsheet/)
+Similar to event and product descriptions, the body content of your page is entered using [markdown](http://chibicode.github.io/markdown-toolbar-cheatsheet/) or HTML.
 
 
 ## Articles / News
 
-Add as many articles as you like. The order they appear in is chronological based on the publish date you enter when creating the article.
+Each article has a title, the date when it should be published, an optional image, and the body content.
+The order in which articles appear is based on the published date (most recent first)
 
-You can *restrict* individual articles so that they can only be seen by paying members, or even specify the product or fee they must have purchased in order to see an article.
+You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article.
 By default articles are unrestricted.
 
-The content of your articles are entered using markdown or HTML. (http://chibicode.github.io/markdown-toolbar-cheatsheet/)
+Similar to event and product descriptions, the body content of your article is entered using [markdown](http://chibicode.github.io/markdown-toolbar-cheatsheet/) or HTML.
 
 ## SEO
 
 Any pages and articles you create will be published in your sitemap.xml (used by search engines like Google) and have appropriate meta tags and titles.
-
