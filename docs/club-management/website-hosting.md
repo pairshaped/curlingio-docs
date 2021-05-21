@@ -16,7 +16,7 @@ If our *no frills* approach meets your club's requirements you can eliminate a t
 
 Please see https://demo.curling.io/ for an example of what this looks like.
 
-Our website hosting option will remain *no frills* for the forseeable future. Our rational is twofold:
+Our website hosting option will remain *no frills* for the foreseeable future. Our rational is threefold:
 
 1. There are hundreds of website hosting businesses out there already with some pretty extensive features. We simply can't compete with them and still maintain our focus on curling specific features.
 2. Occasionally a club will end up with a complicated website hosting platform, and then years later due to staff churn, struggle with updating and maintaining it. This is especially a problem with some of the most popular platforms like Wordpress, where being out of date has security implications.
