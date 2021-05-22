@@ -25,11 +25,13 @@ Our website hosting option will remain *no frills* for the foreseeable future. O
 
 ## Turn On / Off Website Hosting
 
-To enable website hosting:
+To enable website hosting. Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Settings**.
 
-1. Click on "Settings" in the top left "Club" menu.
-2. Check the "Are we hosting your website?" option.
-3. Click on "Save"
+![Settings Navigation](/img/docs/club-management/settings/navigation.png)
+
+On your settings screen, check the "Are we hosting your website?" option, then save it.
+
+![Settings Website Hosting](/img/docs/club-management/settings/website-hosting.png)
 
 Once enabled you will see "Pages" and "Articles" in the top navigation.
 
