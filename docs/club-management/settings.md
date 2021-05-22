@@ -9,7 +9,7 @@ You can modify some of the core settings for your club in the settings section.
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Settings**.
 
-![Reports Navigation](/img/docs/club-management/settings/navigation.png)
+![Settings Navigation](/img/docs/club-management/settings/navigation.png)
 
 
 ## Basic Settings
@@ -33,6 +33,8 @@ We offer a very limited and simple website hosting option at this time, and we e
 
 When you check the "Are we hosting your website?" option, you will see two new entries in your admin area; **Pages** and **Articles**.
 You can create as many pages and articles as you like, and you can even gate pages and articles to members only or even members who have paid for a specific fee.
+
+More details about this feature can be found in the [website hosting section.](/docs/club-management/website-hosting)
 
 ### Brand Colour
 
