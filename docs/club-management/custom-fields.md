@@ -19,7 +19,7 @@ Within your admin area, click on the **Club** dropdown menu in the top bar and t
 
 ![Navigation](/img/docs/club-management/custom-fields/navigation.png)
 
-To create a fee click on the **New custom field** button.
+To create a custom field click on the **New custom field** button.
 
 ![New](/img/docs/club-management/custom-fields/new.png)
 
