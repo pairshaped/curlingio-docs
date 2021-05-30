@@ -23,6 +23,7 @@ module.exports = {
       'club-management/curlers',
       'club-management/reports',
       'club-management/custom-fields',
+      'club-management/draw-schedule-templates',
       'club-management/managers',
       'club-management/waivers',
       'club-management/settings',
