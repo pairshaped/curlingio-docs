@@ -43,7 +43,7 @@ If the template is custom to a specific league or competition though, you will p
 
 #### Teams
 
-How many teams will there be for this draw schedule?
+How many teams will there be for this draw schedule? If you are running 2 pools, please double the number of teams. For example, 2 pools of 8 teams each will require your draw schedule template to specify 16 teams.
 
 #### Sheets
 
@@ -53,6 +53,11 @@ How many sheets are being used for this draw schedule?
 
 How many draws will there be in this draw schedule?
 
+#### Pools
+
+If you are running multiple round robin stages (pools). Multiple pools are assumed to have the same number of teams in each. For example, 2 pools of 8 teams each, will assign team numbers of 1-8 for the first pool, and 9-16 for the second pool.
+
+** NOTE: Multiple pools are currently a work in progress. You can setup your draw schedule templates now, however the matching and implementation hasn't been completed yet **
 
 ### Editing the Template
 
