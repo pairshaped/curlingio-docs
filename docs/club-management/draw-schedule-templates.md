@@ -57,7 +57,8 @@ How many draws will there be in this draw schedule?
 
 If you are running multiple round robin stages (pools). Multiple pools are assumed to have the same number of teams in each. For example, 2 pools of 8 teams each, will assign team numbers of 1-8 for the first pool, and 9-16 for the second pool.
 
-** NOTE: Multiple pools are currently a work in progress. You can setup your draw schedule templates now, however the matching and implementation hasn't been completed yet **
+When using a multiple pool draw schedule template, each of your pools must have the same number of teams and sheets.
+
 
 ### Editing the Template
 
