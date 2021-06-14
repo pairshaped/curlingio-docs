@@ -7,20 +7,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Overview
 
-Curling I/O comes with an extremely basic (no frills) and free integrated website hosting option allowing you to publish pages and articles within your Curling I/O website.
-We do not provide custom domains, navigation menu customization, or advanced styling options.
+Need a web presence for your club that isn't a Facebook group, but don't want the expense or complex administrative burden that comes with a full website hosting service (e.g. WordPress)?  Try Curling I/O's basic website hosting option!
 
-Most clubs are already hosting their website with a third party like Wordpress, Wix, Squarespace, Weebly, etc. Curling I/O website hosting is entirely optional and disabled by default.
+For clubs that lack a web presence, Curling I/O includes a basic integrated website hosting option, allowing you to publish simple pages and articles with image and textual content within your I/O environment.  This content hosting does *not* include custom domains (e.g. www.yourclub.ca vs. yourclub.curling.io), navigation menu customization, or advanced styling options.
 
-If our *no frills* approach meets your club's requirements you can eliminate a third party hosting expense, and a potentially intimidating learning curve (I'm looking at you Wordpress!).
+This basic content hosting option is disabled by default, since most clubs already have their own web presence (e.g. Wordpress, Wix, Squarespace, Weebly, etc.).
 
-Please see https://demo.curling.io/ for an example of what this looks like.
+Visit https://demo.curling.io/ to see what basic content can look like.
 
-Our website hosting option will remain *no frills* for the foreseeable future. Our rational is threefold:
+This website hosting option remains limited to basic text/image content for several reasons:
 
-1. There are hundreds of website hosting businesses out there already with some pretty extensive features. We simply can't compete with them and still maintain our focus on curling specific features.
-2. Occasionally a club will end up with a complicated website hosting platform, and then years later due to staff churn, struggle with updating and maintaining it. This is especially a problem with some of the most popular platforms like Wordpress, where being out of date has security implications.
-3. We believe that pages, articles, leagues, competitions, and products encompass most, if not all, of what your members are looking for when they visit your website.
+1. We are not in the business of competing with established industry-leading website hosting platforms, nor do we think clubs necessarily need most of their extensive features to establish an effective web presence. Avoiding that market space allows us to keep our focus on *curling specific* features.
+2. Clubs with complex websites can often lose tech expertise (due to staff/volunteer churn) and wind up with a monolith no one knows how to update or maintain.  I/O's basic website hosting option is simple, easy to learn and maintain, secure, and is perpetually supported.
+3. Fewers bells & whisltes means less to break or ditract your curlers from what they're really ultimately looking for:  club announcements, league schedules/scores/standings, self-registration, prices, etc.  Our basic pages, articles, leagues, competitions, and products encompass that efficiently and effectively.
 
 
 ## Turn On / Off Website Hosting
@@ -54,11 +53,10 @@ Similar to event and product descriptions, the body content of your page is ente
 Each article has a title, the date when it should be published, an optional image, and the body content.
 The order in which articles appear is based on the published date (most recent first)
 
-You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article.
-By default articles are unrestricted.
+You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article.  By default articles are unrestricted.
 
 Similar to event and product descriptions, the body content of your article is entered using [markdown](http://chibicode.github.io/markdown-toolbar-cheatsheet/) or HTML.
 
-## SEO
+## SEO (Search Engine Optimization)
 
-Any pages and articles you create will be published in your sitemap.xml (used by search engines like Google) and have appropriate meta tags and titles.
+Any pages and articles you create will be published in your sitemap.xml (used by search engines like Google) and have appropriate meta tags and titles for better search indexing and discoverability on the web.
