@@ -73,6 +73,11 @@ To see a chart showing refunds by date, click the **Refunds by date** link in th
 These are the discounts that have been received by your curlers.
 
 
+### Club Credit Logs
+
+History of all club credits that have been granted and used.
+
+
 ### Waivers
 
 These are the waivers that have been accepted by your curlers.
@@ -95,3 +100,9 @@ To see a chart showing payouts by date, click the **Payouts by date** link in th
 
 This report only shows up once you're set up with our online payment processor, and is necessary for bookkeeping, as it links your orders to your deposits.
 
+
+### Disputes
+
+List of payment disputes that can be filtered by date range.
+
+This report only shows up once you're set up with our online payment processor.
