@@ -75,7 +75,11 @@ Curling I/O will do it's best to automatically generate your draw schedule when 
 
 **Important: Regenerating an existing schedule will wipe it out and start from scratch.**
 
-The auto-generation is usually a good starting place, but you may need to make some manual tweaks.
+The auto-generation will use matching [draw schedule templates](/docs/club-management/draw-schedule-templates) provided by Curling I/O or custom templates specific to your club.
+If there's more than one matching draw schedule template, you will be prompted to choose which one to use.
+
+If there are no matching draw schedule templates, then we will attempt to auto-assemble your draw schedule.
+This is usually a good starting place, but you may need to make some manual tweaks.
 
 ## Manual Scheduling
 
@@ -93,4 +97,3 @@ You can remove draws from your schedule by clicking the "X" button next to the d
 You can undo all of the changes made since your last save by clicking the "Reset" button.
 
 When you're happy with your draw schedule, click the "Save" button to save it.
-
