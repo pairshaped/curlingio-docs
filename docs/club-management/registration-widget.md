@@ -9,7 +9,7 @@ You can list your leagues, competitions, and products from Curling I/O onto your
 
 ## Setup
 
-The embed our widget on one of you pages, you simply copy and paste the javascript snippet below.
+To embed our widget on one of you pages, you simply copy and paste the javascript snippet below.
 
 ```
 <script src="https://pairshaped.github.io/curlingio-registration-widget/prod.min.js"></script>
