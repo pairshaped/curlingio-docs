@@ -22,7 +22,7 @@ Within your admin area, click on the **Club** dropdown menu in the top bar and t
 
 ![Navigation](/img/docs/club-management/club-credits/navigation.png)
 
-To grant credits to a specific user, enter their email address, the amount to grant, and then click the **Add credit** button.
+To grant credits to a specific user, enter their email address (that they will use to login), the amount to grant, and then click the **Add credit** button.
 
 ![New](/img/docs/club-management/club-credits/new.png)
 
