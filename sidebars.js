@@ -19,6 +19,7 @@ module.exports = {
       'club-management/products',
       'club-management/fees',
       'club-management/discounts',
+      'club-management/club-credits',
       'club-management/orders',
       'club-management/curlers',
       'club-management/reports',
