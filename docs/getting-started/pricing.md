@@ -28,7 +28,7 @@ There are **NO FEES** for offline payments. This is when a member registers at y
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
 
-We can't offer the same price for U.S. base clubs, simply because we don't have a volume discount w/ our payment processed in the U.S. If you are a U.S. based club, please contact us for details: support@curling.io.
+We can't offer the same price for U.S. base clubs, simply because we don't have a volume discount w/ our payment processor in the U.S yet. If you are a U.S. based club, please contact us for details: support@curling.io.
 
 ## Example Fees for Online Payments
 
