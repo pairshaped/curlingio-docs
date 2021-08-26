@@ -27,6 +27,7 @@ module.exports = {
       'club-management/draw-schedule-templates',
       'club-management/managers',
       'club-management/waivers',
+      'club-management/alerts',
       'club-management/settings',
       'club-management/website-hosting',
       'club-management/registration-widget',
@@ -42,8 +43,6 @@ module.exports = {
       'event-management/event-managers',
     ],
     // "Advanced Features": [
-    //   'advanced/widgets',
-    //   'advanced/alerts',
     //   'advanced/email-templates',
     // ],
     // API: [
