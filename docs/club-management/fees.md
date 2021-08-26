@@ -63,6 +63,10 @@ If the _requires a curler profile_ option is selected you can also specify wheth
 By checking the seasonal per curler box you are ensuring that the curler won't be asked to purchase this fee more than once in a given season.
 This is checked by default for new fees.
 
+### Seasonal per curler
+
+When you are requiring a curler profile and only want the fee charged once per season then this should be checked. However, if you want to charge the fee each time they register (for a league / product / competition that includes the fee) then make sure this is unchecked.
+This is checked by default since most fees are seasonal.
 
 ### Active
 
