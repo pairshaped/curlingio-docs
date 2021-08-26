@@ -65,7 +65,10 @@ This is checked by default for new fees.
 
 ### Seasonal per curler
 
-When you are requiring a curler profile and only want the fee charged once per season then this should be checked. However, if you want to charge the fee each time they register (for a league / product / competition that includes the fee) then make sure this is unchecked.
+You can restrict the fee so that it can't be paid more than once per curler per season. You must require a curler profile as well for this to work.
+
+If, however, the fee should be paid each time they register (for a league / product / competition that includes the fee) then make sure this is unchecked.
+
 This is checked by default since most fees are seasonal.
 
 ### Active
