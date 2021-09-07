@@ -84,6 +84,15 @@ This is a brief description that will be displayed below your custom field when 
 You can include any instructions here if necessary.
 
 
+### Select Relevant Reports
+
+By default none of the downloaded reports will include your custom field. You'll need to check the box next to the reports that should include it.
+
+For example, if you are adding a "Contact Name" custom that will be asked during competition registrations, then you'll most likely want to check the "Competition report" box so that it shows up in that report's downloaded data.
+
+[More information on reports can be found here.](/docs/club-management/reports)
+
+
 ## Deleting Custom Fields
 
 To remove a custom field, click the **Delete** link next to it.
