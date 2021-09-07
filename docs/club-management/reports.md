@@ -33,12 +33,16 @@ To view the raw data click on **Fees**.
 To see a chart comparing the revenue per fee, click the **Revenue** link in the description.
 To see a chart comparing the volume of orders per fee, click the **Orders** link in the description.
 
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
+
 ### Leagues
 
 These are the leagues that have been ordered.
 To view the raw data click on **Leagues**.
 To see a chart comparing the revenue per league, click the **Revenue** link in the description.
 To see a chart comparing the volume of orders per league, click the **Orders** link in the description.
+
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
 
 ### Competitions
 
@@ -47,12 +51,16 @@ To view the raw data click on **Competitions**.
 To see a chart comparing the revenue per competition, click the **Revenue** link in the description.
 To see a chart comparing the volume of orders per competition, click on the **Orders** link in the description.
 
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
+
 ### Products
 
 These are the products that have been ordered.
 To view the raw data click on **Products**.
 To see a chart comparing the revenue per products, click the **Revenue** link in the description.
 To see a chart comparing the volume of orders per products, click the **Orders** link in the description.
+
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
 
 ### Payments
 
@@ -71,6 +79,8 @@ To see a chart showing refunds by date, click the **Refunds by date** link in th
 ### Discounts
 
 These are the discounts that have been received by your curlers.
+
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
 
 
 ### Club Credit Logs
@@ -91,6 +101,8 @@ These are the curlers that have opted to spare for one of more events.
 ### Order Items
 
 This is an unfiltered list of all order items (leagues, products, competitions, and fees).
+
+Custom fields are not included in this report's download unless you have [explcitly included them.](/docs/club-management/custom-fields#select-relevant-reports)
 
 
 ### Payouts
