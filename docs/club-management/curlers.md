@@ -54,6 +54,22 @@ It's a convenient way to see what purchases a curler is associated with.
 ![Purchased](/img/docs/club-management/shared/purchased.png)
 
 
+## Transferring Profile Ownership
+
+Occasionally you may need to transfer ownership of a curler profile to a different account (email address).
+
+This can happen when a profile was created using a club staff account during an in person registration night, but the curler themselves later create their own account.
+
+In order to transfer ownership to another email address, that email address must first have logged in at least once (to create an account within Curling I/O).
+
+1. Go to the "Curlers" screen.
+2. Click on the name of the curler you wish to transfer.
+3. Click the "Transfer ownership" button at the bottom of this screen.
+4. Enter the email address you wish to transfer ownership to.
+
+![Transfer Curler](/img/docs/club-management/curlers/transfer_curler.png)
+
+
 ## Importing Curler Profiles
 
 If this is your club's first season using Curling I/O then you can import curlers from a previous season that do not yet have a profile in the system by uploading a CSV file.
