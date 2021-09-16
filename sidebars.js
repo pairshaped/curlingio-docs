@@ -42,9 +42,9 @@ module.exports = {
       'event-management/scores',
       'event-management/event-managers',
     ],
-    // "Advanced Features": [
-    //   'advanced/email-templates',
-    // ],
+    "Advanced Features": [
+      'advanced/augmenting-curler-profiles',
+    ],
     // API: [
     //   'api/leagues',
     //   'api/competitions',
