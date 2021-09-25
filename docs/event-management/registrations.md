@@ -6,11 +6,11 @@ slug: /event-management/registrations
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can manage the registrations for each of your leagues or competitions.
-To get to the registrations screen, first click on the name of a league of competition.
+To get to the registrations screen, first click on the name of a league or competition.
 
 ![Events List](/img/docs/event-management/shared/events.png)
 
-You should then see a list of tabs near the top.
+You will then see a list of tabs near the top.
 Click on the **Registrations** tab.
 
 ![Registrations Navigation](/img/docs/event-management/registrations/navigation.png)
