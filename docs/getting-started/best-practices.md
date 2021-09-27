@@ -18,7 +18,7 @@ You can uncheck this box to accept team registrations, but this is almost always
 
 Individual registration has multiple benefits:
 
-1. You can accurately capture membership and affiliation fees per member per season. Curling I/O will remember which fees a curler has already paid each season and they won't be charged more than once. Alternatively, with team registrations, and these fees are embedded within team prices, you will *double dip* when one of your members is on more than one team in more than one league.
+1. You can accurately capture membership and affiliation fees per member per season. Curling I/O will remember which fees a curler has already paid each season and they won't be charged more than once. Alternatively, with team registrations, if these fees are embedded within team prices, you will *double dip* when one of your members is in multiple leagues.
 2. Addons like lockers can be associated with individual curlers when they register for their leagues.
 3. You can still gather team and position information simply by asking for the team or skip name and their position. Curling I/O will later make team recommendations based on these fields if you are using our league management features.
 4. Through the use of discounts and custom fields you can still offer individual discounts based on team size. For example, you can ask if it's a 5 person team and offer a 20% off discount for each individual who selects it.
@@ -45,14 +45,14 @@ If all 5 members of the team do this, they will together pay the total team pric
 ## Avoid Complex Discount Combinations
 
 We know that sometimes this can't be helped, but we recommend staying away from complicated discount schemes.
-If you can't quickly grasp your discount logic without using a spreadsheet, then it's likely your curlers can't either.
+If you can't quickly grasp your discount logic without using a spreadsheet, then your curlers probably can't either.
 
-Discounts can be a great way to get new members and encourage more involvement through multiple leagues, but only if your members realize how they can qualify.
+Discounts can be a great way to get new members and encourage more involvement through multiple leagues, but only if your members realize how they may qualify.
 
 
 ## Make Sure Fees are Required
 
-When assigning your seasonal fees to your leagues or products, make you mark them as required.
+When assigning your seasonal fees to your leagues or products, make sure you mark them as required.
 Curling I/O keeps track of which curlers have paid which seasonal fees and won't charge them again within the same season.
 
 If you do not mark them as required, then you will miss collecting a lot of fees because the member didn't check the box to pay these fees.
@@ -96,5 +96,4 @@ If this is your first time using Curling I/O, and you've just finished setting e
 DO NOT LEAVE THIS UNTIL THE DAY BEFORE REGISTRATION!
 
 Make sure you're set up well in advance of opening registrations and send us a support request to take a look at least 2 weeks before you open registration.
-
 

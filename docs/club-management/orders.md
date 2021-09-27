@@ -64,7 +64,7 @@ When you click the **Add a refund** button you will be taken to the refund form.
 ### Refund Form
 
 When refunding a payment you can choose which items to refund and specify the amount to refund.
-If you choose items to refund, by default the system will refund the total amounts of the items selected.
+If you choose items to refund, by default the system will total up the amounts of the items selected.
 For example if you are refunding a Curling Canada Fee because the curler had already paid it at another club this season, you just select the fee and we'll figure out the amount to be refunded.
 
 ![List of Payments](/img/docs/club-management/orders/refund-form.png)
@@ -76,6 +76,8 @@ If the payment you are refunding was made through our online payments (credit or
 The system will also autofill the time it was withdrawn and how it was refunded.
 
 You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.
+
+Note: Refunding an item that requires a curler profile, like a league, will also remove that curler's registration from the item (league).
 
 
 ## Adjusting Submitted Orders
