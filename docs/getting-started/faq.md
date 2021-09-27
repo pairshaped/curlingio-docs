@@ -51,6 +51,17 @@ Coaches should NOT be registering their team's curlers as they are not considere
 In the curlers section you can flag profiles as duplicates, and we regularly merge these duplicate profiles.
 You only need to flag one of them.
 
+### One of our members paid less than they should have
+
+This can happen when you have discounts that curler's can opt in to, like a "First Time Curler?" or "5 players on team" discount.
+You'll find that occasionally one of your members opt in when they shouldn't have.
+You have several options to fix this:
+
+1. If payment has not be recorded for the order yet, you're best bet is to [send it back to their cart and have them fix their mistake.](https://curling.io/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart)
+2. If the order has already been paid, you could [simply refund the order and have them redo it.](https://curling.io/docs/club-management/orders#refunds) It's generally easiest to refund to [club credits](https://curling.io/docs/club-management/club-credits) so that their previous payment is automatically applied during the repurchase.
+3. If the order has already been paid, you could create a product for the difference they owe, [flag it as private](https://curling.io/docs/club-management/products#private), and give them the private URL. We generally don't recommend this method as it creates a burden on your bookkeeping.
+
+
 ### What is an Account?
 
 An account is just an email address and possibly a name to go along with it.
