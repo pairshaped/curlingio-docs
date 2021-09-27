@@ -77,6 +77,12 @@ For example if you want to offer a "New Curler" discount for your "Monday Night 
 
 Now when your members register for this league and answer "Yes" that they are a new curler, they will receive the new curler discount.
 
+We also recommend using a dropdown instead of a checkbox for custom fields that are used by a discount's criteria.
+The reason for this is that you can make a dropdown required to force your members to see it.
+If you make a checkbox required it means that everyone must check it off (and everyone then gets the discount).
+If you make a checkbox optional and there are no other required fields for the league or product, then your member's may never even see it because they aren't forced to during registration.
+With a dropdown you can make it required without automatically giving everyone the discount, but are making sure they will all see it.
+
 
 ## Test Your Registrations
 
