@@ -91,6 +91,13 @@ If you are an administrator you already have access to all of your recent orders
 If you're sending thousands of emails to your club's email address and someone with access happens to get annoyed and marks any of them as spam, the system will immediately stop sending you any emails, including other potentially important emails.
 
 
+## Use a separate non-administrator email for registration nights
+
+If you have members coming into your club who are not able to create / login with their own email address, we recommend creating a separate registration specific account to hold these curler profiles and orders.
+
+If you want to be able to handle multiple registrations at the same time on this registration account, please let us know and we can flag it as a "multicart" account to avoid having these multiple instances of the login from clobbering each other's cart.
+
+
 ## Test Your Registrations
 
 Make sure that you test each possible registration scenario before you open up registration to your members.
