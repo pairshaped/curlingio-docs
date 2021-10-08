@@ -12,6 +12,9 @@ These snapshots along with which waivers have been accepted can be found in the 
 You can customize or completely replace these waivers, or you can simply disable our waivers if you'd rather manage that process yourself at the club.
 
 The default waivers come from Curling Canada's Business of Curling program.
+Occasionally we may need to update these default waivers, and will let you know via our system alerts (notifications that show up at the top of the page that you can dismiss).
+When we do make changes to the default waivers, it will only affect you if you are not already using customized versions.
+We will never update your customized waivers, only the default templates.
 
 
 ## Customizing Waivers 
