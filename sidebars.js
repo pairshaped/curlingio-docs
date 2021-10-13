@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Getting Started": [
-      'getting-started/overview',
+      'getting-started/curling-club-managers',
       'getting-started/pricing',
       'getting-started/book-an-onboarding-session',
       'getting-started/support-and-feedback',
