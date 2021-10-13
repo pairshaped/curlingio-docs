@@ -5,7 +5,7 @@ slug: /club-management/alerts
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Alerts allow you to display specific messages to your members on specific screens, and until a specific date like so:
+Alerts allow you, the curling club manager, to display specific messages to your members on specific screens, and until a specific date like so:
 
 ![Alert Displayed](/img/docs/club-management/alerts/offline-payment-alert-display.png)
 

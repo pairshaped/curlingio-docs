@@ -4,7 +4,7 @@ title: Best Practices
 slug: /getting-started/best-practices
 ---
 
-This document is for club managers that are new to Curling I/O or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
+This document is for curling club managers that are new to Curling I/O or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
 
 We'll start by outlining some general best practices with the reasoning behind them, and then go through specific examples we've seen club's struggle with.
 

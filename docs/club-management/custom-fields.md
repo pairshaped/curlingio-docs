@@ -5,7 +5,7 @@ slug: /club-management/custom-fields
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Custom fields allow you to ask any question you like during registration or purchase of one of your leagues, competitions, or products.
+Custom fields allow you, the curling club manager, to ask any question you like during registration or purchase of one of your leagues, competitions, or products.
 
 If for example, you'd like to know the name of a team's coach during registration for one of your bonspiels, or whether it's a curler's first time curling at your club, you can create custom fields for these questions.
 You can even have a custom field for a coupon code and then tie a discount to it.

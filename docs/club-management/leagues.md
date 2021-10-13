@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Walkthrough Video
 
-The following video will take you through the basics of creating a league and opening up registrations.
+The following video will take you, the curling club manager, through the basics of creating a league and opening up registrations.
 Competitions are identical except that for a competition you will usually not require a curler profile, as they will be team based registrations.
 If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
 
