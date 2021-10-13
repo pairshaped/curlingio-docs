@@ -1,11 +1,11 @@
 ---
-id: overview
-title: Overview
-slug: /getting-started/overview
+id: curling-club-managers
+title: Curling Club Managers
+slug: /getting-started/curling-club-managers
 ---
 
 Curling I/O is the best in class curling club management and registration platform brought to you by Curling Canada.
-Our focus is to make it easy for clubs to manage both their registration online and manage their leagues.
+Our focus is to make it easy for curling club managers to take registrations online and manage their leagues.
 
 We also have extremely affordable (and simple) pricing for clubs of all sizes, with no monthly or setup fees.
 

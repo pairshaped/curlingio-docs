@@ -7,6 +7,19 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'pairshaped', // Usually your GitHub org/user name.
   projectName: 'curlingio-docs', // Usually your repo name.
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/getting-started/curling-club-managers', // string
+            from: '/docs/getting-started/overview',
+          },
+        ],
+      },
+    ],
+  ],
   themeConfig: {
     colorMode: {
       disableSwitch: true,
@@ -27,7 +40,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/getting-started/overview',
+          to: 'docs/getting-started/curling-club-managers',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'right',
@@ -47,7 +60,7 @@ module.exports = {
           items: [
             {
               label: 'For Clubs',
-              to: 'docs/getting-started/overview',
+              to: 'docs/getting-started/curling-club-managers',
             },
             {
               label: 'For Curlers',

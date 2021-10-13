@@ -158,7 +158,7 @@ function Home() {
                 'button button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/getting-started/overview')}>
+              to={useBaseUrl('docs/getting-started/curling-club-managers')}>
               Get Started  →
             </Link>
           </div>
