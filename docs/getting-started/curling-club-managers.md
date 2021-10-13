@@ -11,7 +11,7 @@ We also have extremely affordable (and simple) pricing for clubs of all sizes, w
 
 ## Online Registration
 
-Curling I/O was built from the ground up to manage curler registration.
+Curling I/O was built from the ground up to manage curling club registrations.
 It's intuitive and seamless for curlers of all ages to use season after season.
 In fact, our national curler database makes it even easier to register again after the first season as they won't need to rekey all of their information.
 
@@ -22,7 +22,7 @@ It only takes around 5 minutes to get your club setup for online payments.
 
 ## League and Competition Management
 
-We've developed some innovative features to help you manage your leagues and competitions.
+We've developed some innovative features to help curling clubs manage their leagues and competitions.
 
 - Automated team recommendations and assembly.
 - Round robin generation.
@@ -39,7 +39,7 @@ If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca
 
 ## Bookkeeping and Reports
 
-We have an extensive reports section that bookkeepers love.
+We have an extensive reports section that curling club managers and bookkeepers love.
 
 Our reports help you figure out your taxes on registrations and really dig down into the data to see how your club is performing financially.
 

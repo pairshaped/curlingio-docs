@@ -18,7 +18,7 @@ You can login using a Google (Gmail) account or you can have a login link / code
 
 ### Can I import our club's existing curlers?
 
-Yes, you can import curlers from a previous season that aren't already registered with Curling I/O by uploading a CSV file.
+Yes, curling club managers can import curlers from a previous season that aren't already registered with Curling I/O by uploading a CSV file.
 CSV files can be exported from any spreadsheet or database program, usually by selecting the "File" menu and selected "Export as" or "Download as" and then selected "CSV".
 [Here's a sample Google Sheet of what you'll need to provide.](https://docs.google.com/spreadsheets/d/1-smgG2v8atZySX68hwoP-gaDJGvD0sGl3_GHZ7XTrtk/edit?usp=sharing) The red columns are required.
 
@@ -27,8 +27,8 @@ It's generally not worth the effort though, as curler's are quick to adopt and k
 ### Can our club use Curling I/O without online payments (for free)?
 
 Yes. We have a handful of clubs that are using Curling I/O just for offline payments and it doesn't cost them a penny.
-Our assumption is that eventually your club will adopt online payments out of convenience for both club staff and your curlers.
-Starting with Curling I/O for offline payments only is a great way to get familiar with the system.
+Our assumption is that eventually your club will adopt online payments out of convenience for both curling club managers and your curlers.
+Starting with Curling I/O for offline payments is a great way for curling club managers to become familiar with the system.
 
 Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible.
 Every support ticket has a cost for us, and our documentation should cover all of your support needs.

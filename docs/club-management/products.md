@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Walkthrough Video
 
-The following video will take you through the basics of creating a product or addon.
+The following video will take you, the curling club manager, through the basics of creating a product or addon.
 If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
