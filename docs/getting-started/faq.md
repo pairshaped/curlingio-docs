@@ -57,9 +57,16 @@ This can happen when you have discounts that curler's can opt in to, like a "Fir
 You'll find that occasionally one of your members opt in when they shouldn't have.
 You have several options to fix this:
 
-1. If payment has not be recorded for the order yet, you're best bet is to [send it back to their cart and have them fix their mistake.](https://curling.io/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart)
-2. If the order has already been paid, you could [simply refund the order and have them redo it.](https://curling.io/docs/club-management/orders#refunds) It's generally easiest to refund to [club credits](https://curling.io/docs/club-management/club-credits) so that their previous payment is automatically applied during the repurchase.
-3. If the order has already been paid, you could create a product for the difference they owe, [flag it as private](https://curling.io/docs/club-management/products#private), and give them the private URL. We generally don't recommend this method as it creates a burden on your bookkeeping.
+1. If payment has not be recorded for the order yet, you're best bet is to [send it back to their cart and have them fix their mistake.](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart)
+2. If the order has already been paid, you could [simply refund the order and have them redo it.](/docs/club-management/orders#refunds) It's generally easiest to refund to [club credits](/docs/club-management/club-credits) so that their previous payment is automatically applied during the repurchase.
+3. If the order has already been paid, you could create a product for the difference they owe, [flag it as private](/docs/club-management/products#private), and give them the private URL. We generally don't recommend this method as it creates a burden on your bookkeeping.
+
+### One of our members paid seasonal fees more than once
+
+If one of your members has paid seasonal fees more than once these are the likely causes:
+
+1. They created a second (duplicate) curler profile. This can happen if they login with a different email address at a later date and that email they used is not also assigned to their original curler profile. Curling I/O can't tell that they've already paid their seasonal fees if they aren't using the same curler profile.
+2. If it's one of your club fees (and not one of the affiliate fees), double check that you've configured it to be [seasonal per curler (can only be purchased once per season).](/docs/club-management/fees#seasonal-per-curler)
 
 
 ### What is an Account?

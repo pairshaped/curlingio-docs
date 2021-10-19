@@ -87,7 +87,7 @@ With a dropdown you can make it required without automatically giving everyone t
 ## Don't spam yourself with registration emails
 
 Your leagues, competitions, and products have a "Notification email" field. This should only be used to send emails to people who aren't also administrators, like an outside dedicated league manager or someone running a commercial league.
-If you are an administrator you already have access to all of your recent orders from the [Orders Screen](https://curling.io/docs/club-management/orders).
+If you are an administrator you already have access to all of your recent orders from the [Orders Screen](/docs/club-management/orders).
 If you're sending thousands of emails to your club's email address and someone with access happens to get annoyed and marks any of them as spam, the system will immediately stop sending you any emails, including other potentially important emails.
 
 
