@@ -6,11 +6,10 @@ slug: /getting-started/best-practices
 
 This document is for curling club managers that are new to Curling I/O or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
 
-If you are brand new to Curling I/O then your best bet is to first watch our [tutorial videos here](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
-Once you have a good grasp of how Curling I/O works, you should come back here to review some of our best practices.
+If you are brand new to Curling I/O then your best bet is to start with our [tutorial videos here](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
 Making the up front time investment to understand your curler registration system will save you a ton of time and headaches down the road once you've started taking registrations.
 
-We'll start by outlining some general best practices with the reasoning behind them, and then go through specific examples we've seen club's struggle with.
+We'll start by outlining some general best practices with the reasoning behind them, and then go through specific examples we've seen clubs struggle with.
 
 
 ## Individual League Registrations
