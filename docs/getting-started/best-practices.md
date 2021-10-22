@@ -116,7 +116,7 @@ You can test your registrations at any time and even submit the orders. You can 
 
 ## Ask us to Review your Setup
 
-If this is your first time using Curling I/O, and you've just finished setting everything up, feel free to ask us to review your setup.
+If this is your first time your club is using Curling I/O, and you've just finished setting everything up, feel free to ask us to review your setup.
 
 DO NOT LEAVE THIS UNTIL THE DAY BEFORE REGISTRATION!
 
