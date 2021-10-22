@@ -18,6 +18,8 @@ We highly recommend that your members register for your leagues as individuals r
 By default league registrations are individual.
 The "Requires curler profile" checkbox is what determines this.
 You can uncheck this box to accept team registrations, but this is almost always a mistake.
+If you do uncheck this box, then it is important you don't have any seasonal fees or addons that require a curler profile associated with the league.
+This includes affiliate fees, which we cannot track for you unless you are taking individual registrations.
 
 Individual registration has multiple benefits:
 
