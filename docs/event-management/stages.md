@@ -49,6 +49,12 @@ How do you want to handle point assignment for ties?
 Provincial and national competitions will typically break tied teams into recursive subgroups for head to head comparisons and fall back to the skill ranking if teams are still tied after breaking out into their smallest possible head to head groups.
 For most club leagues it's usually OK to have teams tied in the standings and you can select *None*.
 
+### Results carry over to
+
+You can have this round robin's results carry over to another round robin for combined standings (a.k.a. crossover).
+For example; the top four teams from two qualifier round robins, Pool A and Pool B, carrying into a championship round.
+You will still need to assign the teams that carry over.
+
 ### Team Assignment
 
 These are the teams that will participate in the round robin.
