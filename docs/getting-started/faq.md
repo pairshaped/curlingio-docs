@@ -116,3 +116,16 @@ Depending on the status of the order there two ways to handle this:
 1. If the order has NOT been paid yet, you can simply either delete the order and have them resubmit or you can [send the order back to their cart](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart). Keep in mind that sending the order back to their cart is not an option if you were registering them using the club multicart login feature.
 2. If the order has been paid, then you'll want to issue a refund and have them resubmit their order. You can even do this on their behalf using the "Login as" feature to login under their account and submit the order for them. A good analogy to consider would be ordering the wrong item from Amazon or The Gap. You can't simply swap out the item being ordered once it's been paid for.
 
+
+### Can we sell raffle (50 / 50) tickets on Curling I/O
+
+You cannot use Curling I/O to process online payments for raffle tickets.
+Raffles, like 50 / 50 tickets, are considered a "Restricted Business" that we are not licensed for.
+If we find that you are using online payments to sell raffle tickets, your club's ability to process online payments will be disabled immediately.
+
+Canadian based clubs can find the list of "Restricted Businesses" here:
+[https://stripe.com/en-ca/restricted-businesses](https://stripe.com/en-ca/restricted-businesses)
+
+U.S. based clubs can find the list of "Restricted Businesses" here:
+[https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
+
