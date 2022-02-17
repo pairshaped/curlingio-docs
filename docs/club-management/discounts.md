@@ -117,6 +117,20 @@ If all discounts they are receiving are exclusive, then the greatest discount am
 
 This is useful if you have a large discount that you never want to stack regardless of whether the curler meets the criteria for any other.
 
+## Troubleshooting Discounts
+
+We highly recommend keeping your discounts as simple as possible, so you know at a glance who will be receiving a discount and under what conditions.
+
+For those unavoidably complex setups, here are some pointers:
+
+1. Make sure your discount is associated with the item that is to be discounted. If you're discounting leagues, then the discount must be associated with each of those leagues. If you are discounting a fee, then the discount must be associated with that fee. You cannot associate a discount to one item and expect it to apply to another it hasn't been associated with.
+2. Make sure that if your discount eligibility is based on a custom field value, that the custom field is also associated everywhere your discount is associated. If you do not, then the question which the discount is based on will never be asked, and no one will receive the discount. For example, if I want to ask curlers if it's their first season and give them a 5% discount on their membership fee if they are, then I need to associate both the custom field to ask the question and the discount itself to the membership fee.
+3. Discounts are additive based on the full price of the item being discounts. Discounts do not compound (you never discount a previously discounted price). For example if I apply two 10% discounts to a league that costs $100, then my total potential discounts are $20.
+4. If you are using a custom field based discount, you usually do not want to use a checkbox. You would instead use a dropdown with "Yes, No" values so that you can make this custom field required, and to also avoid accidental selection by your curlers.
+5. For multiple league discounts, every league that will participate in the discount needs to have it associated.
+6. If a discount is seasonal per curler (should only be received once per season), then the item being discounted must require a curler profile. Otherwise there's no way for the system to know if a curler has already received it.
+7. Multi league discounts are based on curler profile (not account) and will only work if the leagues to be discounted are requiring a curler profile.
+8. In general you should avoid mixing both fixed price and percentage based discounts, or it can be very hard to reason about.
 
 ## Deleting Discounts
 
