@@ -129,3 +129,11 @@ Canadian based clubs can find the list of "Restricted Businesses" here:
 U.S. based clubs can find the list of "Restricted Businesses" here:
 [https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
 
+
+### Refund doesn't show up on the curler's statement
+
+Assuming the refund was issued correctly by club staff (to the correct order), there are a couple reasons it may not show up on the curler's credit card statement.
+
+1. Refunds can take up to 7 days to process. Even then, there could be a further one or two day delay before the curler's bank reflects the refund. If the refund was made recently, please ask them to wait until at least 7 days have passed before contacting support.
+2. Often if a partial refund is made quickly after the initial payment, it's common that the curler's bank will reflect the refund as a reduced payment by subtracting the refund amount from the original payment. For example, a payment of $200 is made followed by a partial refund of $100 within a few days, the eventual credit card statement may show a total payment of $100 instead of both a payment of $200 and a refund of $100, resulting in the same outcome. Please ask them to double check the amount of initial transaction / payment.
+
