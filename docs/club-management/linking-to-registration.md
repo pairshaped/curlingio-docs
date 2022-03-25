@@ -20,5 +20,4 @@ You can also leverage our widget, but it will require a little more technical kn
 <a href="https://club-name.curling.io">Register Online</a>
 ```
 
-** Replace `club-name` with your curling I/O URL. E.g. https://demo.curling.io
-
+** Replace `club-name` with your custom Curling I/O URL. For example: `https://demo.curling.io`
