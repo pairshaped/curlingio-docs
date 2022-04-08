@@ -24,6 +24,7 @@ module.exports = {
       'club-management/club-credits',
       'club-management/orders',
       'club-management/curlers',
+      'club-management/waitlists',
       'club-management/reports',
       'club-management/custom-fields',
       'club-management/draw-schedule-templates',
