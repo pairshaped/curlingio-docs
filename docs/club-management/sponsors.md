@@ -48,4 +48,8 @@ To remove a sponsor, click the **Delete** link next to it. This will also remove
 
 ![Delete](/img/docs/club-management/shared/delete.png)
 
+## Troubleshooting
 
+We noticed after launching this sponsors feature that a popular browser extension called "uBlock Origin" may hide the sponsor logo upload (preventing you from creating a sponsor).
+If you are experiencing this issue, we highly recommend disabling the extension for Curling I/O.
+We don't embed any thiird party advertising within Curling I/O anyways, so ad block extensions like uBlock provide no benefits on our site.
