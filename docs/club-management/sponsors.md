@@ -5,7 +5,11 @@ slug: /club-management/sponsors
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Coming Soon!
+You can create reusable sponsors that can be associated with leagues, competitions, products, pages, and articles.
+
+When a member views the details of any of these items, the sponsor logo will be shown along with it's name.
+
+Curling I/O will keep track of how many times a sponsor has been viewed and how many times it has been clicked (if a URL has been provided).
 
 ## Finding Sponsors
 
@@ -20,14 +24,7 @@ To create a sponsor click on the **New sponsor** button.
 To update an existing sponsor, click the **Edit** link next to it.
 
 
-## The Basics
-
-You can create reusable sponsors that can be associated with leagues, competitions, products, pages, and articles.
-
-When a member views the details of any of these items, the sponsor logo will be shown along with it's name.
-
-Curling I/O will keep track of how many times a sponsor has been viewed and how many times it has been clicked (if a URL has been provided).
-
+## Fields
 
 ### Name
 
