@@ -46,7 +46,6 @@ You can temporarily disable a sponsor logo by deactivating it. You can still ass
 
 To remove a sponsor, click the **Delete** link next to it. This will also remove it from any of it's associations.
 
-![Delete](/img/docs/club-management/shared/delete.png)
 
 ## Troubleshooting
 
