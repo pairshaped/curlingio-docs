@@ -1,13 +1,11 @@
 ---
-id: stages
-title: Stages
-slug: /event-management/stages
+id: round-robins
+title: Round Robins
+slug: /event-management/round-robins
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Stages are your round robins and eventually playoff brackets (coming soon!).
-
-To get to the stages screen, first click on the name of a league of competition.
+To get to the stages screen and manage your round robins, first click on the name of a league of competition.
 
 ![Events List](/img/docs/event-management/shared/events.png)
 
@@ -17,8 +15,6 @@ Click on the **Stages** tab.
 ![Stages Navigation](/img/docs/event-management/stages/navigation.png)
 
 ## Round Robins
-
-Currently the only stage type we support are "Round Robins".
 
 Before you can schedule or score your games, you need to create those games by creating a Round Robin stage.
 
@@ -68,32 +64,3 @@ The system will simply mark any unassigned team slot as *TBD*.
 After saving a round robin, the system will generate all of it's games in the background. It might take a few seconds before this completes and you can set up the draw schedule.
 
 When you make changes to a round robin that affect the games generated you may have to edit or rebuild your draw schedule to compensate those changes.
-
-## Playoff Brackets
-
-We're busy working on a new drag and drop bracket builder. We'll let you know when it's done and can be used to assemble your elimination / playoff brackets. [Click here for a preview of our bracket editor.](https://bracket-builder.curling.io/)
-
-Playoff Bracket Cheat Sheet:
-![Playoff Bracket Cheat Sheet](/img/docs/event-management/stages/playoff-bracket.png)
-
-### Groups
-
-* You can have one or more groups in a bracket. Usually these would be named "Group 1", "Group 2", or "A Event", "B Event", etc.
-* Edit a group's name by clicking the pencil icon next to it.
-* Click the group's name to collapse or show it's grid of games.
-* Add new groups by clicking the "Add Group" button at the bottom of the screen.
-* Remove a group on it's edit screen if it's empty (has no games).
-* You can connect game results between brackets. For example, you could have a B event where teams that have lost play each other, and the winner of the B event could play the winner of the A event in a consolation game.
-
-### Games
-
-* Add new games by double clicking on a blank area within a group.
-* Click the red "X" in the top right corner of a game to remove that game.
-* Move games around by clicking the header of the game (where the game name is), holding down, and dragging the game to a new location. You can even drag games between groups.
-* Double click on a game to edit it and / or assign teams.
-* Click and drag a game's green "W" (winner) or red "L" (loser) circle icon to a game position (top of bottom slot) of another game to connect the potential winner or loser to their next game. For example you can click the green "W" of a semifinal game and drag it to the top slot of the final game.
-* The grid will automatically grow or shrink as you move games near it's edges.
-
-### Saving
-
-None of your changes are persisted until you click the "Save" button. So feel free to play around since you can cancel your changes at any time.
