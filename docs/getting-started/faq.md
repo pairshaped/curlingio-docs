@@ -117,7 +117,7 @@ Depending on the status of the order there two ways to handle this:
 2. If the order has been paid, then you'll want to issue a refund and have them resubmit their order. You can even do this on their behalf using the "Login as" feature to login under their account and submit the order for them. A good analogy to consider would be ordering the wrong item from Amazon or The Gap. You can't simply swap out the item being ordered once it's been paid for.
 
 
-### Can we sell raffle (50 / 50) tickets on Curling I/O
+### Can we sell raffle (50 / 50) tickets on Curling I/O?
 
 You cannot use Curling I/O to process online payments for raffle tickets.
 Raffles, like 50 / 50 tickets, are considered a "Restricted Business" that we are not licensed for.
@@ -136,4 +136,16 @@ Assuming the refund was issued correctly by club staff (to the correct order), t
 
 1. Refunds can take up to 7 days to process. Even then, there could be a further one or two day delay before the curler's bank reflects the refund. If the refund was made recently, please ask them to wait until at least 7 days have passed before contacting support.
 2. Often if a partial refund is made quickly after the initial payment, it's common that the curler's bank will reflect the refund as a reduced payment by subtracting the refund amount from the original payment. For example, a payment of $200 is made followed by a partial refund of $100 within a few days, the eventual credit card statement may show a total payment of $100 instead of both a payment of $200 and a refund of $100, resulting in the same outcome. Please ask them to double check the amount of initial transaction / payment.
+
+
+### Can we like to shift our season start date from July 1st?
+
+Yes, but there are a few things to keep in mind:
+
+- The season start date must be on the first day of the month. E.g. July 1st
+- You will want to pick and maintain the same season start date. Switching this around more than once may create some overlap in your seasonal fees (where curlers paid twice or not at all).
+- The season start date will also impact the age restrictions for your leagues, fees, and discounts. The season start and age cutoff dates are one and the same. If you have a league that requires a minimum age of 13, then it will require age 13 before the season starts (July 1st).
+- You may end up collecting inaccurate affiliate fees. Sometimes your membership association fees will change between seasons, and you could be taking registrations (and collecting fees) before your MA has had a chance to update them. Curling I/O cannot assume responsibility for inaccurate fees, so you may want to check with your membership association before changing your season start date.
+
+
 
