@@ -138,7 +138,7 @@ Assuming the refund was issued correctly by club staff (to the correct order), t
 2. Often if a partial refund is made quickly after the initial payment, it's common that the curler's bank will reflect the refund as a reduced payment by subtracting the refund amount from the original payment. For example, a payment of $200 is made followed by a partial refund of $100 within a few days, the eventual credit card statement may show a total payment of $100 instead of both a payment of $200 and a refund of $100, resulting in the same outcome. Please ask them to double check the amount of initial transaction / payment.
 
 
-### Can we like to shift our season start date from July 1st?
+### Can we to shift our season start date from July 1st?
 
 Yes, but there are a few things to keep in mind:
 
