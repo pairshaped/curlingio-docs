@@ -16,7 +16,7 @@ Click on the **Stages** tab.
 
 ## Playoff Brackets
 
-We're busy working on a new drag and drop bracket builder. We'll let you know when it's done and can be used to assemble your elimination / playoff brackets. [Click here for a preview of our bracket editor.](https://bracket-builder.curling.io/)
+Our bracket builder makes it easy for you to setup elimination brackets / tournaments. Your events can mix round robins and brackets. E.g. Round robin league play ending in an elimination playoff bracket.
 
 Click the **New bracket** button to create a playoff bracket.
 
@@ -44,3 +44,8 @@ Click the **New bracket** button to create a playoff bracket.
 ### Saving
 
 None of your changes are persisted until you click the "Save" button. So feel free to play around since you can cancel your changes at any time.
+
+
+## Open Source
+
+Our bracket builder is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-bracket-builder/>
