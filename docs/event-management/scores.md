@@ -42,3 +42,7 @@ You can optionally enter a score if you want to keep track.
 ![Scoring a Game](/img/docs/event-management/scores/scoring-a-game.png)
 
 Click the **Save** button when you're done to save the changes.
+
+## Open Source
+
+Our scoring application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-scoring/>

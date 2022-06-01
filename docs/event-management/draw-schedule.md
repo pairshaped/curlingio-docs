@@ -97,3 +97,7 @@ You can remove draws from your schedule by clicking the "X" button next to the d
 You can undo all of the changes made since your last save by clicking the "Reset" button.
 
 When you're happy with your draw schedule, click the "Save" button to save it.
+
+## Open Source
+
+Our draw scheduling application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-draws/>
