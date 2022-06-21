@@ -158,7 +158,6 @@ This will publish your schedule, standings, and teams on the public side of your
 
 If you are not planning to use these features within Curling I/O, we recommend you leave this unchecked to avoid confusion.
 
-
 ### Publish Team Contact Information
 
 If you are using Curling I/O's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information to members.
@@ -166,6 +165,11 @@ This only works if you are also publishing the schedules and results.
 
 Note: A member is a logged in user who has purchased something from your club (through Curling I/O) in the current season.
 Users who aren't logged in or have not made a purchase in the current season will never see team contact information.
+
+### End Scores Enabled
+
+If you want to be able to score each of the ends for each team for the league or competition, you can check this box to enable end scores.
+[Refer to our scoring documentation to see how this works.](/docs/event-management/scores)
 
 ### Allow Spares
 
