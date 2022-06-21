@@ -43,6 +43,17 @@ You can optionally enter a score if you want to keep track.
 
 Click the **Save** button when you're done to save the changes.
 
+## End Scores
+
+If end scores are enabled for your league or competition, you'll be presented with more options:
+
+![End Scores](/img/docs/event-management/scores/end-scores.png)
+
+* Scoring each end.
+* Setting which team has the first hammer (last shot in first end).
+* Choosing the rock color for each team.
+
+
 ## Open Source
 
 Our scoring application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-scoring/>
