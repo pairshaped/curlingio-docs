@@ -19,7 +19,6 @@ Our pricing is simple and the same for every canadian club. You won't find a bet
 2.9% + $0.30 means that for any online payments you accept, 2.9% of the amount of the payment plus $0.30 will come off of **your** end of every online payment.
 So if it's a $100 payment you will only receive $96.80 when it's deposited.
 
-
 The 2.9% + $0.30 includes all credit card processing fees. There are no other fees or costs incurred.
 
 You **cannot** pass this fee to your members directly due to credit card processing rules and conventions. This fee will come out of your payout (direct deposit) automatically.
@@ -27,6 +26,8 @@ You **cannot** pass this fee to your members directly due to credit card process
 There are **NO FEES** for offline payments. This is when a member registers at your club using Curling I/O selects the "Cash / Cheque" option. You are responsible for collecting offline payments and logging those payments against your orders in Curling I/O. Offline payments cost you nothing but your time (to collect and log).
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
+
+International credit cards incur additional fees with our payment processor, resulting in a 3.4% + $0.30 fee. You can optionally let us know if you do not want to accept international cards (forcing members to pay using other means).
 
 We can't offer the same price for U.S. base clubs, simply because we don't have a volume discount w/ our payment processor in the U.S yet. If you are a U.S. based club, please contact us for details: support@curling.io.
 
