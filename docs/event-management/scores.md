@@ -52,6 +52,7 @@ If end scores are enabled for your league or competition, you'll be presented wi
 * Scoring each end.
 * Setting which team has the first hammer (last shot in first end).
 * Choosing the rock color for each team.
+* If a game is tied after all ends have been played (10), we will keep adding new ends until one team scores, or until you set the result to "Tied".
 
 
 ## Open Source
