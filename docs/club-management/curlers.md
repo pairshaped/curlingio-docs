@@ -84,6 +84,7 @@ CSV files can be exported from any spreadsheet or database program, usually by s
 Only the columns in red are required. The other columns are optional and may be ignored or removed from your import.
 You must make sure your column names are identical to this example spreadsheet's column names.
 
+
 ### The required fields are:
 - First Name
 - Last Name
@@ -97,6 +98,22 @@ You must make sure your column names are identical to this example spreadsheet's
 - Postal Code (or Zip Code)
 - Emergency Contact Name
 - Emergency Contact Phone
+
+These required fields (columns) are highlited in red in the example spreadsheet linked to above.
+
+### Formatting and Values
+- The format for date fields is YYYY-MM-DD. For example; January 25th, 1980 would be formatted as "1980-01-25".
+- The gender options are "male", "female", and "unspecified".
+- Phone numbers should always include the area code and may optionally include the country code (1 for Canada and US). E.g. 1-416-123-1234
+- Province should be a 2 letter abbreviation (for US clubs, you can enter the 2 letter state abbreviation here, but keep the column named Province). E.g. "ON"
+- Country should be a 2 letter abbreviation. E.g. "CA" for Canada and "US" for United States.
+- Twitter handles do not need to include the @ symbol.
+- Zip code can be entered into the Postal Code column for US based clubs.
+
+It's probably easiest to just look at the values in the provided example spreadsheet, if you're not sure on the format or requirement of a field.
+
+
+### Running the Import
 
 Once you have a CSV to import, upload it by clicking the "Choose File" button and selecting it.
 Then click the "Import" button to run the import.
