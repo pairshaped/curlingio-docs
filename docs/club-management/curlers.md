@@ -85,7 +85,7 @@ Only the columns in red are required. The other columns are optional and may be 
 You must make sure your column names are identical to this example spreadsheet's column names.
 
 
-### The required fields are:
+### Required Fields
 - First Name
 - Last Name
 - Date Of Birth
@@ -101,7 +101,7 @@ You must make sure your column names are identical to this example spreadsheet's
 
 These required fields (columns) are highlited in red in the example spreadsheet linked to above.
 
-### Formatting and Values
+### Formatting
 - The format for date fields is YYYY-MM-DD. For example; January 25th, 1980 would be formatted as "1980-01-25".
 - The gender options are "male", "female", and "unspecified".
 - Phone numbers should always include the area code and may optionally include the country code (1 for Canada and US). E.g. 1-416-123-1234
