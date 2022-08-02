@@ -29,9 +29,9 @@ There are **NO FEES** for offline payments. This is when a member registers at y
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
 
-International credit cards incur additional fees with our payment processor, resulting in a 3.4% + $0.30 fee. You can optionally let us know if you do not want to accept international cards (forcing members to pay using other means).
+International credit cards incur additional fees with our payment processor, resulting in a 3.4% + $0.30 fee. This is usually only a concern if you're running a large competition in which competitors are coming in from other countries.
 
-We can't offer the same price for U.S. base clubs, simply because we don't have a volume discount w/ our payment processor in the U.S yet. If you are a U.S. based club, please contact us for details: support@curling.io.
+Only VISA and Mastercard are currently accepted (or debit cards with their co-branding). Other cards incur additional fees for our clubs, so we've opted to disable them for the time being.
 
 ### Example Fees for Online Payments
 
@@ -55,9 +55,9 @@ The majority of this cost is paid to the credit card processor.
 `$1,000 x 2.9% + 30c = $29.30`
 
 
-## Clubs Outside of Canada
+## Clubs in the United States
 
-Our pricing is simple and the same for every club outside of Canada.
+Our pricing is simple and the same for every club in the United States.
 
 **3.6% + $0.35 per transaction** for online payments.
 
@@ -80,12 +80,14 @@ There are **NO FEES** for offline payments. This is when a member registers at y
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
 
-We would love to offer our international clubs the same pricing as our canadian clubs, but unfortunately it's not up to us. Each country results in a separate agreement with our payment processor. If we are ever able to negotiate a lower rate in your country, we will pass those savings on to you.
+We would love to offer our US based clubs the same pricing as our canadian clubs, but unfortunately it's not up to us. Each country results in a separate agreement with our payment processor.
+
+Only VISA and Mastercard are currently accepted (or debit cards with their co-branding). Other cards incur additional fees for our clubs, so we've opted to disable them for the time being.
 
 ### Example Fees for Online Payments
 
 Here are a few examples to help you visualize the cost of online transactions.
-The majority of this cost is paid to the credit card processor.
+The majority of this cost is paid to the credit card processor / network.
 
 #### $100 purchase
 
