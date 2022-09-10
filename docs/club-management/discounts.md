@@ -85,6 +85,10 @@ This allows you to discount the 2nd, 3rd, 4th, 5th + league that a curler purcha
 
 You can even have _stepping_ discounts, where for example the 2nd league is 20% off, the 3rd league is 50% off, and the 4th or higher leagues are 100% off (making them free).
 
+Note, that if your leagues have different prices and the member completes a purchase of a cheaper league, that cheaper league will not count towards a discount on more expensive leagues.
+For example, if you offer an Open League for $100 and a Men's League for $200, in order to receive a two league discount I would either need to purchase both of these leagues at the same time, or I would need to purchase the Men's (more expensive) league first.
+The system will not make a retroactive discount to the cheaper leauge.
+
 ### Matching a Custom Field Value
 
 This is an extremely flexible discount. It allows you to check if the value entered into one of the club's own custom fields matches what the curler entered or selected.
