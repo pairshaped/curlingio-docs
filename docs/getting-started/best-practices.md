@@ -45,8 +45,7 @@ Now when your members register for a league they will be asked how many players 
 If they select "Five" then they will receive a 20% discount.
 If all 5 members of the team do this, they will together pay the total team price for the league.
 
-If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
-
+If you have questions about setting up your leagues, [please watch our leagues tutorial before contacting support.](https://youtu.be/LSuo6UbLBJ0)
 
 ## Avoid Complex Discount Combinations
 
@@ -62,7 +61,7 @@ Here are a few examples to consider:
 2. If you are offering a student / couple / family / first timer discount, how are you determining who is a student / couple / family / first timer? Inevitably any of these will require custom fields and asking them during registration, and then you'll need to police it.
 3. Do your discounts stack with each other? Do only a subset of your discounts stack? Should a member receiving a 2 league, a half season, a senior, and a first timer discount all added together?
 
-If you have questions about your discounts, please watch the following discounts tutorial before contacting support: https://youtu.be/3h7oZzkYfkM
+If you have questions about your discounts, [please watch our discounts tutorial before contacting support.](https://youtu.be/3h7oZzkYfkM)
 
 
 ## Make Sure Fees are Required
@@ -130,15 +129,14 @@ Complex setups can result in unexpected outcomes though, so the more complicated
 
 You can test your registrations at any time and even submit the orders. You can then delete these test orders when you're done.
 
-We have a tutorial video covering see what your members need to do when registering via Curling I/O. This is useful for club staff to understand how it works from the curler's perspective:
-https://youtu.be/6bzxDm_t-JA
+[We have a tutorial video covering see what your members need to do when registering via Curling I/O.](https://youtu.be/6bzxDm_t-JA) This is useful for club staff to understand how it works from the curler's perspective.
 
 
 ## Ask us to Review your Setup
 
 If this is your first time your club is using Curling I/O, and you've just finished setting everything up, feel free to ask us to review your setup.
 
-We love being able to provide this high level of support free of charge, so we ask that you read the documentation and review our tutorial videos first.
+We love being able to provide this high level of support free of charge, so we ask that you read the documentation and [review our tutorial videos first](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
 
 DO NOT LEAVE THIS UNTIL THE DAY BEFORE REGISTRATION!
 
