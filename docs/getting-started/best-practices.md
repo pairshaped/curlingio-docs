@@ -130,7 +130,7 @@ Complex setups can result in unexpected outcomes though, so the more complicated
 
 You can test your registrations at any time and even submit the orders. You can then delete these test orders when you're done.
 
-[We have a tutorial video covering see what your members need to do when registering via Curling I/O.](https://youtu.be/6bzxDm_t-JA) This is useful for club staff to understand how it works from the curler's perspective.
+[We have a tutorial video covering what your members experience when registering with Curling I/O.](https://youtu.be/6bzxDm_t-JA) This is useful for club staff to understand how it works from the curler's perspective.
 
 
 ## Ask us to Review your Setup
