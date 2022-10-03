@@ -51,8 +51,15 @@ If all 5 members of the team do this, they will together pay the total team pric
 
 We know that sometimes this can't be helped, but we recommend staying away from complicated discount schemes.
 If you can't quickly grasp your discount logic without using a spreadsheet, then your curlers probably can't either.
+If the discounts aren't obvious to your curlers then they likely aren't serving the intended purpose of increasing registrations / sales.
 
-Discounts can be a great way to get new members and encourage more involvement through multiple leagues, but only if your members realize how they may qualify.
+Some of our clubs are suprised to discover how complex their discounts are once they codify (automate) them for the first time.
+
+Here are a few examples to consider:
+
+1. If you are offering multiple league discounts, but also half season discounts, what discount(s) does a member receive when they register for one full season league and one half season league?
+2. If you are offering a student / couple / family / first timer discount, how are you determining who is a student / couple / family / first timer? Inevitably any of these will require custom fields and asking them during registration, and then you'll need to police it.
+3. Do your discounts stack with each other? Do only a subset of your discounts stack? Should a member receiving a 2 league, a half season, a senior, and a first timer discount all added together?
 
 
 ## Make Sure Fees are Required
