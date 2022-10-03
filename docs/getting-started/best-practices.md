@@ -78,7 +78,7 @@ Just creating the fee, addon, or discount doesn't actually affect anything until
 
 If your "Monday Night Open" should have a Junior Discount of 50% for members 17 and under, then you need to make sure you associate this discount with it.
 
-If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
+If you have questions about setting up your leagues, [please watch our leagues tutorial before contacting support.](https://youtu.be/LSuo6UbLBJ0)
 
 ## Assign Custom Fields and Discounts
 
@@ -98,7 +98,8 @@ If you make a checkbox required it means that everyone must check it off (and ev
 If you make a checkbox optional and there are no other required fields for the league or product, then your member's may never even see it because they aren't forced to during registration.
 With a dropdown you can make it required without automatically giving everyone the discount, but are making sure they will all see it.
 
-If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
+If you have questions about setting up your leagues, [please watch our leagues tutorial before contacting support.](https://youtu.be/LSuo6UbLBJ0)
+
 
 ## Don't spam yourself with registration emails
 
