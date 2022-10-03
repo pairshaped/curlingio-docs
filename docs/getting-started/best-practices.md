@@ -99,10 +99,11 @@ If you're sending thousands of emails to your club's email address and someone w
 ## Use a separate non-administrator email for registration nights
 
 If you have members coming into your club who are not able to create / login with their own email address, we recommend creating a separate registration specific account to hold these curler profiles and orders.
+For example, signing up for a free gmail account like "club-name-registrations@gmail.com", and using that to login a laptop or tablet as a sort of kiosk at the club for in-person registrations.
 
-This not only keeps these curler profiles organized within one dedicated registration-only account, it also means that you could use a laptop or tablet at the club as a kiosk for in-person registrations since this account won't have admin access.
+This not only keeps these curler profiles organized within one dedicated registration-only account, it's also more secure for a public computer since this account won't need or have admin access.
 
-If you want to be able to handle multiple registrations at the same time on this registration account, please let us know and we can flag it as a "multicart" account to avoid having these multiple instances of the login from clobbering each other's cart.
+If you want to be able to handle multiple registrations at the same time on this registration account (multiple kiosks), please let us know and we can flag it as a "multicart" account to avoid having these multiple instances of the login from clobbering each other's cart.
 
 
 ## Test Your Registrations
