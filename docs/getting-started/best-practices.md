@@ -28,7 +28,6 @@ Individual registration has multiple benefits:
 3. You can still gather team and position information simply by asking for the team or skip name and their position. Curling I/O will later make team recommendations based on these fields if you are using our league management features.
 4. Through the use of discounts and custom fields you can still offer individual discounts based on team size. For example, you can ask if it's a 5 person team and offer a 20% off discount for each individual who selects it.
 
-
 ### Team Size Discounts
 
 If your pricing has been historically team based, you'll want to offer a percentage discount to members who play on a 5 or 6 player team.
@@ -46,6 +45,8 @@ Now when your members register for a league they will be asked how many players 
 If they select "Five" then they will receive a 20% discount.
 If all 5 members of the team do this, they will together pay the total team price for the league.
 
+If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
+
 
 ## Avoid Complex Discount Combinations
 
@@ -60,6 +61,8 @@ Here are a few examples to consider:
 1. If you are offering multiple league discounts, but also half season discounts, what discount(s) does a member receive when they register for one full season league and one half season league?
 2. If you are offering a student / couple / family / first timer discount, how are you determining who is a student / couple / family / first timer? Inevitably any of these will require custom fields and asking them during registration, and then you'll need to police it.
 3. Do your discounts stack with each other? Do only a subset of your discounts stack? Should a member receiving a 2 league, a half season, a senior, and a first timer discount all added together?
+
+If you have questions about your discounts, please watch the following discounts tutorial before contacting support: https://youtu.be/3h7oZzkYfkM
 
 
 ## Make Sure Fees are Required
@@ -76,6 +79,7 @@ Just creating the fee, addon, or discount doesn't actually affect anything until
 
 If your "Monday Night Open" should have a Junior Discount of 50% for members 17 and under, then you need to make sure you associate this discount with it.
 
+If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
 
 ## Assign Custom Fields and Discounts
 
@@ -95,6 +99,7 @@ If you make a checkbox required it means that everyone must check it off (and ev
 If you make a checkbox optional and there are no other required fields for the league or product, then your member's may never even see it because they aren't forced to during registration.
 With a dropdown you can make it required without automatically giving everyone the discount, but are making sure they will all see it.
 
+If you have questions about setting up your leagues, please watch the following leagues tutorial before contacting support: https://youtu.be/LSuo6UbLBJ0
 
 ## Don't spam yourself with registration emails
 
@@ -112,6 +117,7 @@ This not only keeps these curler profiles organized within one dedicated registr
 
 If you want to be able to handle multiple registrations at the same time on this registration account (multiple kiosks), please let us know and we can flag it as a "multicart" account to avoid having these multiple instances of the login from clobbering each other's cart.
 
+[FAQ entry on: What is an Account?](/docs/getting-started/faq#what-is-an-account)
 
 ## Test Your Registrations
 
@@ -123,6 +129,10 @@ This is necessary to support all the different registration methods that differe
 Complex setups can result in unexpected outcomes though, so the more complicated your setup, the more testing you should do.
 
 You can test your registrations at any time and even submit the orders. You can then delete these test orders when you're done.
+
+We have a tutorial video covering see what your members need to do when registering via Curling I/O. This is useful for club staff to understand how it works from the curler's perspective:
+https://youtu.be/6bzxDm_t-JA
+
 
 ## Ask us to Review your Setup
 
