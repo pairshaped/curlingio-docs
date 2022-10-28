@@ -16,8 +16,7 @@ You're on our online documentation site right now! Documentation topics are foun
 
 We realize every club is unique and on occasion issues may present themselves.
 
-We offer email support for all of our clubs on an ongoind basis through the Curling Canada Help Desk.
-[You can submit a support request for Curling I/O here.](https://help.curling.ca/hc/en-us/requests/new)
+You can submit support requests directly from your Curling I/O administrator area.
 
 
 ## Feedback

@@ -34,12 +34,12 @@ const features = [
     imageUrl: 'img/league_management.svg',
     description: (
       <>
-      Manage your leagues and bonspiels with us. Assemble teams, round robins, draw schedules, score your games, and even publish your results online. No more draw spreadsheets!
+      Manage your leagues and bonspiels with us. Assemble teams, round robins, brackets, draw schedules, score your games, and even publish your results online. No more spreadsheets!
       </>
     ),
   },
   {
-    title: 'National Curler Database',
+    title: 'Global Curler Database',
     imageUrl: 'img/national_curler_database.svg',
     description: (
       <>
@@ -58,7 +58,7 @@ const features = [
     ),
   },
   {
-    title: 'Used Across Canada',
+    title: 'Used Across North America',
     imageUrl: 'img/used_across_canada.svg',
     description: (
       <>
@@ -146,7 +146,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      description="Online curling registration and league management made easy. Brought to you by Curling Canada.">
+      description="Online curling registration and league management made easy.">
       <header className={clsx('hero heroBanner_1SbS', styles.heroBanner)}>
         <div className="container">
           <img className="heroBannerLogo_1WJs margin-vert--md" src="img/curlingio-logo-small.png" />
@@ -170,7 +170,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">Canada's official online registration and league management platform for curling clubs. We simplify daily operations for your club and members. No installs, no license fees, no contracts. Centralized. Secure. Safe.</h2>
+                  <h2 className="sectionDarkTitle">The #1 online registration and league management platform for curling clubs. We simplify daily operations for your club and members. Centralized. Secure. Safe.</h2>
                 </div>
               </div>
             </div>
