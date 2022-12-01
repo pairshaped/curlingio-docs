@@ -26,7 +26,7 @@ We've developed some innovative features to help curling clubs manage their leag
 
 - Automated team recommendations and assembly.
 - Round robin generation.
-- Drag and drop playoff bracket builder (coming soon)
+- Drag and drop playoff bracket builder.
 - Draw schedule generation with manual override.
 - Curler opt-in spares engine.
 - Game scoring.
