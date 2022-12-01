@@ -5,7 +5,7 @@ slug: /event-management/stages
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Stages are your round robins and eventually playoff brackets (coming soon!).
+Stages are your round robins and playoff brackets.
 
 To get to the stages screen, first click on the name of a league of competition.
 
