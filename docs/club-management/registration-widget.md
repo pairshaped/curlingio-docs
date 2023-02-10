@@ -19,6 +19,8 @@ You can save this HTML file locally, open it in a browser, and make tweaks to th
 
 You will also need your API Access Key, which can be found in your [Club Settings under Integrations](/docs/club-management/settings).
 
+[Full installation instructions can be found in the README on Github](https://github.com/pairshaped/curlingio-results)
+
 ### WordPress
 
 If you are using WordPress to host your website, you may need to enable javascript code embedding first. There are many different plugins that enable this, for example: https://en-ca.wordpress.org/plugins/simple-embed-code
