@@ -79,7 +79,9 @@ This is rarely required, but we have seen cases where registrants needed a tax i
 
 ## Integrations
 
-Currently we provide a Mailchimp integration.
+Currently we provide two integrations. The Curling I/O registration and results widget and Mailchimp.
+
+Here you will find your API Access Key needed by the registration and results widget. [What is the Registration and Results Widget?](/docs/club-management/registration-widget)
 
 Mailchimp is a separate service (not provided by Curling I/O) that enables you to send out marketing emails and email blasts to your curlers.
 By entering your API Key and an Audience ID Curling I/O will automatically populate your Mailchimp mailing list (audience) with your curlers as they register.
