@@ -5,26 +5,19 @@ slug: /club-management/registration-widget
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can list your leagues, competitions, and products from Curling I/O onto your website using our registration widget.
+The Curling I/O registration and results widget enables you to embed your leagues, competitions, and products, along with their schedules and results within your existing website.
 
 ## Setup
 
-To embed our widget on one of you pages, you simply copy and paste the javascript snippet below.
+To proceed, first you'll need to know how to edit an HTML file so you can copy and paste the necessary code in to your website.
 
-```
-<script src="https://pairshaped.github.io/curlingio-registration-widget/prod.min.js"></script>
-<div id="curlingio-[section]"></div>
-<script>
-  Elm.Main.init({
-    node: document.getElementById("curlingio-[section]"),
-    flags: { host: "[url]", section: "[section]" }
-  })
-</script>
-```
+We've provided a sample HTML file you can use as a reference to embed our registration and results widget:
 
-There are two variables above you must replace for this to work.
-- `[url]` is your Curling I/O base URL. For example; `https://club.curling.io`
-- `[section]` is the section from Curling I/O you want to display. This must be `leagues`, `competitions`, or `products`. This is how you show different section on different pages of your website.
+[Example HTML with Instructions](https://github.com/pairshaped/curlingio-results/blob/master/example.html)
+
+You can save this HTML file locally, open it in a browser, and make tweaks to the source to test out changes if you like. Then, once your happy with it, take the result and embed it into your website.
+
+You will also need your API Access Key, which can be found in your [Club Settings under Integrations](/docs/club-management/settings).
 
 ### WordPress
 
@@ -49,50 +42,3 @@ If you are using Google Sites to host your website, the following article descri
 ### Other Content Management Systems
 
 For other content management systems (CMS) and platforms not included above, search your documentation looking for "code embed" or "javascript embed".
-
-## Examples
-
-### Leagues
-
-To show the leagues from our demo curling club on our website, the code would be:
-
-```
-<script src="https://pairshaped.github.io/curlingio-registration-widget/prod.min.js"></script>
-<div id="curlingio-leagues"></div>
-<script>
-  Elm.Main.init({
-    node: document.getElementById("curlingio-leagues"),
-    flags: { host: "https://demo.curling.io", section: "leagues" }
-  })
-</script>
-```
-
-### Competitions
-
-To show the competitions from our demo curling club on our website, the code would be:
-
-```
-<script src="https://pairshaped.github.io/curlingio-registration-widget/prod.min.js"></script>
-<div id="curlingio-competitions"></div>
-<script>
-  Elm.Main.init({
-    node: document.getElementById("curlingio-competitions"),
-    flags: { host: "https://demo.curling.io", section: "competitions" }
-  })
-</script>
-```
-
-### Products
-
-To show the products from our demo curling club on our website, the code would be:
-
-```
-<script src="https://pairshaped.github.io/curlingio-registration-widget/prod.min.js"></script>
-<div id="curlingio-products"></div>
-<script>
-  Elm.Main.init({
-    node: document.getElementById("curlingio-products"),
-    flags: { host: "https://demo.curling.io", section: "products" }
-  })
-</script>
-```
