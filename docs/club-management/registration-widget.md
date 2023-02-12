@@ -1,6 +1,6 @@
 ---
 id: registration-widget
-title: Registration Widget
+title: Registration and Results Widget
 slug: /club-management/registration-widget
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
