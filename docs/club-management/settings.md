@@ -76,6 +76,16 @@ This is due to the fact that a curler may purchase multiple leagues, competition
 If you optionally provide your tax identifier (Business Number in Canada), we'll include it on the receipts sent to your curlers when they make a purchase.
 This is rarely required, but we have seen cases where registrants needed a tax identifier for expense purposes.
 
+## Season starts in
+
+You can select the month that you'd like your season to begin. It's always going to be the 1st of this month (at 12:00 AM). This cutoff affects the following:
+
+1. Your seasonal fees and seasonal procucts. This determines which season they are collected for.
+2. Your leagues based on their start dates.
+3. Your age restrictions. For example a maximum age restrictions of 17, means they cannot be older than 17 when this month begins.
+
+Be careful changing this since it's effects are so wide reaching. Ideally you rarely, if ever, need to change this month.
+
 
 ## Integrations
 
