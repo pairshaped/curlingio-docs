@@ -80,7 +80,7 @@ You can specify it's label (shown to your members), how it will be applied (onli
 
 When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling I/O will display a notice at the top of the cart alerting the member to it's addition as well as showing the fee in the cart and total.
 
-This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage and fixed amount.
+This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage (of the order total) and fixed amount.
 
 **Curling I/O is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
 
