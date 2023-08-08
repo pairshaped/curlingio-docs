@@ -94,6 +94,8 @@ Please review the relevant laws in your region regarding surcharges and convenie
 - https://www.canada.ca/en/financial-consumer-agency/services/merchants/credit-fees-merchant.html
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-200/application-gst-hst-credit-card-surcharges.html
 
+Fees you implement should never reflect on the Curling I/O platform, therefore we are restricting certain words in the convenience fee's label and may add further restrictions in the future.
+
 ## Season starts in
 
 You can select the month that you'd like your season to begin. It's always going to be the 1st of this month (at 12:00 AM). This cutoff affects the following:
