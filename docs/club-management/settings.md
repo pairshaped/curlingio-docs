@@ -73,8 +73,26 @@ This is a club-wide setting and cannot be specified at a league, competition, or
 If you haven't set your club up with our online payment processor yet, the **Can be paid online** option is ignored until you do.
 This is due to the fact that a curler may purchase multiple leagues, competitions, and products at the same time.
 
-If you optionally provide your tax identifier (Business Number in Canada), we'll include it on the receipts sent to your curlers when they make a purchase.
-This is rarely required, but we have seen cases where registrants needed a tax identifier for expense purposes.
+### Convenience fee / Surcharge
+
+A convenience fee or surcharge can be added to your orders automatically.
+You can specify it's label (shown to your members), how it will be applied (online, offline, etc.), a percentage amount, and a fixed amount (percent and fixed are combined).
+
+When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling I/O will display a notice at the top of the cart alerting the member to it's addition as well as showing the fee in the cart and total.
+
+This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage and fixed amount.
+
+**Curling I/O is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
+
+It is your responsibility, before adding a convenience fee / surcharge, to make sure you understand the implications and whether or not this is legal in your jurisdiction. For example:
+- There's a limit to the amount you can surchage to cover credit card processing fees.
+- In the province of Quebec you are currently not allowed to pass along credit card processing fees to the consumer.
+- There's a difference between a convenience fee and a surchage, so make sure you use a label that reflects what you are charging.
+- You may be required to offer a non-surcharge option if you choose to implement one for online payments.
+
+Please review the relevant laws in your region regarding surcharges and convenience fees. Here are some Canada specific links:
+- https://www.canada.ca/en/financial-consumer-agency/services/merchants/credit-fees-merchant.html
+- https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-200/application-gst-hst-credit-card-surcharges.html
 
 ## Season starts in
 
@@ -86,6 +104,9 @@ You can select the month that you'd like your season to begin. It's always going
 
 Be careful changing this since it's effects are so wide reaching. Ideally you rarely, if ever, need to change this month.
 
+## Tax ID
+If you optionally provide your tax identifier (Business Number in Canada), we'll include it on the receipts sent to your curlers when they make a purchase.
+This is rarely required, but we have seen cases where registrants needed a tax identifier for expense purposes.
 
 ## Integrations
 
