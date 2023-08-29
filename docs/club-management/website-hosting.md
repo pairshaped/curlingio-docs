@@ -45,7 +45,7 @@ Each page has a title, a position (order), whether or not it's published (or a d
 You can *restrict* individual pages so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see a page.
 By default pages are unrestricted.
 
-Similar to event and product descriptions, the body content of your page is entered using [markdown](http://chibicode.github.io/markdown-toolbar-cheatsheet/) or HTML.
+Similar to event and product descriptions, the body content of your page is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
 
 
 ## Articles / News
@@ -55,7 +55,7 @@ The order in which articles appear is based on the published date (most recent f
 
 You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article.  By default articles are unrestricted.
 
-Similar to event and product descriptions, the body content of your article is entered using [markdown](http://chibicode.github.io/markdown-toolbar-cheatsheet/) or HTML.
+Similar to event and product descriptions, the body content of your article is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
 
 ## SEO (Search Engine Optimization)
 
