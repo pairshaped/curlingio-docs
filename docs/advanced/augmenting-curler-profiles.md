@@ -38,7 +38,7 @@ Next, we want to add our addon as a required custom field to each of our leagues
 
 ![Inspiration Added to League](/img/docs/advanced/augmenting-curler-profiles/league.png)
 
-Now the first time a curler registers at your club they will be asked what inspired them to take up curling. They will only ever be asked once for the entire season since this is a seasonal product.
+Now the first time a curler registers at your club they will be asked what inspired them to take up curling. For this example they will only ever be asked once since we made this a lifetime product.
 
 ![Inspiration Cart](/img/docs/advanced/augmenting-curler-profiles/cart.png)
 
