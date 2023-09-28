@@ -87,7 +87,7 @@ You can even have _stepping_ discounts, where for example the 2nd league is 20% 
 
 Note, that if your leagues have different prices and the member completes a purchase of a cheaper league, that cheaper league will not count towards a discount on more expensive leagues.
 For example, if you offer an Open League for $100 and a Men's League for $200, in order to receive a two league discount I would either need to purchase both of these leagues at the same time, or I would need to purchase the Men's (more expensive) league first.
-The system will not make a retroactive discount to the cheaper leauge.
+The system will not make a retroactive discount to the cheaper league.
 
 ### Matching a Custom Field Value
 
