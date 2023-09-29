@@ -19,7 +19,15 @@ If you don't have an email address, you can easily get a free one from Gmail, Fa
 
 That's all there is to it. You should now be logged in, and most likely back on your "Cart" screen.
 
-## Walkthrough Video
+## Demonstration of Token Method 
+
+![Using the Token](/img/docs/for-curlers/login-token-demo.gif)
+
+
+The above video loops over and over again. It begins when an email address is entered.
+
+
+## Complete Walkthrough Video
 
 The following short video will take you through the basics of logging in.
 If you're new to Curling I/O and struggling, it might be worth watching.
