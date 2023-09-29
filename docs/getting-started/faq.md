@@ -103,18 +103,24 @@ Some people have and may login with multiple email addresses.
 Occasionally one of your members registered for the wrong league / product / competition.
 
 A common support request is "How do I move them to the correct league".
-Unfortunately you can't just swap the over because the league you want to move them to:
+You can't just swap the over because the league you want to move them to:
 
 * may have a different price.
 * may participate in different discounts.
 * may have different associated fees.
 
-While none of the above may be true for specific cases, the system doesn't currently have a way to know this (this is a feature we may add in the future).
+While none of the above may be true for specific cases, the system doesn't have a way to know this (this is a feature we may add in the future, but it's pretty complicated).
 
 Depending on the status of the order there two ways to handle this:
 
-1. If the order has NOT been paid yet, you can simply either delete the order and have them resubmit or you can [send the order back to their cart](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart). Keep in mind that sending the order back to their cart is not an option if you were registering them using the club multicart login feature.
-2. If the order has been paid, then you'll want to issue a refund and have them resubmit their order. You can even do this on their behalf using the "Login as" feature to login under their account and submit the order for them. A good analogy to consider would be ordering the wrong item from Amazon or The Gap. You can't simply swap out the item being ordered once it's been paid for.
+If the order has NOT been paid yet, you can simply either delete the order and have them resubmit or you can [send the order back to their cart](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart).
+Keep in mind that sending the order back to their cart is not an option if you were registering them using the club multicart login feature.
+
+However if the league has already been paid for the easiest way to handle this is:
+
+1. Refund the incorrect league to Club Credits. Make sure you only check the box for the league when doing the refund. Also make sure you select Club Credits for the refund.
+2. Use the "Login as" feature to login to the curler's account. (ignore this if the order was made with an administrator account, but that should never happen right?)
+3. Add the new league to your cart and complete the registration. The club credits that were granted from refunding the old league will cover the cost of the new league.
 
 
 ### Can we sell raffle (50 / 50) tickets on Curling I/O?
