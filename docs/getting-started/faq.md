@@ -100,18 +100,18 @@ Some people have and may login with multiple email addresses.
 
 ### One of our members registered for the wrong league
 
-Occasionally one of your members registered for the wrong league / product / competition.
+Occasionally one of your members will register for the wrong league / product / competition.
 
 A common support request is "How do I move them to the correct league".
-You can't just swap the over because the league you want to move them to:
+You can't just swap the over because the league you want to move them to may:
 
-* may have a different price.
-* may participate in different discounts.
-* may have different associated fees.
+* have a different price.
+* participate in different discounts.
+* have different associated fees.
 
-While none of the above may be true for specific cases, the system doesn't have a way to know this (this is a feature we may add in the future, but it's pretty complicated).
+While none of the above will be true for all cases, the system doesn't have a way to know this.
 
-Depending on the status of the order there two ways to handle this:
+Depending on the status of the order there two ways to handle this.
 
 If the order has NOT been paid yet, you can simply either delete the order and have them resubmit or you can [send the order back to their cart](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart).
 Keep in mind that sending the order back to their cart is not an option if you were registering them using the club multicart login feature.
