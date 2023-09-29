@@ -103,7 +103,7 @@ Some people have and may login with multiple email addresses.
 Occasionally one of your members will register for the wrong league / product / competition.
 
 A common support request is "How do I move them to the correct league".
-You can't just swap the over because the league you want to move them to may:
+You can't just swap them over because the league you want to move them to may:
 
 * have a different price.
 * participate in different discounts.
