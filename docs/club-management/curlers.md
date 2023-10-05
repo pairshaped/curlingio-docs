@@ -124,6 +124,6 @@ We keep a log you can review for every import in case there are errors due to mi
 
 ## Troubleshooting
 
-- [What is an Account?](/docs/getting-started/faq#what-is-an-account).
-- [Can our curlers register family members?](/docs/getting-started/faq#can-our-curlers-register-family-members).
-- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once).
+- [What is an Account?](/docs/getting-started/faq#what-is-an-account)
+- [Can our curlers register family members?](/docs/getting-started/faq#can-our-curlers-register-family-members)
+- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once)

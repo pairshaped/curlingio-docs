@@ -115,7 +115,7 @@ For example, if a curler registered at the club under a dedicated club registrat
 
 ## Troubleshooting
 
-- [One of our members registered for the wrong league](/docs/getting-started/faq#one-of-our-members-registered-for-the-wrong-league).
-- [One of our members paid less than they should have](/docs/getting-started/faq#one-of-our-members-paid-less-than-they-should-have).
-- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once).
-- [Refund doesn't show up on the curler's statement](/docs/getting-started/faq#refund-doesnt-show-up-on-the-curlers-statement).
+- [One of our members registered for the wrong league](/docs/getting-started/faq#one-of-our-members-registered-for-the-wrong-league)
+- [One of our members paid less than they should have](/docs/getting-started/faq#one-of-our-members-paid-less-than-they-should-have)
+- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once)
+- [Refund doesn't show up on the curler's statement](/docs/getting-started/faq#refund-doesnt-show-up-on-the-curlers-statement)
