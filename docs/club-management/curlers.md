@@ -120,3 +120,10 @@ Then click the "Import" button to run the import.
 We'll try to detect and ignore any duplicate curlers.
 
 We keep a log you can review for every import in case there are errors due to missing fields or duplicate profiles.
+
+
+## Troubleshooting
+
+- [What is an Account?](/docs/getting-started/faq#what-is-an-account).
+- [Can our curlers register family members?](/docs/getting-started/faq#can-our-curlers-register-family-members).
+- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once).

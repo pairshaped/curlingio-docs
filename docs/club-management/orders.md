@@ -113,4 +113,9 @@ You cannot transfer an order to a curler who has never logged in.
 The reason for transferring an order is to have it show up within the accounts order history.
 For example, if a curler registered at the club under a dedicated club registration login, you may later want to transfer that order to them once they're using Curling I/O.
 
+## Troubleshooting
 
+- [One of our members registered for the wrong league](/docs/getting-started/faq#one-of-our-members-registered-for-the-wrong-league).
+- [One of our members paid less than they should have](/docs/getting-started/faq#one-of-our-members-paid-less-than-they-should-have).
+- [One of our members paid seasonal fees more than once](/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once).
+- [Refund doesn't show up on the curler's statement](/docs/getting-started/faq#refund-doesnt-show-up-on-the-curlers-statement).
