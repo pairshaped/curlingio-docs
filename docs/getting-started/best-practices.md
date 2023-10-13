@@ -20,6 +20,7 @@ The "Requires curler profile" checkbox is what determines this.
 You can uncheck this box to accept team registrations, but this is almost always a mistake.
 If you do uncheck this box, then it is important you don't have any seasonal fees or addons that require a curler profile associated with the league.
 This includes affiliate fees, which we cannot track for you unless you are taking individual registrations.
+Waivers are also tied to curler profiles, so if you aren't requiring curler profiles you may need a separate process to collect waivers or some way communicate with your curlers that they still need to create a profile and accept the waiver.
 
 Individual registration has multiple benefits:
 
