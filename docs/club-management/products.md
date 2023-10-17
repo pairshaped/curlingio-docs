@@ -131,6 +131,11 @@ When you enter a summary, it will show up on the product listing page when membe
 The description shows up when your members click on the name of the product and also when they fill in required information for it.
 Keep in mind that member's may just add the product to their cart without clicking on it's name.
 
+### Required Reading
+
+You can enter some text that your curlers are guaranteed to see before they can complete their purchase of the product. Just leave this blank to avoid this step.
+
+We recommend you use this sparingly as it adds another step (friction) to product purchases for your users.
 
 ## Assigning Fees
 
