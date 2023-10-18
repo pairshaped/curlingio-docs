@@ -16,7 +16,7 @@ If we ask for your personal information for a secondary reason, like marketing, 
 
 **How do I withdraw my consent?**
 
-If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@curling.io or mailing us at: Curling Canada 1660 Vimont Court, ON, K4A4J4, Canada
+If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@curling.io or mailing us at: 2508941 Ontario Inc. 1660 Vimont Court, ON, K4A4J4, Canada
 
 ## Section 3 - Disclosure
 We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.
@@ -64,6 +64,6 @@ We reserve the right to modify this Privacy Statement at any time, so please rev
 If our store is acquired or merged with another company, your information may be transferred to the new owners so that we may continue to sell products to you.
 
 ## Questions and Contact Information
-If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at privacy@curling.ca or by mail at Curling Canada:
+If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at privacy@curling.ca or by mail at 2508941 Ontario Inc.:
 
 [Re: Privacy Compliance Officer]<br />[1660 Vimont Court, ON, K4A4J4, Canada]
