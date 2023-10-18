@@ -83,6 +83,6 @@ If our store is acquired or merged with another company, your information may be
 
 ## Questions and Contact Information
 
-If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at privacy@wcurling.io or by mail at 2508941 Ontario Inc.:
+If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at support@curling.io or by mail at 2508941 Ontario Inc.:
 
 [Re: Privacy Compliance Officer]<br />[34 Stanley St., Ayr, ON, N0B 1E0, Canada]
