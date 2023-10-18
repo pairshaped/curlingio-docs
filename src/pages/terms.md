@@ -63,7 +63,7 @@ Without limiting the foregoing, 2508941 Ontario Inc. will have the right to imme
 2508941 Ontario Inc. acknowledges that they are governed by the Personal Information and Electronic Documents Act (PIPEDA) and will comply with such legislation.
 
 ## Jurisdiction
-The System is established and operated in accordance with the laws of Canada and this Agreement will be interpreted in accordance with the laws of the Province of Ontario. You hereby consent and submit to the exclusive jurisdiction of the courts of the Province of Ontario in any action or proceeding related to this System and agree not to commence any such action or proceeding except in Ottawa, Ontario, Canada.
+The System is established and operated in accordance with the laws of Canada and this Agreement will be interpreted in accordance with the laws of the Province of Ontario. You hereby consent and submit to the exclusive jurisdiction of the courts of the Province of Ontario in any action or proceeding related to this System and agree not to commence any such action or proceeding except in Toronto, Ontario, Canada.
 
 ## General
 This Agreement constitutes the entire agreement between you and the 2508941 Ontario Inc. and governs your use of the System.
