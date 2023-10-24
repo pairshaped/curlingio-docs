@@ -5,7 +5,10 @@ slug: /club-management/registration-widget
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The Curling I/O registration and results widget enables you to embed your leagues, competitions, and products, along with their schedules and results within your existing website.
+Curling I/O provides two widgets you can use to embed your leagues, competitions, and product data on your website.
+
+* The registration and results widget shows your leagues, competitions, and products, along with their schedules, results, and registration links. You would typically embed this widget on it's own dedicated page on your website.
+* The current games widget shows the list of games that have just finished, are currently being played, or are starting soon. You would typically embed this widget in a small square on your home page.
 
 ## Setup
 
@@ -13,11 +16,11 @@ To proceed, first you'll need to know how to edit an HTML file so you can copy a
 
 We've provided a sample HTML file you can use as a reference to embed our registration and results widget:
 
-[Example HTML with Instructions](https://github.com/pairshaped/curlingio-results/blob/master/example.html)
+* [Registration and Results Example HTML with Instructions](https://github.com/pairshaped/curlingio-results/blob/master/example.html)
 
-You can save this HTML file locally, open it in a browser, and make tweaks to the source to test out changes if you like. Then, once your happy with it, take the result and embed it into your website.
+* [Current Games Example HTML with Instructions](https://github.com/pairshaped/curlingio-results/blob/master/current-games-example.html)
 
-You will also need your API Access Key, which can be found in your [Club Settings under Integrations](/docs/club-management/settings).
+You can save these HTML files locally, open them in a browser, and make tweaks to the source to test out changes if you like. Then, once your happy with it, take the result and embed them into your website wherever you like.
 
 [Full installation instructions can be found in the README on Github](https://github.com/pairshaped/curlingio-results)
 
