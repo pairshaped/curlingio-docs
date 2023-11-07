@@ -30,6 +30,7 @@ Usually curlers will update their own profiles, but occasionally you may want to
 Occasionally you will end up with duplicate profiles. This can and will happen for various reasons.
 Usually it's because someone registered again at a later date but logged in with a different email address than last time that also wasn't entered on the profile.
 If you spot one of these duplicates, you can **mark** one of them as a duplicate and eventually it'll get merged and / or removed.
+Please make sure the first name, last name, and date of birth are identical between the two profiles.
 
 ![Mark as Duplicate](/img/docs/club-management/curlers/mark-as-dupe.png)
 
