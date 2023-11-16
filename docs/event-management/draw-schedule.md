@@ -73,8 +73,6 @@ For example, to exclude christmas, you would enter "Dec 25".
 
 Curling I/O will do it's best to automatically generate your draw schedule when you ask it to do so.
 
-**Important: Regenerating an existing schedule will wipe it out and start from scratch.**
-
 The auto-generation will use matching [draw schedule templates](/docs/club-management/draw-schedule-templates) provided by Curling I/O or custom templates specific to your club.
 If there's more than one matching draw schedule template, you will be prompted to choose which one to use.
 
@@ -97,6 +95,12 @@ You can remove draws from your schedule by clicking the "X" button next to the d
 You can undo all of the changes made since your last save by clicking the "Reset" button.
 
 When you're happy with your draw schedule, click the "Save" button to save it.
+
+## Removing All Draws
+
+If you want to start over, we've provided a button to remove all of your existing draws from the league or competition.
+Since schedule generation will always try to append to the existing schedule, there may be an occasion where you will want to clear it out completely and generate it again from scratch or maybe assemble your entire schedule manually.
+
 
 ## Open Source
 
