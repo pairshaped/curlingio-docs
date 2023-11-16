@@ -1,7 +1,7 @@
 ---
 id: draw-schedule-templates
 title: Draw Schedule Templates
-slug: /club-management/draw-schedule-templates
+slug: /event-management/draw-schedule-templates
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -18,15 +18,15 @@ When you generate a draw schedule for one of your leagues or competitions, Curli
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Draw Schedule Templates**.
 
-![Navigation](/img/docs/club-management/draw-schedule-templates/navigation.png)
+![Navigation](/img/docs/event-management/draw-schedule-templates/navigation.png)
 
 To create a draw schedule template click on the **New template** button (or copy an existing one).
 
-![New](/img/docs/club-management/draw-schedule-templates/new.png)
+![New](/img/docs/event-management/draw-schedule-templates/new.png)
 
 To update an existing draw schedule, click the **Edit** link next to it.
 
-![Edit](/img/docs/club-management/draw-schedule-templates/edit.png)
+![Edit](/img/docs/event-management/draw-schedule-templates/edit.png)
 
 
 ## The Basics
@@ -62,7 +62,7 @@ When using a multiple pool draw schedule template, each of your pools must have 
 
 ### Editing the Template
 
-![Editing](/img/docs/club-management/draw-schedule-templates/editing.png)
+![Editing](/img/docs/event-management/draw-schedule-templates/editing.png)
 
 After creating the template you're ready to fill in the schedule. You'll see all of the games we generated so you can select the teams that will play each other in each draw.
 
@@ -75,7 +75,7 @@ This template can now be used when generating draw schedules for your leagues an
 
 ## Copying a Draw Schedule Template
 
-![Edit](/img/docs/club-management/draw-schedule-templates/copy.png)
+![Edit](/img/docs/event-management/draw-schedule-templates/copy.png)
 
 You can copy any of your existing draw schedule templates to use them as a starting point for further customization.
 
@@ -83,6 +83,6 @@ You can copy any of your existing draw schedule templates to use them as a start
 
 To remove a draw schedule template, click the **Delete** link next to it. You can only delete templates created for your club.
 
-![Delete](/img/docs/club-management/draw-schedule-templates/delete.png)
+![Delete](/img/docs/event-management/draw-schedule-templates/delete.png)
 
 

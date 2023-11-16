@@ -73,7 +73,7 @@ For example, to exclude christmas, you would enter "Dec 25".
 
 Curling I/O will do it's best to automatically generate your draw schedule when you ask it to do so.
 
-The auto-generation will use matching [draw schedule templates](/docs/club-management/draw-schedule-templates) provided by Curling I/O or custom templates specific to your club.
+The auto-generation will use matching [draw schedule templates](/docs/event-management/draw-schedule-templates) provided by Curling I/O or custom templates specific to your club.
 If there's more than one matching draw schedule template, you will be prompted to choose which one to use.
 
 If there are no matching draw schedule templates, then we will attempt to auto-assemble your draw schedule.
