@@ -32,7 +32,7 @@ It's unlikely that curlers will ever fill out their full profile so any fields y
 
 ### Missing Fields?
 
-If there are fields that you need to collect but are missing, then you can submit a feature request to discuss it on our feedback board.
+If there are fields that you need to collect but are missing, then you can [submit a feature request to discuss it on our feedback board](https://curling.canny.io/).
 
 Profile fields shouldn't be specific to just one club.
 Also, temporal fields like **age** or **first time curler** cannot be asked as part of a curler profile since they wouldn't remain accurate from season to season, but would be fine to ask via custom fields on your events.
