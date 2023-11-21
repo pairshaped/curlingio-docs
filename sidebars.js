@@ -31,6 +31,7 @@ module.exports = {
       'club-management/managers',
       'club-management/waivers',
       'club-management/alerts',
+      'club-management/profile-fields',
       'club-management/settings',
       'club-management/website-hosting',
       'club-management/linking-to-registration',
