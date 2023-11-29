@@ -36,6 +36,7 @@ module.exports = {
       'club-management/website-hosting',
       'club-management/linking-to-registration',
       'club-management/registration-widget',
+      'club-management/support',
     ],
     "Event Management": [
       'event-management/registrations',
