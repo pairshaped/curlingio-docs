@@ -40,7 +40,12 @@ If your issue involves a league, competition, product, fee, or discount please p
 
 ### Attachment
 
-Providing a screenshot of the issue you are experiencing can be extremely useful in identifying and reproducing the issue. [Here's how you can screenshot on windows.](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b)
+Providing a screenshot of the issue you are experiencing can be extremely useful in identifying and reproducing the issue.
+
+- [How to take a screenshot on Windows](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b)
+- [How to take a screnshot on a Mac](https://support.apple.com/en-ca/102646)
+- [How to take a screnshot on an iPhone](https://support.apple.com/en-ca/102616)
+- [How to take a screnshot on an Android phone](https://support.google.com/android/answer/9075928?hl=en)
 
 ### Body
 
