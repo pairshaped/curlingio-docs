@@ -71,14 +71,13 @@ For example if you are refunding a Curling Canada Fee because the curler had alr
 
 You can also perform an _adhoc refund_ by specifying the amount to refund regardless of whether or not you select any items.
 If you don't select any items, then your reports can't show which items the refund was placed against, only the order and payment itself.
+Selected items will be considered *refunded* regardless of the amount of the refund.
+Refunded items will release their inventory if quantity is limited and refunded registrations are no longer considered registrations.
 
 If the payment you are refunding was made through our online payments (credit or debit card) then the system will automatically send the refund amount back to the member's card used in the purchase.
 The system will also autofill the time it was withdrawn and how it was refunded.
 
 You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.
-
-Note: Refunding an item that requires a curler profile, like a league, will also remove that curler's registration from the item (league).
-
 
 ## Adjusting Submitted Orders
 
