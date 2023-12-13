@@ -5,15 +5,16 @@ slug: /member-data/import
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Existing Curling I/O Clubs
-
-This member data import feature is only for clubs that are not yet using Curling I/O to handle their registrations.
-If you are already using Curling I/O for registrations then reporting on your member data is handled automatically.
 
 ## Overview
 
-The member data import feature allows you to upload your spreadsheet member data for your membership association.
-Please contact your membership association first to get set up.
+The member data import feature lets you easily upload your member data for your membership association.
+If you want to use this member data import feature please contact your membership association who will get you set up.
+
+__NOTE:__ This feature is only for clubs that are not yet using Curling I/O to handle their registrations.
+If you are already using Curling I/O for registrations then reporting on your member data is handled automatically.
+
+[Click here if you'd like to learn more about using Curling I/O for registrations and event managers.](/docs/getting-started/curling-club-managers)
 
 
 ## Preparing your member data for import
@@ -30,6 +31,7 @@ Then you'll want to export your spreadsheet to a comma-separated values (CSV) fi
 - For Microsoft Excel, click ```File -> Save As -> CSV```
 - For Google Sheets, click ```File -> Download -> Comma-separated values (.csv)```
 - For Apple Numbers, click ```File -> Export To -> CSV...```
+
 
 ## Importing your member data
 
