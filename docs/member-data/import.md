@@ -16,6 +16,13 @@ If you are already using Curling I/O for registrations then reporting on your me
 
 [Click here if you'd like to learn more about using Curling I/O for registrations and event managers.](/docs/getting-started/curling-club-managers)
 
+## Video Tutorial
+
+The following video will take you step by step through importing your member data in Curling I/O.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/a4XVQ_a5VJc" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ## Preparing your member data for import
 
