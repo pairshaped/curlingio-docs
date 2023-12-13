@@ -53,6 +53,9 @@ module.exports = {
     "Advanced Features": [
       'advanced/augmenting-curler-profiles',
     ],
+    "Member Data": [
+      'member-data/import',
+    ],
     // API: [
     //   'api/leagues',
     //   'api/competitions',
