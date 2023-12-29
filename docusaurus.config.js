@@ -25,9 +25,6 @@ module.exports = {
       disableSwitch: true,
     },
     image: 'img/curlingio-logo-small.png',
-    googleAnalytics: {
-      trackingID: 'UA-180808279-1',
-    },
     algolia: {
       apiKey: 'b0ed2c7d4e5d796e576b812c1b2ad234',
       indexName: 'curling',
