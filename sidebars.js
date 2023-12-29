@@ -28,14 +28,15 @@ module.exports = {
       'club-management/reports',
       'club-management/custom-fields',
       'club-management/sponsors',
-      'club-management/draw-schedule-templates',
       'club-management/managers',
       'club-management/waivers',
       'club-management/alerts',
+      'club-management/profile-fields',
       'club-management/settings',
       'club-management/website-hosting',
       'club-management/linking-to-registration',
       'club-management/registration-widget',
+      'club-management/support',
     ],
     "Event Management": [
       'event-management/registrations',
@@ -45,11 +46,15 @@ module.exports = {
       'event-management/round-robins',
       'event-management/playoff-brackets',
       'event-management/draw-schedule',
+      'event-management/draw-schedule-templates',
       'event-management/scores',
       'event-management/event-managers',
     ],
     "Advanced Features": [
       'advanced/augmenting-curler-profiles',
+    ],
+    "Member Data": [
+      'member-data/import',
     ],
     // API: [
     //   'api/leagues',

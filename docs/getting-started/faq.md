@@ -136,6 +136,19 @@ U.S. based clubs can find the list of "Restricted Businesses" here:
 [https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
 
 
+### Can we sell prize pool fees on Curling I/O?
+
+You cannot use Curling I/O to process online payments for prize pool fees.
+Prize pools where winners are rewarded money are considered a "Restricted Business" that we are not licensed for.
+If we find that you are using online payments to sell prize pool fees, your club's ability to process online payments will be disabled immediately.
+
+Canadian based clubs can find the list of "Restricted Businesses" here:
+[https://stripe.com/en-ca/restricted-businesses](https://stripe.com/en-ca/restricted-businesses)
+
+U.S. based clubs can find the list of "Restricted Businesses" here:
+[https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
+
+
 ### Refund doesn't show up on the curler's statement
 
 Assuming the refund was issued correctly by club staff (to the correct order), there are a couple reasons it may not show up on the curler's credit card statement.
