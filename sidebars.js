@@ -55,6 +55,7 @@ module.exports = {
     ],
     "Member Data": [
       'member-data/import',
+      'member-data/setup',
     ],
     // API: [
     //   'api/leagues',
