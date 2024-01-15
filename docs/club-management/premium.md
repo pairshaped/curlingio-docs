@@ -56,6 +56,44 @@ Premium tier clubs are prioritized when submitting support tickets.
 Non premium tier clubs are still able to submit support tickets, but it may take longer to receive a response (hey, it's free!).
 
 
+### Draw Schedule Templates
+
+Premium tier clubs will be able to create their own custom draw schedule templates.
+
+If your club loses premium tier access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium tier access.
+
+Non-premium tier clubs will still be able to choose and use existing templates when creating their draw schedules, and can still manually create schedules.
+
+[See our Draw Schedule Templates documentation to learn more.](/docs/event-management/draw-schedule-templates)
+
+### Sponsors
+
+Premium tier clubs will be able to create and display sponsors for their events.
+
+If your club loses premium tier access, we won't delete your existing sponsors, however they won't be displayed and you won't be able to create new sponsors until regaining premium tier access.
+
+[See our Sponsors documentation to learn more.](/docs/club-management/sponsors)
+
+### Alerts
+
+Premium tier clubs will be able to create and display alerts to their members.
+
+If your club loses premium tier access, we won't delete your existing alerts, however they won't be displayed and you won't be able to modify or create new alerts until regaining premium tier access.
+
+[See our Alerts documentation to learn more.](/docs/club-management/alerts)
+
+
+### Advanced (End) Scores
+
+Premium tier clubs will be able to captures scores for each end in their events should they choose to.
+
+If your club loses premium tier access, we won't delete your existing end scores, however you won't be able to toggle on end scores for your events or enter new end scores until regaining premium tier access.
+Ends scores will still be shown in the results for events that were scored while you still had premium tier access.
+
+Non premium clubs will still be able to score their games, but they won't be able to capture scores for the individual ends.
+
+[See our Scores documentation to learn more.](/docs/event-management/scores)
+
 ### Email Marketing
 
 **COMING SOON**
