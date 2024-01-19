@@ -45,6 +45,15 @@ To find the hex value you like, just enter "color picker" into Google.
 
 You can upload your logo and a smaller version of your logo that will be shown to the left of your club name in the top left of the top navigation bar.
 
+### Banner
+
+You can upload a banner image that will be shown along the top of your public site.
+The dimensions should be as close to 1200 x 250 pixels as possible since it will be resized to fit when uploaded if it is not.
+
+You can also choose whether it will show up just in the pages and articles sections or everywhere on your site.
+We recommend against displaying it everywhere since it takes up a significant amount of screen space.
+
+
 ### Summary
 
 The summary should be a short description of your club and will be shown in our public [Find a club](https://clubs.curling.io) section.
