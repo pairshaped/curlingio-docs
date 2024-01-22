@@ -65,7 +65,7 @@ module.exports = {
             },
             {
               label: 'Tutorial Videos',
-              href: 'https://www.youtube.com/channel/UChVVi0PxRcavHZO-CCwrT5A',
+              href: 'https://www.youtube.com/@curlingio',
             },
           ],
         },

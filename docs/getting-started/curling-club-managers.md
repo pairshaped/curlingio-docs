@@ -55,7 +55,7 @@ We also have feedback boards, online documentation (right here), and video tutor
 
 1. To find out more about our pricing, [see our pricing section.](/docs/getting-started/pricing)
 
-2. [You can find all of our tutorials videos listed here.](https://www.youtube.com/channel/UChVVi0PxRcavHZO-CCwrT5A)
+2. [You can find all of our tutorials videos listed here.](https://www.youtube.com/@curlingio)
 
 3. Peruse our [Club Management documentation](/docs/club-management/leagues) to get a better feel for the Curling I/O platform.
 
