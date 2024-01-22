@@ -9,7 +9,7 @@ The goal of an onboarding session is to get the leagues, fees, discounts, and pr
 
 **We require that attendees review our tutorial videos and documentation prior to booking an onboarding session.**
 A lengthy demo / sales process would require us to charge significantly more, which we don't think our clubs want.
-[We've provided extensive tutorial videos so you can evaluate Curling I/O yourself](https://www.youtube.com/channel/UChVVi0PxRcavHZO-CCwrT5A).
+[We've provided extensive tutorial videos so you can evaluate Curling I/O yourself](https://www.youtube.com/@curlingio).
 
 The onboarding process is a screenshare where we walk through the club setup with you in real time and make sure you're ready to start taking registrations by the end of it.
 Multiple stakeholders can and should attend the same session.
