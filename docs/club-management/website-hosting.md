@@ -32,11 +32,44 @@ On your settings screen, check the "Are we hosting your website?" option, then s
 
 ![Settings Website Hosting](/img/docs/club-management/settings/website-hosting.png)
 
-Once enabled you will see "Pages" and "Articles" in the top navigation.
+Once enabled you will see the "Website" section in the top navigation of the admin area.
 
 You can disable this at any time simply by unchecking the same checkbox.
 
 You can also change the landing page for your Curling I/O to have it point to your pages (the first page in your pages collection).
+
+
+## Banner
+
+You can upload a banner image that will be shown along the top of your public site.
+The dimensions should be as close to 1200 x 250 pixels as possible since it will be resized to fit when uploaded if it is not.
+
+You can also choose whether it will show up just in the pages and articles sections or everywhere on your site.
+We recommend against displaying it everywhere since it takes up a significant amount of screen space.
+
+
+## Sidebar
+
+The sidebar is where you can "tout" other content on the right side of the the pages and articles screens.
+
+You can select which touts should appear in the sidebar for pages and articles.
+
+You can also enable / disable the sidebar for individual pages and articles.
+
+Touts are 300 pixel wide rectangles.
+
+### Current Games Tout
+
+This tout will show the status and scores of any active, soon to be active, or recently completes games in any leagues or competitions at your club.
+
+### Random Sponsor Tout
+
+This tout will show a random [sponsor from your list of sponsors](/docs/club-management/sponsors) if you have any.
+
+### Latest News Tout
+
+This tout will show a brief summary or image of the most recent news article if you have any.
+
 
 ## Pages
 
