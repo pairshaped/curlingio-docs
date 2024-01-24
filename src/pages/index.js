@@ -159,7 +159,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/getting-started/curling-club-managers')}>
-              Get Started  →
+              Learn More  →
             </Link>
           </div>
         </div>
