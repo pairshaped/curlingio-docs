@@ -123,3 +123,4 @@ Self-scoring means that curlers will be able to login and score their own games.
 ## Referrals
 
 You can earn 6 premium months by referring another club to Curling I/O if they end up using our platform.
+Simply [send us a support request](/docs/club-management/support) when you refer a club to let us know.
