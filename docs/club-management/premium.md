@@ -17,27 +17,26 @@ Our premium tier as designed so that even small two-sheet clubs will maintain pr
 
 ## Accessing Premium Tier
 
-Premium tier access is based on your clubs "premium balance" which consists of "premium points".
+Premium tier access is based on your clubs "premium balance" which represents how many months of premium access you have.
 As long as you maintain a balance above zero, your club will maintain premium tier access.
+Your premium balance is decremented every month.
 
-Premium tier access costs 200 premium points per month.
-Newly on-boarded clubs start with a premium balance of 600 premium points, which is equivalent to 3 months of premium tier access.
-If your premium balance reaches zero then you lose access to our premium tier.
-Your balance will never go below -199, so even a small club who depletes their premium balance during the offseason, will quickly regain premium tier access once they start accepting online payments next season.
+Newly on-boarded clubs start with a premium balance of 3 months.
+If your premium balance reaches zero then you lose access to premium tier.
 
 If your club is accepting online payments, then a pecentage of every online payment is automatically added to your premium balance.
-These premium points from online payments are awarded on a scale, where the less you have, the more you will receive.
+These percentages from online payments are awarded on a scale, where the less you have, the more you will receive.
+Even if a small club who depletes their premium balance during the offseason, they will quickly regain premium tier access once they start accepting online payments next season.
 
 If you are not accepting online payments then you can still gain access to premium tier by purchasing one of our supporter packs:
-* **600** premium points for **$60.00**. (3 months)
-* **1,200** premium points for **$114.00**. (6 months at a 5% discount)
-* **2,400** premium points for **$216.00**. (12 months at a 10% discount)
-* **4,800** premium points for **$480.00**. (48 months at a 20% discount)
+* **6** months for **$120.00**.
+* **12** months for **$228.00**. (5% discount)
+* **24** months for **$432.00**. (10% discount)
 
 You can check your club's premium balance and purchase supporter packs at any time through your Curling I/O admin area.
 Select the **Club** dropdown menu in the top navigation bar and then select **Premium**.
 
-**There are no refunds for premium points. Premium points have no real world monetary value and cannot be redeemend or traded.**
+**There are no refunds for premium months. Premium months have no real world monetary value and cannot be redeemend or traded.**
 
 
 ## Premium Tier Benefits
@@ -99,7 +98,7 @@ Premium tier clubs will be able to send emails to your members and create segmen
 For example, you'll be able to send emails like "Join our Spring Bonspiel!" to a previous season's participants.
 
 Simply by belonging to our premium tier, you can send up to 2,000 emails per month.
-You may purchase an additional 2,000 emails for 100 premium points should you need to exceed this limit in a given month.
+You may purchase an additional 4,000 emails for 1 premium month should you need to exceed this limit.
 
 Non premium tier clubs can still download / export their curler lists and use third-party tools like MailChimp, ActiveCampaign, and Constant Contact.
 
@@ -123,4 +122,4 @@ Self-scoring means that curlers will be able to login and score their own games.
 
 ## Referrals
 
-You can earn 1,200 premium points by referring another club to Curling I/O if they end up using our platform.
+You can earn 6 premium months by referring another club to Curling I/O if they end up using our platform.
