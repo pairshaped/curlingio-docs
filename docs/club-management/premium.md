@@ -98,7 +98,13 @@ Premium tier clubs will be able to send emails to your members and create segmen
 For example, you'll be able to send emails like "Join our Spring Bonspiel!" to a previous season's participants.
 
 Simply by belonging to our premium tier, you can send up to 2,000 emails per month.
-You may purchase an additional 4,000 emails for 1 premium month should you need to exceed this limit.
+
+You may purchase additional email credits should you need to exceed this limit in a month.
+Purchased email credits are only used after you've exceeded your monthly allowance of 2,000.
+
+* **10,000** email credits for **$10.00**.
+* **20,000** email credits for **$18.00**. (10% discount)
+* **50,000** email credits for **$40.00**. (20% discount)
 
 Non premium tier clubs can still download / export their curler lists and use third-party tools like MailChimp, ActiveCampaign, and Constant Contact.
 
