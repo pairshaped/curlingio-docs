@@ -19,7 +19,7 @@ This website hosting option remains limited to basic text/image content for seve
 
 1. We are not in the business of competing with established industry-leading website hosting platforms, nor do we think clubs necessarily need most of their extensive features to establish an effective web presence. Avoiding that market space allows us to keep our focus on *curling specific* features.
 2. Clubs with complex websites can often lose tech expertise (due to staff/volunteer churn) and wind up with a monolith no one knows how to update or maintain.  I/O's basic website hosting option is simple, easy to learn and maintain, secure, and is perpetually supported.
-3. Fewers bells & whisltes means less to break or ditract your curlers from what they're really ultimately looking for:  club announcements, league schedules/scores/standings, self-registration, prices, etc.  Our basic pages, articles, leagues, competitions, and products encompass that efficiently and effectively.
+3. Fewers bells & whisltes means less things that can break or distract your curlers from what they're really ultimately looking for: club announcements, league schedules/scores/standings, self-registration, prices, etc.  Our basic pages, articles, leagues, competitions, and products encompass that efficiently and effectively.
 
 
 ## Turn On / Off Website Hosting
