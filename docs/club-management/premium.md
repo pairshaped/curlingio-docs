@@ -36,7 +36,7 @@ If you are not accepting online payments then you can still gain access to premi
 You can check your club's premium balance and purchase supporter packs at any time through your Curling I/O admin area.
 Select the **Club** dropdown menu in the top navigation bar and then select **Premium**.
 
-**There are no refunds for premium months. Premium months have no real world monetary value and cannot be redeemend or traded.**
+**There are no refunds for premium months. Premium months have no real world monetary value and cannot be traded.**
 
 
 ## Premium Tier Benefits
@@ -102,9 +102,9 @@ Simply by belonging to our premium tier, you can send up to 2,000 emails per mon
 You may purchase additional email credits should you need to exceed this limit in a month.
 Purchased email credits are only used after you've exceeded your monthly allowance of 2,000.
 
-* **10,000** email credits for **$10.00**.
-* **20,000** email credits for **$18.00**. (10% discount)
-* **50,000** email credits for **$40.00**. (20% discount)
+* **5,000** email credits for **$10.00**.
+* **10,000** email credits for **$18.00**. (10% discount)
+* **25,000** email credits for **$40.00**. (20% discount)
 
 Non premium tier clubs can still download / export their curler lists and use third-party tools like MailChimp, ActiveCampaign, and Constant Contact.
 
