@@ -26,7 +26,7 @@ If your premium balance reaches zero then you lose access to premium tier.
 
 If your club is accepting online payments, then a pecentage of every online payment is automatically added to your premium balance.
 These percentages from online payments are awarded on a scale, where the less you have, the more you will receive.
-Even if a small club who depletes their premium balance during the offseason, they will quickly regain premium tier access once they start accepting online payments next season.
+Even if a small club depletes their premium balance during the offseason, they will quickly regain premium tier access once they start accepting online payments next season.
 
 If you are not accepting online payments then you can still gain access to premium tier by purchasing one of our supporter packs:
 * **6** months for **$120.00**.
