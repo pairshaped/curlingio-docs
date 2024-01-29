@@ -102,9 +102,9 @@ Simply by belonging to our premium tier, you can send up to 2,000 emails per mon
 You may purchase additional email credits should you need to exceed this limit in a month.
 Purchased email credits are only used after you've exceeded your monthly allowance of 2,000.
 
-* **5,000** email credits for **$10.00**.
-* **10,000** email credits for **$18.00**. (10% discount)
-* **25,000** email credits for **$40.00**. (20% discount)
+* **5,000** email credits for **$20.00**.
+* **10,000** email credits for **$36.00**. (10% discount)
+* **25,000** email credits for **$80.00**. (20% discount)
 
 Non premium tier clubs can still download / export their curler lists and use third-party tools like MailChimp, ActiveCampaign, and Constant Contact.
 
