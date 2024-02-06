@@ -60,7 +60,7 @@ Touts are 300 pixel wide rectangles.
 
 ### Current Games Tout
 
-This tout will show the status and scores of any active, soon to be active, or recently completes games in any leagues or competitions at your club.
+This tout will show the status and scores of any active, soon to be active, or recently completed games in any leagues or competitions at your club.
 
 ### Random Sponsor Tout
 
