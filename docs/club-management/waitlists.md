@@ -54,6 +54,10 @@ Upon registration the waitlist registration is considered "claimed".
 
 ![Approved Waitlists](/img/docs/club-management/waitlists/approved-waitlists.png)
 
+** IMPORTANT: Waitlists are tied to an account, so members MUST login with the same account (email address) to access their waitlist.
+
+If you approve a waitlisted member and they report that they are unable to register, please verify that they logged in with the same email address.
+
 ## Waitlist Cancellation
 
 Club staff, and the registering member, can cancel (remove) a waitlist registration at any time before it is claimed.
