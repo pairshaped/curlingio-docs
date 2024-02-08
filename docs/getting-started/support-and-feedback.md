@@ -16,7 +16,7 @@ You're on our online documentation site right now! Documentation topics are foun
 
 We realize every club is unique and on occasion issues may present themselves.
 
-You can submit support requests directly from your Curling I/O administrator area.
+[You can submit support requests directly from your Curling I/O administrator area.](/docs/club-management/support)
 
 
 ## Feedback
