@@ -50,3 +50,9 @@ Providing a screenshot of the issue you are experiencing can be extremely useful
 ### Body
 
 Describe the issue in as much detail as you can. The more detail you can provide the faster we can identify the issue.
+
+## If you do not have admin access yet
+
+You can alternatively reach out to us directly via email: support@curling.io
+
+Please note that direct email requests will take longer to respond to than requests sent via in-app support.
