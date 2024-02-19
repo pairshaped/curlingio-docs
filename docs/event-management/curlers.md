@@ -42,7 +42,7 @@ Here's the typical flow for a competition:
 4. Each team member clicks the "join link" and is prompted to select or create a curler profile.
 5. Once they have a curler profile, they are asked to agree to the waiver(s) if they haven't already done so for the current season.
 6. The curler profile has now joined the competition and will show up in the "Curlers" tab for the competition on the admin side.
-7. MA staff may now assign profiles to the teams, and leverage the team recommendations feature.
+7. Administrators may now assign profiles to the teams, and leverage the team recommendations feature.
 
 We've provided two videos outlining these steps.
 
