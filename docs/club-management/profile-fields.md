@@ -27,8 +27,6 @@ If you specify that a field is optional, then curlers will be asked, but may cho
 ### Don't Ask
 
 If you specify that a field is don't ask, then curlers will not be asked to fill it out when registering and creating a curler profile.
-Curlers will still be able to see and fill in these fields in their full profile, which can be access by clicking the "Full profile" button next to the "Edit" button when viewing a curler profile.
-It's unlikely that curlers will ever fill out their full profile so any fields you require should be marked as required or optional.
 
 ### Missing Fields?
 
