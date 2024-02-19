@@ -29,3 +29,29 @@ When you click the **Add curlers** button you will be taken to a screen listing 
 You can search to find the curler(s) you want to add, then simply click the **Add** button next to the curler(s).
 
 When you're done, click the **Back** button to verify the added curlers are now showing up for your event.
+
+## Membership Association Competitions
+
+As a membership associations you will usually accept team registrations for your competitions and also require curlers to join w/ their curler profile so they can be placed on a team and agree to your waiver(s).
+
+Here's the typical flow for a competition:
+
+1. A team representative (coah, skip, or club manager) registers and potentially pays for the team and fills out the lineup.
+2. A message is shown to this representative upon completing registration providing instructions to get individual team members registered with a "join" link that should be sent to each of them to do so (we also send these instructions as a follow up email).
+3. The team representative shares this join link with all of the individual team members.
+4. Each team member clicks this join link and is prompted to select or create a curler profile.
+5. After selecting or creating a curler profile, they are asked to agree to the MAs waiver(s) if they haven't already done so for the current season.
+6. The curler profile has not joined the competition and will show up in the "Curlers" tab for the competition on the admin side.
+7. MA staff may now assign profiles to their teams, and leverage the team recommendations feature to do so.
+
+We've provided two videos outlining these steps.
+
+One from the perspective of a registrant:
+https://www.youtube.com/watch?v=PTktPArWNqM&t=132s
+
+Another from the perspective of an administrator:
+https://www.youtube.com/watch?v=Q6SeM3J4pgQ&t=345s
+
+
+We are always looking for ways to streamline this process, so please provide feedback on our feedback board if you have any ideas.
+https://curling.canny.io/clubs
