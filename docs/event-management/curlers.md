@@ -36,7 +36,7 @@ Membership associations typically accept team registrations for their competitio
 
 Here's the typical flow for a competition:
 
-1. A team representative (coah, skip, or club manager) registers and potentially pays for the team while filling in the team lineup.
+1. A team representative (coach, skip, or club manager) registers and potentially pays for the team while filling in the team lineup.
 2. A message is shown to the representative upon completing the registration, providing instructions to get individual team members registered with a "join link" (these instructions are also included in the follow up email).
 3. The team representative shares the "join link" with all of the individual team members.
 4. Each team member clicks the "join link" and is prompted to select or create a curler profile.
