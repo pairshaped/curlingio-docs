@@ -181,6 +181,7 @@ Use this to provide follow up instructions to your members, like a reminder (pos
 
 If you want to leverage Curling I/O team recommendations then you must ask for either a team or a skip name during registration.
 Our team recommendations just make it easier and automate team creation if that's a feature you want to use.
+You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).
 
 If you aren't planning to use Curling I/O to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
