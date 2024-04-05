@@ -138,6 +138,9 @@ You can test your registrations at any time and even submit the orders. You can 
 
 If this is your first time your club is using Curling I/O, and you've just finished setting everything up, feel free to ask us to review your setup.
 
+[If this is not the first time your club is using Curling I/O, there are premium support products, like a seasonal refresher, available here.](https://premium.curling.io/en/products)
+This can be useful for new manager that are thrown into the lake (no knowledge transfer).
+
 We love being able to provide this high level of support free of charge, so we ask that you read the documentation and [review our tutorial videos first](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
 
 DO NOT LEAVE THIS UNTIL THE DAY BEFORE REGISTRATION!
