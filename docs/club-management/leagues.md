@@ -52,7 +52,7 @@ These aren't to be confused with when the league or competition registration ope
 ### Active
 
 If you need to disable a league or competition temporarily you can uncheck the **Active** box.
-When a league or competition is disabled it cannot be seen or purchased by your curlers.
+When a league or competition is disabled it cannot be seen or purchased by your members.
 
 
 ### Summary & Description
@@ -65,9 +65,9 @@ Keep in mind that member's may just add the league or competition to their cart 
 
 ### Required Reading
 
-You can enter some text that your curlers are guaranteed to see before they can complete their registration for the league. Just leave this blank to avoid this registration step.
+You can enter some text that your members are guaranteed to see before they can complete their registration for the league. Just leave this blank to avoid this registration step.
 
-We recommend you use this sparingly as it adds another step (friction) to league registrations for your users.
+We recommend you use this sparingly as it adds another step (friction) to league registrations for your members.
 
 ### Sponsorship
 
@@ -98,20 +98,6 @@ We also make sure they only pay them once per season, by omitting seasonal fees 
 It's also much easier to report on for bookkeeping and when it comes to figuring out your club's remittance.
 
 
-### Min and Max Age
-
-If you are requiring a curler profile (individual instead of team registration) then you can restrict the age of curlers who can register.
-The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
-Age restrictions use July 1st as the cutoff for the current season. So if a curler is not 18 or older on July 1st of the current season's start year then they will be prevented from registering for a league with a min age of 18.
-
-
-### Spots Available
-
-You can restrict the number of registrations for your event.
-If it's an individual registration (requires a curler profile) then this should be how many curlers can register for it.
-If it's a team registration (does not require a curler profile) then this should be the number of teams that can register for it.
-
-
 ### Requiring a Curler Profile
 
 When you require a curler profile you are forcing registrations to be **individual** only.
@@ -126,10 +112,76 @@ Also if Sue's club was running a multi-league discount like 20% off the second l
 For competition / bonspiel registrations you usually do not want to require a curler profile, since these are usually team registrations and membership or affiliate fees are irrelevant.
 
 
+### Seasonal per curler
+
+If you are requiring a curler profile, then checking the seasonal per curler checkbox will prevent this league from being purchase for the same curler more than once in the same season.
+We highly recommend you use this for seasonal leagues as this can reduce mistaken purchases where a user really meant to usea different curler profile or didn't realize they had the league in their cart more than once.
+
+
+### Private
+
+You can check this box to make a league or competition available **only** to those that have been given a unique URL to click.
+This is typically used to offer early access to a league or competition for returning members.
+
+If you check this box then once you save the league or competition, a unique URL will be generated for it.
+You can copy this unique URL and send it to the subset of members you want to be able to purchase it.
+To find this URL simply click on the name of the league or competition on the administrator product listing page.
+
+
+### Notification email
+
+If you'd like someone to be notified every time the league or competition is purchased you can enter their email address here.
+You can enter more than one email address separated by commas.
+
+We don't perform any email validations on this field, so please make sure you don't have a typo or a defunct email address or they won't receive the notifications.
+
+We also don't recommend using this feature for fellow managers since they will have access to the same information from within the admin area, and sending notification emails get spammy.
+
+
+### Spots Available
+
+You can restrict the number of registrations for your event.
+If it's an individual registration (requires a curler profile) then this should be how many curlers can register for it.
+If it's a team registration (does not require a curler profile) then this should be the number of teams that can register for it.
+
+
+### Waitlist enabled
+
+Check this box if you want members to be able to add their name to a waitlist when there are no longer spots available.
+This only works if you've restricted the spots available.
+
+More details and examples can be found in the [waitlists section.](/docs/club-management/waitlists)
+
+
+### Publish Registrations
+
+If you would like to publicly show who has registered for a league or competition you can check this box.
+Only the curler's name, team or skip name, position, and lineup will be shown.
+No other information collected through custom fields or from the curler's profile will be shown.
+
+The reason to publish registrations is so that other members can see who has already registered, like a friend or family member, when they are deciding to register themself.
+Similar to a bulletin board at the club.
+
+
+### Min and Max Age
+
+If you are requiring a curler profile (individual instead of team registration) then you can restrict the age of members who can register.
+The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
+Age restrictions use July 1st as the cutoff for the current season. So if a curler is not 18 or older on July 1st of the current season's start year then they will be prevented from registering for a league with a min age of 18.
+
+
+### Post registration message
+
+This is a message that your members will see after they purchase the league or competition.
+The message is displayed both on the thank you screen and in the email they receive after purchase.
+Use this to provide follow up instructions to your members, like a reminder (possibly with a link) to ask their teammates to register.
+
+
 ### Team or Skip Name
 
 If you want to leverage Curling I/O team recommendations then you must ask for either a team or a skip name during registration.
 Our team recommendations just make it easier and automate team creation if that's a feature you want to use.
+You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).
 
 If you aren't planning to use Curling I/O to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
@@ -144,16 +196,6 @@ If you ask for the curlers position and are using our team recommendations for a
 Usually you wouldn't want to ask for lineup information for individual league registrations otherwise every member of the team will be entering it in duplicate and triplicate when each of the register.
 
 However, this can be useful for competitions that are typically done as team registrations if you need to know who will be participating.
-
-
-### Publish Registrations
-
-If you would like to publicly show who has registered for a league or competition you can check this box.
-Only the curler's name, team or skip name, position, and lineup will be shown.
-No other information collected through custom fields or from the curler's profile will be shown.
-
-The reason to publish registrations is so that other curlers can see who has already registered, like a friend or family member, when they are deciding to register themself.
-Similar to a bulletin board at the club.
 
 
 ### Publish Schedule and Results
@@ -178,34 +220,14 @@ If you want to be able to score each of the ends for each team for the league or
 
 ### Allow Spares
 
-Curling I/O has a sparing feature where curlers can check off which leagues and competitions they are available to spare for.
-The use of this feature does not require curlers to have purchased anything, but simply to have added a curler profile and accepted your waivers.
+Curling I/O has a sparing feature where members can check off which leagues and competitions they are available to spare for.
+The use of this feature does not require members to have purchased anything, but simply to have added a curler profile and accepted your waivers.
 Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
 Similar to a bulletin board at the club.
 
 ![Sparing](/img/docs/club-management/leagues/sparing.png)
 
 The above screen shot shows how a curler can specify their sparing availability.
-
-
-### Private
-
-You can check this box to make a league or competition available **only** to those that have been given a unique URL to click.
-This is typically used to offer early access to a league or competition for returning members.
-
-If you check this box then once you save the league or competition, a unique URL will be generated for it.
-You can copy this unique URL and send it to the subset of curlers you want to be able to purchase it.
-To find this URL simply click on the name of the league or competition on the administrator product listing page.
-
-
-### Notification email
-
-If you'd like someone to be notified every time the league or competition is purchased you can enter their email address here.
-You can enter more than one email address separated by commas.
-
-We don't perform any email validations on this field, so please make sure you don't have a typo or a defunct email address or they won't receive the notifications.
-
-We also don't recommend using this feature for fellow managers since they will have access to the same information from within the admin area, and sending notification emails get spammy.
 
 
 ## Assigning Fees & Addons
@@ -226,7 +248,7 @@ Examples of addons are lockers, grippers, helmets. Any product that you want to 
 
 ## Adding Custom Fields
 
-Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.
+Custom fields allow you to ask your members questions specific to your club that we haven't thought of during registration.
 
 Keep in mind that for individual registration where you require a curler profile, you shouldn't need to add custom fields for general curler data as this will already be associated with the registration.
 
@@ -265,7 +287,7 @@ Give the registering curler a $10 fixed discount if they register at least 90 da
 #### Example 4: First Time Member
 
 Give the registering curler a 5% discount if this is the first time they've registered with your club.
-This is an example of a custom field based discount and you'd be responsible for making sure curlers don't select the option when they shouldn't.
+This is an example of a custom field based discount and you'd be responsible for making sure members don't select the option when they shouldn't.
 
 More details and examples can be found in the [discounts section.](/docs/club-management/discounts)
 
