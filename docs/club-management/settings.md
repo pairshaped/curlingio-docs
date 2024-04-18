@@ -103,7 +103,7 @@ You can select the month that you'd like your season to begin. It's always going
 
 1. Your seasonal fees and seasonal procucts. This determines which season they are collected for during registration.
 2. Your leagues based on their start dates.
-3. Your age restrictions. For example a maximum age restrictions of 17, means they cannot be older than 17 when this month begins.
+3. Your age restrictions. For example a maximum age restriction of 17, means they cannot be older than 17 when this month begins.
 
 Be careful changing this since it's effects are so wide reaching. Ideally you rarely, if ever, need to change this month.
 
