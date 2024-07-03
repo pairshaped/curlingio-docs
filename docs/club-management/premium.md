@@ -9,13 +9,12 @@ slug: /club-management/premium
 
 ## What is Premium Tier?
 
-Clubs who belong to our premium tier have access to exclusive benefits.
+Clubs who belong to our premium tier have access to exclusive premium benefits.
 
-All clubs retain access to Curling I/O's core functionality, and there is no obligation to join premium tier.
+All clubs retain access to Curling I/O's core functionality regardless.
+There is no obligation to join premium tier.
 
-Newly on-boarded clubs start with one year of premium tier access.
-
-If your club is not accepting online payments then you will have the option to purchase one year of premium tier access.
+If your club is not accepting online payments there will be an option to purchase one year of premium tier access.
 There is no auto-renewal. If you want to continue using our premium tier, then you will need to repurchase it every year.
 
 **There are no refunds for premium tier.**
