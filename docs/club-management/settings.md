@@ -111,24 +111,6 @@ Be careful changing this since it's effects are so wide reaching. Ideally you ra
 If you optionally provide your tax identifier (Business Number in Canada), we'll include it on the receipts sent to your curlers when they make a purchase.
 This is rarely required, but we have seen cases where registrants needed a tax identifier for expense purposes.
 
-## Integrations
-
-Currently we provide two integrations. The Curling I/O registration and results widget and Mailchimp.
-
-Here you will find your API Access Key needed by the registration and results widget. [What is the Registration and Results Widget?](/docs/club-management/registration-widget)
-
-Mailchimp is a separate service (not provided by Curling I/O) that enables you to send out marketing emails and email blasts to your curlers.
-By entering your API Key and an Audience ID Curling I/O will automatically populate your Mailchimp mailing list (audience) with your curlers as they register.
-We also tag your curlers in Mailchimp with the item they purchased (like the name of a league) so that you can segment your email campaigns.
-For example to send an email to everyone who registered for the Monday Night Men's league.
-
-You can have up to 2,000 subscribers (curlers) registered in your Mailchimp account free of charge, and send up to 12,000 email per month.
-
-- [You can sign up for a free Mailchimp account here.](http://eepurl.com/dJ_Wys)
-- [Instructions on how to get your API key.](https://mailchimp.com/help/about-api-keys/)
-- [Instructions on how to get your Audience ID.](https://mailchimp.com/help/find-audience-id/)
-
-
 ## Tags
 
 Tags are used to make it easier for your curlers to search a large number of leagues and competitions.
