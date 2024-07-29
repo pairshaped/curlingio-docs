@@ -116,6 +116,8 @@ To find this URL simply click on the name of the product on the administrator pr
 
 ### Notification email
 
+**[This is a Premium Only Feature](/docs/club-management/premium)**
+
 If you'd like someone to be notified every time the product is purchased you can enter their email address here.
 You can enter more than one email address separated by commas.
 

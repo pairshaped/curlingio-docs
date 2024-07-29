@@ -7,7 +7,7 @@ slug: /getting-started/faq
 ### How much does it cost?
 
 Curling I/O pricing is 2.9% + $0.30 per online transaction, and include all credit card processing fees.
-There are no monthly, yearly, setup, or licensing fees, and offline payments are free.
+We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not.
 See our [pricing section](/docs/getting-started/pricing) for more details.
 
 ### I'm having trouble signing in
@@ -29,6 +29,9 @@ It's generally not worth the effort though, as curler's are quick to adopt and k
 Yes. We have a handful of clubs that are using Curling I/O just for offline payments and it doesn't cost them a penny.
 Our assumption is that eventually your club will adopt online payments out of convenience for both curling club managers and your curlers.
 Starting with Curling I/O for offline payments is a great way for curling club managers to become familiar with the system.
+
+We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not.
+These premium only features are not required to use Curling I/O.
 
 Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible.
 Every support ticket has a cost for us, and our documentation should cover all of your support needs.

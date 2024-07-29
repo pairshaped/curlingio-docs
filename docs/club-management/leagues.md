@@ -130,6 +130,8 @@ To find this URL simply click on the name of the league or competition on the ad
 
 ### Notification email
 
+**[This is a Premium Only Feature](/docs/club-management/premium)**
+
 If you'd like someone to be notified every time the league or competition is purchased you can enter their email address here.
 You can enter more than one email address separated by commas.
 
@@ -214,6 +216,8 @@ Note: A member is a logged in user who has purchased something from your club (t
 Users who aren't logged in or have not made a purchase in the current season will never see team contact information.
 
 ### End Scores Enabled
+
+**[This is a Premium Only Feature](/docs/club-management/premium)**
 
 If you want to be able to score each of the ends for each team for the league or competition, you can check this box to enable end scores.
 [Refer to our scoring documentation to see how this works.](/docs/event-management/scores)

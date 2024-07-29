@@ -5,6 +5,8 @@ slug: /club-management/sponsors
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+**[This is a Premium Only Feature](/docs/club-management/premium)**
+
 You can create reusable sponsors that can be associated with leagues, competitions, products, pages, and articles.
 
 When a member views the details of any of these items, the sponsor logo will be shown along with it's name.
