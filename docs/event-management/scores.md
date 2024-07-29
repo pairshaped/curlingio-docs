@@ -45,6 +45,8 @@ Click the **Save** button when you're done to save the changes.
 
 ## End Scores
 
+**[This is a Premium Only Feature](/docs/club-management/premium)**
+
 If end scores are enabled for your league or competition, you'll be presented with more options:
 
 ![End Scores](/img/docs/event-management/scores/end-scores.png)
