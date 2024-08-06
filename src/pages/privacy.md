@@ -17,7 +17,7 @@ If we ask for your personal information for a secondary reason, like marketing, 
 
 **How do I withdraw my consent?**
 
-If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@curling.io or mailing us at: 2508941 Ontario Inc. 34 Stanley St., Ayr, ON, N0B 1E0, Canada
+If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at support@curling.io or mailing us at: 2508941 Ontario Inc. 69 Prince Philip Blvd., Ayr, ON, N0B 1E0, Canada
 
 
 ## Section 3 - Disclosure
@@ -85,4 +85,4 @@ If our store is acquired or merged with another company, your information may be
 
 If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at support@curling.io or by mail at 2508941 Ontario Inc.:
 
-[Re: Privacy Compliance Officer]<br />[34 Stanley St., Ayr, ON, N0B 1E0, Canada]
+[Re: Privacy Compliance Officer]<br />[69 Prince Philip Blvd., Ayr, ON, N0B 1E0, Canada]
