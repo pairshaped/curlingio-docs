@@ -121,6 +121,18 @@ If all discounts they are receiving are exclusive, then the greatest discount am
 
 This is useful if you have a large discount that you never want to stack regardless of whether the curler meets the criteria for any other.
 
+### Discount Inclusions
+
+Discount inclusions are useful when you want to limit a discount to only specific curlers.
+Usually this is used to provide a grandfathered discount to lifetime or shareholder curlers when you're no longer selling these lifetime or shareholder products (otherwise product based criteria is better).
+
+To access discount inclusions, click the name of the discount from the discounts listing screen and then click the "Discount inclusions" button near the bottom.
+Now you can add and remove curlers from its inclusions list.
+
+**Important:** Once you have one or more curlers assigned to a discounts inclusions then no other curlers will qualify for it.
+You will need to remove all of the curlers from the inclusions list to make it available to other curlers.
+
+
 ## Troubleshooting Discounts
 
 We highly recommend keeping your discounts as simple as possible, so you know at a glance who will be receiving a discount and under what conditions.
