@@ -11,6 +11,7 @@ It's important to differentiate between support requests and feature requests. D
 
 Please keep in mind that support has a cost (to us).
 We made a choice early on, that in order to keep costs and fees to a minimum, our clubs would need to self-support as much as possible.
+To this end, we have provided tutorial videos and documentation covering all of our features.
 Most other platforms have yearly fees to cover their support costs, while we allow clubs to operate free of charge.
 If you are not comfortable self-supporting, and need more hands-on guidance, we do offer [paid support options](https://premium.curling.io/en/products).
 
