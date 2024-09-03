@@ -45,6 +45,8 @@ If you find that there are multiple copies for the same team that have slightly 
 
 ![Team Match](/img/docs/event-management/teams/team-match.png)
 
+We will also copy over the team contact name, phone, email, coach, and affiliation from the registration if are being asked and filled in.
+
 
 ## Manual Team Assembly
 
