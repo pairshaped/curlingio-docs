@@ -46,6 +46,7 @@ module.exports = {
       'event-management/teams',
       'event-management/round-robins',
       'event-management/playoff-brackets',
+      'event-management/bracket-templates',
       'event-management/draw-schedule',
       'event-management/draw-schedule-templates',
       'event-management/scores',
