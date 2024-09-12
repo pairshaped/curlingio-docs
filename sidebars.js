@@ -59,10 +59,10 @@ module.exports = {
       'member-data/import',
       'member-data/setup',
     ],
-    // API: [
-    //   'api/leagues',
-    //   'api/competitions',
-    //   'api/products',
-    // ]
+    "API": [
+      'api/items',
+      'api/event-details',
+      'api/product-details'
+    ]
   },
 };
