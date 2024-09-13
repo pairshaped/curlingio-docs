@@ -60,6 +60,18 @@ For example, if I wanted to fetch Curling Canada competitions from last year I w
 https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/competitions?occurred=-1
 ```
 
+### Only show events that have published results
+
+You can filter out events that aren't set to be published yet by passing ```registrations=f```.
+This just tells the API you are looking for event results instead of the event registration list.
+
+For example, this is the end point to use if you want to fetch Curling Canada competition statistics:
+
+```
+https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/competitions?registrations=f
+```
+
+
 ## Payload
 
 There are two nodes at the root. One which lists all of the available seasons (varies club by club), and another which lists all of the available items (leagues, competitions, or products).
