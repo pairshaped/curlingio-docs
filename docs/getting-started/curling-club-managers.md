@@ -1,6 +1,6 @@
 ---
 id: curling-club-managers
-title: Curling Club Managers
+title: Curling Club Management
 slug: /getting-started/curling-club-managers
 ---
 
