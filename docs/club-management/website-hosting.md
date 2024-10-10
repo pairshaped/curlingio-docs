@@ -41,7 +41,7 @@ You can also change the landing page for your Curling I/O to have it point to yo
 
 ## Banner
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 You can upload a banner image that will be shown along the top of your public site.
 The dimensions should be as close to 1200 x 250 pixels as possible since it will be resized to fit when uploaded if it is not.
@@ -52,7 +52,7 @@ We recommend against displaying it everywhere since it takes up a significant am
 
 ## Sidebar
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 The sidebar is where you can "tout" other content on the right side of the the pages and articles screens.
 

@@ -3,6 +3,7 @@ module.exports = {
     "Getting Started": [
       'getting-started/curling-club-managers',
       'getting-started/pricing',
+      'getting-started/premium',
       'getting-started/book-an-onboarding-session',
       'getting-started/support-and-feedback',
       'getting-started/faq',
@@ -37,7 +38,6 @@ module.exports = {
       'club-management/linking-to-registration',
       'club-management/registration-widget',
       'club-management/support',
-      'club-management/premium',
     ],
     "Event Management": [
       'event-management/registrations',

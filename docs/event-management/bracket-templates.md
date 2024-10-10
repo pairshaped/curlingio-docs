@@ -5,7 +5,7 @@ slug: /event-management/bracket-templates
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 Bracket templates allow you, the curling club manager, to pre-create playoff brackets that you will re-use between multiple leagues and competitions year after year.
 

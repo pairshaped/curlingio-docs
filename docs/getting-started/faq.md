@@ -31,7 +31,7 @@ Our assumption is that eventually your club will adopt online payments out of co
 Starting with Curling I/O for offline payments is a great way for curling club managers to become familiar with the system.
 
 We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not.
-These premium only features are not required to use Curling I/O.
+[These premium only features are not required to use Curling I/O.](/docs/getting-started/premium)
 
 Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible.
 Every support ticket has a cost for us, and our documentation should cover all of your support needs.

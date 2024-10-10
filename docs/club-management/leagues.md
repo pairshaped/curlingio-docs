@@ -130,7 +130,7 @@ To find this URL simply click on the name of the league or competition on the ad
 
 ### Notification email
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 If you'd like someone to be notified every time the league or competition is purchased you can enter their email address here.
 You can enter more than one email address separated by commas.
@@ -209,7 +209,7 @@ If you are not planning to use these features within Curling I/O, we recommend y
 
 ### End Scores Enabled
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 If you want to be able to score each of the ends for each team for the league or competition, you can check this box to enable end scores.
 [Refer to our scoring documentation to see how this works.](/docs/event-management/scores)

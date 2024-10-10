@@ -5,7 +5,7 @@ slug: /event-management/draw-schedule-templates
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 Draw schedules templates allow you, the curling club manager, to pre-create draw schedules that you will re-use between multiple leagues and competitions year after year.
 
