@@ -45,7 +45,7 @@ Click the **Save** button when you're done to save the changes.
 
 ## End Scores
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 If end scores are enabled for your league or competition, you'll be presented with more options:
 

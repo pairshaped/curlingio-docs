@@ -5,7 +5,7 @@ slug: /club-management/alerts
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-**[This is a Premium Only Feature](/docs/club-management/premium)**
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 Alerts allow you, the curling club manager, to display specific messages to your members on specific screens, and until a specific date like so:
 
