@@ -8,8 +8,8 @@ slug: /getting-started/premium
 
 ## What is Premium Tier?
 
-**There is no obligation to join premium tier, and all clubs retain access to Curling I/O's core functionality regardless.**
-However, clubs who belong to our premium tier gain access to exclusive premium features.
+**There is no obligation to join premium tier. All clubs retain access to Curling I/O's core functionality regardless.**
+Clubs who belong to our premium tier will gain access to exclusive premium features.
 
 If your club is not accepting online payments there will be an option to purchase one year of premium access for your club.
 Upon purchase, premium features are unlocked for all of your club's users.
@@ -38,6 +38,17 @@ If your club loses premium access, we won't delete your existing templates, howe
 All clubs can choose from and use existing templates when creating their draw schedules, regardless of premium status.
 
 [See our Draw Schedule Templates documentation to learn more.](/docs/event-management/draw-schedule-templates)
+
+
+### Bracket Templates
+
+Premium tier clubs will be able to create their own custom playoff bracket templates.
+
+If your club loses premium access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium access.
+
+Premium tier clubs can choose from and use existing templates when creating their brackets.
+
+[See our Bracet Templates documentation to learn more.](/docs/event-management/bracket-templates)
 
 
 ### Sponsors
