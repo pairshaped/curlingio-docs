@@ -128,27 +128,35 @@ However if the league has already been paid for the easiest way to handle this i
 
 ### Can we sell raffle (50 / 50) tickets on Curling I/O?
 
-You cannot use Curling I/O to process online payments for raffle tickets.
-Raffles, like 50 / 50 tickets, are considered a "Restricted Business" that we are not licensed for.
-If we find that you are using online payments to sell raffle tickets, your club's ability to process online payments will be disabled immediately.
+It depends on which of our payment processors (credit card processors) you are using.
+If you are using SportsPay, then in general yes, raffles should not be an issue.
+If you are using Stripe, then no, absolutely not, since this is categorized as a resitrcted business.
 
-Canadian based clubs can find the list of "Restricted Businesses" here:
+You cannot use Curling I/O to process online payments for raffle tickets if you are using Stripe.
+Raffles, like 50 / 50 tickets, are considered a "Restricted Business" that we are not licensed for.
+If we find that you are using online payments to sell raffle tickets, your club's ability to process online payments through Stripe will be disabled immediately.
+If you want to do this, you'll need to switch to SportsPay, which can be found in your Club dropdown -> Stripe section.
+
+Canadian based clubs can find the list of Stripe's "Restricted Businesses" here:
 [https://stripe.com/en-ca/restricted-businesses](https://stripe.com/en-ca/restricted-businesses)
 
-U.S. based clubs can find the list of "Restricted Businesses" here:
+U.S. based clubs can find the list of Stripe's "Restricted Businesses" here:
 [https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
 
 
 ### Can we sell prize pool fees on Curling I/O?
 
-You cannot use Curling I/O to process online payments for prize pool fees.
-Prize pools where winners are rewarded money are considered a "Restricted Business" that we are not licensed for.
-If we find that you are using online payments to sell prize pool fees, your club's ability to process online payments will be disabled immediately.
+It depends on which of our payment processors (credit card processors) you are using.
+If you are using SportsPay, then in general yes, prize pools should not be an issue.
+If you are using Stripe, then no, absolutely not, since this is categorized as a resitrcted business.
 
-Canadian based clubs can find the list of "Restricted Businesses" here:
+Prize pools where winners are rewarded money are considered a Stripe "Restricted Business" that we are not licensed for.
+If we find that you are using online payments to sell prize pool fees, your club's ability to process online payments through Stripe will be disabled immediately.
+
+Canadian based clubs can find the list of Stripe's "Restricted Businesses" here:
 [https://stripe.com/en-ca/restricted-businesses](https://stripe.com/en-ca/restricted-businesses)
 
-U.S. based clubs can find the list of "Restricted Businesses" here:
+U.S. based clubs can find the list of Stripe's "Restricted Businesses" here:
 [https://stripe.com/restricted-businesses](https://stripe.com/restricted-businesses)
 
 

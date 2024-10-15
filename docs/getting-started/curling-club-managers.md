@@ -16,8 +16,6 @@ It's intuitive and seamless for curlers of all ages to use season after season.
 In fact, our national curler database makes it even easier to register again after the first season as they won't need to rekey all of their information.
 
 We also make it easy for clubs to accept payments online.
-We integrate with the industry leader, extremely secure, and well regarded payment processor [Stripe](https://stripe.com/).
-It only takes around 5 minutes to get your club setup for online payments.
 
 
 ## League and Competition Management

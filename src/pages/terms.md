@@ -20,7 +20,7 @@ You may not use the System:
     * Infringes the patent, trademark, trade secret, copyright or other proprietary right of any other party;
     * Any unsolicited or unauthorized advertising or commercial material, “junk mail”, “spam”, “chain letter”, “pyramid scheme” or any other form of solicitation.
     * Any material that contains software viruses or any other computer code, file or program designed to interrupt, destroy or limit the functionality of any computer software or telecommunications equipment.
-5. To process online payments (i.e. via Stripe) for raffle tickets, which, like 50/50 tickets, are considered by Stripe to be a "Restricted Business" (i.e. gambling or "games of chance") for which we are not jurisdictionally licensed (e.g. casino / lottery).  We reserve the right to disable any club's ability to process online payments to avoid violation of Stripe's terms.
+5. To process online payments via Stripe for raffle tickets, which, like 50/50 tickets, are considered by Stripe to be a "Restricted Business" (i.e. gambling or "games of chance") for which we are not jurisdictionally licensed (e.g. casino / lottery).  We reserve the right to disable any club's ability to process online payments to avoid violation of Stripe's terms.
 
 ## Disclaimer of Warranties
 You expressly understand and agree that:
