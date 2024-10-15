@@ -152,6 +152,7 @@ If you are using Stripe, then no, absolutely not, since this is categorized as a
 
 Prize pools where winners are rewarded money are considered a Stripe "Restricted Business" that we are not licensed for.
 If we find that you are using online payments to sell prize pool fees, your club's ability to process online payments through Stripe will be disabled immediately.
+If you want to do this, you'll need to switch to SportsPay, which can be found in your Club dropdown -> Stripe section.
 
 Canadian based clubs can find the list of Stripe's "Restricted Businesses" here:
 [https://stripe.com/en-ca/restricted-businesses](https://stripe.com/en-ca/restricted-businesses)
