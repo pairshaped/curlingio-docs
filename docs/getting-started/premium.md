@@ -29,26 +29,11 @@ Upon purchase, premium features are unlocked for all of your club's users.
 Premium tier clubs are prioritized when submitting support tickets.
 
 
-### Draw Schedule Templates
+### Waitlisting
 
-Premium tier clubs will be able to create their own custom draw schedule templates.
+Premium tier clubs can enabled waitlists for their leagues, competitions, and products.
 
-If your club loses premium access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium access.
-
-All clubs can choose from and use existing templates when creating their draw schedules, regardless of premium status.
-
-[See our Draw Schedule Templates documentation to learn more.](/docs/event-management/draw-schedule-templates)
-
-
-### Bracket Templates
-
-Premium tier clubs will be able to create their own custom playoff bracket templates.
-
-If your club loses premium access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium access.
-
-Premium tier clubs can choose from and use existing templates when creating their brackets.
-
-[See our Bracet Templates documentation to learn more.](/docs/event-management/bracket-templates)
+[See our Waitlist documentation to learn more.](/docs/club-management/waitlists)
 
 
 ### Sponsors
@@ -79,11 +64,26 @@ If your club loses premium access, we won't delete these email addresses, howeve
 [See our Notifications documentation to learn more.](/docs/club-management/leagues#notification-email)
 
 
-### Waitlisting
+### Draw Schedule Templates
 
-Premium tier clubs can enabled waitlists for their leagues, competitions, and products.
+Premium tier clubs will be able to create their own custom draw schedule templates.
 
-[See our Waitlist documentation to learn more.](/docs/club-management/waitlists)
+If your club loses premium access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium access.
+
+All clubs can choose from and use existing templates when creating their draw schedules, regardless of premium status.
+
+[See our Draw Schedule Templates documentation to learn more.](/docs/event-management/draw-schedule-templates)
+
+
+### Bracket Templates
+
+Premium tier clubs will be able to create their own custom playoff bracket templates.
+
+If your club loses premium access, we won't delete your existing templates, however you won't be able to create new templates until regaining premium access.
+
+Premium tier clubs can choose from and use existing templates when creating their brackets.
+
+[See our Bracet Templates documentation to learn more.](/docs/event-management/bracket-templates)
 
 
 ### Advanced Scoring (End Scores)
@@ -114,5 +114,10 @@ Premium clubs can setup venues and specify their availability to take online boo
 
 
 ### Quick Books Online Integration
+
+**COMING SOON**
+
+
+### Team Communication Features
 
 **COMING SOON**
