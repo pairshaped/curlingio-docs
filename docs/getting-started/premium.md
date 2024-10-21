@@ -36,34 +36,6 @@ Premium tier clubs can enabled waitlists for their leagues, competitions, and pr
 [See our Waitlist documentation to learn more.](/docs/club-management/waitlists)
 
 
-### Sponsors
-
-Premium tier clubs will be able to create and display sponsors for their events.
-
-If your club loses premium access, we won't delete your existing sponsors, however they won't be displayed and you won't be able to create new sponsors until regaining premium access.
-
-[See our Sponsors documentation to learn more.](/docs/club-management/sponsors)
-
-
-### Alerts
-
-Premium tier clubs will be able to create and display alerts to their members.
-
-If your club loses premium access, we won't delete your existing alerts, however they won't be displayed and you won't be able to modify or create new alerts until regaining premium access.
-
-[See our Alerts documentation to learn more.](/docs/club-management/alerts)
-
-
-### Purchase Notifications
-
-Premium tier clubs will be able to add one or more email addresses to leagues, competitions, and products to be notified of a purchase.
-This is mainly used for rental leagues when you want to notify a third party of registrations.
-
-If your club loses premium access, we won't delete these email addresses, however they will no longer receive email notifications. Re-gaining premium access will resume notifications.
-
-[See our Notifications documentation to learn more.](/docs/club-management/leagues#notification-email)
-
-
 ### Draw Schedule Templates
 
 Premium tier clubs will be able to create their own custom draw schedule templates.
@@ -96,6 +68,41 @@ Ends scores will still be shown in the results for events that were scored while
 All clubs are able to score their games, but they won't be able to capture scores for the individual ends without premium access.
 
 [See our Scores documentation to learn more.](/docs/event-management/scores)
+
+
+### Sponsors
+
+Premium tier clubs will be able to create and display sponsors for their events.
+
+If your club loses premium access, we won't delete your existing sponsors, however they won't be displayed and you won't be able to create new sponsors until regaining premium access.
+
+[See our Sponsors documentation to learn more.](/docs/club-management/sponsors)
+
+
+### Alerts
+
+Premium tier clubs will be able to create and display alerts to their members.
+
+If your club loses premium access, we won't delete your existing alerts, however they won't be displayed and you won't be able to modify or create new alerts until regaining premium access.
+
+[See our Alerts documentation to learn more.](/docs/club-management/alerts)
+
+
+### Purchase Notifications
+
+Premium tier clubs will be able to add one or more email addresses to leagues, competitions, and products to be notified of a purchase.
+This is mainly used for rental leagues when you want to notify a third party of registrations.
+
+If your club loses premium access, we won't delete these email addresses, however they will no longer receive email notifications. Re-gaining premium access will resume notifications.
+
+[See our Notifications documentation to learn more.](/docs/club-management/leagues#notification-email)
+
+
+### PDF Attachments to Pages
+
+Premium tier clubs will be able to upload PDFs to their pages.
+
+If your club loses premium access, we won't delete your existing PDFs, however they won't be displayed and you won't be able to upload new PDFs until regaining premium access.
 
 
 ### Self-scoring by Curlers
