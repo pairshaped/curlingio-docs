@@ -8,6 +8,8 @@ slug: /getting-started/premium
 
 ## What is Premium Tier?
 
+Premium tier clubs gain access to the non-essential but convenient benefits and features listed here.
+
 **There is no obligation to join premium tier. All clubs retain access to Curling I/O's core functionality regardless.**
 Clubs who belong to our premium tier will gain access to exclusive premium features.
 
