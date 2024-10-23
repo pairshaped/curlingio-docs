@@ -64,7 +64,6 @@ Premium tier clubs can choose from and use existing templates when creating thei
 Premium tier clubs will be able to captures scores for each end in their events should they choose to.
 
 If your club loses premium access, we won't delete your existing end scores, however you won't be able to toggle on end scores for your events or enter new end scores until regaining premium access.
-Ends scores will still be shown in the results for events that were scored while you still had premium access.
 
 All clubs are able to score their games, but they won't be able to capture scores for the individual ends without premium access.
 
@@ -87,6 +86,17 @@ Premium tier clubs will be able to create and display alerts to their members.
 If your club loses premium access, we won't delete your existing alerts, however they won't be displayed and you won't be able to modify or create new alerts until regaining premium access.
 
 [See our Alerts documentation to learn more.](/docs/club-management/alerts)
+
+
+### MailChimp Integration
+
+Premium tier clubs are able to automatically synchronize their curlers with a Mailchimp email marketing account if they choose to.
+This includes tagging curlers with the events they are registered for.
+This integration allows clubs to send out targetted email campaigns, like announcing upcoming events.
+
+If your club loses premium access, synchronization will be paused until you regain premium access.
+
+Even without premium tier access, clubs are able to download curler profiles to manually import into email marketing tools like Mailchimp.
 
 
 ### Purchase Notifications
