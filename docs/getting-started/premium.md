@@ -21,6 +21,17 @@ Upon purchase, premium features are unlocked for all of your club's users.
 - There is a 2 month window where you can re-purchase before it expires, and have another year added to your expiry date.
 - **There are no refunds for premium tier.**
 
+## Why have a Premium Tier?
+
+Our premium tier features and benefits all have an outsized cost, whether it's infrastructure or support.
+Since nothing is actually **free**, we still have to pay for this out of revenue generated from our paying clubs.
+Essentially this means that our free option is subsidized by our paying clubs.
+
+We firmly believe that having a functional free option of Curling I/O is important, and this means we must keep our operating costs to a minimum.
+We also believe that having a premium tier to limit our costs is a fair solution, since none of these premium features are essential to benefiting from Curling I/O.
+
+We want to build new, potentially resource intensive, features without worrying about how much it will cost us to offer them for free.
+
 
 ## Premium Tier Benefits
 
