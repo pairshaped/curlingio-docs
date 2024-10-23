@@ -30,7 +30,7 @@ Essentially the free option is subsidized by our paying clubs.
 That being said, we firmly believe that having a functional free option of Curling I/O is important, and this means we must keep our operating costs to a minimum.
 We believe that having a premium tier to limit our costs is a fair solution, since none of these premium features are essential to benefit from Curling I/O.
 
-We also want to build new, potentially resource intensive, features without worrying about how much it will cost us to offer them for free.
+We also want to build new, potentially resource intensive features without worrying about how much it will cost us to offer them for free.
 
 
 ## Premium Tier Benefits
