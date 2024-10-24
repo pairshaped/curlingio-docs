@@ -4,7 +4,7 @@ title: Support and Feedback
 slug: /getting-started/support
 ---
 
-We offer three options available for help and support with Curling I/O.
+We offer three options available for help and support with Curling IO.
 
 ## Online Documentation
 
@@ -16,7 +16,7 @@ You're on our online documentation site right now! Documentation topics are foun
 
 We realize every club is unique and on occasion issues may present themselves.
 
-[You can submit support requests directly from your Curling I/O administrator area.](/docs/club-management/support)
+[You can submit support requests directly from your Curling IO administrator area.](/docs/club-management/support)
 
 
 ## Feedback

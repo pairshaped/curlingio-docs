@@ -10,8 +10,8 @@ slug: /api/product-details
 https://api-curlingio.global.ssl.fastly.net/en/clubs/[subdomain]/products/[id]
 ```
 
-Replacing **[subdomain]** with your clubs Curling I/O subdomain, and **[id]** with the products unique identifier.
-For example Curling Canada's Curling I/O site is at https://canada.curling.io, and the Ice techs, Statisticians, Umpires Registry ID is 2916.
+Replacing **[subdomain]** with your clubs Curling IO subdomain, and **[id]** with the products unique identifier.
+For example Curling Canada's Curling IO site is at https://canada.curling.io, and the Ice techs, Statisticians, Umpires Registry ID is 2916.
 Therefore we replace **[subdomain]** with **canada** and **[id]** with **2916** giving us:
 
 ```

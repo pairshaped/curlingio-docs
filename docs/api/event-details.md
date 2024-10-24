@@ -13,8 +13,8 @@ Events are leagues and competitions.
 https://api-curlingio.global.ssl.fastly.net/en/clubs/[subdomain]/events/[id]
 ```
 
-Replacing **[subdomain]** with your clubs Curling I/O subdomain, and **[id]** with the events (league or competition) unique identifier.
-For example Curling Canada's Curling I/O site is at https://canada.curling.io, and the 2023 Time Hortons Brier ID is 14890.
+Replacing **[subdomain]** with your clubs Curling IO subdomain, and **[id]** with the events (league or competition) unique identifier.
+For example Curling Canada's Curling IO site is at https://canada.curling.io, and the 2023 Time Hortons Brier ID is 14890.
 Therefore we replace **[subdomain]** with **canada** and **[id]** with **14890** giving us:
 
 ```

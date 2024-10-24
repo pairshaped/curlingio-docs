@@ -11,7 +11,7 @@ You can create reusable sponsors that can be associated with leagues, competitio
 
 When a member views the details of any of these items, the sponsor logo will be shown along with it's name.
 
-Curling I/O will keep track of how many times a sponsor has been viewed and how many times it has been clicked (if a URL has been provided).
+Curling IO will keep track of how many times a sponsor has been viewed and how many times it has been clicked (if a URL has been provided).
 
 ## Finding Sponsors
 
@@ -38,7 +38,7 @@ The logo is required and will be shown on the detail page of any leagues, compet
 
 ### URL
 
-The URL is optional. If a URL is provided, when a member clicks the sponsor logo they will be sent to the URL provided. Curling I/O will track how many times a sponsor has been clicked.
+The URL is optional. If a URL is provided, when a member clicks the sponsor logo they will be sent to the URL provided. Curling IO will track how many times a sponsor has been clicked.
 
 ### Active
 
@@ -52,5 +52,5 @@ To remove a sponsor, click the **Delete** link next to it. This will also remove
 ## Troubleshooting
 
 We noticed after launching this sponsors feature that a popular browser extension called "uBlock Origin" may hide the sponsor logo upload (preventing you from creating a sponsor).
-If you are experiencing this issue, we highly recommend disabling the extension for Curling I/O.
-We don't embed any thiird party advertising within Curling I/O anyways, so ad block extensions like uBlock provide no benefits on our site.
+If you are experiencing this issue, we highly recommend disabling the extension for Curling IO.
+We don't embed any thiird party advertising within Curling IO anyways, so ad block extensions like uBlock provide no benefits on our site.

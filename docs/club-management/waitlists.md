@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **[This is a Premium Only Feature](/docs/getting-started/premium)**
 
-With Curling I/O you can take in waitlist registrations once a league, competition, or product has been sold out.
+With Curling IO you can take in waitlist registrations once a league, competition, or product has been sold out.
 
 
 ## Enabling Waitlists

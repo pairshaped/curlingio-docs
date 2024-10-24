@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/easy_to_use.svg',
     description: (
       <>
-        Curling I/O was designed from the ground up to be easy to setup and start
+        Curling IO was designed from the ground up to be easy to setup and start
         taking online registrations and payments quickly. No complicated
         systems to figure out, and curlers love it!
       </>
@@ -43,7 +43,7 @@ const features = [
     imageUrl: 'img/national_curler_database.svg',
     description: (
       <>
-        Members that haved used Curling I/O at any club or membership association will already have an account, making registration
+        Members that haved used Curling IO at any club or membership association will already have an account, making registration
         as simple as the click of a button.
       </>
     ),
@@ -62,7 +62,7 @@ const features = [
     imageUrl: 'img/used_across_canada.svg',
     description: (
       <>
-        Curling I/O is the system of choice for Curling Canada as well as the provincial membership associations.
+        Curling IO is the system of choice for Curling Canada as well as the provincial membership associations.
         You're in good hands.
       </>
     ),
@@ -203,7 +203,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--lg text--center">
-                  <p className="hero__subtitle">Curling I/O is the registration and competition management system for these organizations and many others.</p>
+                  <p className="hero__subtitle">Curling IO is the registration and competition management system for these organizations and many others.</p>
                   <div class="featured_clubs">
                     {orgs.map((props, idx) => (
                       <Org key={idx} {...props} />

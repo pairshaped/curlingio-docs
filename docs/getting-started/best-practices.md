@@ -4,9 +4,9 @@ title: Best Practices
 slug: /getting-started/best-practices
 ---
 
-This document is for curling club managers that are new to Curling I/O or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
+This document is for curling club managers that are new to Curling IO or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
 
-If you are brand new to Curling I/O then your best bet is to start with our [tutorial videos here](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
+If you are brand new to Curling IO then your best bet is to start with our [tutorial videos here](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
 Making the up front time investment to understand your curler registration system will save you a ton of time and headaches down the road once you've started taking registrations.
 
 We'll start by outlining some general best practices with the reasoning behind them, and then go through specific examples we've seen clubs struggle with.
@@ -24,9 +24,9 @@ Waivers are also tied to curler profiles, so if you aren't requiring curler prof
 
 Individual registration has multiple benefits:
 
-1. You can accurately capture membership and affiliation fees per member per season. Curling I/O will remember which fees a curler has already paid each season and they won't be charged more than once. Alternatively, with team registrations, if these fees are embedded within team prices, you will *double dip* when one of your members is in multiple leagues.
+1. You can accurately capture membership and affiliation fees per member per season. Curling IO will remember which fees a curler has already paid each season and they won't be charged more than once. Alternatively, with team registrations, if these fees are embedded within team prices, you will *double dip* when one of your members is in multiple leagues.
 2. Addons like lockers can be associated with individual curlers when they register for their leagues.
-3. You can still gather team and position information simply by asking for the team or skip name and their position. Curling I/O will later make team recommendations based on these fields if you are using our league management features.
+3. You can still gather team and position information simply by asking for the team or skip name and their position. Curling IO will later make team recommendations based on these fields if you are using our league management features.
 4. Through the use of discounts and custom fields you can still offer individual discounts based on team size. For example, you can ask if it's a 5 person team and offer a 20% off discount for each individual who selects it.
 
 ### Team Size Discounts
@@ -68,7 +68,7 @@ If you have questions about your discounts, [please watch our discounts tutorial
 ## Make Sure Fees are Required
 
 When assigning your seasonal fees to your leagues or products, make sure you mark them as required.
-Curling I/O keeps track of which curlers have paid which seasonal fees and won't charge them again within the same season.
+Curling IO keeps track of which curlers have paid which seasonal fees and won't charge them again within the same season.
 
 If you do not mark them as required, then you will miss collecting a lot of fees because the member didn't check the box to pay these fees.
 
@@ -125,22 +125,22 @@ If you want to be able to handle multiple registrations at the same time on this
 Make sure that you test each possible registration scenario before you open up registration to your members.
 This can save you a ton of headaches in the long run trying to fix mistakes and refund payments.
 
-Curling I/O has a lot of flexibility, especially when it comes to discounts.
+Curling IO has a lot of flexibility, especially when it comes to discounts.
 This is necessary to support all the different registration methods that different clubs have.
 Complex setups can result in unexpected outcomes though, so the more complicated your setup, the more testing you should do.
 
 You can test your registrations at any time and even submit the orders. You can then delete these test orders when you're done.
 
-[We have a tutorial video covering what your members experience when registering with Curling I/O.](https://youtu.be/6bzxDm_t-JA) This is useful for club staff to understand how it works from the curler's perspective.
+[We have a tutorial video covering what your members experience when registering with Curling IO.](https://youtu.be/6bzxDm_t-JA) This is useful for club staff to understand how it works from the curler's perspective.
 
 
 ## Ask us to Review your Setup
 
-If this is your first time your club is using Curling I/O, and you've just finished setting everything up, you may ask us to review your setup.
+If this is your first time your club is using Curling IO, and you've just finished setting everything up, you may ask us to review your setup.
 
 We ask that you read over the relevant documentation and [review our tutorial videos first though](https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb).
 
-[If this is not the first time your club is using Curling I/O, there are premium support products, like a seasonal refresher, available here.](https://premium.curling.io/en/products)
+[If this is not the first time your club is using Curling IO, there are premium support products, like a seasonal refresher, available here.](https://premium.curling.io/en/products)
 This can be helpful for new managers thrown into the deep end (no knowledge transfer).
 
 DO NOT LEAVE THIS UNTIL THE DAY BEFORE REGISTRATION!

@@ -5,7 +5,7 @@ slug: /club-management/registration-widget
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Curling I/O provides two widgets you can use to embed your leagues, competitions, and product data on your website.
+Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
 
 * The registration and results widget shows your leagues, competitions, and products, along with their schedules, results, and registration links. You would typically embed this widget on it's own dedicated page on your website.
 * The current games widget shows the list of games that have just finished, are currently being played, or are starting soon. You would typically embed this widget in a small square on your home page.

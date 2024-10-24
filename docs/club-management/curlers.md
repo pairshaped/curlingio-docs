@@ -5,7 +5,7 @@ slug: /club-management/curlers
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In Curling I/O, curler profiles belong to your members themselves.
+In Curling IO, curler profiles belong to your members themselves.
 Members can reuse their curler profiles for registration across multiple seasons at your club, and also at other clubs, provincial, and even national competitions they may participate in.
 
 ## Finding Curler Profiles
@@ -61,7 +61,7 @@ Occasionally you may need to transfer ownership of a curler profile to a differe
 
 This can happen when a profile was created using a club staff account during an in person registration night, but the curler themselves later create their own account.
 
-In order to transfer ownership to another email address, that email address must first have logged in at least once (to create an account within Curling I/O).
+In order to transfer ownership to another email address, that email address must first have logged in at least once (to create an account within Curling IO).
 
 1. Go to the "Curlers" screen.
 2. Click on the name of the curler you wish to transfer.
@@ -73,7 +73,7 @@ In order to transfer ownership to another email address, that email address must
 
 ## Importing Curler Profiles
 
-If this is your club's first season using Curling I/O then you can import curlers from a previous season that do not yet have a profile in the system by uploading a CSV file.
+If this is your club's first season using Curling IO then you can import curlers from a previous season that do not yet have a profile in the system by uploading a CSV file.
 
 We don't recommend this in general since it's not difficult for your curlers to register themselves, and
 your curlers will only see the profiles you imported for them if they login using one of the email addresses in the profile.

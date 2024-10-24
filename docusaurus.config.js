@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Curling I/O',
+  title: 'Curling IO',
   tagline: 'Curling registration and league management made easy.',
   url: 'https://curling.io',
   baseUrl: '/',
@@ -30,9 +30,9 @@ module.exports = {
       indexName: 'curling',
     },
     navbar: {
-      title: 'Curling I/O',
+      title: 'Curling IO',
       logo: {
-        alt: 'Curling I/O Logo',
+        alt: 'Curling IO Logo',
         src: 'img/curlingio-logo-small.png',
       },
       items: [
@@ -100,7 +100,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Curling I/O`,
+      copyright: `Copyright © ${new Date().getFullYear()} Curling IO`,
     },
   },
   presets: [

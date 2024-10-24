@@ -5,7 +5,7 @@ slug: /club-management/reports
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Curling I/O produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
+Curling IO produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
 
 You can find the Reports section by clicking **Reports** in the top navigation bar.
 

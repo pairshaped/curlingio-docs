@@ -14,7 +14,7 @@ https://api-curlingio.global.ssl.fastly.net/en/clubs/[subdomain]/leagues
 ```
 
 Replacing [subdomain] with your clubs subdomain.
-For example Curling Canada's Curling I/O site is at https://canada.curling.io, therefore their subdomain is "canada", so their leagues API URL would be:
+For example Curling Canada's Curling IO site is at https://canada.curling.io, therefore their subdomain is "canada", so their leagues API URL would be:
 
 ```
 https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/leagues
@@ -28,7 +28,7 @@ https://api-curlingio.global.ssl.fastly.net/en/clubs/[subdomain]/competitions
 ```
 
 Replacing [subdomain] with your clubs subdomain.
-For example Curling Canada's Curling I/O site is at https://canada.curling.io, therefore their subdomain is "canada", so their competitions API URL would be:
+For example Curling Canada's Curling IO site is at https://canada.curling.io, therefore their subdomain is "canada", so their competitions API URL would be:
 
 ```
 https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/competitions
@@ -41,7 +41,7 @@ https://api-curlingio.global.ssl.fastly.net/en/clubs/[subdomain]/products
 ```
 
 Replacing [subdomain] with your clubs subdomain.
-For example Curling Canada's Curling I/O site is at https://canada.curling.io, therefore their subdomain is "canada", so their products API URL would be:
+For example Curling Canada's Curling IO site is at https://canada.curling.io, therefore their subdomain is "canada", so their products API URL would be:
 
 ```
 https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/products

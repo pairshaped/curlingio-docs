@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Walkthrough Video
 
 The following video will take you, the curling club or event manager, through the basics of scoring for a league or competition.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/sjSN5mhLZVo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

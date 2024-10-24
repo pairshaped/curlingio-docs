@@ -11,14 +11,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 The member data import feature lets you easily upload your member data for your membership association.
 If you want to use this member data import feature please contact your membership association who will get you set up.
 
-__NOTE:__ This feature is only for clubs that are not yet using Curling I/O to handle their registrations.
-If you are an affiliated Canadian curling club already using Curling I/O for registrations then the reporting of your member data to your membership association is handled automatically.
+__NOTE:__ This feature is only for clubs that are not yet using Curling IO to handle their registrations.
+If you are an affiliated Canadian curling club already using Curling IO for registrations then the reporting of your member data to your membership association is handled automatically.
 
-[Click here if you'd like to learn more about using Curling I/O for registrations and event managers.](/docs/getting-started/curling-club-managers)
+[Click here if you'd like to learn more about using Curling IO for registrations and event managers.](/docs/getting-started/curling-club-managers)
 
 ## Video Tutorial
 
-The following video will take you step by step through importing your member data in Curling I/O.
+The following video will take you step by step through importing your member data in Curling IO.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/6yPdn-sGWuQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

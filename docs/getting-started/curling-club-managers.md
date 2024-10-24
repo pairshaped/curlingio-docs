@@ -4,14 +4,14 @@ title: Curling Club Management
 slug: /getting-started/curling-club-managers
 ---
 
-Curling I/O is the #1 curling club management and registration platform.
+Curling IO is the #1 curling club management and registration platform.
 Our focus is to make it easy for curling club managers to take registrations online and manage their leagues.
 
 We also have extremely affordable (and simple) pricing for clubs of all sizes, with no monthly or setup fees.
 
 ## Online Registration
 
-Curling I/O was built from the ground up to manage curling club registrations.
+Curling IO was built from the ground up to manage curling club registrations.
 It's intuitive and seamless for curlers of all ages to use season after season.
 In fact, our national curler database makes it even easier to register again after the first season as they won't need to rekey all of their information.
 
@@ -31,8 +31,8 @@ We've developed some innovative features to help curling clubs manage their leag
 - Results publication.
 - Extensive permissions system for third parties to manage your leagues and competitions.
 
-Curling I/O manages the competitions for membership associations across Canada and for Curling Canada.
-If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](https://www.curling.ca/scoreboard), then you've already seen Curling I/O in action.
+Curling IO manages the competitions for membership associations across Canada and for Curling Canada.
+If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](https://www.curling.ca/scoreboard), then you've already seen Curling IO in action.
 
 
 ## Bookkeeping and Reports
@@ -44,7 +44,7 @@ Our reports help you figure out your taxes on registrations and really dig down 
 
 ## First Class Support and Documentation
 
-Curling I/O provides email support.
+Curling IO provides email support.
 
 We also have feedback boards, online documentation (right here), and video tutorials to get you up and running.
 
@@ -55,6 +55,6 @@ We also have feedback boards, online documentation (right here), and video tutor
 
 2. [You can find all of our tutorials videos listed here.](https://www.youtube.com/@curlingio)
 
-3. Peruse our [Club Management documentation](/docs/club-management/leagues) to get a better feel for the Curling I/O platform.
+3. Peruse our [Club Management documentation](/docs/club-management/leagues) to get a better feel for the Curling IO platform.
 
 4. And finally once you've reviewed our documentation and tutorials you're ready to [book an onboarding session with us](/docs/getting-started/book-an-onboarding-session).

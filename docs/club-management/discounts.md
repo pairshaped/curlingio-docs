@@ -14,7 +14,7 @@ There is a ton of flexibility with discounts, but keep in mind that having an ex
 ## Walkthrough Video
 
 The following video will take you, the curling club manager, through the basics of setting up your discounts.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/3h7oZzkYfkM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

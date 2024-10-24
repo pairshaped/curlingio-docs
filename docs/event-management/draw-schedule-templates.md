@@ -9,11 +9,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Draw schedules templates allow you, the curling club manager, to pre-create draw schedules that you will re-use between multiple leagues and competitions year after year.
 
-Curling I/O provides a standard set of templates, which will likely grow over time.
+Curling IO provides a standard set of templates, which will likely grow over time.
 
 You can copy these templates as a starting point or create your own from scratch.
 
-When you generate a draw schedule for one of your leagues or competitions, Curling I/O will find any templates that closely match the number of teams and sheets, then ask you to select which one you would like to use.
+When you generate a draw schedule for one of your leagues or competitions, Curling IO will find any templates that closely match the number of teams and sheets, then ask you to select which one you would like to use.
 
 
 ## Finding Draw Schedule Templates

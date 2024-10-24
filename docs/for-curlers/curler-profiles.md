@@ -6,7 +6,7 @@ slug: /for-curlers/curler-profiles
 
 ## Overview
 
-Curler profiles in Curling I/O are persistent and can be used again for future registrations in the same or future seasons or even at other clubs or membership associations without needing to re-enter all of your information.
+Curler profiles in Curling IO are persistent and can be used again for future registrations in the same or future seasons or even at other clubs or membership associations without needing to re-enter all of your information.
 
 You can also create profiles for your children or someone you are a legal guardian for, all on the same account.
 
@@ -16,7 +16,7 @@ Doing so, will ensure that if you accidentally login with one of these alternati
 
 ## Creating a Curler Profile
 
-If you've never registered with Curling I/O before then you'll most likely be asked to create a new curler profile.
+If you've never registered with Curling IO before then you'll most likely be asked to create a new curler profile.
 Once you've created a curler profile it will be available for all future registrations (no need to keep keying in the same information).
 
 Just follow the instructions and fill in the required information to continue.
@@ -36,6 +36,6 @@ You can now edit your curler profile(s).
 
 ## Privacy Concerns
 
-Rest assured that the Curling I/O business model isn't to inundate you with advertisements, monopolize your attention, or sell your data like some other popular online platforms.
+Rest assured that the Curling IO business model isn't to inundate you with advertisements, monopolize your attention, or sell your data like some other popular online platforms.
 
 If you're concerned about who will see your Curler data however, please review our [privacy statement](/privacy) and [terms of use](/terms) for more details.
