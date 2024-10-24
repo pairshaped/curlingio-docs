@@ -39,7 +39,7 @@ To update an existing fee, click the **Edit** link next to it.
 
 ### Naming your Fee
 
-This is the name that will be displayed to your members when they come to register on Curling I/O.
+This is the name that will be displayed to your members when they come to register on Curling IO.
 
 Fees can and should be reused between seasons, so there's no need to include a year or season in the name unless you specifically do not want to reuse it next year.
 

@@ -1,6 +1,6 @@
 # Website
 
-This is the Curling I/O landing page and documentation site.
+This is the Curling IO landing page and documentation site.
 
 ## Installation
 

@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The following video will take you, the curling club manager, through the basics of creating a league and opening up registrations.
 Competitions are identical except that for a competition you will usually not require a curler profile, as they will be team based registrations.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/LSuo6UbLBJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -36,7 +36,7 @@ To update an existing league or competition, click the **Edit** link next to it.
 
 ### Naming your League or Competition
 
-This is the name that will be displayed to your members when they come to register on Curling I/O.
+This is the name that will be displayed to your members when they come to register on Curling IO.
 
 For leagues we recommend including the Day of the week, night or day, and type of league here. E.g. "Monday Night Men's".
 
@@ -57,7 +57,7 @@ When a league or competition is disabled it cannot be seen or purchased by your 
 
 ### Summary & Description
 
-When you enter a summary, it will show up on the list view of your leagues or competitions when members come to Curling I/O.
+When you enter a summary, it will show up on the list view of your leagues or competitions when members come to Curling IO.
 For leagues, we recommend entering your draw times. E.g. 7:00 & 9:00 PM
 
 The description shows up when your members click on the name of the league or competition and also when they assign a curler profile or fill in required information for it.
@@ -92,8 +92,8 @@ There is a handy tax calculator which will show you what your total with tax wil
 
 ![Tax Calculator](/img/docs/club-management/shared/tax-calculator.png)
 
-For league registrations you will also want to break out the affiliate fees and let Curling I/O handle them for you.
-If you include the affiliate fees as required in the [Addons section](#assigning-fees--addons) then Curling I/O will ensure that every curler who registers for the league will also pay the affiliate fees.
+For league registrations you will also want to break out the affiliate fees and let Curling IO handle them for you.
+If you include the affiliate fees as required in the [Addons section](#assigning-fees--addons) then Curling IO will ensure that every curler who registers for the league will also pay the affiliate fees.
 We also make sure they only pay them once per season, by omitting seasonal fees in future league registrations for the same season.
 It's also much easier to report on for bookkeeping and when it comes to figuring out your club's remittance.
 
@@ -181,11 +181,11 @@ Use this to provide follow up instructions to your members, like a reminder (pos
 
 ### Team or Skip Name
 
-If you want to leverage Curling I/O team recommendations then you must ask for either a team or a skip name during registration.
+If you want to leverage Curling IO team recommendations then you must ask for either a team or a skip name during registration.
 Our team recommendations just make it easier and automate team creation if that's a feature you want to use.
 You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).
 
-If you aren't planning to use Curling I/O to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
+If you aren't planning to use Curling IO to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
 
 ### Curler's Position
@@ -202,10 +202,10 @@ However, this can be useful for competitions that are typically done as team reg
 
 ### Publish Schedule and Results
 
-If you are using Curling I/O's team assembly, round robin generation, draw schedules, and scoring then you'll likey want to check this box.
+If you are using Curling IO's team assembly, round robin generation, draw schedules, and scoring then you'll likey want to check this box.
 This will publish your schedule, standings, and teams on the public side of your site.
 
-If you are not planning to use these features within Curling I/O, we recommend you leave this unchecked to avoid confusion.
+If you are not planning to use these features within Curling IO, we recommend you leave this unchecked to avoid confusion.
 
 ### End Scores Enabled
 
@@ -233,15 +233,15 @@ This information will be copied over to the team if you use our team recommendat
 
 ### Publish Team Contact Information
 
-If you are using Curling I/O's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information to members.
+If you are using Curling IO's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information to members.
 This only works if you are also publishing the schedules and results.
 
-Note: A member is a logged in user who has purchased something from your club (through Curling I/O) in the current season.
+Note: A member is a logged in user who has purchased something from your club (through Curling IO) in the current season.
 Users who aren't logged in or have not made a purchase in the current season will never see team contact information.
 
 ### Allow Spares
 
-Curling I/O has a sparing feature where members can check off which leagues and competitions they are available to spare for.
+Curling IO has a sparing feature where members can check off which leagues and competitions they are available to spare for.
 The use of this feature does not require members to have purchased anything, but simply to have added a curler profile and accepted your waivers.
 Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
 Similar to a bulletin board at the club.
@@ -314,7 +314,7 @@ More details and examples can be found in the [discounts section.](/docs/club-ma
 
 ## Copying a League for the new Season
 
-In Curling I/O you **NEVER reuse leagues or competitions across multiple seasons**.
+In Curling IO you **NEVER reuse leagues or competitions across multiple seasons**.
 We keep the previous season's leagues and competitions for their historical data. This is useful for reporting / accounting, but also for curler's to see results and standings from a previous season if you are using our [event management features](/docs/event-management/registrations).
 
 Instead what you'll want to do is simply **Copy** your leagues and competitions from the previous season.

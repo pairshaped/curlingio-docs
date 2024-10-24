@@ -5,7 +5,7 @@ slug: /club-management/waivers
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Curling I/O by default will ask your curlers to accept a waiver during registration, but only once per season.
+Curling IO by default will ask your curlers to accept a waiver during registration, but only once per season.
 We also keep a snapshot of the waiver that was accepted for future reference if it's ever needed.
 These snapshots along with which waivers have been accepted can be found in the [Reports section](/docs/club-management/reports).
 
@@ -51,7 +51,7 @@ You can change your age of majority cutoff by editing the min age and max age. T
 ### Active
 
 You can then choose whether or not the waiver is enabled by checking the **Active** checkbox.
-The default waivers are active by when your Curling I/O instance is created.
+The default waivers are active by when your Curling IO instance is created.
 
 ### Body text
 

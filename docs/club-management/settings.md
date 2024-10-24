@@ -20,12 +20,12 @@ The name of your club shows up in the top left of the navigation bar on all scre
 
 ### Languages
 
-Curling I/O supports both English and French at this time.
+Curling IO supports both English and French at this time.
 If you have both languages selected, your curlers will be able to switch between languages on the fly, and you will be able to enter both english and french content (titles and descriptions) throughout the admin section.
 
 ### Landing Page
 
-This tells Curling I/O which section to default to when someone visits your Curling I/O site.
+This tells Curling IO which section to default to when someone visits your Curling IO site.
 
 ### Website Hosting
 
@@ -79,11 +79,11 @@ This is due to the fact that a curler may purchase multiple leagues, competition
 A convenience fee or surcharge can be added to your orders automatically.
 You can specify it's label (shown to your members), how it will be applied (online, offline, etc.), a percentage amount, and a fixed amount (percent and fixed are combined).
 
-When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling I/O will display a notice at the top of the cart alerting the member to it's addition as well as showing the fee in the cart and total.
+When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling IO will display a notice at the top of the cart alerting the member to it's addition as well as showing the fee in the cart and total.
 
 This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage (of the order total) and fixed amount.
 
-**Curling I/O is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
+**Curling IO is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
 
 It is your responsibility, before adding a convenience fee / surcharge, to make sure you understand the implications and whether or not this is legal in your jurisdiction. For example:
 - There's a limit to the amount you can surchage to cover credit card processing fees.
@@ -95,7 +95,7 @@ Please review the relevant laws in your region regarding surcharges and convenie
 - https://www.canada.ca/en/financial-consumer-agency/services/merchants/credit-fees-merchant.html
 - https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-200/application-gst-hst-credit-card-surcharges.html
 
-Note: Fees you implement should never reflect on the Curling I/O platform, therefore we are restricting certain words in the convenience fee's label and may add further restrictions in the future if necessary.
+Note: Fees you implement should never reflect on the Curling IO platform, therefore we are restricting certain words in the convenience fee's label and may add further restrictions in the future if necessary.
 
 ## Season starts in
 

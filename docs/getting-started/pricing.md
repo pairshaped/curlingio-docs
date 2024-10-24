@@ -25,7 +25,7 @@ The 2.9% + $0.30 includes all credit card processing fees. There are no other fe
 
 This fee will come out of your payout (direct deposit) automatically. We do offer a feature that allows you to [charge your members a convenience fee](/docs/club-management/settings#convenience-fee--surcharge), however it is solely the club's responsibility to be compliant with their local laws.
 
-There are **NO FEES** for offline payments. This is when a member registers at your club using Curling I/O selects the "Cash / Cheque" option. You are responsible for collecting offline payments and logging those payments against your orders in Curling I/O. Offline payments cost you nothing but your time (to collect and log).
+There are **NO FEES** for offline payments. This is when a member registers at your club using Curling IO selects the "Cash / Cheque" option. You are responsible for collecting offline payments and logging those payments against your orders in Curling IO. Offline payments cost you nothing but your time (to collect and log).
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
 
@@ -76,7 +76,7 @@ The 3.6% + $0.35 includes all credit card processing fees. There are no other fe
 
 You **cannot** pass this fee to your members directly due to credit card processing rules and conventions. This fee will come out of your payout (direct deposit) automatically.
 
-There are **NO FEES** for offline payments. This is when a member registers at your club using Curling I/O selects the "Cash / Cheque" option. You are responsible for collecting offline payments and logging those payments against your orders in Curling I/O. Offline payments cost you nothing but your time (to collect and log).
+There are **NO FEES** for offline payments. This is when a member registers at your club using Curling IO selects the "Cash / Cheque" option. You are responsible for collecting offline payments and logging those payments against your orders in Curling IO. Offline payments cost you nothing but your time (to collect and log).
 
 Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
 

@@ -5,7 +5,7 @@ slug: /club-management/support
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can submit supports requests from within Curling I/O. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
+You can submit supports requests from within Curling IO. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
 
 It's important to differentiate between support requests and feature requests. Do not submit feature requests here, instead please use our [feedback board](https://curling.canny.io/clubs) where you can not only post your request but also find and vote on other feature requests.
 

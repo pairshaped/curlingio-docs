@@ -44,7 +44,7 @@ This is the content of the alert that your user's will see along the top of the 
 This controls when the alert will be displayed based on the URL of the web page.
 You first need to find out what the URL of the page is that you want to display the alert on.
 
-1. Go to your public side of your Curling I/O website.
+1. Go to your public side of your Curling IO website.
 2. Navigate to the screen you want to display the alert on.
 3. Examine the URL in your browser's address bar.
 4. Enter a pattern that matches the URL in your address bar.
@@ -86,7 +86,7 @@ To create an alert that appears only on the user's cart screen:
 
 ### Offline Payment Submitted
 
-To create an alert that only appears when members make an offline purchase (submitted payment to be paid outside of Curling I/O) you'll want the following location:
+To create an alert that only appears when members make an offline purchase (submitted payment to be paid outside of Curling IO) you'll want the following location:
 
 * Matching method: **Contains**
 * Pattern: **/payments/offline**

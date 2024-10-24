@@ -7,8 +7,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Walkthrough Video
 
-The following video will take you, the curling club manager, through the basics of handling orders in Curling I/O.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+The following video will take you, the curling club manager, through the basics of handling orders in Curling IO.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/VEkkiOkTOGE" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -106,11 +106,11 @@ If an order has offline payments however, you can delete those payments first, a
 
 You can transfer orders to another account at any time.
 An account is basically a login represented by an email address.
-You can only transfer orders to accounts that have been created within Curling I/O and thus verified their email address.
+You can only transfer orders to accounts that have been created within Curling IO and thus verified their email address.
 You cannot transfer an order to a curler who has never logged in.
 
 The reason for transferring an order is to have it show up within the accounts order history.
-For example, if a curler registered at the club under a dedicated club registration login, you may later want to transfer that order to them once they're using Curling I/O.
+For example, if a curler registered at the club under a dedicated club registration login, you may later want to transfer that order to them once they're using Curling IO.
 
 ## Troubleshooting
 

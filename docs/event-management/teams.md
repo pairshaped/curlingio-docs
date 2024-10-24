@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Walkthrough Video
 
 The following video will take you, the curling club or event manager, through the basics of setting up teams for a league.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/3ZO0gJbDcRc" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -30,7 +30,7 @@ Click on the **Teams** tab.
 
 ## Team Recommendations
 
-If you asked for a team or skip name for your event, then you can leverage Curling I/O's team recommendations.
+If you asked for a team or skip name for your event, then you can leverage Curling IO's team recommendations.
 Click on the **Team recommendations** button.
 If you don't see this button it is because you aren't asking for a team or skip name and therefor the system cannot assemble teams for you.
 

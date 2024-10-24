@@ -15,7 +15,7 @@ If you don't have an email address, you can easily get a free one from Gmail, Fa
 3. If you use Gmail then the fastest way to login is simply selecting the red Login with Gmail button and you'll be logged in, and can skip the rest of these instructions.
 4. If you don't have a Gmail then you'll need to enter your email address and select the Send me a Login Link button.
 5. We will immediately send you an email containing a link that you can click which automatically logs you in.
-6. If for some reason you can't click the link, (maybe you sent it to your phone but are using a computer), you can instead copy the "Token" from the email and paste it into the "Token" field back in Curling I/O.
+6. If for some reason you can't click the link, (maybe you sent it to your phone but are using a computer), you can instead copy the "Token" from the email and paste it into the "Token" field back in Curling /O.
 
 That's all there is to it. You should now be logged in, and most likely back on your "Cart" screen.
 
@@ -30,7 +30,7 @@ The above video loops over and over again. It begins when an email address is en
 ## Complete Walkthrough Video
 
 The following short video will take you through the basics of logging in.
-If you're new to Curling I/O and struggling, it might be worth watching.
+If you're new to Curling IO and struggling, it might be worth watching.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -38,7 +38,7 @@ If you're new to Curling I/O and struggling, it might be worth watching.
 
 ## Passwordless Authentication
 
-Curling I/O doesn't use passwords, because passwords are the primary cause of most data breaches on the internet.
+Curling IO doesn't use passwords, because passwords are the primary cause of most data breaches on the internet.
 
 You'll never have to remember a password with our system. This means your personal information is more secure with us than other registration systems.
 

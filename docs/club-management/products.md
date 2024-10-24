@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Walkthrough Video
 
 The following video will take you, the curling club manager, through the basics of creating a product or addon.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/Y5VX4pQCot4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -39,7 +39,7 @@ To copy an existing product, click the **Copy** link next to it.
 
 ### Naming your Product
 
-This is the name that will be displayed to your members when they come to purchase it on Curling I/O.
+This is the name that will be displayed to your members when they come to purchase it on Curling IO.
 
 Products don't have a start or end date, so you typical will reuse the same products between seasons.
 If a product is only available for a specific season, then you should include the year or season in the name.
@@ -128,7 +128,7 @@ We also don't recommend using this feature for fellow managers since they will h
 
 ### Summary & Description
 
-When you enter a summary, it will show up on the product listing page when members come to Curling I/O.
+When you enter a summary, it will show up on the product listing page when members come to Curling IO.
 
 The description shows up when your members click on the name of the product and also when they fill in required information for it.
 Keep in mind that member's may just add the product to their cart without clicking on it's name.

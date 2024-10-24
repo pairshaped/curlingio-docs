@@ -11,7 +11,7 @@ Bracket templates allow you, the curling club manager, to pre-create playoff bra
 
 You can copy these templates as a starting point or create your own from scratch.
 
-When you create a playoff bracket for one of your leagues or competitions, Curling I/O will present you with your bracket templates, if you have any, and ask you to select which one you would like to use. However, you can always choose to create a bracket from scratch.
+When you create a playoff bracket for one of your leagues or competitions, Curling IO will present you with your bracket templates, if you have any, and ask you to select which one you would like to use. However, you can always choose to create a bracket from scratch.
 When using a template, the groups, games (including names), and connections will be copied.
 
 #### 8 Team Elimination Bracket Template Example:

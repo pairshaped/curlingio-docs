@@ -19,7 +19,7 @@ slug: /for-curlers/registering-for-a-league
 ## Walkthrough Video
 
 The following video will take you through the basics of registration for a league.
-If you're new to Curling I/O and struggling, it might be worth watching.
+If you're new to Curling IO and struggling, it might be worth watching.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/6bzxDm_t-JA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -7,9 +7,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Overview
 
-Need a web presence for your club that isn't a Facebook group, but don't want the expense or complex administrative burden that comes with a full website hosting service (e.g. WordPress)?  Try Curling I/O's basic website hosting option!
+Need a web presence for your club that isn't a Facebook group, but don't want the expense or complex administrative burden that comes with a full website hosting service (e.g. WordPress)?  Try Curling IO's basic website hosting option!
 
-For clubs that lack a web presence, Curling I/O includes a basic integrated website hosting option, allowing you to publish simple pages and articles with image and textual content within your I/O environment.  This content hosting does *not* include custom domains (e.g. www.yourclub.ca vs. yourclub.curling.io), navigation menu customization, or advanced styling options.
+For clubs that lack a web presence, Curling IO includes a basic integrated website hosting option, allowing you to publish simple pages and articles with image and textual content within your IO environment.  This content hosting does *not* include custom domains (e.g. www.yourclub.ca vs. yourclub.curling.io), navigation menu customization, or advanced styling options.
 
 This basic content hosting option is disabled by default, since most clubs already have their own web presence (e.g. Wordpress, Wix, Squarespace, Weebly, etc.).
 
@@ -18,7 +18,7 @@ Visit https://demo.curling.io/ to see what basic content can look like.
 This website hosting option remains limited to basic text/image content for several reasons:
 
 1. We are not in the business of competing with established industry-leading website hosting platforms, nor do we think clubs necessarily need most of their extensive features to establish an effective web presence. Avoiding that market space allows us to keep our focus on *curling specific* features.
-2. Clubs with complex websites can often lose tech expertise (due to staff/volunteer churn) and wind up with a monolith no one knows how to update or maintain.  I/O's basic website hosting option is simple, easy to learn and maintain, secure, and is perpetually supported.
+2. Clubs with complex websites can often lose tech expertise (due to staff/volunteer churn) and wind up with a monolith no one knows how to update or maintain.  IO's basic website hosting option is simple, easy to learn and maintain, secure, and is perpetually supported.
 3. Fewers bells & whisltes means less things that can break or distract your curlers from what they're really ultimately looking for: club announcements, league schedules/scores/standings, self-registration, prices, etc.  Our basic pages, articles, leagues, competitions, and products encompass that efficiently and effectively.
 
 
@@ -36,7 +36,7 @@ Once enabled you will see the "Website" section in the top navigation of the adm
 
 You can disable this at any time simply by unchecking the same checkbox.
 
-You can also change the landing page for your Curling I/O to have it point to your pages (the first page in your pages collection).
+You can also change the landing page for your Curling IO to have it point to your pages (the first page in your pages collection).
 
 
 ## Banner

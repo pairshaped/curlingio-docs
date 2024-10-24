@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Walkthrough Video
 
 The following video will take you, the curling club or event manager, through the basics of setting up teams for a league or competition.
-If you're new to Curling I/O, it's worthwhile to watch this before wading through the rest of our documentation.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
 
 <div className="text--center videoWrapper">
   <iframe width="100%" src="https://www.youtube.com/embed/j9rZtDobvg0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -28,7 +28,7 @@ Click on the **Schedule** tab.
 
 ## Settings
 
-Before you can generate a draw schedule, Curling I/O first needs some basic information.
+Before you can generate a draw schedule, Curling IO first needs some basic information.
 Click the *Change Settings* button to provide this information.
 
 ### Number of sheets
@@ -71,9 +71,9 @@ For example, to exclude christmas, you would enter "Dec 25".
 
 ## Schedule Generation
 
-Curling I/O will do it's best to automatically generate your draw schedule when you ask it to do so.
+Curling IO will do it's best to automatically generate your draw schedule when you ask it to do so.
 
-The auto-generation will use matching [draw schedule templates](/docs/event-management/draw-schedule-templates) provided by Curling I/O or custom templates specific to your club.
+The auto-generation will use matching [draw schedule templates](/docs/event-management/draw-schedule-templates) provided by Curling IO or custom templates specific to your club.
 If there's more than one matching draw schedule template, you will be prompted to choose which one to use.
 
 If there are no matching draw schedule templates, then we will attempt to auto-assemble your draw schedule.
