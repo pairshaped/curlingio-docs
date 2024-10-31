@@ -13,6 +13,7 @@ You can also create profiles for your children or someone you are a legal guardi
 When creating a curler profile if you have more than one email address, you can enter them in the primary and secondary email address fields.
 Doing so, will ensure that if you accidentally login with one of these alternative email addresses, you will still be able to see and use your curler profile for registrations.
 
+![Example Curler Profiles](/img/docs/for-curlers/curler-profiles.png)
 
 ## Creating a Curler Profile
 
@@ -23,6 +24,7 @@ Just follow the instructions and fill in the required information to continue.
 
 After creating your profile you may be asked to accept one or more waivers specific to your club before you can continue.
 
+
 ## Updating a Curler Profile
 
 If you previously registered for a league, competition, or product you probably have a curler profile in our system.
@@ -30,9 +32,12 @@ You can make changes to your profile at any time following these steps.
 
 Make sure you login with the same email address you used to create the profile, or an email address that is associated with the profile (primary or secondary email for the curler). If you aren't, then you won't be able to see or make changes to your curler profile.
 
-Click on the "Curler(s)" link in the top navigation or in the top right "Account" dropdown.
+1. Login first, if you aren't already signed in.
+2. Click on the "Account" dropdown near the top right of the screen.
+3. Click on the "Profiles" link in the Account dropdown.
+4. Click on "View Profile" for the profile you want to edit.
+5. Click on the "Edit" button at the bottom of the screen.
 
-You can now edit your curler profile(s).
 
 ## Privacy Concerns
 
