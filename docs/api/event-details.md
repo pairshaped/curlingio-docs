@@ -24,6 +24,9 @@ https://api-curlingio.global.ssl.fastly.net/en/clubs/canada/events/14890
 Replacing **en** with **fr** will fetch the french version.
 
 
+Note: If you don't know the event ID, you can find it within the [Curling IO admin area](https://curling.io/docs/club-management/leagues), or by using the [Items API to get a list of events along with their IDs](/docs/api/items).
+
+
 ## Payload
 
 ```
