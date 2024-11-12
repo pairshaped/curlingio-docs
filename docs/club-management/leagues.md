@@ -233,11 +233,8 @@ This information will be copied over to the team if you use our team recommendat
 
 ### Publish Team Contact Information
 
-If you are using Curling IO's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information to members.
+If you are using Curling IO's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information.
 This only works if you are also publishing the schedules and results.
-
-Note: A member is a logged in user who has purchased something from your club (through Curling IO) in the current season.
-Users who aren't logged in or have not made a purchase in the current season will never see team contact information.
 
 ### Allow Spares
 
