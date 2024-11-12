@@ -31,10 +31,10 @@ Click on the **Teams** tab.
 ## Team Recommendations
 
 If you asked for a team or skip name for your event, then you can leverage Curling IO's team recommendations.
-Click on the **Team recommendations** button.
+Click on the **Recommendations** button.
 If you don't see this button it is because you aren't asking for a team or skip name and therefor the system cannot assemble teams for you.
 
-On the team recommendations screen, you will see a list of team suggestions.
+On the recommendations screen, you will see a list of team suggestions.
 These suggestions will be updated whenever a new registration occurs, and will include _New Team_ suggestions as well as _Team Update_ suggestions as new teams and curlers register.
 
 Click the **Create Team** or **Update Team** button to accept the recommendation and assemble your teams.
@@ -46,6 +46,13 @@ If you find that there are multiple copies for the same team that have slightly 
 ![Team Match](/img/docs/event-management/teams/team-match.png)
 
 We will also copy over the team contact name, phone, email, coach, and affiliation from the registration if are being asked and filled in.
+
+
+## Import Teams
+
+You can import teams from another event from the current season that matches the team restriction (Men's, Women's, Mixed, etc.).
+This is useful to copy teams from a preliminary competition or a semester / trimester leagues (Fall, Winter, Spring).
+When you import teams, it will also add any curlers assigned to these teams to your event, so be careful to select the correct event as there is no Undo button and you'll end up cleaning up both your teams and curlers if you select the wrong event.
 
 
 ## Manual Team Assembly
