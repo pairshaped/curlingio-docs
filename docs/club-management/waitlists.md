@@ -30,7 +30,7 @@ Member's will see a "Waitlist" option for any leagues, competitions, or products
 ![Add me to the waitlist](/img/docs/club-management/waitlists/add-me-to-the-waitlist.png)
 
 In order to register for a waitlist, the member must first be logged in.
-They must provide a name, and optionally may provide notes for club staff.
+They must provide a name, and optionally may provide a phone number and notes for club staff.
 They are not required to have or assign a curler profile for waitlist registrations.
 
 Once the member has submitted the waitlist registration they will be taken to a screen listing all of their outstanding waitlist registrations.
