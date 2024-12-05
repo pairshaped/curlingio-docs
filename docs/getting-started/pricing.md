@@ -41,21 +41,25 @@ The majority of this cost is paid to the credit card processor.
 #### $100 purchase
 
 `$100 x 2.7% + 30c = $3.00`
+
 `$100 x 2.9% + 30c = $3.20`
 
 #### $200 purchase
 
 `$200 x 2.7% + 30c = $5.70`
+
 `$200 x 2.9% + 30c = $6.10`
 
 #### $500 purchase
 
 `$500 x 2.7% + 30c = $13.80`
+
 `$500 x 2.9% + 30c = $14.80`
 
 #### $1,000 purchase
 
 `$1,000 x 2.7% + 30c = $27.30`
+
 `$1,000 x 2.9% + 30c = $29.30`
 
 
