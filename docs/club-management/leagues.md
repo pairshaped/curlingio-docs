@@ -207,6 +207,26 @@ This will publish your schedule, standings, and teams on the public side of your
 
 If you are not planning to use these features within Curling IO, we recommend you leave this unchecked to avoid confusion.
 
+
+### Allow Spares
+
+Curling IO has a sparing feature where members can check off which leagues and competitions they are available to spare for.
+The use of this feature does not require members to have purchased anything, but simply to have added a curler profile and accepted your waivers.
+Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
+Similar to a bulletin board at the club.
+
+![Sparing](/img/docs/club-management/leagues/sparing.png)
+
+The above screen shot shows how a curler can specify their sparing availability.
+
+
+### Participant Scoring
+
+**[This is a Premium Only Feature](/docs/getting-started/premium)**
+
+Check this box if you want your participants to be able to score games on their own. In order for this to work though you will need to create teams and assign curlers to them, or we won't know who your participants are. End scores are not supported by participant scoring yet.
+
+
 ### End Scores Enabled
 
 **[This is a Premium Only Feature](/docs/getting-started/premium)**
@@ -235,17 +255,6 @@ This information will be copied over to the team if you use our team recommendat
 
 If you are using Curling IO's team assembly, and are entering contact information for your teams, then you can choose whether or not to show this information.
 This only works if you are also publishing the schedules and results.
-
-### Allow Spares
-
-Curling IO has a sparing feature where members can check off which leagues and competitions they are available to spare for.
-The use of this feature does not require members to have purchased anything, but simply to have added a curler profile and accepted your waivers.
-Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
-Similar to a bulletin board at the club.
-
-![Sparing](/img/docs/club-management/leagues/sparing.png)
-
-The above screen shot shows how a curler can specify their sparing availability.
 
 
 ## Assigning Fees & Addons
