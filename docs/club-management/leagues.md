@@ -210,14 +210,11 @@ If you are not planning to use these features within Curling IO, we recommend yo
 
 ### Allow Spares
 
-Curling IO has a sparing feature where members can check off which leagues and competitions they are available to spare for.
+Curling IO has a sparing feature where members can choose which leagues and competitions they are available to spare for.
 The use of this feature does not require members to have purchased anything, but simply to have added a curler profile and accepted your waivers.
-Curler can also indicate which positions they can spare for, whether or not to show their contact information, and any notes they may have about sparing and availability.
-Similar to a bulletin board at the club.
+Curler can also indicate which positions they can spare for, and any notes they may have about sparing and availability.
 
-![Sparing](/img/docs/club-management/leagues/sparing.png)
-
-The above screen shot shows how a curler can specify their sparing availability.
+[Refer to our curler sparing documentation for more info.](/docs/for-curlers/sparing)
 
 
 ### Participant Scoring
