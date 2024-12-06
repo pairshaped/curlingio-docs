@@ -17,6 +17,7 @@ module.exports = {
       'for-curlers/waivers',
       'for-curlers/orders',
       'for-curlers/my-events',
+      'for-curlers/teams',
       'for-curlers/waitlists',
       'for-curlers/sparing',
     ],
