@@ -222,6 +222,7 @@ Curler can also indicate which positions they can spare for, and any notes they 
 **[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 Check this box if you want your participants to be able to score games on their own. In order for this to work though you will need to create teams and assign curlers to them, or we won't know who your participants are. End scores are not supported by participant scoring yet.
+Curlers access participant scoring for their games from their [Account -> My teams section](/docs/for-curlers/teams).
 
 
 ### End Scores Enabled
