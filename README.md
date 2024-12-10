@@ -26,12 +26,11 @@ sudo apt-get install git
 
 ### Nodejs
 
-Make sure you have nodejs installed on your machine. The easiest (and most flexible) way to do this on a Mac or Linux based operating system is using nvm (https://github.com/nvm-sh/nvm#installing-and-updating).
-Open up a terminal (osx) or shell (linux) and run the following:
+Make sure you have nodejs installed on your machine. The easiest (and most flexible) way to do this on a Mac or Linux based operating system is using asdf (https://asdf-vm.com/).
+Once asdf is installed, open up a terminal (osx) or shell (linux) and run the following:
 
 ```console
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
-nvm install node
+asdf install nodejs 16.5.0
 ```
 
 Then in your terminal / shell, `cd` into the project directory and install the libraries that this project uses:
@@ -41,6 +40,7 @@ Then in your terminal / shell, `cd` into the project directory and install the l
 
 ```console
 cd curlingio-docs
+npm install -g yarn
 yarn install
 ```
 
