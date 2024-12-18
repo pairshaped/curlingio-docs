@@ -15,4 +15,4 @@ If your club has enabled the sparing feature for any of their leagues or competi
 
 ![Set Sparing Preferences](/img/docs/for-curlers/sparing.png)
 
-Note: When you register as a spare your contact information will be shared with other members in the spares lists regardless of your profile setting.
+Note: By registering as a spare your contact information will be shared with other members on the spares screens for relevant leagues and competitions regardless of your profile setting.
