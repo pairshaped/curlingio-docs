@@ -28,6 +28,15 @@ To submit a support request click on the **New support request** button.
 ## Submitting Support Requests
 
 Please provide as much information as possible when submitting support requests.
+Do not submit multiple issues in one support request. Every issue should be submitted separately.
+
+If your issue involves:
+
+* an order, please provide the order ID or a link to the order.
+* a curler, please provide the name or email of the curler.
+* a user login, please provide the email address they used to login with.
+* an error message, please tell us exactly what that message was and what you were trying to do when you ran into it, and / or a link to the page you were on.
+
 
 ### Subject
 
