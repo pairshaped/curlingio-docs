@@ -89,6 +89,12 @@ Note, that if your leagues have different prices and the member completes a purc
 For example, if you offer an Open League for $100 and a Men's League for $200, in order to receive a two league discount I would either need to purchase both of these leagues at the same time, or I would need to purchase the Men's (more expensive) league first.
 The system will not make a retroactive discount to the cheaper league.
 
+The following video will take you, the curling club manager, on a deep dive into setting up multi-league discounts.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/ZR-Dt_GfB4I" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
 ### Matching a Custom Field Value
 
 This is an extremely flexible discount. It allows you to check if the value entered into one of the club's own custom fields matches what the curler entered or selected.

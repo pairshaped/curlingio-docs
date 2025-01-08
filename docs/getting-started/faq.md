@@ -125,6 +125,11 @@ However if the league has already been paid for the easiest way to handle this i
 2. Use the "Login as" feature to login to the curler's account. (ignore this if the order was made with an administrator account, but that should never happen right?)
 3. Add the new league to your cart and complete the registration. The club credits that were granted from refunding the old league will cover the cost of the new league.
 
+The following video will take you, the curling club manager, through the process of moving a curler from one league to another.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/3z42eu5VRJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ### Can we sell raffle (50 / 50) tickets on Curling IO?
 
