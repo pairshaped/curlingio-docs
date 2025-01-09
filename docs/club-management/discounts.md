@@ -95,6 +95,13 @@ The following video will take you, the curling club manager, on a deep dive into
   <iframe width="100%" src="https://www.youtube.com/embed/ZR-Dt_GfB4I" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 </div>
 
+### Team Position
+
+You can discount curlers based on their selected position. This only works with leagues and competitions which are requiring a curler profile and also asking for their position (optional or required).
+
+A common use for this would be to discount an _"Alternate"_ for a team. For example, if you are moving from team based pricing to individual sign up, you might divide the price by 4 and grant alternates a 100% discount.
+So what may have cost $800 per team registration may now cost $200 per individual, but free for alternates.
+
 ### Matching a Custom Field Value
 
 This is an extremely flexible discount. It allows you to check if the value entered into one of the club's own custom fields matches what the curler entered or selected.
