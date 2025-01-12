@@ -6,7 +6,7 @@ slug: /getting-started/faq
 
 ### How much does it cost?
 
-Curling IO pricing is 2.9% + $0.30 per online transaction, and include all credit card processing fees.
+Curling IO pricing starts at 2.7% + $0.30 per online transaction if you are only accepting online payments, and this includes all credit card processing fees.
 We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not.
 See our [pricing section](/docs/getting-started/pricing) for more details.
 
