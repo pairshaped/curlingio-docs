@@ -101,6 +101,10 @@ Some people have and may login with multiple email addresses.
 6. During registration Jimmy sees and is able to use the curler profile that his mother created for him earlier.
 
 
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/desiqr8gx20" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
 ### One of our members registered for the wrong league
 
 Occasionally one of your members will register for the wrong league / product / competition.
