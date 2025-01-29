@@ -45,6 +45,7 @@
   border-bottom: 1px solid #ececec;
 }
 .videoWrapper {
+  background-color: rgb(255, 255, 255);
   position: relative;
   height: 0;
   margin: 0;
@@ -54,6 +55,7 @@
   overflow: hidden;
 }
 .videoWrapper iframe {
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   left: 0;

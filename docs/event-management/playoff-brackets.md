@@ -5,6 +5,17 @@ slug: /event-management/playoff-brackets
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+## Walkthrough Video
+
+The following video will take you, the curling club or event manager, through the basics of creating playoff brackets for a league or competition.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/4XoxbhRaVQM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+
+## Finding the Playoff Brackets
+
 To get to the stages screen and manage your playoff brackets, first click on the name of a league of competition.
 
 ![Events List](/img/docs/event-management/shared/events.png)

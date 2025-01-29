@@ -46,7 +46,12 @@ Now when your members register for a league they will be asked how many players 
 If they select "Five" then they will receive a 20% discount.
 If all 5 members of the team do this, they will together pay the total team price for the league.
 
-If you have questions about setting up your leagues, [please watch our leagues tutorial before contacting support.](https://youtu.be/LSuo6UbLBJ0)
+Here's a tutorial video discussing and covering these discount options.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/Xx6BgBUiKJA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
 
 ## Avoid Complex Discount Combinations
 

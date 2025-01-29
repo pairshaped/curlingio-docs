@@ -1,20 +1,19 @@
 ---
-id: waivers
-title: Waivers
-slug: /for-curlers/waivers
+id: waitlists
+title: Waitlists
+slug: /for-curlers/waitlists
 ---
 
-If your club is requiring one or more waivers be accepted before you can participate at their venue, you will usually be asked to do so when you register for an event.
-For team registrations however, every individual on the team may need to create a curler profile and accept a waiver on their own before they can participate.
-You cannot accept a waiver for someone unless you are their legal guardian (parent).
+Once a league, competition, or product runs out of space or inventory, you may be presented with an option to join it's waitlist.
+When you do so, your waitlists will appear on this screen.
 
 1. Login first, if you aren't already signed in.
 2. Click on the "Account" dropdown near the top right of the screen.
-3. Click on the "Waivers" link in the Account dropdown.
-4. Create a curler profile if you don't already have one.
-5. If you are required to accept any waivers, you will be presented with a "Waiver Required" button for each profile that requires it.
-6. Clicking the "Waiver required" button will present you with the waiver and you will be asked to type either "I agree" for adult waivers or "We agree" for youth waivers.
+3. Click on the "Waitlists" link in the Account dropdown.
 
-![Curler Waivers](/img/docs/for-curlers/waivers.png)
+![Waitlist Registrations](/img/docs/for-curlers/waitlists.png)
 
-You can view your signed waivers for the current season in your account waiver section at any time.
+If room or inventory becomes available and club staff approve your waitlist registration, you'll be sent an email with a special link and instructions to purchase the league, competition or product.
+You will likely have a limited amount of time to claim your waitlisted item before your club moves on to the next person in line.
+
+If you're no longer interested in the league, competition, or product, you can cancel your waitlist registration so the next person in line may join.

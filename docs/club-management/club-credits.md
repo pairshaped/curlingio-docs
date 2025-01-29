@@ -18,6 +18,15 @@ In order to redeem credit the member must login with the email address you assig
 When issueing refunds via credit, the credit is assigned to the email address that owns the order you refunded.
 *[See the "What is an Account?" section in our FAQ.](/docs/getting-started/faq#what-is-an-account)*__
 
+## Walkthrough Video
+
+The following video will take you, the curling club manager, through the basics of utilizing club credits.
+If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/63DQY6ARI1o" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
 ## Directly Granting Credits to a User
 
 As a club manager you can grant credits to any user as long as you know the email address they use to login with.
