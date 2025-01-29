@@ -14,7 +14,6 @@ module.exports = {
       'for-curlers/google-login-without-gmail',
       'for-curlers/registering-for-a-league',
       'for-curlers/curler-profiles',
-      'for-curlers/waivers',
       'for-curlers/orders',
       'for-curlers/my-events',
       'for-curlers/teams',

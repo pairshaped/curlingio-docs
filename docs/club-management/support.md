@@ -11,7 +11,7 @@ It's important to differentiate between support requests and feature requests. D
 
 Please keep in mind that support has a cost (to us).
 We made a choice early on, that in order to keep costs and fees to a minimum, our clubs would need to self-support as much as possible.
-To this end, we have provided tutorial videos and documentation covering all of our features.
+To this end, we have provided tutorial videos and documentation covering all of our features, which you can find in the left navigation area.
 Most other platforms have yearly fees to cover their support costs, while we allow clubs to operate free of charge.
 If you are not comfortable self-supporting, and need more hands-on guidance, we do offer [paid support options](https://premium.curling.io/en/products).
 
@@ -28,6 +28,15 @@ To submit a support request click on the **New support request** button.
 ## Submitting Support Requests
 
 Please provide as much information as possible when submitting support requests.
+Do not submit multiple issues in one support request. Every issue should be submitted separately.
+
+If your issue involves:
+
+* an order, please provide the order ID or a link to the order.
+* a curler, please provide the name or email of the curler.
+* a user login, please provide the email address they used to login with.
+* an error message, please tell us exactly what that message was and what you were trying to do when you ran into it, and / or a link to the page you were on.
+
 
 ### Subject
 

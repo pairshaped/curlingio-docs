@@ -6,7 +6,7 @@ slug: /getting-started/faq
 
 ### How much does it cost?
 
-Curling IO pricing is 2.9% + $0.30 per online transaction, and include all credit card processing fees.
+Curling IO pricing starts at 2.7% + $0.30 per online transaction if you are only accepting online payments, and this includes all credit card processing fees.
 We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not.
 See our [pricing section](/docs/getting-started/pricing) for more details.
 
@@ -100,6 +100,9 @@ Some people have and may login with multiple email addresses.
 5. Her son Jimmy logs into Curler IO a month later to register for another league.
 6. During registration Jimmy sees and is able to use the curler profile that his mother created for him earlier.
 
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/desiqr8gx20" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ### One of our members registered for the wrong league
 
@@ -125,6 +128,11 @@ However if the league has already been paid for the easiest way to handle this i
 2. Use the "Login as" feature to login to the curler's account. (ignore this if the order was made with an administrator account, but that should never happen right?)
 3. Add the new league to your cart and complete the registration. The club credits that were granted from refunding the old league will cover the cost of the new league.
 
+The following video will take you, the curling club manager, through the process of moving a curler from one league to another.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/3z42eu5VRJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
 
 ### Can we sell raffle (50 / 50) tickets on Curling IO?
 

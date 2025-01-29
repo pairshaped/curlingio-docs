@@ -119,7 +119,11 @@ module.exports = {
           changefreq: 'weekly',
           priority: 0.5,
           trailingSlash: false,
-        }
+        },
+        gtag: {
+          trackingID: 'AW-1016652572',
+          anonymizeIP: false,
+        },
       },
     ],
   ]

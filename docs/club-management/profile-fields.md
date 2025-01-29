@@ -7,6 +7,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can customize which fields are required, optional, or not asked for curler profiles at your club.
 
+## Walkthrough Video
+
+The following video will take you, the curling club manager, through customizing the questions being asked of curlers during registration.
+
+<div className="text--center videoWrapper">
+  <iframe width="100%" src="https://www.youtube.com/embed/j9i0dIHxh_M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+## Finding your Profile Fields Customization
+
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Profile Fields**.
 
 ![Settings Navigation](/img/docs/club-management/profile-fields/navigation.png)
