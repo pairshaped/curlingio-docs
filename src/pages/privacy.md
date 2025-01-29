@@ -42,6 +42,11 @@ As an example, if you are located in Canada and your transaction is processed by
 
 Once you leave our site or are redirected to a third-party website or application, you are no longer governed by this Privacy Statement or our Terms of Service.
 
+### Links
+
+When you click on links on our site, they may direct you away from our site.
+We are not responsible for the privacy practices of other sites and encourage you to read their privacy statements.
+
 
 ## Section 5 - Online Payments
 
@@ -68,12 +73,6 @@ The following data subprocessors may or may not handle some of the data you prov
 | [Postmark](https://postmarkapp.com/privacy-policy) | Sends all of our transactional emails, like login links, receipts, and other notifications. We never send marketing emails. |
 | [MailChimp](https://www.intuit.com/privacy/statement/) | Optional email marketing platform that your club may choose to sync some curler profile data to in order to communicate with you via email. If you club does, then you will have the option to opt out and no receive marketing emails from them. |
 | Membership Associations | Clubs have the option to automatically report affiliate fees collected, with their attached curler profile data, to their membership associations. For example; [Curling Canada](https://www.curling.ca/about-curling-canada/privacy-policy/). |
-
-
-### Links
-
-When you click on links on our site, they may direct you away from our site.
-We are not responsible for the privacy practices of other sites and encourage you to read their privacy statements.
 
 
 ## Section 6 - Security
