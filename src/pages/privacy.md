@@ -71,7 +71,7 @@ The following data subprocessors may or may not handle some of the data you prov
 | [Stripe](https://stripe.com/en-ca/privacy) | Online credit card payment processing. |
 | [SportsPay](https://sportspay.com/privacy-policy/) | Online credit card payment processing. |
 | [Postmark](https://postmarkapp.com/privacy-policy) | Sends all of our transactional emails, like login links, receipts, and other notifications. Curling IO does not send marketing emails. |
-| [MailChimp](https://www.intuit.com/privacy/statement/) | Optional email marketing platform that your club may choose to sync some curler profile data to in order to communicate with you via email. If your club does, you will have the option to unsubscribe. You will continue to receive transactional emails (login link, receipt) from Curling IO regardless. |
+| [MailChimp](https://www.intuit.com/privacy/statement/) | Optional email marketing platform that your club may choose to sync some curler profile data to in order to communicate with you via email. If your club does, you will have the option to unsubscribe. |
 | Membership Associations | Clubs have the option to automatically report affiliate fees collected, with their attached curler profile data, to their membership associations. For example; [Curling Canada](https://www.curling.ca/about-curling-canada/privacy-policy/). |
 
 
@@ -83,8 +83,9 @@ To protect your personal information, we take reasonable precautions and follow 
 
 Here is a list of cookies that we use and require.
 
-1. _session_id, unique token, sessional, Allows us to store information about your session (referrer, landing page, etc), and whether or not you are logged in. This is required.
-2. __stripe_mid, unique token, sessional, Session tracking for Stripe (payment processor) if the club is using Stripe for online payment processing. This may be required by the club.
+1. _session_id, unique token, sessional, allows us (Curling IO) to store minimal and encrypted information about your session (logged in, referrer, landing page, etc). This is required.
+2. __stripe_mid, unique token, required only if the club is using Stripe for online payment processing.
+3. __stripe_sid, unique token, sessional, required only if the club is using Stripe for online payment processing.
 
 
 ## Section 7 - Age of Consent
