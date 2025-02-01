@@ -70,8 +70,8 @@ The following data subprocessors may or may not handle some of the data you prov
 | ------- | --------|
 | [Stripe](https://stripe.com/en-ca/privacy) | Online credit card payment processing. |
 | [SportsPay](https://sportspay.com/privacy-policy/) | Online credit card payment processing. |
-| [Postmark](https://postmarkapp.com/privacy-policy) | Sends all of our transactional emails, like login links, receipts, and other notifications. We never send marketing emails. |
-| [MailChimp](https://www.intuit.com/privacy/statement/) | Optional email marketing platform that your club may choose to sync some curler profile data to in order to communicate with you via email. If you club does, then you will have the option to opt out and no receive marketing emails from them. |
+| [Postmark](https://postmarkapp.com/privacy-policy) | Sends all of our transactional emails, like login links, receipts, and other notifications. Curling IO does not send marketing emails. |
+| [MailChimp](https://www.intuit.com/privacy/statement/) | Optional email marketing platform that your club may choose to sync some curler profile data to in order to communicate with you via email. If your club does, you will have the option to unsubscribe. You will continue to receive transactional emails (login link, receipt) from Curling IO regardless. |
 | Membership Associations | Clubs have the option to automatically report affiliate fees collected, with their attached curler profile data, to their membership associations. For example; [Curling Canada](https://www.curling.ca/about-curling-canada/privacy-policy/). |
 
 
