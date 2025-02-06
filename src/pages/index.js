@@ -187,17 +187,6 @@ function Home() {
             </div>
           </section>
         )}
-        <div className="sectionVideo">
-          <div className="container padding-vert--lg">
-            <div className="row">
-              <div className="col col--12">
-                <div className="text--center videoWrapper">
-                  <iframe allow="autoplay; encrypted-media" width="560" height="349" frameBorder="0" id="learn-more-iframe" src="https://www.youtube-nocookie.com/embed/OkCEKfmKr4U?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;enablejsapi=1" allowFullScreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="sectionUsedBy">
           <div className="container padding-vert--lg">
             <div className="row">
