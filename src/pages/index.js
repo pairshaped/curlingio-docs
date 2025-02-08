@@ -12,9 +12,9 @@ const features = [
     imageUrl: 'img/easy_to_use.svg',
     description: (
       <>
-        Curling IO was designed from the ground up to be easy to setup and start
+        Curling IO was designed from the ground up to be easy to set up and start
         taking online registrations and payments quickly. No complicated
-        systems to figure out, and curlers love it!
+        systems to figure out, and curlers love it! <a href="https://www.youtube.com/shorts/nAbLIPHYmME" target="_blank">See for yourself.</a>
       </>
     ),
   },
@@ -24,8 +24,7 @@ const features = [
     description: (
       <>
         Our fees are simple and all inclusive.
-        Online payments cost <b>2.9% + $0.30 per transaction</b> which includes credit card processing fees.
-        Offline payments are free. <a href="/docs/getting-started/pricing">Pricing details.</a>
+        Online payments as low as <b>2.7% + $0.30 per transaction</b> which includes credit card processing fees, or use Curling IO free with offline payments. <a href="/docs/getting-started/pricing">Pricing details.</a>
       </>
     ),
   },
@@ -34,7 +33,8 @@ const features = [
     imageUrl: 'img/league_management.svg',
     description: (
       <>
-      Manage your leagues and bonspiels with us. Assemble teams, round robins, brackets, draw schedules, score your games, and even publish your results online. No more spreadsheets!
+      Manage your leagues and bonspiels with us. Assemble teams, round robins, brackets, draw schedules, score your games, and even publish your results online.
+      No more spreadsheets! <a href="https://www.youtube.com/watch?v=4XoxbhRaVQM" target="_blank">Check it out.</a>
       </>
     ),
   },
@@ -43,7 +43,7 @@ const features = [
     imageUrl: 'img/national_curler_database.svg',
     description: (
       <>
-        Members that haved used Curling IO at any club or membership association will already have an account, making registration
+        Members that have used Curling IO at any club or membership association will already have an account, making registration
         as simple as the click of a button.
       </>
     ),
@@ -63,7 +63,7 @@ const features = [
     description: (
       <>
         Curling IO is the system of choice for Curling Canada as well as the provincial membership associations.
-        You're in good hands.
+        You're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
       </>
     ),
   },
