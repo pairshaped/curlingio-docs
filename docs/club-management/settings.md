@@ -64,7 +64,10 @@ The location information requires no explanation, but please do check it over an
 ## Contact Information
 
 The contact information you enter here will be shown on your contact page.
-If you enter a Twitter or Facebook account we will link to it from your contact page.
+If you enter a Facebook, X (Twitter) or YouTube account we will link to it from your contact page.
+
+You may also enter a WhatsApp, Slack, or Discord invitation link and we'll share it with your members when they register or visit your contact page. 
+
 
 
 ## Payments
