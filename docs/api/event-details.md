@@ -200,12 +200,15 @@ The draw sheets list the game IDs for each sheet in order.
 In this example, the game ID of "3db7fda0" is on Sheet 1.
 Often sheets will be null when there is no game on that sheet for the draw.
 
+The epoch field is a timestamp in seconds and can be used to sort / order draws if needed. Draws should be in the correct order already (oldest -> newest).
+
 Path: draws -> draw
 
 ```
 {
   "id": 127575,
   "label": "1",
+  "epoch": 1739577600,
   "starts_at": "Mar 03 at  7:00 pm",
   "attendance": 3910,
   "draw_sheets": ["3db7fda0", "cc34ae70", "5f1d2e2b", "0da23f90"]
