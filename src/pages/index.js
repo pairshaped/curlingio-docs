@@ -81,9 +81,9 @@ const orgs = [
     imageUrl: 'img/orgs/northern-ontario-curling-association.png',
   },
   {
-    title: 'Ontario Curling Association',
+    title: 'Curling Ontario',
     link: 'on.curling.io',
-    imageUrl: 'img/orgs/ontario-curling-association.png',
+    imageUrl: 'img/orgs/curling-ontario-logo.png',
   },
   {
     title: 'Curling Quebec',
