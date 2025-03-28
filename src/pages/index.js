@@ -83,7 +83,7 @@ const orgs = [
   {
     title: 'Curling Ontario',
     link: 'on.curling.io',
-    imageUrl: 'img/orgs/curling-ontario-logo.png',
+    imageUrl: 'img/orgs/curling-ontario.png',
   },
   {
     title: 'Curling Quebec',
