@@ -63,11 +63,18 @@ For leagues, we recommend entering your draw times. E.g. 7:00 & 9:00 PM
 The description shows up when your members click on the name of the league or competition and also when they assign a curler profile or fill in required information for it.
 Keep in mind that member's may just add the league or competition to their cart without clicking on it's name.
 
+
+### Skill Level
+
+You can indicate a skill level for your events ranging from beginner to advanced or even professional.
+
+
 ### Required Reading
 
 You can enter some text that your members are guaranteed to see before they can complete their registration for the league. Just leave this blank to avoid this registration step.
 
 We recommend you use this sparingly as it adds another step (friction) to league registrations for your members.
+
 
 ### Sponsorship
 
