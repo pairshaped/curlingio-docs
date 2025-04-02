@@ -170,7 +170,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">The #1 online registration and league management platform for curling clubs. We simplify daily operations for your club and members. Centralized. Secure. Safe.</h2>
+                  <h2 className="sectionDarkTitle">Used by more than <u>125k</u> curlers and processing over <u>$18m</u> in payments last season alone. Curling IO is centralized, secure, and safe.</h2>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--lg text--center">
-                  <p className="hero__subtitle">Curling IO is the registration and competition management system for these organizations and many others.</p>
+                  <p className="hero__subtitle">Curling IO is proud to be the platform of choice for the following organizations and hundreds more.</p>
                   <div class="featured_clubs">
                     {orgs.map((props, idx) => (
                       <Org key={idx} {...props} />
