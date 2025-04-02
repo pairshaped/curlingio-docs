@@ -170,7 +170,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">Used by more than <u>125k</u> curlers and processing over <u>$18m</u> in payments last season alone. Curling IO is centralized, secure, and safe.</h2>
+                  <h2 className="sectionDarkTitle">Used by more than <u>100k</u> curlers and processing over <u>$18m</u> in payments last season alone. Curling IO is centralized, secure, and safe.</h2>
                 </div>
               </div>
             </div>
