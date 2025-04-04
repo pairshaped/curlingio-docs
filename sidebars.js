@@ -8,6 +8,7 @@ module.exports = {
       'getting-started/support-and-feedback',
       'getting-started/faq',
       'getting-started/best-practices',
+      'getting-started/referrals',
     ],
     "For Curlers": [
       'for-curlers/how-do-i-login',
