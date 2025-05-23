@@ -117,7 +117,7 @@ You can't just swap them over because the league you want to move them to may:
 
 While none of the above will be true for all cases, the system doesn't have a way to know this.
 
-Depending on the status of the order there two ways to handle this.
+Depending on the status of the order there are two ways to handle this.
 
 If the order has NOT been paid yet, you can simply either delete the order and have them resubmit or you can [send the order back to their cart](/docs/club-management/orders#sending-an-order-back-to-the-accounts-cart).
 Keep in mind that sending the order back to their cart is not an option if you were registering them using the club multicart login feature.
