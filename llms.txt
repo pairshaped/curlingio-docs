@@ -1,0 +1,100 @@
+# Curling IO Documentation
+
+> Comprehensive documentation for Curling IO - curling registration and league management platform
+
+- [Curling IO Documentation](/index.md)
+
+## privacy
+
+Section 1 - What Do We Do With Your Information?
+
+- [Privacy Statement](/privacy.md): Section 1 - What Do We Do With Your Information?
+
+## terms
+
+Acceptance of Terms of this Agreement through Use
+
+- [Registration System Terms of Use](/terms.md): Acceptance of Terms of this Agreement through Use
+
+## docs
+
+
+### advanced
+
+- [API](/docs/advanced/api.md): Leagues and Competitions (Events)
+- [Augmenting Curler Profiles](/docs/advanced/augmenting-curler-profiles.md): Sometimes you may want to ask your curler's for some additional information, but only once per season (or lifetime).
+- [Email Templates](/docs/advanced/email-templates.md): Coming soon!
+- [Widgets](/docs/advanced/widgets.md): Coming soon!
+
+### api
+
+- [Event Details](/docs/api/event-details.md): Events are leagues and competitions.
+- [Items](/docs/api/items.md): Leagues, competitions, and products can be accessed through the items API via different end points.
+- [Product Details](/docs/api/product-details.md): Fetching the product
+
+### club-management
+
+- [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
+- [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
+- [Curlers](/docs/club-management/curlers.md): In Curling IO, curler profiles belong to your members themselves.
+- [Custom Fields](/docs/club-management/custom-fields.md): Custom fields allow you, the curling club manager, to ask any question you like during registration or purchase of one of your leagues, competitions, or products.
+- [The Dashboard](/docs/club-management/dashboard.md): When a curling club manager first logs in to the administrator area of Curling IO they will be presented with the dashboard.
+- [Discounts](/docs/club-management/discounts.md): You can create discounts to reduce the cost of your leagues, competitions, and products when curler's match criteria that you specify.
+- [Fees](/docs/club-management/fees.md): You can set up membership and capital improvement fees for your club.
+- [Leagues & Competitions](/docs/club-management/leagues.md): Walkthrough Video
+- [Linking your Website to Curling IO Registration](/docs/club-management/linking-to-registration.md): If you are not using Curling IO to host your website, you'll still want to link to your Curling IO site for registrations.
+- [Managers](/docs/club-management/managers.md): Clubs can have multiple managers for Curling IO.
+- [Orders](/docs/club-management/orders.md): Walkthrough Video
+- [Products and Addons](/docs/club-management/products.md): Walkthrough Video
+- [Profile Fields](/docs/club-management/profile-fields.md): You can customize which fields are required, optional, or not asked for curler profiles at your club.
+- [Registration and Results Widget](/docs/club-management/registration-widget.md): Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
+- [Reports](/docs/club-management/reports.md): Curling IO produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
+- [Club Settings](/docs/club-management/settings.md): You can modify some of the core settings for your club in the settings section.
+- [Sponsors](/docs/club-management/sponsors.md): This is a Premium Only Feature
+- [Support](/docs/club-management/support.md): You can submit supports requests from within Curling IO. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
+- [Waitlists](/docs/club-management/waitlists.md): Overview
+- [Waivers](/docs/club-management/waivers.md): Curling IO by default will ask your curlers to accept a waiver during registration, but only once per season.
+- [Website Hosting](/docs/club-management/website-hosting.md): Overview
+
+### event-management
+
+- [Bracket Templates](/docs/event-management/bracket-templates.md): This is a Premium Only Feature
+- [Curlers](/docs/event-management/curlers.md): The curlers screen for an event will list all of the curlers who registered for the event.
+- [Draw Schedule](/docs/event-management/draw-schedule.md): Walkthrough Video
+- [Draw Schedule Templates](/docs/event-management/draw-schedule-templates.md): This is a Premium Only Feature
+- [Event Managers](/docs/event-management/event-managers.md): Walkthrough Video
+- [Playoff Brackets](/docs/event-management/playoff-brackets.md): Walkthrough Video
+- [Registrations](/docs/event-management/registrations.md): You can manage the registrations for each of your leagues or competitions.
+- [Round Robins](/docs/event-management/round-robins.md): To get to the stages screen and manage your round robins, first click on the name of a league of competition.
+- [Scores](/docs/event-management/scores.md): Walkthrough Video
+- [Spares](/docs/event-management/spares.md): If you enabled Sparing for your league or competitions, then you can review the spares for it on this screen.
+- [Teams](/docs/event-management/teams.md): Walkthrough Video
+
+### for-curlers
+
+- [Curler Profiles](/docs/for-curlers/curler-profiles.md): Overview
+- [Google Login Without Gmail](/docs/for-curlers/google-login-without-gmail.md): You can use a non-gmail email account to login using the "Login with Gmail" button.
+- [How do I Login?](/docs/for-curlers/how-do-i-login.md): It's simple, but first you need an email address.
+- [My Events](/docs/for-curlers/my-events.md): Once you've joined a league or competition with one of your profiles, either by purchasing it or via a join link from a teammate, they'll show up in this section.
+- [Orders](/docs/for-curlers/orders.md): Once you've placed at least one order (registration and / or purchase) you'll be able to review your orders in this section.
+- [Registering for a League](/docs/for-curlers/registering-for-a-league.md): Step by Step
+- [Sparing](/docs/for-curlers/sparing.md): If your club has enabled the sparing feature for any of their leagues or competitions you will be able to select which of them you are available to spare for, which position(s) you prefer, and other notes you'd like to include.
+- [My Teams](/docs/for-curlers/teams.md): Once your profile(s) has been assigned to a team in a league or competition, that team will show up in this section.
+- [Waitlists](/docs/for-curlers/waitlists.md): Once a league, competition, or product runs out of space or inventory, you may be presented with an option to join it's waitlist.
+- [Waivers](/docs/for-curlers/waivers.md): If your club is requiring one or more waivers be accepted before you can participate at their venue, you will usually be asked to do so when you register for an event.
+
+### getting-started
+
+- [Best Practices](/docs/getting-started/best-practices.md): This document is for curling club managers that are new to Curling IO or club's who's pricing, fees, or discounts have undergone significant changes for the next season.
+- [Book an Onboarding Session](/docs/getting-started/book-an-onboarding-session.md): The goal of an onboarding session is to get the leagues, fees, discounts, and products setup to mirror your club's operations, and answer any questions you may have.
+- [Curling Club Management](/docs/getting-started/curling-club-managers.md): Curling IO is the #1 curling club management and registration platform.
+- [Frequently Asked Questions](/docs/getting-started/faq.md): How much does it cost?
+- [Premium Tier](/docs/getting-started/premium.md): If your club is accepting online payments then you are already considered premium tier.
+- [Pricing](/docs/getting-started/pricing.md): Canadian Clubs
+- [Referrals](/docs/getting-started/referrals.md): Clubs can earn $250 for every club that you refer to Curling IO that has never used our platform before.
+- [Support and Feedback](/docs/getting-started/support.md): We offer three options available for help and support with Curling IO.
+
+### member-data
+
+- [Import Member Data](/docs/member-data/import.md): Overview
+- [Setup for Membership Associations](/docs/member-data/setup.md): Overview

@@ -1,0 +1,79 @@
+# Draw Schedule
+
+## Walkthrough Video[​](#walkthrough-video "Direct link to Walkthrough Video")
+
+The following video will take you, the curling club or event manager, through the basics of setting up teams for a league or competition. If you're new to Curling IO, it's worthwhile to watch this before wading through the rest of our documentation.
+
+## Finding the Draw Schedule Section[​](#finding-the-draw-schedule-section "Direct link to Finding the Draw Schedule Section")
+
+You can generate and / or manually create a draw schedule for each of your leagues and competitions. To get to the draw schedule screen, first click on the name of a league or competition.
+
+![Events List](/assets/images/events-d18b109ded429fddd604c714df19b8be.png)
+
+You should then see a list of tabs near the top. Click on the **Schedule** tab.
+
+![Draw Schedule Navigation](/assets/images/navigation-b9706b8d415dd8bc7339993a76265b7b.png)
+
+## Settings[​](#settings "Direct link to Settings")
+
+Before you can generate a draw schedule, Curling IO first needs some basic information. Click the *Change Settings* button to provide this information.
+
+### Number of sheets[​](#number-of-sheets "Direct link to Number of sheets")
+
+This will default to the number of sheets defined in your [club settings](/docs/club-management/settings.md), but you can override it here if you are using fewer sheets for a specific league or competition.
+
+### Sheet prefix[​](#sheet-prefix "Direct link to Sheet prefix")
+
+Do you want to call them "Sheets" or "Ice" in the public view of your draw schedule.
+
+### Sheet ordering[​](#sheet-ordering "Direct link to Sheet ordering")
+
+Do you want to order your sheets by alphanumeric (A, B, C, ... A1, B1, etc.) or numeric (1, 2, 3, ... 27, 28, etc.)?
+
+### Show sheets[​](#show-sheets "Direct link to Show sheets")
+
+Do you want to display the sheet names on the public view of your draw schedule?
+
+### Interval[​](#interval "Direct link to Interval")
+
+How often do the draws occur? For leagues this is usually *Every Week*, but could also be *Every Other Week* or *Every Day*.
+
+### Draw days[​](#draw-days "Direct link to Draw days")
+
+A comma separated list of the day of the week that your draws occur on. If it's one draw per week, every Monday, just enter "Monday". If it's two draws per week, every Tuesday and Thursday, enter "Tuesday, Thursday".
+
+### Draw times[​](#draw-times "Direct link to Draw times")
+
+A comma separated list of draw times. If your league is every Monday at 7:00 PM, just enter "7:00 pm". If your league is every Monday at 7:00 PM and 9:45 PM, enter "7:00 pm, 9:45 pm".
+
+### Exclude dates[​](#exclude-dates "Direct link to Exclude dates")
+
+If there are any days that fall within your schedule that should not have a draw, you can specify it here. For example, to exclude christmas, you would enter "Dec 25".
+
+## Schedule Generation[​](#schedule-generation "Direct link to Schedule Generation")
+
+Curling IO will do it's best to automatically generate your draw schedule when you ask it to do so.
+
+The auto-generation will use matching [draw schedule templates](/docs/event-management/draw-schedule-templates.md) provided by Curling IO or custom templates specific to your club. If there's more than one matching draw schedule template, you will be prompted to choose which one to use.
+
+If there are no matching draw schedule templates, then we will attempt to auto-assemble your draw schedule. This is usually a good starting place, but you may need to make some manual tweaks.
+
+## Manual Scheduling[​](#manual-scheduling "Direct link to Manual Scheduling")
+
+You can click on any game cell (combination of draw and sheet) and a dropdown will appear listing the available games that can be scheduled. If the dropdown doesn't appear, make sure you remove the contents of the cell first.
+
+![Manual Edit](/assets/images/manual-edit-96236852660f51d001987ef8f5d15a8a.png)
+
+Only the games that can be assigned will be shown. If a a game is already scheduled it won't show up in the dropdown, and if you need to reschedule it, you first need to remove it from the game cell where it is already scheduled. If a team is already playing during a draw you won't be able to schedule that team again for the same draw (a team can't play two games at the same time).
+
+You can add draws to your schedule by clicking the "Add Draw" near the bottom right of the screen. You can remove draws from your schedule by clicking the "X" button next to the draw. You can undo all of the changes made since your last save by clicking the "Reset" button.
+
+When you're happy with your draw schedule, click the "Save" button to save it.
+
+## Removing All Draws[​](#removing-all-draws "Direct link to Removing All Draws")
+
+If you want to start over, we've provided a button to remove all of your existing draws from the league or competition. Since schedule generation will always try to append to the existing schedule, there may be an occasion where you will want to clear it out completely and generate it again from scratch or maybe assemble your entire schedule manually.
+
+## Open Source[​](#open-source "Direct link to Open Source")
+
+Our draw scheduling application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-draws/>
