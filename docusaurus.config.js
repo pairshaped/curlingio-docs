@@ -20,6 +20,20 @@ module.exports = {
         ],
       },
     ],
+    [
+      '@signalwire/docusaurus-plugin-llms-txt',
+      {
+        siteTitle: 'Curling IO Documentation',
+        siteDescription: 'Comprehensive documentation for Curling IO - curling registration and league management platform',
+        depth: 2,
+        content: {
+          includeDocs: true,
+          includeBlog: false,
+          includePages: true,
+          enableLlmsFullTxt: true,
+        },
+      },
+    ],
   ],
   themeConfig: {
     colorMode: {

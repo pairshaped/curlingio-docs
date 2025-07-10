@@ -16,6 +16,7 @@
     "@docusaurus/plugin-sitemap": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
+    "@signalwire/docusaurus-plugin-llms-txt": "^1.2.1",
     "clsx": "^2.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
