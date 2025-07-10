@@ -5,6 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
   organizationName: 'pairshaped', // Usually your GitHub org/user name.
   projectName: 'curlingio-docs', // Usually your repo name.
   plugins: [
@@ -26,6 +27,7 @@ module.exports = {
     },
     image: 'img/curlingio-logo-small.png',
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: 'b0ed2c7d4e5d796e576b812c1b2ad234',
       indexName: 'curling',
     },
@@ -116,7 +118,6 @@ module.exports = {
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-          trailingSlash: false,
         },
         gtag: {
           trackingID: 'AW-1016652572',

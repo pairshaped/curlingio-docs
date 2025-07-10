@@ -104,4 +104,4 @@ Since schedule generation will always try to append to the existing schedule, th
 
 ## Open Source
 
-Our draw scheduling application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-draws/>
+Our draw scheduling application is open source! More details can be found on the project's github page here: [https://pairshaped.github.io/curlingio-draws/](https://pairshaped.github.io/curlingio-draws/)

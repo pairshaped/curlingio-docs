@@ -59,4 +59,4 @@ None of your changes are persisted until you click the "Save" button. So feel fr
 
 ## Open Source
 
-Our bracket builder is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-bracket-builder/>
+Our bracket builder is open source! More details can be found on the project's github page here: [https://pairshaped.github.io/curlingio-bracket-builder/](https://pairshaped.github.io/curlingio-bracket-builder/)
