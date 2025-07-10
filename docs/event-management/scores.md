@@ -58,4 +58,4 @@ If end scores are enabled for your league or competition, you'll be presented wi
 
 ## Open Source
 
-Our scoring application is open source! More details can be found on the project's github page here: <https://pairshaped.github.io/curlingio-scoring/>
+Our scoring application is open source! More details can be found on the project's github page here: [https://pairshaped.github.io/curlingio-scoring/](https://pairshaped.github.io/curlingio-scoring/)
