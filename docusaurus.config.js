@@ -40,11 +40,6 @@ module.exports = {
       disableSwitch: true,
     },
     image: 'img/curlingio-logo-small.png',
-    algolia: {
-      appId: 'BH4D9OD16A',
-      apiKey: 'b0ed2c7d4e5d796e576b812c1b2ad234',
-      indexName: 'curling',
-    },
     navbar: {
       title: 'Curling IO',
       logo: {
