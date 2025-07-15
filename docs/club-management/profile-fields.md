@@ -5,7 +5,7 @@ slug: /club-management/profile-fields
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can customize which fields are required, optional, or not asked for curler profiles at your club.
+You can customize which fields are required, optional, or not asked for profiles at your club.
 
 ## Walkthrough Video
 
@@ -28,11 +28,11 @@ You cannot change these fields.
 
 ### Required
 
-If you specify that a field is required, then curlers must fill it out when registering and creating a curler profile.
+If you specify that a field is required, then curlers must fill it out when registering and creating a profile.
 
 ### Optional
 
-If you specify that a field is optional, then curlers will be asked, but may choose not to fill it out when registering and creating a curler profile.
+If you specify that a field is optional, then curlers will be asked, but may choose not to fill it out when registering and creating a profile.
 
 ### Don't Ask
 
