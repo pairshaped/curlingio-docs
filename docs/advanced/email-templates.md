@@ -1,3 +1,0 @@
-# Email Templates
-
-Coming soon!

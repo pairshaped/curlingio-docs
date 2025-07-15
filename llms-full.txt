@@ -23,8 +23,6 @@ Acceptance of Terms of this Agreement through Use
 
 - [API](/docs/advanced/api.md): Leagues and Competitions (Events)
 - [Augmenting Curler Profiles](/docs/advanced/augmenting-curler-profiles.md): Sometimes you may want to ask your curler's for some additional information, but only once per season (or lifetime).
-- [Email Templates](/docs/advanced/email-templates.md): Coming soon!
-- [Widgets](/docs/advanced/widgets.md): Coming soon!
 
 ### api
 
@@ -350,20 +348,6 @@ Now the first time a curler registers at your club they will be asked what inspi
 Later, when you download your products reports, it will have a column for "Inspiration" along with the other curler information.
 
 At any time you can click the "Purchased" link next to your "Additional Info" product to download this information.
-
-
----
-
-# Email Templates
-
-Coming soon!
-
-
----
-
-# Widgets
-
-Coming soon!
 
 
 ---
