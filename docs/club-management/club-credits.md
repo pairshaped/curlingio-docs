@@ -13,7 +13,7 @@ Credits are applied automatically against the total amount of the user's next pu
 
 All changes to a user's credit balance are logged and can be exported in the reports section.
 
-__IMPORTANT: Credits are applied to the *account*. This is the email address they login with. Credits are not applied to curler profiles.
+__IMPORTANT: Credits are applied to the *account*. This is the email address they login with. Credits are not applied to profiles.
 In order to redeem credit the member must login with the email address you assigned the credit to.
 When issueing refunds via credit, the credit is assigned to the email address that owns the order you refunded.
 *[See the "What is an Account?" section in our FAQ.](/docs/getting-started/faq#what-is-an-account)*__

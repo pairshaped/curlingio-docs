@@ -31,7 +31,7 @@ Next we'll want to create an addon product (or fee) to hold this custom field.
 
 ![Inspiration Addon Product](/img/docs/advanced/augmenting-curler-profiles/product.png)
 
-Next, we want to add our addon as a required custom field to each of our leagues (or products that require a curler profile).
+Next, we want to add our addon as a required custom field to each of our leagues (or products that require a profile).
 
 1. Edit each league.
 2. Add the "Additional Info" addon to each league, making it required.
