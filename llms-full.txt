@@ -3331,11 +3331,14 @@ We know that sometimes this can't be helped, but we recommend staying away from 
 
 Some of our clubs are suprised to discover how complex their discounts are once they codify (automate) them for the first time.
 
-Here are a few examples to consider:
+Here are a few notes to consider:
 
-1. If you are offering multiple league discounts, but also half season discounts, what discount(s) does a member receive when they register for one full season league and one half season league?
-2. If you are offering a student / couple / family / first timer discount, how are you determining who is a student / couple / family / first timer? Inevitably any of these will require custom fields and asking them during registration, and then you'll need to police it.
-3. Do your discounts stack with each other? Do only a subset of your discounts stack? Should a member receiving a 2 league, a half season, a senior, and a first timer discount all added together?
+1. Why are you offering a specific discount? What is it's purpose and is it achieving it's goal? Try to phase out grandfathered discounts that are no longer beneficial.
+2. If a specific league or set of leagues (like winter leagues due to snowbirds) aren't filling up, then the simplest approach is to just reduce their price instead of creating potential complex multi-league discounts.
+3. If you are offering multiple league discounts, but also half season discounts, what discount(s) does a member receive when they register for one full season league and one half season league?
+4. If you are offering a student / couple / family / first timer discount, how are you determining who is a student / couple / family / first timer? Inevitably any of these will require custom fields and asking them during registration, and then you'll need to police it.
+5. Do your discounts stack with each other? Do only a subset of your discounts stack? Should a member receiving a 2 league, a half season, a senior, and a first timer discount all added together?
+6. In general half-season leagues (semester or trimester setups) are better off being their own separate leagues as they have their own teams, stages, standings, schedules. This is easier to reason about than half-season discounts for full season leagues.
 
 If you have questions about your discounts, [please watch our discounts tutorial before contacting support.](https://youtu.be/3h7oZzkYfkM)
 
