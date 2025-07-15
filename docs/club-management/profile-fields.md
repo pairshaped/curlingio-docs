@@ -1,6 +1,6 @@
 # Profile Fields
 
-You can customize which fields are required, optional, or not asked for curler profiles at your club.
+You can customize which fields are required, optional, or not asked for profiles at your club.
 
 ## Walkthrough Video[​](#walkthrough-video "Direct link to Walkthrough Video")
 
@@ -18,11 +18,11 @@ The fields that are greyed out are required by the system for various operations
 
 ### Required[​](#required "Direct link to Required")
 
-If you specify that a field is required, then curlers must fill it out when registering and creating a curler profile.
+If you specify that a field is required, then curlers must fill it out when registering and creating a profile.
 
 ### Optional[​](#optional "Direct link to Optional")
 
-If you specify that a field is optional, then curlers will be asked, but may choose not to fill it out when registering and creating a curler profile.
+If you specify that a field is optional, then curlers will be asked, but may choose not to fill it out when registering and creating a profile.
 
 ### Don't Ask[​](#dont-ask "Direct link to Don't Ask")
 

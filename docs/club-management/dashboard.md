@@ -48,14 +48,14 @@ The number of orders that have been placed in the current season.
 
 Clicking the link will take you to the **Orders** section.
 
-## Curler Registrations[​](#curler-registrations "Direct link to Curler Registrations")
+## Profile Registrations[​](#profile-registrations "Direct link to Profile Registrations")
 
-The number of curler registrations for the current season.
+The number of profile registrations for the current season.
 
-Clicking the link will take you to the **Curlers** section filtered by curlers that registered in the current season.
+Clicking the link will take you to the **Profiles** section filtered by profiles that registered in the current season.
 
-## Curlers[​](#curlers "Direct link to Curlers")
+## Profiles[​](#profiles "Direct link to Profiles")
 
-The number of curlers across all seasons.
+The number of profiles across all seasons.
 
-Clicking the link will take you to the **Curlers** section.
+Clicking the link will take you to the **Profiles** section.

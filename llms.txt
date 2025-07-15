@@ -34,7 +34,7 @@ Acceptance of Terms of this Agreement through Use
 
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
-- [Curlers](/docs/club-management/curlers.md): In Curling IO, curler profiles belong to your members themselves.
+- [Profiles](/docs/club-management/curlers.md): In Curling IO, profiles belong to your members themselves.
 - [Custom Fields](/docs/club-management/custom-fields.md): Custom fields allow you, the curling club manager, to ask any question you like during registration or purchase of one of your leagues, competitions, or products.
 - [The Dashboard](/docs/club-management/dashboard.md): When a curling club manager first logs in to the administrator area of Curling IO they will be presented with the dashboard.
 - [Discounts](/docs/club-management/discounts.md): You can create discounts to reduce the cost of your leagues, competitions, and products when curler's match criteria that you specify.
@@ -44,7 +44,7 @@ Acceptance of Terms of this Agreement through Use
 - [Managers](/docs/club-management/managers.md): Clubs can have multiple managers for Curling IO.
 - [Orders](/docs/club-management/orders.md): Walkthrough Video
 - [Products and Addons](/docs/club-management/products.md): Walkthrough Video
-- [Profile Fields](/docs/club-management/profile-fields.md): You can customize which fields are required, optional, or not asked for curler profiles at your club.
+- [Profile Fields](/docs/club-management/profile-fields.md): You can customize which fields are required, optional, or not asked for profiles at your club.
 - [Registration and Results Widget](/docs/club-management/registration-widget.md): Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
 - [Reports](/docs/club-management/reports.md): Curling IO produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
 - [Club Settings](/docs/club-management/settings.md): You can modify some of the core settings for your club in the settings section.
@@ -57,7 +57,7 @@ Acceptance of Terms of this Agreement through Use
 ### event-management
 
 - [Bracket Templates](/docs/event-management/bracket-templates.md): This is a Premium Only Feature
-- [Curlers](/docs/event-management/curlers.md): The curlers screen for an event will list all of the curlers who registered for the event.
+- [Profiles](/docs/event-management/curlers.md): The profiles screen for an event will list all of the profiles who registered for the event.
 - [Draw Schedule](/docs/event-management/draw-schedule.md): Walkthrough Video
 - [Draw Schedule Templates](/docs/event-management/draw-schedule-templates.md): This is a Premium Only Feature
 - [Event Managers](/docs/event-management/event-managers.md): Walkthrough Video
