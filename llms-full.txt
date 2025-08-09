@@ -3824,7 +3824,7 @@ Online Payments Volume:
 
 $0
 
-$20,000$600,000
+$50,000$600,000
 
 ##### Your Plan: Essential (Free)
 
