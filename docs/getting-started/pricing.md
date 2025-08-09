@@ -4,126 +4,123 @@ title: Pricing
 slug: /getting-started/pricing
 ---
 
-## No Setup Fees • No Monthly Fees for Most Clubs
+## Run Your Curling Club for $0
 
-**Get premium features automatically when you enable online payments, or choose our annual premium option if you prefer offline-only payments.**
+**Curling IO provides all the essential features you need to manage your club at no cost.**
 
-Unlike competitors who charge $500 or more annually PLUS credit card rates, Curling IO only charges a standard credit card processing rate when you collect payments online. Most clubs save hundreds annually because premium features are included with online payments rather than charged as separate platform fees.
+Typical alternatives can cost between $500 to $2000 annually PLUS credit card rates.
 
-## Canadian Clubs
+### Feature Tier Comparison
 
-There are three pricing options available for Canadian clubs.
+| Feature | Essential | Premium |
+|---------|------|-------------|
+| Member registration & management | ✓ | ✓ |
+| League management | ✓ | ✓ |
+| Round Robins | ✓ | ✓ |
+| Playoff Brackets | ✓ | ✓ |
+| Draw Schedules | ✓ | ✓ |
+| Scores and Standings | ✓ | ✓ |
+| Membership and Financial Reports | ✓ | ✓ |
+| Website | ✓ | ✓ |
+| Unlimited members | ✓ | ✓ |
+| Online payment processing | | **✓** |
+| Priority support | | **✓** |
+| Waitlists | | **✓** |
+| Venue / Ice Rentals | | **✓** |
+| Participant and advanced scoring | | **✓** |
+| Third party integrations | | **✓** |
+| And more... | | **✓** |
 
-1. **2.7% + $0.30** per transaction (online payment) for clubs that are **only accepting online payments** (offline payments disabled). this includes credit card processing fees and access to all premium features.
+We offer two options to upgrade to our premium tier:
 
-2. **2.9% + $0.30** per transaction (online payment) for clubs that want to enable both online and offline payments. This includes credit card processing fees and access to all premium features. There are no fees for offline payments.
+1. **Enabling online payments will automaitcally upgrade your club to our premium tier.**
+2. If you don't want to accept online payments, you can still unlock premium tier with a yearly $420 flat fee.
 
-3. If you don't want to accept online payments then you can use Curling IO **free for offline payments**. You lose access to premium features, but can purchase premium tier for $420.00 per year if and when you want it.
+## How can we offer all of these essentials for free?
 
-There are no setup fees.
+It's simple really. We have an extremely robust and optimized multi-tenant infrastructure that minimizes the per-club costs of our essential feature set.
+We don't need to perform a bunch of setup tasks, or spin up new servers when we add a club. In fact we're really just clicking a button.
 
-### Notes
+In addition, everytime an online payment is processed through Curling IO, we get to keep a sliver of the processing fees.
+With so many clubs, we're able to generate enough revenue to subsidize the infrastructure costs of our *free clubs* while also paying for new feature development.
 
-2.7% + $0.30 means that 2.7% of the amount of the payment plus another $0.30 will come out of **your** end for every online payment.
-This includes all credit card processing fees.
-So if it's a $100 payment you will receive $97.00 when it's deposited.
+## Online Payments and Fees
 
-There are additional fees for disputes (chargebacks) which you will see in the agreement, but luckily those are very rare in curling.
+### Canadian Clubs
 
-We do offer a feature that allows you to [charge your members a convenience fee](/docs/club-management/settings#convenience-fee--surcharge), however it is solely the club's responsibility to be compliant with their local laws.
+**2.9% + $0.30 per online credit card transaction**. Includes standard VISA and MasterCard processing fees.
+This is our hybrid rate which allows you to also accept and track offline payments (when members pay you later by cheque) free of charge.
 
-Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
+We also offer a discounted rate of **2.7% + $0.30 per online credit card transaction** to clubs that choose to **only accept online payments**.
 
-International credit cards may incur additional fees with our payment processor.
-This is usually only a concern if you're running a large competition in which competitors are coming in from other countries.
+**No setup fees, period.**
 
-Only VISA and Mastercard are currently accepted (and debit cards with VISA of Mastercard co-branding).
-Other cards incur additional fees for our clubs, so we've opted to disable them for the time being.
+**Processing Details:**
+- Our rate includes all standard credit card processing fees
+- Payments clear within 7 days via direct deposit
+- Only VISA and Mastercard accepted (including co-branded debit cards)
+- [Convenience fees](/docs/club-management/settings#convenience-fee--surcharge) can be passed on to members at your discretion (check your local laws)
 
-There are **NO FEES** for offline payments. This is when a member registers at your club using Curling IO selects to pay "At the club" option.
-You are responsible for collecting offline payments and logging those payments against your orders in Curling IO.
-Offline payments cost you nothing but your time (to collect and log).
+**Additional Fees:**
+- Disputes (chargebacks) - rare in curling, detailed in payment agreement
+- International credit cards may have additional fees
 
-### Example Fees for Online Payments
+**Offline Payments:**
+- Completely free - no processing fees
+- Members select "Pay at club" during registration
+- You collect and log payments manually in Curling IO
+
+
+#### Example Fees for Online Payments
 
 Here are a few examples to help you visualize the cost of online transactions.
-The majority of this cost is paid to the credit card processor.
 
-#### $100 purchase
-
-`$100 x 2.7% + 30c = $3.00`
-
-`$100 x 2.9% + 30c = $3.20`
-
-#### $200 purchase
-
-`$200 x 2.7% + 30c = $5.70`
-
-`$200 x 2.9% + 30c = $6.10`
-
-#### $500 purchase
-
-`$500 x 2.7% + 30c = $13.80`
+##### $500 purchase
 
 `$500 x 2.9% + 30c = $14.80`
 
-#### $1,000 purchase
+`$500 x 2.7% + 30c = $13.80`
 
-`$1,000 x 2.7% + 30c = $27.30`
+##### $1,000 purchase
 
 `$1,000 x 2.9% + 30c = $29.30`
 
+`$1,000 x 2.7% + 30c = $27.30`
 
-## Clubs in the United States
 
-Our pricing is simple and the same for every club in the United States.
+### Clubs in the United States
 
-**3.6% + $0.35 per transaction** for online payments. This includes access to all premium features.
+**3.6% + $0.35 per online credit card transaction**. Includes standard VISA and MasterCard processing fees.
+You can also accept and track offline payments (when members pay you later by cheque) free of charge.
 
-**No setup fees.**
+**No setup fees, period.**
 
-**No monthly fees.**
+**Processing Details:**
+- Our rate includes all standard credit card processing fees
+- Payments clear within 7 days via direct deposit
+- Only VISA and Mastercard accepted (including co-branded debit cards)
+- [Convenience fees](/docs/club-management/settings#convenience-fee--surcharge) can be passed on to members at your discretion (check your local laws)
 
-**No fees for offline payments.**
+**US Pricing Note:**
+We're actively working with our payment processor to lower US rates closer to Canadian pricing.
 
-### Notes
+**Additional Fees:**
+- Disputes (chargebacks) - rare in curling, detailed in payment agreement
+- International credit cards may have additional fees
 
-3.6% + $0.35 means that 3.6% of the amount of the payment plus another $0.35 will come out of **your** end for every online payment.
-This includes all credit card processing fees.
-So if it's a $100 payment you will only receive $96.05 when it's deposited.
+**Offline Payments:**
+- Completely free - no processing fees
+- Members select "Pay at club" during registration
+- You collect and log payments manually in Curling IO
 
-There are additional fees for disputes (chargebacks) which you will see in the agreement, but luckily those are very rare in curling.
-
-We do offer a feature that allows you to [charge your members a convenience fee](/docs/club-management/settings#convenience-fee--surcharge), however it is solely the club's responsibility to be compliant with their local laws.
-
-Online payments can take up to 7 days before they are cleared and available for payout (direct deposit).
-
-We would love to offer our US based clubs the same pricing as our canadian clubs, but unfortunately it's not up to us. Each country results in a separate agreement with our payment processor. **We are actively working on lowering this with our new payment processor.**
-
-Only VISA and Mastercard are currently accepted (and debit cards with VISA of Mastercard co-branding).
-Other cards incur additional fees for our clubs, so we've opted to disable them for the time being.
-
-There are **NO FEES** for offline payments. This is when a member registers at your club using Curling IO selects to pay "At the club" option.
-You are responsible for collecting offline payments and logging those payments against your orders in Curling IO.
-Offline payments cost you nothing but your time (to collect and log).
-
-### Example Fees for Online Payments
+#### Example Fees for Online Payments
 
 Here are a few examples to help you visualize the cost of online transactions.
-The majority of this cost is paid to the credit card processor / network.
 
-#### $100 purchase
-
-`$100 x 3.6% + 35c = $3.95`
-
-#### $200 purchase
-
-`$200 x 3.6% + 35c = $7.55`
-
-#### $500 purchase
+##### $500 purchase
 
 `$500 x 3.6% + 35c = $18.35`
 
-#### $1,000 purchase
+##### $1,000 purchase
 
 `$1,000 x 3.6% + 35c = $36.35`
