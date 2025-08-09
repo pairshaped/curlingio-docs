@@ -23,13 +23,13 @@ Typical alternatives can cost between $500 to $2000 annually PLUS credit card ra
 | Membership and Financial Reports | ✓ | ✓ |
 | Website | ✓ | ✓ |
 | Unlimited members | ✓ | ✓ |
-| Online payment processing | | **✓** |
-| Priority support | | **✓** |
-| Waitlists | | **✓** |
-| Venue / Ice Rentals | | **✓** |
-| Participant and advanced scoring | | **✓** |
-| Third party integrations | | **✓** |
-| And more... | | **✓** |
+| Online payment processing | | ✓ |
+| Priority support | | ✓ |
+| Waitlists | | ✓ |
+| Venue / Ice Rentals | | ✓ |
+| Participant and advanced scoring | | ✓ |
+| Third party integrations | | ✓ |
+| And more... | | ✓ |
 
 We offer two options to upgrade to our premium tier:
 
@@ -39,7 +39,7 @@ We offer two options to upgrade to our premium tier:
 ## How can we offer all of these essentials for free?
 
 It's simple really. We have an extremely robust and optimized multi-tenant infrastructure that minimizes the per-club costs of our essential feature set.
-We don't need to perform a bunch of setup tasks, or spin up new servers when we add a club. In fact we're really just clicking a button.
+We don't need to perform a bunch of setup tasks, or spin up new servers when we add a club.
 
 In addition, everytime an online payment is processed through Curling IO, we get to keep a sliver of the processing fees.
 With so many clubs, we're able to generate enough revenue to subsidize the infrastructure costs of our *free clubs* while also paying for new feature development.
