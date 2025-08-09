@@ -6,7 +6,7 @@ export default function PricingCalculator() {
   const [online, setOnline] = useState(false);
   const [offline, setOffline] = useState(true);
   const [premium, setPremium] = useState(false);
-  const [amount, setAmount] = useState(20000);
+  const [amount, setAmount] = useState(50000);
 
   const updateCalculation = () => {
     let planName = '';
@@ -105,7 +105,13 @@ export default function PricingCalculator() {
             <input 
               type="checkbox" 
               checked={online}
-              onChange={(e) => setOnline(e.target.checked)}
+              onChange={(e) => {
+                const checked = e.target.checked;
+                setOnline(checked);
+                if (!checked && !offline) {
+                  setOffline(true);
+                }
+              }}
             />
             <span>Accept Online Payments</span>
           </label>
@@ -116,7 +122,13 @@ export default function PricingCalculator() {
             <input 
               type="checkbox" 
               checked={offline}
-              onChange={(e) => setOffline(e.target.checked)}
+              onChange={(e) => {
+                const checked = e.target.checked;
+                setOffline(checked);
+                if (!checked && !online) {
+                  setOnline(true);
+                }
+              }}
             />
             <span>Accept Offline Payments</span>
           </label>
@@ -140,7 +152,7 @@ export default function PricingCalculator() {
             <input 
               type="range" 
               value={online ? amount : 0}
-              min="20000" 
+              min="50000" 
               max="600000"
               step="1000"
               onChange={(e) => setAmount(parseInt(e.target.value))}
@@ -148,7 +160,7 @@ export default function PricingCalculator() {
               disabled={!online}
             />
             <div className={styles.sliderRange}>
-              <span>$20,000</span>
+              <span>$50,000</span>
               <span>$600,000</span>
             </div>
           </label>
