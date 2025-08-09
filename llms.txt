@@ -88,7 +88,7 @@ Acceptance of Terms of this Agreement through Use
 - [Curling Club Management](/docs/getting-started/curling-club-managers.md): Curling IO is the #1 curling club management and registration platform.
 - [Frequently Asked Questions](/docs/getting-started/faq.md): How much does it cost?
 - [Premium Tier](/docs/getting-started/premium.md): If your club is accepting online payments then you are already considered premium tier.
-- [Pricing](/docs/getting-started/pricing.md): Canadian Clubs
+- [Pricing](/docs/getting-started/pricing.md): No Setup Fees • No Monthly Fees for Most Clubs
 - [Referrals](/docs/getting-started/referrals.md): Clubs can earn $250 for every club that you refer to Curling IO that has never used our platform before.
 - [Support and Feedback](/docs/getting-started/support.md): We offer three options available for help and support with Curling IO.
 

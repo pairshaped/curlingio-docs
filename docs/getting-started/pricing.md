@@ -1,16 +1,22 @@
 # Pricing
 
+## No Setup Fees • No Monthly Fees for Most Clubs[​](#no-setup-fees--no-monthly-fees-for-most-clubs "Direct link to No Setup Fees • No Monthly Fees for Most Clubs")
+
+**Get premium features automatically when you enable online payments, or choose our annual premium option if you prefer offline-only payments.**
+
+Unlike competitors who charge $500 or more annually PLUS credit card rates, Curling IO only charges a standard credit card processing rate when you collect payments online. Most clubs save hundreds annually because premium features are included with online payments rather than charged as separate platform fees.
+
 ## Canadian Clubs[​](#canadian-clubs "Direct link to Canadian Clubs")
 
-There are three pricing option available for Canadian clubs.
+There are three pricing options available for Canadian clubs.
 
-1. **2.7% + $0.30** per transaction (online payment) for clubs that are **only accepting online payments** (offline payments disabled). This includes access to all premium features.
+1. **2.7% + $0.30** per transaction (online payment) for clubs that are **only accepting online payments** (offline payments disabled). this includes credit card processing fees and access to all premium features.
 
-2. **2.9% + $0.30** per transaction (online payment) for clubs that want to enable both online and offline payments. This includes access to all premium features. The offline payments cost nothing.
+2. **2.9% + $0.30** per transaction (online payment) for clubs that want to enable both online and offline payments. This includes credit card processing fees and access to all premium features. There are no fees for offline payments.
 
-3. If you don't want to accept online payments then you can use Curling IO **free for offline payments**. You lose access to premium features, but can purchase premium tier for a year if and when you like.
+3. If you don't want to accept online payments then you can use Curling IO **free for offline payments**. You lose access to premium features, but can purchase premium tier for $420.00 per year if and when you want it.
 
-There are no setup fees and no fees for offline payments. You can use the core Curling IO platform and features completely free of charge.
+There are no setup fees.
 
 ### Notes[​](#notes "Direct link to Notes")
 
