@@ -139,6 +139,7 @@ Participant scoring means that curlers themselves will be able to login and scor
 
 Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
 
+[See our Calendar documentation.](/docs/club-management/calendar)
 
 ### Quick Books Online Integration
 
