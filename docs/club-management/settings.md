@@ -23,9 +23,11 @@ The name of your club shows up in the top left of the navigation bar on all scre
 Curling IO supports both English and French at this time.
 If you have both languages selected, your curlers will be able to switch between languages on the fly, and you will be able to enter both english and french content (titles and descriptions) throughout the admin section.
 
-### Landing Page
+### Calendar
 
-This tells Curling IO which section to default to when someone visits your Curling IO site.
+You can toggle the club calendar on and off. The calendar will display your draw schedules (if any exist), rental bookings (premium tier), and closures / other scheduled events.
+
+More details about this feature can be found in the [calendar section.](/docs/club-management/calendar)
 
 ### Website Hosting
 
@@ -35,6 +37,10 @@ When you check the "Are we hosting your website?" option, you will see two new e
 You can create as many pages and articles as you like, and you can even gate pages and articles to members only or even members who have paid for a specific fee.
 
 More details about this feature can be found in the [website hosting section.](/docs/club-management/website-hosting)
+
+### Landing Page
+
+This tells Curling IO which section to default to when someone visits your Curling IO site.
 
 ### Brand Colour
 

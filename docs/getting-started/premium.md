@@ -137,9 +137,7 @@ Participant scoring means that curlers themselves will be able to login and scor
 
 ### Venue / Ice Booking
 
-**COMING SOON**
-
-Premium clubs can setup venues and specify their availability to take online bookings.
+Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
 
 
 ### Quick Books Online Integration
