@@ -112,9 +112,7 @@ Premium clubs can enable participant scoring for their leagues and competitions.
 
 ### Venue / Ice Booking[​](#venue--ice-booking "Direct link to Venue / Ice Booking")
 
-**COMING SOON**
-
-Premium clubs can setup venues and specify their availability to take online bookings.
+Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
 
 ### Quick Books Online Integration[​](#quick-books-online-integration "Direct link to Quick Books Online Integration")
 

@@ -33,6 +33,7 @@ Acceptance of Terms of this Agreement through Use
 ### club-management
 
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
+- [Calendar](/docs/club-management/calendar.md): Venue / Ice Booking is Premium Only
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
 - [Profiles](/docs/club-management/curlers.md): In Curling IO, profiles belong to your members themselves.
 - [Custom Fields](/docs/club-management/custom-fields.md): Custom fields allow you, the curling club manager, to ask any question you like during registration or purchase of one of your leagues, competitions, or products.
