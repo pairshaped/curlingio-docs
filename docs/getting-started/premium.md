@@ -114,6 +114,8 @@ Premium clubs can enable participant scoring for their leagues and competitions.
 
 Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
 
+[See our Calendar documentation.](/docs/club-management/calendar.md)
+
 ### Quick Books Online Integration[​](#quick-books-online-integration "Direct link to Quick Books Online Integration")
 
 **COMING SOON**
