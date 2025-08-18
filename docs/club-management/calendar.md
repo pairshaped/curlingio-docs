@@ -89,6 +89,7 @@ Administrative blocks for maintenance, closures, meetings, and other club events
 
 Configure your calendar's core functionality:
 
+- **Default View**: Choose which view (Day, Week, Month, List) loads by default when users access the calendar
 - **Time Intervals**: Choose from 15 minute to 2 hour increments (default: 1 hour)
 - **Daily Schedule**: Set your operating hours start and end times for each day
 - **Min advance booking (days)**: Minimum number of days in advance that bookings can be made. If set to "0" (same day), the system still requires at least a 1 hour advance booking time.
