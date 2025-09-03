@@ -19,13 +19,13 @@ export default function PricingCalculator() {
     if (online) {
       if (canadian && !offline) {
         processingRate = '2.7% + $0.30';
-        transactionCost = amount * 0.027 + 0.30;
+        transactionCost = (amount * 0.027) + (Math.ceil(amount / 400) * 0.30);
       } else if (canadian && offline) {
         processingRate = '2.9% + $0.30';
-        transactionCost = amount * 0.029 + 0.30;
+        transactionCost = (amount * 0.029) + (Math.ceil(amount / 400) * 0.30);
       } else {
         processingRate = '3.6% + $0.35';
-        transactionCost = amount * 0.036 + 0.35;
+        transactionCost = (amount * 0.036) + (Math.ceil(amount / 400) * 0.35);
       }
     }
 
@@ -87,23 +87,23 @@ export default function PricingCalculator() {
         <h4>Calculate Your Costs</h4>
         <p>See exactly what you'll pay based on your club's needs</p>
       </div>
-      
+
       <div className={styles.inputs}>
         <div className={styles.inputRow}>
           <label className={styles.toggleLabel}>
-            <input 
-              type="checkbox" 
+            <input
+              type="checkbox"
               checked={canadian}
               onChange={(e) => setCanadian(e.target.checked)}
             />
             <span>Canadian Club</span>
           </label>
         </div>
-        
+
         <div className={styles.inputRow}>
           <label className={styles.toggleLabel}>
-            <input 
-              type="checkbox" 
+            <input
+              type="checkbox"
               checked={online}
               onChange={(e) => {
                 const checked = e.target.checked;
@@ -116,11 +116,11 @@ export default function PricingCalculator() {
             <span>Accept Online Payments</span>
           </label>
         </div>
-        
+
         <div className={styles.inputRow}>
           <label className={styles.toggleLabel}>
-            <input 
-              type="checkbox" 
+            <input
+              type="checkbox"
               checked={offline}
               onChange={(e) => {
                 const checked = e.target.checked;
@@ -133,11 +133,11 @@ export default function PricingCalculator() {
             <span>Accept Offline Payments</span>
           </label>
         </div>
-        
+
         <div className={styles.inputRow}>
           <label className={`${styles.toggleLabel} ${online ? styles.disabled : ''}`}>
-            <input 
-              type="checkbox" 
+            <input
+              type="checkbox"
               checked={online ? true : premium}
               onChange={(e) => setPremium(e.target.checked)}
               disabled={online}
@@ -145,14 +145,14 @@ export default function PricingCalculator() {
             <span>Premium Tier</span>
           </label>
         </div>
-        
+
         <div className={styles.inputRow}>
           <label className={`${styles.amountLabel} ${!online ? styles.disabled : ''}`}>
             Online Payments Volume: {online ? `$${amount.toLocaleString()}` : '$0'}
-            <input 
-              type="range" 
+            <input
+              type="range"
               value={online ? amount : 0}
-              min="50000" 
+              min="50000"
               max="600000"
               step="1000"
               onChange={(e) => setAmount(parseInt(e.target.value))}
@@ -166,7 +166,7 @@ export default function PricingCalculator() {
           </label>
         </div>
       </div>
-      
+
       <div className={styles.results}>
         <div className={styles.resultSection}>
           <h5>Your Plan: <span>{results.planName}</span></h5>
