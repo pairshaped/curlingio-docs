@@ -97,7 +97,7 @@ You can select the month that you'd like your season to begin. It's always going
 3. Your age restrictions. For example a maximum age restriction of 17, means they cannot be older than 17 when this month begins.
 4. Seasonal filters where you can select a season (like at the top of your public leagues screen).
 
-Be careful changing this since it's effects are so wide reaching. Ideally you rarely, if ever, need to change this month.
+**Be careful changing this since the effects are so wide reaching and we cannot retroactively fix your orders.** You should rarely, if ever, need to change this month more than once.
 
 ## Tax ID[​](#tax-id "Direct link to Tax ID")
 
