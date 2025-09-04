@@ -108,7 +108,7 @@ Note: Fees you implement should never reflect on the Curling IO platform, theref
 
 ## Season starts in
 
-You can select the month that you'd like your season to begin. It's always going to be the 1st of this month (at 12:00 AM). This date should occur before you start taking registrations for the current season. This cutoff affects the following:
+You can select the month that you'd like your season to begin. It's always going to be the 1st of this month (at 12:00 AM). This date should occur **before you start taking registrations** for the current season. This cutoff affects the following:
 
 1. Your seasonal fees and seasonal products. This determines which season they are collected for during registration.
 2. Your leagues based on their start dates.
