@@ -46,6 +46,7 @@ Acceptance of Terms of this Agreement through Use
 - [Orders](/docs/club-management/orders.md): Walkthrough Video
 - [Products and Addons](/docs/club-management/products.md): Walkthrough Video
 - [Profile Fields](/docs/club-management/profile-fields.md): You can customize which fields are required, optional, or not asked for profiles at your club.
+- [Programs](/docs/club-management/programs.md): Programs sit between products and events: they’re purchased like products, but run on specific dates like leagues and competitions.
 - [Registration and Results Widget](/docs/club-management/registration-widget.md): Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
 - [Reports](/docs/club-management/reports.md): Curling IO produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
 - [Club Settings](/docs/club-management/settings.md): You can modify some of the core settings for your club in the settings section.
