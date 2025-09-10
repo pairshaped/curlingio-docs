@@ -24,6 +24,7 @@ module.exports = {
     "Club Management": [
       'club-management/dashboard',
       'club-management/leagues',
+      'club-management/programs',
       'club-management/products',
       'club-management/fees',
       'club-management/discounts',
