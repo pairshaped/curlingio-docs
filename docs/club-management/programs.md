@@ -8,7 +8,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Programs sit between products and events: they’re purchased like products, but run on specific dates like leagues and competitions.
 They’re usually seasonal and do not include draw schedules, teams, or game scoring.
 
-Examples of programs are Learn 2 Curl sessions and organizing volunteer events and lists.
+Some examples of programs are:
+
+- Learn 2 Curl sessions
+- Curling camps
+- Training Seminars
+- Volunteer events and lists
 
 ## Finding your Programs
 
