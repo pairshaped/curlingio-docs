@@ -74,8 +74,9 @@ If you don't select any items, then your reports can't show which items the refu
 Selected items will be considered *refunded* regardless of the amount of the refund.
 Refunded items will release their inventory if quantity is limited and refunded registrations are no longer considered registrations.
 
-If the payment you are refunding was made through our online payments (credit or debit card) then the system will automatically send the refund amount back to the member's card used in the purchase.
+If the payment you are refunding was made through our online payments (credit or debit card) then you can choose to send the refund to the member's card used in the purchase.
 The system will also autofill the time it was withdrawn and how it was refunded.
+Keep in mind that you can also refund online payments using a different method, like to club credits, or to cash, etc.
 
 You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.
 
@@ -87,12 +88,15 @@ An adjustment records as a new line item for the order where you can enter an am
 Adjustments are typically used to correct a mistake during registration without asking the curler to redo their order.
 Adjustments can increase bookkeeping effort when balancing your books, so we recommend redoing orders instead, even if you need to login as the curler and order on their behalf.
 
+You cannot make adjustments to orders that have been paid, so it's only relevant to offline orders during their submitted status.
+
 ## Sending an Order back to the Account's Cart
 
 For submitted (unpaid) orders only, you can send the order back to the registering account's cart.
 
 You may want to do this when a mistake was made during registration and you'd like the curler to correct the mistake themself, or correct it for them using the **Login as** feature.
 
+You cannot send orders that have been paid back to their cart, so it's only relevant to offline orders during their submitted status.
 
 ## Deleting Submitted Orders
 
