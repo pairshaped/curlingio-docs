@@ -1,12 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './PricingCalculator.module.css';
 
 export default function PricingCalculator() {
-  const [canadian, setCanadian] = useState(true);
-  const [online, setOnline] = useState(false);
-  const [offline, setOffline] = useState(true);
+  const [country, setCountry] = useState('CA');
+  const [online, setOnline] = useState(true);
+  const [offline, setOffline] = useState(false);
   const [premium, setPremium] = useState(false);
-  const [amount, setAmount] = useState(50000);
+  const [amount, setAmount] = useState(100000);
+
+  const currencySymbol = country === 'UK' ? '£' : '$';
+  const currencyLocale = country === 'UK' ? 'en-GB' : 'en-US';
+  const formatCurrency = (value, options = {}) => {
+    const minimumFractionDigits = options.minimumFractionDigits ?? 0;
+    const maximumFractionDigits = options.maximumFractionDigits ?? 0;
+    const formattedValue = Number(value || 0).toLocaleString(currencyLocale, {
+      minimumFractionDigits,
+      maximumFractionDigits
+    });
+    return `${currencySymbol}${formattedValue}`;
+  };
 
   const updateCalculation = () => {
     let planName = '';
@@ -14,18 +26,33 @@ export default function PricingCalculator() {
     let transactionCost = 0;
     let annualFee = '';
     let premiumNotice = '';
+    let monthlyFee = 0;
 
     // Determine processing rate based on toggles
     if (online) {
-      if (canadian && !offline) {
-        processingRate = '2.7% + $0.30';
-        transactionCost = (amount * 0.027) + (Math.ceil(amount / 400) * 0.30);
-      } else if (canadian && offline) {
-        processingRate = '2.9% + $0.30';
-        transactionCost = (amount * 0.029) + (Math.ceil(amount / 400) * 0.30);
-      } else {
-        processingRate = '3.6% + $0.35';
-        transactionCost = (amount * 0.036) + (Math.ceil(amount / 400) * 0.35);
+      const isCanada = country === 'CA';
+      const isUnitedStates = country === 'US';
+      const isUnitedKingdom = country === 'UK';
+
+      let percentageRate = 0;
+      let perTransactionFee = 0.30;
+
+      if (isCanada) {
+        percentageRate = offline ? 0.029 : 0.027;
+        const displayRate = offline ? '2.9%' : '2.7%';
+        processingRate = `${displayRate} + ${currencySymbol}0.30`;
+      } else if (isUnitedStates) {
+        percentageRate = 0.029;
+        processingRate = `2.9% + ${currencySymbol}0.30`;
+      } else if (isUnitedKingdom) {
+        percentageRate = 0.022;
+        processingRate = `2.2% + ${currencySymbol}0.30`;
+      }
+
+      transactionCost = (amount * percentageRate) + (Math.ceil(amount / 400) * perTransactionFee);
+
+      if (isUnitedStates) {
+        monthlyFee = 20;
       }
     }
 
@@ -33,11 +60,11 @@ export default function PricingCalculator() {
     if (!online && !offline) {
       if (premium) {
         planName = 'Premium (Annual)';
-        annualFee = '$420/year';
+        annualFee = `${formatCurrency(420)}/year`;
         premiumNotice = '✓ Premium features with annual fee';
       } else {
         planName = 'Essential (Free)';
-        annualFee = '$0';
+        annualFee = formatCurrency(0);
         premiumNotice = 'Core features only';
       }
       processingRate = 'No payments';
@@ -45,12 +72,12 @@ export default function PricingCalculator() {
     } else if (!online && offline) {
       if (premium) {
         planName = 'Premium (Annual)';
-        annualFee = '$420/year';
+        annualFee = `${formatCurrency(420)}/year`;
         premiumNotice = '✓ Premium features with annual fee';
       } else {
         planName = 'Essential (Free)';
-        annualFee = '$0';
-        premiumNotice = 'Core features only - add premium for $420/year';
+        annualFee = formatCurrency(0);
+        premiumNotice = `Core features only - add premium for ${formatCurrency(420)}/year`;
       }
       processingRate = 'Free for offline payments';
       transactionCost = 0;
@@ -60,7 +87,7 @@ export default function PricingCalculator() {
       } else {
         planName = 'Premium (Online-Only)';
       }
-      annualFee = '$0 (included with online payments)';
+      annualFee = `${formatCurrency(0)} (included with online payments)`;
       premiumNotice = '✓ Premium features included automatically';
     }
 
@@ -69,13 +96,17 @@ export default function PricingCalculator() {
     if (premium && !online) {
       totalCost += 420;
     }
+    if (monthlyFee && online) {
+      totalCost += monthlyFee * 12;
+    }
 
     return {
       planName,
       processingRate,
       annualFee,
-      totalCost: totalCost.toFixed(2),
-      premiumNotice
+      totalCost: Number(totalCost.toFixed(2)),
+      premiumNotice,
+      monthlyFee
     };
   };
 
@@ -90,14 +121,39 @@ export default function PricingCalculator() {
 
       <div className={styles.inputs}>
         <div className={styles.inputRow}>
-          <label className={styles.toggleLabel}>
-            <input
-              type="checkbox"
-              checked={canadian}
-              onChange={(e) => setCanadian(e.target.checked)}
-            />
-            <span>Canadian Club</span>
-          </label>
+          <span className={styles.countryLabel}>Club Location:</span>
+          <div className={styles.radioGroup}>
+            <label className={styles.toggleLabel}>
+              <input
+                type="radio"
+                name="club-country"
+                value="CA"
+                checked={country === 'CA'}
+                onChange={(e) => setCountry(e.target.value)}
+              />
+              <span>Canada</span>
+            </label>
+            <label className={styles.toggleLabel}>
+              <input
+                type="radio"
+                name="club-country"
+                value="US"
+                checked={country === 'US'}
+                onChange={(e) => setCountry(e.target.value)}
+              />
+              <span>United States</span>
+            </label>
+            <label className={styles.toggleLabel}>
+              <input
+                type="radio"
+                name="club-country"
+                value="UK"
+                checked={country === 'UK'}
+                onChange={(e) => setCountry(e.target.value)}
+              />
+              <span>United Kingdom</span>
+            </label>
+          </div>
         </div>
 
         <div className={styles.inputRow}>
@@ -148,20 +204,20 @@ export default function PricingCalculator() {
 
         <div className={styles.inputRow}>
           <label className={`${styles.amountLabel} ${!online ? styles.disabled : ''}`}>
-            Online Payments Volume: {online ? `$${amount.toLocaleString()}` : '$0'}
+            Online Payments Volume: {formatCurrency(online ? amount : 0)}
             <input
               type="range"
               value={online ? amount : 0}
-              min="50000"
-              max="600000"
+              min="10000"
+              max="1000000"
               step="1000"
               onChange={(e) => setAmount(parseInt(e.target.value))}
               className={styles.slider}
               disabled={!online}
             />
             <div className={styles.sliderRange}>
-              <span>$50,000</span>
-              <span>$600,000</span>
+              <span>{formatCurrency(10000)}</span>
+              <span>{formatCurrency(1000000)}</span>
             </div>
           </label>
         </div>
@@ -173,23 +229,29 @@ export default function PricingCalculator() {
           <div className={styles.breakdown}>
             <div className={styles.costLine}>
               <span>Online Payments Volume:</span>
-              <span>{online ? `$${amount.toLocaleString()}` : '$0'}</span>
+              <span>{formatCurrency(online ? amount : 0)}</span>
             </div>
             <div className={styles.costLine}>
               <span>Transaction count:</span>
-              <span>{online ? Math.ceil(amount / 400).toLocaleString() : '0'}</span>
+              <span>{online ? Math.ceil(amount / 400).toLocaleString(currencyLocale) : '0'}</span>
             </div>
             <div className={styles.costLine}>
               <span>Processing Rate (includes credit card fees):</span>
               <span>{results.processingRate}</span>
             </div>
+            {results.monthlyFee && online ? (
+              <div className={styles.costLine}>
+                <span>Monthly fee:</span>
+                <span>{formatCurrency(results.monthlyFee, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+              </div>
+            ) : null}
             <div className={styles.costLine}>
               <span>Annual premium fee:</span>
               <span>{results.annualFee}</span>
             </div>
             <div className={`${styles.costLine} ${styles.totalLine}`}>
               <span>Total Cost:</span>
-              <span>${parseFloat(results.totalCost).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+              <span>{formatCurrency(results.totalCost, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
             </div>
           </div>
           <div className={styles.premiumNotice}>
