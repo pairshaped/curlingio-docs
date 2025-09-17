@@ -73,39 +73,37 @@ We offer two options to upgrade to our premium tier:
 
 See exactly what you'll pay based on your club's needs
 
-\[x]Canadian Club
+Club Location:
 
-\[ ]Accept Online Payments
+\[x]Canada\[ ]United States\[ ]United Kingdom
 
-\[x]Accept Offline Payments
+\[x]Accept Online Payments
 
-\[ ]Premium Tier
+\[ ]Accept Offline Payments
+
+Premium Tier
 
 Online Payments Volume:
 
 <!-- -->
 
-$0
+$100,000100000
 
-$50,000$600,000
+$10,000$1,000,000
 
-##### Your Plan: Essential (Free)
+##### Your Plan: Premium (Online-Only)
 
-Online Payments Volume:$0
+Online Payments Volume:$100,000
 
-Transaction count:0
+Transaction count:250
 
-Processing Rate (includes credit card fees):Free for offline payments
+Processing Rate (includes credit card fees):2.7% + $0.30
 
-Annual premium fee:$0
+Annual premium fee:$0 (included with online payments)
 
-Total Cost:$
+Total Cost:$2,775.00
 
-<!-- -->
-
-0.00
-
-Core features only - add premium for $420/year
+✓ Premium features included automatically
 
 ## How can we offer all of these essentials for free?[​](#how-can-we-offer-all-of-these-essentials-for-free "Direct link to How can we offer all of these essentials for free?")
 
