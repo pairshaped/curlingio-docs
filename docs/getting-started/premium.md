@@ -120,6 +120,21 @@ If your club loses premium access, we won't delete these email addresses, howeve
 [See our Notifications documentation to learn more.](/docs/club-management/leagues#notification-email)
 
 
+### Participant Scoring
+
+Premium clubs can enable participant scoring for their leagues and competitions.
+Participant scoring means that curlers themselves will be able to login and score games they are participating in.
+
+[See our Leagues and Competitions documentation.](/docs/club-management/leagues#participant-scoring)
+
+
+### Venue / Ice Booking
+
+Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
+
+[See our Calendar documentation.](/docs/club-management/calendar)
+
+
 ### Advanced Website Hosting
 
 Premium tier clubs have access to additional website hosting features.
@@ -150,20 +165,6 @@ Premium tier clubs will be able to upload PDFs to their pages.
 
 If your club loses premium access, we won't delete your existing PDFs, however they won't be displayed and you won't be able to upload new PDFs until regaining premium access.
 
-
-### Participant Scoring
-
-Premium clubs can enable participant scoring for their leagues and competitions.
-Participant scoring means that curlers themselves will be able to login and score games they are participating in.
-
-[See our Leagues and Competitions documentation.](/docs/club-management/leagues#participant-scoring)
-
-
-### Venue / Ice Booking
-
-Premium clubs can setup venues and specify their availability to take online bookings in our custom calendar application.
-
-[See our Calendar documentation.](/docs/club-management/calendar)
 
 ### Quick Books Online Integration
 
