@@ -120,7 +120,31 @@ If your club loses premium access, we won't delete these email addresses, howeve
 [See our Notifications documentation to learn more.](/docs/club-management/leagues#notification-email)
 
 
-### PDF Attachments to Pages
+### Advanced Website Hosting
+
+Premium tier clubs have access to additional website hosting features.
+
+#### Banner
+
+You can upload a banner image that will stretch across pages, articles, and any other sections you like.
+
+#### Themes
+
+**COMING SOON**
+
+You'll be able to select from several colourful themes and even create your own custom colour scheme.
+
+If your club loses premium access, the default theme will be applied.
+
+#### Sidebar Widgets
+
+You can include sidebar widgets on your pages and articles:
+
+- Current Games
+- Random Sponor from your sponsors list
+- Latest News
+
+#### PDF Attachments to Pages
 
 Premium tier clubs will be able to upload PDFs to their pages.
 
