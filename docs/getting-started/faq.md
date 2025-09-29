@@ -22,6 +22,14 @@ We are introducing some premium only features that will be available to all club
 
 Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible. Every support ticket has a cost for us, and our documentation should cover all of your support needs.
 
+### Does Curling IO provide a website?[​](#does-curling-io-provide-a-website "Direct link to Does Curling IO provide a website?")
+
+Yes. Every club gets integrated website hosting at no additional cost. You will find the settings under **Club Admin → Website**. From there you can publish a customizable landing page, add pages and articles, tailor your colour palette, and optionally restrict member-only content.
+
+If you already maintain another site, you can still run the Curling IO site in parallel—many clubs eventually switch after seeing how closely it ties into registrations, leagues, and products, and how quickly updates publish once you save them.
+
+See the [Website Hosting guide](/docs/club-management/website-hosting.md) for a full overview and screenshots of the editor.
+
 ### We have complicated pricing and discounts, will Curling IO support us?[​](#we-have-complicated-pricing-and-discounts-will-curling-io-support-us "Direct link to We have complicated pricing and discounts, will Curling IO support us?")
 
 Yes, some of our clubs have extremely complicated discounts and fees, and Curling IO is very flexible. However, if you've never codified your club's pricing before, expect to spend some time figuring it out.
