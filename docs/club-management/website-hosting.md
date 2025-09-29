@@ -7,36 +7,67 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Overview
 
-Need a web presence for your club that isn't a Facebook group, but don't want the expense or complex administrative burden that comes with a full website hosting service (e.g. WordPress)?  Try Curling IO's basic website hosting option!
+Need a modern club website but tired of paying for WordPress, Wix, or Squarespace? Curling IO Hosting gives every club a polished web presence at no extra cost, fully integrated with the rest of the platform.
 
-For clubs that lack a web presence, Curling IO includes a basic integrated website hosting option, allowing you to publish simple pages and articles with image and textual content within your IO environment.  This content hosting does *not* include custom domains (e.g. www.yourclub.ca vs. yourclub.curling.io), navigation menu customization, or advanced styling options.
+Open the **Website** section in your admin navigation to manage everything in one place—changes publish the moment you save:
 
-This basic content hosting option is disabled by default, since most clubs already have their own web presence (e.g. Wordpress, Wix, Squarespace, Weebly, etc.).
+- A customizable landing page activates the instant you enable it, giving visitors a polished overview without extra work.
+- Pages and articles you add appear instantly, and the public site automatically surfaces Pages or News menus when content is available.
+- A club-wide customizable colour palette (including call-to-action buttons).
+- Member-only visibility controls, letting you lock sensitive announcements or resources to active curlers in a couple of clicks.
+- Tight integration with registrations, leagues, bonspiels, programs, and products—no copy/pasting data between systems.
+- Performance tuned with the rest of Curling IO, so your website is faster than other hosting options.
 
-Visit https://demo.curling.io/ to see what basic content can look like.
-
-This website hosting option remains limited to basic text/image content for several reasons:
-
-1. We are not in the business of competing with established industry-leading website hosting platforms, nor do we think clubs necessarily need most of their extensive features to establish an effective web presence. Avoiding that market space allows us to keep our focus on *curling specific* features.
-2. Clubs with complex websites can often lose tech expertise (due to staff/volunteer churn) and wind up with a monolith no one knows how to update or maintain.  IO's basic website hosting option is simple, easy to learn and maintain, secure, and is perpetually supported.
-3. Fewers bells & whisltes means less things that can break or distract your curlers from what they're really ultimately looking for: club announcements, league schedules/scores/standings, self-registration, prices, etc.  Our basic pages, articles, leagues, competitions, and products encompass that efficiently and effectively.
+Because it is built into Curling IO, the hosting experience stays simple, secure, and easy for volunteers to maintain. Explore the live demo club at https://demo.curling.io/ to see the layout, navigation, and content options you can launch right away.
 
 
-## Turn On / Off Website Hosting
+## Landing Page
 
-To enable website hosting. Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Settings**.
+The landing page is an optional hero-style layout that opens your site with key calls to action. Enable it from the **Website → Landing Page** settings to swap it in immediately, then fine-tune the content inline.
 
-![Settings Navigation](/img/docs/club-management/settings/navigation.png)
+<img
+  alt="Curling IO landing page layout"
+  src={useBaseUrl('img/docs/club-management/website-hosting/landing_page.png')}
+  width="960"
+/>
 
-On your settings screen, check the "Are we hosting your website?" option, then save it.
+Editable blocks cover the entire experience:
 
-![Settings Website Hosting](/img/docs/club-management/settings/website-hosting.png)
+- **Hero**: Title, tagline, and rich media (YouTube video or uploaded image) to welcome visitors.
+- **At a Glance**: Bullet points that summarize hours, amenities, or quick facts.
+- **About Our Club**: Short narrative with an optional supporting image.
+- **Sections**: Summaries for Leagues, Bonspiels, Programs, Products, and Calendar, each linking directly to its catalog. These summaries are also added as intro text to their respective sections, just below the header.
+- **Quick Links**: Buttons that take visitors to common tasks such as membership, bookings, or volunteer sign-up.
+- **Testimonials**: Social proof from members or guests.
+- **News**: Pulls the three most recent articles to keep the page fresh.
+- **Sponsors**: Displays partner logos in a clean carousel with a sponsorship call-to-action.
 
-Once enabled you will see the "Website" section in the top navigation of the admin area.
+You can edit copy in place—click the Edit link for any section to update the content and see changes instantly.
 
-You can disable this at any time simply by unchecking the same checkbox.
+<img
+  alt="Inline landing page editing"
+  src={useBaseUrl('img/docs/club-management/website-hosting/in_place_editing.png')}
+  width="960"
+/>
 
-You can also change the landing page for your Curling IO to have it point to your pages (the first page in your pages collection).
+## Pages
+
+Each page has a title, a position (order), whether or not it's published (or a draft), an optional image, and the body content.
+
+You can *restrict* individual pages so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see a page.
+By default, pages are unrestricted.
+
+Similar to event and product descriptions, the body content of your page is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
+
+
+## Articles / News
+
+Each article has a title, the date when it should be published, an optional image, and the body content.
+The order in which articles appear is based on the published date (most recent first).
+
+You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article. By default, articles are unrestricted.
+
+Similar to event and product descriptions, the body content of your article is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
 
 
 ## Banner
@@ -44,9 +75,9 @@ You can also change the landing page for your Curling IO to have it point to you
 **[This is a Premium Only Feature](/docs/getting-started/premium)**
 
 You can upload a banner image that will be shown along the top of your public site.
-The dimensions should be as close to 1200 x 250 pixels as possible since it will be resized to fit when uploaded if it is not.
+Aim for dimensions near 1200 x 250 pixels; other sizes are resized automatically when uploaded.
 
-You can also choose whether it will show up just in the pages and articles sections or everywhere on your site.
+You can also choose whether it shows up only on the Pages and Articles sections or across the entire site.
 We recommend against displaying it everywhere since it takes up a significant amount of screen space.
 
 
@@ -54,17 +85,17 @@ We recommend against displaying it everywhere since it takes up a significant am
 
 **[This is a Premium Only Feature](/docs/getting-started/premium)**
 
-The sidebar is where you can "tout" other content on the right side of the the pages and articles screens.
+The sidebar is where you can "tout" other content on the right side of the Pages and Articles screens.
 
 You can select which touts should appear in the sidebar for pages and articles.
 
-You can also enable / disable the sidebar for individual pages and articles.
+You can also enable or disable the sidebar for individual pages and articles.
 
-Touts are 300 pixel wide rectangles.
+Touts are 300-pixel-wide rectangles.
 
 ### Current Games Tout
 
-This tout will show the status and scores of any active, soon to be active, or recently completed games in any leagues or competitions at your club.
+This tout will show the status and scores of any active, soon-to-be-active, or recently completed games in any leagues or competitions at your club.
 
 ### Random Sponsor Tout
 
@@ -73,26 +104,6 @@ This tout will show a random [sponsor from your list of sponsors](/docs/club-man
 ### Latest News Tout
 
 This tout will show a brief summary or image of the most recent news article if you have any.
-
-
-## Pages
-
-Each page has a title, a position (order), whether or not it's published (or a draft), an optional image, and the body content.
-
-You can *restrict* individual pages so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see a page.
-By default pages are unrestricted.
-
-Similar to event and product descriptions, the body content of your page is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
-
-
-## Articles / News
-
-Each article has a title, the date when it should be published, an optional image, and the body content.
-The order in which articles appear is based on the published date (most recent first)
-
-You can *restrict* individual articles so that they can only be seen by members. You can even specify the product or fee they must have purchased in order to see an article.  By default articles are unrestricted.
-
-Similar to event and product descriptions, the body content of your article is entered using [markdown](https://www.markdownguide.org/cheat-sheet/) or HTML.
 
 ## SEO (Search Engine Optimization)
 
