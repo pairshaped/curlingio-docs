@@ -74,6 +74,8 @@ This convenience fee is never taxed or discounted, and is always automatically c
 
 **Curling IO is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
 
+**You may not apply a convenience fee for online payments that exceeds a total of $3.30 on a $100 payment if you are also accepting offline payments. Anything higher than this potentially ends up being too punishing and lowering online payment volume significantly enough that it costs Curling IO to provide an online payment option to your club. If you absolutely MUST have a higher convenience fee, then we'll need to arrange for you to cover the $5.00 month fee we have to pay to enable your online payments. We will be enforcing this rule for the 2026/2027 season.**
+
 It is your responsibility, before adding a convenience fee / surcharge, to make sure you understand the implications and whether or not this is legal in your jurisdiction. For example:
 
 * There's a limit to the amount you can surchage to cover credit card processing fees.
