@@ -108,3 +108,17 @@ This tout will show a brief summary or image of the most recent news article if 
 ## SEO (Search Engine Optimization)
 
 Any pages and articles you create will be published in your sitemap.xml (used by search engines like Google) and have appropriate meta tags and titles for better search indexing and discoverability on the web.
+
+## Getting Help Setting It Up
+
+If you want a second set of eyes before you launch, our support team is happy to walk through the setup with you.
+
+- Open `Club → Support` in Curling IO and submit a ticket using the *Website* category. The [Support guide](/docs/club-management/support) has the full ticket walkthrough if you need a refresher.
+- Gather answers to these questions before you open the ticket—we need them before we can help (mark "not applicable" only if you do not have an existing site):
+  - Do you already have a website live, and what is the URL?
+  - Is it built on a platform like WordPress, Wix, or another site builder?
+  - Who currently hosts it (managed service, local provider, etc.)?
+  - Do you retain admin access to the existing website?
+  - Do you have a domain name registered and access to the registrar (GoDaddy, Namecheap, Google Domains, etc.)?
+
+Once we have these details, we will suggest next steps, share any recommended configurations, and coordinate a quick call if a live walkthrough would help.
