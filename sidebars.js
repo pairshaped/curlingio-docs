@@ -22,7 +22,6 @@ module.exports = {
       'for-curlers/sparing',
     ],
     "Club Management": [
-      'club-management/dashboard',
       'club-management/website-hosting',
       'club-management/leagues',
       'club-management/programs',
@@ -35,6 +34,7 @@ module.exports = {
       'club-management/curlers',
       'club-management/waivers',
       'club-management/waitlists',
+      'club-management/dashboard',
       'club-management/settings',
       'club-management/managers',
       'club-management/reports',
