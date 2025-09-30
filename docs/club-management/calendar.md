@@ -24,7 +24,7 @@ Shows time intervals as rows with venues as columns, perfect for detailed schedu
 
 Use the clock icon to configure your calendar settings, the plus icon to add new venues, and click on existing venues to edit their settings.
 
-### Week View  
+### Week View
 Displays time intervals as rows with days of the week as columns, giving you a broader perspective on weekly scheduling patterns.
 
 ### Month View
@@ -32,6 +32,27 @@ Shows days as cells with weeks as rows and days of the week as columns (Sunday t
 
 ### List View
 Displays all events in a chronological list format, making it easy to see upcoming events, search for specific bookings, and get a quick overview of all scheduled activities.
+
+## Event Types
+
+The calendar displays and manages three types of events:
+
+### Games
+Read-only events that display your draw schedules imported from league and tournament management. These help prevent conflicts when scheduling other events.
+
+### Rental Bookings
+Rental bookings made by club members for practice time or private events. These require:
+- Premium subscription activation
+- Venue configured as bookable
+- Appropriate pricing setup
+
+### Reservations
+Administrative blocks for maintenance, closures, meetings, and bookable slots.
+
+Reservations can be one-time or recurring, and include:
+- **Bookable slot**: Premium option that creates a targeted reservation members can purchase with its own price and duration; these override booking windows when they overlap.
+- **Closure**: Blocks rental bookings entirely for the selected period.
+- **Standard reservation**: Reserves time for internal events or maintenance without making it bookable.
 
 ## Venue Management
 
@@ -51,37 +72,32 @@ As an administrator, you can manage your club's venues including ice sheets, lou
 
 <img alt="Booking Windows" src={useBaseUrl('img/docs/club-management/calendar/booking-windows.png')} />
 
-Configure booking windows to control when bookings can be made. This helps manage demand and ensures appropriate advance notice for facility preparation. Booking windows have the following fields:
+Booking windows are an optional way to configure rental availability that you can use instead of, or alongside, recurring bookable slots. Configure booking windows to control when bookings can be made. This helps manage demand and ensures appropriate advance notice for facility preparation. Booking windows have the following fields:
 
 - **Start Time**: When the booking window opens. If empty, defaults to the start of the club's daily operating hours.
 - **End Time**: When the booking window closes. If empty, defaults to the end of the club's daily operating hours.
 - **Duration**: Controls how long any bookings in the window last
 - **Price**: The cost for this booking window
 
+#### When to use booking windows
+
+Booking windows are ideal when you want broad availability without managing a long list of named programs. Clubs that simply open ice for rentals during specific hours, or that need to adjust availability for holidays or bonspiels, can do everything with booking windows alone. You can always add bookable slots when you have a special case that has an explicit name, price, and duration.
+
+### Bookable Slots
+
+<img alt="Bookable Slots" src={useBaseUrl('img/docs/club-management/calendar/bookable-slot.png')} />
+
+Bookable slots let you define specific one-time or recurring reservations members can book with their own duration and price. These targeted openings take precedence over any overlapping booking windows, giving you finer control when you want to promote something like a daily "Practice Ice" slot from 2:00 to 3:00 PM. Bookable slots automatically inherit the venue's notification email, requires-curler requirement, taxes, and any custom fields so that important workflows stay consistent. These can stand alone for clubs with structured offerings, or complement existing booking windows when you want special availability to override the general schedule.
+
+#### When to use bookable slots
+
+Bookable slots shine when you offer defined programs or experiences—think practice ice or premium lounge rentals. Use them for recurring rentals that have a specific name and price point like Practice Ice. You can also layer them on top of booking windows when a special program should replace the usual availability.
+
 ## Booking Cart
 
 <img alt="Booking Cart" src={useBaseUrl('img/docs/club-management/calendar/booking-cart.png')} />
 
 When booking is enabled, multiple time slots can be added to the cart and completed as a single check out just like any other purchases.
-
-## Event Types
-
-The calendar displays and manages three types of events:
-
-### Games
-Read-only events that display your draw schedules imported from league and tournament management. These help prevent conflicts when scheduling other events.
-
-### Rentals - Premium Feature
-Rental bookings made by club members for practice time or private events. These require:
-- Premium subscription activation
-- Venue configured as bookable
-- Appropriate pricing setup
-
-### Reservations
-Administrative blocks for maintenance, closures, meetings, and other club events. These can be:
-- One-time reservations
-- Recurring reservations for regular maintenance
-- Closure reservations to block rental bookings
 
 ## Calendar Settings
 
@@ -102,7 +118,7 @@ Configure your calendar's core functionality:
 Administrators can create reservations to block time for maintenance, meetings, or special events:
 
 1. **Select Time and Venue**: Choose the date, time, and venue for your reservation
-2. **Reservation Type**: Select between closure (blocks rental bookings) or other event types
+2. **Reservation Type**: Select closure, bookable slot (premium custom price/duration), or a standard reservation for internal events
 3. **Recurring Options**: Set up repeating reservations for regular maintenance schedules
 4. **Details**: Add descriptions and notes for internal reference
 
@@ -112,4 +128,3 @@ Administrators can create reservations to block time for maintenance, meetings, 
 - **Multi-Venue Support**: Manage ice sheets, lounges, and other club facilities
 - **Conflict Detection**: Automatic prevention of double-bookings
 - **Mobile Responsive**: Works seamlessly on desktop, tablet, and mobile devices
-
