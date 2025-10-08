@@ -138,7 +138,7 @@ Any pages and articles you create will be published in your sitemap.xml (used by
 
 ## DNS Redirect
 
-If you already own a custom domain, configure your registrar to redirect it to your Curling IO subdomain (for example, `www.examplecurling.com` → `yourclub.curling.io`). Keep the root/apex (`examplecurling.com`) forwarding to the `www` host if your registrar supports it.
+If you already own a custom domain, configure your registrar to redirect it to your Curling IO subdomain (for example, `www.examplecurling.com` → `yourclub.curling.io`).
 
 ## Getting Help Setting It Up
 
