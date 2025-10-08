@@ -176,7 +176,7 @@ Similar to a bulletin board at the club.
 
 If you are requiring a profile (individual instead of team registration) then you can restrict the age of members who can register.
 The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
-Age restrictions use your [current season start date](/docs/club-management/settings#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
+Age restrictions use your [current season start date](/docs/club-management/settings#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
 
 
 ### Post registration message
