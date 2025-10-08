@@ -40,6 +40,7 @@ Acceptance of Terms of this Agreement through Use
 - [The Dashboard](/docs/club-management/dashboard.md): When a curling club manager first logs in to the administrator area of Curling IO they will be presented with the dashboard.
 - [Discounts](/docs/club-management/discounts.md): You can create discounts to reduce the cost of your leagues, competitions, and products when curler's match criteria that you specify.
 - [Fees](/docs/club-management/fees.md): You can set up membership and capital improvement fees for your club.
+- [Integrations](/docs/club-management/integrations.md): This is a Premium Only Feature
 - [Leagues & Competitions](/docs/club-management/leagues.md): Walkthrough Video
 - [Linking your Website to Curling IO Registration](/docs/club-management/linking-to-registration.md): If you are not using Curling IO to host your website, you'll still want to link to your Curling IO site for registrations.
 - [Managers](/docs/club-management/managers.md): Clubs can have multiple managers for Curling IO.
