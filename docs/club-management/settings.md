@@ -5,110 +5,18 @@ slug: /club-management/settings
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can modify some of the core settings for your club in the settings section.
+You can modify some of the core operational settings for your club in this screen.
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Settings**.
 
 ![Settings Navigation](/img/docs/club-management/settings/navigation.png)
 
+Most of the branding, website, and communication fields you may remember from the legacy settings screen now live under **Website Hosting → Settings**. Check the [website hosting guide](/docs/club-management/website-hosting) for details on those options. Mailchimp configuration has also moved—see the [Integrations guide](/docs/club-management/integrations) for the new workflow.
 
-## Basic Settings
-
-### Name
-
-The name of your club shows up in the top left of the navigation bar on all screens as well as your contact page.
-
-### Languages
-
-Curling IO supports both English and French at this time.
-If you have both languages selected, your curlers will be able to switch between languages on the fly, and you will be able to enter both english and french content (titles and descriptions) throughout the admin section.
-
-### Calendar
-
-You can toggle the club calendar on and off. The calendar will display your draw schedules (if any exist), rental bookings (premium tier), and closures / other scheduled events.
-
-More details about this feature can be found in the [calendar section.](/docs/club-management/calendar)
-
-### Website Hosting
-
-We offer a very limited and simple website hosting option at this time, and we encourage you to try it out to see for yourself.
-
-When you check the "Are we hosting your website?" option, you will see two new entries in your admin area; **Pages** and **Articles**.
-You can create as many pages and articles as you like, and you can even gate pages and articles to members only or even members who have paid for a specific fee.
-
-More details about this feature can be found in the [website hosting section.](/docs/club-management/website-hosting)
-
-### Landing Page
-
-This tells Curling IO which section to default to when someone visits your Curling IO site.
-
-### Brand Colour
-
-You can change the color of buttons and links from the default red by entering a different color hex value here.
-To find the hex value you like, just enter "color picker" into Google.
-
-### Logo
-
-You can upload your logo and a smaller version of your logo that will be shown to the left of your club name in the top left of the top navigation bar.
+The sections below cover the fields that remain on the Club → Settings page.
 
 
-### Summary
-
-The summary should be a short description of your club and will be shown in our public [Find a club](https://clubs.curling.io) section.
-
-
-## Venue
-
-If you provide venue information it will be used as defaults when managing your events (leagues and competitions).
-
-
-## Location
-
-The location information requires no explanation, but please do check it over and make sure we have the correct address and time zone for your club.
-
-
-## Contact Information
-
-The contact information you enter here will be shown on your contact page.
-If you enter a Facebook, X (Twitter) or YouTube account we will link to it from your contact page.
-
-You may also enter a WhatsApp, Slack, or Discord invitation link and we'll share it with your members when they register or visit your contact page. 
-
-
-
-## Payments
-
-You can choose whether or not to accept payments online and offline.
-This is a club-wide setting and cannot be specified at a league, competition, or product level.
-If you haven't set your club up with our online payment processor yet, the **Can be paid online** option is ignored until you do.
-This is due to the fact that a curler may purchase multiple leagues, competitions, and products at the same time.
-
-### Convenience fee / Surcharge
-
-A convenience fee or surcharge can be added to your orders automatically.
-You can specify it's label (shown to your members), how it will be applied (online, offline, etc.), a percentage amount, and a fixed amount (percent and fixed are combined).
-
-When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling IO will display a notice at the top of the cart alerting the member to it's addition as well as showing the fee in the cart and total.
-
-This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage (of the order total) and fixed amount.
-
-**Curling IO is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
-
-**You may not apply a convenience fee for online payments that exceeds a total of $3.30 on a $100 payment if you are also accepting offline payments. Anything higher than this potentially ends up being too punishing and lowering online payment volume significantly enough that it costs Curling IO to provide an online payment option to your club. If you absolutely MUST have a higher convenience fee, then we'll need to arrange for you to cover the $5.00 month fee we have to pay to enable your online payments. We will be enforcing this rule for the 2026/2027 season.**
-
-It is your responsibility, before adding a convenience fee / surcharge, to make sure you understand the implications and whether or not this is legal in your jurisdiction. For example:
-- There's a limit to the amount you can surchage to cover credit card processing fees.
-- In the province of Quebec you are currently not allowed to pass along credit card processing fees to the consumer.
-- There's a difference between a convenience fee and a surchage, so make sure you use a label that reflects what you are charging.
-- You may be required to offer a non-surcharge option if you choose to implement one for online payments.
-
-Please review the relevant laws in your region regarding surcharges and convenience fees. Here are some Canada specific links:
-- https://www.canada.ca/en/financial-consumer-agency/services/merchants/credit-fees-merchant.html
-- https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-200/application-gst-hst-credit-card-surcharges.html
-
-Note: Fees you implement should never reflect on the Curling IO platform, therefore we are restricting certain words in the convenience fee's label and may add further restrictions in the future if necessary.
-
-## Season starts in
+## Season Start
 
 You can select the month that you'd like your season to begin. It's always going to be the 1st of this month (at 12:00 AM). This date should occur **before you start taking registrations** for the current season. This cutoff affects the following:
 
@@ -119,12 +27,62 @@ You can select the month that you'd like your season to begin. It's always going
 
 **Be careful changing this since the effects are so wide reaching and we cannot retroactively fix your orders.** You should rarely, if ever, need to change this month more than once.
 
-## Tax ID
-If you optionally provide your tax identifier (Business Number in Canada), we'll include it on the receipts sent to your curlers when they make a purchase.
-This is rarely required, but we have seen cases where registrants needed a tax identifier for expense purposes.
+
+## Language Support
+
+Curling IO supports both English and French. Enable **English supported** and/or **French supported** to determine which language toggles appear to your curlers and which content fields you can complete in the admin screens. When both are enabled, curlers can switch languages on the fly.
+
+
+## Sheet Configuration
+
+The remaining ice-sheet fields let you control how sheets appear when creating draws or scheduling events:
+
+- **Sheets** — Total number of sheets at your club.
+- **Sheet prefix** — Text prefixed to each sheet number (e.g., “Sheet” results in “Sheet 1”).
+- **Sheet ordering** — Choose ascending or descending naming.
+- **Show sheets** — Toggle whether sheet assignments display publicly.
+
+
+## Payment Options
+
+These settings determine how curlers can complete checkout for club products.
+
+- **Can be paid online** — Allow credit card payments. (Ignored until your club is connected to our payment processor.)
+- **Can be paid offline** — Allow offline methods (cash, cheque, etc.).
+- **Accept partial payments** — Let curlers submit a deposit rather than the full balance.
+
+### Convenience fee / Surcharge
+
+A convenience fee or surcharge can be added to your orders automatically.
+You can specify its label (shown to your members), how it will be applied (online, offline, etc.), a percentage amount, and a fixed amount (percent and fixed are combined).
+
+When a convenience fee is added to a member's cart specific to one payment method (online or offline), Curling IO will display a notice at the top of the cart alerting the member to its addition as well as showing the fee in the cart and total.
+
+This convenience fee is never taxed or discounted, and is always automatically calculated based on your percentage (of the order total) and fixed amount.
+
+**Curling IO is not responsible for fees or surcharges that you incorrectly choose to implement. Make sure your use is compliant with potential laws in your region.**
+
+**You may not apply a convenience fee for online payments that exceeds a total of $3.30 on a $100 payment if you are also accepting offline payments. Anything higher than this potentially ends up being too punishing and lowering online payment volume significantly enough that it costs Curling IO to provide an online payment option to your club. If you absolutely MUST have a higher convenience fee, then we'll need to arrange for you to cover the $5.00 month fee we have to pay to enable your online payments. We will be enforcing this rule for the 2026/2027 season.**
+
+It is your responsibility, before adding a convenience fee / surcharge, to make sure you understand the implications and whether or not this is legal in your jurisdiction. For example:
+- There's a limit to the amount you can surcharge to cover credit card processing fees.
+- In the province of Quebec you are currently not allowed to pass along credit card processing fees to the consumer.
+- There's a difference between a convenience fee and a surcharge, so make sure you use a label that reflects what you are charging.
+- You may be required to offer a non-surcharge option if you choose to implement one for online payments.
+
+Please review the relevant laws in your region regarding surcharges and convenience fees. Here are some Canada specific links:
+- https://www.canada.ca/en/financial-consumer-agency/services/merchants/credit-fees-merchant.html
+- https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-200/application-gst-hst-credit-card-surcharges.html
+
+Note: Fees you implement should never reflect on the Curling IO platform, therefore we are restricting certain words in the convenience fee's label and may add further restrictions in the future if necessary.
+
+
+## Widget URL
+
+The Widget URL gives you an embeddable link you can drop into an external website. It points to your Curling IO-hosted registration widget so members can register without navigating away from your main site.
+
 
 ## Tags
 
 Tags are used to make it easier for your curlers to search a large number of leagues and competitions.
 We don't recommend using tags unless you have multiple pages worth of leagues or competitions that curlers must search through.
-
