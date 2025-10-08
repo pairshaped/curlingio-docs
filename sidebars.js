@@ -34,6 +34,7 @@ module.exports = {
       'club-management/curlers',
       'club-management/waivers',
       'club-management/waitlists',
+      'club-management/integrations',
       'club-management/dashboard',
       'club-management/settings',
       'club-management/managers',
