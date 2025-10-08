@@ -140,11 +140,11 @@ Any pages and articles you create will be published in your sitemap.xml (used by
 
 If you already own a custom domain, configure your registrar to redirect it to your Curling IO subdomain (for example, `your-curling-club.com` → `your-curling-club.curling.io`).
 
-- [GoDaddy: Forward my domain](https://www.godaddy.com/en-ca/help/forward-my-domain-12123)
+- [Cloudflare: Redirect all traffic from one domain to another](https://developers.cloudflare.com/redirects/how-to/redirect-all/)
 - [Namecheap: Set up URL redirect](https://www.namecheap.com/support/knowledgebase/article.aspx/385/10/how-to-set-up-url-redirect/)
+- [GoDaddy: Forward my domain](https://www.godaddy.com/en-ca/help/forward-my-domain-12123)
 - [Register.com: Domain forwarding instructions](https://www.register.com/how-to/domain-forwarding)
 - [Squarespace (Google Domains): Redirecting a domain](https://support.squarespace.com/hc/en-us/articles/205812378-Redirecting-a-domain)
-- [Cloudflare: Redirect all traffic from one domain to another](https://developers.cloudflare.com/redirects/how-to/redirect-all/)
 - [Hover: Forwarding your domain](https://help.hover.com/hc/en-us/articles/217281477-Forwarding-your-domain)
 
 ## Getting Help Setting It Up
