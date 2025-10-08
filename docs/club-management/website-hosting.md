@@ -22,30 +22,29 @@ Because it is built into Curling IO, the hosting experience stays simple, secure
 
 ## Website Settings
 
-Kick things off under **Website → Settings**. This screen now houses most of the fields that previously lived in Club → Settings, keeping all site-specific configuration in one place.
-
-### Club identity
-- **Club name** — Controls the text in the site header and the contact page.
-- **Summary** — A short description that powers the public Find a Club listing and other overview cards.
-- **Tax ID / Business Number** — Optional; appears on receipts so members can submit expenses when needed.
-
-### Hosting toggle and navigation defaults
-- **Are we hosting your website?** — Turn hosting on or off. When enabled, the Pages and Articles menus appear in your admin.
-- **Default landing section** — Choose the destination members see first (e.g., Landing Page, Leagues, Calendar).
-- **Calendar visibility** — Show or hide the public calendar tab; when enabled it surfaces draws, rentals (Premium), and closures/events in one view.
+Kick things off under **Website → Settings**. This screen concentrates the visual, navigation, and contact details that define your hosted site.
 
 ### Branding
-- **Brand colour** — Enter a hex colour to update buttons and call-to-action elements.
-- **Logo uploads** — Provide full and compact logo versions for the header and navigation.
+- **Name** — Controls the header text and the default club name shown publicly.
+- **Brand palette** — Pick a palette preset and fine-tune individual colours (Primary, Secondary, Success, Info, Warning, Danger, Light, Dark) by entering hex codes.
+- **Logo** and **Nav logo** — Upload full-size and compact versions for the header and navigation bar.
 
-### Location & venue
-- **Location details** — Maintain the address, city, province/state, postal code, and time zone displayed on your site and used as defaults elsewhere.
-- **Venue information** — Store facility details (name, phone, directions) that pre-fill when creating leagues, bonspiels, or rentals.
+### Navigation & layout
+- **Calendar enabled?** — Toggle the public calendar tab. When enabled, visitors can browse draws, rentals (Premium), and closures.
+- **Calendar default view** — Select the view you want to load first (Month, Week, Day). Clubs with rentals often prefer the day view.
+- **Landing page** — Choose where visitors land first (Landing Page, Leagues, Bonspiels, Programs, Products, Calendar, etc.).
+- **Program label** and **Competition label** — Rename these tabs to match local terminology.
+- **Banner** and **Banner visibility** — Upload a 1200 × 250 banner image and choose which screens display it.
+- **Sidebar options** — Decide which touts appear on hosted pages (Current games, Random sponsor, Latest news).
+- **Section summaries** — Provide English and French blurbs for Leagues, Bonspiels, Programs, Products, and Calendar. These appear below public section headers and on Landing Page cards.
 
-### Contact & social links
-Keep members connected by filling in:
-- Primary email and phone contact.
-- Social or community channels: Facebook, X (Twitter), YouTube, WhatsApp, Slack, and Discord URLs. These surface on your contact page and in registration confirmations.
+### Contact information
+- **Address block** — Street, unit, mailing address, city, province/state, country, postal/ZIP code, and time zone (used for draw schedules and emails).
+- **Primary contact** — Phone number and email shown on the contact page.
+- **Site & policy links** — Website URL, Terms URL, Privacy URL.
+- **Social & media handles** — Facebook, X (Twitter), Instagram, TikTok, YouTube.
+- **Community invites** — Optional invitation links for WhatsApp, Slack, and Discord; shared with members on receipts and the contact page.
+- **Club contacts** — Add individual contacts (name, email, phone) to spotlight specific volunteers or board members.
 
 Once you save your updates in Website → Settings, continue with the specialized pages below to bring your hosted site to life.
 
