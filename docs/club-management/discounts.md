@@ -77,7 +77,7 @@ Criteria are cumulative, so if both min AND max ages are specified then both of 
 ### Min and Max Age
 
 These are fairly self-explanatory. If you wanted to apply a junior's discount to curlers 17 and under then you would enter 17 into the Max age field. Keep in mind that age criteria is inclusive in that it's including the age specified.
-Age criteria uses your [current season start date](/docs/club-management/settings#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is 18 before the current season's start then they wouldn't receive a 17 and under discount.
+Age criteria uses your [current season start date](/docs/club-management/settings#season-start) as the cutoff (defaulting to July 1st). So if a curler is 18 before the current season's start then they wouldn't receive a 17 and under discount.
 
 ### Number of Leagues
 
