@@ -46,7 +46,7 @@ Located in **Website → Settings**, this screen brings together the visual, nav
 * **Brand palette** — Pick a palette preset and fine-tune individual colours (Primary, Secondary, Success, Info, Warning, Danger, Light, Dark) by entering hex codes.
 * **Logo** and **Nav logo** — Upload full-size and compact versions for the header and navigation bar.
 
-### Navigation & layout[​](#navigation--layout "Direct link to Navigation & layout")
+### Navigation and layout[​](#navigation-and-layout "Direct link to Navigation and layout")
 
 * **Calendar enabled?** — Toggle the public calendar tab. When enabled, visitors can browse draws, rentals (Premium), and closures.
 * **Calendar default view** — Select the view you want to load first (Month, Week, or Day). Clubs with rentals often prefer the day view.

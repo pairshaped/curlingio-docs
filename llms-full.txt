@@ -805,7 +805,7 @@ To create an alert that only appears when members make an offline purchase (subm
 
 The calendar system allows you, the curling club manager, to display your draw schedules, schedule custom events, and allow members to book rentals. This comprehensive scheduling tool supports multiple venues including ice sheets and other club facilities.
 
-You can access the calendar by going to the public side of your club's website and selecting the "Schedules" section from the top navigation. You can enable and disable the calendar in your [club settings](/docs/club-management/settings.md#calendar).
+You can access the calendar by going to the public side of your club's website and selecting the "Schedules" section from the top navigation. You can enable or disable the calendar in [Website settings](/docs/club-management/website-hosting.md#navigation-layout).
 
 ## Calendar Views[​](#calendar-views "Direct link to Calendar Views")
 
@@ -1331,7 +1331,7 @@ Criteria are cumulative, so if both min AND max ages are specified then both of 
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-These are fairly self-explanatory. If you wanted to apply a junior's discount to curlers 17 and under then you would enter 17 into the Max age field. Keep in mind that age criteria is inclusive in that it's including the age specified. Age criteria uses your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is 18 before the current season's start then they wouldn't receive a 17 and under discount.
+These are fairly self-explanatory. If you wanted to apply a junior's discount to curlers 17 and under then you would enter 17 into the Max age field. Keep in mind that age criteria is inclusive in that it's including the age specified. Age criteria uses your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). So if a curler is 18 before the current season's start then they wouldn't receive a 17 and under discount.
 
 ### Number of Leagues[​](#number-of-leagues "Direct link to Number of Leagues")
 
@@ -1475,7 +1475,7 @@ Criteria are cumulative, meaning that if you have multiple criteria set, they mu
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-You can restrict a fee to specific ages. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will not be asked to pay a fee with a min age of 18.
+You can restrict a fee to specific ages. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will not be asked to pay a fee with a min age of 18.
 
 ### Days after open[​](#days-after-open "Direct link to Days after open")
 
@@ -1713,7 +1713,7 @@ The reason to publish registrations is so that other members can see who has alr
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-If you are requiring a profile (individual instead of team registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
+If you are requiring a profile (individual instead of team registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
 
 ### Post registration message[​](#post-registration-message "Direct link to Post registration message")
 
@@ -2256,7 +2256,7 @@ More details and examples can be found in the [waitlists section.](/docs/club-ma
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-If you are requiring a profile (individual registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18‑year‑olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). For example, if a curler is not 18 or older on the current season start date then they will be prevented from registering for a program with a min age of 18.
+If you are requiring a profile (individual registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18‑year‑olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). For example, if a curler is not 18 or older on the current season start date then they will be prevented from registering for a program with a min age of 18.
 
 ### Summary & Description[​](#summary--description "Direct link to Summary & Description")
 
@@ -2797,7 +2797,7 @@ Located in **Website → Settings**, this screen brings together the visual, nav
 * **Brand palette** — Pick a palette preset and fine-tune individual colours (Primary, Secondary, Success, Info, Warning, Danger, Light, Dark) by entering hex codes.
 * **Logo** and **Nav logo** — Upload full-size and compact versions for the header and navigation bar.
 
-### Navigation & layout[​](#navigation--layout "Direct link to Navigation & layout")
+### Navigation and layout[​](#navigation-and-layout "Direct link to Navigation and layout")
 
 * **Calendar enabled?** — Toggle the public calendar tab. When enabled, visitors can browse draws, rentals (Premium), and closures.
 * **Calendar default view** — Select the view you want to load first (Month, Week, or Day). Clubs with rentals often prefer the day view.
@@ -3995,7 +3995,7 @@ Yes, but there are a few things to keep in mind:
 * The season start date will also impact the age restrictions for your leagues, fees, and discounts. The season start and age cutoff dates are one and the same. If you have a league that requires a minimum age of 13, then it will require age 13 before the season starts (July 1st).
 * You may end up collecting inaccurate affiliate fees. Sometimes your membership association fees will change between seasons, and you could be taking registrations (and collecting fees) before your MA has had a chance to update them. Curling IO cannot assume responsibility for inaccurate fees, so you may want to check with your membership association before changing your season start date.
 
-You can change your season start date in the [club settings section](/docs/club-management/settings.md#season-starts-in).
+You can change your season start date in the [club settings section](/docs/club-management/settings.md#season-start).
 
 
 ---

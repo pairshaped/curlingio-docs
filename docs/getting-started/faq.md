@@ -145,4 +145,4 @@ Yes, but there are a few things to keep in mind:
 * The season start date will also impact the age restrictions for your leagues, fees, and discounts. The season start and age cutoff dates are one and the same. If you have a league that requires a minimum age of 13, then it will require age 13 before the season starts (July 1st).
 * You may end up collecting inaccurate affiliate fees. Sometimes your membership association fees will change between seasons, and you could be taking registrations (and collecting fees) before your MA has had a chance to update them. Curling IO cannot assume responsibility for inaccurate fees, so you may want to check with your membership association before changing your season start date.
 
-You can change your season start date in the [club settings section](/docs/club-management/settings.md#season-starts-in).
+You can change your season start date in the [club settings section](/docs/club-management/settings.md#season-start).

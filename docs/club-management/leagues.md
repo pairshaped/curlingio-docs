@@ -122,7 +122,7 @@ The reason to publish registrations is so that other members can see who has alr
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-If you are requiring a profile (individual instead of team registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
+If you are requiring a profile (individual instead of team registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will be prevented from registering for a league with a min age of 18.
 
 ### Post registration message[​](#post-registration-message "Direct link to Post registration message")
 

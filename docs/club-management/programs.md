@@ -78,7 +78,7 @@ More details and examples can be found in the [waitlists section.](/docs/club-ma
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-If you are requiring a profile (individual registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18‑year‑olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). For example, if a curler is not 18 or older on the current season start date then they will be prevented from registering for a program with a min age of 18.
+If you are requiring a profile (individual registration) then you can restrict the age of members who can register. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18‑year‑olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). For example, if a curler is not 18 or older on the current season start date then they will be prevented from registering for a program with a min age of 18.
 
 ### Summary & Description[​](#summary--description "Direct link to Summary & Description")
 

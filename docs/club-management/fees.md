@@ -64,7 +64,7 @@ Criteria are cumulative, meaning that if you have multiple criteria set, they mu
 
 ### Min and Max Age[​](#min-and-max-age "Direct link to Min and Max Age")
 
-You can restrict a fee to specific ages. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-starts-in) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will not be asked to pay a fee with a min age of 18.
+You can restrict a fee to specific ages. The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds. Age restrictions use your [current season start date](/docs/club-management/settings.md#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will not be asked to pay a fee with a min age of 18.
 
 ### Days after open[​](#days-after-open "Direct link to Days after open")
 
