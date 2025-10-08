@@ -138,7 +138,7 @@ Any pages and articles you create will be published in your sitemap.xml (used by
 
 ## DNS Redirect
 
-If you already own a custom domain, you can point it at Curling IO hosting by creating a CNAME record (e.g., `www.examplecurling.com` → `yourclub.curling.io`) or an A record to the IP address supplied in the Website → DNS settings panel. After the DNS change propagates, set the same host name inside the Curling IO DNS screen so we provision the SSL certificate automatically. Keep the root/apex (`examplecurling.com`) redirected to the `www` host if your registrar supports it.
+If you already own a custom domain, configure your registrar to redirect it to your Curling IO subdomain (for example, `www.examplecurling.com` → `yourclub.curling.io`). Once the redirect is active, enter the same host name in the Website → DNS settings panel so we can provision the SSL certificate automatically. Keep the root/apex (`examplecurling.com`) forwarding to the `www` host if your registrar supports it.
 
 ## Getting Help Setting It Up
 
