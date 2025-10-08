@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The calendar system allows you, the curling club manager, to display your draw schedules, schedule custom events, and allow members to book rentals. This comprehensive scheduling tool supports multiple venues including ice sheets and other club facilities.
 
-You can access the calendar by going to the public side of your club's website and selecting the "Schedules" section from the top navigation. You can enable or disable the calendar in [Website settings](/docs/club-management/website-hosting#navigation-layout).
+You can access the calendar by going to the public side of your club's website and selecting the "Schedules" section from the top navigation. You can enable or disable the calendar in [Website settings](/docs/club-management/website-hosting#navigation-and-layout).
 
 ## Calendar Views
 
