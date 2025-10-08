@@ -51,7 +51,7 @@ You can edit copy in place—click the Edit link for any section to update the c
 
 ## Website Settings
 
-Start in **Website → Settings**. This screen brings together the visual, navigation, and contact details that define your hosted site.
+Located in **Website → Settings**, this screen brings together the visual, navigation, and contact details that define your hosted site.
 
 ### Branding
 - **Name** — Controls the header text and the default club name shown publicly.
