@@ -145,7 +145,6 @@ If you already own a custom domain, configure your registrar to redirect it to y
 - [GoDaddy: Forward my domain](https://www.godaddy.com/en-ca/help/forward-my-domain-12123)
 - [Register.com: Domain forwarding instructions](https://www.register.com/how-to/domain-forwarding)
 - [Squarespace (Google Domains): Redirecting a domain](https://support.squarespace.com/hc/en-us/articles/205812378-Redirecting-a-domain)
-- [Hover: Forwarding your domain](https://help.hover.com/hc/en-us/articles/217281477-Forwarding-your-domain)
 
 ## Getting Help Setting It Up
 
