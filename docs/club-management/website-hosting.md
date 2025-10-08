@@ -20,6 +20,35 @@ Open the **Website** section in your admin navigation to manage everything in on
 
 Because it is built into Curling IO, the hosting experience stays simple, secure, and easy for volunteers to maintain. Explore the live demo club at https://demo.curling.io/ to see the layout, navigation, and content options you can launch right away.
 
+## Website Settings
+
+Kick things off under **Website → Settings**. This screen now houses most of the fields that previously lived in Club → Settings, keeping all site-specific configuration in one place.
+
+### Club identity
+- **Club name** — Controls the text in the site header and the contact page.
+- **Summary** — A short description that powers the public Find a Club listing and other overview cards.
+- **Tax ID / Business Number** — Optional; appears on receipts so members can submit expenses when needed.
+
+### Hosting toggle and navigation defaults
+- **Are we hosting your website?** — Turn hosting on or off. When enabled, the Pages and Articles menus appear in your admin.
+- **Default landing section** — Choose the destination members see first (e.g., Landing Page, Leagues, Calendar).
+- **Calendar visibility** — Show or hide the public calendar tab; when enabled it surfaces draws, rentals (Premium), and closures/events in one view.
+
+### Branding
+- **Brand colour** — Enter a hex colour to update buttons and call-to-action elements.
+- **Logo uploads** — Provide full and compact logo versions for the header and navigation.
+
+### Location & venue
+- **Location details** — Maintain the address, city, province/state, postal code, and time zone displayed on your site and used as defaults elsewhere.
+- **Venue information** — Store facility details (name, phone, directions) that pre-fill when creating leagues, bonspiels, or rentals.
+
+### Contact & social links
+Keep members connected by filling in:
+- Primary email and phone contact.
+- Social or community channels: Facebook, X (Twitter), YouTube, WhatsApp, Slack, and Discord URLs. These surface on your contact page and in registration confirmations.
+
+Once you save your updates in Website → Settings, continue with the specialized pages below to bring your hosted site to life.
+
 
 ## Landing Page
 
