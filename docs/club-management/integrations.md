@@ -13,7 +13,7 @@ Integrations connect Curling IO with the external services your club already rel
 
 - **Mailchimp** — Sync member contact details and registration tags to your marketing audience so mailing lists stay current.
 - **QuickBooks Online** — Accounting export automation is coming soon; this section will be updated once the workflow is live.
-- **External Calendar** — Mirror events from an iCal/WebCal feed (like Google Calendar) so your club calendar stays in step with league or facility schedules.
+- **External Calendar** — Mirror events from an iCal/WebCal feed (like Google Calendar) so your club calendar stays in step with your other schedules.
 
 ## Finding Integrations
 
@@ -27,7 +27,7 @@ Connect your Curling IO member and registration data to a Mailchimp audience so 
 
 ### What gets synced
 - Member profile fields map to Mailchimp merge fields when present: `ID`, `EMAIL`, `FNAME`, `LNAME`, `PHONE`, `GENDER`, `DOB`, `PCODE`, and mailing address components (`addr1`, `city`, `state`, `zip`, `country`).
-- Completed registrations add Mailchimp tags for the product name and, when applicable, the event category (e.g., `Bonspiels`).
+- Completed registrations add Mailchimp tags for the item name and, when applicable, the event category (e.g., `Bonspiels`).
 
 ### Set up the connection
 1. Navigate to **Admin → Integrations** and open the Mailchimp panel.
