@@ -48,7 +48,7 @@ Import events from an external iCal/WebCal feed and display them alongside your 
 
 ### Configure the feed[​](#configure-the-feed "Direct link to Configure the feed")
 
-1. In **Admin → Integrations**, open the External Calendar panel.
+1. In **Admin → Club Dropdown → Integrations**, open the External Calendar panel.
 2. Provide the subscription URL for the iCal/WebCal feed you want to mirror.
 3. (Optional) Add a notification email to receive sync error alerts.
 4. Enable the integration to start nightly syncs. You can disable or re-run syncs manually from this screen.
