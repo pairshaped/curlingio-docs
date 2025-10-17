@@ -14,7 +14,7 @@ const features = [
       <>
         Curling IO was designed from the ground up to be easy to set up and start
         taking online registrations and payments quickly. No complicated
-        systems to figure out, and curlers love it! <a href="https://www.youtube.com/shorts/nAbLIPHYmME" target="_blank">See for yourself.</a>
+        systems to figure out, and curlers love it! <a href="https://www.youtube.com/playlist?list=PLewhXbqjD6VFr-WlpNC1CGEvF9UV33jLb" target="_blank">See for yourself.</a>
       </>
     ),
   },
