@@ -43,7 +43,7 @@ const features = [
     imageUrl: 'img/national_curler_database.svg',
     description: (
       <>
-        Members that have used Curling IO at any club or membership association will already have an account, making registration
+        Members that have used Curling IO at any club or membership association will <a href="/docs/for-curlers/curler-profiles">already have an account</a>, making registration
         as simple as the click of a button.
       </>
     ),
@@ -53,7 +53,7 @@ const features = [
     imageUrl: 'img/secure_and_stable.svg',
     description: (
       <>
-        We handle tens of thousands of requests per minute without breaking a sweat, and we go above and beyond to ensure your data is secure by eliminating attack vectors like insecure passwords.
+        We handle tens of thousands of requests per minute without breaking a sweat, and we go above and beyond to ensure your data is secure by eliminating attack vectors <a href="/docs/for-curlers/how-do-i-login#passwordless-authentication">like insecure passwords</a>.
       </>
     ),
   },
