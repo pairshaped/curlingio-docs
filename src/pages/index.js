@@ -63,7 +63,7 @@ const features = [
     description: (
       <>
         Curling IO is the system of choice for Curling Canada as well as the provincial membership associations.
-        You're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
+        With over 1 million registrations, you're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
       </>
     ),
   },
