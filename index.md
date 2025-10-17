@@ -1,1 +1,1 @@
-## Curling IO is used by more than *100k* curlers for over *$19m* in payments last season alone. Centralized, secure, safe.
+## With over 1 million registrations, you can trust Curling IO to handle your online payments and event management. Centralized, secure, safe.
