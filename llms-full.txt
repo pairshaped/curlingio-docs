@@ -10,6 +10,10 @@ Section 1 - What Do We Do With Your Information?
 
 - [Privacy Statement](/privacy.md): Section 1 - What Do We Do With Your Information?
 
+## search
+
+- [Search the documentation](/search.md)
+
 ## terms
 
 Acceptance of Terms of this Agreement through Use
@@ -200,6 +204,44 @@ If our application is acquired or merged with another company, your information 
 If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at <support@curling.io> or by mail at 2508941 Ontario Inc.:
 
 \[Re: Privacy Compliance Officer]<br />\[69 Prince Philip Blvd., Ayr, ON, N0B 1E0, Canada]
+
+
+---
+
+[Skip to main content](#__docusaurus_skipToContent_fallback)
+
+[![Curling IO Logo](/img/curlingio-logo-small.png)![Curling IO Logo](/img/curlingio-logo-small.png)](/index.md)
+
+[**Curling IO**](/index.md)
+
+[Docs](/docs/getting-started/curling-club-managers.md)[Find your Club](https://clubs.curling.io)
+
+Search
+
+# Search the documentation
+
+Type your search here
+
+[](https://www.algolia.com/)
+
+Docs
+
+* [For Clubs](/docs/getting-started/curling-club-managers.md)
+* [For Curlers](/docs/for-curlers/how-do-i-login.md)
+* [Tutorial Videos](https://www.youtube.com/@curlingio)
+
+Community
+
+* [Feedback](https://curling.canny.io/)
+* [Twitter](https://twitter.com/curlingio)
+* [Curling Canada](https://curling.ca)
+
+More
+
+* [Terms](/terms.md)
+* [Privacy](/privacy.md)
+
+Copyright © 2025 Curling IO
 
 
 ---

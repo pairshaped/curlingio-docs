@@ -10,6 +10,10 @@ Section 1 - What Do We Do With Your Information?
 
 - [Privacy Statement](/privacy.md): Section 1 - What Do We Do With Your Information?
 
+## search
+
+- [Search the documentation](/search.md)
+
 ## terms
 
 Acceptance of Terms of this Agreement through Use
