@@ -1,3 +1,24 @@
+const defaultAlgoliaAppId = '56JJO2SJ1B';
+const defaultAlgoliaIndexName = 'curling';
+const defaultAlgoliaApiKey = 'd4c292bfdc67172d839f0f3a6da64bfb';
+
+const resolvedAlgoliaAppId = process.env.ALGOLIA_APP_ID || defaultAlgoliaAppId;
+const resolvedAlgoliaIndexName = process.env.ALGOLIA_INDEX_NAME || defaultAlgoliaIndexName;
+const resolvedAlgoliaApiKey = process.env.ALGOLIA_SEARCH_API_KEY || defaultAlgoliaApiKey;
+
+const algoliaConfig = resolvedAlgoliaApiKey
+  ? {
+      appId: resolvedAlgoliaAppId,
+      apiKey: resolvedAlgoliaApiKey,
+      indexName: resolvedAlgoliaIndexName,
+      // The DocSearch index does not include Docusaurus version facets, so disable contextual filtering.
+      contextualSearch: false,
+      searchParameters: {
+        facetFilters: [],
+      },
+    }
+  : undefined;
+
 module.exports = {
   title: 'Curling IO',
   tagline: 'Curling registration and league management made easy.',
@@ -39,6 +60,7 @@ module.exports = {
     colorMode: {
       disableSwitch: true,
     },
+    algolia: algoliaConfig,
     image: 'img/curlingio-logo-small.png',
     navbar: {
       title: 'Curling IO',
