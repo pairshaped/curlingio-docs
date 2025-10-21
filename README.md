@@ -54,6 +54,16 @@ yarn start
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
+## Search Configuration
+
+DocSearch is available when the following environment variables are present before running `yarn start` or `yarn build`:
+
+- `ALGOLIA_SEARCH_API_KEY`: search-only key (defaults to `d4c292bfdc67172d839f0f3a6da64bfb` if unset).
+- `ALGOLIA_APP_ID`: defaults to `56JJO2SJ1B` if unset.
+- `ALGOLIA_INDEX_NAME`: defaults to the DocSearch index `curling` if unset.
+
+Set these variables in your shell session or `.env` file to enable the in-site search widget locally and in CI. Contextual filtering is disabled so searches return matches across the entire documentation set.
+
 
 ## Deployment
 
