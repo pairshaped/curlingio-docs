@@ -130,6 +130,10 @@ module.exports = {
               label: 'Privacy',
               to: 'privacy',
             },
+            {
+              label: 'Curling Schedules',
+              href: 'https://curlingschedules.com',
+            },
           ],
         },
       ],
