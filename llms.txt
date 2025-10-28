@@ -27,6 +27,7 @@ Acceptance of Terms of this Agreement through Use
 
 - [API](/docs/advanced/api.md): Leagues and Competitions (Events)
 - [Augmenting Curler Profiles](/docs/advanced/augmenting-curler-profiles.md): Sometimes you may want to ask your curler's for some additional information, but only once per season (or lifetime).
+- [CurlingSchedules.com](/docs/advanced/curlingschedules.md): Learn how to configure draws, track fairness, and manage saved schedules with the Curling Draw Schedule Builder.
 
 ### api
 
