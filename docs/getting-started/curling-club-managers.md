@@ -35,6 +35,16 @@ Curling IO manages the competitions for membership associations across Canada an
 If you've ever checked the scoreboard for the Brier's or Scotties on [curling.ca](https://www.curling.ca/scoreboard), then you've already seen Curling IO in action.
 
 
+## Rental Bookings
+
+Renting out ice and lounge space is a key revenue stream for curling clubs.
+
+- Publish a public-facing rental calendar that updates instantly when new bookings come in.
+- Configure rentable resources (sheets, rooms) with availability windows, pricing, and closure dates.
+- Collect deposits and waivers online during checkout, reducing back-and-forth email coordination.
+- Apply the same addons, fees, and discounts you configure for leagues, products, and programs.
+
+
 ## Bookkeeping and Reports
 
 We have an extensive reports section that curling club managers and bookkeepers love.
