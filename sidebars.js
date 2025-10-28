@@ -61,6 +61,7 @@ module.exports = {
       'event-management/event-managers',
     ],
     "Advanced Features": [
+      'advanced/curlingschedules',
       'advanced/augmenting-curler-profiles',
     ],
     "Member Data": [
