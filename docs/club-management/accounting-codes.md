@@ -161,8 +161,7 @@ These codes then appear in your order item reports and can be exported for use i
 
 In the same section, set default account codes for each type:
 
-<!-- Screenshot needed: /static/img/docs/advanced/accounting-codes/club-settings.png
-     Show the accounting codes section with the checkbox enabled and the 6 input fields in the 3-column layout -->
+![Accounting Codes Defaults](/img/docs/club-management/accounting-codes/accounting-codes-defaults.png)
 
 1. **Leagues** - e.g., 4100
 2. **Bonspiels** - e.g., 4200
@@ -183,8 +182,7 @@ For more detailed tracking, edit individual items:
 3. Add Account Code (override), Class Code, or Project Code as needed
 4. Save
 
-<!-- Screenshot needed: /static/img/docs/advanced/accounting-codes/item-level.png
-     Show the ACCOUNTING CODES section with the three fields: Account Code, Class Code (optional), Project Code (optional) with their help text -->
+![Accounting Codes Per Item](/img/docs/club-management/accounting-codes/accounting-codes-per-item.png)
 
 **Products, Fees, and Programs:**
 Follow the same process in each item's edit form.

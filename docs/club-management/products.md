@@ -140,7 +140,7 @@ You can enter some text that your curlers are guaranteed to see before they can 
 We recommend you use this sparingly as it adds another step (friction) to product purchases for your users.
 
 
-## Accounting Codes (Advanced)
+## Accounting Codes
 
 If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a product.
 
