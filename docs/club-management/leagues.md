@@ -234,6 +234,14 @@ Give the registering profile a 5% discount if this is the first time they've reg
 
 More details and examples can be found in the [discounts section.](/docs/club-management/discounts.md)
 
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a league or competition.
+
+Most clubs only use the default account codes set in Club Settings. However, you can optionally add Class and Project codes here to track revenue by demographics (e.g., MENS, WOMENS), skill level, grant funding, or special initiatives.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+
 ## Copying a League for the new Season[​](#copying-a-league-for-the-new-season "Direct link to Copying a League for the new Season")
 
 In Curling IO you **NEVER reuse leagues or competitions across multiple seasons**. We keep the previous season's leagues and competitions for their historical data. This is useful for reporting / accounting, but also for curlers to see results and standings from a previous season if you are using our [event management features](/docs/event-management/registrations.md).

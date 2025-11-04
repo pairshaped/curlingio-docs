@@ -97,6 +97,14 @@ Optional message shown after purchase on the thank‑you screen and in the recei
 
 Associate a sponsor to show their logo and name on the program page. You can also upload a program image that will be shown publicly.
 
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a program.
+
+Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between program types (e.g., Learn to Curl vs. training camps) or track grant-funded programs.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+
 ## Assigning Fees & Addons[​](#assigning-fees--addons "Direct link to Assigning Fees & Addons")
 
 All fees and addons that should be added to the cost of the program can be added here. Keep in mind that just creating a fee does not automatically associate it to your programs. You need to specify which fees and addons are relevant for each program, as this will almost always vary between offerings. E.g. junior and learn‑to‑curl programs may not have any fees.

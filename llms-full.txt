@@ -37,6 +37,7 @@ Acceptance of Terms of this Agreement through Use
 
 ### club-management
 
+- [Accounting Codes](/docs/club-management/accounting-codes.md): Overview
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
 - [Calendar](/docs/club-management/calendar.md): Venue / Ice Booking is Premium Only
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
@@ -852,6 +853,297 @@ Replacing **en** with **fr** will fetch the french version.
 
 ---
 
+# Accounting Codes
+
+## Overview[​](#overview "Direct link to Overview")
+
+Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage. When enabled, you can set default account codes for each type of registration, and optionally add more detailed tracking codes at the item level.
+
+## When to Use Accounting Codes[​](#when-to-use-accounting-codes "Direct link to When to Use Accounting Codes")
+
+Most clubs either don't need accounting codes at all, or simply set up 6 default codes and never touch individual items. You can add optional sub-categorization at the item level for detailed tracking by demographics, departments, or grant funding.
+
+## The Two-Tier System[​](#the-two-tier-system "Direct link to The Two-Tier System")
+
+### 1. Club-Level Defaults (Simple)[​](#1-club-level-defaults-simple "Direct link to 1. Club-Level Defaults (Simple)")
+
+Set default account codes in [Club Settings](/docs/club-management/settings.md) for each type of registration:
+
+* **Leagues** - Individual league registrations (e.g., 4100)
+* **Bonspiels** - Competition/bonspiel registrations (e.g., 4200)
+* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 5000)
+* **Products** - Pro shop items and merchandise (e.g., 6000)
+* **Fees** - Membership and other fees (e.g., 7000)
+* **Venues** - Venue rental revenue (e.g., 8000)
+
+These codes will automatically apply to all items of that type unless you override them.
+
+**Tip:** Account codes typically match your chart of accounts in QuickBooks, Sage, or other accounting software. Use the same codes you have in your accounting system for seamless reporting and integration.
+
+### 2. Item-Level Overrides (Advanced)[​](#2-item-level-overrides-advanced "Direct link to 2. Item-Level Overrides (Advanced)")
+
+For more detailed tracking, you can add codes to individual items:
+
+* **Leagues and Competitions** - Track by demographics (MENS, WOMENS, JUNIOR), skill level, or special events
+* **Products** - Separate merchandise from rentals, track fundraising campaigns
+* **Fees** - Differentiate membership types or age groups
+* **Programs** - Track Learn to Curl vs training camps, grant-funded programs
+
+## The Three Code Types[​](#the-three-code-types "Direct link to The Three Code Types")
+
+### Account Code[​](#account-code "Direct link to Account Code")
+
+**Purpose:** Primary revenue or expense category from your chart of accounts
+
+**When to override:**
+
+* Use a special account for charity events
+* Separate different product categories (merchandise vs rentals)
+* Track different fee types (membership vs capital improvement)
+
+**Examples:** `4100`, `4200`, `5000`, `6100`, `7000`
+
+**Leave blank** to use the club default (recommended for most items)
+
+### Class Code (Optional)[​](#class-code-optional "Direct link to Class Code (Optional)")
+
+Sub-category for tracking by department, demographic, or program type. Typically maps to Class in QuickBooks and Category in Xero.
+
+**Common examples:**
+
+* Demographics: `MENS`, `WOMENS`, `JUNIOR`, `SENIOR`, `MIXED`
+* Skill level: `COMPETITIVE`, `RECREATIONAL`, `BEGINNER`, `ADVANCED`
+* Program type: `LEARN2CURL`, `TRAINING`, `CAMP`, `VOLUNTEER`
+* Product type: `PROSHOP`, `RENTAL`, `MERCHANDISE`, `APPAREL`, `EQUIPMENT`
+* Fee type: `ADULT`, `JUNIOR`, `STUDENT`, `AFFILIATE`
+
+### Project Code (Optional)[​](#project-code-optional "Direct link to Project Code (Optional)")
+
+Track specific grants, fundraisers, or special initiatives. Typically maps to Location or Project in QuickBooks and Category in Xero.
+
+**Common examples:**
+
+* Grants: `GRANT_2024`, `YOUTH_DEVELOPMENT`, `ACCESSIBILITY_GRANT`
+* Fundraising: `CAPITAL_CAMPAIGN_2024`, `FUNDRAISER_2024`
+* Initiatives: `GROW_THE_GAME`, `COACH_TRAINING`, `FACILITY_UPGRADE`
+
+## Understanding Order Items vs Payments[​](#understanding-order-items-vs-payments "Direct link to Understanding Order Items vs Payments")
+
+Accounting codes are assigned to **order items**, not payments. When a member checks out, they typically purchase multiple items in their cart:
+
+* A league registration
+* Affiliate fees (provincial and national)
+* Membership fees
+* Add-ons like lockers
+* Additional leagues for their children
+
+A single payment covers all these items, but each item gets its own accounting codes. For example, in one checkout:
+
+* League registration → Account: 4100, Class: MENS
+* Provincial Fee → Account: 7000, Class: AFFILIATE
+* Membership Fee → Account: 7100
+* Locker → Account: 6000, Class: RENTAL
+
+This item-level detail allows you to properly categorize revenue in your accounting software, even though the member only made one payment. Your order item reports will show each item separately with its corresponding codes, making it easy to track revenue by category.
+
+## How Codes Are Captured[​](#how-codes-are-captured "Direct link to How Codes Are Captured")
+
+When a member completes a registration or purchase, Curling IO captures the accounting codes at that moment and stores them with the order item. The codes are captured once and don't change, even if you later modify the item's codes. This ensures historical accuracy in your financial records.
+
+These codes then appear in your order item reports and can be exported for use in your accounting software.
+
+## Common Use Cases[​](#common-use-cases "Direct link to Common Use Cases")
+
+### Basic Club (Most Common)[​](#basic-club-most-common "Direct link to Basic Club (Most Common)")
+
+**Setup:**
+
+* Enable accounting codes in Club Settings
+* Set 6 default account codes
+* Never touch individual items
+
+**Result:** All revenue automatically categorized by type with zero ongoing effort
+
+### Intermediate Club - Demographics[​](#intermediate-club---demographics "Direct link to Intermediate Club - Demographics")
+
+**Need:** Track league revenue by gender for board reporting
+
+**Setup:**
+
+* Set club default for leagues (4100)
+
+* Edit each league to add class codes:
+
+  <!-- -->
+
+  * Men's League → Class: `MENS`
+  * Women's League → Class: `WOMENS`
+  * Mixed League → Class: `MIXED`
+
+**Result:** All leagues use account 4100, but can report separately by gender
+
+### Advanced Club - Grant Tracking[​](#advanced-club---grant-tracking "Direct link to Advanced Club - Grant Tracking")
+
+**Need:** Report on grant-funded youth development program
+
+**Setup:**
+
+* Set club default for programs (5000)
+
+* Edit program:
+
+  <!-- -->
+
+  * Leave account blank (uses default 5000)
+  * Set class code: `JUNIOR`
+  * Set project code: `GRANT_2024`
+
+**Result:** Easy to filter and report all grant-funded youth program revenue
+
+### Sophisticated Club - Multiple Categories[​](#sophisticated-club---multiple-categories "Direct link to Sophisticated Club - Multiple Categories")
+
+**Need:** Separate merchandise from rentals, track fundraising campaigns
+
+**Setup:**
+
+* Products with different accounts:
+
+  <!-- -->
+
+  * Pro shop items: Account `6100`, Class `MERCHANDISE`
+  * Equipment rentals: Account `6200`, Class `RENTAL`
+  * Fundraising items: Account `6300`, Project `CAPITAL_CAMPAIGN_2024`
+
+**Result:** Complete separation and tracking across multiple dimensions
+
+## Setting Up Accounting Codes[​](#setting-up-accounting-codes "Direct link to Setting Up Accounting Codes")
+
+### Step 1: Enable the Feature[​](#step-1-enable-the-feature "Direct link to Step 1: Enable the Feature")
+
+1. Go to **Club → Settings**
+2. Scroll to the **Accounting Codes** section
+3. Check **Enable accounting codes**
+4. Save
+
+### Step 2: Set Default Codes[​](#step-2-set-default-codes "Direct link to Step 2: Set Default Codes")
+
+In the same section, set default account codes for each type:
+
+![Accounting Codes Defaults](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
+
+1. **Leagues** - e.g., 4100
+2. **Bonspiels** - e.g., 4200
+3. **Programs** - e.g., 5000
+4. **Products** - e.g., 6000
+5. **Fees** - e.g., 7000
+6. **Venues** - e.g., 8000
+
+Use codes that match your accounting software's chart of accounts.
+
+### Step 3: Add Item-Level Codes (Optional)[​](#step-3-add-item-level-codes-optional "Direct link to Step 3: Add Item-Level Codes (Optional)")
+
+For more detailed tracking, edit individual items:
+
+**Leagues and Competitions:**
+
+1. Edit the league or competition
+2. Scroll to the **Accounting Codes** section
+3. Add Account Code (override), Class Code, or Project Code as needed
+4. Save
+
+![Accounting Codes Per Item](/assets/images/accounting-codes-per-item-bd57dc0e38b5a9e094b4cfca6b77afa6.png)
+
+**Products, Fees, and Programs:** Follow the same process in each item's edit form.
+
+## Reporting and Exporting[​](#reporting-and-exporting "Direct link to Reporting and Exporting")
+
+### Order Items Report[​](#order-items-report "Direct link to Order Items Report")
+
+All accounting codes appear in your order items report:
+
+1. Go to **Reports → Order Items**
+2. Use filters to find specific codes
+3. Export to CSV for import into your accounting software
+
+The CSV export includes columns for:
+
+* Account Code
+* Class Code
+* Project Code
+
+## Best Practices[​](#best-practices "Direct link to Best Practices")
+
+### Keep It Simple[​](#keep-it-simple "Direct link to Keep It Simple")
+
+Start with just the 6 club defaults. Only add item-level codes if you have a specific reporting need.
+
+### Use Consistent Naming[​](#use-consistent-naming "Direct link to Use Consistent Naming")
+
+Establish a standard for class and project codes:
+
+* Use UPPER\_CASE for consistency
+* Keep codes short but descriptive
+* Document your codes for other administrators
+
+### Examples:[​](#examples "Direct link to Examples:")
+
+* ✅ Good: `MENS`, `WOMENS`, `JUNIOR`, `GRANT_2024`
+* ❌ Avoid: `men's`, `Women`, `jr`, `grant`
+
+### Plan Before You Start[​](#plan-before-you-start "Direct link to Plan Before You Start")
+
+Before enabling accounting codes:
+
+1. Review your accounting software's chart of accounts
+2. Decide which account codes to use for each type
+3. Determine if you need class or project tracking
+4. Document your code structure
+
+### Don't Overcomplicate[​](#dont-overcomplicate "Direct link to Don't Overcomplicate")
+
+You can't change codes after purchase, so:
+
+* Start simple and add complexity only when needed
+* Most clubs only need account codes, not class/project
+* Consider if you'll actually use the granularity before adding it
+
+## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
+
+### Can I change codes after a purchase is made?[​](#can-i-change-codes-after-a-purchase-is-made "Direct link to Can I change codes after a purchase is made?")
+
+No. Codes are captured at the moment of purchase and become part of the historical record. This ensures accuracy in your financial reports. If you need to change how future purchases are categorized, update the codes on the item itself.
+
+### What happens if I don't set any codes?[​](#what-happens-if-i-dont-set-any-codes "Direct link to What happens if I don't set any codes?")
+
+Items will have blank/null accounting codes in reports. This makes it visible which items don't have codes assigned, rather than incorrectly assigning them to a default category.
+
+### Do I need to use all three code types?[​](#do-i-need-to-use-all-three-code-types "Direct link to Do I need to use all three code types?")
+
+No. Most clubs only use account codes. Class and project codes are optional and should only be used if you have specific tracking needs.
+
+### Can I use the same class or project code across different item types?[​](#can-i-use-the-same-class-or-project-code-across-different-item-types "Direct link to Can I use the same class or project code across different item types?")
+
+Yes! For example, you might use `JUNIOR` as a class code for both leagues and fees to track all junior-related revenue across categories.
+
+### What if my accounting software doesn't support class or project tracking?[​](#what-if-my-accounting-software-doesnt-support-class-or-project-tracking "Direct link to What if my accounting software doesn't support class or project tracking?")
+
+Just use account codes. The class and project codes will be in your exports but you can ignore them if your accounting system doesn't use them.
+
+### How do I track codes for inherited fees (provincial/national)?[​](#how-do-i-track-codes-for-inherited-fees-provincialnational "Direct link to How do I track codes for inherited fees (provincial/national)?")
+
+Inherited fees (like provincial and national affiliation fees) automatically use your club's default fee account code. Any codes set on the inherited fee itself are ignored. If you want to categorize inherited fees differently, set a specific fee account code in your Club Settings, and all inherited fees will use that code.
+
+## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
+
+* [Club Settings](/docs/club-management/settings.md) - Enable accounting codes
+* [Leagues & Competitions](/docs/club-management/leagues.md) - Add codes to events
+* [Products](/docs/club-management/products.md) - Add codes to products
+* [Fees](/docs/club-management/fees.md) - Add codes to fees
+* [Programs](/docs/club-management/programs.md) - Add codes to programs
+
+
+---
+
 # Alerts
 
 **[This is a Premium Only Feature](/docs/getting-started/premium.md)**
@@ -1619,6 +1911,14 @@ The days after open criteria is how you would implement a *Late Fee*.
 
 For example, a value of 30 means that if someone registers for a league implementing this fee, they will be required to pay the fee if they register 30 or more days after registration opened.
 
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a fee.
+
+Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between fee types (e.g., membership vs. capital improvement) or track by age group.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+
 ## Adding Custom Fields[​](#adding-custom-fields "Direct link to Adding Custom Fields")
 
 Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.
@@ -1999,6 +2299,14 @@ Give the registering profile a 5% discount if this is the first time they've reg
 
 More details and examples can be found in the [discounts section.](/docs/club-management/discounts.md)
 
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a league or competition.
+
+Most clubs only use the default account codes set in Club Settings. However, you can optionally add Class and Project codes here to track revenue by demographics (e.g., MENS, WOMENS), skill level, grant funding, or special initiatives.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+
 ## Copying a League for the new Season[​](#copying-a-league-for-the-new-season "Direct link to Copying a League for the new Season")
 
 In Curling IO you **NEVER reuse leagues or competitions across multiple seasons**. We keep the previous season's leagues and competitions for their historical data. This is useful for reporting / accounting, but also for curlers to see results and standings from a previous season if you are using our [event management features](/docs/event-management/registrations.md).
@@ -2272,6 +2580,14 @@ You can enter some text that your curlers are guaranteed to see before they can 
 
 We recommend you use this sparingly as it adds another step (friction) to product purchases for your users.
 
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a product.
+
+Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between product categories (e.g., merchandise vs. rentals) or track fundraising campaigns.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+
 ## Assigning Fees[​](#assigning-fees "Direct link to Assigning Fees")
 
 All fees that should be added to the cost of the product can be added here. Keep in mind that just creating a fee doesn't not automatically associate it to your product. You need to specify which fees are relevant for each product, as this will almost always vary between products.
@@ -2448,6 +2764,14 @@ Optional message shown after purchase on the thank‑you screen and in the recei
 ### Sponsorship[​](#sponsorship "Direct link to Sponsorship")
 
 Associate a sponsor to show their logo and name on the program page. You can also upload a program image that will be shown publicly.
+
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a program.
+
+Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between program types (e.g., Learn to Curl vs. training camps) or track grant-funded programs.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
 
 ## Assigning Fees & Addons[​](#assigning-fees--addons "Direct link to Assigning Fees & Addons")
 
@@ -2690,6 +3014,18 @@ Note: Fees you implement should never reflect on the Curling IO platform, theref
 ## Widget URL[​](#widget-url "Direct link to Widget URL")
 
 The Widget URL gives you an embeddable link you can drop into an external website. It points to your Curling IO-hosted registration widget so members can register without navigating away from your main site.
+
+## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+
+Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage.
+
+Check the **Enable accounting codes** checkbox to activate this feature for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
+
+![Accounting Codes](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
+
+Most clubs either don't need accounting codes at all, or simply set up these 6 default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
+
+**For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
 
 ## Tags[​](#tags "Direct link to Tags")
 

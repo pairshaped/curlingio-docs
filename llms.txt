@@ -37,6 +37,7 @@ Acceptance of Terms of this Agreement through Use
 
 ### club-management
 
+- [Accounting Codes](/docs/club-management/accounting-codes.md): Overview
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
 - [Calendar](/docs/club-management/calendar.md): Venue / Ice Booking is Premium Only
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
