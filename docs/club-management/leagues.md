@@ -323,6 +323,16 @@ This is an example of a custom field based discount and you'd be responsible for
 
 More details and examples can be found in the [discounts section.](/docs/club-management/discounts)
 
+
+## Accounting Codes (Advanced)
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a league or competition.
+
+Most clubs only use the default account codes set in Club Settings. However, you can optionally add Class and Project codes here to track revenue by demographics (e.g., MENS, WOMENS), skill level, grant funding, or special initiatives.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes).**
+
+
 ## Copying a League for the new Season
 
 In Curling IO you **NEVER reuse leagues or competitions across multiple seasons**.

@@ -99,6 +99,15 @@ The days after open criteria is how you would implement a *Late Fee*.
 For example, a value of 30 means that if someone registers for a league implementing this fee, they will be required to pay the fee if they register 30 or more days after registration opened.
 
 
+## Accounting Codes (Advanced)
+
+If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a fee.
+
+Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between fee types (e.g., membership vs. capital improvement) or track by age group.
+
+**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes).**
+
+
 ## Adding Custom Fields
 
 Custom fields allow you to ask your curlers questions specific to your club that we haven't thought of during registration.

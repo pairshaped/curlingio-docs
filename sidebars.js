@@ -42,6 +42,7 @@ module.exports = {
       'club-management/custom-fields',
       'club-management/integrations',
       'club-management/settings',
+      'club-management/accounting-codes',
       'club-management/profile-fields',
       'club-management/linking-to-registration',
       'club-management/registration-widget',
