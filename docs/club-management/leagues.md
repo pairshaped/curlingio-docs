@@ -324,7 +324,7 @@ This is an example of a custom field based discount and you'd be responsible for
 More details and examples can be found in the [discounts section.](/docs/club-management/discounts)
 
 
-## Accounting Codes (Advanced)
+## Accounting Codes
 
 If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a league or competition.
 

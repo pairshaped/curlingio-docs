@@ -109,7 +109,7 @@ Optional message shown after purchase on the thank‑you screen and in the recei
 Associate a sponsor to show their logo and name on the program page. You can also upload a program image that will be shown publicly.
 
 
-## Accounting Codes (Advanced)
+## Accounting Codes
 
 If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a program.
 

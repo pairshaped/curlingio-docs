@@ -88,8 +88,7 @@ Accounting codes allow you to categorize revenue items for reporting and integra
 
 Check the **Enable accounting codes** checkbox to activate this feature for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
 
-<!-- Screenshot needed: /static/img/docs/club-management/settings/accounting-codes.png
-     Show the accounting codes section with the checkbox enabled and the 6 input fields (Leagues, Bonspiels, Programs, Products, Fees, Venues) in the 3-column layout -->
+![Accounting Codes](/img/docs/club-management/accounting-codes/accounting-codes-defaults.png)
 
 Most clubs either don't need accounting codes at all, or simply set up these 6 default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
 

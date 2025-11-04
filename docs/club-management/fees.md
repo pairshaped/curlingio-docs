@@ -99,7 +99,7 @@ The days after open criteria is how you would implement a *Late Fee*.
 For example, a value of 30 means that if someone registers for a league implementing this fee, they will be required to pay the fee if they register 30 or more days after registration opened.
 
 
-## Accounting Codes (Advanced)
+## Accounting Codes
 
 If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a fee.
 
