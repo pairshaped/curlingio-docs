@@ -11,7 +11,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Curling IO" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f57dee26.css">
-<script src="/assets/js/runtime~main.ddd8cd97.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.46772c8c.js" defer="defer"></script>
 <script src="/assets/js/main.65b1ef24.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,12 +26,14 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-club-level-defaults-simple">1. Club-Level Defaults (Simple)<a href="#1-club-level-defaults-simple" class="hash-link" aria-label="Direct link to 1. Club-Level Defaults (Simple)" title="Direct link to 1. Club-Level Defaults (Simple)">​</a></h3>
 <p>Set default account codes in <a href="/docs/club-management/settings">Club Settings</a> for each type of registration:</p>
 <ul>
-<li><strong>Leagues</strong> - Individual league registrations (e.g., 4100)</li>
-<li><strong>Bonspiels</strong> - Competition/bonspiel registrations (e.g., 4200)</li>
-<li><strong>Programs</strong> - Programs like Learn to Curl, camps, seminars (e.g., 5000)</li>
-<li><strong>Products</strong> - Pro shop items and merchandise (e.g., 6000)</li>
-<li><strong>Fees</strong> - Membership and other fees (e.g., 7000)</li>
-<li><strong>Venues</strong> - Venue rental revenue (e.g., 8000)</li>
+<li><strong>Leagues</strong> - Individual league registrations (e.g., 1000)</li>
+<li><strong>Bonspiels</strong> - Competition/bonspiel registrations (e.g., 2000)</li>
+<li><strong>Programs</strong> - Programs like Learn to Curl, camps, seminars (e.g., 3000)</li>
+<li><strong>Products</strong> - Pro shop items and merchandise (e.g., 4000)</li>
+<li><strong>Fees</strong> - Membership and other fees (e.g., 5000)</li>
+<li><strong>Venues</strong> - Venue rental revenue (e.g., 6000)</li>
+<li><strong>Order Adjustments</strong> - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)</li>
+<li><strong>Convenience Fees</strong> - Processing and service fees charged on orders (e.g., 8000)</li>
 </ul>
 <p>These codes will automatically apply to all items of that type unless you override them.</p>
 <p><strong>Tip:</strong> Account codes typically match your chart of accounts in QuickBooks, Sage, or other accounting software. Use the same codes you have in your accounting system for seamless reporting and integration.</p>
@@ -52,7 +54,7 @@
 <li>Separate different product categories (merchandise vs rentals)</li>
 <li>Track different fee types (membership vs capital improvement)</li>
 </ul>
-<p><strong>Examples:</strong> <code>4100</code>, <code>4200</code>, <code>5000</code>, <code>6100</code>, <code>7000</code></p>
+<p><strong>Examples:</strong> <code>1000</code>, <code>2000</code>, <code>3000</code>, <code>4000</code>, <code>5000</code></p>
 <p><strong>Leave blank</strong> to use the club default (recommended for most items)</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="class-code-optional">Class Code (Optional)<a href="#class-code-optional" class="hash-link" aria-label="Direct link to Class Code (Optional)" title="Direct link to Class Code (Optional)">​</a></h3>
 <p>Sub-category for tracking by department, demographic, or program type. Typically maps to Class in QuickBooks and Category in Xero.</p>
@@ -83,10 +85,10 @@
 </ul>
 <p>A single payment covers all these items, but each item gets its own accounting codes. For example, in one checkout:</p>
 <ul>
-<li>League registration → Account: 4100, Class: MENS</li>
-<li>Provincial Fee → Account: 7000, Class: AFFILIATE</li>
-<li>Membership Fee → Account: 7100</li>
-<li>Locker → Account: 6000, Class: RENTAL</li>
+<li>League registration → Account: 1000, Class: MENS</li>
+<li>Provincial Fee → Account: 5000, Class: AFFILIATE</li>
+<li>Membership Fee → Account: 5100</li>
+<li>Locker → Account: 4000, Class: RENTAL</li>
 </ul>
 <p>This item-level detail allows you to properly categorize revenue in your accounting software, even though the member only made one payment. Your order item reports will show each item separately with its corresponding codes, making it easy to track revenue by category.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-codes-are-captured">How Codes Are Captured<a href="#how-codes-are-captured" class="hash-link" aria-label="Direct link to How Codes Are Captured" title="Direct link to How Codes Are Captured">​</a></h2>
@@ -97,7 +99,7 @@
 <p><strong>Setup:</strong></p>
 <ul>
 <li>Enable accounting codes in Club Settings</li>
-<li>Set 6 default account codes</li>
+<li>Set 8 default account codes</li>
 <li>Never touch individual items</li>
 </ul>
 <p><strong>Result:</strong> All revenue automatically categorized by type with zero ongoing effort</p>
@@ -105,7 +107,7 @@
 <p><strong>Need:</strong> Track league revenue by gender for board reporting</p>
 <p><strong>Setup:</strong></p>
 <ul>
-<li>Set club default for leagues (4100)</li>
+<li>Set club default for leagues (1000)</li>
 <li>Edit each league to add class codes:<!-- -->
 <ul>
 <li>Men&#x27;s League → Class: <code>MENS</code></li>
@@ -114,15 +116,15 @@
 </ul>
 </li>
 </ul>
-<p><strong>Result:</strong> All leagues use account 4100, but can report separately by gender</p>
+<p><strong>Result:</strong> All leagues use account 1000, but can report separately by gender</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-club---grant-tracking">Advanced Club - Grant Tracking<a href="#advanced-club---grant-tracking" class="hash-link" aria-label="Direct link to Advanced Club - Grant Tracking" title="Direct link to Advanced Club - Grant Tracking">​</a></h3>
 <p><strong>Need:</strong> Report on grant-funded youth development program</p>
 <p><strong>Setup:</strong></p>
 <ul>
-<li>Set club default for programs (5000)</li>
+<li>Set club default for programs (3000)</li>
 <li>Edit program:<!-- -->
 <ul>
-<li>Leave account blank (uses default 5000)</li>
+<li>Leave account blank (uses default 3000)</li>
 <li>Set class code: <code>JUNIOR</code></li>
 <li>Set project code: <code>GRANT_2024</code></li>
 </ul>
@@ -135,9 +137,9 @@
 <ul>
 <li>Products with different accounts:<!-- -->
 <ul>
-<li>Pro shop items: Account <code>6100</code>, Class <code>MERCHANDISE</code></li>
-<li>Equipment rentals: Account <code>6200</code>, Class <code>RENTAL</code></li>
-<li>Fundraising items: Account <code>6300</code>, Project <code>CAPITAL_CAMPAIGN_2024</code></li>
+<li>Pro shop items: Account <code>4100</code>, Class <code>MERCHANDISE</code></li>
+<li>Equipment rentals: Account <code>4200</code>, Class <code>RENTAL</code></li>
+<li>Fundraising items: Account <code>4300</code>, Project <code>CAPITAL_CAMPAIGN_2024</code></li>
 </ul>
 </li>
 </ul>
@@ -154,12 +156,14 @@
 <p>In the same section, set default account codes for each type:</p>
 <p><img decoding="async" loading="lazy" alt="Accounting Codes Defaults" src="/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png" width="963" height="388" class="img_ev3q"></p>
 <ol>
-<li><strong>Leagues</strong> - e.g., 4100</li>
-<li><strong>Bonspiels</strong> - e.g., 4200</li>
-<li><strong>Programs</strong> - e.g., 5000</li>
-<li><strong>Products</strong> - e.g., 6000</li>
-<li><strong>Fees</strong> - e.g., 7000</li>
-<li><strong>Venues</strong> - e.g., 8000</li>
+<li><strong>Leagues</strong> - e.g., 1000</li>
+<li><strong>Bonspiels</strong> - e.g., 2000</li>
+<li><strong>Programs</strong> - e.g., 3000</li>
+<li><strong>Products</strong> - e.g., 4000</li>
+<li><strong>Fees</strong> - e.g., 5000</li>
+<li><strong>Venues</strong> - e.g., 6000</li>
+<li><strong>Order Adjustments</strong> - e.g., 7000</li>
+<li><strong>Convenience Fees</strong> - e.g., 8000</li>
 </ol>
 <p>Use codes that match your accounting software&#x27;s chart of accounts.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-add-item-level-codes-optional">Step 3: Add Item-Level Codes (Optional)<a href="#step-3-add-item-level-codes-optional" class="hash-link" aria-label="Direct link to Step 3: Add Item-Level Codes (Optional)" title="Direct link to Step 3: Add Item-Level Codes (Optional)">​</a></h3>

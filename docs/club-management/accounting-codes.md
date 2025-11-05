@@ -14,12 +14,14 @@ Most clubs either don't need accounting codes at all, or simply set up 6 default
 
 Set default account codes in [Club Settings](/docs/club-management/settings.md) for each type of registration:
 
-* **Leagues** - Individual league registrations (e.g., 4100)
-* **Bonspiels** - Competition/bonspiel registrations (e.g., 4200)
-* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 5000)
-* **Products** - Pro shop items and merchandise (e.g., 6000)
-* **Fees** - Membership and other fees (e.g., 7000)
-* **Venues** - Venue rental revenue (e.g., 8000)
+* **Leagues** - Individual league registrations (e.g., 1000)
+* **Bonspiels** - Competition/bonspiel registrations (e.g., 2000)
+* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 3000)
+* **Products** - Pro shop items and merchandise (e.g., 4000)
+* **Fees** - Membership and other fees (e.g., 5000)
+* **Venues** - Venue rental revenue (e.g., 6000)
+* **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)
+* **Convenience Fees** - Processing and service fees charged on orders (e.g., 8000)
 
 These codes will automatically apply to all items of that type unless you override them.
 
@@ -46,7 +48,7 @@ For more detailed tracking, you can add codes to individual items:
 * Separate different product categories (merchandise vs rentals)
 * Track different fee types (membership vs capital improvement)
 
-**Examples:** `4100`, `4200`, `5000`, `6100`, `7000`
+**Examples:** `1000`, `2000`, `3000`, `4000`, `5000`
 
 **Leave blank** to use the club default (recommended for most items)
 
@@ -84,10 +86,10 @@ Accounting codes are assigned to **order items**, not payments. When a member ch
 
 A single payment covers all these items, but each item gets its own accounting codes. For example, in one checkout:
 
-* League registration → Account: 4100, Class: MENS
-* Provincial Fee → Account: 7000, Class: AFFILIATE
-* Membership Fee → Account: 7100
-* Locker → Account: 6000, Class: RENTAL
+* League registration → Account: 1000, Class: MENS
+* Provincial Fee → Account: 5000, Class: AFFILIATE
+* Membership Fee → Account: 5100
+* Locker → Account: 4000, Class: RENTAL
 
 This item-level detail allows you to properly categorize revenue in your accounting software, even though the member only made one payment. Your order item reports will show each item separately with its corresponding codes, making it easy to track revenue by category.
 
@@ -104,7 +106,7 @@ These codes then appear in your order item reports and can be exported for use i
 **Setup:**
 
 * Enable accounting codes in Club Settings
-* Set 6 default account codes
+* Set 8 default account codes
 * Never touch individual items
 
 **Result:** All revenue automatically categorized by type with zero ongoing effort
@@ -115,7 +117,7 @@ These codes then appear in your order item reports and can be exported for use i
 
 **Setup:**
 
-* Set club default for leagues (4100)
+* Set club default for leagues (1000)
 
 * Edit each league to add class codes:
 
@@ -125,7 +127,7 @@ These codes then appear in your order item reports and can be exported for use i
   * Women's League → Class: `WOMENS`
   * Mixed League → Class: `MIXED`
 
-**Result:** All leagues use account 4100, but can report separately by gender
+**Result:** All leagues use account 1000, but can report separately by gender
 
 ### Advanced Club - Grant Tracking[​](#advanced-club---grant-tracking "Direct link to Advanced Club - Grant Tracking")
 
@@ -133,13 +135,13 @@ These codes then appear in your order item reports and can be exported for use i
 
 **Setup:**
 
-* Set club default for programs (5000)
+* Set club default for programs (3000)
 
 * Edit program:
 
   <!-- -->
 
-  * Leave account blank (uses default 5000)
+  * Leave account blank (uses default 3000)
   * Set class code: `JUNIOR`
   * Set project code: `GRANT_2024`
 
@@ -155,9 +157,9 @@ These codes then appear in your order item reports and can be exported for use i
 
   <!-- -->
 
-  * Pro shop items: Account `6100`, Class `MERCHANDISE`
-  * Equipment rentals: Account `6200`, Class `RENTAL`
-  * Fundraising items: Account `6300`, Project `CAPITAL_CAMPAIGN_2024`
+  * Pro shop items: Account `4100`, Class `MERCHANDISE`
+  * Equipment rentals: Account `4200`, Class `RENTAL`
+  * Fundraising items: Account `4300`, Project `CAPITAL_CAMPAIGN_2024`
 
 **Result:** Complete separation and tracking across multiple dimensions
 
@@ -176,12 +178,14 @@ In the same section, set default account codes for each type:
 
 ![Accounting Codes Defaults](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
 
-1. **Leagues** - e.g., 4100
-2. **Bonspiels** - e.g., 4200
-3. **Programs** - e.g., 5000
-4. **Products** - e.g., 6000
-5. **Fees** - e.g., 7000
-6. **Venues** - e.g., 8000
+1. **Leagues** - e.g., 1000
+2. **Bonspiels** - e.g., 2000
+3. **Programs** - e.g., 3000
+4. **Products** - e.g., 4000
+5. **Fees** - e.g., 5000
+6. **Venues** - e.g., 6000
+7. **Order Adjustments** - e.g., 7000
+8. **Convenience Fees** - e.g., 8000
 
 Use codes that match your accounting software's chart of accounts.
 
