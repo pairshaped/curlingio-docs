@@ -1,0 +1,495 @@
+# Accounting Transactions
+
+Premium Feature
+
+The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription.
+
+## Overview[​](#overview "Direct link to Overview")
+
+The accounting transactions system provides comprehensive double-entry bookkeeping with accrual accounting principles. Instead of just tagging revenue items with codes, the system automatically generates detailed journal entries (debits and credits) for every financial event in your club.
+
+**What you get:**
+
+* Full double-entry bookkeeping (every transaction has balanced debits and credits)
+* Accrual accounting (revenue recognized when order placed, not when paid)
+* Automatic journal entries for orders, payments, and refunds
+* Balance sheet tracking (Accounts Receivable, HST Payable, etc.)
+* Dedicated Accounting Transactions report
+* CSV export in standard double-entry format
+* Sequential payment allocation with partial refund tracking
+
+**Important:** Accounting transactions are only recorded while you have an active Premium subscription. Historical data is not available if you upgrade later - transactions are only tracked from the date accounting codes are enabled forward.
+
+## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
+
+Before enabling accounting transactions, you should first understand [Accounting Codes](/docs/accounting/accounting-codes.md). The accounting transactions system builds on accounting codes by adding full journal entries and balance sheet tracking.
+
+## Accrual Accounting Principles[​](#accrual-accounting-principles "Direct link to Accrual Accounting Principles")
+
+Traditional cash-basis accounting records revenue when you receive payment. Accrual accounting recognizes revenue when it's earned (when the order is placed), giving you a more accurate picture of your club's financial position.
+
+**Example:**
+
+* Member registers for a $100 league on January 15
+* Member pays $50 on January 20
+* Member pays remaining $50 on February 10
+
+**Cash-basis accounting** would show:
+
+* January: $50 revenue
+* February: $50 revenue
+
+**Accrual accounting** (what Curling IO uses) shows:
+
+* January 15: $100 revenue recognized, $100 Accounts Receivable created
+* January 20: $50 cash received, $50 Accounts Receivable reduced
+* February 10: $50 cash received, $50 Accounts Receivable reduced
+
+This approach shows you owe $100 in revenue in January, even though you haven't collected it all yet.
+
+## Double-Entry Bookkeeping[​](#double-entry-bookkeeping "Direct link to Double-Entry Bookkeeping")
+
+Every transaction creates balanced journal entries where debits equal credits. This is the foundation of professional accounting and ensures your books always balance.
+
+**Example:** Member purchases a $113 league registration (includes $13 HST)
+
+```
+Journal Entry:
+DR  Accounts Receivable        $113.00
+CR  Revenue (Account 1000)     $100.00
+CR  HST Payable                $13.00
+```
+
+When they pay:
+
+```
+Journal Entry:
+DR  Undeposited Funds       $113.00
+CR  Accounts Receivable     $113.00
+```
+
+## Balance Sheet Account Codes[​](#balance-sheet-account-codes "Direct link to Balance Sheet Account Codes")
+
+In addition to revenue account codes (4000 series), the system uses balance sheet accounts to track assets and liabilities:
+
+### Assets (Debit accounts)[​](#assets-debit-accounts "Direct link to Assets (Debit accounts)")
+
+* **Accounts Receivable (1200)** - Money owed to the club from unpaid or partially-paid orders
+* **Undeposited Funds** - Payments received but not yet deposited to bank
+* **Cash Account** - Your actual bank account balance
+
+### Liabilities (Credit accounts)[​](#liabilities-credit-accounts "Direct link to Liabilities (Credit accounts)")
+
+* **HST Payable (2110)** - Sales tax collected that must be remitted to government
+
+These accounts are configured in **Club → Settings** and cannot be overridden at the item level.
+
+## Tax Handling[​](#tax-handling "Direct link to Tax Handling")
+
+The accounting transactions system automatically tracks all sales taxes (HST, GST, PST) as liabilities that need to be remitted to the government.
+
+### How Tax is Recorded[​](#how-tax-is-recorded "Direct link to How Tax is Recorded")
+
+When an order is placed, taxes are recorded in the **HST Payable** liability account:
+
+```
+DR  Accounts Receivable     $113.00
+CR  Revenue                 $100.00
+CR  HST Payable (2110)      $13.00
+```
+
+This creates a liability - the club owes $13.00 to the government. When you remit taxes quarterly or annually, your accountant will use this HST Payable balance.
+
+### Multiple Tax Rates[​](#multiple-tax-rates "Direct link to Multiple Tax Rates")
+
+If your club charges multiple tax rates (e.g., GST + PST, or different HST rates for different provinces), all taxes flow into the single HST Payable account. The system tracks the breakdown:
+
+**Example:** $100 item with 5% GST and 7% PST
+
+```
+DR  Accounts Receivable     $112.00
+CR  Revenue                 $100.00
+CR  HST Payable             $12.00
+```
+
+Your Order Items report shows the tax breakdown per item (tax1\_amount, tax2\_amount), but the accounting transactions combine them into one liability account for simplicity.
+
+### Tax on Refunds[​](#tax-on-refunds "Direct link to Tax on Refunds")
+
+When you refund an item, the tax liability is reduced:
+
+```
+DR  Revenue                 $100.00
+DR  HST Payable             $13.00
+CR  Accounts Receivable     $113.00
+```
+
+This reduces your HST Payable balance, since you're no longer collecting that tax from the member.
+
+### Tax-Exempt Items[​](#tax-exempt-items "Direct link to Tax-Exempt Items")
+
+Items with no tax (tax-exempt products, services, etc.) simply don't create HST Payable entries:
+
+```
+DR  Accounts Receivable     $100.00
+CR  Revenue                 $100.00
+```
+
+The system automatically handles this based on your tax settings for each item.
+
+### Reconciling Tax Payable[​](#reconciling-tax-payable "Direct link to Reconciling Tax Payable")
+
+Your HST Payable account balance represents the total tax you've collected and owe to the government. To reconcile:
+
+1. Export the Accounting Transactions report
+2. Filter by Account Code: 2110 (HST Payable)
+3. Sum all credits (tax collected) minus all debits (tax refunded)
+4. This balance should match your tax filing
+
+**Example balance calculation:**
+
+* Credits (tax collected): $15,600
+* Debits (tax refunded): -$780
+* **Net HST Payable: $14,820**
+
+This is the amount you owe for the reporting period.
+
+## Transaction Types[​](#transaction-types "Direct link to Transaction Types")
+
+The system creates different types of accounting transactions for different financial events.
+
+### 1. Revenue Recognition (Order Submitted)[​](#1-revenue-recognition-order-submitted "Direct link to 1. Revenue Recognition (Order Submitted)")
+
+When a member submits an order, revenue is recognized immediately:
+
+```
+DR  Accounts Receivable     (Total order amount)
+CR  Revenue (by item)       (Item subtotals using your account codes)
+CR  HST Payable             (Tax amounts)
+```
+
+**Example:** Order with $100 league + $13 HST
+
+| Date       | Type               | Account               | Debit   | Credit  |
+| ---------- | ------------------ | --------------------- | ------- | ------- |
+| 2025-01-15 | Revenue recognized | 1200 (A/R)            | $113.00 |         |
+| 2025-01-15 | Revenue recognized | 4010 (League Revenue) |         | $100.00 |
+| 2025-01-15 | HST charged        | 2110 (HST Payable)    |         | $13.00  |
+
+### 2. Cash Receipts (Payment Succeeded)[​](#2-cash-receipts-payment-succeeded "Direct link to 2. Cash Receipts (Payment Succeeded)")
+
+When a payment is received, cash is recorded and Accounts Receivable is reduced:
+
+```
+DR  Undeposited Funds       (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+Payments are allocated to order items sequentially (smallest items paid first), which enables accurate partial refund tracking.
+
+**Example:** $113 payment received
+
+| Date       | Type              | Account           | Debit   | Credit  |
+| ---------- | ----------------- | ----------------- | ------- | ------- |
+| 2025-01-20 | Payment initiated | Undeposited Funds | $113.00 |         |
+| 2025-01-20 | Payment initiated | 1200 (A/R)        |         | $113.00 |
+
+### 3. Refunds (Refund Processed)[​](#3-refunds-refund-processed "Direct link to 3. Refunds (Refund Processed)")
+
+When a refund is issued, the system creates reversal entries:
+
+```
+DR  Revenue (by item)       (Refunded amounts)
+DR  HST Payable             (Refunded tax)
+CR  Accounts Receivable     (Total refund)
+
+DR  Accounts Receivable     (Total refund)
+CR  Undeposited Funds       (Total refund)
+```
+
+### 4. Order/Item Deletion[​](#4-orderitem-deletion "Direct link to 4. Order/Item Deletion")
+
+When a club deletes an order or order item, the system automatically creates reversal transactions to maintain balanced books.
+
+**For submitted but unpaid orders:**
+
+If you delete an order that was submitted but never paid, the system reverses the revenue recognition entries:
+
+```
+DR  Revenue (by item)       (Item amounts)
+DR  HST Payable             (Tax amounts)
+CR  Accounts Receivable     (Total order)
+```
+
+This removes the revenue and Accounts Receivable that were created when the order was submitted.
+
+**For paid orders:**
+
+Deleting paid orders or individual items requires processing refunds first. The system prevents deletion of paid items to maintain accurate financial records.
+
+**Why this matters:** This ensures your Accounts Receivable balance stays accurate. If a member cancels before paying, deleting the order removes the receivable without requiring a formal refund process.
+
+### 5. Deposit Processing[​](#5-deposit-processing "Direct link to 5. Deposit Processing")
+
+When online payments (Stripe, SportsPay) are received, they initially go to **Undeposited Funds**. When your payment processor deposits funds to your bank account, you can record the deposit:
+
+**Automatic (Stripe/SportsPay):**
+
+For clubs using Stripe or SportsPay, deposits are automatically recorded when payouts are processed:
+
+```
+DR  Cash Account          (Deposit amount)
+CR  Undeposited Funds     (Deposit amount)
+```
+
+The system tracks which payments are included in each payout, maintaining a clear audit trail from payment → undeposited funds → cash account.
+
+**Manual Recording:**
+
+Some clubs prefer to manage deposits manually, matching to their bank statements. This flexibility allows you to reconcile deposits however your accountant prefers.
+
+### 6. Offline Payments[​](#6-offline-payments "Direct link to 6. Offline Payments")
+
+When a club records an offline payment (cash, check, e-transfer recorded manually), the accounting treatment is the same as online payments:
+
+```
+DR  Undeposited Funds       (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+However, offline payments go directly to your **Cash Account** if you mark them as "Already Deposited" when recording them:
+
+```
+DR  Cash Account            (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+This provides flexibility for clubs that receive cash/checks and deposit them immediately, versus clubs that batch deposits weekly or monthly.
+
+## The Accounting Transactions Report[​](#the-accounting-transactions-report "Direct link to The Accounting Transactions Report")
+
+Premium clubs have access to a dedicated **Accounting Transactions** report under **Reports → Accounting Transactions**.
+
+The report shows:
+
+* **Date** - Transaction date
+* **Type** - Revenue recognized, Payment initiated, Refund processed, etc.
+* **Account Code** - The account affected
+* **Class Code** - Sub-categorization
+* **Project Code** - Grant/project tracking
+* **Order ID** - Reference to the order (clickable to filter)
+* **Item Type** - Type of item (League, Product, Fee, etc.)
+* **Description** - Item description
+* **Debit** - Debit amount (if applicable)
+* **Credit** - Credit amount (if applicable)
+
+### Filters[​](#filters "Direct link to Filters")
+
+Filter transactions by:
+
+* **Date Range** - From/To dates
+
+* **Order ID** - See all transactions for a specific order
+
+* **Transaction Type:**
+
+  * All Transactions
+  * Revenue Recognition (order submitted)
+  * Cash Receipts (payment received)
+  * Refunds (refund processed)
+
+### Summary Totals[​](#summary-totals "Direct link to Summary Totals")
+
+The report displays:
+
+* **Count** - Total number of transactions
+* **Total Debits** - Sum of all debit entries
+* **Total Credits** - Sum of all credit entries
+* **Balance** - Should always be $0 (debits = credits)
+
+### CSV Export[​](#csv-export "Direct link to CSV Export")
+
+Export to CSV in standard double-entry format for import into:
+
+* QuickBooks Desktop or Online
+* Xero
+* Sage
+* Other accounting software
+
+The CSV includes all columns shown in the report, maintaining the double-entry structure with separate Debit and Credit columns.
+
+## Sequential Payment Allocation & Partial Refunds[​](#sequential-payment-allocation--partial-refunds "Direct link to Sequential Payment Allocation & Partial Refunds")
+
+When a payment is received for an order with multiple items, the system allocates payment sequentially to the smallest items first. This enables accurate partial refund tracking.
+
+**Example:** Order with three items totaling $140.60
+
+* Fee: $5.00
+* Product: $22.60
+* League: $113.00
+
+**Payment of $70 is allocated:**
+
+1. Fee: $5.00 paid in full (100%)
+2. Product: $22.60 paid in full (100%)
+3. League: $42.40 paid (37.5% paid, 62.5% unpaid)
+
+This means you can refund the fee or product in full, even though the order is only partially paid. The system tracks `amount_paid` and `amount_refunded` for each order item.
+
+### Refunding Partially Paid Orders[​](#refunding-partially-paid-orders "Direct link to Refunding Partially Paid Orders")
+
+The sequential allocation system makes partial refunds straightforward:
+
+**Scenario:** Member paid $70 of their $140.60 order, then requests to cancel their product purchase ($22.60).
+
+**Refund process:**
+
+1. Navigate to the order
+2. The product shows as "Paid in full" with refundable amount: $22.60
+3. Process refund for the product
+4. System creates journal entries reversing the product revenue and tax
+5. Refund badge appears showing partial refund status
+
+**What happens with payment allocation:**
+
+* Fee: $5.00 paid, $0 refunded (net: $5.00 paid)
+* Product: $22.60 paid, $22.60 refunded (net: $0 - fully refunded)
+* League: $42.40 paid, $0 refunded (net: $42.40 paid, $70.60 unpaid)
+
+**Accounting entries for refund:**
+
+```
+Revenue reversal:
+DR  Revenue (Product)        $20.00
+DR  HST Payable              $2.60
+CR  Accounts Receivable      $22.60
+
+Cash refund:
+DR  Accounts Receivable      $22.60
+CR  Undeposited Funds        $22.60
+```
+
+### Refundable Amounts in the UI[​](#refundable-amounts-in-the-ui "Direct link to Refundable Amounts in the UI")
+
+When viewing an order, each item displays:
+
+* **Amount Paid** - How much has been paid toward this specific item
+* **Amount Refunded** - How much has been refunded from this item
+* **Refundable Amount** - The net amount available to refund (paid - refunded)
+
+Items that haven't been paid yet show as "Not refundable" and are disabled in the refund form. You can only refund what's been paid.
+
+## Setting Up Accounting Transactions[​](#setting-up-accounting-transactions "Direct link to Setting Up Accounting Transactions")
+
+### Step 1: Upgrade to Premium[​](#step-1-upgrade-to-premium "Direct link to Step 1: Upgrade to Premium")
+
+Accounting transactions require an active Premium subscription. Go to **Club → Premium** to upgrade.
+
+### Step 2: Enable Accounting[​](#step-2-enable-accounting "Direct link to Step 2: Enable Accounting")
+
+1. Go to **Club → Settings**
+
+2. Scroll to **Accounting**
+
+3. Check the box to enable accounting
+
+4. Configure all account codes:
+
+   <!-- -->
+
+   * Revenue codes (Leagues, Bonspiels, Programs, Products, Fees, Venues, Order Adjustments, Convenience Fees)
+   * Balance sheet codes (Accounts Receivable, HST Payable, Undeposited Funds, Cash Account)
+
+5. Save
+
+### Step 3: Start Recording Transactions[​](#step-3-start-recording-transactions "Direct link to Step 3: Start Recording Transactions")
+
+Once enabled, the system automatically creates accounting transactions for:
+
+* New orders submitted (revenue recognition)
+* New payments received (cash receipts)
+* New refunds processed
+
+### Important Limitations[​](#important-limitations "Direct link to Important Limitations")
+
+* **No Historical Data** - Transactions are only recorded from the date you enable accounting forward. Past orders/payments/refunds are not backfilled.
+* **Premium Required** - If your Premium subscription lapses, no new transactions will be recorded (but existing transactions remain accessible).
+* **Immutable Records** - Once recorded, accounting transactions never change. If you modify account codes, only future transactions are affected.
+
+## Best Practices for Accounting Transactions[​](#best-practices-for-accounting-transactions "Direct link to Best Practices for Accounting Transactions")
+
+### Configure Before Enabling[​](#configure-before-enabling "Direct link to Configure Before Enabling")
+
+Plan your account code structure completely before enabling the feature. While you can change codes later, existing transactions won't be updated.
+
+### Review Transaction Types[​](#review-transaction-types "Direct link to Review Transaction Types")
+
+Understand when each transaction type is created:
+
+* **Revenue Recognition** - As soon as order is submitted (even if unpaid)
+* **Cash Receipts** - Only when payment successfully processes
+* **Refunds** - When refund is issued
+
+### Reconcile Regularly[​](#reconcile-regularly "Direct link to Reconcile Regularly")
+
+Use the Accounting Transactions report to:
+
+* Verify debits equal credits
+* Reconcile Accounts Receivable balance
+* Confirm HST Payable matches tax collected
+* Review all transactions for a specific order
+
+### Export Frequently[​](#export-frequently "Direct link to Export Frequently")
+
+Export transactions to CSV regularly for import into your accounting software. The sequential nature of the report makes it easy to export only new transactions since your last import.
+
+### Monitor Accounts Receivable[​](#monitor-accounts-receivable "Direct link to Monitor Accounts Receivable")
+
+The A/R balance represents money owed to your club from unpaid orders. Monitor this balance to:
+
+* Follow up on outstanding payments
+* Identify members with unpaid balances
+* Reconcile against your bank deposits
+
+## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
+
+### Can I change account codes after enabling accounting transactions?[​](#can-i-change-account-codes-after-enabling-accounting-transactions "Direct link to Can I change account codes after enabling accounting transactions?")
+
+Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail.
+
+### What happens if my Premium subscription lapses?[​](#what-happens-if-my-premium-subscription-lapses "Direct link to What happens if my Premium subscription lapses?")
+
+No new accounting transactions will be recorded while your subscription is lapsed. However, all existing transactions remain accessible in your reports. When you renew Premium, transaction recording will resume from that date forward.
+
+### Can I delete orders that have accounting transactions?[​](#can-i-delete-orders-that-have-accounting-transactions "Direct link to Can I delete orders that have accounting transactions?")
+
+You can delete unpaid orders - the system will automatically create reversal transactions to maintain balanced books. Paid orders require refunding before deletion to ensure accurate financial records.
+
+**Tip for testing during offseason:** If you want to submit test orders during the offseason without creating accounting transactions, you can temporarily disable accounting in your Club Settings. However, we don't recommend this approach as you might forget to turn it back on before your season starts!
+
+### How do I reconcile my Accounts Receivable balance?[​](#how-do-i-reconcile-my-accounts-receivable-balance "Direct link to How do I reconcile my Accounts Receivable balance?")
+
+Export the Accounting Transactions report and filter by Account Code 1200 (A/R). Sum all debits (money owed to you) minus all credits (payments received). This balance should match your outstanding orders.
+
+### What if I made a mistake in an order?[​](#what-if-i-made-a-mistake-in-an-order "Direct link to What if I made a mistake in an order?")
+
+Accounting transactions are immutable - you can't edit them. Instead:
+
+* For unpaid orders: Delete the order (creates reversals) and create a new correct order
+* For paid orders: Process a refund, then create a new order if needed
+* This approach maintains a complete audit trail of all changes
+
+### Can I use this with QuickBooks/Xero/Sage?[​](#can-i-use-this-with-quickbooksxerosage "Direct link to Can I use this with QuickBooks/Xero/Sage?")
+
+Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The standard double-entry format (separate Debit and Credit columns) is compatible with most accounting systems.
+
+### Do I need to understand accounting to use this feature?[​](#do-i-need-to-understand-accounting-to-use-this-feature "Direct link to Do I need to understand accounting to use this feature?")
+
+Basic understanding helps, but the system handles the complex accounting automatically. Your accountant can work with the exported CSV files even if you're not familiar with journal entries and double-entry bookkeeping.
+
+## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
+
+* [Accounting Codes](/docs/accounting/accounting-codes.md) - Basic accounting codes setup
+* [Club Settings](/docs/club-management/settings.md) - Configure account codes
+* [Premium Features](/docs/getting-started/premium.md) - Learn about Premium subscription
+* [Reports](/docs/club-management/reports.md) - Other available reports

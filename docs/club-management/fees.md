@@ -74,11 +74,11 @@ For example, a value of 30 means that if someone registers for a league implemen
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a fee.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a fee.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between fee types (e.g., membership vs. capital improvement) or track by age group.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Adding Custom Fields[​](#adding-custom-fields "Direct link to Adding Custom Fields")
 

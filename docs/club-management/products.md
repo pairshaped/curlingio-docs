@@ -106,11 +106,11 @@ We recommend you use this sparingly as it adds another step (friction) to produc
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a product.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a product.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between product categories (e.g., merchandise vs. rentals) or track fundraising campaigns.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Assigning Fees[​](#assigning-fees "Direct link to Assigning Fees")
 

@@ -82,6 +82,25 @@ If your club loses premium access, we won't delete your existing alerts, however
 
 [See our Alerts documentation to learn more.](/docs/club-management/alerts.md)
 
+### Accounting Transactions[​](#accounting-transactions "Direct link to Accounting Transactions")
+
+Premium tier clubs have access to comprehensive double-entry bookkeeping with accrual accounting principles. The system automatically generates detailed journal entries (debits and credits) for every financial event, creating a complete audit trail of your club's financial activity.
+
+**What you get:**
+
+* Full double-entry bookkeeping (every transaction has balanced debits and credits)
+* Accrual accounting (revenue recognized when order placed, not when paid)
+* Automatic journal entries for orders, payments, and refunds
+* Balance sheet tracking (Accounts Receivable, HST Payable, etc.)
+* Dedicated Accounting Transactions report with CSV export
+* Sequential payment allocation with partial refund tracking
+
+All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md) to categorize revenue items. Premium clubs get the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
+
+If your club loses premium access, no new accounting transactions will be recorded, but existing transactions remain accessible in your reports.
+
+[See our Accounting Transactions documentation to learn more.](/docs/accounting/accounting-transactions.md)
+
 ### MailChimp Integration[​](#mailchimp-integration "Direct link to MailChimp Integration")
 
 Premium tier clubs are able to automatically synchronize their curlers with a Mailchimp email marketing account if they choose to. This includes tagging curlers with the events they are registered for. This integration allows clubs to send out targetted email campaigns, like announcing upcoming events.
@@ -117,14 +136,6 @@ Premium tier clubs have access to additional website hosting features.
 #### Banner[​](#banner "Direct link to Banner")
 
 You can upload a banner image that will stretch across pages, articles, and any other sections you like.
-
-#### Themes[​](#themes "Direct link to Themes")
-
-**COMING SOON**
-
-You'll be able to select from several colourful themes and even create your own custom colour scheme.
-
-If your club loses premium access, the default theme will be applied.
 
 #### Sidebar Widgets[​](#sidebar-widgets "Direct link to Sidebar Widgets")
 

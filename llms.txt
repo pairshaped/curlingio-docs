@@ -23,6 +23,11 @@ Acceptance of Terms of this Agreement through Use
 ## docs
 
 
+### accounting
+
+- [Accounting Codes](/docs/accounting/accounting-codes.md): Overview
+- [Accounting Transactions](/docs/accounting/accounting-transactions.md): The accounting transactions system is only available to Premium clubs. All clubs can use basic Accounting Codes, but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription.
+
 ### advanced
 
 - [API](/docs/advanced/api.md): Leagues and Competitions (Events)
@@ -37,7 +42,6 @@ Acceptance of Terms of this Agreement through Use
 
 ### club-management
 
-- [Accounting Codes](/docs/club-management/accounting-codes.md): Overview
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
 - [Calendar](/docs/club-management/calendar.md): Venue / Ice Booking is Premium Only
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.

@@ -23,6 +23,11 @@ Acceptance of Terms of this Agreement through Use
 ## docs
 
 
+### accounting
+
+- [Accounting Codes](/docs/accounting/accounting-codes.md): Overview
+- [Accounting Transactions](/docs/accounting/accounting-transactions.md): The accounting transactions system is only available to Premium clubs. All clubs can use basic Accounting Codes, but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription.
+
 ### advanced
 
 - [API](/docs/advanced/api.md): Leagues and Competitions (Events)
@@ -37,7 +42,6 @@ Acceptance of Terms of this Agreement through Use
 
 ### club-management
 
-- [Accounting Codes](/docs/club-management/accounting-codes.md): Overview
 - [Alerts](/docs/club-management/alerts.md): This is a Premium Only Feature
 - [Calendar](/docs/club-management/calendar.md): Venue / Ice Booking is Premium Only
 - [Club Credits](/docs/club-management/club-credits.md): Club credits allow your users to pay for your leagues, competitions, products, and fees using credit they've accrued.
@@ -341,6 +345,829 @@ Your continued use of the System constitutes affirmative acknowledgement by you 
 If any portion of this Agreement is deemed by any court of competent jurisdiction to be illegal or unenforceable, then the remaining provisions of this Agreement will remain in full force and effect notwithstanding.
 
 You agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to the System or these Terms of Use must be filed within one (1) year after such claim or cause of action arose or be forever barred.
+
+
+---
+
+# Accounting Codes
+
+## Overview[​](#overview "Direct link to Overview")
+
+Curling IO provides two levels of accounting features:
+
+1. **Accounting Codes** (All Plans) - Categorize revenue items with account, class, and project codes that appear in your order items report
+2. **Accounting Transactions** (Premium Only) - Comprehensive double-entry bookkeeping with accrual accounting that generates detailed journal entries for every order, payment, and refund
+
+Most clubs use accounting codes for basic revenue categorization. Premium clubs can enable the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
+
+This document covers **Accounting Codes**, which are available to all clubs. For information about the Premium accounting transactions system, see [Accounting Transactions](/docs/accounting/accounting-transactions.md).
+
+## Accounting Codes (All Plans)[​](#accounting-codes-all-plans "Direct link to Accounting Codes (All Plans)")
+
+Accounting codes allow you to categorize revenue items for reporting. When enabled, you can set default account codes for each type of registration, and optionally add more detailed tracking codes at the item level. These codes appear in your Order Items report and can be exported to CSV.
+
+**Available to:** All clubs
+
+**What you get:**
+
+* Categorize revenue by account, class, and project codes
+* Codes captured at time of purchase
+* Appears in Order Items report
+* CSV export for manual import into accounting software
+
+## When to Use Accounting Codes[​](#when-to-use-accounting-codes "Direct link to When to Use Accounting Codes")
+
+Most clubs either don't need accounting codes at all, or simply set up 8 default codes and never touch individual items. You can add optional sub-categorization at the item level for detailed tracking by demographics, departments, or grant funding.
+
+## The Two-Tier System[​](#the-two-tier-system "Direct link to The Two-Tier System")
+
+### 1. Club-Level Defaults (Simple)[​](#1-club-level-defaults-simple "Direct link to 1. Club-Level Defaults (Simple)")
+
+Set default account codes in [Club Settings](/docs/club-management/settings.md) for each type of registration:
+
+* **Leagues** - Individual league registrations (e.g., 1000)
+* **Bonspiels** - Competition/bonspiel registrations (e.g., 2000)
+* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 3000)
+* **Products** - Pro shop items and merchandise (e.g., 4000)
+* **Fees** - Membership and other fees (e.g., 5000)
+* **Venues** - Venue rental revenue (e.g., 6000)
+* **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)
+* **Convenience Fees** - Processing and service fees charged on orders (e.g., 8000)
+
+These codes will automatically apply to all items of that type unless you override them.
+
+**Tip:** Account codes typically match your chart of accounts in QuickBooks, Sage, or other accounting software. Use the same codes you have in your accounting system for seamless reporting and integration.
+
+### 2. Item-Level Overrides (Advanced)[​](#2-item-level-overrides-advanced "Direct link to 2. Item-Level Overrides (Advanced)")
+
+For more detailed tracking, you can add codes to individual items:
+
+* **Leagues and Competitions** - Track by demographics (MENS, WOMENS, JUNIOR), skill level, or special events
+* **Products** - Separate merchandise from rentals, track fundraising campaigns
+* **Fees** - Differentiate membership types or age groups
+* **Programs** - Track Learn to Curl vs training camps, grant-funded programs
+
+## The Three Code Types[​](#the-three-code-types "Direct link to The Three Code Types")
+
+### Account Code[​](#account-code "Direct link to Account Code")
+
+**Purpose:** Primary revenue or expense category from your chart of accounts
+
+**When to override:**
+
+* Use a special account for charity events
+* Separate different product categories (merchandise vs rentals)
+* Track different fee types (membership vs capital improvement)
+
+**Examples:** `1000`, `2000`, `3000`, `4000`, `5000`
+
+**Leave blank** to use the club default (recommended for most items)
+
+### Class Code (Optional)[​](#class-code-optional "Direct link to Class Code (Optional)")
+
+Sub-category for tracking by department, demographic, or program type. Typically maps to Class in QuickBooks and Category in Xero.
+
+**Common examples:**
+
+* Demographics: `MENS`, `WOMENS`, `JUNIOR`, `SENIOR`, `MIXED`
+* Skill level: `COMPETITIVE`, `RECREATIONAL`, `BEGINNER`, `ADVANCED`
+* Program type: `LEARN2CURL`, `TRAINING`, `CAMP`, `VOLUNTEER`
+* Product type: `PROSHOP`, `RENTAL`, `MERCHANDISE`, `APPAREL`, `EQUIPMENT`
+* Fee type: `ADULT`, `JUNIOR`, `STUDENT`, `AFFILIATE`
+
+### Project Code (Optional)[​](#project-code-optional "Direct link to Project Code (Optional)")
+
+Track specific grants, fundraisers, or special initiatives. Typically maps to Location or Project in QuickBooks and Category in Xero.
+
+**Common examples:**
+
+* Grants: `GRANT_2024`, `YOUTH_DEVELOPMENT`, `ACCESSIBILITY_GRANT`
+* Fundraising: `CAPITAL_CAMPAIGN_2024`, `FUNDRAISER_2024`
+* Initiatives: `GROW_THE_GAME`, `COACH_TRAINING`, `FACILITY_UPGRADE`
+
+## Understanding Order Items vs Payments[​](#understanding-order-items-vs-payments "Direct link to Understanding Order Items vs Payments")
+
+Accounting codes are assigned to **order items**, not payments. When a member checks out, they typically purchase multiple items in their cart:
+
+* A league registration
+* Affiliate fees (provincial and national)
+* Membership fees
+* Add-ons like lockers
+* Additional leagues for their children
+
+A single payment covers all these items, but each item gets its own accounting codes. For example, in one checkout:
+
+* League registration → Account: 1000, Class: MENS
+* Provincial Fee → Account: 5000, Class: AFFILIATE
+* Membership Fee → Account: 5100
+* Locker → Account: 4000, Class: RENTAL
+
+This item-level detail allows you to properly categorize revenue in your accounting software, even though the member only made one payment. Your order item reports will show each item separately with its corresponding codes, making it easy to track revenue by category.
+
+## How Codes Are Captured[​](#how-codes-are-captured "Direct link to How Codes Are Captured")
+
+When a member completes a registration or purchase, Curling IO captures the accounting codes at that moment and stores them with the order item. The codes are captured once and don't change, even if you later modify the item's codes. This ensures historical accuracy in your financial records.
+
+These codes then appear in your order item reports and can be exported for use in your accounting software.
+
+## Common Use Cases[​](#common-use-cases "Direct link to Common Use Cases")
+
+### Basic Club (Most Common)[​](#basic-club-most-common "Direct link to Basic Club (Most Common)")
+
+**Setup:**
+
+* Enable accounting in Club Settings
+* Set 8 default account codes
+* Never touch individual items
+
+**Result:** All revenue automatically categorized by type with zero ongoing effort
+
+### Intermediate Club - Demographics[​](#intermediate-club---demographics "Direct link to Intermediate Club - Demographics")
+
+**Need:** Track league revenue by gender for board reporting
+
+**Setup:**
+
+* Set club default for leagues (1000)
+
+* Edit each league to add class codes:
+
+  <!-- -->
+
+  * Men's League → Class: `MENS`
+  * Women's League → Class: `WOMENS`
+  * Mixed League → Class: `MIXED`
+
+**Result:** All leagues use account 1000, but can report separately by gender
+
+### Advanced Club - Grant Tracking[​](#advanced-club---grant-tracking "Direct link to Advanced Club - Grant Tracking")
+
+**Need:** Report on grant-funded youth development program
+
+**Setup:**
+
+* Set club default for programs (3000)
+
+* Edit program:
+
+  <!-- -->
+
+  * Leave account blank (uses default 3000)
+  * Set class code: `JUNIOR`
+  * Set project code: `GRANT_2024`
+
+**Result:** Easy to filter and report all grant-funded youth program revenue
+
+### Sophisticated Club - Multiple Categories[​](#sophisticated-club---multiple-categories "Direct link to Sophisticated Club - Multiple Categories")
+
+**Need:** Separate merchandise from rentals, track fundraising campaigns
+
+**Setup:**
+
+* Products with different accounts:
+
+  <!-- -->
+
+  * Pro shop items: Account `4100`, Class `MERCHANDISE`
+  * Equipment rentals: Account `4200`, Class `RENTAL`
+  * Fundraising items: Account `4300`, Project `CAPITAL_CAMPAIGN_2024`
+
+**Result:** Complete separation and tracking across multiple dimensions
+
+## Setting Up Accounting Codes[​](#setting-up-accounting-codes "Direct link to Setting Up Accounting Codes")
+
+### Step 1: Enable the Feature[​](#step-1-enable-the-feature "Direct link to Step 1: Enable the Feature")
+
+1. Go to **Club → Settings**
+2. Scroll to the **Accounting** section
+3. Check the box to enable accounting
+4. Save
+
+### Step 2: Set Default Codes[​](#step-2-set-default-codes "Direct link to Step 2: Set Default Codes")
+
+In the same section, set default account codes for each type:
+
+![Accounting Codes Defaults](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
+
+1. **Leagues** - e.g., 1000
+2. **Bonspiels** - e.g., 2000
+3. **Programs** - e.g., 3000
+4. **Products** - e.g., 4000
+5. **Fees** - e.g., 5000
+6. **Venues** - e.g., 6000
+7. **Order Adjustments** - e.g., 7000
+8. **Convenience Fees** - e.g., 8000
+
+Use codes that match your accounting software's chart of accounts.
+
+### Step 3: Add Item-Level Codes (Optional)[​](#step-3-add-item-level-codes-optional "Direct link to Step 3: Add Item-Level Codes (Optional)")
+
+For more detailed tracking, edit individual items:
+
+**Leagues and Competitions:**
+
+1. Edit the league or competition
+2. Scroll to the **Accounting Codes** section
+3. Add Account Code (override), Class Code, or Project Code as needed
+4. Save
+
+![Accounting Codes Per Item](/assets/images/accounting-codes-per-item-bd57dc0e38b5a9e094b4cfca6b77afa6.png)
+
+**Products, Fees, and Programs:** Follow the same process in each item's edit form.
+
+## Reporting and Exporting[​](#reporting-and-exporting "Direct link to Reporting and Exporting")
+
+### Order Items Report[​](#order-items-report "Direct link to Order Items Report")
+
+All accounting codes appear in your order items report:
+
+1. Go to **Reports → Order Items**
+2. Use filters to find specific codes
+3. Export to CSV for import into your accounting software
+
+The CSV export includes columns for:
+
+* Account Code
+* Class Code
+* Project Code
+
+## Best Practices[​](#best-practices "Direct link to Best Practices")
+
+### Keep It Simple[​](#keep-it-simple "Direct link to Keep It Simple")
+
+Start with just the 8 club defaults. Only add item-level codes if you have a specific reporting need.
+
+### Use Consistent Naming[​](#use-consistent-naming "Direct link to Use Consistent Naming")
+
+Establish a standard for class and project codes:
+
+* Use UPPER\_CASE for consistency
+* Keep codes short but descriptive
+* Document your codes for other administrators
+
+### Examples:[​](#examples "Direct link to Examples:")
+
+* ✅ Good: `MENS`, `WOMENS`, `JUNIOR`, `GRANT_2024`
+* ❌ Avoid: `men's`, `Women`, `jr`, `grant`
+
+### Plan Before You Start[​](#plan-before-you-start "Direct link to Plan Before You Start")
+
+Before enabling accounting codes:
+
+1. Review your accounting software's chart of accounts
+2. Decide which account codes to use for each type
+3. Determine if you need class or project tracking
+4. Document your code structure
+
+### Don't Overcomplicate[​](#dont-overcomplicate "Direct link to Don't Overcomplicate")
+
+You can't change codes after purchase, so:
+
+* Start simple and add complexity only when needed
+* Most clubs only need account codes, not class/project
+* Consider if you'll actually use the granularity before adding it
+
+## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
+
+### Can I change codes after a purchase is made?[​](#can-i-change-codes-after-a-purchase-is-made "Direct link to Can I change codes after a purchase is made?")
+
+No. Codes are captured at the moment of purchase and become part of the historical record. This ensures accuracy in your financial reports. If you need to change how future purchases are categorized, update the codes on the item itself.
+
+**For Premium clubs with accounting transactions enabled:** Any changes to account codes in Club Settings or on individual items will only affect new transactions going forward. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail. See [Accounting Transactions](/docs/accounting/accounting-transactions.md) for more details.
+
+### What happens if I don't set any codes?[​](#what-happens-if-i-dont-set-any-codes "Direct link to What happens if I don't set any codes?")
+
+Items will have blank/null accounting codes in reports. This makes it visible which items don't have codes assigned, rather than incorrectly assigning them to a default category.
+
+### Do I need to use all three code types?[​](#do-i-need-to-use-all-three-code-types "Direct link to Do I need to use all three code types?")
+
+No. Most clubs only use account codes. Class and project codes are optional and should only be used if you have specific tracking needs.
+
+### Can I use the same class or project code across different item types?[​](#can-i-use-the-same-class-or-project-code-across-different-item-types "Direct link to Can I use the same class or project code across different item types?")
+
+Yes! For example, you might use `JUNIOR` as a class code for both leagues and fees to track all junior-related revenue across categories.
+
+### What if my accounting software doesn't support class or project tracking?[​](#what-if-my-accounting-software-doesnt-support-class-or-project-tracking "Direct link to What if my accounting software doesn't support class or project tracking?")
+
+Just use account codes. The class and project codes will be in your exports but you can ignore them if your accounting system doesn't use them.
+
+### How do I track codes for inherited fees (provincial/national)?[​](#how-do-i-track-codes-for-inherited-fees-provincialnational "Direct link to How do I track codes for inherited fees (provincial/national)?")
+
+Inherited fees (like provincial and national affiliation fees) automatically use your club's default fee account code. Any codes set on the inherited fee itself are ignored. If you want to categorize inherited fees differently, set a specific fee account code in your Club Settings, and all inherited fees will use that code.
+
+## Premium Accounting Transactions[​](#premium-accounting-transactions "Direct link to Premium Accounting Transactions")
+
+For Premium clubs, Curling IO offers a comprehensive **Accounting Transactions** system that provides full double-entry bookkeeping with accrual accounting principles. Instead of just tagging revenue items with codes, the system automatically generates detailed journal entries (debits and credits) for every financial event.
+
+Learn more: [Accounting Transactions](/docs/accounting/accounting-transactions.md)
+
+## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
+
+* [Accounting Transactions](/docs/accounting/accounting-transactions.md) - Premium double-entry bookkeeping system
+* [Club Settings](/docs/club-management/settings.md) - Enable accounting features
+* [Leagues & Competitions](/docs/club-management/leagues.md) - Add codes to events
+* [Products](/docs/club-management/products.md) - Add codes to products
+* [Fees](/docs/club-management/fees.md) - Add codes to fees
+* [Programs](/docs/club-management/programs.md) - Add codes to programs
+
+
+---
+
+# Accounting Transactions
+
+Premium Feature
+
+The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription.
+
+## Overview[​](#overview "Direct link to Overview")
+
+The accounting transactions system provides comprehensive double-entry bookkeeping with accrual accounting principles. Instead of just tagging revenue items with codes, the system automatically generates detailed journal entries (debits and credits) for every financial event in your club.
+
+**What you get:**
+
+* Full double-entry bookkeeping (every transaction has balanced debits and credits)
+* Accrual accounting (revenue recognized when order placed, not when paid)
+* Automatic journal entries for orders, payments, and refunds
+* Balance sheet tracking (Accounts Receivable, HST Payable, etc.)
+* Dedicated Accounting Transactions report
+* CSV export in standard double-entry format
+* Sequential payment allocation with partial refund tracking
+
+**Important:** Accounting transactions are only recorded while you have an active Premium subscription. Historical data is not available if you upgrade later - transactions are only tracked from the date accounting codes are enabled forward.
+
+## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
+
+Before enabling accounting transactions, you should first understand [Accounting Codes](/docs/accounting/accounting-codes.md). The accounting transactions system builds on accounting codes by adding full journal entries and balance sheet tracking.
+
+## Accrual Accounting Principles[​](#accrual-accounting-principles "Direct link to Accrual Accounting Principles")
+
+Traditional cash-basis accounting records revenue when you receive payment. Accrual accounting recognizes revenue when it's earned (when the order is placed), giving you a more accurate picture of your club's financial position.
+
+**Example:**
+
+* Member registers for a $100 league on January 15
+* Member pays $50 on January 20
+* Member pays remaining $50 on February 10
+
+**Cash-basis accounting** would show:
+
+* January: $50 revenue
+* February: $50 revenue
+
+**Accrual accounting** (what Curling IO uses) shows:
+
+* January 15: $100 revenue recognized, $100 Accounts Receivable created
+* January 20: $50 cash received, $50 Accounts Receivable reduced
+* February 10: $50 cash received, $50 Accounts Receivable reduced
+
+This approach shows you owe $100 in revenue in January, even though you haven't collected it all yet.
+
+## Double-Entry Bookkeeping[​](#double-entry-bookkeeping "Direct link to Double-Entry Bookkeeping")
+
+Every transaction creates balanced journal entries where debits equal credits. This is the foundation of professional accounting and ensures your books always balance.
+
+**Example:** Member purchases a $113 league registration (includes $13 HST)
+
+```
+Journal Entry:
+DR  Accounts Receivable        $113.00
+CR  Revenue (Account 1000)     $100.00
+CR  HST Payable                $13.00
+```
+
+When they pay:
+
+```
+Journal Entry:
+DR  Undeposited Funds       $113.00
+CR  Accounts Receivable     $113.00
+```
+
+## Balance Sheet Account Codes[​](#balance-sheet-account-codes "Direct link to Balance Sheet Account Codes")
+
+In addition to revenue account codes (4000 series), the system uses balance sheet accounts to track assets and liabilities:
+
+### Assets (Debit accounts)[​](#assets-debit-accounts "Direct link to Assets (Debit accounts)")
+
+* **Accounts Receivable (1200)** - Money owed to the club from unpaid or partially-paid orders
+* **Undeposited Funds** - Payments received but not yet deposited to bank
+* **Cash Account** - Your actual bank account balance
+
+### Liabilities (Credit accounts)[​](#liabilities-credit-accounts "Direct link to Liabilities (Credit accounts)")
+
+* **HST Payable (2110)** - Sales tax collected that must be remitted to government
+
+These accounts are configured in **Club → Settings** and cannot be overridden at the item level.
+
+## Tax Handling[​](#tax-handling "Direct link to Tax Handling")
+
+The accounting transactions system automatically tracks all sales taxes (HST, GST, PST) as liabilities that need to be remitted to the government.
+
+### How Tax is Recorded[​](#how-tax-is-recorded "Direct link to How Tax is Recorded")
+
+When an order is placed, taxes are recorded in the **HST Payable** liability account:
+
+```
+DR  Accounts Receivable     $113.00
+CR  Revenue                 $100.00
+CR  HST Payable (2110)      $13.00
+```
+
+This creates a liability - the club owes $13.00 to the government. When you remit taxes quarterly or annually, your accountant will use this HST Payable balance.
+
+### Multiple Tax Rates[​](#multiple-tax-rates "Direct link to Multiple Tax Rates")
+
+If your club charges multiple tax rates (e.g., GST + PST, or different HST rates for different provinces), all taxes flow into the single HST Payable account. The system tracks the breakdown:
+
+**Example:** $100 item with 5% GST and 7% PST
+
+```
+DR  Accounts Receivable     $112.00
+CR  Revenue                 $100.00
+CR  HST Payable             $12.00
+```
+
+Your Order Items report shows the tax breakdown per item (tax1\_amount, tax2\_amount), but the accounting transactions combine them into one liability account for simplicity.
+
+### Tax on Refunds[​](#tax-on-refunds "Direct link to Tax on Refunds")
+
+When you refund an item, the tax liability is reduced:
+
+```
+DR  Revenue                 $100.00
+DR  HST Payable             $13.00
+CR  Accounts Receivable     $113.00
+```
+
+This reduces your HST Payable balance, since you're no longer collecting that tax from the member.
+
+### Tax-Exempt Items[​](#tax-exempt-items "Direct link to Tax-Exempt Items")
+
+Items with no tax (tax-exempt products, services, etc.) simply don't create HST Payable entries:
+
+```
+DR  Accounts Receivable     $100.00
+CR  Revenue                 $100.00
+```
+
+The system automatically handles this based on your tax settings for each item.
+
+### Reconciling Tax Payable[​](#reconciling-tax-payable "Direct link to Reconciling Tax Payable")
+
+Your HST Payable account balance represents the total tax you've collected and owe to the government. To reconcile:
+
+1. Export the Accounting Transactions report
+2. Filter by Account Code: 2110 (HST Payable)
+3. Sum all credits (tax collected) minus all debits (tax refunded)
+4. This balance should match your tax filing
+
+**Example balance calculation:**
+
+* Credits (tax collected): $15,600
+* Debits (tax refunded): -$780
+* **Net HST Payable: $14,820**
+
+This is the amount you owe for the reporting period.
+
+## Transaction Types[​](#transaction-types "Direct link to Transaction Types")
+
+The system creates different types of accounting transactions for different financial events.
+
+### 1. Revenue Recognition (Order Submitted)[​](#1-revenue-recognition-order-submitted "Direct link to 1. Revenue Recognition (Order Submitted)")
+
+When a member submits an order, revenue is recognized immediately:
+
+```
+DR  Accounts Receivable     (Total order amount)
+CR  Revenue (by item)       (Item subtotals using your account codes)
+CR  HST Payable             (Tax amounts)
+```
+
+**Example:** Order with $100 league + $13 HST
+
+| Date       | Type               | Account               | Debit   | Credit  |
+| ---------- | ------------------ | --------------------- | ------- | ------- |
+| 2025-01-15 | Revenue recognized | 1200 (A/R)            | $113.00 |         |
+| 2025-01-15 | Revenue recognized | 4010 (League Revenue) |         | $100.00 |
+| 2025-01-15 | HST charged        | 2110 (HST Payable)    |         | $13.00  |
+
+### 2. Cash Receipts (Payment Succeeded)[​](#2-cash-receipts-payment-succeeded "Direct link to 2. Cash Receipts (Payment Succeeded)")
+
+When a payment is received, cash is recorded and Accounts Receivable is reduced:
+
+```
+DR  Undeposited Funds       (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+Payments are allocated to order items sequentially (smallest items paid first), which enables accurate partial refund tracking.
+
+**Example:** $113 payment received
+
+| Date       | Type              | Account           | Debit   | Credit  |
+| ---------- | ----------------- | ----------------- | ------- | ------- |
+| 2025-01-20 | Payment initiated | Undeposited Funds | $113.00 |         |
+| 2025-01-20 | Payment initiated | 1200 (A/R)        |         | $113.00 |
+
+### 3. Refunds (Refund Processed)[​](#3-refunds-refund-processed "Direct link to 3. Refunds (Refund Processed)")
+
+When a refund is issued, the system creates reversal entries:
+
+```
+DR  Revenue (by item)       (Refunded amounts)
+DR  HST Payable             (Refunded tax)
+CR  Accounts Receivable     (Total refund)
+
+DR  Accounts Receivable     (Total refund)
+CR  Undeposited Funds       (Total refund)
+```
+
+### 4. Order/Item Deletion[​](#4-orderitem-deletion "Direct link to 4. Order/Item Deletion")
+
+When a club deletes an order or order item, the system automatically creates reversal transactions to maintain balanced books.
+
+**For submitted but unpaid orders:**
+
+If you delete an order that was submitted but never paid, the system reverses the revenue recognition entries:
+
+```
+DR  Revenue (by item)       (Item amounts)
+DR  HST Payable             (Tax amounts)
+CR  Accounts Receivable     (Total order)
+```
+
+This removes the revenue and Accounts Receivable that were created when the order was submitted.
+
+**For paid orders:**
+
+Deleting paid orders or individual items requires processing refunds first. The system prevents deletion of paid items to maintain accurate financial records.
+
+**Why this matters:** This ensures your Accounts Receivable balance stays accurate. If a member cancels before paying, deleting the order removes the receivable without requiring a formal refund process.
+
+### 5. Deposit Processing[​](#5-deposit-processing "Direct link to 5. Deposit Processing")
+
+When online payments (Stripe, SportsPay) are received, they initially go to **Undeposited Funds**. When your payment processor deposits funds to your bank account, you can record the deposit:
+
+**Automatic (Stripe/SportsPay):**
+
+For clubs using Stripe or SportsPay, deposits are automatically recorded when payouts are processed:
+
+```
+DR  Cash Account          (Deposit amount)
+CR  Undeposited Funds     (Deposit amount)
+```
+
+The system tracks which payments are included in each payout, maintaining a clear audit trail from payment → undeposited funds → cash account.
+
+**Manual Recording:**
+
+Some clubs prefer to manage deposits manually, matching to their bank statements. This flexibility allows you to reconcile deposits however your accountant prefers.
+
+### 6. Offline Payments[​](#6-offline-payments "Direct link to 6. Offline Payments")
+
+When a club records an offline payment (cash, check, e-transfer recorded manually), the accounting treatment is the same as online payments:
+
+```
+DR  Undeposited Funds       (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+However, offline payments go directly to your **Cash Account** if you mark them as "Already Deposited" when recording them:
+
+```
+DR  Cash Account            (Payment amount)
+CR  Accounts Receivable     (Payment amount)
+```
+
+This provides flexibility for clubs that receive cash/checks and deposit them immediately, versus clubs that batch deposits weekly or monthly.
+
+## The Accounting Transactions Report[​](#the-accounting-transactions-report "Direct link to The Accounting Transactions Report")
+
+Premium clubs have access to a dedicated **Accounting Transactions** report under **Reports → Accounting Transactions**.
+
+The report shows:
+
+* **Date** - Transaction date
+* **Type** - Revenue recognized, Payment initiated, Refund processed, etc.
+* **Account Code** - The account affected
+* **Class Code** - Sub-categorization
+* **Project Code** - Grant/project tracking
+* **Order ID** - Reference to the order (clickable to filter)
+* **Item Type** - Type of item (League, Product, Fee, etc.)
+* **Description** - Item description
+* **Debit** - Debit amount (if applicable)
+* **Credit** - Credit amount (if applicable)
+
+### Filters[​](#filters "Direct link to Filters")
+
+Filter transactions by:
+
+* **Date Range** - From/To dates
+
+* **Order ID** - See all transactions for a specific order
+
+* **Transaction Type:**
+
+  * All Transactions
+  * Revenue Recognition (order submitted)
+  * Cash Receipts (payment received)
+  * Refunds (refund processed)
+
+### Summary Totals[​](#summary-totals "Direct link to Summary Totals")
+
+The report displays:
+
+* **Count** - Total number of transactions
+* **Total Debits** - Sum of all debit entries
+* **Total Credits** - Sum of all credit entries
+* **Balance** - Should always be $0 (debits = credits)
+
+### CSV Export[​](#csv-export "Direct link to CSV Export")
+
+Export to CSV in standard double-entry format for import into:
+
+* QuickBooks Desktop or Online
+* Xero
+* Sage
+* Other accounting software
+
+The CSV includes all columns shown in the report, maintaining the double-entry structure with separate Debit and Credit columns.
+
+## Sequential Payment Allocation & Partial Refunds[​](#sequential-payment-allocation--partial-refunds "Direct link to Sequential Payment Allocation & Partial Refunds")
+
+When a payment is received for an order with multiple items, the system allocates payment sequentially to the smallest items first. This enables accurate partial refund tracking.
+
+**Example:** Order with three items totaling $140.60
+
+* Fee: $5.00
+* Product: $22.60
+* League: $113.00
+
+**Payment of $70 is allocated:**
+
+1. Fee: $5.00 paid in full (100%)
+2. Product: $22.60 paid in full (100%)
+3. League: $42.40 paid (37.5% paid, 62.5% unpaid)
+
+This means you can refund the fee or product in full, even though the order is only partially paid. The system tracks `amount_paid` and `amount_refunded` for each order item.
+
+### Refunding Partially Paid Orders[​](#refunding-partially-paid-orders "Direct link to Refunding Partially Paid Orders")
+
+The sequential allocation system makes partial refunds straightforward:
+
+**Scenario:** Member paid $70 of their $140.60 order, then requests to cancel their product purchase ($22.60).
+
+**Refund process:**
+
+1. Navigate to the order
+2. The product shows as "Paid in full" with refundable amount: $22.60
+3. Process refund for the product
+4. System creates journal entries reversing the product revenue and tax
+5. Refund badge appears showing partial refund status
+
+**What happens with payment allocation:**
+
+* Fee: $5.00 paid, $0 refunded (net: $5.00 paid)
+* Product: $22.60 paid, $22.60 refunded (net: $0 - fully refunded)
+* League: $42.40 paid, $0 refunded (net: $42.40 paid, $70.60 unpaid)
+
+**Accounting entries for refund:**
+
+```
+Revenue reversal:
+DR  Revenue (Product)        $20.00
+DR  HST Payable              $2.60
+CR  Accounts Receivable      $22.60
+
+Cash refund:
+DR  Accounts Receivable      $22.60
+CR  Undeposited Funds        $22.60
+```
+
+### Refundable Amounts in the UI[​](#refundable-amounts-in-the-ui "Direct link to Refundable Amounts in the UI")
+
+When viewing an order, each item displays:
+
+* **Amount Paid** - How much has been paid toward this specific item
+* **Amount Refunded** - How much has been refunded from this item
+* **Refundable Amount** - The net amount available to refund (paid - refunded)
+
+Items that haven't been paid yet show as "Not refundable" and are disabled in the refund form. You can only refund what's been paid.
+
+## Setting Up Accounting Transactions[​](#setting-up-accounting-transactions "Direct link to Setting Up Accounting Transactions")
+
+### Step 1: Upgrade to Premium[​](#step-1-upgrade-to-premium "Direct link to Step 1: Upgrade to Premium")
+
+Accounting transactions require an active Premium subscription. Go to **Club → Premium** to upgrade.
+
+### Step 2: Enable Accounting[​](#step-2-enable-accounting "Direct link to Step 2: Enable Accounting")
+
+1. Go to **Club → Settings**
+
+2. Scroll to **Accounting**
+
+3. Check the box to enable accounting
+
+4. Configure all account codes:
+
+   <!-- -->
+
+   * Revenue codes (Leagues, Bonspiels, Programs, Products, Fees, Venues, Order Adjustments, Convenience Fees)
+   * Balance sheet codes (Accounts Receivable, HST Payable, Undeposited Funds, Cash Account)
+
+5. Save
+
+### Step 3: Start Recording Transactions[​](#step-3-start-recording-transactions "Direct link to Step 3: Start Recording Transactions")
+
+Once enabled, the system automatically creates accounting transactions for:
+
+* New orders submitted (revenue recognition)
+* New payments received (cash receipts)
+* New refunds processed
+
+### Important Limitations[​](#important-limitations "Direct link to Important Limitations")
+
+* **No Historical Data** - Transactions are only recorded from the date you enable accounting forward. Past orders/payments/refunds are not backfilled.
+* **Premium Required** - If your Premium subscription lapses, no new transactions will be recorded (but existing transactions remain accessible).
+* **Immutable Records** - Once recorded, accounting transactions never change. If you modify account codes, only future transactions are affected.
+
+## Best Practices for Accounting Transactions[​](#best-practices-for-accounting-transactions "Direct link to Best Practices for Accounting Transactions")
+
+### Configure Before Enabling[​](#configure-before-enabling "Direct link to Configure Before Enabling")
+
+Plan your account code structure completely before enabling the feature. While you can change codes later, existing transactions won't be updated.
+
+### Review Transaction Types[​](#review-transaction-types "Direct link to Review Transaction Types")
+
+Understand when each transaction type is created:
+
+* **Revenue Recognition** - As soon as order is submitted (even if unpaid)
+* **Cash Receipts** - Only when payment successfully processes
+* **Refunds** - When refund is issued
+
+### Reconcile Regularly[​](#reconcile-regularly "Direct link to Reconcile Regularly")
+
+Use the Accounting Transactions report to:
+
+* Verify debits equal credits
+* Reconcile Accounts Receivable balance
+* Confirm HST Payable matches tax collected
+* Review all transactions for a specific order
+
+### Export Frequently[​](#export-frequently "Direct link to Export Frequently")
+
+Export transactions to CSV regularly for import into your accounting software. The sequential nature of the report makes it easy to export only new transactions since your last import.
+
+### Monitor Accounts Receivable[​](#monitor-accounts-receivable "Direct link to Monitor Accounts Receivable")
+
+The A/R balance represents money owed to your club from unpaid orders. Monitor this balance to:
+
+* Follow up on outstanding payments
+* Identify members with unpaid balances
+* Reconcile against your bank deposits
+
+## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
+
+### Can I change account codes after enabling accounting transactions?[​](#can-i-change-account-codes-after-enabling-accounting-transactions "Direct link to Can I change account codes after enabling accounting transactions?")
+
+Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail.
+
+### What happens if my Premium subscription lapses?[​](#what-happens-if-my-premium-subscription-lapses "Direct link to What happens if my Premium subscription lapses?")
+
+No new accounting transactions will be recorded while your subscription is lapsed. However, all existing transactions remain accessible in your reports. When you renew Premium, transaction recording will resume from that date forward.
+
+### Can I delete orders that have accounting transactions?[​](#can-i-delete-orders-that-have-accounting-transactions "Direct link to Can I delete orders that have accounting transactions?")
+
+You can delete unpaid orders - the system will automatically create reversal transactions to maintain balanced books. Paid orders require refunding before deletion to ensure accurate financial records.
+
+**Tip for testing during offseason:** If you want to submit test orders during the offseason without creating accounting transactions, you can temporarily disable accounting in your Club Settings. However, we don't recommend this approach as you might forget to turn it back on before your season starts!
+
+### How do I reconcile my Accounts Receivable balance?[​](#how-do-i-reconcile-my-accounts-receivable-balance "Direct link to How do I reconcile my Accounts Receivable balance?")
+
+Export the Accounting Transactions report and filter by Account Code 1200 (A/R). Sum all debits (money owed to you) minus all credits (payments received). This balance should match your outstanding orders.
+
+### What if I made a mistake in an order?[​](#what-if-i-made-a-mistake-in-an-order "Direct link to What if I made a mistake in an order?")
+
+Accounting transactions are immutable - you can't edit them. Instead:
+
+* For unpaid orders: Delete the order (creates reversals) and create a new correct order
+* For paid orders: Process a refund, then create a new order if needed
+* This approach maintains a complete audit trail of all changes
+
+### Can I use this with QuickBooks/Xero/Sage?[​](#can-i-use-this-with-quickbooksxerosage "Direct link to Can I use this with QuickBooks/Xero/Sage?")
+
+Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The standard double-entry format (separate Debit and Credit columns) is compatible with most accounting systems.
+
+### Do I need to understand accounting to use this feature?[​](#do-i-need-to-understand-accounting-to-use-this-feature "Direct link to Do I need to understand accounting to use this feature?")
+
+Basic understanding helps, but the system handles the complex accounting automatically. Your accountant can work with the exported CSV files even if you're not familiar with journal entries and double-entry bookkeeping.
+
+## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
+
+* [Accounting Codes](/docs/accounting/accounting-codes.md) - Basic accounting codes setup
+* [Club Settings](/docs/club-management/settings.md) - Configure account codes
+* [Premium Features](/docs/getting-started/premium.md) - Learn about Premium subscription
+* [Reports](/docs/club-management/reports.md) - Other available reports
 
 
 ---
@@ -849,301 +1676,6 @@ Replacing **en** with **fr** will fetch the french version.
   "add_to_cart_text": "Register"
 }
 ```
-
-
----
-
-# Accounting Codes
-
-## Overview[​](#overview "Direct link to Overview")
-
-Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage. When enabled, you can set default account codes for each type of registration, and optionally add more detailed tracking codes at the item level.
-
-## When to Use Accounting Codes[​](#when-to-use-accounting-codes "Direct link to When to Use Accounting Codes")
-
-Most clubs either don't need accounting codes at all, or simply set up 6 default codes and never touch individual items. You can add optional sub-categorization at the item level for detailed tracking by demographics, departments, or grant funding.
-
-## The Two-Tier System[​](#the-two-tier-system "Direct link to The Two-Tier System")
-
-### 1. Club-Level Defaults (Simple)[​](#1-club-level-defaults-simple "Direct link to 1. Club-Level Defaults (Simple)")
-
-Set default account codes in [Club Settings](/docs/club-management/settings.md) for each type of registration:
-
-* **Leagues** - Individual league registrations (e.g., 1000)
-* **Bonspiels** - Competition/bonspiel registrations (e.g., 2000)
-* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 3000)
-* **Products** - Pro shop items and merchandise (e.g., 4000)
-* **Fees** - Membership and other fees (e.g., 5000)
-* **Venues** - Venue rental revenue (e.g., 6000)
-* **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)
-* **Convenience Fees** - Processing and service fees charged on orders (e.g., 8000)
-
-These codes will automatically apply to all items of that type unless you override them.
-
-**Tip:** Account codes typically match your chart of accounts in QuickBooks, Sage, or other accounting software. Use the same codes you have in your accounting system for seamless reporting and integration.
-
-### 2. Item-Level Overrides (Advanced)[​](#2-item-level-overrides-advanced "Direct link to 2. Item-Level Overrides (Advanced)")
-
-For more detailed tracking, you can add codes to individual items:
-
-* **Leagues and Competitions** - Track by demographics (MENS, WOMENS, JUNIOR), skill level, or special events
-* **Products** - Separate merchandise from rentals, track fundraising campaigns
-* **Fees** - Differentiate membership types or age groups
-* **Programs** - Track Learn to Curl vs training camps, grant-funded programs
-
-## The Three Code Types[​](#the-three-code-types "Direct link to The Three Code Types")
-
-### Account Code[​](#account-code "Direct link to Account Code")
-
-**Purpose:** Primary revenue or expense category from your chart of accounts
-
-**When to override:**
-
-* Use a special account for charity events
-* Separate different product categories (merchandise vs rentals)
-* Track different fee types (membership vs capital improvement)
-
-**Examples:** `1000`, `2000`, `3000`, `4000`, `5000`
-
-**Leave blank** to use the club default (recommended for most items)
-
-### Class Code (Optional)[​](#class-code-optional "Direct link to Class Code (Optional)")
-
-Sub-category for tracking by department, demographic, or program type. Typically maps to Class in QuickBooks and Category in Xero.
-
-**Common examples:**
-
-* Demographics: `MENS`, `WOMENS`, `JUNIOR`, `SENIOR`, `MIXED`
-* Skill level: `COMPETITIVE`, `RECREATIONAL`, `BEGINNER`, `ADVANCED`
-* Program type: `LEARN2CURL`, `TRAINING`, `CAMP`, `VOLUNTEER`
-* Product type: `PROSHOP`, `RENTAL`, `MERCHANDISE`, `APPAREL`, `EQUIPMENT`
-* Fee type: `ADULT`, `JUNIOR`, `STUDENT`, `AFFILIATE`
-
-### Project Code (Optional)[​](#project-code-optional "Direct link to Project Code (Optional)")
-
-Track specific grants, fundraisers, or special initiatives. Typically maps to Location or Project in QuickBooks and Category in Xero.
-
-**Common examples:**
-
-* Grants: `GRANT_2024`, `YOUTH_DEVELOPMENT`, `ACCESSIBILITY_GRANT`
-* Fundraising: `CAPITAL_CAMPAIGN_2024`, `FUNDRAISER_2024`
-* Initiatives: `GROW_THE_GAME`, `COACH_TRAINING`, `FACILITY_UPGRADE`
-
-## Understanding Order Items vs Payments[​](#understanding-order-items-vs-payments "Direct link to Understanding Order Items vs Payments")
-
-Accounting codes are assigned to **order items**, not payments. When a member checks out, they typically purchase multiple items in their cart:
-
-* A league registration
-* Affiliate fees (provincial and national)
-* Membership fees
-* Add-ons like lockers
-* Additional leagues for their children
-
-A single payment covers all these items, but each item gets its own accounting codes. For example, in one checkout:
-
-* League registration → Account: 1000, Class: MENS
-* Provincial Fee → Account: 5000, Class: AFFILIATE
-* Membership Fee → Account: 5100
-* Locker → Account: 4000, Class: RENTAL
-
-This item-level detail allows you to properly categorize revenue in your accounting software, even though the member only made one payment. Your order item reports will show each item separately with its corresponding codes, making it easy to track revenue by category.
-
-## How Codes Are Captured[​](#how-codes-are-captured "Direct link to How Codes Are Captured")
-
-When a member completes a registration or purchase, Curling IO captures the accounting codes at that moment and stores them with the order item. The codes are captured once and don't change, even if you later modify the item's codes. This ensures historical accuracy in your financial records.
-
-These codes then appear in your order item reports and can be exported for use in your accounting software.
-
-## Common Use Cases[​](#common-use-cases "Direct link to Common Use Cases")
-
-### Basic Club (Most Common)[​](#basic-club-most-common "Direct link to Basic Club (Most Common)")
-
-**Setup:**
-
-* Enable accounting codes in Club Settings
-* Set 8 default account codes
-* Never touch individual items
-
-**Result:** All revenue automatically categorized by type with zero ongoing effort
-
-### Intermediate Club - Demographics[​](#intermediate-club---demographics "Direct link to Intermediate Club - Demographics")
-
-**Need:** Track league revenue by gender for board reporting
-
-**Setup:**
-
-* Set club default for leagues (1000)
-
-* Edit each league to add class codes:
-
-  <!-- -->
-
-  * Men's League → Class: `MENS`
-  * Women's League → Class: `WOMENS`
-  * Mixed League → Class: `MIXED`
-
-**Result:** All leagues use account 1000, but can report separately by gender
-
-### Advanced Club - Grant Tracking[​](#advanced-club---grant-tracking "Direct link to Advanced Club - Grant Tracking")
-
-**Need:** Report on grant-funded youth development program
-
-**Setup:**
-
-* Set club default for programs (3000)
-
-* Edit program:
-
-  <!-- -->
-
-  * Leave account blank (uses default 3000)
-  * Set class code: `JUNIOR`
-  * Set project code: `GRANT_2024`
-
-**Result:** Easy to filter and report all grant-funded youth program revenue
-
-### Sophisticated Club - Multiple Categories[​](#sophisticated-club---multiple-categories "Direct link to Sophisticated Club - Multiple Categories")
-
-**Need:** Separate merchandise from rentals, track fundraising campaigns
-
-**Setup:**
-
-* Products with different accounts:
-
-  <!-- -->
-
-  * Pro shop items: Account `4100`, Class `MERCHANDISE`
-  * Equipment rentals: Account `4200`, Class `RENTAL`
-  * Fundraising items: Account `4300`, Project `CAPITAL_CAMPAIGN_2024`
-
-**Result:** Complete separation and tracking across multiple dimensions
-
-## Setting Up Accounting Codes[​](#setting-up-accounting-codes "Direct link to Setting Up Accounting Codes")
-
-### Step 1: Enable the Feature[​](#step-1-enable-the-feature "Direct link to Step 1: Enable the Feature")
-
-1. Go to **Club → Settings**
-2. Scroll to the **Accounting Codes** section
-3. Check **Enable accounting codes**
-4. Save
-
-### Step 2: Set Default Codes[​](#step-2-set-default-codes "Direct link to Step 2: Set Default Codes")
-
-In the same section, set default account codes for each type:
-
-![Accounting Codes Defaults](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
-
-1. **Leagues** - e.g., 1000
-2. **Bonspiels** - e.g., 2000
-3. **Programs** - e.g., 3000
-4. **Products** - e.g., 4000
-5. **Fees** - e.g., 5000
-6. **Venues** - e.g., 6000
-7. **Order Adjustments** - e.g., 7000
-8. **Convenience Fees** - e.g., 8000
-
-Use codes that match your accounting software's chart of accounts.
-
-### Step 3: Add Item-Level Codes (Optional)[​](#step-3-add-item-level-codes-optional "Direct link to Step 3: Add Item-Level Codes (Optional)")
-
-For more detailed tracking, edit individual items:
-
-**Leagues and Competitions:**
-
-1. Edit the league or competition
-2. Scroll to the **Accounting Codes** section
-3. Add Account Code (override), Class Code, or Project Code as needed
-4. Save
-
-![Accounting Codes Per Item](/assets/images/accounting-codes-per-item-bd57dc0e38b5a9e094b4cfca6b77afa6.png)
-
-**Products, Fees, and Programs:** Follow the same process in each item's edit form.
-
-## Reporting and Exporting[​](#reporting-and-exporting "Direct link to Reporting and Exporting")
-
-### Order Items Report[​](#order-items-report "Direct link to Order Items Report")
-
-All accounting codes appear in your order items report:
-
-1. Go to **Reports → Order Items**
-2. Use filters to find specific codes
-3. Export to CSV for import into your accounting software
-
-The CSV export includes columns for:
-
-* Account Code
-* Class Code
-* Project Code
-
-## Best Practices[​](#best-practices "Direct link to Best Practices")
-
-### Keep It Simple[​](#keep-it-simple "Direct link to Keep It Simple")
-
-Start with just the 6 club defaults. Only add item-level codes if you have a specific reporting need.
-
-### Use Consistent Naming[​](#use-consistent-naming "Direct link to Use Consistent Naming")
-
-Establish a standard for class and project codes:
-
-* Use UPPER\_CASE for consistency
-* Keep codes short but descriptive
-* Document your codes for other administrators
-
-### Examples:[​](#examples "Direct link to Examples:")
-
-* ✅ Good: `MENS`, `WOMENS`, `JUNIOR`, `GRANT_2024`
-* ❌ Avoid: `men's`, `Women`, `jr`, `grant`
-
-### Plan Before You Start[​](#plan-before-you-start "Direct link to Plan Before You Start")
-
-Before enabling accounting codes:
-
-1. Review your accounting software's chart of accounts
-2. Decide which account codes to use for each type
-3. Determine if you need class or project tracking
-4. Document your code structure
-
-### Don't Overcomplicate[​](#dont-overcomplicate "Direct link to Don't Overcomplicate")
-
-You can't change codes after purchase, so:
-
-* Start simple and add complexity only when needed
-* Most clubs only need account codes, not class/project
-* Consider if you'll actually use the granularity before adding it
-
-## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
-
-### Can I change codes after a purchase is made?[​](#can-i-change-codes-after-a-purchase-is-made "Direct link to Can I change codes after a purchase is made?")
-
-No. Codes are captured at the moment of purchase and become part of the historical record. This ensures accuracy in your financial reports. If you need to change how future purchases are categorized, update the codes on the item itself.
-
-### What happens if I don't set any codes?[​](#what-happens-if-i-dont-set-any-codes "Direct link to What happens if I don't set any codes?")
-
-Items will have blank/null accounting codes in reports. This makes it visible which items don't have codes assigned, rather than incorrectly assigning them to a default category.
-
-### Do I need to use all three code types?[​](#do-i-need-to-use-all-three-code-types "Direct link to Do I need to use all three code types?")
-
-No. Most clubs only use account codes. Class and project codes are optional and should only be used if you have specific tracking needs.
-
-### Can I use the same class or project code across different item types?[​](#can-i-use-the-same-class-or-project-code-across-different-item-types "Direct link to Can I use the same class or project code across different item types?")
-
-Yes! For example, you might use `JUNIOR` as a class code for both leagues and fees to track all junior-related revenue across categories.
-
-### What if my accounting software doesn't support class or project tracking?[​](#what-if-my-accounting-software-doesnt-support-class-or-project-tracking "Direct link to What if my accounting software doesn't support class or project tracking?")
-
-Just use account codes. The class and project codes will be in your exports but you can ignore them if your accounting system doesn't use them.
-
-### How do I track codes for inherited fees (provincial/national)?[​](#how-do-i-track-codes-for-inherited-fees-provincialnational "Direct link to How do I track codes for inherited fees (provincial/national)?")
-
-Inherited fees (like provincial and national affiliation fees) automatically use your club's default fee account code. Any codes set on the inherited fee itself are ignored. If you want to categorize inherited fees differently, set a specific fee account code in your Club Settings, and all inherited fees will use that code.
-
-## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
-
-* [Club Settings](/docs/club-management/settings.md) - Enable accounting codes
-* [Leagues & Competitions](/docs/club-management/leagues.md) - Add codes to events
-* [Products](/docs/club-management/products.md) - Add codes to products
-* [Fees](/docs/club-management/fees.md) - Add codes to fees
-* [Programs](/docs/club-management/programs.md) - Add codes to programs
 
 
 ---
@@ -1917,11 +2449,11 @@ For example, a value of 30 means that if someone registers for a league implemen
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a fee.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a fee.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between fee types (e.g., membership vs. capital improvement) or track by age group.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Adding Custom Fields[​](#adding-custom-fields "Direct link to Adding Custom Fields")
 
@@ -2305,11 +2837,11 @@ More details and examples can be found in the [discounts section.](/docs/club-ma
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a league or competition.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a league or competition.
 
 Most clubs only use the default account codes set in Club Settings. However, you can optionally add Class and Project codes here to track revenue by demographics (e.g., MENS, WOMENS), skill level, grant funding, or special initiatives.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Copying a League for the new Season[​](#copying-a-league-for-the-new-season "Direct link to Copying a League for the new Season")
 
@@ -2586,11 +3118,11 @@ We recommend you use this sparingly as it adds another step (friction) to produc
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a product.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a product.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between product categories (e.g., merchandise vs. rentals) or track fundraising campaigns.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Assigning Fees[​](#assigning-fees "Direct link to Assigning Fees")
 
@@ -2771,11 +3303,11 @@ Associate a sponsor to show their logo and name on the program page. You can als
 
 ## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings.md#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a program.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings.md#accounting), you'll see an **Accounting Codes** section when creating or editing a program.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between program types (e.g., Learn to Curl vs. training camps) or track grant-funded programs.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Assigning Fees & Addons[​](#assigning-fees--addons "Direct link to Assigning Fees & Addons")
 
@@ -3019,17 +3551,17 @@ Note: Fees you implement should never reflect on the Curling IO platform, theref
 
 The Widget URL gives you an embeddable link you can drop into an external website. It points to your Curling IO-hosted registration widget so members can register without navigating away from your main site.
 
-## Accounting Codes[​](#accounting-codes "Direct link to Accounting Codes")
+## Accounting[​](#accounting "Direct link to Accounting")
 
-Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage.
+Accounting features allow you to categorize revenue items and track financial transactions for integration with accounting software like QuickBooks, Xero, or Sage.
 
-Check the **Enable accounting codes** checkbox to activate this feature for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
+Check the checkbox to enable accounting for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
 
 ![Accounting Codes](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
 
 Most clubs either don't need accounting codes at all, or simply set up these 6 default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
 
-**For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/club-management/accounting-codes.md).**
+**For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/accounting/accounting-codes.md).**
 
 ## Tags[​](#tags "Direct link to Tags")
 
@@ -4607,6 +5139,25 @@ If your club loses premium access, we won't delete your existing alerts, however
 
 [See our Alerts documentation to learn more.](/docs/club-management/alerts.md)
 
+### Accounting Transactions[​](#accounting-transactions "Direct link to Accounting Transactions")
+
+Premium tier clubs have access to comprehensive double-entry bookkeeping with accrual accounting principles. The system automatically generates detailed journal entries (debits and credits) for every financial event, creating a complete audit trail of your club's financial activity.
+
+**What you get:**
+
+* Full double-entry bookkeeping (every transaction has balanced debits and credits)
+* Accrual accounting (revenue recognized when order placed, not when paid)
+* Automatic journal entries for orders, payments, and refunds
+* Balance sheet tracking (Accounts Receivable, HST Payable, etc.)
+* Dedicated Accounting Transactions report with CSV export
+* Sequential payment allocation with partial refund tracking
+
+All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md) to categorize revenue items. Premium clubs get the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
+
+If your club loses premium access, no new accounting transactions will be recorded, but existing transactions remain accessible in your reports.
+
+[See our Accounting Transactions documentation to learn more.](/docs/accounting/accounting-transactions.md)
+
 ### MailChimp Integration[​](#mailchimp-integration "Direct link to MailChimp Integration")
 
 Premium tier clubs are able to automatically synchronize their curlers with a Mailchimp email marketing account if they choose to. This includes tagging curlers with the events they are registered for. This integration allows clubs to send out targetted email campaigns, like announcing upcoming events.
@@ -4642,14 +5193,6 @@ Premium tier clubs have access to additional website hosting features.
 #### Banner[​](#banner "Direct link to Banner")
 
 You can upload a banner image that will stretch across pages, articles, and any other sections you like.
-
-#### Themes[​](#themes "Direct link to Themes")
-
-**COMING SOON**
-
-You'll be able to select from several colourful themes and even create your own custom colour scheme.
-
-If your club loses premium access, the default theme will be applied.
 
 #### Sidebar Widgets[​](#sidebar-widgets "Direct link to Sidebar Widgets")
 

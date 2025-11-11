@@ -2,11 +2,31 @@
 
 ## Overview[​](#overview "Direct link to Overview")
 
-Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage. When enabled, you can set default account codes for each type of registration, and optionally add more detailed tracking codes at the item level.
+Curling IO provides two levels of accounting features:
+
+1. **Accounting Codes** (All Plans) - Categorize revenue items with account, class, and project codes that appear in your order items report
+2. **Accounting Transactions** (Premium Only) - Comprehensive double-entry bookkeeping with accrual accounting that generates detailed journal entries for every order, payment, and refund
+
+Most clubs use accounting codes for basic revenue categorization. Premium clubs can enable the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
+
+This document covers **Accounting Codes**, which are available to all clubs. For information about the Premium accounting transactions system, see [Accounting Transactions](/docs/accounting/accounting-transactions.md).
+
+## Accounting Codes (All Plans)[​](#accounting-codes-all-plans "Direct link to Accounting Codes (All Plans)")
+
+Accounting codes allow you to categorize revenue items for reporting. When enabled, you can set default account codes for each type of registration, and optionally add more detailed tracking codes at the item level. These codes appear in your Order Items report and can be exported to CSV.
+
+**Available to:** All clubs
+
+**What you get:**
+
+* Categorize revenue by account, class, and project codes
+* Codes captured at time of purchase
+* Appears in Order Items report
+* CSV export for manual import into accounting software
 
 ## When to Use Accounting Codes[​](#when-to-use-accounting-codes "Direct link to When to Use Accounting Codes")
 
-Most clubs either don't need accounting codes at all, or simply set up 6 default codes and never touch individual items. You can add optional sub-categorization at the item level for detailed tracking by demographics, departments, or grant funding.
+Most clubs either don't need accounting codes at all, or simply set up 8 default codes and never touch individual items. You can add optional sub-categorization at the item level for detailed tracking by demographics, departments, or grant funding.
 
 ## The Two-Tier System[​](#the-two-tier-system "Direct link to The Two-Tier System")
 
@@ -105,7 +125,7 @@ These codes then appear in your order item reports and can be exported for use i
 
 **Setup:**
 
-* Enable accounting codes in Club Settings
+* Enable accounting in Club Settings
 * Set 8 default account codes
 * Never touch individual items
 
@@ -168,8 +188,8 @@ These codes then appear in your order item reports and can be exported for use i
 ### Step 1: Enable the Feature[​](#step-1-enable-the-feature "Direct link to Step 1: Enable the Feature")
 
 1. Go to **Club → Settings**
-2. Scroll to the **Accounting Codes** section
-3. Check **Enable accounting codes**
+2. Scroll to the **Accounting** section
+3. Check the box to enable accounting
 4. Save
 
 ### Step 2: Set Default Codes[​](#step-2-set-default-codes "Direct link to Step 2: Set Default Codes")
@@ -224,7 +244,7 @@ The CSV export includes columns for:
 
 ### Keep It Simple[​](#keep-it-simple "Direct link to Keep It Simple")
 
-Start with just the 6 club defaults. Only add item-level codes if you have a specific reporting need.
+Start with just the 8 club defaults. Only add item-level codes if you have a specific reporting need.
 
 ### Use Consistent Naming[​](#use-consistent-naming "Direct link to Use Consistent Naming")
 
@@ -262,6 +282,8 @@ You can't change codes after purchase, so:
 
 No. Codes are captured at the moment of purchase and become part of the historical record. This ensures accuracy in your financial reports. If you need to change how future purchases are categorized, update the codes on the item itself.
 
+**For Premium clubs with accounting transactions enabled:** Any changes to account codes in Club Settings or on individual items will only affect new transactions going forward. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail. See [Accounting Transactions](/docs/accounting/accounting-transactions.md) for more details.
+
 ### What happens if I don't set any codes?[​](#what-happens-if-i-dont-set-any-codes "Direct link to What happens if I don't set any codes?")
 
 Items will have blank/null accounting codes in reports. This makes it visible which items don't have codes assigned, rather than incorrectly assigning them to a default category.
@@ -282,9 +304,16 @@ Just use account codes. The class and project codes will be in your exports but 
 
 Inherited fees (like provincial and national affiliation fees) automatically use your club's default fee account code. Any codes set on the inherited fee itself are ignored. If you want to categorize inherited fees differently, set a specific fee account code in your Club Settings, and all inherited fees will use that code.
 
+## Premium Accounting Transactions[​](#premium-accounting-transactions "Direct link to Premium Accounting Transactions")
+
+For Premium clubs, Curling IO offers a comprehensive **Accounting Transactions** system that provides full double-entry bookkeeping with accrual accounting principles. Instead of just tagging revenue items with codes, the system automatically generates detailed journal entries (debits and credits) for every financial event.
+
+Learn more: [Accounting Transactions](/docs/accounting/accounting-transactions.md)
+
 ## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
 
-* [Club Settings](/docs/club-management/settings.md) - Enable accounting codes
+* [Accounting Transactions](/docs/accounting/accounting-transactions.md) - Premium double-entry bookkeeping system
+* [Club Settings](/docs/club-management/settings.md) - Enable accounting features
 * [Leagues & Competitions](/docs/club-management/leagues.md) - Add codes to events
 * [Products](/docs/club-management/products.md) - Add codes to products
 * [Fees](/docs/club-management/fees.md) - Add codes to fees
