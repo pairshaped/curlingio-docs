@@ -111,11 +111,11 @@ Associate a sponsor to show their logo and name on the program page. You can als
 
 ## Accounting Codes
 
-If you've enabled accounting codes in your [Club Settings](/docs/club-management/settings#accounting-codes), you'll see an **Accounting Codes** section when creating or editing a program.
+If you've enabled accounting in your [Club Settings](/docs/club-management/settings#accounting), you'll see an **Accounting Codes** section when creating or editing a program.
 
 Most clubs only use the default account code set in Club Settings. However, you can optionally add Class and Project codes here to differentiate between program types (e.g., Learn to Curl vs. training camps) or track grant-funded programs.
 
-**For complete details and examples, see the [Accounting Codes Guide](/docs/club-management/accounting-codes).**
+**For complete details and examples, see the [Accounting Codes Guide](/docs/accounting/accounting-codes).**
 
 
 ## Assigning Fees & Addons

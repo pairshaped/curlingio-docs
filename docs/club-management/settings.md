@@ -82,17 +82,17 @@ Note: Fees you implement should never reflect on the Curling IO platform, theref
 The Widget URL gives you an embeddable link you can drop into an external website. It points to your Curling IO-hosted registration widget so members can register without navigating away from your main site.
 
 
-## Accounting Codes
+## Accounting
 
-Accounting codes allow you to categorize revenue items for reporting and integration with accounting software like QuickBooks, Xero, or Sage.
+Accounting features allow you to categorize revenue items and track financial transactions for integration with accounting software like QuickBooks, Xero, or Sage.
 
-Check the **Enable accounting codes** checkbox to activate this feature for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
+Check the checkbox to enable accounting for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
 
-![Accounting Codes](/img/docs/club-management/accounting-codes/accounting-codes-defaults.png)
+![Accounting Codes](/img/docs/accounting/accounting-codes/accounting-codes-defaults.png)
 
 Most clubs either don't need accounting codes at all, or simply set up these 6 default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
 
-**For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/club-management/accounting-codes).**
+**For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/accounting/accounting-codes).**
 
 
 ## Tags

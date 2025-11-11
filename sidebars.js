@@ -42,7 +42,6 @@ module.exports = {
       'club-management/custom-fields',
       'club-management/integrations',
       'club-management/settings',
-      'club-management/accounting-codes',
       'club-management/profile-fields',
       'club-management/linking-to-registration',
       'club-management/registration-widget',
@@ -60,6 +59,10 @@ module.exports = {
       'event-management/draw-schedule-templates',
       'event-management/scores',
       'event-management/event-managers',
+    ],
+    "Accounting": [
+      'accounting/accounting-codes',
+      'accounting/accounting-transactions',
     ],
     "Advanced Features": [
       'advanced/curlingschedules',
