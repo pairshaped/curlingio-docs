@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Need a modern club website but tired of paying for WordPress, Wix, or Squarespace? Curling IO Hosting gives every club a polished web presence at no extra cost, fully integrated with the rest of the platform.
 
-Open the **Website** section in your admin navigation to manage everything in one place—changes publish the moment you save:
+Configure your site's branding, palette, and contact details in **Club → Settings** (see the [Club Settings guide](/docs/club-management/settings) for details), then manage your content in the **Website** section. Changes publish the moment you save:
 
 - A customizable landing page activates the instant you enable it, giving visitors a polished overview without extra work.
 - Pages and articles you add appear instantly, and the public site automatically surfaces Pages or News menus when content is available.
@@ -48,34 +48,6 @@ You can edit copy in place—click the Edit link for any section to update the c
   src={useBaseUrl('img/docs/club-management/website-hosting/in_place_editing.png')}
   width="960"
 />
-
-## Website Settings
-
-Located in **Website → Settings**, this screen brings together the visual, navigation, and contact details that define your hosted site.
-
-### Branding
-- **Name** — Controls the header text and the default club name shown publicly.
-- **Brand palette** — Pick a palette preset and fine-tune individual colours (Primary, Secondary, Success, Info, Warning, Danger, Light, Dark) by entering hex codes.
-- **Logo** and **Nav logo** — Upload full-size and compact versions for the header and navigation bar.
-
-### Navigation and layout
-- **Calendar enabled?** — Toggle the public calendar tab. When enabled, visitors can browse draws, rentals (Premium), and closures.
-- **Calendar default view** — Select the view you want to load first (Month, Week, or Day). Clubs with rentals often prefer the day view.
-- **Landing page** — Choose where visitors land first (Landing Page, Leagues, Bonspiels, Programs, Products, Calendar, etc.).
-- **Program label** and **Competition label** — Rename these tabs to match local terminology.
-- **Banner** and **Banner visibility** — Upload a 1200 × 250 banner image and choose which screens display it.
-- **Sidebar options** — Decide which touts appear on hosted pages (Current games, Random sponsor, Latest news).
-- **Section summaries** — Provide English and French blurbs for Leagues, Bonspiels, Programs, Products, and the Calendar. These appear below public section headers and on Landing Page cards.
-
-### Contact information
-- **Address block** — Street, unit, mailing address, city, province/state, country, postal/ZIP code, and time zone (used for draw schedules and emails).
-- **Primary contact** — Phone number and email shown on the contact page.
-- **Site & policy links** — Website URL, Terms URL, Privacy URL.
-- **Social & media handles** — Facebook, X (Twitter), Instagram, TikTok, YouTube.
-- **Community invites** — Optional invitation links for WhatsApp, Slack, and Discord; shared with members on receipts and the contact page.
-- **Club contacts** — Add individual contacts (name, email, phone) to spotlight specific volunteers or board members.
-
-Once you save your updates in Website → Settings, continue with the specialized pages below to bring your hosted site to life.
 
 ## Pages
 
