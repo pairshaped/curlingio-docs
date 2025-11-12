@@ -60,7 +60,7 @@ Acceptance of Terms of this Agreement through Use
 - [Programs](/docs/club-management/programs.md): Programs sit between products and events: they’re purchased like products, but run on specific dates like leagues and competitions.
 - [Registration and Results Widget](/docs/club-management/registration-widget.md): Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
 - [Reports](/docs/club-management/reports.md): Curling IO produces reports that give you, the curling club manager or bookkeeper, insight into the financials and membership at your club.
-- [Club Settings](/docs/club-management/settings.md): You can modify some of the core operational settings for your club in this screen.
+- [Club Settings](/docs/club-management/settings.md): You can modify all of the core operational settings for your club in this screen.
 - [Sponsors](/docs/club-management/sponsors.md): This is a Premium Only Feature
 - [Support](/docs/club-management/support.md): You can submit supports requests from within Curling IO. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
 - [Waitlists](/docs/club-management/waitlists.md): Overview
