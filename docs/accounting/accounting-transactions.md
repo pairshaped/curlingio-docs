@@ -2,7 +2,7 @@
 
 Premium Feature
 
-The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription.
+The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription or online payments setup and enabled (which automatically grants Premium).
 
 ## Overview[​](#overview "Direct link to Overview")
 
@@ -12,8 +12,10 @@ The accounting transactions system provides comprehensive double-entry bookkeepi
 
 * Full double-entry bookkeeping (every transaction has balanced debits and credits)
 * Accrual accounting (revenue recognized when order placed, not when paid)
-* Automatic journal entries for orders, payments, and refunds
-* Balance sheet tracking (Accounts Receivable, HST Payable, etc.)
+* Automatic journal entries for orders, payments, refunds, and deposits
+* Balance sheet tracking (Accounts Receivable, HST Payable, Club Credit Liability, etc.)
+* Processing fee expense tracking for payment processor fees (Stripe, SportsPay)
+* Club credit accounting (payments, refunds, and manual grants)
 * Dedicated Accounting Transactions report
 * CSV export in standard double-entry format
 * Sequential payment allocation with partial refund tracking
@@ -70,7 +72,7 @@ CR  Accounts Receivable     $113.00
 
 ## Balance Sheet Account Codes[​](#balance-sheet-account-codes "Direct link to Balance Sheet Account Codes")
 
-In addition to revenue account codes (4000 series), the system uses balance sheet accounts to track assets and liabilities:
+In addition to revenue account codes (4000 series), the system uses balance sheet accounts to track assets, liabilities, and expenses:
 
 ### Assets (Debit accounts)[​](#assets-debit-accounts "Direct link to Assets (Debit accounts)")
 
@@ -81,6 +83,12 @@ In addition to revenue account codes (4000 series), the system uses balance shee
 ### Liabilities (Credit accounts)[​](#liabilities-credit-accounts "Direct link to Liabilities (Credit accounts)")
 
 * **HST Payable (2110)** - Sales tax collected that must be remitted to government
+* **Club Credit Liability** - Money owed to members as club credits (store credit)
+
+### Expenses (Debit accounts)[​](#expenses-debit-accounts "Direct link to Expenses (Debit accounts)")
+
+* **Processing Fee Expense** - Payment processor fees (Stripe, SportsPay) deducted from deposits
+* **Club Credit Expense** - Cost of granting club credits to members (courtesy credits, promotions)
 
 These accounts are configured in **Club → Settings** and cannot be overridden at the item level.
 
@@ -156,7 +164,17 @@ This is the amount you owe for the reporting period.
 
 ## Transaction Types[​](#transaction-types "Direct link to Transaction Types")
 
-The system creates different types of accounting transactions for different financial events.
+The system creates different types of accounting transactions for different financial events. The following sections detail each transaction type and its journal entries:
+
+1. **Revenue Recognition** - When orders are submitted
+2. **Cash Receipts** - When payments are received
+3. **Refunds** - When refunds are processed
+4. **Order/Item Deletion** - When orders or items are deleted
+5. **Deposit Processing** - When payments are deposited to bank
+6. **Offline Payments** - When cash/check/e-transfer payments are recorded
+7. **Club Credit Payments** - When members pay with club credit
+8. **Club Credit Refunds** - When refunds are issued as club credit
+9. **Manual Club Credit Grants** - When managers grant courtesy credits
 
 ### 1. Revenue Recognition (Order Submitted)[​](#1-revenue-recognition-order-submitted "Direct link to 1. Revenue Recognition (Order Submitted)")
 
@@ -235,11 +253,29 @@ When online payments (Stripe, SportsPay) are received, they initially go to **Un
 
 **Automatic (Stripe/SportsPay):**
 
-For clubs using Stripe or SportsPay, deposits are automatically recorded when payouts are processed:
+For clubs using Stripe or SportsPay, deposits are automatically recorded when payouts are processed. Payment processors typically deduct processing fees before depositing funds:
+
+**With processing fees:**
 
 ```
-DR  Cash Account          (Deposit amount)
-CR  Undeposited Funds     (Deposit amount)
+DR  Cash Account               (Net amount after fees)
+DR  Processing Fee Expense     (Processing fees + application fees)
+CR  Undeposited Funds          (Gross payment amount)
+```
+
+**Example:** $113 payment with $3.58 processing fee + $1.50 application fee
+
+| Date       | Type                   | Account     | Debit   | Credit  |
+| ---------- | ---------------------- | ----------- | ------- | ------- |
+| 2025-01-25 | Payment deposited      | Cash        | $107.92 |         |
+| 2025-01-25 | Processing fee expense | Fee Expense | $5.08   |         |
+| 2025-01-25 | Payment deposited      | Undeposited |         | $113.00 |
+
+**Without processing fees:**
+
+```
+DR  Cash Account          (Gross payment amount)
+CR  Undeposited Funds     (Gross payment amount)
 ```
 
 The system tracks which payments are included in each payout, maintaining a clear audit trail from payment → undeposited funds → cash account.
@@ -265,6 +301,76 @@ CR  Accounts Receivable     (Payment amount)
 ```
 
 This provides flexibility for clubs that receive cash/checks and deposit them immediately, versus clubs that batch deposits weekly or monthly.
+
+### 7. Club Credit Payments[​](#7-club-credit-payments "Direct link to 7. Club Credit Payments")
+
+When a member uses club credit (store credit) to pay for an order, the accounting treatment differs from cash payments because it involves a liability reduction instead of cash:
+
+```
+DR  Club Credit Liability       (Payment amount)
+CR  Accounts Receivable         (Payment amount)
+```
+
+**Example:** $50 club credit applied to order
+
+| Date       | Type                | Account               | Debit  | Credit |
+| ---------- | ------------------- | --------------------- | ------ | ------ |
+| 2025-01-15 | Club credit applied | Club Credit Liability | $50.00 |        |
+| 2025-01-15 | Club credit applied | A/R                   |        | $50.00 |
+
+**Key differences from cash payments:**
+
+* **Reduces liability** - Applying credit reduces what the club owes to the member
+* **No deposit** - Club credit payments never have a deposit date since no actual cash is involved
+* **Sequential allocation** - Like cash payments, club credit allocates to order items sequentially (smallest first)
+
+### 8. Club Credit Refunds[​](#8-club-credit-refunds "Direct link to 8. Club Credit Refunds")
+
+When a refund is issued as club credit instead of cash, the accounting treatment creates or increases a liability to the member:
+
+```
+DR  Revenue ([account_code])        (Refunded amount)
+DR  HST Payable                     (Refunded tax)
+CR  Club Credit Liability           (Total refund)
+```
+
+Note that unlike cash refunds, there is **no cash withdrawal entry** because the club retains the funds.
+
+**Example:** Refund $22.60 to club credit ($20 + $2.60 HST)
+
+| Date       | Type             | Account               | Debit  | Credit |
+| ---------- | ---------------- | --------------------- | ------ | ------ |
+| 2025-02-01 | Refund initiated | Revenue (4030)        | $20.00 |        |
+| 2025-02-01 | Refund initiated | HST Payable (2110)    | $2.60  |        |
+| 2025-02-01 | Refund initiated | Club Credit Liability |        | $22.60 |
+
+**Key differences from cash refunds:**
+
+* **Increases liability** - Refunding to credit increases what club owes to member
+* **No withdrawal** - Club credit refunds don't reduce your bank balance
+* **Member retains value** - Credit can be used on future purchases
+
+### 9. Manual Club Credit Grants[​](#9-manual-club-credit-grants "Direct link to 9. Manual Club Credit Grants")
+
+When a club manager manually grants club credit to a member (courtesy credit, compensation, promotions), the system records both an expense and a liability:
+
+```
+DR  Club Credit Expense             (Grant amount)
+CR  Club Credit Liability           (Grant amount)
+```
+
+**Example:** Manager grants $25 courtesy credit to member
+
+| Date       | Type                | Account               | Debit  | Credit |
+| ---------- | ------------------- | --------------------- | ------ | ------ |
+| 2025-02-15 | Club credit granted | Club Credit Expense   | $25.00 |        |
+| 2025-02-15 | Club credit granted | Club Credit Liability |        | $25.00 |
+
+**Key points:**
+
+* **Expense recognition** - Records the cost of giving away credit
+* **Liability tracking** - Increases club's debt to members
+* **Separate from refunds** - Manual grants are recorded separately from refund-generated credits
 
 ## The Accounting Transactions Report[​](#the-accounting-transactions-report "Direct link to The Accounting Transactions Report")
 
@@ -398,7 +504,9 @@ Accounting transactions require an active Premium subscription. Go to **Club →
    <!-- -->
 
    * Revenue codes (Leagues, Bonspiels, Programs, Products, Fees, Venues, Order Adjustments, Convenience Fees)
-   * Balance sheet codes (Accounts Receivable, HST Payable, Undeposited Funds, Cash Account)
+   * Asset codes (Accounts Receivable, Undeposited Funds, Cash Account)
+   * Liability codes (HST Payable, Club Credit Liability)
+   * Expense codes (Processing Fee Expense, Club Credit Expense)
 
 5. Save
 
@@ -407,8 +515,10 @@ Accounting transactions require an active Premium subscription. Go to **Club →
 Once enabled, the system automatically creates accounting transactions for:
 
 * New orders submitted (revenue recognition)
-* New payments received (cash receipts)
-* New refunds processed
+* New payments received (cash receipts and club credit applications)
+* New refunds processed (cash refunds and club credit refunds)
+* Payment deposits with processing fee tracking
+* Manual club credit grants
 
 ### Important Limitations[​](#important-limitations "Direct link to Important Limitations")
 
@@ -451,6 +561,15 @@ The A/R balance represents money owed to your club from unpaid orders. Monitor t
 * Identify members with unpaid balances
 * Reconcile against your bank deposits
 
+### Monitor Club Credit Liability[​](#monitor-club-credit-liability "Direct link to Monitor Club Credit Liability")
+
+If your club uses club credits (store credit), the Club Credit Liability balance represents money your club owes to members. Monitor this balance to:
+
+* Track total outstanding credit obligations
+* Budget for potential redemptions
+* Reconcile credit grants, applications, and refunds
+* Identify unusual patterns in credit usage
+
 ## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
 
 ### Can I change account codes after enabling accounting transactions?[​](#can-i-change-account-codes-after-enabling-accounting-transactions "Direct link to Can I change account codes after enabling accounting transactions?")
@@ -486,6 +605,26 @@ Yes! Export the Accounting Transactions report to CSV and import it into your ac
 ### Do I need to understand accounting to use this feature?[​](#do-i-need-to-understand-accounting-to-use-this-feature "Direct link to Do I need to understand accounting to use this feature?")
 
 Basic understanding helps, but the system handles the complex accounting automatically. Your accountant can work with the exported CSV files even if you're not familiar with journal entries and double-entry bookkeeping.
+
+### How are payment processing fees tracked?[​](#how-are-payment-processing-fees-tracked "Direct link to How are payment processing fees tracked?")
+
+When deposits are recorded from Stripe or SportsPay, the system automatically tracks processing fees as expenses. The deposit journal entry shows:
+
+* Debit to Cash Account (net amount received)
+* Debit to Processing Fee Expense (fees deducted)
+* Credit to Undeposited Funds (gross payment amount)
+
+This ensures your expense tracking accurately reflects the cost of accepting online payments.
+
+### How does club credit accounting work?[​](#how-does-club-credit-accounting-work "Direct link to How does club credit accounting work?")
+
+Club credits create a liability (money the club owes to members). The accounting tracks:
+
+* **Manual grants** - Debit Club Credit Expense, Credit Club Credit Liability
+* **Credit payments** - Debit Club Credit Liability, Credit A/R (reduces liability as credit is used)
+* **Credit refunds** - Debit Revenue/HST, Credit Club Credit Liability (increases liability when refunding to credit)
+
+The Club Credit Liability balance shows your total obligation to members.
 
 ## Related Documentation[​](#related-documentation "Direct link to Related Documentation")
 
