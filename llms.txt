@@ -26,7 +26,7 @@ Acceptance of Terms of this Agreement through Use
 ### accounting
 
 - [Accounting Codes](/docs/accounting/accounting-codes.md): Overview
-- [Accounting Transactions](/docs/accounting/accounting-transactions.md): The accounting transactions system is only available to Premium clubs. All clubs can use basic Accounting Codes, but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription or online payments setup and enabled (which automatically grants Premium).
+- [Accounting Transactions](/docs/accounting/accounting-transactions.md): Overview
 
 ### advanced
 

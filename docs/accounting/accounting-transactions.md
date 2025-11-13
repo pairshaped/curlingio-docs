@@ -1,9 +1,5 @@
 # Accounting Transactions
 
-Premium Feature
-
-The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription or online payments setup and enabled (which automatically grants Premium).
-
 ## Overview[​](#overview "Direct link to Overview")
 
 The accounting transactions system provides comprehensive double-entry bookkeeping with accrual accounting principles. Instead of just tagging revenue items with codes, the system automatically generates detailed journal entries (debits and credits) for every financial event in your club.
@@ -23,6 +19,10 @@ The accounting transactions system provides comprehensive double-entry bookkeepi
 **Important:** Accounting transactions are only recorded while you have an active Premium subscription. Historical data is not available if you upgrade later - transactions are only tracked from the date accounting codes are enabled forward.
 
 ## Prerequisites[​](#prerequisites "Direct link to Prerequisites")
+
+Premium Feature
+
+The accounting transactions system is only available to Premium clubs. All clubs can use basic [Accounting Codes](/docs/accounting/accounting-codes.md), but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription or online payments setup and enabled (which automatically grants Premium).
 
 Before enabling accounting transactions, you should first understand [Accounting Codes](/docs/accounting/accounting-codes.md). The accounting transactions system builds on accounting codes by adding full journal entries and balance sheet tracking.
 
