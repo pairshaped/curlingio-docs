@@ -684,11 +684,13 @@ The accounting transactions system provides comprehensive double-entry bookkeepi
 * Full double-entry bookkeeping (every transaction has balanced debits and credits)
 * Accrual accounting (revenue recognized when order placed, not when paid)
 * Automatic journal entries for orders, payments, refunds, and deposits
+* Journal entry grouping (related transactions grouped together for easy import)
 * Balance sheet tracking (Accounts Receivable, HST Payable, Club Credit Liability, etc.)
 * Processing fee expense tracking for payment processor fees (Stripe, SportsPay)
 * Club credit accounting (payments, refunds, and manual grants)
-* Dedicated Accounting Transactions report
-* CSV export in standard double-entry format
+* Human-readable account labels (Revenue, A/R, HST, etc.) for easy filtering
+* Dedicated Accounting Transactions report with visual grouping
+* CSV export optimized for QuickBooks, Xero, and Sage integration
 * Sequential payment allocation with partial refund tracking
 
 **Important:** Accounting transactions are only recorded while you have an active Premium subscription. Historical data is not available if you upgrade later - transactions are only tracked from the date accounting codes are enabled forward.
@@ -1051,18 +1053,73 @@ CR  Club Credit Liability           (Grant amount)
 
 Premium clubs have access to a dedicated **Accounting Transactions** report under **Reports → Accounting Transactions**.
 
+### Understanding Journal Entry Grouping[​](#understanding-journal-entry-grouping "Direct link to Understanding Journal Entry Grouping")
+
+The report visually groups related transactions together that represent a single financial event (like submitting an order or receiving a payment). Each group includes all the debits and credits that balance to $0 for that event.
+
+**Visual grouping:** The Order ID, Transaction Type, and Date appear only on the first row of each group, making it easy to see which transactions belong together. Subsequent transactions in the same group have these columns blank, creating a clear visual hierarchy.
+
+**Example:** When a member submits an order for $113 (including HST), the report shows:
+
+| Order ID | Type               | Date       | Item   | Account | Label   | Debit   | Credit  |
+| -------- | ------------------ | ---------- | ------ | ------- | ------- | ------- | ------- |
+| 12345    | Revenue recognized | 2025-01-15 | League | 1200    | A/R     | $113.00 |         |
+|          |                    |            | League | 4010    | Revenue |         | $100.00 |
+|          |                    |            | League | 2110    | HST     |         | $13.00  |
+
+This grouping makes it clear that all three accounting entries are part of the same journal entry and should balance together (debits = credits).
+
 The report shows:
 
-* **Date** - Transaction date
-* **Type** - Revenue recognized, Payment initiated, Refund processed, etc.
-* **Account Code** - The account affected
-* **Class Code** - Sub-categorization
-* **Project Code** - Grant/project tracking
-* **Order ID** - Reference to the order (clickable to filter)
+* **Order ID** - Reference to the order (clickable to filter) - shown once per group
+* **Type** - Revenue recognized, Payment initiated, Refund processed, etc. - shown once per group
+* **Date** - Transaction date - shown once per group
 * **Item Type** - Type of item (League, Product, Fee, etc.)
 * **Description** - Item description
+* **Class Code** - Sub-categorization
+* **Project Code** - Grant/project tracking
+* **Account Code** - The account affected
+* **Label** - Human-readable account type (Revenue, A/R, HST, Cash, Processing Fees, etc.)
 * **Debit** - Debit amount (if applicable)
 * **Credit** - Credit amount (if applicable)
+
+### Understanding Account Labels[​](#understanding-account-labels "Direct link to Understanding Account Labels")
+
+The **Label** column provides human-readable names for account types, making it easier to filter and understand transactions without needing to memorize account codes.
+
+**Account Label Examples:**
+
+| Account Type       | Label                                                   | Account Codes                                                 |
+| ------------------ | ------------------------------------------------------- | ------------------------------------------------------------- |
+| Revenue accounts   | `Revenue`                                               | 4010 (Leagues), 4020 (Programs), 4030 (Products), 4040 (Fees) |
+| Asset accounts     | `A/R`, `Cash`, `Undeposited Funds`                      | 1200 (Accounts Receivable), club-specific codes               |
+| Liability accounts | `HST`, `PST`, `GST`, `Sales Tax`, `Club Credit Payable` | 2110 (HST Payable), club-specific codes                       |
+| Expense accounts   | `Processing Fees`, `Club Credit Given`                  | Club-specific codes                                           |
+
+**Tax Labels:** Tax labels are automatically determined based on your club's location:
+
+* **Ontario clubs:** `HST` (Harmonized Sales Tax)
+* **BC clubs:** `GST` and `PST` (separate federal/provincial taxes)
+* **US clubs:** `Sales Tax` and `State` (varies by state)
+* **Other locations:** Falls back to `Tax 1` and `Tax 2` if no match found
+
+**Why Labels Matter:**
+
+Labels let you filter transactions without knowing specific account codes. For example:
+
+* Want to see all revenue? Filter by Label: `Revenue` (includes all revenue accounts regardless of code)
+* Need all tax transactions? Filter by Label: `HST`, `GST`, or `PST` depending on your location
+* Looking for cash movements? Filter by Labels: `Cash`, `Undeposited Funds`, `A/R`
+
+**Three-Level System:**
+
+The system uses three complementary fields to describe accounts:
+
+1. **Item Type** - What was sold (League, Product, Fee, Program)
+2. **Account Code** - Technical identifier matching your chart of accounts (4010, 1200, 2110)
+3. **Account Label** - Human-readable category (Revenue, A/R, HST)
+
+This separation allows both detailed tracking (by code) and easy filtering/reporting (by label).
 
 ### Filters[​](#filters "Direct link to Filters")
 
@@ -1074,10 +1131,14 @@ Filter transactions by:
 
 * **Transaction Type:**
 
-  * All Transactions
-  * Revenue Recognition (order submitted)
-  * Cash Receipts (payment received)
-  * Refunds (refund processed)
+  * **All** - Show all transactions
+  * **Revenue Recognition** - Order items submitted (revenue and tax entries)
+  * **Cash Receipts** - Payments received (cash and club credit applications)
+  * **Deposits** - Payments moved to bank (including processing fees)
+  * **Refunds** - Money returned to members (cash and club credit refunds)
+  * **Club Credit** - Club credit activity (payments, refunds, manual grants)
+  * **Processing Fees** - Payment processor fee expenses
+  * **Reversals** - All reversal transactions (from deletions)
 
 ### Summary Totals[​](#summary-totals "Direct link to Summary Totals")
 
@@ -1097,7 +1158,57 @@ Export to CSV in standard double-entry format for import into:
 * Sage
 * Other accounting software
 
-The CSV includes all columns shown in the report, maintaining the double-entry structure with separate Debit and Credit columns.
+The CSV export includes additional columns not shown in the on-screen report, specifically designed for accounting software integration.
+
+**CSV Columns (in order):**
+
+1. **Journal Entry Group** - Unique identifier grouping related transactions (e.g., `123-RevenueRecognized`)
+2. **Order ID** - Reference to the order
+3. **Transaction Type** - Type of accounting event
+4. **Date/Time** - Transaction timestamp
+5. **Item Type** - What was sold (League, Product, Fee, etc.)
+6. **Description** - Item description
+7. **Class** - Sub-categorization code
+8. **Project** - Project/grant tracking code
+9. **Account** - Account code from your chart of accounts
+10. **Label** - Human-readable account type (Revenue, A/R, HST, etc.)
+11. **Debit** - Debit amount (if applicable)
+12. **Credit** - Credit amount (if applicable)
+
+**Journal Entry Grouping:**
+
+The **Journal Entry Group** column (first column) groups related transactions that represent a single financial event. This makes it easy to import complete journal entries into QuickBooks or other accounting software.
+
+**Group ID format:** `{source_id}-{TransactionType}`
+
+* Example: `12345-RevenueRecognized` - All transactions from order item 12345's revenue recognition
+* Example: `67890-PaymentInitiated` - All transactions from payment 67890
+
+All transactions with the same Journal Entry Group ID should balance to $0 (total debits = total credits).
+
+**Example CSV Output:**
+
+```
+Journal Entry Group,Order ID,Type,Date,Item,Description,Class,Project,Account,Label,Debit,Credit
+123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,1200,A/R,113.00,
+123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,4010,Revenue,,100.00
+123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,2110,HST,,13.00
+456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,,,,,1050,Undeposited Funds,113.00,
+456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,League,Monday Night League,,MENS,1200,A/R,,113.00
+456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1000,Cash,107.92,
+456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,5500,Processing Fees,5.08,
+456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113.00
+```
+
+**Key Features:**
+
+* **Complete data** - Every row includes all fields (no visual grouping tricks)
+* **Chronological order** - Oldest transactions first (standard for accounting imports)
+* **Balanced groups** - Each journal entry group balances to $0
+* **Import-ready** - Standard format compatible with major accounting software
+* **Compact group IDs** - Short format (\~20 characters) fits in QuickBooks memo fields
+
+The CSV maintains the double-entry structure with separate Debit and Credit columns, ensuring compatibility with all major accounting systems.
 
 ## Sequential Payment Allocation & Partial Refunds[​](#sequential-payment-allocation--partial-refunds "Direct link to Sequential Payment Allocation & Partial Refunds")
 
@@ -1275,7 +1386,21 @@ Accounting transactions are immutable - you can't edit them. Instead:
 
 ### Can I use this with QuickBooks/Xero/Sage?[​](#can-i-use-this-with-quickbooksxerosage "Direct link to Can I use this with QuickBooks/Xero/Sage?")
 
-Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The standard double-entry format (separate Debit and Credit columns) is compatible with most accounting systems.
+Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The export is specifically designed for accounting software integration:
+
+**Key features for import:**
+
+* **Journal Entry Group ID** - First column groups related debits/credits together
+* **Standard double-entry format** - Separate Debit and Credit columns
+* **Complete transaction data** - All fields included in every row
+* **Chronological order** - Oldest transactions first (standard for imports)
+* **Balanced entries** - Each group balances to $0 (debits = credits)
+
+**QuickBooks users:** The Journal Entry Group ID column makes it easy to import complete journal entries. You can use this field to group transactions when importing, ensuring all related debits and credits stay together.
+
+**Xero/Sage users:** The standard double-entry format works directly with most import tools. The Label column provides human-readable account types that can help map to your chart of accounts during import.
+
+Most accounting software allows you to map CSV columns to their fields during import. The export follows accounting best practices and should work with any system that supports journal entry imports.
 
 ### Do I need to understand accounting to use this feature?[​](#do-i-need-to-understand-accounting-to-use-this-feature "Direct link to Do I need to understand accounting to use this feature?")
 
