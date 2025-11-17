@@ -54,31 +54,63 @@ This is useful if a curler calls in with a credit card or brings in a credit car
 
 ## Refunds
 
-To refund a payment simply click the **Add a refund** button next to the payment near the bottom of the order screen.
-Refunds are specific to each payment, so if you submitted partial payments for an order, to fully refund the order you would have to submit a refund for each of the payments separately.
+To refund an order, click the **Add a refund** button near the bottom of the order screen. This opens the refund form where you can select which items to refund and specify the amounts.
 
-![List of Payments](/img/docs/club-management/orders/refund-a-payment.png)
+![Refund Form](/img/docs/club-management/orders/refund-form.png)
 
-When you click the **Add a refund** button you will be taken to the refund form.
+### Selecting Items to Refund
 
-### Refund Form
+The refund form shows all refundable items from the order with checkboxes. Only items that have been paid (fully or partially) can be refunded.
 
-When refunding a payment you can choose which items to refund and specify the amount to refund.
-If you choose items to refund, by default the system will total up the amounts of the items selected.
-For example if you are refunding a Curling Canada Fee because the curler had already paid it at another club this season, you just select the fee and we'll figure out the amount to be refunded.
+**To refund items:**
+1. Check the box next to each item you want to refund
+2. The refund amount defaults to the full refundable amount for each item
+3. You can adjust the amount for partial refunds (see below)
+4. Use **Select All** to quickly select all refundable items
 
-![List of Payments](/img/docs/club-management/orders/refund-form.png)
+**Example:** If you're refunding a Curling Canada Fee because the member already paid it at another club, simply check the fee item and the system shows the full refundable amount.
 
-You can also perform an _adhoc refund_ by specifying the amount to refund regardless of whether or not you select any items.
-If you don't select any items, then your reports can't show which items the refund was placed against, only the order and payment itself.
-Selected items will be considered *refunded* regardless of the amount of the refund.
-Refunded items will release their inventory if quantity is limited and refunded registrations are no longer considered registrations.
+### Full vs. Partial Refunds
 
-If the payment you are refunding was made through our online payments (credit or debit card) then you can choose to send the refund to the member's card used in the purchase.
-The system will also autofill the time it was withdrawn and how it was refunded.
-Keep in mind that you can also refund online payments using a different method, like to club credits, or to cash, etc.
+You can refund an item either fully or partially:
 
-You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.
+**Full Refund:**
+- Refund the entire refundable amount shown
+- The item is cancelled and marked as refunded
+- For event registrations (leagues, bonspiels, programs), the participant is unregistered
+- Inventory is released if quantity-limited
+
+**Partial Refund (Price Adjustment):**
+- Change the refund amount to less than the full refundable amount
+- The item price is reduced, but the item remains active
+- For event registrations, the participant stays registered (useful for partial discounts)
+- The item is not marked as cancelled
+
+**Important:** Partial refunds will not remove a registration from an event. Only refunding the full amount will unregister a participant.
+
+### Refund Methods
+
+**Online Payments (Credit/Debit Card):**
+If the original payment was made through online payments, you can:
+- Refund to the member's original card (recommended)
+- Refund to club credits (member gets store credit)
+- Refund via another method (cash, cheque, etc.)
+
+The system will autofill the withdrawal date and method when refunding to the original card.
+
+**Offline Payments:**
+For cash, cheque, or e-transfer payments, you can specify:
+- How the refund was made (cash, cheque, club credit, etc.)
+- When the funds were withdrawn from the club
+- An optional reason for the refund
+
+### Refund Tracking
+
+The system tracks refunds against specific items, which helps with:
+- Accurate reporting showing which items were refunded
+- Inventory management (releasing quantity-limited spots)
+- Registration tracking (unregistering participants for full refunds)
+- Accounting transactions (if Premium accounting is enabled)
 
 ## Adjusting Submitted Orders
 
