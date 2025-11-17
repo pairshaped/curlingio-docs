@@ -99,9 +99,7 @@ Accounting features allow you to categorize revenue items and track financial tr
 
 Check the checkbox to enable accounting for your club. Once enabled, you can set default account codes for each type of registration (Leagues, Bonspiels, Programs, Products, Fees, Venues).
 
-![Accounting Codes](/img/docs/accounting/accounting-codes/accounting-codes-defaults.png)
-
-Most clubs either don't need accounting codes at all, or simply set up these 6 default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
+Most clubs either don't need accounting codes at all, or simply set up these default codes and never touch individual items. Advanced users can add more detailed tracking codes (Class and Project codes) at the item level for tracking by demographics, departments, or grant funding.
 
 **For complete details on how to use accounting codes, see the [Accounting Codes Guide](/docs/accounting/accounting-codes). For more information on double-entry bookkeeping and accrual accounting, see the [Accounting Transactions Guide](/docs/accounting/accounting-transactions).**
 
