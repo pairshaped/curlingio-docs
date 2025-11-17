@@ -68,8 +68,8 @@ When they pay:
 
 ```
 Journal Entry:
-DR  Undeposited Funds       $113.00
-CR  Accounts Receivable     $113.00
+DR  Undeposited Funds          $113.00
+CR  Accounts Receivable        $113.00
 ```
 
 ## Balance Sheet Account Codes[​](#balance-sheet-account-codes "Direct link to Balance Sheet Account Codes")
@@ -103,9 +103,9 @@ The accounting transactions system automatically tracks all sales taxes (HST, GS
 When an order is placed, taxes are recorded in the **HST Payable** liability account:
 
 ```
-DR  Accounts Receivable     $113.00
-CR  Revenue                 $100.00
-CR  HST Payable (2110)      $13.00
+DR  Accounts Receivable    $113.00
+CR  Revenue                $100.00
+CR  HST Payable (2110)     $13.00
 ```
 
 This creates a liability - the club owes $13.00 to the government. When you remit taxes quarterly or annually, your accountant will use this HST Payable balance.
@@ -117,9 +117,9 @@ If your club charges multiple tax rates (e.g., GST + PST, or different HST rates
 **Example:** $100 item with 5% GST and 7% PST
 
 ```
-DR  Accounts Receivable     $112.00
-CR  Revenue                 $100.00
-CR  HST Payable             $12.00
+DR  Accounts Receivable    $112.00
+CR  Revenue                $100.00
+CR  HST Payable            $12.00
 ```
 
 Your Order Items report shows the tax breakdown per item (tax1\_amount, tax2\_amount), but the accounting transactions combine them into one liability account for simplicity.
@@ -129,9 +129,9 @@ Your Order Items report shows the tax breakdown per item (tax1\_amount, tax2\_am
 When you refund an item, the tax liability is reduced:
 
 ```
-DR  Revenue                 $100.00
-DR  HST Payable             $13.00
-CR  Accounts Receivable     $113.00
+DR  Revenue                $100.00
+DR  HST Payable            $13.00
+CR  Accounts Receivable    $113.00
 ```
 
 This reduces your HST Payable balance, since you're no longer collecting that tax from the member.
@@ -141,8 +141,8 @@ This reduces your HST Payable balance, since you're no longer collecting that ta
 Items with no tax (tax-exempt products, services, etc.) simply don't create HST Payable entries:
 
 ```
-DR  Accounts Receivable     $100.00
-CR  Revenue                 $100.00
+DR  Accounts Receivable    $100.00
+CR  Revenue                $100.00
 ```
 
 The system automatically handles this based on your tax settings for each item.
@@ -225,10 +225,10 @@ When an item is refunded for its full remaining amount (bringing net amount paid
 **Journal Entries:**
 
 ```
-DR  Revenue ([account_code])        (Remaining revenue after previous reductions)
-DR  HST Payable                     (Remaining tax after previous reductions)
-CR  Undeposited Funds                (Cash returned to member)
-CR  Accounts Receivable              (Any remaining unpaid balance cleared)
+DR  Revenue ([account_code])  (Remaining revenue after previous reductions)
+DR  HST Payable               (Remaining tax after previous reductions)
+CR  Undeposited Funds         (Cash returned to member)
+CR  Accounts Receivable       (Any remaining unpaid balance cleared)
 ```
 
 **Note on credits:** If the item was fully paid, only Undeposited Funds is credited (cash refund). If the item had an unpaid balance, that balance is credited to A/R to clear the receivable, with the remainder going to Undeposited Funds.
@@ -242,9 +242,9 @@ When an item is refunded for less than its full remaining amount (leaving some n
 **Journal Entries:**
 
 ```
-DR  Revenue ([account_code])        (Proportional base amount)
-DR  HST Payable                     (Proportional tax amount)
-CR  Undeposited Funds/A/R            (Refund amount based on payment status)
+DR  Revenue ([account_code])  (Proportional base amount)
+DR  HST Payable               (Proportional tax amount)
+CR  Undeposited Funds/A/R     (Refund amount based on payment status)
 ```
 
 The revenue reduction is proportional to the refund amount relative to the item's total. The item's `amount` field is reduced by the proportional base amount, effectively lowering the price.
@@ -290,9 +290,9 @@ For clubs using Stripe or SportsPay, deposits are automatically recorded when pa
 **With processing fees:**
 
 ```
-DR  Cash Account               (Net amount after fees)
-DR  Processing Fee Expense     (Processing fees + application fees)
-CR  Undeposited Funds          (Gross payment amount)
+DR  Cash Account            (Net amount after fees)
+DR  Processing Fee Expense  (Processing fees + application fees)
+CR  Undeposited Funds       (Gross payment amount)
 ```
 
 **Example:** $113 payment with $3.58 processing fee + $1.50 application fee
@@ -306,8 +306,8 @@ CR  Undeposited Funds          (Gross payment amount)
 **Without processing fees:**
 
 ```
-DR  Cash Account          (Gross payment amount)
-CR  Undeposited Funds     (Gross payment amount)
+DR  Cash Account       (Gross payment amount)
+CR  Undeposited Funds  (Gross payment amount)
 ```
 
 The system tracks which payments are included in each payout, maintaining a clear audit trail from payment → undeposited funds → cash account.
@@ -321,15 +321,15 @@ Some clubs manage deposits manually to perform bank reconciliation, matching dep
 When a club records an offline payment (cash, check, e-transfer recorded manually), the accounting treatment is the same as online payments:
 
 ```
-DR  Undeposited Funds       (Payment amount)
-CR  Accounts Receivable     (Payment amount)
+DR  Undeposited Funds    (Payment amount)
+CR  Accounts Receivable  (Payment amount)
 ```
 
 However, offline payments go directly to your **Cash Account** if you mark them as "Already Deposited" when recording them:
 
 ```
-DR  Cash Account            (Payment amount)
-CR  Accounts Receivable     (Payment amount)
+DR  Cash Account         (Payment amount)
+CR  Accounts Receivable  (Payment amount)
 ```
 
 This provides flexibility for clubs that receive cash/checks and deposit them immediately, versus clubs that batch deposits weekly or monthly.
@@ -339,8 +339,8 @@ This provides flexibility for clubs that receive cash/checks and deposit them im
 When a member uses club credit (store credit) to pay for an order, the accounting treatment differs from cash payments because it involves a liability reduction instead of cash:
 
 ```
-DR  Club Credit Liability       (Payment amount)
-CR  Accounts Receivable         (Payment amount)
+DR  Club Credit Liability  (Payment amount)
+CR  Accounts Receivable    (Payment amount)
 ```
 
 **Example:** $50 club credit applied to order
@@ -363,9 +363,9 @@ When a refund is issued as club credit instead of cash, the accounting treatment
 **Journal Entries:**
 
 ```
-DR  Revenue ([account_code])        (Refunded amount - proportional for partial refunds)
-DR  HST Payable                     (Refunded tax - proportional for partial refunds)
-CR  Club Credit Liability           (Total refund)
+DR  Revenue ([account_code])  (Refunded amount - proportional for partial refunds)
+DR  HST Payable               (Refunded tax - proportional for partial refunds)
+CR  Club Credit Liability     (Total refund)
 ```
 
 Note that unlike cash refunds, there is **no cash withdrawal entry** because the club retains the funds. The refund increases the club's liability to the member (club credit balance).
@@ -389,8 +389,8 @@ Note that unlike cash refunds, there is **no cash withdrawal entry** because the
 When a club manager manually grants club credit to a member (courtesy credit, compensation, promotions), the system records both an expense and a liability:
 
 ```
-DR  Club Credit Expense             (Grant amount)
-CR  Club Credit Liability           (Grant amount)
+DR  Club Credit Expense    (Grant amount)
+CR  Club Credit Liability  (Grant amount)
 ```
 
 **Example:** Manager grants $25 courtesy credit to member
@@ -607,9 +607,9 @@ An order has three items where $70 has been paid (fee $5 + product $22.60 + leag
 **Accounting entries:**
 
 ```
-DR  Revenue (Product)        $20.00
-DR  HST Payable              $2.60
-CR  Undeposited Funds        $22.60
+DR  Revenue (Product)     $20.00
+DR  HST Payable           $2.60
+CR  Undeposited Funds     $22.60
 ```
 
 **Result:** Member receives $22.60 refund, product is cancelled.
@@ -633,9 +633,9 @@ A league registration was paid in full for $113. Staff decides to issue a $20 di
 **Accounting entries:**
 
 ```
-DR  Revenue                  $17.70  (proportional to $20 refund)
-DR  HST Payable              $2.30   (proportional tax)
-CR  Undeposited Funds        $20.00
+DR  Revenue                $17.70    (proportional to $20 refund)
+DR  HST Payable            $2.30     (proportional tax)
+CR  Undeposited Funds      $20.00
 ```
 
 **Result:** Member receives $20 refund, item price adjusted to $93, still marked as paid.
@@ -666,8 +666,8 @@ An order has three items all fully paid:
 
 ```
 DR  Revenue (Fee)            $5.00
-DR  Revenue (Locker)         $8.85   (proportional to $10 refund)
-DR  HST Payable (Locker)     $1.15   (proportional tax)
+DR  Revenue (Locker)         $8.85     (proportional to $10 refund)
+DR  HST Payable (Locker)     $1.15     (proportional tax)
 CR  Undeposited Funds        $15.00
 ```
 
@@ -832,8 +832,8 @@ Regular reconciliation ensures your books accurately reflect your club's financi
 5. When you remit tax to government, create a manual journal entry:
    <!-- -->
    ```
-   DR  HST Payable        (Amount remitted)
-       CR  Cash Account               (Amount remitted)
+   DR  HST Payable     (Amount remitted)
+   CR  Cash Account    (Amount remitted)
    ```
 
 **Important:** The system does NOT automatically record tax remittances. You must manually record these payments to clear the HST Payable liability.
@@ -1029,8 +1029,8 @@ The system does NOT automatically record tax payments to the government. When yo
 3. **Manually record the payment** in your accounting software:
    <!-- -->
    ```
-   DR  HST Payable (2110)
-   CR  Cash Account
+   DR  HST Payable (2110)    (Amount remitted)
+   CR  Cash Account          (Amount remitted)
    ```
 
 This clears the liability from your books. Without this entry, your HST Payable balance will continue to grow even after you've paid the government.
