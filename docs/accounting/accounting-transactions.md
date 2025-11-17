@@ -49,7 +49,7 @@ Traditional cash-basis accounting records revenue when you receive payment. Accr
 - January 20: $50 cash received, $50 Accounts Receivable reduced
 - February 10: $50 cash received, $50 Accounts Receivable reduced
 
-This approach shows you owe $100 in revenue in January, even though you haven't collected it all yet.
+This approach shows you earned $100 in revenue in January, even though you haven't collected it all yet.
 
 ## Double-Entry Bookkeeping
 
@@ -60,7 +60,7 @@ Every transaction creates balanced journal entries where debits equal credits. T
 ```
 Journal Entry:
 DR  Accounts Receivable        $113.00
-CR  Revenue (Account 1000)     $100.00
+CR  Revenue (Account 4010)     $100.00
 CR  HST Payable                $13.00
 ```
 
@@ -76,16 +76,16 @@ CR  Accounts Receivable     $113.00
 
 In addition to revenue account codes (4000 series), the system uses balance sheet accounts to track assets, liabilities, and expenses:
 
-### Assets (Debit accounts)
+### Assets
 - **Accounts Receivable (1200)** - Money owed to the club from unpaid or partially-paid orders
 - **Undeposited Funds** - Payments received but not yet deposited to bank
 - **Cash Account** - Your actual bank account balance
 
-### Liabilities (Credit accounts)
+### Liabilities
 - **HST Payable (2110)** - Sales tax collected that must be remitted to government
-- **Club Credit Liability** - Money owed to members as club credits (store credit)
+- **Club Credit Liability** - Customer deposits/prepayments owed to members as club credits (similar to gift card liability)
 
-### Expenses (Debit accounts)
+### Expenses
 - **Processing Fee Expense** - Payment processor fees (Stripe, SportsPay) deducted from deposits
 - **Club Credit Expense** - Cost of granting club credits to members (courtesy credits, promotions)
 
@@ -201,7 +201,7 @@ DR  Undeposited Funds       (Payment amount)
 CR  Accounts Receivable     (Payment amount)
 ```
 
-Payments are allocated to order items sequentially (smallest items paid first), which enables accurate partial refund tracking.
+Payments are allocated to order items sequentially (smallest items paid first). This allocation method enables refunding of fully-paid items even when an order is only partially paid, providing flexibility for partial refunds and cancellations.
 
 **Example:** $113 payment received
 
@@ -210,18 +210,47 @@ Payments are allocated to order items sequentially (smallest items paid first), 
 | 2025-01-20 | Payment initiated | Undeposited Funds | $113.00 | |
 | 2025-01-20 | Payment initiated | 1200 (A/R) | | $113.00 |
 
-### 3. Refunds (Refund Processed)
+### 3. Refunds (Full and Partial)
 
-When a refund is issued, the system creates reversal entries:
+**Important:** The system handles refunds intelligently based on whether each item is being fully or partially refunded. A single refund operation can include multiple items, some fully refunded (cancellations) and others partially refunded (price adjustments).
+
+**3a. Full Refund (Cancellation)**
+
+When an item is refunded for its full remaining amount (bringing net amount paid to $0), this is treated as a **cancellation**. The item status changes to `'cancelled'`.
+
+**Journal Entries:**
 
 ```
-DR  Revenue (by item)       (Refunded amounts)
-DR  HST Payable             (Refunded tax)
-CR  Accounts Receivable     (Total refund)
-
-DR  Accounts Receivable     (Total refund)
-CR  Undeposited Funds       (Total refund)
+DR  Revenue ([account_code])        (Remaining revenue after previous reductions)
+DR  HST Payable                     (Remaining tax after previous reductions)
+    CR  Undeposited Funds                        (Cash returned to member)
+    CR  Accounts Receivable                      (Any remaining unpaid balance cleared)
 ```
+
+**Note on credits:** If the item was fully paid, only Undeposited Funds is credited (cash refund). If the item had an unpaid balance, that balance is credited to A/R to clear the receivable, with the remainder going to Undeposited Funds.
+
+**Key Point:** If there were previous partial refunds on this item, the system only reverses the *remaining* revenue and tax, not the original full amount. This prevents double-reversing revenue that was already reduced in earlier partial refunds.
+
+**3b. Partial Refund (Price Adjustment)**
+
+When an item is refunded for less than its full remaining amount (leaving some net payment remaining), this is treated as a **price adjustment**. The item's price is reduced, but it remains in paid/partially-paid status.
+
+**Journal Entries:**
+
+```
+DR  Revenue ([account_code])        (Proportional base amount)
+DR  HST Payable                     (Proportional tax amount)
+    CR  Undeposited Funds/A/R                    (Refund amount based on payment status)
+```
+
+The revenue reduction is proportional to the refund amount relative to the item's total. The item's `amount` field is reduced by the proportional base amount, effectively lowering the price.
+
+**Mixed Refunds:**
+
+When processing a refund with multiple items, each item is handled according to its refund amount:
+- Items refunded for their full remaining balance are cancelled
+- Items refunded for less than their remaining balance have their price adjusted
+- All items are processed in the same refund transaction
 
 ### 4. Order/Item Deletion
 
@@ -278,7 +307,7 @@ The system tracks which payments are included in each payout, maintaining a clea
 
 **Manual Recording:**
 
-Some clubs prefer to manage deposits manually, matching to their bank statements. This flexibility allows you to reconcile deposits however your accountant prefers.
+Some clubs manage deposits manually to perform bank reconciliation, matching deposits in the system to their bank statements. This ensures proper cash controls and accurate financial reporting.
 
 ### 6. Offline Payments
 
@@ -322,15 +351,17 @@ CR  Accounts Receivable         (Payment amount)
 
 ### 8. Club Credit Refunds
 
-When a refund is issued as club credit instead of cash, the accounting treatment creates or increases a liability to the member:
+When a refund is issued as club credit instead of cash, the accounting treatment creates or increases a liability to the member. Like cash refunds, the system distinguishes between full refunds (cancellations) and partial refunds (price adjustments).
+
+**Journal Entries:**
 
 ```
-DR  Revenue ([account_code])        (Refunded amount)
-DR  HST Payable                     (Refunded tax)
+DR  Revenue ([account_code])        (Refunded amount - proportional for partial refunds)
+DR  HST Payable                     (Refunded tax - proportional for partial refunds)
 CR  Club Credit Liability           (Total refund)
 ```
 
-Note that unlike cash refunds, there is **no cash withdrawal entry** because the club retains the funds.
+Note that unlike cash refunds, there is **no cash withdrawal entry** because the club retains the funds. The refund increases the club's liability to the member (club credit balance).
 
 **Example:** Refund $22.60 to club credit ($20 + $2.60 HST)
 
@@ -431,14 +462,14 @@ Labels let you filter transactions without knowing specific account codes. For e
 - Need all tax transactions? Filter by Label: `HST`, `GST`, or `PST` depending on your location
 - Looking for cash movements? Filter by Labels: `Cash`, `Undeposited Funds`, `A/R`
 
-**Three-Level System:**
+**Understanding the Columns:**
 
-The system uses three complementary fields to describe accounts:
-1. **Item Type** - What was sold (League, Product, Fee, Program)
-2. **Account Code** - Technical identifier matching your chart of accounts (4010, 1200, 2110)
-3. **Account Label** - Human-readable category (Revenue, A/R, HST)
+Each transaction shows three pieces of information to help you track and categorize:
+- **Item Type** - What was sold (League, Product, Fee, Program)
+- **Account Code** - Matches your chart of accounts (4010, 1200, 2110)
+- **Account Label** - Easy-to-read category (Revenue, A/R, HST)
 
-This separation allows both detailed tracking (by code) and easy filtering/reporting (by label).
+This lets you filter reports either by specific account codes or by broad categories.
 
 ### Filters
 
@@ -492,9 +523,9 @@ The CSV export includes additional columns not shown in the on-screen report, sp
 
 The **Journal Entry Group** column (first column) groups related transactions that represent a single financial event. This makes it easy to import complete journal entries into QuickBooks or other accounting software.
 
-**Group ID format:** `{source_id}-{TransactionType}`
-- Example: `12345-RevenueRecognized` - All transactions from order item 12345's revenue recognition
-- Example: `67890-PaymentInitiated` - All transactions from payment 67890
+**Examples:**
+- `12345-RevenueRecognized` - All transactions from order item 12345's revenue recognition
+- `67890-PaymentInitiated` - All transactions from payment 67890
 
 All transactions with the same Journal Entry Group ID should balance to $0 (total debits = total credits).
 
@@ -514,11 +545,10 @@ Journal Entry Group,Order ID,Type,Date,Item,Description,Class,Project,Account,La
 
 **Key Features:**
 
-- **Complete data** - Every row includes all fields (no visual grouping tricks)
+- **Complete data** - Every row includes all fields for easy import
 - **Chronological order** - Oldest transactions first (standard for accounting imports)
 - **Balanced groups** - Each journal entry group balances to $0
 - **Import-ready** - Standard format compatible with major accounting software
-- **Compact group IDs** - Short format (~20 characters) fits in QuickBooks memo fields
 
 The CSV maintains the double-entry structure with separate Debit and Credit columns, ensuring compatibility with all major accounting systems.
 
@@ -536,47 +566,102 @@ When a payment is received for an order with multiple items, the system allocate
 2. Product: $22.60 paid in full (100%)
 3. League: $42.40 paid (37.5% paid, 62.5% unpaid)
 
-This means you can refund the fee or product in full, even though the order is only partially paid. The system tracks `amount_paid` and `amount_refunded` for each order item.
+This means you can refund the fee or product in full, even though the order is only partially paid. The system tracks which payments have been applied to each item, showing the refundable amount (net amount paid) for each item.
 
 ### Refunding Partially Paid Orders
 
 The sequential allocation system makes partial refunds straightforward:
 
-**Scenario:** Member paid $70 of their $140.60 order, then requests to cancel their product purchase ($22.60).
+**Example 1: Full Refund of Fully-Paid Item**
 
-**Refund process:**
-1. Navigate to the order
-2. The product shows as "Paid in full" with refundable amount: $22.60
-3. Process refund for the product
-4. System creates journal entries reversing the product revenue and tax
-5. Refund badge appears showing partial refund status
+An order has three items where $70 has been paid (fee $5 + product $22.60 + league $113). Staff decides to refund the product in full.
 
-**What happens with payment allocation:**
-- Fee: $5.00 paid, $0 refunded (net: $5.00 paid)
-- Product: $22.60 paid, $22.60 refunded (net: $0 - fully refunded)
-- League: $42.40 paid, $0 refunded (net: $42.40 paid, $70.60 unpaid)
+**Refund form:**
+- Staff checks the "Locker" item
+- Refund amount shows $22.60 (the full refundable amount)
+- Staff processes the refund
 
-**Accounting entries for refund:**
+**What happens:**
+- Product item status changes to `'cancelled'`
+- Member receives $22.60 refund
+- Fee and league remain active
+
+**Accounting entries:**
 
 ```
-Revenue reversal:
 DR  Revenue (Product)        $20.00
 DR  HST Payable              $2.60
-CR  Accounts Receivable      $22.60
-
-Cash refund:
-DR  Accounts Receivable      $22.60
-CR  Undeposited Funds        $22.60
+    CR  Undeposited Funds            $22.60
 ```
+
+**Result:** Member receives $22.60 refund, product is cancelled.
+
+**Example 2: Partial Refund (Price Adjustment)**
+
+A league registration was paid in full for $113. Staff decides to issue a $20 discount (member missed a session).
+
+**Refund form:**
+- Staff checks the "League" item
+- Staff changes the refund amount from $113.00 to $20.00
+- Staff processes the refund
+
+**What happens:**
+- Item price is reduced from $113 to $93
+- Item remains in `'paid'` status (not cancelled)
+- Member receives $20 refund
+
+**Accounting entries:**
+
+```
+DR  Revenue                  $17.70  (proportional to $20 refund)
+DR  HST Payable              $2.30   (proportional tax)
+    CR  Undeposited Funds            $20.00
+```
+
+**Result:** Member receives $20 refund, item price adjusted to $93, still marked as paid.
+
+**Example 3: Mixed Refund (Multiple Items)**
+
+An order has three items all fully paid:
+- League: $113 (refundable)
+- Curling Canada Fee: $5 (refundable)
+- Locker: $22.60 (refundable)
+
+**Refund form:**
+- Staff checks "Curling Canada Fee" - leaves amount at $5.00 (full refund)
+- Staff checks "Locker" - changes amount from $22.60 to $10.00 (partial refund)
+- Staff leaves "League" unchecked (no refund)
+- Staff processes the refund
+
+**What happens:**
+- Fee item: Status changes to `'cancelled'`
+- Locker item: Price reduced from $22.60 to $12.60, remains `'paid'`
+- League item: Unaffected
+- Member receives total refund of $15
+
+**Accounting entries for the combined refund:**
+
+```
+DR  Revenue (Fee)            $5.00
+DR  Revenue (Locker)         $8.85   (proportional to $10 refund)
+DR  HST Payable (Locker)     $1.15   (proportional tax)
+    CR  Undeposited Funds           $15.00
+```
+
+**Result:** One refund transaction handles both a cancellation and a price adjustment.
+
+**Important Note for Event Registrations:** Partial refunds do not remove a participant's registration from an event (league, bonspiel, program). Only a full refund that cancels the item will unregister the participant. This allows clubs to offer discounts or adjustments while keeping participants enrolled.
 
 ### Refundable Amounts in the UI
 
 When viewing an order, each item displays:
 - **Amount Paid** - How much has been paid toward this specific item
-- **Amount Refunded** - How much has been refunded from this item
-- **Refundable Amount** - The net amount available to refund (paid - refunded)
+- **Net Amount Paid** - Amount paid minus any previous refunds or price reductions
+- **Refundable Amount** - The amount available to refund (equal to net amount paid)
 
 Items that haven't been paid yet show as "Not refundable" and are disabled in the refund form. You can only refund what's been paid.
+
+**Important:** The refundable amount automatically accounts for any previous partial refunds. If an item had a $20 partial refund processed previously, the refundable amount is reduced accordingly.
 
 ## Setting Up Accounting Transactions
 
@@ -624,13 +709,120 @@ Understand when each transaction type is created:
 - **Cash Receipts** - Only when payment successfully processes
 - **Refunds** - When refund is issued
 
-### Reconcile Regularly
+### Reconciliation Procedures
 
-Use the Accounting Transactions report to:
-- Verify debits equal credits
-- Reconcile Accounts Receivable balance
-- Confirm HST Payable matches tax collected
-- Review all transactions for a specific order
+Regular reconciliation ensures your books accurately reflect your club's financial position. Follow these procedures monthly (or more frequently during busy periods):
+
+#### 1. Reconcile Undeposited Funds to Bank Deposits
+
+**Purpose:** Verify all payments received have been properly deposited to your bank account.
+
+**Procedure:**
+1. Export Accounting Transactions report
+2. Filter by Account Label: `Undeposited Funds`
+3. Calculate the Undeposited Funds balance:
+   - Sum all debits (payments received)
+   - Subtract all credits (payments deposited or refunded)
+   - Result = Outstanding payments not yet deposited
+4. Compare to your actual undeposited payments (e.g., cash/checks on hand)
+5. Investigate any discrepancies
+
+**Common timing differences:**
+- Online payments processed but not yet paid out by Stripe/SportsPay (typically 2-7 business days)
+- Cash/checks received but not yet deposited to bank
+- Refunds processed but not yet withdrawn from bank account
+
+#### 2. Reconcile Accounts Receivable
+
+**Purpose:** Verify outstanding member balances are accurate and collectible.
+
+**Procedure:**
+1. Export Accounting Transactions report
+2. Filter by Account Code: 1200 (A/R)
+3. Calculate A/R balance:
+   - Sum all debits (orders placed, unpaid balances)
+   - Subtract all credits (payments received, refunds for unpaid items)
+   - Result = Total outstanding member balances
+4. Cross-reference to Orders report filtered by status: `submitted`, `partially_paid`
+5. Review aging of receivables:
+   - Current (0-30 days)
+   - 31-60 days
+   - 61-90 days
+   - Over 90 days (may require collection action)
+
+**Red flags:**
+- A/R balance doesn't match outstanding orders report
+- Large balances over 90 days old
+- Negative A/R balance (indicates overpayment or accounting error)
+
+#### 3. Reconcile Tax Payable (HST/GST/PST)
+
+**Purpose:** Ensure tax liability is accurately calculated for remittance to government.
+
+**Procedure:**
+1. Export Accounting Transactions report for your tax reporting period
+2. Filter by Account Code: 2110 (HST Payable)
+3. Calculate tax liability:
+   - Sum all credits (tax collected on sales)
+   - Subtract all debits (tax refunded)
+   - Result = Net tax owed to government
+4. This amount should match your tax filing for the period
+5. When you remit tax to government, create a manual journal entry:
+   ```
+   DR  HST Payable        (Amount remitted)
+       CR  Cash Account               (Amount remitted)
+   ```
+
+**Important:** The system does NOT automatically record tax remittances. You must manually record these payments to clear the HST Payable liability.
+
+#### 4. Reconcile Club Credit Liability
+
+**Purpose:** Track total outstanding club credit obligations to members.
+
+**Procedure:**
+1. Export Accounting Transactions report
+2. Filter by Account Label: `Club Credit Payable`
+3. Calculate club credit liability:
+   - Sum all credits (credits granted or refunded to credit)
+   - Subtract all debits (credits applied to orders)
+   - Result = Total club credits outstanding
+4. Cross-reference to Club Credits report (if available) or member balances
+5. Review for:
+   - Stale credits (over 12 months unused)
+   - Unusually large credits or frequent grants that may need review
+
+#### 5. Verify Processing Fee Expenses
+
+**Purpose:** Ensure payment processor fees are accurately recorded.
+
+**Procedure:**
+1. Export Accounting Transactions report for the month
+2. Filter by Account Label: `Processing Fees`
+3. Sum all processing fee debits
+4. Compare to:
+   - Stripe/SportsPay monthly statements
+   - Bank deposit reconciliation (net deposits + fees should equal gross payments)
+5. Investigate any discrepancies
+
+**Common issues:**
+- Fees from previous month included in current month payout
+- Application fees vs. processing fees split incorrectly
+- Manual deposits recorded without fee tracking
+
+### Monthly Reconcile Checklist
+
+Use this checklist to ensure complete monthly reconciliation:
+
+- [ ] Undeposited Funds balance reconciles to actual undeposited items
+- [ ] Accounts Receivable balance matches outstanding orders
+- [ ] Accounts Receivable aging reviewed, collection actions documented
+- [ ] Tax Payable balance calculated and documented
+- [ ] Tax remittances recorded (if applicable for period)
+- [ ] Club Credit Liability balance verified
+- [ ] Processing Fee Expense reconciled to processor statements
+- [ ] All journal entry groups balance (debits = credits)
+- [ ] Bank reconciliation completed (Cash Account)
+- [ ] Unusual or large transactions reviewed and documented
 
 ### Export Frequently
 
@@ -678,6 +870,18 @@ Accounting transactions are immutable - you can't edit them. Instead:
 - For paid orders: Process a refund, then create a new order if needed
 - This approach maintains a complete audit trail of all changes
 
+### What's the difference between a full refund and a partial refund?
+
+The system handles these two scenarios differently:
+
+**Full Refund (Cancellation):** When you refund all payments made on an item, the item status changes to `'cancelled'` and all remaining revenue is reversed. This is treated as cancelling the service/product.
+
+**Partial Refund (Price Adjustment):** When you refund less than the full amount paid, the item's price is reduced proportionally and the item remains in paid/partially-paid status. This is treated as a price discount or adjustment, not a cancellation.
+
+**Example:** If a member paid $113 for a league and you refund $20, the league price drops to $93 (not cancelled). If you later refund the remaining $93, then it becomes a cancellation.
+
+This distinction ensures your revenue accounts accurately reflect what services were actually provided versus cancelled.
+
 ### Can I use this with QuickBooks/Xero/Sage?
 
 Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The export is specifically designed for accounting software integration:
@@ -716,6 +920,22 @@ Club credits create a liability (money the club owes to members). The accounting
 - **Credit refunds** - Debit Revenue/HST, Credit Club Credit Liability (increases liability when refunding to credit)
 
 The Club Credit Liability balance shows your total obligation to members.
+
+### How do I record tax remittances to the government?
+
+The system does NOT automatically record tax payments to the government. When you remit HST/GST/PST:
+
+1. Calculate your tax liability from the Accounting Transactions report (filter by Account 2110)
+2. Pay the amount to the government via your normal process
+3. **Manually record the payment** in your accounting software:
+   ```
+   DR  HST Payable (2110)
+   CR  Cash Account
+   ```
+
+This clears the liability from your books. Without this entry, your HST Payable balance will continue to grow even after you've paid the government.
+
+**Important:** Most clubs will make this journal entry in their primary accounting software (QuickBooks, Xero, etc.) rather than in Curling IO, as tax remittances are typically handled outside the club management system.
 
 ## Related Documentation
 
