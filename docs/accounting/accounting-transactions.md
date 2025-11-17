@@ -59,17 +59,17 @@ Every transaction creates balanced journal entries where debits equal credits. T
 
 ```
 Journal Entry:
-DR  Accounts Receivable     $113.00
-CR  Revenue (Account 4010)  $100.00
-CR  HST Payable             $13.00
+DR  Accounts Receivable        $113.00
+CR  Revenue (Account 4010)     $100.00
+CR  HST Payable                $13.00
 ```
 
 When they pay:
 
 ```
 Journal Entry:
-DR  Undeposited Funds       $113.00
-CR  Accounts Receivable     $113.00
+DR  Undeposited Funds          $113.00
+CR  Accounts Receivable        $113.00
 ```
 
 ## Balance Sheet Account Codes
@@ -100,9 +100,9 @@ The accounting transactions system automatically tracks all sales taxes (HST, GS
 When an order is placed, taxes are recorded in the **HST Payable** liability account:
 
 ```
-DR  Accounts Receivable     $113.00
-CR  Revenue                 $100.00
-CR  HST Payable (2110)      $13.00
+DR  Accounts Receivable    $113.00
+CR  Revenue                $100.00
+CR  HST Payable (2110)     $13.00
 ```
 
 This creates a liability - the club owes $13.00 to the government. When you remit taxes quarterly or annually, your accountant will use this HST Payable balance.
@@ -114,9 +114,9 @@ If your club charges multiple tax rates (e.g., GST + PST, or different HST rates
 **Example:** $100 item with 5% GST and 7% PST
 
 ```
-DR  Accounts Receivable     $112.00
-CR  Revenue                 $100.00
-CR  HST Payable             $12.00
+DR  Accounts Receivable    $112.00
+CR  Revenue                $100.00
+CR  HST Payable            $12.00
 ```
 
 Your Order Items report shows the tax breakdown per item (tax1_amount, tax2_amount), but the accounting transactions combine them into one liability account for simplicity.
@@ -126,9 +126,9 @@ Your Order Items report shows the tax breakdown per item (tax1_amount, tax2_amou
 When you refund an item, the tax liability is reduced:
 
 ```
-DR  Revenue                 $100.00
-DR  HST Payable             $13.00
-CR  Accounts Receivable     $113.00
+DR  Revenue                $100.00
+DR  HST Payable            $13.00
+CR  Accounts Receivable    $113.00
 ```
 
 This reduces your HST Payable balance, since you're no longer collecting that tax from the member.
@@ -138,8 +138,8 @@ This reduces your HST Payable balance, since you're no longer collecting that ta
 Items with no tax (tax-exempt products, services, etc.) simply don't create HST Payable entries:
 
 ```
-DR  Accounts Receivable     $100.00
-CR  Revenue                 $100.00
+DR  Accounts Receivable    $100.00
+CR  Revenue                $100.00
 ```
 
 The system automatically handles this based on your tax settings for each item.
@@ -221,10 +221,10 @@ When an item is refunded for its full remaining amount (bringing net amount paid
 **Journal Entries:**
 
 ```
-DR  Revenue ([account_code])    (Remaining revenue after previous reductions)
-DR  HST Payable                 (Remaining tax after previous reductions)
-CR  Undeposited Funds           (Cash returned to member)
-CR  Accounts Receivable         (Any remaining unpaid balance cleared)
+DR  Revenue ([account_code])  (Remaining revenue after previous reductions)
+DR  HST Payable               (Remaining tax after previous reductions)
+CR  Undeposited Funds         (Cash returned to member)
+CR  Accounts Receivable       (Any remaining unpaid balance cleared)
 ```
 
 **Note on credits:** If the item was fully paid, only Undeposited Funds is credited (cash refund). If the item had an unpaid balance, that balance is credited to A/R to clear the receivable, with the remainder going to Undeposited Funds.
@@ -238,9 +238,9 @@ When an item is refunded for less than its full remaining amount (leaving some n
 **Journal Entries:**
 
 ```
-DR  Revenue ([account_code])    (Proportional base amount)
-DR  HST Payable                 (Proportional tax amount)
-CR  Undeposited Funds/A/R       (Refund amount based on payment status)
+DR  Revenue ([account_code])  (Proportional base amount)
+DR  HST Payable               (Proportional tax amount)
+CR  Undeposited Funds/A/R     (Refund amount based on payment status)
 ```
 
 The revenue reduction is proportional to the refund amount relative to the item's total. The item's `amount` field is reduced by the proportional base amount, effectively lowering the price.
@@ -589,9 +589,9 @@ An order has three items where $70 has been paid (fee $5 + product $22.60 + leag
 **Accounting entries:**
 
 ```
-DR  Revenue (Product)        $20.00
-DR  HST Payable              $2.60
-CR  Undeposited Funds        $22.60
+DR  Revenue (Product)     $20.00
+DR  HST Payable           $2.60
+CR  Undeposited Funds     $22.60
 ```
 
 **Result:** Member receives $22.60 refund, product is cancelled.
@@ -613,9 +613,9 @@ A league registration was paid in full for $113. Staff decides to issue a $20 di
 **Accounting entries:**
 
 ```
-DR  Revenue                  $17.70  (proportional to $20 refund)
-DR  HST Payable              $2.30   (proportional tax)
-CR  Undeposited Funds        $20.00
+DR  Revenue                $17.70    (proportional to $20 refund)
+DR  HST Payable            $2.30     (proportional tax)
+CR  Undeposited Funds      $20.00
 ```
 
 **Result:** Member receives $20 refund, item price adjusted to $93, still marked as paid.
@@ -643,8 +643,8 @@ An order has three items all fully paid:
 
 ```
 DR  Revenue (Fee)            $5.00
-DR  Revenue (Locker)         $8.85   (proportional to $10 refund)
-DR  HST Payable (Locker)     $1.15   (proportional tax)
+DR  Revenue (Locker)         $8.85     (proportional to $10 refund)
+DR  HST Payable (Locker)     $1.15     (proportional tax)
 CR  Undeposited Funds        $15.00
 ```
 
