@@ -11,7 +11,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Curling IO" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f57dee26.css">
-<script src="/assets/js/runtime~main.72c1c67c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.bc1f1100.js" defer="defer"></script>
 <script src="/assets/js/main.9fb3742e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -47,23 +47,61 @@ For example; <em>Hurly gave Sue a cheque for $180.80 at the bar.</em></p>
 <p>If your club has online payments set up and enabled, then you&#x27;ll have the option of using a Credit / Debit card to process the payment.
 This is useful if a curler calls in with a credit card or brings in a credit card and you don&#x27;t already have a point of sale system.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="refunds">Refunds<a href="#refunds" class="hash-link" aria-label="Direct link to Refunds" title="Direct link to Refunds">​</a></h2>
-<p>To refund a payment simply click the <strong>Add a refund</strong> button next to the payment near the bottom of the order screen.
-Refunds are specific to each payment, so if you submitted partial payments for an order, to fully refund the order you would have to submit a refund for each of the payments separately.</p>
-<p><img decoding="async" loading="lazy" alt="List of Payments" src="/assets/images/refund-a-payment-472e065a9d7fbc49a0f7ade994e80078.png" width="1127" height="158" class="img_ev3q"></p>
-<p>When you click the <strong>Add a refund</strong> button you will be taken to the refund form.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="refund-form">Refund Form<a href="#refund-form" class="hash-link" aria-label="Direct link to Refund Form" title="Direct link to Refund Form">​</a></h3>
-<p>When refunding a payment you can choose which items to refund and specify the amount to refund.
-If you choose items to refund, by default the system will total up the amounts of the items selected.
-For example if you are refunding a Curling Canada Fee because the curler had already paid it at another club this season, you just select the fee and we&#x27;ll figure out the amount to be refunded.</p>
-<p><img decoding="async" loading="lazy" alt="List of Payments" src="/assets/images/refund-form-fe18c9792f547244eb26ce5b752851aa.png" width="758" height="686" class="img_ev3q"></p>
-<p>You can also perform an <em>adhoc refund</em> by specifying the amount to refund regardless of whether or not you select any items.
-If you don&#x27;t select any items, then your reports can&#x27;t show which items the refund was placed against, only the order and payment itself.
-Selected items will be considered <em>refunded</em> regardless of the amount of the refund.
-Refunded items will release their inventory if quantity is limited and refunded registrations are no longer considered registrations.</p>
-<p>If the payment you are refunding was made through our online payments (credit or debit card) then you can choose to send the refund to the member&#x27;s card used in the purchase.
-The system will also autofill the time it was withdrawn and how it was refunded.
-Keep in mind that you can also refund online payments using a different method, like to club credits, or to cash, etc.</p>
-<p>You can optionally specify a reason for the refund, and for offline payments, when the funds were withdrawn from the club, how the refund was made.</p>
+<p>To refund an order, click the <strong>Add a refund</strong> button next to a payment near the bottom of the order screen.</p>
+<p><img decoding="async" loading="lazy" alt="Add a Refund" src="/assets/images/refund-a-payment-472e065a9d7fbc49a0f7ade994e80078.png" width="1127" height="158" class="img_ev3q"></p>
+<p>This opens the refund form where you can select which items to refund and specify the amounts.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="selecting-items-to-refund">Selecting Items to Refund<a href="#selecting-items-to-refund" class="hash-link" aria-label="Direct link to Selecting Items to Refund" title="Direct link to Selecting Items to Refund">​</a></h3>
+<p>The refund form shows all refundable items from the order with checkboxes. Only items that have been paid (fully or partially) can be refunded.</p>
+<p><img decoding="async" loading="lazy" alt="Refund Form" src="/assets/images/refund-form-cb8062ee20dc1af4f8dfc15fdf1ff2a5.png" width="1470" height="912" class="img_ev3q"></p>
+<p><strong>To refund items:</strong></p>
+<ol>
+<li>Check the box next to each item you want to refund</li>
+<li>The refund amount defaults to the full refundable amount for each item</li>
+<li>You can adjust the amount for partial refunds (see below)</li>
+<li>Use <strong>Select All</strong> to quickly select all refundable items</li>
+</ol>
+<p><strong>Example:</strong> If you&#x27;re refunding a Curling Canada Fee because the member already paid it at another club, simply check the fee item and the system shows the full refundable amount.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="full-vs-partial-refunds">Full vs. Partial Refunds<a href="#full-vs-partial-refunds" class="hash-link" aria-label="Direct link to Full vs. Partial Refunds" title="Direct link to Full vs. Partial Refunds">​</a></h3>
+<p>You can refund an item either fully or partially:</p>
+<p><strong>Full Refund:</strong></p>
+<ul>
+<li>Refund the entire refundable amount shown</li>
+<li>The item is cancelled and marked as refunded</li>
+<li>For event registrations (leagues, bonspiels, programs), the participant is unregistered</li>
+<li>Inventory is released if quantity-limited</li>
+</ul>
+<p><strong>Partial Refund (Price Adjustment):</strong></p>
+<ul>
+<li>Change the refund amount to less than the full refundable amount</li>
+<li>The item price is reduced, but the item remains active</li>
+<li>For event registrations, the participant stays registered (useful for partial discounts)</li>
+<li>The item is not marked as cancelled</li>
+</ul>
+<p><strong>Important:</strong> Partial refunds will not remove a registration from an event. Only refunding the full amount will unregister a participant.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="refund-methods">Refund Methods<a href="#refund-methods" class="hash-link" aria-label="Direct link to Refund Methods" title="Direct link to Refund Methods">​</a></h3>
+<p><strong>Online Payments (Credit/Debit Card):</strong>
+If the original payment was made through online payments, you can:</p>
+<ul>
+<li>Refund to the member&#x27;s original card (recommended)</li>
+<li>Refund to club credits (member gets store credit)</li>
+<li>Refund via another method (cash, cheque, etc.)</li>
+</ul>
+<p>The system will autofill the withdrawal date and method when refunding to the original card.</p>
+<p><strong>Offline Payments:</strong>
+For cash, cheque, or e-transfer payments, you can specify:</p>
+<ul>
+<li>How the refund was made (cash, cheque, club credit, etc.)</li>
+<li>When the funds were withdrawn from the club</li>
+<li>An optional reason for the refund</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="refund-tracking">Refund Tracking<a href="#refund-tracking" class="hash-link" aria-label="Direct link to Refund Tracking" title="Direct link to Refund Tracking">​</a></h3>
+<p>The system tracks refunds against specific items, which helps with:</p>
+<ul>
+<li>Accurate reporting showing which items were refunded</li>
+<li>Inventory management (releasing quantity-limited spots)</li>
+<li>Registration tracking (unregistering participants for full refunds)</li>
+<li>Accounting transactions (if Premium accounting is enabled)</li>
+</ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="adjusting-submitted-orders">Adjusting Submitted Orders<a href="#adjusting-submitted-orders" class="hash-link" aria-label="Direct link to Adjusting Submitted Orders" title="Direct link to Adjusting Submitted Orders">​</a></h2>
 <p>For submitted (unpaid) orders only, you can add <strong>adjustments</strong> to change the total.
 An adjustment records as a new line item for the order where you can enter an amount (negative amounts reduce the total) and a description.</p>
@@ -91,6 +129,6 @@ For example, if a curler registered at the club under a dedicated club registrat
 <li><a href="/docs/getting-started/faq#one-of-our-members-paid-less-than-they-should-have">One of our members paid less than they should have</a></li>
 <li><a href="/docs/getting-started/faq#one-of-our-members-paid-seasonal-fees-more-than-once">One of our members paid seasonal fees more than once</a></li>
 <li><a href="/docs/getting-started/faq#refund-doesnt-show-up-on-the-curlers-statement">Refund doesn&#x27;t show up on the curler&#x27;s statement</a></li>
-</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/club-management/club-credits"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Club Credits</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/club-management/curlers"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Profiles</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#walkthrough-video" class="table-of-contents__link toc-highlight">Walkthrough Video</a></li><li><a href="#finding-your-orders" class="table-of-contents__link toc-highlight">Finding your Orders</a></li><li><a href="#submitting-payments" class="table-of-contents__link toc-highlight">Submitting Payments</a><ul><li><a href="#payment-form" class="table-of-contents__link toc-highlight">Payment Form</a></li></ul></li><li><a href="#refunds" class="table-of-contents__link toc-highlight">Refunds</a><ul><li><a href="#refund-form" class="table-of-contents__link toc-highlight">Refund Form</a></li></ul></li><li><a href="#adjusting-submitted-orders" class="table-of-contents__link toc-highlight">Adjusting Submitted Orders</a></li><li><a href="#sending-an-order-back-to-the-accounts-cart" class="table-of-contents__link toc-highlight">Sending an Order back to the Account&#39;s Cart</a></li><li><a href="#deleting-submitted-orders" class="table-of-contents__link toc-highlight">Deleting Submitted Orders</a></li><li><a href="#transferring-orders" class="table-of-contents__link toc-highlight">Transferring Orders</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started/curling-club-managers">For Clubs</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/for-curlers/how-do-i-login">For Curlers</a></li><li class="footer__item"><a href="https://www.youtube.com/@curlingio" target="_blank" rel="noopener noreferrer" class="footer__link-item">Tutorial Videos<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://curling.canny.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Feedback<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/curlingio" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://curling.ca" target="_blank" rel="noopener noreferrer" class="footer__link-item">Curling Canada<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/terms">Terms</a></li><li class="footer__item"><a class="footer__link-item" href="/privacy">Privacy</a></li><li class="footer__item"><a href="https://curlingschedules.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Curling Schedules<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Curling IO</div></div></div></footer></div>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/club-management/club-credits"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Club Credits</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/club-management/curlers"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Profiles</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#walkthrough-video" class="table-of-contents__link toc-highlight">Walkthrough Video</a></li><li><a href="#finding-your-orders" class="table-of-contents__link toc-highlight">Finding your Orders</a></li><li><a href="#submitting-payments" class="table-of-contents__link toc-highlight">Submitting Payments</a><ul><li><a href="#payment-form" class="table-of-contents__link toc-highlight">Payment Form</a></li></ul></li><li><a href="#refunds" class="table-of-contents__link toc-highlight">Refunds</a><ul><li><a href="#selecting-items-to-refund" class="table-of-contents__link toc-highlight">Selecting Items to Refund</a></li><li><a href="#full-vs-partial-refunds" class="table-of-contents__link toc-highlight">Full vs. Partial Refunds</a></li><li><a href="#refund-methods" class="table-of-contents__link toc-highlight">Refund Methods</a></li><li><a href="#refund-tracking" class="table-of-contents__link toc-highlight">Refund Tracking</a></li></ul></li><li><a href="#adjusting-submitted-orders" class="table-of-contents__link toc-highlight">Adjusting Submitted Orders</a></li><li><a href="#sending-an-order-back-to-the-accounts-cart" class="table-of-contents__link toc-highlight">Sending an Order back to the Account&#39;s Cart</a></li><li><a href="#deleting-submitted-orders" class="table-of-contents__link toc-highlight">Deleting Submitted Orders</a></li><li><a href="#transferring-orders" class="table-of-contents__link toc-highlight">Transferring Orders</a></li><li><a href="#troubleshooting" class="table-of-contents__link toc-highlight">Troubleshooting</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/getting-started/curling-club-managers">For Clubs</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/for-curlers/how-do-i-login">For Curlers</a></li><li class="footer__item"><a href="https://www.youtube.com/@curlingio" target="_blank" rel="noopener noreferrer" class="footer__link-item">Tutorial Videos<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://curling.canny.io/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Feedback<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://twitter.com/curlingio" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://curling.ca" target="_blank" rel="noopener noreferrer" class="footer__link-item">Curling Canada<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/terms">Terms</a></li><li class="footer__item"><a class="footer__link-item" href="/privacy">Privacy</a></li><li class="footer__item"><a href="https://curlingschedules.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Curling Schedules<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Curling IO</div></div></div></footer></div>
 </body>
 </html>

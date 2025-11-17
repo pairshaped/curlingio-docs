@@ -196,8 +196,6 @@ These codes then appear in your order item reports and can be exported for use i
 
 In the same section, set default account codes for each type:
 
-![Accounting Codes Defaults](/assets/images/accounting-codes-defaults-67ec3e73c09dc5d8536efeaf16449a04.png)
-
 1. **Leagues** - e.g., 1000
 2. **Bonspiels** - e.g., 2000
 3. **Programs** - e.g., 3000
@@ -219,8 +217,6 @@ For more detailed tracking, edit individual items:
 2. Scroll to the **Accounting Codes** section
 3. Add Account Code (override), Class Code, or Project Code as needed
 4. Save
-
-![Accounting Codes Per Item](/assets/images/accounting-codes-per-item-bd57dc0e38b5a9e094b4cfca6b77afa6.png)
 
 **Products, Fees, and Programs:** Follow the same process in each item's edit form.
 
