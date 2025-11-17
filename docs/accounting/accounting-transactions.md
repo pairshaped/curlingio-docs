@@ -929,8 +929,8 @@ The system does NOT automatically record tax payments to the government. When yo
 2. Pay the amount to the government via your normal process
 3. **Manually record the payment** in your accounting software:
    ```
-   DR  HST Payable (2110)
-   CR  Cash Account
+   DR  HST Payable (2110)    (Amount remitted)
+   CR  Cash Account          (Amount remitted)
    ```
 
 This clears the liability from your books. Without this entry, your HST Payable balance will continue to grow even after you've paid the government.
