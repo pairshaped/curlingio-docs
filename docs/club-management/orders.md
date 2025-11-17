@@ -54,13 +54,17 @@ This is useful if a curler calls in with a credit card or brings in a credit car
 
 ## Refunds
 
-To refund an order, click the **Add a refund** button near the bottom of the order screen. This opens the refund form where you can select which items to refund and specify the amounts.
+To refund an order, click the **Add a refund** button next to a payment near the bottom of the order screen.
 
-![Refund Form](/img/docs/club-management/orders/refund-form.png)
+![Add a Refund](/img/docs/club-management/orders/refund-a-payment.png)
+
+This opens the refund form where you can select which items to refund and specify the amounts.
 
 ### Selecting Items to Refund
 
 The refund form shows all refundable items from the order with checkboxes. Only items that have been paid (fully or partially) can be refunded.
+
+![Refund Form](/img/docs/club-management/orders/refund-form.png)
 
 **To refund items:**
 1. Check the box next to each item you want to refund
