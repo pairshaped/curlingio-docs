@@ -223,8 +223,8 @@ When an item is refunded for its full remaining amount (bringing net amount paid
 ```
 DR  Revenue ([account_code])        (Remaining revenue after previous reductions)
 DR  HST Payable                     (Remaining tax after previous reductions)
-    CR  Undeposited Funds                        (Cash returned to member)
-    CR  Accounts Receivable                      (Any remaining unpaid balance cleared)
+CR  Undeposited Funds                (Cash returned to member)
+CR  Accounts Receivable              (Any remaining unpaid balance cleared)
 ```
 
 **Note on credits:** If the item was fully paid, only Undeposited Funds is credited (cash refund). If the item had an unpaid balance, that balance is credited to A/R to clear the receivable, with the remainder going to Undeposited Funds.
@@ -240,7 +240,7 @@ When an item is refunded for less than its full remaining amount (leaving some n
 ```
 DR  Revenue ([account_code])        (Proportional base amount)
 DR  HST Payable                     (Proportional tax amount)
-    CR  Undeposited Funds/A/R                    (Refund amount based on payment status)
+CR  Undeposited Funds/A/R            (Refund amount based on payment status)
 ```
 
 The revenue reduction is proportional to the refund amount relative to the item's total. The item's `amount` field is reduced by the proportional base amount, effectively lowering the price.
@@ -591,7 +591,7 @@ An order has three items where $70 has been paid (fee $5 + product $22.60 + leag
 ```
 DR  Revenue (Product)        $20.00
 DR  HST Payable              $2.60
-    CR  Undeposited Funds            $22.60
+CR  Undeposited Funds        $22.60
 ```
 
 **Result:** Member receives $22.60 refund, product is cancelled.
@@ -615,7 +615,7 @@ A league registration was paid in full for $113. Staff decides to issue a $20 di
 ```
 DR  Revenue                  $17.70  (proportional to $20 refund)
 DR  HST Payable              $2.30   (proportional tax)
-    CR  Undeposited Funds            $20.00
+CR  Undeposited Funds        $20.00
 ```
 
 **Result:** Member receives $20 refund, item price adjusted to $93, still marked as paid.
@@ -645,7 +645,7 @@ An order has three items all fully paid:
 DR  Revenue (Fee)            $5.00
 DR  Revenue (Locker)         $8.85   (proportional to $10 refund)
 DR  HST Payable (Locker)     $1.15   (proportional tax)
-    CR  Undeposited Funds           $15.00
+CR  Undeposited Funds        $15.00
 ```
 
 **Result:** One refund transaction handles both a cancellation and a price adjustment.
