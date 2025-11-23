@@ -115,8 +115,8 @@ export default function PricingCalculator() {
   return (
     <div className={styles.calculator}>
       <div className={styles.header}>
-        <h4>Calculate Your Costs</h4>
-        <p>See exactly what you'll pay based on your club's needs</p>
+        <h4>Calculate Your Annual Costs</h4>
+        <p>See approximately what you'll pay based on your club's needs</p>
       </div>
 
       <div className={styles.inputs}>
@@ -250,7 +250,7 @@ export default function PricingCalculator() {
               <span>{results.annualFee}</span>
             </div>
             <div className={`${styles.costLine} ${styles.totalLine}`}>
-              <span>Total Cost:</span>
+              <span>Total Cost per Year:</span>
               <span>{formatCurrency(results.totalCost, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
             </div>
           </div>

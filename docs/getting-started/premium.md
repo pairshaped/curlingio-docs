@@ -180,8 +180,3 @@ If your club loses premium access, we won't delete your existing PDFs, however t
 ### Quick Books Online Integration
 
 **COMING SOON**
-
-
-### Team Communication Features
-
-**COMING SOON**
