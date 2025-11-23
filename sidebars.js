@@ -30,6 +30,7 @@ module.exports = {
       'club-management/discounts',
       'club-management/calendar',
       'club-management/club-credits',
+      'club-management/emails',
       'club-management/orders',
       'club-management/curlers',
       'club-management/waivers',
