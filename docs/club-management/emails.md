@@ -31,29 +31,26 @@ You automatically receive email credits in three ways:
 
 **1. Premium Subscription Renewals**
 
-When you purchase or renew a Premium subscription, you receive **5,000 email credits** immediately. These credits are added to your balance and can be used for broadcast emails throughout your subscription period.
+When you purchase or renew a Premium subscription, you are granted email credits that fill your balance up to **6,000 credits**. These credits can be used for broadcast emails throughout your subscription period.
 
 **2. Monthly Automatic Grants**
 
 If your club processes online payments through Curling IO (leagues, competitions, products, fees), you automatically earn email credits each month based on your payment processing volume:
 
-- You earn **10 credits for every dollar** in application fees you generate
 - Credits are granted on the 1st of each month for the previous month's activity
-- There's a minimum threshold of $5 in monthly fees to receive the grant
-
-For example, if you processed $100 in application fees in January, you'll receive 1,000 email credits on February 1st.
+- Auto-granted credits from renewals and monthly allocations are subject to a 6,000 credit cap, meaning automatic grants will only add credits up to this limit
 
 **3. Direct Purchases**
 
-You can purchase additional email credits at any time if you need more than your automatic grants provide. See the "Purchasing Additional Credits" section below.
+You can purchase additional email credits at any time if you need more than your automatic grants provide:
 
-#### Credit Balance and Cap
+1. Go to **Club** → **Emails** → **Email Broadcasts** tab
+2. Click the **Purchase Credits** button
+3. Select a credit package from the available options
 
-Your email credit balance has a **maximum cap of 6,000 credits**. This means:
+Purchased credits are not subject to the 6,000 credit cap that applies to automatic grants, so your balance can exceed this limit. Credits never expire and will remain in your account until used.
 
-- Your balance cannot exceed 6,000 credits
-- If a grant or purchase would take you over the cap, you'll only receive credits up to the 6,000 limit
-- Once you use credits and go below the cap, you can earn or purchase more credits again
+#### Credit Balance
 
 You can view your current credit balance and usage history on the **Email Broadcasts** page.
 
@@ -79,7 +76,6 @@ On the email composer page, you'll see:
 
 - **Your current credit balance** and how many credits this email will use
 - **Recipient list** showing all email addresses that will receive the email
-- **From Name** - How your club name will appear to recipients (defaults to your club name)
 - **Subject** - The email subject line
 - **Body** - The email message content
 
@@ -94,16 +90,6 @@ You can view the status of your sent broadcasts by going to **Club** → **Email
 - Sent broadcasts (showing subject, date, and credits used)
 - Credit grants from purchases, premium renewals, and monthly allocations
 - Your current credit balance at the top of the page
-
-### Purchasing Additional Credits
-
-If you need more credits than your automatic grants provide, you can purchase them at any time.
-
-1. Go to **Club** → **Emails** → **Email Broadcasts** tab
-2. Click the **Purchase Credits** button
-3. Select a credit package from the available options
-
-Credits never expire and will remain in your account until used. Remember that your balance cannot exceed 6,000 credits, so plan your purchases accordingly.
 
 ## Transactional Email Templates
 
@@ -150,7 +136,6 @@ If you want to return a template to its original default content, click the **Re
 - **Check your filters** - Before sending a broadcast, double-check that your report filters are selecting the right recipients
 - **Review your balance** - Make sure you have enough credits before composing large broadcasts
 - **Test first** - Consider sending a test broadcast to yourself or a small group before sending to all members
-- **Mind the cap** - Your credit balance caps at 6,000, so use credits regularly rather than letting them accumulate
 
 ## Frequently Asked Questions
 
