@@ -24,15 +24,21 @@ Advanced tools for growth
 
 Member registration & management✓✓
 
-Unlimited members✓✓
+Hosted website✓✓
 
-Website✓✓
+Online payment processing1✓✓
+
+Email broadcasts2✓✓
 
 Membership & Financial Reports✓✓
 
-##### Competition Tools
+Venue / Ice Rentals—✓
 
-League management✓✓
+Accrual accounting—✓
+
+##### League Tools
+
+League & Competition management✓✓
 
 Round Robins & Playoff Brackets✓✓
 
@@ -40,15 +46,9 @@ Draw Schedules✓✓
 
 Scores and Standings✓✓
 
-Advanced and Participant Scoring—✓
-
-##### Payments & Growth
-
-Online payment processing—✓
-
 Waitlists—✓
 
-Venue / Ice Rentals—✓
+Advanced and Participant Scoring—✓
 
 ##### Other Features
 
@@ -60,18 +60,22 @@ Third party integrations—✓
 
 And more...—✓
 
+1 Enabling online payment processing automatically upgrades your club to Premium tier at no additional cost.
+
+2 Premium clubs receive automatic email credit grants. Essential clubs can purchase credits as needed.
+
 We offer two options to upgrade to our premium tier:
 
 1. **Enabling online payments will automatically upgrade your club to our premium tier.**
 2. If you don't want to accept online payments, you can still unlock premium tier with a yearly $420 flat fee.
 
-### Pricing Calculator[​](#pricing-calculator "Direct link to Pricing Calculator")
+### Pricing Calculator - Annual Cost Estimate[​](#pricing-calculator---annual-cost-estimate "Direct link to Pricing Calculator - Annual Cost Estimate")
 
 <!-- -->
 
-#### Calculate Your Costs
+#### Calculate Your Annual Costs
 
-See exactly what you'll pay based on your club's needs
+See approximately what you'll pay based on your club's needs
 
 Club Location:
 
@@ -101,7 +105,7 @@ Processing Rate (includes credit card fees):2.7% + $0.30
 
 Annual premium fee:$0 (included with online payments)
 
-Total Cost:$2,775.00
+Total Cost per Year:$2,775.00
 
 ✓ Premium features included automatically
 
@@ -141,7 +145,7 @@ We also offer a discounted rate of **2.7% + $0.30 per online credit card transac
 
 ### Clubs in the United States[​](#clubs-in-the-united-states "Direct link to Clubs in the United States")
 
-**3.6% + $0.35 per online credit card transaction**. Includes standard VISA and MasterCard processing fees. You can also accept and track offline payments (when members pay you later by cheque) free of charge.
+**2.9% + $0.30 per online credit card transaction** plus a **$20/month fee**. Includes standard VISA and MasterCard processing fees. You can also accept and track offline payments (when members pay you later by cheque) free of charge.
 
 **No setup fees, period.**
 
@@ -151,8 +155,7 @@ We also offer a discounted rate of **2.7% + $0.30 per online credit card transac
 * Payments clear within 7 days via direct deposit
 * Only VISA and Mastercard accepted (including co-branded debit cards)
 * [Convenience fees](/docs/club-management/settings.md#convenience-fee--surcharge) can be passed on to members at your discretion (check your local laws)
-
-**US Pricing Note:** We're actively working with our payment processor to lower US rates closer to Canadian pricing.
+* $20 monthly fee applies when accepting online payments
 
 **Additional Fees:**
 

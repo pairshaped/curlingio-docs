@@ -2949,29 +2949,26 @@ You automatically receive email credits in three ways:
 
 **1. Premium Subscription Renewals**
 
-When you purchase or renew a Premium subscription, you receive **5,000 email credits** immediately. These credits are added to your balance and can be used for broadcast emails throughout your subscription period.
+When you purchase or renew a Premium subscription, you are granted email credits that fill your balance up to **6,000 credits**. These credits can be used for broadcast emails throughout your subscription period.
 
 **2. Monthly Automatic Grants**
 
 If your club processes online payments through Curling IO (leagues, competitions, products, fees), you automatically earn email credits each month based on your payment processing volume:
 
-* You earn **10 credits for every dollar** in application fees you generate
 * Credits are granted on the 1st of each month for the previous month's activity
-* There's a minimum threshold of $5 in monthly fees to receive the grant
-
-For example, if you processed $100 in application fees in January, you'll receive 1,000 email credits on February 1st.
+* Auto-granted credits from renewals and monthly allocations are subject to a 6,000 credit cap, meaning automatic grants will only add credits up to this limit
 
 **3. Direct Purchases**
 
-You can purchase additional email credits at any time if you need more than your automatic grants provide. See the "Purchasing Additional Credits" section below.
+You can purchase additional email credits at any time if you need more than your automatic grants provide:
 
-#### Credit Balance and Cap[​](#credit-balance-and-cap "Direct link to Credit Balance and Cap")
+1. Go to **Club** → **Emails** → **Email Broadcasts** tab
+2. Click the **Purchase Credits** button
+3. Select a credit package from the available options
 
-Your email credit balance has a **maximum cap of 6,000 credits**. This means:
+Purchased credits are not subject to the 6,000 credit cap that applies to automatic grants, so your balance can exceed this limit. Credits never expire and will remain in your account until used.
 
-* Your balance cannot exceed 6,000 credits
-* If a grant or purchase would take you over the cap, you'll only receive credits up to the 6,000 limit
-* Once you use credits and go below the cap, you can earn or purchase more credits again
+#### Credit Balance[​](#credit-balance "Direct link to Credit Balance")
 
 You can view your current credit balance and usage history on the **Email Broadcasts** page.
 
@@ -2997,7 +2994,6 @@ On the email composer page, you'll see:
 
 * **Your current credit balance** and how many credits this email will use
 * **Recipient list** showing all email addresses that will receive the email
-* **From Name** - How your club name will appear to recipients (defaults to your club name)
 * **Subject** - The email subject line
 * **Body** - The email message content
 
@@ -3012,16 +3008,6 @@ You can view the status of your sent broadcasts by going to **Club** → **Email
 * Sent broadcasts (showing subject, date, and credits used)
 * Credit grants from purchases, premium renewals, and monthly allocations
 * Your current credit balance at the top of the page
-
-### Purchasing Additional Credits[​](#purchasing-additional-credits "Direct link to Purchasing Additional Credits")
-
-If you need more credits than your automatic grants provide, you can purchase them at any time.
-
-1. Go to **Club** → **Emails** → **Email Broadcasts** tab
-2. Click the **Purchase Credits** button
-3. Select a credit package from the available options
-
-Credits never expire and will remain in your account until used. Remember that your balance cannot exceed 6,000 credits, so plan your purchases accordingly.
 
 ## Transactional Email Templates[​](#transactional-email-templates "Direct link to Transactional Email Templates")
 
@@ -3068,7 +3054,6 @@ If you want to return a template to its original default content, click the **Re
 * **Check your filters** - Before sending a broadcast, double-check that your report filters are selecting the right recipients
 * **Review your balance** - Make sure you have enough credits before composing large broadcasts
 * **Test first** - Consider sending a test broadcast to yourself or a small group before sending to all members
-* **Mind the cap** - Your credit balance caps at 6,000, so use credits regularly rather than letting them accumulate
 
 ## Frequently Asked Questions[​](#frequently-asked-questions "Direct link to Frequently Asked Questions")
 
@@ -5991,10 +5976,6 @@ If your club loses premium access, we won't delete your existing PDFs, however t
 
 **COMING SOON**
 
-### Team Communication Features[​](#team-communication-features "Direct link to Team Communication Features")
-
-**COMING SOON**
-
 
 ---
 
@@ -6024,15 +6005,21 @@ Advanced tools for growth
 
 Member registration & management✓✓
 
-Unlimited members✓✓
+Hosted website✓✓
 
-Website✓✓
+Online payment processing1✓✓
+
+Email broadcasts2✓✓
 
 Membership & Financial Reports✓✓
 
-##### Competition Tools
+Venue / Ice Rentals—✓
 
-League management✓✓
+Accrual accounting—✓
+
+##### League Tools
+
+League & Competition management✓✓
 
 Round Robins & Playoff Brackets✓✓
 
@@ -6040,15 +6027,9 @@ Draw Schedules✓✓
 
 Scores and Standings✓✓
 
-Advanced and Participant Scoring—✓
-
-##### Payments & Growth
-
-Online payment processing—✓
-
 Waitlists—✓
 
-Venue / Ice Rentals—✓
+Advanced and Participant Scoring—✓
 
 ##### Other Features
 
@@ -6060,18 +6041,22 @@ Third party integrations—✓
 
 And more...—✓
 
+1 Enabling online payment processing automatically upgrades your club to Premium tier at no additional cost.
+
+2 Premium clubs receive automatic email credit grants. Essential clubs can purchase credits as needed.
+
 We offer two options to upgrade to our premium tier:
 
 1. **Enabling online payments will automatically upgrade your club to our premium tier.**
 2. If you don't want to accept online payments, you can still unlock premium tier with a yearly $420 flat fee.
 
-### Pricing Calculator[​](#pricing-calculator "Direct link to Pricing Calculator")
+### Pricing Calculator - Annual Cost Estimate[​](#pricing-calculator---annual-cost-estimate "Direct link to Pricing Calculator - Annual Cost Estimate")
 
 <!-- -->
 
-#### Calculate Your Costs
+#### Calculate Your Annual Costs
 
-See exactly what you'll pay based on your club's needs
+See approximately what you'll pay based on your club's needs
 
 Club Location:
 
@@ -6101,7 +6086,7 @@ Processing Rate (includes credit card fees):2.7% + $0.30
 
 Annual premium fee:$0 (included with online payments)
 
-Total Cost:$2,775.00
+Total Cost per Year:$2,775.00
 
 ✓ Premium features included automatically
 
@@ -6141,7 +6126,7 @@ We also offer a discounted rate of **2.7% + $0.30 per online credit card transac
 
 ### Clubs in the United States[​](#clubs-in-the-united-states "Direct link to Clubs in the United States")
 
-**3.6% + $0.35 per online credit card transaction**. Includes standard VISA and MasterCard processing fees. You can also accept and track offline payments (when members pay you later by cheque) free of charge.
+**2.9% + $0.30 per online credit card transaction** plus a **$20/month fee**. Includes standard VISA and MasterCard processing fees. You can also accept and track offline payments (when members pay you later by cheque) free of charge.
 
 **No setup fees, period.**
 
@@ -6151,8 +6136,7 @@ We also offer a discounted rate of **2.7% + $0.30 per online credit card transac
 * Payments clear within 7 days via direct deposit
 * Only VISA and Mastercard accepted (including co-branded debit cards)
 * [Convenience fees](/docs/club-management/settings.md#convenience-fee--surcharge) can be passed on to members at your discretion (check your local laws)
-
-**US Pricing Note:** We're actively working with our payment processor to lower US rates closer to Canadian pricing.
+* $20 monthly fee applies when accepting online payments
 
 **Additional Fees:**
 
