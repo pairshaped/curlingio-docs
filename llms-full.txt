@@ -1208,10 +1208,14 @@ The CSV export includes additional columns not shown in the on-screen report, sp
 
 The **Journal Entry Group** column (first column) groups related transactions that represent a single financial event. This makes it easy to import complete journal entries into QuickBooks or other accounting software.
 
+The group ID uses an abbreviated format: a 3-letter transaction code followed by the source ID number.
+
 **Examples:**
 
-* `12345-RevenueRecognized` - All transactions from order item 12345's revenue recognition
-* `67890-PaymentInitiated` - All transactions from payment 67890
+* `REV12345` - Revenue recognized from order item 12345
+* `PMT67890` - Payment 67890 initiated
+* `DEP67890` - Payment 67890 deposited to bank
+* `RFI55555` - Refund 55555 initiated
 
 All transactions with the same Journal Entry Group ID should balance to $0 (total debits = total credits).
 
@@ -1219,14 +1223,14 @@ All transactions with the same Journal Entry Group ID should balance to $0 (tota
 
 ```
 Journal Entry Group,Order ID,Type,Date,Item,Description,Class,Project,Account,Label,Debit,Credit
-123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,1200,A/R,113.00,
-123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,4010,Revenue,,100.00
-123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,2110,HST,,13.00
-456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,,,,,1050,Undeposited Funds,113.00,
-456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,League,Monday Night League,,MENS,1200,A/R,,113.00
-456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1000,Cash,107.92,
-456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,5500,Processing Fees,5.08,
-456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113.00
+REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,1200,A/R,113.00,
+REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,4010,Revenue,,100.00
+REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,2110,HST,,13.00
+PMT456,100,Payment initiated,2025-01-20 14:32:10,,,,,1050,Undeposited Funds,113.00,
+PMT456,100,Payment initiated,2025-01-20 14:32:10,League,Monday Night League,,MENS,1200,A/R,,113.00
+DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,1000,Cash,107.92,
+DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,5500,Processing Fees,5.08,
+DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113.00
 ```
 
 **Key Features:**

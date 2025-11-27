@@ -11,7 +11,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Curling IO" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f57dee26.css">
-<script src="/assets/js/runtime~main.81a49e20.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.98871d53.js" defer="defer"></script>
 <script src="/assets/js/main.4e38f50d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -324,14 +324,17 @@
 </ol>
 <p><strong>Journal Entry Grouping:</strong></p>
 <p>The <strong>Journal Entry Group</strong> column (first column) groups related transactions that represent a single financial event. This makes it easy to import complete journal entries into QuickBooks or other accounting software.</p>
+<p>The group ID uses an abbreviated format: a 3-letter transaction code followed by the source ID number.</p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><code>12345-RevenueRecognized</code> - All transactions from order item 12345&#x27;s revenue recognition</li>
-<li><code>67890-PaymentInitiated</code> - All transactions from payment 67890</li>
+<li><code>REV12345</code> - Revenue recognized from order item 12345</li>
+<li><code>PMT67890</code> - Payment 67890 initiated</li>
+<li><code>DEP67890</code> - Payment 67890 deposited to bank</li>
+<li><code>RFI55555</code> - Refund 55555 initiated</li>
 </ul>
 <p>All transactions with the same Journal Entry Group ID should balance to $0 (total debits = total credits).</p>
 <p><strong>Example CSV Output:</strong></p>
-<div class="language-csv codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csv codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">Journal Entry Group,Order ID,Type,Date,Item,Description,Class,Project,Account,Label,Debit,Credit</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,1200,A/R,113.00,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,4010,Revenue,,100.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">123-RevenueRecognized,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,2110,HST,,13.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,,,,,1050,Undeposited Funds,113.00,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">456-PaymentInitiated,100,Payment initiated,2025-01-20 14:32:10,League,Monday Night League,,MENS,1200,A/R,,113.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1000,Cash,107.92,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,5500,Processing Fees,5.08,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">456-PaymentDeposited,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113.00</span><br></span></code></pre></div></div>
+<div class="language-csv codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-csv codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain">Journal Entry Group,Order ID,Type,Date,Item,Description,Class,Project,Account,Label,Debit,Credit</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,1200,A/R,113.00,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,4010,Revenue,,100.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">REV123,100,Revenue recognized,2025-01-15 10:23:45,League,Monday Night League,,MENS,2110,HST,,13.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">PMT456,100,Payment initiated,2025-01-20 14:32:10,,,,,1050,Undeposited Funds,113.00,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">PMT456,100,Payment initiated,2025-01-20 14:32:10,League,Monday Night League,,MENS,1200,A/R,,113.00</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,1000,Cash,107.92,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,5500,Processing Fees,5.08,</span><br></span><span class="token-line" style="color:#bfc7d5"><span class="token plain">DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113.00</span><br></span></code></pre></div></div>
 <p><strong>Key Features:</strong></p>
 <ul>
 <li><strong>Complete data</strong> - Every row includes all fields for easy import</li>
