@@ -76,7 +76,7 @@ By default none of the downloaded reports will include your custom field. You'll
 
 For example, if you are adding a "Contact Name" custom that will be asked during competition registrations, then you'll most likely want to check the "Competition report" box so that it shows up in that report's downloaded data.
 
-[More information on reports can be found here.](/docs/club-management/reports.md)
+[More information on reports can be found here.](/docs/accounting/reports.md)
 
 ## Deleting Custom Fields[​](#deleting-custom-fields "Direct link to Deleting Custom Fields")
 

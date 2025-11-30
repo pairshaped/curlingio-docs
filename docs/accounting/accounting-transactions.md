@@ -1102,4 +1102,4 @@ This clears the liability from your books. Without this entry, your HST Payable 
 * [Accounting Codes](/docs/accounting/accounting-codes.md) - Basic accounting codes setup
 * [Club Settings](/docs/club-management/settings.md) - Configure account codes
 * [Premium Features](/docs/getting-started/premium.md) - Learn about Premium subscription
-* [Reports](/docs/club-management/reports.md) - Other available reports
+* [Reports](/docs/accounting/reports.md) - Other available reports
