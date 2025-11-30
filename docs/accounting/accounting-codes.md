@@ -7,9 +7,24 @@ Curling IO provides two levels of accounting features:
 1. **Accounting Codes** (All Plans) - Categorize revenue items with account, class, and project codes that appear in your order items report
 2. **Accounting Transactions** (Premium Only) - Comprehensive double-entry bookkeeping with accrual accounting that generates detailed journal entries for every order, payment, and refund
 
-Most clubs use accounting codes for basic revenue categorization. Premium clubs can enable the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
+Most clubs use accounting codes for basic revenue categorization. Premium clubs have access to the full accounting transactions system for complete integration with accounting software like QuickBooks, Xero, or Sage.
 
 This document covers **Accounting Codes**, which are available to all clubs. For information about the Premium accounting transactions system, see [Accounting Transactions](/docs/accounting/accounting-transactions.md).
+
+## Enabling or Disabling Accounting Codes[​](#enabling-or-disabling-accounting-codes "Direct link to Enabling or Disabling Accounting Codes")
+
+Accounting codes are enabled by default for Premium clubs, but can be toggled on or off as needed:
+
+**To enable or disable accounting codes:**
+
+1. Go to **Club → Settings**
+2. Scroll to the **Accounting** section
+3. Check or uncheck the box to enable or disable accounting codes
+4. Save
+
+**Note:** Enabling or disabling accounting codes will not affect historical data - any codes already captured on past orders will remain in your reports. The setting only affects future orders.
+
+**For Premium clubs:** If you disable accounting codes, the accounting transactions system will also stop recording new transactions. Existing transactions remain accessible in your reports, but no new transactions will be created until you re-enable accounting codes.
 
 ## Accounting Codes (All Plans)[​](#accounting-codes-all-plans "Direct link to Accounting Codes (All Plans)")
 
@@ -34,14 +49,14 @@ Most clubs either don't need accounting codes at all, or simply set up 8 default
 
 Set default account codes in [Club Settings](/docs/club-management/settings.md) for each type of registration:
 
-* **Leagues** - Individual league registrations (e.g., 1000)
-* **Bonspiels** - Competition/bonspiel registrations (e.g., 2000)
-* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 3000)
-* **Products** - Pro shop items and merchandise (e.g., 4000)
-* **Fees** - Membership and other fees (e.g., 5000)
-* **Venues** - Venue rental revenue (e.g., 6000)
-* **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)
-* **Convenience Fees** - Processing and service fees charged on orders (e.g., 8000)
+* **Leagues** - Individual league registrations (e.g., 4010)
+* **Bonspiels** - Competition/bonspiel registrations (e.g., 4020)
+* **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 4030)
+* **Products** - Pro shop items and merchandise (e.g., 4040)
+* **Fees** - Membership and other fees (e.g., 4050)
+* **Venues** - Venue rental revenue (e.g., 4060)
+* **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 4900)
+* **Convenience Fees** - Processing and service fees charged on orders (e.g., 4070)
 
 These codes will automatically apply to all items of that type unless you override them.
 
@@ -185,29 +200,30 @@ These codes then appear in your order item reports and can be exported for use i
 
 ## Setting Up Accounting Codes[​](#setting-up-accounting-codes "Direct link to Setting Up Accounting Codes")
 
-### Step 1: Enable the Feature[​](#step-1-enable-the-feature "Direct link to Step 1: Enable the Feature")
+### Step 1: Set Default Codes[​](#step-1-set-default-codes "Direct link to Step 1: Set Default Codes")
 
 1. Go to **Club → Settings**
+
 2. Scroll to the **Accounting** section
-3. Check the box to enable accounting
-4. Save
 
-### Step 2: Set Default Codes[​](#step-2-set-default-codes "Direct link to Step 2: Set Default Codes")
+3. Set default account codes for each type:
 
-In the same section, set default account codes for each type:
+   <!-- -->
 
-1. **Leagues** - e.g., 1000
-2. **Bonspiels** - e.g., 2000
-3. **Programs** - e.g., 3000
-4. **Products** - e.g., 4000
-5. **Fees** - e.g., 5000
-6. **Venues** - e.g., 6000
-7. **Order Adjustments** - e.g., 7000
-8. **Convenience Fees** - e.g., 8000
+   * **Leagues** - e.g., 4010
+   * **Bonspiels** - e.g., 4020
+   * **Programs** - e.g., 4030
+   * **Products** - e.g., 4040
+   * **Fees** - e.g., 4050
+   * **Venues** - e.g., 4060
+   * **Order Adjustments** - e.g., 4900
+   * **Convenience Fees** - e.g., 4070
 
-Use codes that match your accounting software's chart of accounts.
+4. Use codes that match your accounting software's chart of accounts
 
-### Step 3: Add Item-Level Codes (Optional)[​](#step-3-add-item-level-codes-optional "Direct link to Step 3: Add Item-Level Codes (Optional)")
+5. Save
+
+### Step 2: Add Item-Level Codes (Optional)[​](#step-2-add-item-level-codes-optional "Direct link to Step 2: Add Item-Level Codes (Optional)")
 
 For more detailed tracking, edit individual items:
 
