@@ -1,7 +1,7 @@
 ---
 id: reports
 title: Reports
-slug: /club-management/reports
+slug: /accounting/reports
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

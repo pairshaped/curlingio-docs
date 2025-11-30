@@ -37,7 +37,6 @@ module.exports = {
       'club-management/waitlists',
       'club-management/dashboard',
       'club-management/managers',
-      'club-management/reports',
       'club-management/sponsors',
       'club-management/alerts',
       'club-management/custom-fields',
@@ -64,6 +63,7 @@ module.exports = {
     "Accounting": [
       'accounting/accounting-codes',
       'accounting/accounting-transactions',
+      'accounting/reports',
     ],
     "Advanced Features": [
       'advanced/curlingschedules',
