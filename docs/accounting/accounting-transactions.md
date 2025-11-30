@@ -21,7 +21,7 @@ The accounting transactions system provides comprehensive double-entry bookkeepi
 - CSV export optimized for QuickBooks, Xero, and Sage integration
 - Sequential payment allocation with partial refund tracking
 
-**Important:** Accounting transactions are only recorded while you have an active Premium subscription. Historical data is not available if you upgrade later - transactions are only tracked from the date accounting codes are enabled forward.
+**Important:** Accounting transactions are only recorded while you have an active Premium subscription. Transactions are only tracked from the date you configure your accounting codes forward - historical data is not backfilled.
 
 ## Prerequisites
 
@@ -494,12 +494,16 @@ The report displays:
 - **Total Credits** - Sum of all credit entries
 - **Balance** - Should always be $0 (debits = credits)
 
-### CSV Export
+### Export Formats
+
+Premium clubs can export accounting transactions in multiple formats optimized for different accounting software:
+
+#### CSV Export (General Purpose)
 
 Export to CSV in standard double-entry format for import into:
-- QuickBooks Desktop or Online
+- QuickBooks Online
 - Xero
-- Sage
+- Excel
 - Other accounting software
 
 The CSV export includes additional columns not shown in the on-screen report, specifically designed for accounting software integration.
@@ -555,6 +559,56 @@ DEP456,100,Payment deposited,2025-01-25 00:00:01,,,,,1050,Undeposited Funds,,113
 - **Import-ready** - Standard format compatible with major accounting software
 
 The CSV maintains the double-entry structure with separate Debit and Credit columns, ensuring compatibility with all major accounting systems.
+
+#### QuickBooks Desktop IIF Export
+
+Export directly to QuickBooks Desktop using the IIF (Intuit Interchange Format) file format.
+
+**How to export:**
+1. Go to **Reports → Accounting Transactions**
+2. Click **QuickBooks Desktop Export**
+3. Select date range (defaults to current season)
+4. Preview the first 5 journal entries
+5. Click **Download** to get the `.iif` file
+
+**How to import into QuickBooks Desktop:**
+1. **Backup your company file first** - This is critical before any import
+2. Switch to single-user mode: **File → Switch to Single-user Mode**
+3. Import the file: **File → Utilities → Import → IIF Files**
+4. Select the downloaded `.iif` file
+5. Click **OK** - QuickBooks will import the journal entries
+6. Verify the entries appear correctly in your general journal
+
+**Important notes:**
+- QuickBooks will create new accounts if your account codes don't match existing accounts
+- Unbalanced entries will be rejected by QuickBooks
+- Always test with sample data first before importing production data
+- Dates in the IIF file use MM/DD/YY format (US format)
+- Your browser may warn about the `.iif` file extension - this is expected and safe to ignore
+
+#### Sage 50 Export
+
+Export directly to Sage 50 using a plain text format compatible with all Sage 50 versions and regions.
+
+**How to export:**
+1. Go to **Reports → Accounting Transactions**
+2. Click **Sage 50 Export**
+3. Select date range (defaults to current season)
+4. Preview the first 5 journal entries
+5. Click **Download** to get the `.txt` file
+
+**How to import into Sage 50:**
+1. **Backup your company file first** - This is critical before any import
+2. Open Sage 50 and navigate to the import function
+3. Import general journal: **File → Import → General Journal Entries**
+4. Select the downloaded `.txt` file
+5. Verify the entries appear correctly in your general journal
+
+**Important notes:**
+- Date format uses MM-DD-YY format
+- Journal entry IDs are limited to 13 characters
+- Descriptions are limited to 39 characters
+- Always test with sample data first before importing production data
 
 ## Sequential Payment Allocation & Partial Refunds
 
@@ -673,21 +727,20 @@ Items that haven't been paid yet show as "Not refundable" and are disabled in th
 
 Accounting transactions require an active Premium subscription. Go to **Club → Premium** to upgrade.
 
-### Step 2: Enable Accounting
+### Step 2: Configure Account Codes
 
 1. Go to **Club → Settings**
 2. Scroll to **Accounting**
-3. Check the box to enable accounting
-4. Configure all account codes:
+3. Configure all account codes:
    - Revenue codes (Leagues, Bonspiels, Programs, Products, Fees, Venues, Order Adjustments, Convenience Fees)
    - Asset codes (Accounts Receivable, Undeposited Funds, Cash Account)
    - Liability codes (HST Payable, Club Credit Liability)
    - Expense codes (Processing Fee Expense, Club Credit Expense)
-5. Save
+4. Save
 
 ### Step 3: Start Recording Transactions
 
-Once enabled, the system automatically creates accounting transactions for:
+Once configured, the system automatically creates accounting transactions for:
 - New orders submitted (revenue recognition)
 - New payments received (cash receipts and club credit applications)
 - New refunds processed (cash refunds and club credit refunds)
@@ -696,15 +749,15 @@ Once enabled, the system automatically creates accounting transactions for:
 
 ### Important Limitations
 
-- **No Historical Data** - Transactions are only recorded from the date you enable accounting forward. Past orders/payments/refunds are not backfilled.
+- **No Historical Data** - Transactions are only recorded from the date you configure your accounting codes forward. Past orders/payments/refunds are not backfilled.
 - **Premium Required** - If your Premium subscription lapses, no new transactions will be recorded (but existing transactions remain accessible).
 - **Immutable Records** - Once recorded, accounting transactions never change. If you modify account codes, only future transactions are affected.
 
 ## Best Practices for Accounting Transactions
 
-### Configure Before Enabling
+### Plan Your Account Structure
 
-Plan your account code structure completely before enabling the feature. While you can change codes later, existing transactions won't be updated.
+Plan your account code structure completely before configuring codes. While you can change codes later, existing transactions won't be updated.
 
 ### Review Transaction Types
 
@@ -861,8 +914,6 @@ No new accounting transactions will be recorded while your subscription is lapse
 
 You can delete unpaid orders - the system will automatically create reversal transactions to maintain balanced books. Paid orders require refunding before deletion to ensure accurate financial records.
 
-**Tip for testing during offseason:** If you want to submit test orders during the offseason without creating accounting transactions, you can temporarily disable accounting in your Club Settings. However, we don't recommend this approach as you might forget to turn it back on before your season starts!
-
 ### How do I reconcile my Accounts Receivable balance?
 
 Export the Accounting Transactions report and filter by Account Code 1200 (A/R). Sum all debits (money owed to you) minus all credits (payments received). This balance should match your outstanding orders.
@@ -888,20 +939,20 @@ This distinction ensures your revenue accounts accurately reflect what services 
 
 ### Can I use this with QuickBooks/Xero/Sage?
 
-Yes! Export the Accounting Transactions report to CSV and import it into your accounting software. The export is specifically designed for accounting software integration:
+Yes! Curling IO provides multiple export formats optimized for different accounting software:
 
-**Key features for import:**
+**QuickBooks Desktop:** Use the dedicated **QuickBooks Desktop Export** to download an `.iif` file that imports directly into QuickBooks Desktop. This is the fastest and easiest option for QuickBooks Desktop users - no manual mapping required.
+
+**Sage 50:** Use the dedicated **Sage 50 Export** to download a `.txt` file formatted specifically for Sage 50 imports. This format is compatible with all Sage 50 versions and regions.
+
+**QuickBooks Online / Xero / Other software:** Use the **CSV Export** for general-purpose imports. The CSV format includes:
 - **Journal Entry Group ID** - First column groups related debits/credits together
 - **Standard double-entry format** - Separate Debit and Credit columns
 - **Complete transaction data** - All fields included in every row
 - **Chronological order** - Oldest transactions first (standard for imports)
 - **Balanced entries** - Each group balances to $0 (debits = credits)
 
-**QuickBooks users:** The Journal Entry Group ID column makes it easy to import complete journal entries. You can use this field to group transactions when importing, ensuring all related debits and credits stay together.
-
-**Xero/Sage users:** The standard double-entry format works directly with most import tools. The Label column provides human-readable account types that can help map to your chart of accounts during import.
-
-Most accounting software allows you to map CSV columns to their fields during import. The export follows accounting best practices and should work with any system that supports journal entry imports.
+All export formats are designed for easy import and follow accounting best practices. See the [Export Formats](#export-formats) section above for detailed instructions on using each format.
 
 ### Do I need to understand accounting to use this feature?
 
