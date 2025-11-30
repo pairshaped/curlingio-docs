@@ -53,14 +53,14 @@ Most clubs either don't need accounting codes at all, or simply set up 8 default
 
 Set default account codes in [Club Settings](/docs/club-management/settings) for each type of registration:
 
-- **Leagues** - Individual league registrations (e.g., 1000)
-- **Bonspiels** - Competition/bonspiel registrations (e.g., 2000)
-- **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 3000)
-- **Products** - Pro shop items and merchandise (e.g., 4000)
-- **Fees** - Membership and other fees (e.g., 5000)
-- **Venues** - Venue rental revenue (e.g., 6000)
-- **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 7000)
-- **Convenience Fees** - Processing and service fees charged on orders (e.g., 8000)
+- **Leagues** - Individual league registrations (e.g., 4010)
+- **Bonspiels** - Competition/bonspiel registrations (e.g., 4020)
+- **Programs** - Programs like Learn to Curl, camps, seminars (e.g., 4030)
+- **Products** - Pro shop items and merchandise (e.g., 4040)
+- **Fees** - Membership and other fees (e.g., 4050)
+- **Venues** - Venue rental revenue (e.g., 4060)
+- **Order Adjustments** - Manual adjustments, discounts, and credits applied to orders (e.g., 4900)
+- **Convenience Fees** - Processing and service fees charged on orders (e.g., 4070)
 
 These codes will automatically apply to all items of that type unless you override them.
 
@@ -191,14 +191,14 @@ These codes then appear in your order item reports and can be exported for use i
 1. Go to **Club → Settings**
 2. Scroll to the **Accounting** section
 3. Set default account codes for each type:
-   - **Leagues** - e.g., 1000
-   - **Bonspiels** - e.g., 2000
-   - **Programs** - e.g., 3000
-   - **Products** - e.g., 4000
-   - **Fees** - e.g., 5000
-   - **Venues** - e.g., 6000
-   - **Order Adjustments** - e.g., 7000
-   - **Convenience Fees** - e.g., 8000
+   - **Leagues** - e.g., 4010
+   - **Bonspiels** - e.g., 4020
+   - **Programs** - e.g., 4030
+   - **Products** - e.g., 4040
+   - **Fees** - e.g., 4050
+   - **Venues** - e.g., 4060
+   - **Order Adjustments** - e.g., 4900
+   - **Convenience Fees** - e.g., 4070
 4. Use codes that match your accounting software's chart of accounts
 5. Save
 
