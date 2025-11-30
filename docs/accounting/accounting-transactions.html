@@ -11,7 +11,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Curling IO" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f57dee26.css">
-<script src="/assets/js/runtime~main.0739c60d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.48e3ce15.js" defer="defer"></script>
 <script src="/assets/js/main.55079073.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -34,7 +34,7 @@
 <li>CSV export optimized for QuickBooks, Xero, and Sage integration</li>
 <li>Sequential payment allocation with partial refund tracking</li>
 </ul>
-<p><strong>Important:</strong> Accounting transactions are only recorded while you have an active Premium subscription. Transactions are only tracked from the date you configure your accounting codes forward - historical data is not backfilled.</p>
+<p><strong>Important:</strong> Accounting transactions are only recorded while you have an active Premium subscription and account codes are enabled in Club Settings. If you disable account codes (uncheck them in settings), transaction recording will stop and cannot be backfilled if you re-enable them later.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Premium Feature</div><div class="admonitionContent_BuS1"><p>The accounting transactions system is only available to Premium clubs. All clubs can use basic <a href="/docs/accounting/accounting-codes">Accounting Codes</a>, but the full double-entry bookkeeping system with accrual accounting requires a Premium subscription or online payments setup and enabled (which automatically grants Premium).</p></div></div>
 <p>Before enabling accounting transactions, you should first understand <a href="/docs/accounting/accounting-codes">Accounting Codes</a>. The accounting transactions system builds on accounting codes by adding full journal entries and balance sheet tracking.</p>
@@ -510,7 +510,7 @@
 </ul>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="important-limitations">Important Limitations<a href="#important-limitations" class="hash-link" aria-label="Direct link to Important Limitations" title="Direct link to Important Limitations">​</a></h3>
 <ul>
-<li><strong>No Historical Data</strong> - Transactions are only recorded from the date you configure your accounting codes forward. Past orders/payments/refunds are not backfilled.</li>
+<li><strong>Account Codes Required</strong> - Transactions are only recorded when account codes are enabled in Club Settings. If you disable account codes, transaction recording stops and cannot be backfilled if you re-enable them later.</li>
 <li><strong>Premium Required</strong> - If your Premium subscription lapses, no new transactions will be recorded (but existing transactions remain accessible).</li>
 <li><strong>Immutable Records</strong> - Once recorded, accounting transactions never change. If you modify account codes, only future transactions are affected.</li>
 </ul>
@@ -671,7 +671,7 @@
 </ul>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="frequently-asked-questions">Frequently Asked Questions<a href="#frequently-asked-questions" class="hash-link" aria-label="Direct link to Frequently Asked Questions" title="Direct link to Frequently Asked Questions">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="can-i-change-account-codes-after-enabling-accounting-transactions">Can I change account codes after enabling accounting transactions?<a href="#can-i-change-account-codes-after-enabling-accounting-transactions" class="hash-link" aria-label="Direct link to Can I change account codes after enabling accounting transactions?" title="Direct link to Can I change account codes after enabling accounting transactions?">​</a></h3>
-<p>Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail.</p>
+<p>Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed. However, if you have historical transactions with null account codes (from before codes were configured), those can be backfilled with the newly configured codes. This maintains the integrity of your financial audit trail while allowing you to complete your historical data.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-if-my-premium-subscription-lapses">What happens if my Premium subscription lapses?<a href="#what-happens-if-my-premium-subscription-lapses" class="hash-link" aria-label="Direct link to What happens if my Premium subscription lapses?" title="Direct link to What happens if my Premium subscription lapses?">​</a></h3>
 <p>No new accounting transactions will be recorded while your subscription is lapsed. However, all existing transactions remain accessible in your reports. When you renew Premium, transaction recording will resume from that date forward.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="can-i-delete-orders-that-have-accounting-transactions">Can I delete orders that have accounting transactions?<a href="#can-i-delete-orders-that-have-accounting-transactions" class="hash-link" aria-label="Direct link to Can I delete orders that have accounting transactions?" title="Direct link to Can I delete orders that have accounting transactions?">​</a></h3>
