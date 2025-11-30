@@ -268,7 +268,7 @@ You can't change codes after purchase, so:
 
 No. Codes are captured at the moment of purchase and become part of the historical record. This ensures accuracy in your financial reports. If you need to change how future purchases are categorized, update the codes on the item itself.
 
-**For Premium clubs with accounting transactions enabled:** Any changes to account codes in Club Settings or on individual items will only affect new transactions going forward. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail. See [Accounting Transactions](/docs/accounting/accounting-transactions) for more details.
+**For Premium clubs with accounting transactions enabled:** Any changes to account codes in Club Settings or on individual items will only affect new transactions going forward. Existing accounting transactions are immutable and will never be changed. However, if you have historical transactions with null account codes (from before codes were configured), those can be backfilled with the newly configured codes. This maintains the integrity of your financial audit trail while allowing you to complete your historical data. See [Accounting Transactions](/docs/accounting/accounting-transactions) for more details.
 
 ### What happens if I don't set any codes?
 

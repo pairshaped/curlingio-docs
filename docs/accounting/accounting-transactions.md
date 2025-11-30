@@ -21,7 +21,7 @@ The accounting transactions system provides comprehensive double-entry bookkeepi
 - CSV export optimized for QuickBooks, Xero, and Sage integration
 - Sequential payment allocation with partial refund tracking
 
-**Important:** Accounting transactions are only recorded while you have an active Premium subscription. Transactions are only tracked from the date you configure your accounting codes forward - historical data is not backfilled.
+**Important:** Accounting transactions are only recorded while you have an active Premium subscription and account codes are enabled in Club Settings. If you disable account codes (uncheck them in settings), transaction recording will stop and cannot be backfilled if you re-enable them later.
 
 ## Prerequisites
 
@@ -749,7 +749,7 @@ Once configured, the system automatically creates accounting transactions for:
 
 ### Important Limitations
 
-- **No Historical Data** - Transactions are only recorded from the date you configure your accounting codes forward. Past orders/payments/refunds are not backfilled.
+- **Account Codes Required** - Transactions are only recorded when account codes are enabled in Club Settings. If you disable account codes, transaction recording stops and cannot be backfilled if you re-enable them later.
 - **Premium Required** - If your Premium subscription lapses, no new transactions will be recorded (but existing transactions remain accessible).
 - **Immutable Records** - Once recorded, accounting transactions never change. If you modify account codes, only future transactions are affected.
 
@@ -904,7 +904,7 @@ If your club uses club credits (store credit), the Club Credit Liability balance
 
 ### Can I change account codes after enabling accounting transactions?
 
-Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed or backfilled. This maintains the integrity of your financial audit trail.
+Yes, but only future transactions will use the new codes. Existing accounting transactions are immutable and will never be changed. However, if you have historical transactions with null account codes (from before codes were configured), those can be backfilled with the newly configured codes. This maintains the integrity of your financial audit trail while allowing you to complete your historical data.
 
 ### What happens if my Premium subscription lapses?
 
