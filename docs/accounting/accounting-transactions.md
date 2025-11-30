@@ -997,4 +997,4 @@ This clears the liability from your books. Without this entry, your HST Payable 
 - [Accounting Codes](/docs/accounting/accounting-codes) - Basic accounting codes setup
 - [Club Settings](/docs/club-management/settings) - Configure account codes
 - [Premium Features](/docs/getting-started/premium) - Learn about Premium subscription
-- [Reports](/docs/club-management/reports) - Other available reports
+- [Reports](/docs/accounting/reports) - Other available reports

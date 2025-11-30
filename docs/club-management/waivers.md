@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Curling IO by default will ask your curlers to accept a waiver during registration, but only once per season.
 We also keep a snapshot of the waiver that was accepted for future reference if it's ever needed.
-These snapshots along with which waivers have been accepted can be found in the [Reports section](/docs/club-management/reports).
+These snapshots along with which waivers have been accepted can be found in the [Reports section](/docs/accounting/reports).
 
 These default waivers come from Curling Canada's Business of Curling program and are intended for Curling Clubs.
 
