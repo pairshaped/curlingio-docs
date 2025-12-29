@@ -17,7 +17,7 @@ You can customize or replace these waivers with your own text, or deactivate the
 - **Required waivers** (like liability releases) require typing acceptance text and must be completed to continue registration
 - **Optional waivers** (like photo consent) use simple Accept/Reject buttons and don't block registration, reducing friction while still tracking member preferences
 
-Waivers are specific to your club and are collected once per season per curler when a curler profile is being created. They are not event specific.
+Waivers are specific to your club and are collected once per season per curler when a curler is first registering. They are not event specific.
 
 
 ## Editing Waivers 
