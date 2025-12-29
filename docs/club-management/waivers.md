@@ -27,7 +27,7 @@ Click on the **Club** dropdown menu in the top bar and then click on **Waivers**
 
 ![Waivers Navigation](/img/docs/club-management/waivers/navigation.png)
 
-You should see three waivers listed:
+You should see two waivers listed:
 * Adult
 * Youth
 
