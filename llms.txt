@@ -65,7 +65,7 @@ Acceptance of Terms of this Agreement through Use
 - [Sponsors](/docs/club-management/sponsors.md): This is a Premium Only Feature
 - [Support](/docs/club-management/support.md): You can submit supports requests from within Curling IO. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
 - [Waitlists](/docs/club-management/waitlists.md): Overview
-- [Waivers](/docs/club-management/waivers.md): Curling IO by default will ask your curlers to accept a waiver during registration, but only once per season.
+- [Waivers](/docs/club-management/waivers.md): Curling IO allows you to collect legal agreements, liability releases, photo consents, and other acknowledgments from your curlers during registration. The waiver system supports both required waivers (where users must type acceptance text to continue) and optional waivers (where users can choose to accept or reject).
 - [Website Hosting](/docs/club-management/website-hosting.md): Overview
 
 ### event-management
@@ -93,7 +93,7 @@ Acceptance of Terms of this Agreement through Use
 - [Sparing](/docs/for-curlers/sparing.md): If your club has enabled the sparing feature for any of their leagues or competitions you will be able to select which of them you are available to spare for, which position(s) you prefer, and other notes you'd like to include.
 - [My Teams](/docs/for-curlers/teams.md): Once your profile(s) has been assigned to a team in a league or competition, that team will show up in this section.
 - [Waitlists](/docs/for-curlers/waitlists.md): Once a league, competition, or product runs out of space or inventory, you may be presented with an option to join it's waitlist.
-- [Waivers](/docs/for-curlers/waivers.md): If your club is requiring one or more waivers be accepted before you can participate at their venue, you will usually be asked to do so when you register for an event.
+- [Waivers](/docs/for-curlers/waivers.md): Your club may ask you to respond to one or more waivers before you can participate at their venue. You'll usually be asked during event registration.
 
 ### getting-started
 
