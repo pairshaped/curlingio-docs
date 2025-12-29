@@ -156,6 +156,6 @@ You can also use HTML to format the body text.
 ### Reporting and Compliance
 
 The [Waiver Reports](/docs/accounting/reports) show both acceptances and rejections:
-- **Accepted** column displays "Y" for accepted, "N" for rejected
+- **Accepted** column displays "Yes" for accepted, "No" for rejected
 - Export waiver data regularly for backup and compliance purposes
 - Both required and optional waivers track responses for record-keeping
