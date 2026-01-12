@@ -11,6 +11,10 @@ The Curling Draw Schedule Builder creates balanced draws, tracks fairness, and l
 
 [Generate a Schedule](https://curlingschedules.com/)
 
+:::tip
+The same schedule builder is embedded in Curling IO's [Draw Schedule Templates](/docs/event-management/draw-schedule-templates) feature. You can create schedules on CurlingSchedules.com and import them into Curling IO, or create them directly within Curling IO. The main difference is that schedules created on CurlingSchedules.com are saved to your browser's local storage, while templates in Curling IO are saved to your club's database.
+:::
+
 :::note
 A tutorial video will live here. For now, use the walkthrough below to explore every control.
 :::
