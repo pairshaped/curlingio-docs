@@ -32,4 +32,4 @@ More
 * [Privacy](/privacy.md)
 * [Curling Schedules](https://curlingschedules.com)
 
-Copyright © 2025 Curling IO
+Copyright © 2026 Curling IO
