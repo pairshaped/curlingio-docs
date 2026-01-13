@@ -56,6 +56,32 @@ Upon registration the waitlist registration is considered "claimed".
 
 ![Approved Waitlists](/img/docs/club-management/waitlists/approved-waitlists.png)
 
+### Important: Waitlist Approvals Grant Exactly One Extra Slot
+
+**One approval = one registration.** When you approve a waitlist entry, the member receives permission to register for exactly one spot, even if the event is sold out. This prevents overselling and ensures fair allocation.
+
+#### How It Works
+
+- A member with an approved waitlist entry can add exactly **one** of that item to their cart
+- If they attempt to add multiple quantities, the system automatically removes excess items at checkout
+- They'll see an error message: "Some items in your cart exceeded available inventory and were adjusted"
+- This protection maintains accurate capacity limits
+
+#### Example
+
+Your league has 20 spots and is currently full (20/20):
+
+1. You approve a member from the waitlist
+2. That member can now register, becoming the 21st participant
+3. If they try to add 2 registrations to their cart, the system automatically reduces it to 1
+4. The capacity stays at 21/20 (one approved waitlist member)
+
+#### Why This Matters
+
+- **Fair allocation**: Each approval grants one opportunity, ensuring equity among waitlisted members
+- **Accurate capacity**: Prevents a single approval from being used for unlimited registrations
+- **Prevents abuse**: Members cannot exploit their approval to register multiple times
+
 ** IMPORTANT: Waitlists are tied to an account, so members MUST login with the same account (email address) to access their waitlist.
 
 If you approve a waitlisted member and they report that they are unable to register, please verify that they logged in with the same email address.
