@@ -142,7 +142,19 @@ Yes, but there are a few things to keep in mind:
 
 * The season start date must be on the first day of the month. E.g. July 1st
 * You will want to pick and maintain the same season start date. Switching this around more than once may create some overlap in your seasonal fees (where curlers paid twice or not at all).
-* The season start date will also impact the age restrictions for your leagues, fees, and discounts. The season start and age cutoff dates are one and the same. If you have a league that requires a minimum age of 13, then it will require age 13 before the season starts (July 1st).
+* Age restrictions for your leagues, fees, and discounts can be configured separately from your season start date using the [Age Calculation setting](/docs/club-management/settings.md#age-cutoff). By default, ages are calculated as of the day before your season starts, but you can change this to use a custom cutoff month (e.g., December 31st like Curl BC) or to calculate ages at registration time.
 * You may end up collecting inaccurate affiliate fees. Sometimes your membership association fees will change between seasons, and you could be taking registrations (and collecting fees) before your MA has had a chance to update them. Curling IO cannot assume responsibility for inaccurate fees, so you may want to check with your membership association before changing your season start date.
 
 You can change your season start date in the [club settings section](/docs/club-management/settings.md#season-start).
+
+### How do age restrictions work?[​](#how-do-age-restrictions-work "Direct link to How do age restrictions work?")
+
+Age restrictions on leagues, programs, fees, and discounts use your club's [Age Calculation setting](/docs/club-management/settings.md#age-cutoff). You have three options for how ages are calculated:
+
+**Before season begins (Default):** Ages are calculated as of the day before your season starts. This is the simplest option and works well for most clubs. Ages remain consistent throughout the season.
+
+**Custom cutoff month:** Ages are calculated as of the last day of the month before your selected cutoff month. This is useful when you want to align with age categories used by other organizations (e.g., Curl BC uses December 31).
+
+**Registration date:** Ages are calculated based on when the curler registers. This is useful for "must be 18 to register" type requirements where the registration date matters.
+
+**Note:** Waivers always use the curler's age at the time of registration and are not affected by this setting.
