@@ -93,6 +93,26 @@ History of all club credits that have been granted and used.
 These are the waivers that have been accepted by your curlers.
 
 
+### Members
+
+This report tracks member information for curlers who have registered for items requiring a curler profile during the current season.
+
+**How members are created**: Member records are automatically created from curler profiles when:
+1. A curler completes registration for an event, league, program, product, or fee that requires a curler profile (orders that are submitted or paid)
+2. A scheduled background process runs (typically nightly) that syncs curler data into member records
+3. Once created, member records persist even if the order is later cancelled, refunded, or deleted
+
+**Filtering options**:
+- **Season**: Select which season's members to view
+- **Keyword search**: Search by name, email, postal code, city, province, or club name
+
+**Download**: Click the **Download** button to export member data as a CSV file with all fields included.
+
+**Note**: Members are deduplicated automatically - if a curler registers for multiple items in the same season, only one member record is created for that club and season combination. However, the member count may be slightly inflated due to:
+- **Duplicate profiles**: If curlers create duplicate profiles and register with both, duplicate member records will appear in the report. These duplicates should be apparent when reviewing the report data (identical or very similar names, dates of birth, etc.).
+- **Cancelled/refunded orders**: Members remain in the report even if their orders are later cancelled or refunded, as long as the order items existed when the nightly background process ran.
+
+
 ### Spares
 
 These are the curlers that have opted to spare for one of more events.
