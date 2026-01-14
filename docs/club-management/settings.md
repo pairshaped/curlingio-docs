@@ -4,6 +4,7 @@ title: Club Settings
 slug: /club-management/settings
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Year, BirthYear, CompactDate } from '@site/src/components/AgeExample';
 
 You can modify all of the core operational settings for your club in this screen.
 
@@ -35,10 +36,60 @@ You can select the month that you'd like your season to begin. It's always going
 
 1. Your seasonal fees and seasonal products. This determines which season they are collected for during registration.
 2. Your leagues based on their start dates.
-3. Your age restrictions. For example a maximum age restriction of 17, means they cannot be older than 17 when this month begins.
-4. Seasonal filters where you can select a season (like at the top of your public leagues screen).
+3. Seasonal filters where you can select a season (like at the top of your public leagues screen).
 
 **Be careful changing this since the effects are so wide reaching and we cannot retroactively fix your orders.** You should rarely, if ever, need to change this month more than once.
+
+**Note:** Age restrictions are now configured separately using the Age Calculation setting below, allowing you to decouple age calculations from your season start date if needed.
+
+### Age Calculation {#age-cutoff}
+
+This setting controls how ages are calculated for age restrictions on events, programs, fees, and discounts. **Note:** Waivers always use the curler's age at the time of registration and are not affected by this setting.
+
+You have three options:
+
+#### Before season begins (Default)
+
+Ages are calculated as of the day before your season starts. For example, if your season starts July 1st, ages are calculated as of June 30th.
+
+**When to use:** This is the simplest option and works well for most clubs. Ages remain consistent throughout the season.
+
+**Example:** If your season starts <CompactDate month={7} day={1} />, and you have a league with a maximum age of 17:
+- Ages are calculated as of <CompactDate month={6} day={30} /> (the day before season starts)
+- A curler born <CompactDate month={7} day={1} offset={-17} /> would be 17 on <CompactDate month={6} day={30} /> (eligible)
+- A curler born <CompactDate month={6} day={30} offset={-18} /> would be 18 on <CompactDate month={6} day={30} /> (not eligible)
+
+#### Custom cutoff month
+
+Ages are calculated as of the last day of the month before your selected cutoff month. The cutoff month is always chronologically equal to or after your season start month.
+
+**When to use:** When you want to align with age categories used by other organizations (e.g., Curl BC uses December 31).
+
+**How it works:** The cutoff month is always equal to or after your season start. If you select January as your cutoff month and your season starts in July, the system uses January of the same season year (<Year offset={1} />), and calculates ages as of the day before that month begins (December 31st). If you select September as your cutoff month and your season starts in July, ages are calculated as of August 31st.
+
+**Example 1 - December 31st cutoff (like Curl BC):** Season starts <CompactDate month={7} day={1} />, with cutoff month set to January (results in <CompactDate month={12} day={31} /> cutoff date). A league with max age of 17:
+- Ages are calculated as of <CompactDate month={12} day={31} />
+- A curler born <CompactDate month={1} day={1} offset={-17} /> would be 17 on <CompactDate month={12} day={31} /> (eligible)
+- A curler born <CompactDate month={12} day={31} offset={-18} /> would be 18 on <CompactDate month={12} day={31} /> (not eligible)
+
+**Example 2 - August 31st cutoff:** Season starts <CompactDate month={7} day={1} />, with cutoff month set to September (results in <CompactDate month={8} day={31} /> cutoff date). A program with min age of 18:
+- Ages are calculated as of <CompactDate month={8} day={31} />
+- A curler born <CompactDate month={8} day={31} offset={-18} /> would be 18 on <CompactDate month={8} day={31} /> (eligible)
+- A curler born <CompactDate month={9} day={1} offset={-18} /> would be 17 on <CompactDate month={8} day={31} /> (not eligible)
+
+#### Registration date
+
+Ages are calculated based on when the curler registers.
+
+**When to use:** When you have "must be 18 to register" type requirements where the registration date matters, or programs that run throughout the year where current age is more relevant than a fixed cutoff.
+
+**Example:** For an event with min age of 18:
+- Person A born <CompactDate month={9} day={15} offset={-18} /> registers on <CompactDate month={9} day={14} /> → Age 17 (not eligible)
+- Person A registers on <CompactDate month={9} day={15} /> → Age 18 (eligible)
+- Person B born <CompactDate month={11} day={20} offset={-18} /> registers on <CompactDate month={9} day={15} /> → Age 17 (not eligible)
+- Person B registers on <CompactDate month={11} day={20} /> → Age 18 (eligible)
+
+**Note:** Different curlers may have different ages for the same event based on when they registered.
 
 
 ### Sheet Configuration

@@ -89,7 +89,7 @@ Criteria are cumulative, meaning that if you have multiple criteria set, they mu
 
 You can restrict a fee to specific ages.
 The age restrictions are inclusive, meaning that entering a min age of "18" will include 18 year olds.
-Age restrictions use your [current season start date](/docs/club-management/settings#season-start) as the cutoff (defaulting to July 1st). So if a curler is not 18 or older on the current season's start then they will not be asked to pay a fee with a min age of 18.
+Age restrictions use your club's [age calculation configuration](/docs/club-management/settings#age-cutoff). By default, ages are calculated as of the day before your season starts (e.g., June 30th if your season starts July 1st). So if a curler is not 18 or older based on your club's age calculation date, they will not be asked to pay a fee with a min age of 18.
 
 
 ### Days after open
