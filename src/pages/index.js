@@ -57,12 +57,11 @@ const features = [
     ),
   },
   {
-    title: 'Global Curler Database',
-    imageUrl: 'img/national_curler_database.svg',
+    title: 'Accounting Built-In',
+    imageUrl: 'img/accounting_built_in.svg',
     description: (
       <>
-        Members that have used Curling IO at any club or membership association will <a href="/docs/for-curlers/curler-profiles">already have an account</a>, making registration
-        as simple as the click of a button.
+        Automatic accrual accounting with double-entry bookkeeping. Track every dollar from registration to bank deposit, with seamless exports to QuickBooks, Xero, and Sage. <a href="/docs/accounting/accounting-transactions">Learn more.</a>
       </>
     ),
   },
