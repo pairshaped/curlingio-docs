@@ -21,7 +21,7 @@ const algoliaConfig = resolvedAlgoliaApiKey
 
 module.exports = {
   title: 'Curling IO',
-  tagline: 'Curling registration and league management made easy.',
+  tagline: 'Curling club management made easy',
   url: 'https://curling.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
