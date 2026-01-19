@@ -19,12 +19,21 @@ const features = [
     ),
   },
   {
-    title: 'No Setup or Monthly Fees!',
+    title: 'No Setup Fees!',
     imageUrl: 'img/simple_pricing.svg',
     description: (
       <>
         Our fees are simple and all inclusive.
         Online payments as low as <b>2.7% + $0.30 per transaction</b> which includes credit card processing fees, or use Curling IO free with offline payments. <a href="/docs/getting-started/pricing">Pricing details.</a>
+      </>
+    ),
+  },
+  {
+    title: 'Join Hundreds of Clubs',
+    imageUrl: 'img/used_across_canada.svg',
+    description: (
+      <>
+        Curling IO is trusted by Curling Canada, provincial associations, and hundreds of clubs. With over 1 million registrations, you're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
       </>
     ),
   },
@@ -39,16 +48,6 @@ const features = [
     ),
   },
   {
-    title: 'Global Curler Database',
-    imageUrl: 'img/national_curler_database.svg',
-    description: (
-      <>
-        Members that have used Curling IO at any club or membership association will <a href="/docs/for-curlers/curler-profiles">already have an account</a>, making registration
-        as simple as the click of a button.
-      </>
-    ),
-  },
-  {
     title: 'Secure and Stable',
     imageUrl: 'img/secure_and_stable.svg',
     description: (
@@ -58,12 +57,12 @@ const features = [
     ),
   },
   {
-    title: 'Used Across North America',
-    imageUrl: 'img/used_across_canada.svg',
+    title: 'Global Curler Database',
+    imageUrl: 'img/national_curler_database.svg',
     description: (
       <>
-        Curling IO is the system of choice for Curling Canada as well as the provincial membership associations.
-        With over 1 million registrations, you're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
+        Members that have used Curling IO at any club or membership association will <a href="/docs/for-curlers/curler-profiles">already have an account</a>, making registration
+        as simple as the click of a button.
       </>
     ),
   },
@@ -170,7 +169,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">Online registration and payments, club website, calendar and booking, league schedules, playoff brackets, and live scoring—all designed specifically for curling clubs. No complicated systems, just tools that work.</h2>
+                  <h2 className="sectionDarkTitle">Online registration and payments, club website, rental bookings, league schedules, playoff brackets, and live scoring - designed specifically for curling clubs.</h2>
                 </div>
               </div>
             </div>
