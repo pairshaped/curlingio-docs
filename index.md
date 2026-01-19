@@ -1,1 +1,1 @@
-## Online registration and payments, club website, calendar and booking, league schedules, playoff brackets, and live scoring—all designed specifically for curling clubs. No complicated systems, just tools that work.
+## Online registration and payments, club website, rental bookings, league schedules, playoff brackets, and live scoring - designed specifically for curling clubs.
