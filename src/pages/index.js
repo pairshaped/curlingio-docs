@@ -170,7 +170,7 @@ function Home() {
             <div className="row">
               <div className="col col--10 col--offset-1">
                 <div className="margin-vert--md text--center">
-                  <h2 className="sectionDarkTitle">With over 1 million registrations, you can trust Curling IO to handle your online payments and event management. Centralized, secure, safe.</h2>
+                  <h2 className="sectionDarkTitle">Online registration and payments, club website, calendar and booking, league schedules, playoff brackets, and live scoring—all designed specifically for curling clubs. No complicated systems, just tools that work.</h2>
                 </div>
               </div>
             </div>
