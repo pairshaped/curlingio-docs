@@ -19,21 +19,30 @@ const features = [
     ),
   },
   {
-    title: 'No Setup Fees!',
-    imageUrl: 'img/simple_pricing.svg',
-    description: (
-      <>
-        Our fees are simple and all inclusive.
-        Online payments as low as <b>2.7% + $0.30 per transaction</b> which includes credit card processing fees, or use Curling IO free with offline payments. <a href="/docs/getting-started/pricing">Pricing details.</a>
-      </>
-    ),
-  },
-  {
     title: 'Join Hundreds of Clubs',
     imageUrl: 'img/used_across_canada.svg',
     description: (
       <>
         Curling IO is trusted by Curling Canada, provincial associations, and hundreds of clubs. With over 1 million registrations, you're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
+      </>
+    ),
+  },
+  {
+    title: 'No Setup Fees!',
+    imageUrl: 'img/simple_pricing.svg',
+    description: (
+      <>
+        Our fees are simple and all inclusive.
+        Online payments as low as <b>2.7% + $0.30 per transaction</b>, which includes credit card processing fees, or use Curling IO free with offline payments. <a href="/docs/getting-started/pricing">Pricing details.</a>
+      </>
+    ),
+  },
+  {
+    title: 'Website Included',
+    imageUrl: 'img/website_included.svg',
+    description: (
+      <>
+        Every club gets a customizable website at no extra cost. Add your branding, publish schedules and results, and create member-only content, all integrated with your registrations. <a href="/docs/club-management/website-hosting">Learn more.</a>
       </>
     ),
   },
@@ -48,20 +57,38 @@ const features = [
     ),
   },
   {
-    title: 'Secure and Stable',
-    imageUrl: 'img/secure_and_stable.svg',
-    description: (
-      <>
-        We handle tens of thousands of requests per minute without breaking a sweat, and we go above and beyond to ensure your data is secure by eliminating attack vectors <a href="/docs/for-curlers/how-do-i-login#passwordless-authentication">like insecure passwords</a>.
-      </>
-    ),
-  },
-  {
     title: 'Accounting Built-In',
     imageUrl: 'img/accounting_built_in.svg',
     description: (
       <>
         Automatic accrual accounting with double-entry bookkeeping. Track every dollar from registration to bank deposit, with seamless exports to QuickBooks, Xero, and Sage. <a href="/docs/accounting/accounting-transactions">Learn more.</a>
+      </>
+    ),
+  },
+  {
+    title: 'Online Waivers',
+    imageUrl: 'img/online_waivers.svg',
+    description: (
+      <>
+        Collect liability releases and photo consents during registration. Includes Curling Canada waivers by default. No more chasing paper signatures. <a href="/docs/club-management/waivers">Learn more.</a>
+      </>
+    ),
+  },
+  {
+    title: 'Rental Bookings',
+    imageUrl: 'img/rental_bookings.svg',
+    description: (
+      <>
+        Let members book ice time and rentals online with instant payment. Rent individual sheets and your lounge, prevent conflicts, and control availability, all visible on your public calendar. <a href="/docs/club-management/calendar">Learn more.</a>
+      </>
+    ),
+  },
+  {
+    title: 'Secure and Stable',
+    imageUrl: 'img/secure_and_stable.svg',
+    description: (
+      <>
+        We handle tens of thousands of requests per minute without breaking a sweat, and we go above and beyond to ensure your data is secure by eliminating attack vectors <a href="/docs/for-curlers/how-do-i-login#passwordless-authentication">like insecure passwords</a>.
       </>
     ),
   },
