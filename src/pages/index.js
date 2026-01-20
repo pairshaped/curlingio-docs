@@ -20,7 +20,7 @@ const features = [
   },
   {
     title: 'Join Hundreds of Clubs',
-    imageUrl: 'img/used_across_canada.svg',
+    imageUrl: 'img/join_hundreds_of_clubs.svg',
     description: (
       <>
         Curling IO is trusted by Curling Canada, provincial associations, and hundreds of clubs. With over 1 million registrations, you're in good hands. <a href="https://clubs.curling.io/">Find your Club.</a>
