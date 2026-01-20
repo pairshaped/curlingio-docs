@@ -48,7 +48,7 @@ const features = [
   },
   {
     title: 'Advanced League Management',
-    imageUrl: 'img/league_management.svg',
+    imageUrl: 'img/advanced_league_management.svg',
     description: (
       <>
       Manage your leagues and bonspiels with us. Assemble teams, round robins, brackets, draw schedules, score your games, and even publish your results online.
