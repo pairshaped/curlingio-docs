@@ -78,9 +78,9 @@ For league registrations you will also want to break out the affiliate fees and 
 
 When you require a profile you are forcing registrations to be **individual** only.
 
-We highly recommend requiring a profile for your league registrations. It's required for the system to apply seasonal membership and affiliate fees, and multiple league discounts. The system needs to know who (profile) has paid their fees already for the season so that they aren't charged again in future registrations.
+We highly recommend requiring a profile for your league registrations. It's required for the system to apply seasonal membership and affiliate fees, and multiple item discounts. The system needs to know who (profile) has paid their fees already for the season so that they aren't charged again in future registrations.
 
-As an example, if Sue registers for the Monday Night Ladies league and pays her membership and affiliate fees, then later registers for a Wednesday Night Mixed league, the system is smart enough not to double charge her membership and affiliate fees. Also if Sue's club was running a multi-league discount like 20% off the second league, then the system needs to know how many leagues she has already purchased in order to apply this discount to her second league registration.
+As an example, if Sue registers for the Monday Night Ladies league and pays her membership and affiliate fees, then later registers for a Wednesday Night Mixed league, the system is smart enough not to double charge her membership and affiliate fees. Also if Sue's club was running a multi-item discount like 20% off the second item, then the system needs to know how many items (leagues, programs, fees, products) she has already purchased in order to apply the discount appropriately.
 
 For competition / bonspiel registrations you usually do not want to require a profile, since these are usually team registrations and membership or affiliate fees are irrelevant.
 
