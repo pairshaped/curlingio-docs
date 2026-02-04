@@ -28,6 +28,7 @@ module.exports = {
       'club-management/products',
       'club-management/fees',
       'club-management/discounts',
+      'club-management/recommendations',
       'club-management/calendar',
       'club-management/club-credits',
       'club-management/emails',
