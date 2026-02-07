@@ -154,6 +154,42 @@ If it's an individual registration (requires a profile) then this should be how 
 If it's a team registration (does not require a profile) then this should be the number of teams that can register for it.
 
 
+### Maximum Teams
+
+If you're running a team-based event like a bonspiel or competition, you can use the **Maximum Teams** setting to limit the number of unique teams that can register, separate from the total number of individual registrations.
+
+This is particularly useful when you want to limit team participation (e.g., a bonspiel with 8 team slots) while still allowing each team to register multiple curlers.
+
+**How it works with Spots Available:**
+
+The two limits work independently:
+- **Spots Available** controls the total number of individual registrations
+- **Maximum Teams** controls the number of unique teams
+
+**Example:** An event with 20 spots available and a maximum of 4 teams means you can have up to 4 different teams register, with a total of 20 people across all teams (an average of 5 people per team).
+
+**Requirements:**
+
+To use Maximum Teams, you must configure either **Team Name** or **Skip Name** as a **required** field (not just optional). This is how the system identifies which registrations belong to the same team.
+
+**What registrants see:**
+
+For individual registrations (requires a profile), registrants will see a dropdown that includes:
+- Teams that have been pre-created for the event (if any)
+- Unique team names from existing registrations
+
+For example, if you've pre-created "Team A" and "Team B", and someone has registered with "Team C", the dropdown will show all three options.
+
+The dropdown normally includes an "Other..." option that allows registrants to create a new team.
+
+The Maximum Teams setting controls when new teams can be created:
+- If Maximum Teams is **not set** or **not yet reached**: The "Other..." option is available and registrants can create new teams
+- Once the team limit **is reached**: The "Other..." option disappears and registrants must select from existing teams only
+- Admin users can always bypass the team limit and create new teams if needed
+
+Leave this field blank if you don't need to limit the number of teams.
+
+
 ### Waitlist enabled
 
 Check this box if you want members to be able to add their name to a waitlist when there are no longer spots available.
@@ -191,6 +227,8 @@ Use this to provide follow up instructions to your members, like a reminder (pos
 If you want to leverage Curling IO team recommendations then you must ask for either a team or a skip name during registration.
 Our team recommendations just make it easier and automate team creation if that's a feature you want to use.
 You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).
+
+**Important:** If you are using the [Maximum Teams](#maximum-teams) feature to limit the number of unique teams, you must configure either Team Name or Skip Name as **required** (not just optional). This is how the system identifies which registrations belong to the same team and enforces the team limit.
 
 If you aren't planning to use Curling IO to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.
 
