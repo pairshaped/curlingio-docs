@@ -3625,9 +3625,11 @@ You can restrict the number of registrations for your event. If it's an individu
 
 ### Maximum Teams[​](#maximum-teams "Direct link to Maximum Teams")
 
-If you're running a team-based event like a bonspiel or competition, you can use the **Maximum Teams** setting to limit the number of unique teams that can register, separate from the total number of individual registrations.
+When you're doing **individual registrations** (requires curler profile is checked), you can use the **Maximum Teams** setting to limit the number of unique teams that can register, separate from the total number of individual registrations.
 
-This is particularly useful when you want to limit team participation (e.g., a bonspiel with 8 team slots) while still allowing each team to register multiple curlers.
+This is most commonly used for leagues where curlers register individually, but you still want to control how many teams participate. For example, you might allow 40 individual curlers to register, but limit it to 8 unique teams.
+
+**Note:** This setting only appears when "Requires curler" is checked. For team registrations (where entire teams register together), you don't need Maximum Teams - simply use the **Spots Available** setting to limit the number of teams directly.
 
 **How it works with Spots Available:**
 
@@ -3636,7 +3638,7 @@ The two limits work independently:
 * **Spots Available** controls the total number of individual registrations
 * **Maximum Teams** controls the number of unique teams
 
-**Example:** An event with 20 spots available and a maximum of 4 teams means you can have up to 4 different teams register, with a total of 20 people across all teams (an average of 5 people per team).
+**Example:** A league with 40 spots available and a maximum of 8 teams means you can have up to 8 different teams register, with a total of 40 curlers across all teams (an average of 5 curlers per team).
 
 **Requirements:**
 
