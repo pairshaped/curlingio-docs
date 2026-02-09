@@ -172,7 +172,11 @@ The two limits work independently:
 
 **Requirements:**
 
-To use Maximum Teams, you must configure either **Team Name** or **Skip Name** as a **required** field (not just optional). This is how the system identifies which registrations belong to the same team.
+To use Maximum Teams:
+- **Requires curler** must be checked (this enables individual registrations)
+- Either **Team Name** or **Skip Name** must be configured as a **required** field (not just optional)
+
+This is how the system identifies which registrations belong to the same team.
 
 **What registrants see:**
 
