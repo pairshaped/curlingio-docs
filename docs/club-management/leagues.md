@@ -165,7 +165,7 @@ This is most commonly used for leagues where curlers register individually, but 
 **How it works with Spots Available:**
 
 The two limits work independently:
-- **Spots Available** controls the total number of individual registrations
+- **Spots Available** controls the total number of registrations
 - **Maximum Teams** controls the number of unique teams
 
 **Example:** A league with 40 spots available and a maximum of 8 teams means you can have up to 8 different teams register, with a total of 40 curlers across all teams (an average of 5 curlers per team).
