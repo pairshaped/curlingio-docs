@@ -11,7 +11,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Curling IO" href="/opensearch.xml"><link rel="stylesheet" href="/assets/css/styles.f57dee26.css">
-<script src="/assets/js/runtime~main.a0d7e222.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.154e42f1.js" defer="defer"></script>
 <script src="/assets/js/main.8ff176a2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -100,24 +100,30 @@ If it&#x27;s a team registration (does not require a profile) then this should b
 <p><strong>How it works with Spots Available:</strong></p>
 <p>The two limits work independently:</p>
 <ul>
-<li><strong>Spots Available</strong> controls the total number of individual registrations</li>
+<li><strong>Spots Available</strong> controls the total number of registrations</li>
 <li><strong>Maximum Teams</strong> controls the number of unique teams</li>
 </ul>
 <p><strong>Example:</strong> A league with 40 spots available and a maximum of 8 teams means you can have up to 8 different teams register, with a total of 40 curlers across all teams (an average of 5 curlers per team).</p>
 <p><strong>Requirements:</strong></p>
-<p>To use Maximum Teams, you must configure either <strong>Team Name</strong> or <strong>Skip Name</strong> as a <strong>required</strong> field (not just optional). This is how the system identifies which registrations belong to the same team.</p>
+<p>To use Maximum Teams:</p>
+<ul>
+<li><strong>Requires curler</strong> must be checked (this enables individual registrations)</li>
+<li>Either <strong>Team Name</strong> or <strong>Skip Name</strong> must be configured as a <strong>required</strong> field (not just optional)</li>
+</ul>
+<p>This is how the system identifies which registrations belong to the same team.</p>
 <p><strong>What registrants see:</strong></p>
-<p>For individual registrations (requires a profile), registrants will see a dropdown that includes:</p>
+<p>When you&#x27;re asking for Team Name or Skip Name during individual registrations (requires a profile), registrants will see a dropdown showing existing teams:</p>
 <ul>
 <li>Teams that have been pre-created for the event (if any)</li>
 <li>Unique team names from existing registrations</li>
 </ul>
 <p>For example, if you&#x27;ve pre-created &quot;Team A&quot; and &quot;Team B&quot;, and someone has registered with &quot;Team C&quot;, the dropdown will show all three options.</p>
-<p>The dropdown normally includes an &quot;Other...&quot; option that allows registrants to create a new team.</p>
-<p>The Maximum Teams setting controls when new teams can be created:</p>
+<p><strong>How Maximum Teams affects the dropdown:</strong></p>
+<p>The Maximum Teams setting doesn&#x27;t control whether the dropdown appears—it only controls whether registrants can create new teams:</p>
 <ul>
-<li>If Maximum Teams is <strong>not set</strong> or <strong>not yet reached</strong>: The &quot;Other...&quot; option is available and registrants can create new teams</li>
-<li>Once the team limit <strong>is reached</strong>: The &quot;Other...&quot; option disappears and registrants must select from existing teams only</li>
+<li><strong>Without Maximum Teams set</strong>: The dropdown always includes an &quot;Other...&quot; option, allowing registrants to create new teams</li>
+<li><strong>With Maximum Teams set but not reached</strong>: The &quot;Other...&quot; option is available and registrants can create new teams</li>
+<li><strong>When the team limit is reached</strong>: The &quot;Other...&quot; option disappears and registrants must select from existing teams only</li>
 <li>Admin users can always bypass the team limit and create new teams if needed</li>
 </ul>
 <p>Leave this field blank if you don&#x27;t need to limit the number of teams.</p>
@@ -143,6 +149,7 @@ Use this to provide follow up instructions to your members, like a reminder (pos
 <p>If you want to leverage Curling IO team recommendations then you must ask for either a team or a skip name during registration.
 Our team recommendations just make it easier and automate team creation if that&#x27;s a feature you want to use.
 You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).</p>
+<p><strong>For individual registrations</strong> (requires a profile): When you ask for a team or skip name, registrants will see a dropdown of existing teams, including any pre-created teams and teams from prior registrations. They can typically select an existing team or create a new one via the &quot;Other...&quot; option.</p>
 <p><strong>Important:</strong> If you are using the <a href="#maximum-teams">Maximum Teams</a> feature to limit the number of unique teams, you must configure either Team Name or Skip Name as <strong>required</strong> (not just optional). This is how the system identifies which registrations belong to the same team and enforces the team limit.</p>
 <p>If you aren&#x27;t planning to use Curling IO to set up teams, round robins, and draw schedules, then asking for a team or skip name is just a club preference for reporting purposes.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="curlers-position">Curler&#x27;s Position<a href="#curlers-position" class="hash-link" aria-label="Direct link to Curler&#x27;s Position" title="Direct link to Curler&#x27;s Position">​</a></h3>

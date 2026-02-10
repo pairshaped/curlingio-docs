@@ -120,30 +120,36 @@ This is most commonly used for leagues where curlers register individually, but 
 
 The two limits work independently:
 
-* **Spots Available** controls the total number of individual registrations
+* **Spots Available** controls the total number of registrations
 * **Maximum Teams** controls the number of unique teams
 
 **Example:** A league with 40 spots available and a maximum of 8 teams means you can have up to 8 different teams register, with a total of 40 curlers across all teams (an average of 5 curlers per team).
 
 **Requirements:**
 
-To use Maximum Teams, you must configure either **Team Name** or **Skip Name** as a **required** field (not just optional). This is how the system identifies which registrations belong to the same team.
+To use Maximum Teams:
+
+* **Requires curler** must be checked (this enables individual registrations)
+* Either **Team Name** or **Skip Name** must be configured as a **required** field (not just optional)
+
+This is how the system identifies which registrations belong to the same team.
 
 **What registrants see:**
 
-For individual registrations (requires a profile), registrants will see a dropdown that includes:
+When you're asking for Team Name or Skip Name during individual registrations (requires a profile), registrants will see a dropdown showing existing teams:
 
 * Teams that have been pre-created for the event (if any)
 * Unique team names from existing registrations
 
 For example, if you've pre-created "Team A" and "Team B", and someone has registered with "Team C", the dropdown will show all three options.
 
-The dropdown normally includes an "Other..." option that allows registrants to create a new team.
+**How Maximum Teams affects the dropdown:**
 
-The Maximum Teams setting controls when new teams can be created:
+The Maximum Teams setting doesn't control whether the dropdown appears—it only controls whether registrants can create new teams:
 
-* If Maximum Teams is **not set** or **not yet reached**: The "Other..." option is available and registrants can create new teams
-* Once the team limit **is reached**: The "Other..." option disappears and registrants must select from existing teams only
+* **Without Maximum Teams set**: The dropdown always includes an "Other..." option, allowing registrants to create new teams
+* **With Maximum Teams set but not reached**: The "Other..." option is available and registrants can create new teams
+* **When the team limit is reached**: The "Other..." option disappears and registrants must select from existing teams only
 * Admin users can always bypass the team limit and create new teams if needed
 
 Leave this field blank if you don't need to limit the number of teams.
@@ -171,6 +177,8 @@ This is a message that your members will see after they purchase the league or c
 ### Team or Skip Name[​](#team-or-skip-name "Direct link to Team or Skip Name")
 
 If you want to leverage Curling IO team recommendations then you must ask for either a team or a skip name during registration. Our team recommendations just make it easier and automate team creation if that's a feature you want to use. You can make the team and skip name optional, required, or even restrict team names to the list of existing teams (useful if you are pre-creating teams).
+
+**For individual registrations** (requires a profile): When you ask for a team or skip name, registrants will see a dropdown of existing teams, including any pre-created teams and teams from prior registrations. They can typically select an existing team or create a new one via the "Other..." option.
 
 **Important:** If you are using the [Maximum Teams](#maximum-teams) feature to limit the number of unique teams, you must configure either Team Name or Skip Name as **required** (not just optional). This is how the system identifies which registrations belong to the same team and enforces the team limit.
 
