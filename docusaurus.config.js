@@ -49,7 +49,7 @@ module.exports = {
         depth: 2,
         content: {
           includeDocs: true,
-          includeBlog: false,
+          includeBlog: true,
           includePages: true,
           enableLlmsFullTxt: true,
         },
@@ -73,6 +73,11 @@ module.exports = {
           to: 'docs/getting-started/curling-club-managers',
           activeBasePath: 'docs',
           label: 'Docs',
+          position: 'right',
+        },
+        {
+          to: 'blog',
+          label: 'Blog',
           position: 'right',
         },
         {
@@ -123,6 +128,10 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Blog',
+              to: 'blog',
+            },
+            {
               label: 'Terms',
               to: 'terms',
             },
@@ -146,6 +155,20 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+        },
+        blog: {
+          blogTitle: 'Curling IO Dev Blog',
+          blogDescription: 'Developer insights on building and enhancing Curling IO - architecture, features, and lessons learned',
+          postsPerPage: 10,
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 'ALL',
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            title: 'Curling IO Dev Blog',
+            description: 'Developer insights on building and enhancing Curling IO',
+            copyright: `Copyright © ${new Date().getFullYear()} Curling IO`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
