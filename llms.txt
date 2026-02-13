@@ -4,6 +4,37 @@
 
 - [Curling IO Documentation](/index.md)
 
+## blog
+
+Developer insights on building and enhancing Curling IO - architecture, features, and lessons learned
+
+- [Curling IO Dev Blog](/blog.md): Developer insights on building and enhancing Curling IO - architecture, features, and lessons learned
+
+### archive
+
+Archive
+
+- [Archive](/blog/archive.md): Archive
+
+### authors
+
+- [Authors](/blog/authors.md)
+
+### tags
+
+- [Tags](/blog/tags.md)
+- [One post tagged with "architecture"](/blog/tags/architecture.md)
+- [One post tagged with "gleam"](/blog/tags/gleam.md)
+- [One post tagged with "rails-migration"](/blog/tags/rails-migration.md)
+- [One post tagged with "sqlite"](/blog/tags/sqlite.md)
+- [One post tagged with "vertical-scaling"](/blog/tags/vertical-scaling.md)
+
+### the-next-version-of-curling-io
+
+After serving hundreds of curling organizations and processing millions of registrations with Ruby on Rails for years, we're starting to rebuild Curling IO's backend in Gleam on the BEAM VM. Same features, same experience, better foundation.
+
+- [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md): After serving hundreds of curling organizations and processing millions of registrations with Ruby on Rails for years, we're starting to rebuild Curling IO's backend in Gleam on the BEAM VM. Same features, same experience, better foundation.
+
 ## privacy
 
 Section 1 - What Do We Do With Your Information?
