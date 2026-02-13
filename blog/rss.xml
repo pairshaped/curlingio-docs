@@ -14,32 +14,29 @@
             <link>https://curling.io/blog/the-next-version-of-curling-io</link>
             <guid>https://curling.io/blog/the-next-version-of-curling-io</guid>
             <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[After serving hundreds of curling organizations and processing millions of registrations with Ruby on Rails for years, we're starting to rebuild Curling IO's backend in Gleam on the BEAM VM. Same features, same experience, better foundation.]]></description>
-            <content:encoded><![CDATA[<p>After serving hundreds of curling organizations and processing millions of registrations with Ruby on Rails for years, we're starting to rebuild Curling IO's backend in Gleam on the BEAM VM. Same features, same experience, better foundation.</p>
+            <description><![CDATA[We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.]]></description>
+            <content:encoded><![CDATA[<p>We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.</p>
 <p>This is the first in a series of technical posts documenting our journey and decisions as we build.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-this-affects-you">How This Affects You<a href="https://curling.io/blog/the-next-version-of-curling-io#how-this-affects-you" class="hash-link" aria-label="Direct link to How This Affects You" title="Direct link to How This Affects You">​</a></h2>
 <p><strong>For club managers:</strong> Curling IO isn't changing from your perspective. We're upgrading the technical infrastructure behind the scenes - no downtime, no disruption, no action required from you. Your data stays exactly where it is. When the upgrade is complete (thoroughly tested and proven), the transition will be seamless. You'll have the same Curling IO you know, even faster and more reliable.</p>
 <p><strong>For curlers:</strong> You won't notice the technology change. Registration, scoring, schedules, results - everything works the same way. You might notice things feel snappier, especially during peak registration times or when checking live scores at major competitions.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-rebuild">Why Rebuild?<a href="https://curling.io/blog/the-next-version-of-curling-io#why-rebuild" class="hash-link" aria-label="Direct link to Why Rebuild?" title="Direct link to Why Rebuild?">​</a></h2>
-<p>Curling IO has been serving curling clubs since late 2014. We rebuilt the platform once already in 2019, and our v2 system has been running successfully on Rails ever since. Everything works, clubs are happy, and growth is strong. So why rebuild again?</p>
-<p>Because we're planning to be here for the long haul. This rebuild ensures Curling IO can serve curling clubs not just for the next few years, but for the next 20+ years. While competitors come and go, we're investing in a foundation built to last and evolve with the sport.</p>
-<p><strong>Four key reasons:</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-a-new-foundation">Why a New Foundation?<a href="https://curling.io/blog/the-next-version-of-curling-io#why-a-new-foundation" class="hash-link" aria-label="Direct link to Why a New Foundation?" title="Direct link to Why a New Foundation?">​</a></h2>
+<p>Curling IO has been serving curling clubs since late 2014. We upgraded the platform once already in 2019, and our v2 system has been running successfully on Rails ever since. Everything works, clubs are happy, and growth is strong. So why invest in a new foundation?</p>
+<p>Because we're planning to be here for the long haul. This new foundation ensures Curling IO can serve curling clubs not just for the next few years, but for the next 20+ years. While competitors come and go, we're investing in infrastructure built to last and evolve with the sport.</p>
+<p><strong>Three key reasons:</strong></p>
 <ol>
 <li>
 <p><strong>AI Agent APIs</strong> - We're adding new APIs specifically designed for AI agents to work with easily. Your existing web interface isn't changing - these are additional capabilities on top of what you already use. As AI assistants become ubiquitous (whether you love them or not), we're designing for that reality. Users are already asking ChatGPT and Claude to help them register for leagues or check schedules - we want those interactions to work reliably.</p>
 </li>
 <li>
-<p><strong>Multi-sport expansion</strong> - Curling IO has been curling-only for over a decade. We're rebuilding with a modular architecture that separates sport-specific features (draw scheduling, scoring rules, team structures) from shared platform code (registration, payments, member management). This lets us expand into other sports while maintaining the deep domain expertise that makes Curling IO great for curlers.</p>
+<p><strong>Concurrency and correctness</strong> - As the platform grows, we need stronger guarantees around correctness and performance. We want a tech stack that can handle massive concurrency - both during peak registration periods and during large traffic spikes for scoring and results at provincial and national competitions like the Scotties and Brier. It needs to eliminate entire classes of runtime errors and scale efficiently as the sport grows.</p>
 </li>
 <li>
-<p><strong>More scalable foundation</strong> - As the platform grows, we need stronger guarantees around correctness and performance. We want a tech stack that can handle massive concurrency - both during peak registration periods and during large traffic spikes for scoring and results at provincial and national competitions like the Scotties and Brier. It needs to eliminate entire classes of runtime errors and scale efficiently for the next 20+ years.</p>
-</li>
-<li>
-<p><strong>Easier developer onboarding</strong> - We want a codebase that's easy to hand off between developers. Type safety and functional patterns make code self-documenting - new developers (with help from AI coding assistants) can jump in and contribute safely without deep institutional knowledge. Gleam's deterministic patterns are much easier for AI assistants to reason about than dynamic languages, which means faster onboarding and more productive collaboration between developers and their AI tools. This significantly mitigates the hit-by-a-bus factor.</p>
+<p><strong>Easier developer onboarding</strong> - We want a codebase that's easy to hand off between developers. Type safety and functional patterns make code self-documenting - new developers (with help from AI coding assistants) can jump in and contribute safely without deep institutional knowledge. Gleam's deterministic patterns are much easier for AI assistants to reason about than dynamic languages, which means faster onboarding and more productive collaboration between developers and their AI tools. This significantly reduces key-person dependency.</p>
 </li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="choosing-the-tech-stack">Choosing the Tech Stack<a href="https://curling.io/blog/the-next-version-of-curling-io#choosing-the-tech-stack" class="hash-link" aria-label="Direct link to Choosing the Tech Stack" title="Direct link to Choosing the Tech Stack">​</a></h2>
-<p>Given our goals - agent-native APIs, multi-sport modularity, and rock-solid reliability at scale - we need a stack that can deliver:</p>
+<p>Given our goals - agent-native APIs, clean architecture, and rock-solid reliability at scale - we need a stack that can deliver:</p>
 <p><strong>What we're looking for</strong></p>
 <ul>
 <li><strong>Type safety</strong> - Catch errors at compile time, not in production</li>
@@ -49,78 +46,69 @@
 <li><strong>Proven at scale</strong> - Battle-tested in production by major companies</li>
 </ul>
 <p><strong>Why Gleam?</strong></p>
-<p>Gleam checks every box. It's a type-safe functional language that compiles to both Erlang (for the server) and JavaScript (for the client). You get:</p>
+<p><a href="https://gleam.run/" target="_blank">Gleam</a> checks every box. It's a type-safe functional language that compiles to both Erlang (for the server) and JavaScript (for the client). You get:</p>
 <ul>
-<li><strong>BEAM VM reliability</strong> - The same runtime that powers WhatsApp (billions of messages with ~50 engineers) and Discord (millions of concurrent users). Built-in fault tolerance and lightweight processes.</li>
+<li><strong><a href="https://www.erlang.org/blog/a-brief-beam-primer/" target="_blank">BEAM VM</a> reliability</strong> - The same runtime that powers WhatsApp (billions of messages with ~50 engineers) and Discord (millions of concurrent users). Built-in fault tolerance and lightweight processes.</li>
 <li><strong>ML-family type system</strong> - Stronger than Elixir, catches entire classes of bugs at compile time</li>
-<li><strong>Lustre for frontend</strong> - An Elm-architecture framework for Gleam that compiles to JavaScript. We already love Elm for our current frontend apps, and Lustre brings that same architecture everywhere. Same types from database to UI, all type-safe.</li>
+<li><strong><a href="https://lustre.build/" target="_blank">Lustre</a> for frontend</strong> - An <a href="https://elm-lang.org/" target="_blank">Elm</a>-architecture framework for Gleam that compiles to JavaScript. We already love Elm for our current frontend apps, and Lustre brings that same architecture everywhere. Same types from database to UI, all type-safe.</li>
 <li><strong>Simple language</strong> - Focused, consistent, easy to reason about. Perfect for building deterministic APIs.</li>
 </ul>
 <p><strong>What about other options?</strong></p>
 <p>We didn't jump straight to Gleam. We seriously considered other functional, type-safe stacks:</p>
-<p><strong>PostgREST + Elm/Lustre</strong> - This was a very serious contender using tools we're already familiar with. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.</p>
-<p><strong>F# SAFE Stack</strong> - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.</p>
+<p><strong><a href="https://postgrest.org/" target="_blank">PostgREST</a> + Elm/Lustre</strong> - This was a very serious contender using tools we're already familiar with. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.</p>
+<p><strong><a href="https://safe-stack.github.io/" target="_blank">F# SAFE Stack</a></strong> - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.</p>
 <p><strong>BEAM was the killer feature.</strong> None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language. That combination was unbeatable.</p>
 <p><strong>Why not stick with Rails?</strong></p>
-<p>To be clear: we love Ruby on Rails. It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked beautifully.</p>
-<p>But for our next 20+ years, we need:</p>
+<p>To be clear: we love <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>. It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked beautifully.</p>
+<p>But for where we're headed, we need:</p>
 <ul>
 <li>Compile-time safety (Ruby is dynamically typed)</li>
 <li>BEAM-level concurrency (Rails doesn't even come close)</li>
 <li>Shared client/server types (Rails is backend-only)</li>
 <li>Functional patterns built-in (Rails is object-oriented)</li>
 </ul>
-<p>This isn't about Rails being bad. It's about choosing the right foundation for the next 20+ years. Ruby on Rails will always have a place in our hearts, but Gleam is the right tool for where we're going.</p>
+<p>This isn't about Rails being bad. It's about choosing the right foundation for what comes next. Ruby on Rails will always have a place in our hearts, but Gleam is the right tool for where we're going.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="sqlite-over-postgresql">SQLite Over PostgreSQL<a href="https://curling.io/blog/the-next-version-of-curling-io#sqlite-over-postgresql" class="hash-link" aria-label="Direct link to SQLite Over PostgreSQL" title="Direct link to SQLite Over PostgreSQL">​</a></h2>
 <p><strong>This one surprised us.</strong></p>
-<p>Curling IO v2 runs on PostgreSQL. We assumed we'd use Postgres for v3. But we're betting on SQLite instead.</p>
+<p>Curling IO v2 runs on PostgreSQL. We assumed we'd use Postgres for v3. But we're betting on <a href="https://sqlite.org/" target="_blank">SQLite</a> instead.</p>
 <p><strong>Why SQLite?</strong></p>
 <ul>
-<li><strong>Per-sport databases</strong> - Each sport gets its own database (curling.db, tennis.db, etc.)</li>
-<li><strong>No scaling bottleneck</strong> - Databases are isolated by sport, not shared</li>
+<li><strong>Isolated databases</strong> - Clean separation of concerns with dedicated database files</li>
 <li><strong>In-process speed</strong> - Zero network latency between app and database</li>
 <li><strong>Operational simplicity</strong> - No database server to manage, tune, or cluster</li>
 <li><strong>Cost savings</strong> - Orders of magnitude cheaper than managed Postgres</li>
-<li><strong>Litestream backups</strong> - Continuous replication to offsite storage</li>
+<li><strong><a href="https://litestream.io/" target="_blank">Litestream</a> backups</strong> - Continuous replication to offsite storage</li>
 </ul>
-<p><strong>The key insight:</strong> We'll never have cross-sport queries. Curling clubs don't need to query tennis leagues. This creates a natural isolation boundary.</p>
 <p><strong>What about scale?</strong></p>
-<p>Here's the bet: for the same infrastructure budget as Rails + PostgreSQL, we believe Gleam + SQLite can handle:</p>
+<p>For the same infrastructure budget as Rails + PostgreSQL, we expect Gleam + SQLite to handle roughly:</p>
 <ul>
-<li>50,000+ clubs</li>
-<li>Tens of millions of member records</li>
-<li>Hundreds of millions of transactions</li>
-<li>Tens of thousands of concurrent connections</li>
-<li>Peak traffic during major competitions</li>
+<li>1,000x more concurrent connections</li>
+<li>100x the data volume</li>
+<li>100x the throughput during peak traffic (registrations, live scoring)</li>
 </ul>
-<p>The combination of BEAM's efficiency, SQLite's in-process speed, and a single powerful server should massively outperform a multi-server PostgreSQL setup at the same cost.</p>
-<p>That said, we'll be doing extensive benchmarking and performance testing before we're 100% committed to this switch. The theory is sound, but we need to validate it with real-world load tests.</p>
+<p>These numbers sound outrageous, but they aren't pulled out of thin air. BEAM processes are ~2KB each vs Rails threads at ~1MB - that's where the 1,000x connection multiplier comes from. And eliminating network round-trips to a separate database server (SQLite runs in-process) while leveraging BEAM's lightweight concurrency model accounts for the throughput gains. These are well-documented characteristics of the technology, not optimistic guesses.</p>
+<p>That said, we'll be validating everything with extensive benchmarking and real-world load tests as we build.</p>
 <p>If SQLite doesn't scale as expected, we'll just stick with PostgreSQL - an equally fantastic database.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="vertical-first-scaling">Vertical-First Scaling<a href="https://curling.io/blog/the-next-version-of-curling-io#vertical-first-scaling" class="hash-link" aria-label="Direct link to Vertical-First Scaling" title="Direct link to Vertical-First Scaling">​</a></h2>
-<p><strong>Phase 1: Start on bare metal</strong></p>
+<p>Our scaling strategy is simple: start on a single powerful server and scale up from there.</p>
 <ul>
-<li>All sports on one powerful server</li>
-<li>Co-located app + databases</li>
+<li>One server with co-located app + database</li>
 <li>Warm backup server + continuous offsite backups</li>
 <li>Scale up CPU and RAM as we grow</li>
-<li>Handles 20,000+ clubs</li>
-</ul>
-<p><strong>Phase 2: Horizontal (only if needed)</strong></p>
-<ul>
-<li>Split edge layer (Caddy/Varnish) from sport servers</li>
-<li>Route by domain (*.curling.io → curling server)</li>
-<li>Each sport gets dedicated server</li>
-<li>Keep SQLite in-process (app + DB same box)</li>
+<li>Horizontal splitting available if we ever need it, but we likely won't</li>
 </ul>
 <p><strong>Why vertical-first?</strong></p>
 <ul>
-<li>✅ Operational simplicity (one server to deploy, backup, monitor)</li>
-<li>✅ No distributed systems complexity</li>
-<li>✅ SQLite stays fast (in-process, no network)</li>
-<li>✅ Cost-effective</li>
-<li>✅ Defer complexity until actually needed</li>
+<li>Operational simplicity (one server to deploy, backup, monitor)</li>
+<li>No distributed systems complexity</li>
+<li>SQLite stays fast (in-process, no network)</li>
+<li>Cost-effective</li>
+<li>Defer complexity until actually needed</li>
 </ul>
-<p><strong>The horizontal scaling path gives us optionality.</strong> If our performance estimates are wildly off, we have a clean path to splitting servers. If SQLite scales better than expected, we stay simple longer. Either way, we win.</p>
+<p>If we ever outgrow a single server, we have a clean path to splitting things up. But with BEAM's concurrency and SQLite's in-process speed, we expect a single powerful server to handle far more than we'll need for a very long time.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://curling.io/blog/the-next-version-of-curling-io#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
+<p>We'll be building this out over the coming months alongside the existing platform. Curling IO v2 isn't going anywhere - it continues to run and receive updates as usual. When v3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.</p>
+<p>We'll share more technical details as we go. Next up: a deeper look at how we're approaching the migration from Rails, and early performance benchmarks comparing the two stacks.</p>
 <hr>
 <p><em>This is the first in a series of posts documenting our technical journey. Stay tuned for deep dives on the implementation, performance testing, and lessons learned along the way.</em></p>]]></content:encoded>
             <category>architecture</category>

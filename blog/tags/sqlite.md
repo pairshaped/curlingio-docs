@@ -12,7 +12,7 @@ Dave Rapin
 
 Founder @ Curling IO
 
-After serving hundreds of curling organizations and processing millions of registrations with Ruby on Rails for years, we're starting to rebuild Curling IO's backend in Gleam on the BEAM VM. Same features, same experience, better foundation.
+We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
 
 This is the first in a series of technical posts documenting our journey and decisions as we build.
 
