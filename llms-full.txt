@@ -425,18 +425,16 @@ Gleam checks every box. It's a type-safe functional language that compiles to bo
 
 * **BEAM VM reliability** - The same runtime that powers WhatsApp (billions of messages with \~50 engineers) and Discord (millions of concurrent users). Built-in fault tolerance and lightweight processes.
 * **ML-family type system** - Stronger than Elixir, catches entire classes of bugs at compile time
-* **Lustre for frontend** - An Elm-architecture framework for Gleam that compiles to JavaScript. We already love Elm for our current frontend apps, and Lustre brings that same architecture everywhere. Type-safe UI components that share types with the backend, with full type safety from database to UI.
+* **Lustre for frontend** - An Elm-architecture framework for Gleam that compiles to JavaScript. We already love Elm for our current frontend apps, and Lustre brings that same architecture everywhere. Same types from database to UI, all type-safe.
 * **Simple language** - Focused, consistent, easy to reason about. Perfect for building deterministic APIs.
 
 **What about other options?**
 
 We didn't jump straight to Gleam. We seriously considered other functional, type-safe stacks:
 
-**PostgREST + Elm/Lustre** - This was a very serious contender. We already love this combination for our current frontend apps. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.
+**PostgREST + Elm/Lustre** - This was a very serious contender using tools we're already familiar with. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.
 
 **F# SAFE Stack** - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.
-
-**Haskell** - We like Haskell's powerful type system and purity. But we weren't comfortable enough with it to build our entire stack in it, which would have meant bringing in a separate frontend solution. The ecosystem is mature, but the learning curve felt steep for a production rewrite with our timeline.
 
 **BEAM was the killer feature.** None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language. That combination was unbeatable.
 
@@ -444,7 +442,7 @@ We didn't jump straight to Gleam. We seriously considered other functional, type
 
 To be clear: we love Ruby on Rails. It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked beautifully.
 
-But for our next 10 years, we need:
+But for our next 20+ years, we need:
 
 * Compile-time safety (Ruby is dynamically typed)
 * BEAM-level concurrency (Rails doesn't even come close)
@@ -487,10 +485,6 @@ That said, we'll be doing extensive benchmarking and performance testing before 
 If SQLite doesn't scale as expected, we'll just stick with PostgreSQL - an equally fantastic database.
 
 ## Vertical-First Scaling[​](#vertical-first-scaling "Direct link to Vertical-First Scaling")
-
-**The scaling philosophy:** Don't horizontally scale until you've maxed out vertical scaling.
-
-**Our scaling roadmap:**
 
 **Phase 1: Start on bare metal**
 
