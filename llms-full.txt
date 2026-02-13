@@ -401,21 +401,21 @@ Because we're planning to be here for the long haul. This new foundation ensures
 
 1. **AI Agent APIs** - We're adding new APIs specifically designed for AI agents to work with easily. Your existing web interface isn't changing - these are additional capabilities on top of what you already use. As AI assistants become ubiquitous (whether you love them or not), we're designing for that reality. Users are already asking ChatGPT and Claude to help them register for leagues or check schedules - we want those interactions to work reliably.
 
-2. **Concurrency and correctness** - As the platform grows, we need stronger guarantees around correctness and performance. We want a tech stack that can handle massive concurrency - both during peak registration periods and during large traffic spikes for scoring and results at provincial and national competitions like the Scotties and Brier. It needs to eliminate entire classes of runtime errors and scale efficiently as the sport grows.
+2. **Concurrency and correctness** - As the platform grows, we need stronger guarantees around correctness and performance. We want a tech stack that can handle massive concurrency - both during peak registration periods and during large traffic spikes for scoring and results at provincial and national competitions like the Scotties and Brier. It needs to prevent runtime errors and scale efficiently as the sport grows.
 
 3. **Easier developer onboarding** - We want a codebase that's easy to hand off between developers. Type safety and functional patterns make code self-documenting - new developers (with help from AI coding assistants) can jump in and contribute safely without deep institutional knowledge. Gleam's deterministic patterns are much easier for AI assistants to reason about than dynamic languages, which means faster onboarding and more productive collaboration between developers and their AI tools. This significantly reduces key-person dependency.
 
 ## Choosing the Tech Stack[​](#choosing-the-tech-stack "Direct link to Choosing the Tech Stack")
 
-Given our goals - agent-native APIs, clean architecture, and rock-solid reliability at scale - we need a stack that can deliver:
+Given our goals - agent-native APIs, clean architecture, and battle-tested reliability at scale - we need a stack that can deliver:
 
 **What we're looking for**
 
 * **Type safety** - Catch errors at compile time, not in production
-* **Massive concurrency** - Handle thousands of simultaneous registrations without breaking a sweat
+* **Massive concurrency** - Handle thousands of simultaneous registrations
 * **Functional patterns** - Predictable, testable code that developers can reason about
 * **Shared types** - Same data structures on client and server
-* **Proven at scale** - Battle-tested in production by major companies
+* **Proven at scale** - Used in production by major companies
 
 **Why Gleam?**
 
@@ -434,11 +434,11 @@ We didn't jump straight to Gleam. We seriously considered other functional, type
 
 **[F# SAFE Stack](https://safe-stack.github.io)** - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.
 
-**BEAM was the killer feature.** None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language. That combination was unbeatable.
+**BEAM was the killer feature.** None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language.
 
 **Why not stick with Rails?**
 
-To be clear: we love [Ruby on Rails](https://rubyonrails.org). It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked beautifully.
+To be clear: we love [Ruby on Rails](https://rubyonrails.org). It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.
 
 But for where we're headed, we need:
 
@@ -447,7 +447,7 @@ But for where we're headed, we need:
 * Shared client/server types (Rails is backend-only)
 * Functional patterns built-in (Rails is object-oriented)
 
-This isn't about Rails being bad. It's about choosing the right foundation for what comes next. Ruby on Rails will always have a place in our hearts, but Gleam is the right tool for where we're going.
+This isn't about Rails being bad - we've been building with it since version 1.2 and nothing else lets you iterate that fast. But over time we've moved towards functional, compiled, typed languages because runtime errors are the absolute worst to debug and fix. Gleam gives us that correctness without giving up the developer experience we love about Rails.
 
 ## SQLite Over PostgreSQL[​](#sqlite-over-postgresql "Direct link to SQLite Over PostgreSQL")
 
@@ -475,7 +475,7 @@ These numbers sound outrageous, but they aren't pulled out of thin air. BEAM pro
 
 That said, we'll be validating everything with extensive benchmarking and real-world load tests as we build.
 
-If SQLite doesn't scale as expected, we'll just stick with PostgreSQL - an equally fantastic database.
+If SQLite doesn't scale as expected, we'll just stick with PostgreSQL - an equally great database.
 
 ## Vertical-First Scaling[​](#vertical-first-scaling "Direct link to Vertical-First Scaling")
 
@@ -504,7 +504,7 @@ We'll share more technical details as we go. Next up: a deeper look at how we're
 
 ***
 
-*This is the first in a series of posts documenting our technical journey. Stay tuned for deep dives on the implementation, performance testing, and lessons learned along the way.*
+*This is the first in a series of posts documenting our technical journey. We'll be sharing deep dives on the implementation, performance testing, and lessons learned along the way.*
 
 **Tags:**
 
