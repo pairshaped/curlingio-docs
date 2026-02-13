@@ -75,7 +75,7 @@
 <li><strong>Isolated databases</strong> - Clean separation of concerns with dedicated database files</li>
 <li><strong>In-process speed</strong> - Zero network latency between app and database</li>
 <li><strong>Operational simplicity</strong> - No database server to manage, tune, or cluster</li>
-<li><strong>Cost savings</strong> - Orders of magnitude cheaper than managed Postgres</li>
+<li><strong>Cost savings</strong> - Orders of magnitude cheaper than <a href="https://www.crunchydata.com/products/crunchy-bridge" target="_blank">managed Postgres</a></li>
 <li><strong><a href="https://litestream.io/" target="_blank">Litestream</a> backups</strong> - Continuous replication to offsite storage</li>
 </ul>
 <p><strong>What about scale?</strong></p>
