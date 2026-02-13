@@ -84,7 +84,7 @@ Curling IO v2 runs on PostgreSQL. We assumed we'd use Postgres for v3. But we're
 - **Isolated databases** - Clean separation of concerns with dedicated database files
 - **In-process speed** - Zero network latency between app and database
 - **Operational simplicity** - No database server to manage, tune, or cluster
-- **Cost savings** - Orders of magnitude cheaper than managed Postgres
+- **Cost savings** - Orders of magnitude cheaper than <a href="https://www.crunchydata.com/products/crunchy-bridge" target="_blank">managed Postgres</a>
 - **<a href="https://litestream.io" target="_blank">Litestream</a> backups** - Continuous replication to offsite storage
 
 **What about scale?**
