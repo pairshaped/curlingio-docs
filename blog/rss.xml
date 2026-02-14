@@ -59,7 +59,7 @@
 <p><strong><a href="https://safe-stack.github.io/" target="_blank">F# SAFE Stack</a></strong> - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.</p>
 <p><strong>BEAM was the killer feature.</strong> None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language.</p>
 <p><strong>Why not stick with Rails?</strong></p>
-<p>To be clear: we love <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>. It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.</p>
+<p>To be clear: we love <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>. It's been amazing for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.</p>
 <p>But for where we're headed, we need:</p>
 <ul>
 <li>Compile-time safety (Ruby is dynamically typed)</li>
