@@ -63,7 +63,7 @@ We didn't jump straight to Gleam. We seriously considered other functional, type
 
 **Why not stick with Rails?**
 
-To be clear: we love <a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a>. It's been fantastic for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.
+To be clear: we love <a href="https://rubyonrails.org" target="_blank">Ruby on Rails</a>. It's been amazing for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.
 
 But for where we're headed, we need:
 - Compile-time safety (Ruby is dynamically typed)
