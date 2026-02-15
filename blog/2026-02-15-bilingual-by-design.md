@@ -18,6 +18,13 @@ Every bilingual web application has two fundamentally different kinds of text:
 1. **App labels**: static UI strings like "Leagues", "Contact", "Email". These are written by developers and change at deploy time.
 2. **Content**: user-entered data like league names, summaries, and descriptions. These are entered by club managers and may change at any time.
 
+| | App Labels | Content |
+|---|---|---|
+| **Who writes it** | Developers | Club managers |
+| **When it changes** | At deploy time | At any time |
+| **Where it lives** | Compiled code | Database |
+| **Scope** | Global (all clubs) | Per-record |
+
 In Version 2, app labels came from Rails i18n YAML files loaded at boot, and content was stored in per-language database columns (`name_en`, `name_fr`, `summary_en`, `summary_fr`). This worked, but had pain points we wanted to address.
 
 ## What Version 2 Taught Us
@@ -137,19 +144,6 @@ Language selection comes from the URL path, not cookies or browser headers. This
 
 The router extracts the language from the first path segment, stores it in the request context, and every page and API handler downstream uses it. Clean, predictable, and great for SEO.
 
-## Why Two Separate Systems?
-
-It might seem simpler to have one translation system for everything. But content and app labels have fundamentally different lifecycles:
-
-| | App Labels | Content |
-|---|---|---|
-| **Who writes it** | Developers | Club managers |
-| **When it changes** | At deploy time | At any time |
-| **Where it lives** | Compiled code | Database |
-| **Scope** | Global (all clubs) | Per-record |
-
-Storing "Leagues" in the database would add a database read to every page render for no reason. Putting league names in compiled code would make them uneditable. The two-system approach lets each do what it's best at.
-
 ## What's Next
 
 The i18n foundation is in place. As we build out more features (admin interfaces, registration flows, email notifications) we'll add keys to the app label system and the `translations` JSON column to more tables. The system is designed to scale to thousands of keys without any architectural changes.
@@ -158,4 +152,5 @@ Next up: we'll be looking at authentication and the admin interface, which will 
 
 ---
 
-*This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3. Previous post: [The Next Version of Curling IO](/blog/the-next-version-of-curling-io).*
+*This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3.*
+
