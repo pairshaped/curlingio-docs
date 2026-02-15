@@ -23,6 +23,7 @@
 <li><strong>App labels</strong>: static UI strings like "Leagues", "Contact", "Email". These are written by developers and change at deploy time.</li>
 <li><strong>Content</strong>: user-entered data like league names, summaries, and descriptions. These are entered by club managers and may change at any time.</li>
 </ol>
+<table><thead><tr><th></th><th>App Labels</th><th>Content</th></tr></thead><tbody><tr><td><strong>Who writes it</strong></td><td>Developers</td><td>Club managers</td></tr><tr><td><strong>When it changes</strong></td><td>At deploy time</td><td>At any time</td></tr><tr><td><strong>Where it lives</strong></td><td>Compiled code</td><td>Database</td></tr><tr><td><strong>Scope</strong></td><td>Global (all clubs)</td><td>Per-record</td></tr></tbody></table>
 <p>In Version 2, app labels came from Rails i18n YAML files loaded at boot, and content was stored in per-language database columns (<code>name_en</code>, <code>name_fr</code>, <code>summary_en</code>, <code>summary_fr</code>). This worked, but had pain points we wanted to address.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-version-2-taught-us">What Version 2 Taught Us<a href="https://curling.io/blog/bilingual-by-design#what-version-2-taught-us" class="hash-link" aria-label="Direct link to What Version 2 Taught Us" title="Direct link to What Version 2 Taught Us">​</a></h2>
 <p><strong>The YAML files grew unwieldy.</strong> Over the years, our <code>en.yml</code> and <code>fr.yml</code> files accumulated thousands of keys each. Finding unused keys was a manual process. Ensuring every English key had a French counterpart required discipline that occasionally slipped, resulting in untranslated UI elements showing up in production as blank strings or key paths like <code>en.registrations.confirm_button</code>.</p>
@@ -69,15 +70,11 @@
 <li><code>/en/leagues</code> - redirects to <code>/leagues</code> (primary language never gets a prefix)</li>
 </ul>
 <p>The router extracts the language from the first path segment, stores it in the request context, and every page and API handler downstream uses it. Clean, predictable, and great for SEO.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-two-separate-systems">Why Two Separate Systems?<a href="https://curling.io/blog/bilingual-by-design#why-two-separate-systems" class="hash-link" aria-label="Direct link to Why Two Separate Systems?" title="Direct link to Why Two Separate Systems?">​</a></h2>
-<p>It might seem simpler to have one translation system for everything. But content and app labels have fundamentally different lifecycles:</p>
-<table><thead><tr><th></th><th>App Labels</th><th>Content</th></tr></thead><tbody><tr><td><strong>Who writes it</strong></td><td>Developers</td><td>Club managers</td></tr><tr><td><strong>When it changes</strong></td><td>At deploy time</td><td>At any time</td></tr><tr><td><strong>Where it lives</strong></td><td>Compiled code</td><td>Database</td></tr><tr><td><strong>Scope</strong></td><td>Global (all clubs)</td><td>Per-record</td></tr></tbody></table>
-<p>Storing "Leagues" in the database would add a database read to every page render for no reason. Putting league names in compiled code would make them uneditable. The two-system approach lets each do what it's best at.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://curling.io/blog/bilingual-by-design#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
 <p>The i18n foundation is in place. As we build out more features (admin interfaces, registration flows, email notifications) we'll add keys to the app label system and the <code>translations</code> JSON column to more tables. The system is designed to scale to thousands of keys without any architectural changes.</p>
 <p>Next up: we'll be looking at authentication and the admin interface, which will be the first real test of these systems under more complex UI.</p>
 <hr>
-<p><em>This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3. Previous post: <a href="https://curling.io/blog/the-next-version-of-curling-io">The Next Version of Curling IO</a>.</em></p>]]></content:encoded>
+<p><em>This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3.</em></p>]]></content:encoded>
             <category>v3</category>
             <category>i18n</category>
             <category>gleam</category>

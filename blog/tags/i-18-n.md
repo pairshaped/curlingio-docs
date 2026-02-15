@@ -4,7 +4,7 @@ February 15, 2026 ·
 
 <!-- -->
 
-8 min read
+7 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
