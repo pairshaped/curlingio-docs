@@ -2,7 +2,7 @@
 slug: the-next-version-of-curling-io
 title: 'The Next Version of Curling IO'
 authors: [dave]
-tags: [architecture, gleam, sqlite, vertical-scaling, rails-migration]
+tags: [v3, architecture, gleam, sqlite, scaling]
 ---
 
 We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
@@ -19,7 +19,7 @@ This is the first in a series of technical posts documenting our journey and dec
 
 ## Why a New Foundation?
 
-Curling IO has been serving curling clubs since late 2014. We upgraded the platform once already in 2019, and our v2 system has been running successfully on Rails ever since. Everything works, clubs are happy, and growth is strong. So why invest in a new foundation?
+Curling IO has been serving curling clubs since late 2014. We upgraded the platform once already in 2019, and our Version 2 system has been running successfully on Rails ever since. Everything works, clubs are happy, and growth is strong. So why invest in a new foundation?
 
 Because we're planning to be here for the long haul. This new foundation ensures Curling IO can serve curling clubs not just for the next few years, but for the next 20+ years. While competitors come and go, we're investing in infrastructure built to last and evolve with the sport.
 
@@ -77,7 +77,7 @@ This isn't about Rails being bad - we've been building with it since version 1.2
 
 **This one surprised us.**
 
-Curling IO v2 runs on PostgreSQL. We assumed we'd use Postgres for v3. But we're betting on <a href="https://sqlite.org" target="_blank">SQLite</a> instead.
+Curling IO Version 2 runs on PostgreSQL. We assumed we'd use Postgres for Version 3. But we're betting on <a href="https://sqlite.org" target="_blank">SQLite</a> instead.
 
 **Why SQLite?**
 
@@ -121,7 +121,7 @@ If we ever outgrow a single server, we have a clean path to splitting things up.
 
 ## What's Next
 
-We'll be building this out over the coming months alongside the existing platform. Curling IO v2 isn't going anywhere - it continues to run and receive updates as usual. When v3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.
+We'll be building this out over the coming months alongside the existing platform. Curling IO Version 2 isn't going anywhere - it continues to run and receive updates as usual. When Version 3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.
 
 We'll share more technical details as we go. Next up: a deeper look at how we're approaching the migration from Rails, and early performance benchmarks comparing the two stacks.
 
