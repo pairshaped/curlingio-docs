@@ -125,9 +125,10 @@
 <li><strong>Simple language</strong> - Focused, consistent, easy to reason about. Perfect for building deterministic APIs.</li>
 </ul>
 <p><strong>What about other options?</strong></p>
-<p>We didn't jump straight to Gleam. We seriously considered other functional, type-safe stacks:</p>
+<p>We didn't jump straight to Gleam. We seriously considered several other stacks:</p>
 <p><strong><a href="https://postgrest.org/" target="_blank">PostgREST</a> + Elm/Lustre</strong> - This was a very serious contender using tools we're already familiar with. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.</p>
 <p><strong><a href="https://safe-stack.github.io/" target="_blank">F# SAFE Stack</a></strong> - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.</p>
+<p><strong>TypeScript + Node + React</strong> - The obvious choice given its massive ecosystem and the sheer volume of material AI agents can draw from. We've been using React off and on since 2014 and like Redux (which is Elm-inspired) for the frontend. But JavaScript/TypeScript has issues we couldn't get past: nulls everywhere, a type system that feels bolted on (TypeScript's safety is opt-out with <code>any</code>, <code>as</code>, and <code>!</code>), relentless library churn, and recurring npm supply chain vulnerabilities. React itself has become overly complex. Popularity is a real advantage, but it wasn't enough to outweigh the correctness and simplicity we wanted.</p>
 <p><strong>BEAM was the killer feature.</strong> None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language.</p>
 <p><strong>Why not stick with Rails?</strong></p>
 <p>To be clear: we love <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>. It's been amazing for rapid development and has scaled well for our needs. For heavier interactive features, we've already been using Elm for frontend apps like Bracket Builder, Scheduling, Scoring, and Results widgets, with PostgREST providing clean APIs on the backend. This functional programming approach has worked really well.</p>
@@ -163,23 +164,14 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="vertical-first-scaling">Vertical-First Scaling<a href="https://curling.io/blog/the-next-version-of-curling-io#vertical-first-scaling" class="hash-link" aria-label="Direct link to Vertical-First Scaling" title="Direct link to Vertical-First Scaling">​</a></h2>
 <p>Our scaling strategy is simple: start on a single powerful server and scale up from there.</p>
 <ul>
-<li>One server with co-located app + database</li>
+<li>One server with co-located app + database (one thing to deploy, backup, monitor)</li>
 <li>Warm backup server + continuous offsite backups</li>
 <li>Scale up CPU and RAM as we grow</li>
-<li>Horizontal splitting available if we ever need it, but we likely won't</li>
+<li>No distributed systems complexity until actually needed</li>
 </ul>
-<p><strong>Why vertical-first?</strong></p>
-<ul>
-<li>Operational simplicity (one server to deploy, backup, monitor)</li>
-<li>No distributed systems complexity</li>
-<li>SQLite stays fast (in-process, no network)</li>
-<li>Cost-effective</li>
-<li>Defer complexity until actually needed</li>
-</ul>
-<p>If we ever outgrow a single server, we have a clean path to splitting things up. But with BEAM's concurrency and SQLite's in-process speed, we expect a single powerful server to handle far more than we'll need for a very long time.</p>
+<p>If we ever outgrow a single server, we have a clean path to splitting things up. But with BEAM's concurrency and SQLite's in-process speed, we expect that to be a long way off.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://curling.io/blog/the-next-version-of-curling-io#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
 <p>We'll be building this out over the coming months alongside the existing platform. Curling IO Version 2 isn't going anywhere - it continues to run and receive updates as usual. When Version 3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.</p>
-<p>We'll share more technical details as we go. Next up: a deeper look at how we're approaching the migration from Rails, and early performance benchmarks comparing the two stacks.</p>
 <hr>
 <p><em>This is the first in a series of posts documenting our technical journey. We'll be sharing deep dives on the implementation, performance testing, and lessons learned along the way.</em></p>]]></content:encoded>
             <category>v3</category>

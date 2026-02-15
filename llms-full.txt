@@ -637,11 +637,13 @@ Given our goals - agent-native APIs, clean architecture, and battle-tested relia
 
 **What about other options?**
 
-We didn't jump straight to Gleam. We seriously considered other functional, type-safe stacks:
+We didn't jump straight to Gleam. We seriously considered several other stacks:
 
 **[PostgREST](https://postgrest.org) + Elm/Lustre** - This was a very serious contender using tools we're already familiar with. PostgREST provides instant APIs from your PostgreSQL schema, and Elm/Lustre provides type-safe UI. But we'd need something else for background jobs (like Go), and the tooling for building, debugging, and testing PostgreSQL functions isn't great. The multi-language setup felt fragmented.
 
 **[F# SAFE Stack](https://safe-stack.github.io)** - F# is a fantastic functional language with a solid .NET ecosystem. The SAFE stack (Suave/Saturn, Azure/AWS, Fable, Elmish) offers full-stack type safety with The Elm Architecture (TEA) on the frontend. We really liked this option, but ultimately chose Gleam for its BEAM VM benefits and simpler deployment story.
+
+**TypeScript + Node + React** - The obvious choice given its massive ecosystem and the sheer volume of material AI agents can draw from. We've been using React off and on since 2014 and like Redux (which is Elm-inspired) for the frontend. But JavaScript/TypeScript has issues we couldn't get past: nulls everywhere, a type system that feels bolted on (TypeScript's safety is opt-out with `any`, `as`, and `!`), relentless library churn, and recurring npm supply chain vulnerabilities. React itself has become overly complex. Popularity is a real advantage, but it wasn't enough to outweigh the correctness and simplicity we wanted.
 
 **BEAM was the killer feature.** None of these other options came close to what the BEAM VM offers: rock-solid concurrency, fault tolerance, and proven scalability (WhatsApp, Discord, etc.). Gleam gives us BEAM on the backend with familiar functional patterns (like Elm) on the frontend, all in a single language.
 
@@ -690,26 +692,16 @@ If SQLite doesn't scale as expected, we'll just stick with PostgreSQL - an equal
 
 Our scaling strategy is simple: start on a single powerful server and scale up from there.
 
-* One server with co-located app + database
+* One server with co-located app + database (one thing to deploy, backup, monitor)
 * Warm backup server + continuous offsite backups
 * Scale up CPU and RAM as we grow
-* Horizontal splitting available if we ever need it, but we likely won't
+* No distributed systems complexity until actually needed
 
-**Why vertical-first?**
-
-* Operational simplicity (one server to deploy, backup, monitor)
-* No distributed systems complexity
-* SQLite stays fast (in-process, no network)
-* Cost-effective
-* Defer complexity until actually needed
-
-If we ever outgrow a single server, we have a clean path to splitting things up. But with BEAM's concurrency and SQLite's in-process speed, we expect a single powerful server to handle far more than we'll need for a very long time.
+If we ever outgrow a single server, we have a clean path to splitting things up. But with BEAM's concurrency and SQLite's in-process speed, we expect that to be a long way off.
 
 ## What's Next[​](#whats-next "Direct link to What's Next")
 
 We'll be building this out over the coming months alongside the existing platform. Curling IO Version 2 isn't going anywhere - it continues to run and receive updates as usual. When Version 3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.
-
-We'll share more technical details as we go. Next up: a deeper look at how we're approaching the migration from Rails, and early performance benchmarks comparing the two stacks.
 
 ***
 
