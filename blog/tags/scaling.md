@@ -18,10 +18,10 @@ This is the first in a series of technical posts documenting our journey and dec
 
 **Tags:**
 
+* [v3](/blog/tags/v-3.md)
 * [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
 * [sqlite](/blog/tags/sqlite.md)
-* [vertical-scaling](/blog/tags/vertical-scaling.md)
-* [rails-migration](/blog/tags/rails-migration.md)
+* [scaling](/blog/tags/scaling.md)
 
 [**Read more**](/blog/the-next-version-of-curling-io.md)

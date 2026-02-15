@@ -20,14 +20,21 @@ Archive
 
 - [Authors](/blog/authors.md)
 
+### bilingual-by-design
+
+Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
+
+- [Bilingual by Design](/blog/bilingual-by-design.md): Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
+
 ### tags
 
 - [Tags](/blog/tags.md)
-- [One post tagged with "architecture"](/blog/tags/architecture.md)
-- [One post tagged with "gleam"](/blog/tags/gleam.md)
-- [One post tagged with "rails-migration"](/blog/tags/rails-migration.md)
+- [2 posts tagged with "architecture"](/blog/tags/architecture.md)
+- [2 posts tagged with "gleam"](/blog/tags/gleam.md)
+- [One post tagged with "i18n"](/blog/tags/i-18-n.md)
+- [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "sqlite"](/blog/tags/sqlite.md)
-- [One post tagged with "vertical-scaling"](/blog/tags/vertical-scaling.md)
+- [2 posts tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 

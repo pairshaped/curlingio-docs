@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"The Next Version of Curling IO","permalink":"/blog/the-next-version-of-curling-io","unlisted":false,"date":"2026-02-12T00:00:00.000Z"}]}')}}]);

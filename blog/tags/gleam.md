@@ -1,6 +1,6 @@
-## [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md)
+## [Bilingual by Design](/blog/bilingual-by-design.md)
 
-February 12, 2026 ·
+February 15, 2026 ·
 
 <!-- -->
 
@@ -12,16 +12,15 @@ Dave Rapin
 
 Founder @ Curling IO
 
-We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
+Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
 
-This is the first in a series of technical posts documenting our journey and decisions as we build.
+In Version 3, we wanted compile-time guarantees that make those problems impossible. This post covers how we designed the i18n system, why we split it into two layers, and what we changed from Version 2.
 
 **Tags:**
 
-* [architecture](/blog/tags/architecture.md)
+* [v3](/blog/tags/v-3.md)
+* [i18n](/blog/tags/i-18-n.md)
 * [gleam](/blog/tags/gleam.md)
-* [sqlite](/blog/tags/sqlite.md)
-* [vertical-scaling](/blog/tags/vertical-scaling.md)
-* [rails-migration](/blog/tags/rails-migration.md)
+* [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/the-next-version-of-curling-io.md)
+[**Read more**](/blog/bilingual-by-design.md)

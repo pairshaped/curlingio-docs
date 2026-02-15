@@ -5,3 +5,8 @@
   [ - ](/blog/the-next-version-of-curling-io.md)
   <!-- -->
   [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md)
+* [February 15](/blog/bilingual-by-design.md)
+  <!-- -->
+  [ - ](/blog/bilingual-by-design.md)
+  <!-- -->
+  [Bilingual by Design](/blog/bilingual-by-design.md)

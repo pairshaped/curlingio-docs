@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[8947],{6600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Dave Rapin","title":"Founder @ Curling IO","imageURL":"https://avatars.githubusercontent.com/u/1202?v=4","key":"dave","page":null,"count":1}]}')}}]);
