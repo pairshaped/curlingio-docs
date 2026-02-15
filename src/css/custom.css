@@ -75,3 +75,25 @@
 .markdown img {
   border: solid 1px #ccccce;
 }
+
+/* Swap blog post nav: older on left, newer on right */
+.blog-post-page .pagination-nav__link--next {
+  grid-column: 1/2;
+  text-align: left;
+}
+.blog-post-page .pagination-nav__link--prev {
+  grid-column: 2/3;
+  text-align: right;
+}
+.blog-post-page .pagination-nav__link--next .pagination-nav__label::after {
+  content: none;
+}
+.blog-post-page .pagination-nav__link--next .pagination-nav__label::before {
+  content: '« ';
+}
+.blog-post-page .pagination-nav__link--prev .pagination-nav__label::before {
+  content: none;
+}
+.blog-post-page .pagination-nav__link--prev .pagination-nav__label::after {
+  content: ' »';
+}
