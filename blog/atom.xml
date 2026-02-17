@@ -71,13 +71,12 @@
 <p>The router extracts the language from the first path segment, stores it in the request context, and every page and API handler downstream uses it. Clean, predictable, and great for SEO.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://curling.io/blog/bilingual-by-design#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
 <p>The i18n foundation is in place. As we build out more features (admin interfaces, registration flows, email notifications) we'll add keys to the app label system and the <code>translations</code> JSON column to more tables. The system is designed to scale to thousands of keys without any architectural changes.</p>
-<p>Next up: we'll be looking at authentication and the admin interface, which will be the first real test of these systems under more complex UI.</p>
 <hr>
-<p><em>This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3.</em></p>]]></content>
+<p><em>This is Part 2 of the Curling IO Foundation series. Next up: passwordless authentication and multi-email support.</em></p>]]></content>
         <author>
             <name>Dave Rapin</name>
         </author>
-        <category label="v3" term="v3"/>
+        <category label="foundation" term="foundation"/>
         <category label="i18n" term="i18n"/>
         <category label="gleam" term="gleam"/>
         <category label="architecture" term="architecture"/>
@@ -89,7 +88,7 @@
         <updated>2026-02-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.]]></summary>
         <content type="html"><![CDATA[<p>We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.</p>
-<p>This is the first in a series of technical posts documenting our journey and decisions as we build.</p>
+<p>This is Part 1 of a series of technical posts documenting our journey and decisions as we build.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-this-affects-you">How This Affects You<a href="https://curling.io/blog/the-next-version-of-curling-io#how-this-affects-you" class="hash-link" aria-label="Direct link to How This Affects You" title="Direct link to How This Affects You">​</a></h2>
 <p><strong>For club managers:</strong> Curling IO isn't changing from your perspective. We're upgrading the technical infrastructure behind the scenes - no downtime, no disruption, no action required from you. Your data stays exactly where it is. When the upgrade is complete (thoroughly tested and proven), the transition will be seamless. You'll have the same Curling IO you know, even faster and more reliable.</p>
 <p><strong>For curlers:</strong> You won't notice the technology change. Registration, scoring, schedules, results - everything works the same way. You might notice things feel snappier, especially during peak registration times or when checking live scores at major competitions.</p>
@@ -175,11 +174,11 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-next">What's Next<a href="https://curling.io/blog/the-next-version-of-curling-io#whats-next" class="hash-link" aria-label="Direct link to What's Next" title="Direct link to What's Next">​</a></h2>
 <p>We'll be building this out over the coming months alongside the existing platform. Curling IO Version 2 isn't going anywhere - it continues to run and receive updates as usual. When Version 3 is ready and thoroughly tested, we'll transition everyone over at once - a clean, coordinated switch rather than a drawn-out process. We won't make that switch until we're confident everything is solid.</p>
 <hr>
-<p><em>This is the first in a series of posts documenting our technical journey. We'll be sharing deep dives on the implementation, performance testing, and lessons learned along the way.</em></p>]]></content>
+<p><em>This is Part 1 of the Curling IO Foundation series. Next up: <a href="https://curling.io/blog/bilingual-by-design">bilingual support with compile-time guarantees</a>.</em></p>]]></content>
         <author>
             <name>Dave Rapin</name>
         </author>
-        <category label="v3" term="v3"/>
+        <category label="foundation" term="foundation"/>
         <category label="architecture" term="architecture"/>
         <category label="gleam" term="gleam"/>
         <category label="sqlite" term="sqlite"/>

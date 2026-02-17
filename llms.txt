@@ -30,11 +30,11 @@ Curling IO serves hundreds of clubs across Canada, where English and French aren
 
 - [Tags](/blog/tags.md)
 - [2 posts tagged with "architecture"](/blog/tags/architecture.md)
+- [2 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [2 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "sqlite"](/blog/tags/sqlite.md)
-- [2 posts tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 

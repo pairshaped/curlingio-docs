@@ -14,11 +14,11 @@ Founder @ Curling IO
 
 We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
 
-This is the first in a series of technical posts documenting our journey and decisions as we build.
+This is Part 1 of a series of technical posts documenting our journey and decisions as we build.
 
 **Tags:**
 
-* [v3](/blog/tags/v-3.md)
+* [foundation](/blog/tags/foundation.md)
 * [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
 * [sqlite](/blog/tags/sqlite.md)

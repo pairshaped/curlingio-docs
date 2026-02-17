@@ -14,7 +14,7 @@ Founder @ Curling IO
 
 We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
 
-This is the first in a series of technical posts documenting our journey and decisions as we build.
+This is Part 1 of a series of technical posts documenting our journey and decisions as we build.
 
 ## How This Affects You[​](#how-this-affects-you "Direct link to How This Affects You")
 
@@ -127,11 +127,11 @@ We'll be building this out over the coming months alongside the existing platfor
 
 ***
 
-*This is the first in a series of posts documenting our technical journey. We'll be sharing deep dives on the implementation, performance testing, and lessons learned along the way.*
+*This is Part 1 of the Curling IO Foundation series. Next up: [bilingual support with compile-time guarantees](/blog/bilingual-by-design.md).*
 
 **Tags:**
 
-* [v3](/blog/tags/v-3.md)
+* [foundation](/blog/tags/foundation.md)
 * [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
 * [sqlite](/blog/tags/sqlite.md)

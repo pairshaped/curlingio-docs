@@ -18,7 +18,7 @@ In Version 3, we wanted compile-time guarantees that make those problems impossi
 
 **Tags:**
 
-* [v3](/blog/tags/v-3.md)
+* [foundation](/blog/tags/foundation.md)
 * [i18n](/blog/tags/i-18-n.md)
 * [gleam](/blog/tags/gleam.md)
 * [architecture](/blog/tags/architecture.md)
