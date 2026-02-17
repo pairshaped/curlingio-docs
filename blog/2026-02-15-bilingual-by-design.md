@@ -2,7 +2,7 @@
 slug: bilingual-by-design
 title: 'Bilingual by Design'
 authors: [dave]
-tags: [v3, i18n, gleam, architecture]
+tags: [foundation, i18n, gleam, architecture]
 ---
 
 Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
@@ -148,9 +148,7 @@ The router extracts the language from the first path segment, stores it in the r
 
 The i18n foundation is in place. As we build out more features (admin interfaces, registration flows, email notifications) we'll add keys to the app label system and the `translations` JSON column to more tables. The system is designed to scale to thousands of keys without any architectural changes.
 
-Next up: we'll be looking at authentication and the admin interface, which will be the first real test of these systems under more complex UI.
-
 ---
 
-*This is part of an ongoing series documenting the technical decisions behind Curling IO Version 3.*
+*This is Part 2 of the Curling IO Foundation series. Next up: passwordless authentication and multi-email support.*
 
