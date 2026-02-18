@@ -111,10 +111,6 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Feedback',
-              href: 'https://curling.canny.io/',
-            },
-            {
               label: 'Twitter',
               href: 'https://twitter.com/curlingio',
             },
