@@ -22,7 +22,6 @@ Docs
 
 Community
 
-* [Feedback](https://curling.canny.io/)
 * [Twitter](https://twitter.com/curlingio)
 * [Curling Canada](https://curling.ca)
 

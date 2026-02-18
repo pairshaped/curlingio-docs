@@ -41,5 +41,3 @@ We've provided two videos outlining these steps.
 One from the perspective of a registrant: <https://www.youtube.com/watch?v=PTktPArWNqM&t=132s>
 
 Another from the perspective of an administrator: <https://www.youtube.com/watch?v=Q6SeM3J4pgQ&t=345s>
-
-We are always looking for ways to streamline this process, so please provide feedback on our feedback board if you have any ideas. <https://curling.canny.io/clubs>

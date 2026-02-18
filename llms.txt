@@ -102,7 +102,7 @@ Acceptance of Terms of this Agreement through Use
 - [Registration and Results Widget](/docs/club-management/registration-widget.md): Curling IO provides two widgets you can use to embed your leagues, competitions, and product data on your website.
 - [Club Settings](/docs/club-management/settings.md): You can modify all of the core operational settings for your club in this screen.
 - [Sponsors](/docs/club-management/sponsors.md): This is a Premium Only Feature
-- [Support](/docs/club-management/support.md): You can submit supports requests from within Curling IO. Support requests submitted any other way may be missed or at a minimum will take longer for a response.
+- [Support and Feedback](/docs/club-management/support.md): You can submit support and feedback requests from within Curling IO. Requests submitted any other way may be missed or at a minimum will take longer for a response.
 - [Waitlists](/docs/club-management/waitlists.md): Overview
 - [Waivers](/docs/club-management/waivers.md): Curling IO allows you to collect legal agreements, liability releases, photo consents, and other acknowledgments from your curlers during registration. The waiver system supports both required waivers (where users must type acceptance text to continue) and optional waivers (where users can choose to accept or reject).
 - [Website Hosting](/docs/club-management/website-hosting.md): Overview
@@ -143,7 +143,7 @@ Acceptance of Terms of this Agreement through Use
 - [Premium Tier](/docs/getting-started/premium.md): If your club is accepting online payments then you are already considered premium tier.
 - [Pricing](/docs/getting-started/pricing.md): Run Your Curling Club for $0
 - [Referrals](/docs/getting-started/referrals.md): Clubs can earn $250 for every club that you refer to Curling IO that has never used our platform before.
-- [Support and Feedback](/docs/getting-started/support.md): We offer three options available for help and support with Curling IO.
+- [Support and Feedback](/docs/getting-started/support.md): We offer two options available for help and support with Curling IO.
 
 ### member-data
 
