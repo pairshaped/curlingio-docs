@@ -5,7 +5,7 @@ authors: [dave]
 tags: [foundation, authentication, gleam, security]
 ---
 
-Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a login link with a one-time code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
+Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a short-lived login code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
 
 But first, let's talk about why we made this <u>*controversial decision*</u> in the first place.
 
@@ -17,7 +17,7 @@ The conventional wisdom is that passwords are the "real" way to authenticate and
 
 **Passwords get reused.** Study after study shows that most people reuse the same password across multiple sites. When any one of those sites gets breached, attackers try those credentials everywhere else. This isn't a theoretical risk. It happens constantly, and it's the number one way accounts get compromised. As an application developer, you can't control what your users do on other sites, but you inherit the risk.
 
-**Passwords get phished.** A convincing fake login page can harvest credentials at scale. Login links are inherently resistant to phishing because there's no credential to hand over. The code is short-lived, single-use, and tied to a specific email address.
+**Passwords get phished.** A convincing fake login page can harvest credentials at scale. Login links are inherently resistant to phishing because there's no credential to hand over. The code is short-lived and tied to a specific email address.
 
 **Passwords require just as much email verification.** Here's the thing people overlook: even with passwords, you still need to verify the user's email. Otherwise anyone can create an account with someone else's email address. So you end up building the same email verification flow that login links use, plus the password management on top of it. You're not avoiding email. You're adding a password layer on top of it.
 
@@ -29,19 +29,86 @@ The conventional wisdom is that passwords are the "real" way to authenticate and
 
 ## How Login Links Are Secure
 
-A login link is a one-time code sent to your email. The security model rests on a simple assumption: if you can read email sent to that address, you control that address. This is the same assumption that password reset flows rely on, but we cut out the middleman.
+A login link is a short-lived code sent to your email. The security model rests on a simple assumption: if you can read email sent to that address, you control that address. This is the same assumption that password reset flows rely on, but we cut out the middleman.
 
 Here's what makes the implementation secure:
 
-**High-entropy tokens.** Each login code has millions of possible combinations. Not huge, but it doesn't need to be because of the next two points.
+**High-entropy tokens.** Each login code is drawn from a high-entropy space, but it doesn't need to be astronomical because of the next two points. The token generator uses Gleam's binary pattern matching to map cryptographically random bytes to an unambiguous alphabet:
 
-**Aggressive rate limiting.** Verification attempts are tightly rate limited across multiple layered time windows. Brute-forcing millions of combinations is completely impractical.
+```gleam
+pub fn generate_token() -> String {
+  let alphabet_size = string.length(token_alphabet)
+  crypto.strong_random_bytes(token_length)
+  |> pick_chars(alphabet_size, "")
+}
 
-**Short-lived, single use.** Each code works exactly once and expires quickly. After verification, the token hash is cleared from the database. There's no window for replay attacks.
+fn pick_chars(bytes: BitArray, alphabet_size: Int, acc: String) -> String {
+  case bytes {
+    <<b, rest:bits>> -> {
+      let idx = b % alphabet_size
+      let ch = string.slice(token_alphabet, idx, 1)
+      pick_chars(rest, alphabet_size, acc <> ch)
+    }
+    _ -> acc
+  }
+}
+```
 
-**Constant-time comparison.** We look up the email row first, then compare the submitted token hash against the stored hash using Gleam's `crypto.secure_compare`. This takes the same amount of time regardless of where the first mismatch occurs, preventing timing attacks that could leak information about partial matches.
+**Aggressive rate limiting.** Authentication attempts are tightly rate limited across multiple layered time windows. Brute-forcing the token space is completely impractical. Each window is checked in sequence using Gleam's `use` syntax. If any window is exceeded, it short-circuits and returns the retry-after time without checking the rest:
 
-**No credential storage.** There are no passwords in our database. In a breach scenario, attackers get token hashes that are short-lived and single-use. Compare that to a password database where every hash is a target for offline cracking.
+```gleam
+pub fn check_verification_attempt(
+  limiter: RateLimiter,
+  email: String,
+  now: Int,
+) -> Result(Nil, Int) {
+  let key = key_prefix <> string.lowercase(email)
+  use _ <- result.try(check(limiter, key, attempts_per_minute, 60, now))
+  use _ <- result.try(check(limiter, key, attempts_per_15_minutes, 900, now))
+  use _ <- result.try(check(limiter, key, attempts_per_hour, 3600, now))
+  check(limiter, key, attempts_per_day, 86_400, now)
+}
+```
+
+**Short-lived.** Each code expires quickly. After verification, the token hash is cleared from the database. There's no window for replay attacks.
+
+**Constant-time comparison.** We look up the email row first, then compare the submitted token hash against the stored hash using Gleam's `crypto.secure_compare`. This takes the same amount of time regardless of where the first mismatch occurs, preventing timing attacks that could leak information about partial matches. If the current token doesn't match, we check the previous token, not to log them in, but to return a specific error message guiding the user to check for a more recent email:
+
+```gleam
+let hashes_match =
+  crypto.secure_compare(
+    bit_array.from_string(submitted_hash),
+    bit_array.from_string(stored_hash),
+  )
+
+case hashes_match {
+  True ->
+    case row.token_expires_at {
+      Some(expires_at) if expires_at > now ->
+        complete_verification(conn, row, now)
+      _ -> Error(ExpiredToken)
+    }
+  False ->
+    case row.previous_token_hash {
+      Some(prev_hash) -> {
+        let prev_match =
+          crypto.secure_compare(
+            bit_array.from_string(submitted_hash),
+            bit_array.from_string(prev_hash),
+          )
+        case prev_match {
+          True -> Error(SupersededToken)
+          False -> Error(InvalidToken)
+        }
+      }
+      None -> Error(InvalidToken)
+    }
+}
+```
+
+Every branch returns a specific error variant, and the compiler ensures we handle all of them. No forgotten edge cases. The previous token never grants access. It only exists to give a better error message than a generic "invalid token."
+
+**No credential storage.** There are no passwords in our database. In a breach scenario, attackers get token hashes that are short-lived. Compare that to a password database where every hash is a target for offline cracking.
 
 It's also worth noting that the main vulnerability of login links is a compromised email account. But if someone's email is compromised, they have much bigger problems than their Curling IO profile. And a password-based system is equally vulnerable in that scenario. The attacker just clicks "forgot password" and they're in.
 
@@ -59,7 +126,7 @@ Version 2's login link flow is straightforward: enter your email, get a code, en
 
 This is the big addition. Users can now associate multiple verified email addresses with their account:
 
-**Add an email.** From the account page, enter a new email address. We send a verification code using the same mechanism as login, a 5-character one-time code.
+**Add an email.** From the account page, enter a new email address. We send a verification code using the same mechanism as login.
 
 **Verify it.** Enter the code. The email is now linked to your account and marked as verified. Unverified emails can't be used for anything.
 
@@ -112,6 +179,12 @@ Login links aren't the only way in. Google and Facebook login work alongside the
 The OAuth flow uses a central auth subdomain (`auth.curling.io`) to handle callbacks, since both providers require a fixed redirect URI. After the provider verifies the user's identity, we look up the email in the same table used for login links. If the email exists with a user, log them in. If not, create the user and a verified email row (OAuth emails are pre-verified by the provider).
 
 The same user resolution logic, regardless of how you authenticate.
+
+## A Note on Rolling Your Own Auth
+
+Writing your own authentication is generally a bad idea. Battle-tested libraries like <a href="https://github.com/heartcombo/devise" target="_blank">Devise</a> (Ruby), <a href="https://next-auth.js.org" target="_blank">NextAuth</a> (JavaScript), and <a href="https://django-allauth.readthedocs.io" target="_blank">django-allauth</a> (Python) exist for good reason. They've been hardened over years of real-world use and security audits. If you're building on a stack that has a mature auth library, use it.
+
+We couldn't find an existing Gleam auth library that was the right fit for our specific needs, but we didn't design in a vacuum. We studied Devise's modules extensively (Lockable, Timeoutable, Trackable, Confirmable) and used them as a checklist for what a production auth system needs to handle. Every security decision we made, from constant-time comparison to layered rate limiting to email enumeration prevention, was informed by what these libraries have learned the hard way over the past decade.
 
 ## What's Next
 
