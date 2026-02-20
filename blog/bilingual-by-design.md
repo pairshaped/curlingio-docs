@@ -155,7 +155,7 @@ The i18n foundation is in place. As we build out more features (admin interfaces
 
 ***
 
-*This is Part 2 of the Curling IO Foundation series. Next up: passwordless authentication and multi-email support.*
+*This is Part 2 of the Curling IO Foundation series. Next up: [passwordless authentication and multi-email support](/blog/passwordless-auth-done-right.md).*
 
 **Tags:**
 

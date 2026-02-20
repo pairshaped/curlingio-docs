@@ -10,3 +10,8 @@
   [ - ](/blog/bilingual-by-design.md)
   <!-- -->
   [Bilingual by Design](/blog/bilingual-by-design.md)
+* [February 20](/blog/passwordless-auth-done-right.md)
+  <!-- -->
+  [ - ](/blog/passwordless-auth-done-right.md)
+  <!-- -->
+  [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md)
