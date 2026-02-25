@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS jobs (
   status TEXT NOT NULL DEFAULT 'pending',
   attempts INTEGER NOT NULL DEFAULT 0,
   max_attempts INTEGER NOT NULL DEFAULT 3,
+  max_running_seconds INTEGER NOT NULL DEFAULT 120,
   error TEXT,
   created_at INTEGER NOT NULL,
   run_at INTEGER NOT NULL,
@@ -50,12 +51,10 @@ CREATE TABLE IF NOT EXISTS jobs (
 From a request handler, sending a background email looks like this:
 
 ```gleam
-jobs.enqueue_email(rc.jobs_db, rc.postmark_api_token, email)
+jobs.enqueue_email(request_context.shared_db, request_context.postmark_api_token, email)
 ```
 
 Under the hood, that's a single `INSERT INTO jobs` with the email details serialized as JSON in the `payload` column. It returns in microseconds. The user gets their response immediately instead of waiting 100-500ms for the Postmark API call to complete.
-
-In a typical Rails setup, background email means Redis running, a job framework configured, and a worker process deployed alongside the app. Here, the "queue" is just a SQLite table in the same filesystem.
 
 ## The Worker: An OTP Actor
 
@@ -105,7 +104,7 @@ No separate monitoring dashboard needed. It's just SQL.
 
 The actor runs under an OTP supervisor. If the actor process dies, the supervisor restarts it automatically under the same registered name. The polling loop resumes, and any jobs that were marked `running` when the crash happened get recovered by a cleanup sweep.
 
-Each job has a `max_running_seconds` column (default: 120 seconds). At the start of every poll cycle, the actor checks for jobs that have been in `running` status longer than their timeout and resets them back to `pending`. Since the `attempts` counter was already incremented when the job entered `running`, the existing retry and backoff logic handles the rest, including capping retries at `max_attempts`. Completed and failed jobs are purged after 7 days. which is plenty of time to debug anything that goes wrong.
+Each job has a `max_running_seconds` column (default: 120 seconds). At the start of every poll cycle, the actor checks for jobs that have been in `running` status longer than their timeout and resets them back to `pending`. Since the `attempts` counter was already incremented when the job entered `running`, the existing retry and backoff logic handles the rest, including capping retries at `max_attempts`. Completed and failed jobs are purged after 7 days, which is plenty of time to debug anything that goes wrong.
 
 This is the BEAM's bread and butter. Erlang's "let it crash" philosophy means you don't write defensive code to prevent every possible failure. You write a supervisor that recovers from it, and a cleanup sweep that catches anything that slips through. The result is less code that's more resilient.
 
@@ -113,13 +112,11 @@ This is the BEAM's bread and butter. Erlang's "let it crash" philosophy means yo
 
 Here's what happens when a user requests a login email:
 
-1. **Request handler** validates the email, generates a token, and calls `jobs.enqueue_email()`, which is just an INSERT into `jobs.db` (microseconds)
+1. **Request handler** validates the email, generates a token, and calls `jobs.enqueue_email()`, which is just an INSERT into `shared.db` (microseconds)
 2. **Response** returns immediately with the "check your email" page
 3. **Jobs actor** picks up the pending job on its next poll (within 1 second)
 4. **Actor** marks the job as `running`, calls the Postmark API, marks it `completed`
 5. If Postmark is down, the job goes back to `pending` with a backoff delay
-
-All of this runs in a single OS process. The HTTP server, the background worker, and the supervisor are all lightweight BEAM processes sharing the same runtime. One thing to deploy, one thing to monitor, one log stream.
 
 ## What We Didn't Need
 
@@ -128,15 +125,15 @@ Here's what's absent from this setup:
 - No Redis. The queue is a SQLite table.
 - No separate worker process. The actor runs in the same BEAM VM.
 - No job framework. It's a few hundred lines of Gleam.
-- No monitoring service. Failed jobs are queryable with SQL.
+- No monitoring service. Failed jobs are just rows in a table.
 - No deployment coordination. One binary, one process.
 
 This setup can comfortably scale to tens of thousands of clubs. SQLite handles the throughput, the BEAM handles the concurrency, and you can read the whole thing in one sitting.
 
 ## What's Next
 
-The jobs system is designed to grow. Adding a new job type means adding a new `kind` string and a handler function. Webhook delivery, report generation, bulk email campaigns: they all follow the same pattern. INSERT a row, let the actor pick it up.
+The jobs system is designed to grow. Adding a new job type means adding a new `kind` string and a handler function. Long-running report generation, data imports, email campaigns: they all follow the same pattern. INSERT a row, let the actor pick it up.
 
 ---
 
-*This is Part 4 of the Curling IO Foundation series.*
+*This is Part 4 of the Curling IO Foundation series. Next up: integrating Stripe payment intents and webhooks.*
