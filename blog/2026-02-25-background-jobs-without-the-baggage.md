@@ -5,9 +5,9 @@ authors: [dave]
 tags: [foundation, gleam, beam, otp, architecture]
 ---
 
-In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. In Version 2, background work like sending emails and processing webhooks happens inline during the request or via Rails' Active Job. It gets the job done, but it either blocks the request or adds deployment complexity.
+In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
 
-Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into about 260 lines of Gleam.
+Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
 
 <!--truncate-->
 
@@ -15,19 +15,19 @@ Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are j
 
 The BEAM VM was designed for telecom systems that needed to handle millions of concurrent operations without downtime. Every BEAM application already has lightweight processes, supervisors, and message passing built in. These aren't OS threads. They're managed by the VM's own scheduler, and you can run hundreds of thousands of them in a single OS process.
 
-This means a "background worker" isn't a separate service. It's just another process running alongside your HTTP handlers, sharing the same runtime, the same deployment, the same log output. Starting one is a function call, not a deployment.
+This means a "background worker" isn't a separate service. It's just another process running alongside your HTTP handlers, sharing the same runtime and the same log output. Starting one is a function call, not a deployment.
 
 ## Why Not Just Fire-and-Forget?
 
-The simplest approach on BEAM would be to spawn a process for each job and let it run. Or use an OTP actor with in-memory messages. We considered this, but it has a gap: if the server restarts, every pending job disappears. For sending login emails, that means a user clicks "send me a login link" right before a deploy, and the email never arrives.
+The simplest approach on BEAM would be to spawn a process for each job and let it run. Or use an OTP actor with in-memory messages. We considered this, but it has a gap: if the server restarts, every pending job disappears. A lost login email is minor (the user just requests another), but we'll also be running draw schedule generation, payment processing through Stripe, and accounting syncs. Losing those mid-flight is a real problem.
 
-We wanted durability without complexity. The answer was obvious: SQLite.
+We wanted durability without complexity. SQLite was already there.
 
 ## A Separate Database
 
-Curling IO already uses SQLite for its main database. We could have added a `jobs` table there, but we deliberately chose a separate `jobs.db`. The reasoning is simple: background job processing means frequent writes (insert job, mark running, mark completed), and there's no reason to contend for write locks on the main database. SQLite uses a write-ahead log with a single writer, so separating the workloads means email processing never blocks a registration query and vice versa.
+Curling IO already uses SQLite for its sport-specific databases (one per sport). We could have added a `jobs` table there, but we deliberately put it in a separate `shared.db`. Background job processing means frequent writes (insert job, mark running, mark completed), and there's no reason to contend for write locks on the sport databases. SQLite uses a write-ahead log with a single writer, so separating the workloads means job processing never blocks a registration query and vice versa.
 
-The jobs database is created on startup with a single table:
+The jobs table:
 
 ```sql
 CREATE TABLE IF NOT EXISTS jobs (
@@ -42,10 +42,8 @@ CREATE TABLE IF NOT EXISTS jobs (
   run_at INTEGER NOT NULL,
   started_at INTEGER,
   completed_at INTEGER
-);
+) STRICT;
 ```
-
-No migration system needed for this. `CREATE TABLE IF NOT EXISTS` on boot keeps it simple.
 
 ## Enqueue Is Just an INSERT
 
@@ -105,9 +103,11 @@ No separate monitoring dashboard needed. It's just SQL.
 
 ## Supervised for Resilience
 
-The actor runs under an OTP supervisor with a `OneForOne` restart strategy. If something truly catastrophic happens and the actor process dies, the supervisor restarts it automatically under the same registered name. The polling loop resumes, and any jobs that were marked `running` when the crash happened will be picked up on the next attempt (they'd need a cleanup sweep, which we'll add as the system matures).
+The actor runs under an OTP supervisor. If the actor process dies, the supervisor restarts it automatically under the same registered name. The polling loop resumes, and any jobs that were marked `running` when the crash happened get recovered by a cleanup sweep.
 
-This is the BEAM's bread and butter. Erlang's "let it crash" philosophy means you don't write defensive code to prevent every possible failure. You write a supervisor that recovers from it. The result is less code that's more resilient.
+Each job has a `max_running_seconds` column (default: 120 seconds). At the start of every poll cycle, the actor checks for jobs that have been in `running` status longer than their timeout and resets them back to `pending`. Since the `attempts` counter was already incremented when the job entered `running`, the existing retry and backoff logic handles the rest, including capping retries at `max_attempts`. Completed and failed jobs are purged after 7 days. which is plenty of time to debug anything that goes wrong.
+
+This is the BEAM's bread and butter. Erlang's "let it crash" philosophy means you don't write defensive code to prevent every possible failure. You write a supervisor that recovers from it, and a cleanup sweep that catches anything that slips through. The result is less code that's more resilient.
 
 ## The Full Architecture
 
@@ -123,21 +123,19 @@ All of this runs in a single OS process. The HTTP server, the background worker,
 
 ## What We Didn't Need
 
-It's worth noting what's absent from this setup:
+Here's what's absent from this setup:
 
-- **No Redis**: the queue is a SQLite table
-- **No separate worker process**: the actor runs in the same BEAM VM
-- **No job framework**: it's 260 lines of Gleam
-- **No monitoring service**: failed jobs are queryable with SQL
-- **No deployment coordination**: one binary, one process
+- No Redis. The queue is a SQLite table.
+- No separate worker process. The actor runs in the same BEAM VM.
+- No job framework. It's a few hundred lines of Gleam.
+- No monitoring service. Failed jobs are queryable with SQL.
+- No deployment coordination. One binary, one process.
 
-This setup can comfortably scale to tens of thousands of clubs. SQLite handles the throughput easily, the BEAM handles the concurrency, and the whole thing is simple enough to reason about completely.
+This setup can comfortably scale to tens of thousands of clubs. SQLite handles the throughput, the BEAM handles the concurrency, and you can read the whole thing in one sitting.
 
 ## What's Next
 
 The jobs system is designed to grow. Adding a new job type means adding a new `kind` string and a handler function. Webhook delivery, report generation, bulk email campaigns: they all follow the same pattern. INSERT a row, let the actor pick it up.
-
-We'll also add a cleanup sweep for stale `running` jobs (orphaned by a crash) and a periodic purge of old completed jobs to keep the table lean.
 
 ---
 
