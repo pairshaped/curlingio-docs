@@ -14,7 +14,7 @@ Founder @ Curling IO
 
 In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
 
-Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
+Curling IO Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
 
 **Tags:**
 
