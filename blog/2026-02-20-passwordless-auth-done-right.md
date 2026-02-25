@@ -194,4 +194,4 @@ We're also considering optional two-factor authentication for club administrator
 
 ---
 
-*This is Part 3 of the Curling IO Foundation series. Next up: background jobs on the BEAM, with no Redis, no separate worker, and no additional infrastructure.*
+*This is Part 3 of the Curling IO Foundation series. Next up: [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage).*
