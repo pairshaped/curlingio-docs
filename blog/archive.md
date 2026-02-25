@@ -15,3 +15,8 @@
   [ - ](/blog/passwordless-auth-done-right.md)
   <!-- -->
   [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md)
+* [February 25](/blog/background-jobs-without-the-baggage.md)
+  <!-- -->
+  [ - ](/blog/background-jobs-without-the-baggage.md)
+  <!-- -->
+  [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)

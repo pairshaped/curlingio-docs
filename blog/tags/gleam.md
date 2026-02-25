@@ -1,10 +1,10 @@
-## [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md)
+## [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)
 
-February 20, 2026 ·
+February 25, 2026 ·
 
 <!-- -->
 
-11 min read
+6 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a short-lived login code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
+In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
 
-But first, let's talk about why we made this **controversial decision** in the first place.
+Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [authentication](/blog/tags/authentication.md)
 * [gleam](/blog/tags/gleam.md)
-* [security](/blog/tags/security.md)
+* [beam](/blog/tags/beam.md)
+* [otp](/blog/tags/otp.md)
+* [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/passwordless-auth-done-right.md)
+[**Read more**](/blog/background-jobs-without-the-baggage.md)

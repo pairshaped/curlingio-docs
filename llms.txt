@@ -20,6 +20,12 @@ Archive
 
 - [Authors](/blog/authors.md)
 
+### background-jobs-without-the-baggage
+
+In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
+
+- [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md): In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
+
 ### bilingual-by-design
 
 Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
@@ -35,11 +41,13 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 ### tags
 
 - [Tags](/blog/tags.md)
-- [2 posts tagged with "architecture"](/blog/tags/architecture.md)
+- [3 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
-- [3 posts tagged with "foundation"](/blog/tags/foundation.md)
-- [3 posts tagged with "gleam"](/blog/tags/gleam.md)
+- [One post tagged with "beam"](/blog/tags/beam.md)
+- [4 posts tagged with "foundation"](/blog/tags/foundation.md)
+- [4 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
+- [One post tagged with "otp"](/blog/tags/otp.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
 - [One post tagged with "sqlite"](/blog/tags/sqlite.md)

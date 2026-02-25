@@ -1,10 +1,10 @@
-## [Bilingual by Design](/blog/bilingual-by-design.md)
+## [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)
 
-February 15, 2026 ·
+February 25, 2026 ·
 
 <!-- -->
 
-7 min read
+6 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
+In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
 
-In Version 3, we wanted compile-time guarantees that make those problems impossible. This post covers how we designed the i18n system, why we split it into two layers, and what we changed from Version 2.
+Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [i18n](/blog/tags/i-18-n.md)
 * [gleam](/blog/tags/gleam.md)
+* [beam](/blog/tags/beam.md)
+* [otp](/blog/tags/otp.md)
 * [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/bilingual-by-design.md)
+[**Read more**](/blog/background-jobs-without-the-baggage.md)
