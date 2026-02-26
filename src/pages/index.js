@@ -223,7 +223,9 @@ function Home() {
             "@type": "Review",
             "itemReviewed": {
               "@type": "SoftwareApplication",
-              "name": "Curling IO"
+              "name": "Curling IO",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web"
             },
             "author": {
               "@type": "Organization",
