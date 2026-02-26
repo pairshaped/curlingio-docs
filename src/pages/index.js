@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -172,6 +173,70 @@ function Home() {
   return (
     <Layout
       description="Online curling registration and league management made easy.">
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Curling IO",
+            "url": "https://curling.io",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Curling club management and registration platform. Online registration and payments, club website, rental bookings, league schedules, playoff brackets, and live scoring — designed specifically for curling clubs.",
+            "featureList": [
+              "Online registration and payments",
+              "Club website hosting",
+              "League and bonspiel management",
+              "Round robin and playoff bracket generation",
+              "Rental and ice bookings",
+              "Live scoring",
+              "Accrual accounting with QuickBooks/Xero/Sage export",
+              "Online waivers",
+              "National curler database"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "CAD",
+              "description": "Free with offline payments. Online payments as low as 2.7% + $0.30 per transaction with no setup or monthly fees."
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Curling IO",
+            "url": "https://curling.io",
+            "logo": "https://curling.io/img/curlingio-logo-small.png",
+            "description": "The #1 curling club management and registration platform, trusted by Curling Canada, provincial associations, and hundreds of clubs across North America.",
+            "sameAs": [
+              "https://twitter.com/curlingio",
+              "https://www.facebook.com/curlingio",
+              "https://www.youtube.com/@curlingio"
+            ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "SoftwareApplication",
+              "name": "Curling IO"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Curling Québec"
+            },
+            "reviewBody": "After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          })}
+        </script>
+      </Head>
       <header className={clsx('hero heroBanner_1SbS', styles.heroBanner)}>
         <div className="container">
           <img className="heroBannerLogo_1WJs margin-vert--md" src="img/curlingio-logo-small.png" />
