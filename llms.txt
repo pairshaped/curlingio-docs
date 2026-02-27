@@ -47,25 +47,31 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 ### tags
 
 - [Tags](/blog/tags.md)
-- [3 posts tagged with "architecture"](/blog/tags/architecture.md)
+- [4 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [One post tagged with "beam"](/blog/tags/beam.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
-- [4 posts tagged with "foundation"](/blog/tags/foundation.md)
-- [4 posts tagged with "gleam"](/blog/tags/gleam.md)
+- [5 posts tagged with "foundation"](/blog/tags/foundation.md)
+- [5 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
 - [One post tagged with "live-scoring"](/blog/tags/live-scoring.md)
 - [One post tagged with "national-competitions"](/blog/tags/national-competitions.md)
 - [One post tagged with "otp"](/blog/tags/otp.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
-- [One post tagged with "sqlite"](/blog/tags/sqlite.md)
+- [2 posts tagged with "sqlite"](/blog/tags/sqlite.md)
 
 ### the-next-version-of-curling-io
 
 We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
 
 - [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md): We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
+
+### why-we-chose-sqlite
+
+We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
+
+- [Why We Chose SQLite](/blog/why-we-chose-sqlite.md): We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
 
 ## privacy
 

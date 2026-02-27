@@ -1,10 +1,10 @@
-## [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)
+## [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
 
-February 25, 2026 ·
+February 27, 2026 ·
 
 <!-- -->
 
-6 min read
+11 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,16 +12,15 @@ Dave Rapin
 
 Founder @ Curling IO
 
-In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Curling IO Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
+We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
 
-Curling IO Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
+Then we looked at what "self-hosting Postgres" actually involves, compared it to what Litestream does for SQLite, and changed our minds. This post covers the decision, the architecture, the trade-offs, and why we'd make the same call again.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [gleam](/blog/tags/gleam.md)
-* [beam](/blog/tags/beam.md)
-* [otp](/blog/tags/otp.md)
+* [sqlite](/blog/tags/sqlite.md)
 * [architecture](/blog/tags/architecture.md)
+* [gleam](/blog/tags/gleam.md)
 
-[**Read more**](/blog/background-jobs-without-the-baggage.md)
+[**Read more**](/blog/why-we-chose-sqlite.md)

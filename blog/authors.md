@@ -4,6 +4,6 @@
 
   ## Dave Rapin
 
-  5
+  6
 
   Founder @ Curling IO

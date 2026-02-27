@@ -25,3 +25,8 @@
   [ - ](/blog/how-curling-canada-uses-curling-io.md)
   <!-- -->
   [How Curling Canada Uses Curling IO for National Competitions](/blog/how-curling-canada-uses-curling-io.md)
+* [February 27](/blog/why-we-chose-sqlite.md)
+  <!-- -->
+  [ - ](/blog/why-we-chose-sqlite.md)
+  <!-- -->
+  [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)

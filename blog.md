@@ -1,10 +1,10 @@
-## [How Curling Canada Uses Curling IO for National Competitions](/blog/how-curling-canada-uses-curling-io.md)
+## [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
 
-February 26, 2026 ·
+February 27, 2026 ·
 
 <!-- -->
 
-3 min read
+11 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,12 +12,15 @@ Dave Rapin
 
 Founder @ Curling IO
 
-If you've ever checked a scoreboard during the Brier or the Scotties Tournament of Hearts, you've seen Curling IO in action. Since 2014, Curling Canada has used Curling IO to manage their national competitions, and the same platform is available to any curling club.
+We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
+
+Then we looked at what "self-hosting Postgres" actually involves, compared it to what Litestream does for SQLite, and changed our minds. This post covers the decision, the architecture, the trade-offs, and why we'd make the same call again.
 
 **Tags:**
 
-* [curling-canada](/blog/tags/curling-canada.md)
-* [national-competitions](/blog/tags/national-competitions.md)
-* [live-scoring](/blog/tags/live-scoring.md)
+* [foundation](/blog/tags/foundation.md)
+* [sqlite](/blog/tags/sqlite.md)
+* [architecture](/blog/tags/architecture.md)
+* [gleam](/blog/tags/gleam.md)
 
-[**Read more**](/blog/how-curling-canada-uses-curling-io.md)
+[**Read more**](/blog/why-we-chose-sqlite.md)

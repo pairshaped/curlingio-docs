@@ -1,10 +1,10 @@
-## [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md)
+## [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
 
-February 12, 2026 ·
+February 27, 2026 ·
 
 <!-- -->
 
-8 min read
+11 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,16 +12,15 @@ Dave Rapin
 
 Founder @ Curling IO
 
-We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
+We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
 
-This is Part 1 of a series of technical posts documenting our journey and decisions as we build.
+Then we looked at what "self-hosting Postgres" actually involves, compared it to what Litestream does for SQLite, and changed our minds. This post covers the decision, the architecture, the trade-offs, and why we'd make the same call again.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
+* [sqlite](/blog/tags/sqlite.md)
 * [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
-* [sqlite](/blog/tags/sqlite.md)
-* [scaling](/blog/tags/scaling.md)
 
-[**Read more**](/blog/the-next-version-of-curling-io.md)
+[**Read more**](/blog/why-we-chose-sqlite.md)

@@ -141,7 +141,7 @@ The jobs system is designed to grow. Adding a new job type means adding a new `k
 
 ***
 
-*This is Part 4 of the Curling IO Foundation series. Next up: integrating Stripe payment intents and webhooks.*
+*This is Part 4 of the Curling IO Foundation series. Next up: [Why We Chose SQLite](/blog/why-we-chose-sqlite.md).*
 
 **Tags:**
 
