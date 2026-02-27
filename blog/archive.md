@@ -20,3 +20,8 @@
   [ - ](/blog/background-jobs-without-the-baggage.md)
   <!-- -->
   [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)
+* [February 26](/blog/how-curling-canada-uses-curling-io.md)
+  <!-- -->
+  [ - ](/blog/how-curling-canada-uses-curling-io.md)
+  <!-- -->
+  [How Curling Canada Uses Curling IO for National Competitions](/blog/how-curling-canada-uses-curling-io.md)

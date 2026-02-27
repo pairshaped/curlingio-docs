@@ -4,11 +4,48 @@
         <title>Curling IO Dev Blog</title>
         <link>https://curling.io/blog</link>
         <description>Developer insights on building and enhancing Curling IO</description>
-        <lastBuildDate>Wed, 25 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Curling IO</copyright>
+        <item>
+            <title><![CDATA[How Curling Canada Uses Curling IO for National Competitions]]></title>
+            <link>https://curling.io/blog/how-curling-canada-uses-curling-io</link>
+            <guid>https://curling.io/blog/how-curling-canada-uses-curling-io</guid>
+            <pubDate>Thu, 26 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Curling Canada runs all of their national championships through Curling IO, from the Brier to the Scotties to the Trials. The same platform is available to any curling club.]]></description>
+            <content:encoded><![CDATA[<p>If you've ever checked a scoreboard during the Brier or the Scotties Tournament of Hearts, you've seen Curling IO in action. Since 2014, Curling Canada has used Curling IO to manage their national competitions, and the same platform is available to any curling club.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="powering-canadas-biggest-curling-events">Powering Canada's Biggest Curling Events<a href="https://curling.io/blog/how-curling-canada-uses-curling-io#powering-canadas-biggest-curling-events" class="hash-link" aria-label="Direct link to Powering Canada's Biggest Curling Events" title="Direct link to Powering Canada's Biggest Curling Events">​</a></h2>
+<p>That includes the events that curling fans across the country follow every year:</p>
+<ul>
+<li>The Brier (Montana's Brier, formerly Tim Hortons Brier)</li>
+<li>Scotties Tournament of Hearts</li>
+<li>Canadian Mixed Doubles Championship</li>
+<li>Canadian Curling Trials and Pre-Trials</li>
+<li>Canadian Under-20 and Under-18 Championships</li>
+<li>Canadian Seniors Championships</li>
+<li>Canadian Wheelchair Curling Championship</li>
+<li>Canadian Mixed Curling Championship</li>
+<li>Canadian Club Curling Championships</li>
+</ul>
+<p>In total, Curling Canada has managed over 360 competitions through Curling IO, with more than 20,000 games scored on the platform.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-curling-io-handles">What Curling IO Handles<a href="https://curling.io/blog/how-curling-canada-uses-curling-io#what-curling-io-handles" class="hash-link" aria-label="Direct link to What Curling IO Handles" title="Direct link to What Curling IO Handles">​</a></h2>
+<p>For each competition, Curling IO handles registration and team assembly, draw scheduling with round robins and playoff brackets across sheets and time slots. Games are scored live with end scores and shot-by-shot tracking, and standings and bracket advancement update automatically.</p>
+<p>When fans check scores on <a href="https://www.curling.ca/scoreboard/" target="_blank" rel="noopener noreferrer">curling.ca/scoreboard</a> during a national event, both the data and the scoreboard widgets they're looking at were built by us.</p>
+<p>During major events like the Brier, with competitions running simultaneously across the country, traffic spikes well beyond what any individual club would ever generate, and Curling IO handles it smoothly.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-same-platform-your-club-can-use">The Same Platform Your Club Can Use<a href="https://curling.io/blog/how-curling-canada-uses-curling-io#the-same-platform-your-club-can-use" class="hash-link" aria-label="Direct link to The Same Platform Your Club Can Use" title="Direct link to The Same Platform Your Club Can Use">​</a></h2>
+<p>The draw scheduling, scoring, and bracket tools that Curling Canada relies on for national championships are the same tools you'd use for your Tuesday night league or weekend bonspiel. We handle a 4-sheet club's leagues the same way we handle a nationally televised championship.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="built-for-curling-not-adapted-for-it">Built for Curling, Not Adapted for It<a href="https://curling.io/blog/how-curling-canada-uses-curling-io#built-for-curling-not-adapted-for-it" class="hash-link" aria-label="Direct link to Built for Curling, Not Adapted for It" title="Direct link to Built for Curling, Not Adapted for It">​</a></h2>
+<p>Curling has concepts that generic sports software doesn't account for: ends, hammer, last stone advantage, round robins with multiple pools, page playoffs, mixed doubles scoring. Even draw scheduling has curling-specific nuances, like minimizing how often a team plays on the same sheet. We even published a free draw schedule tool at <a href="https://curlingschedules.com/" target="_blank" rel="noopener noreferrer">curlingschedules.com</a> that anyone can use.</p>
+<p>Curling IO was built around these concepts. It's why Curling Canada chose it, and it's why all 14 provincial and territorial curling associations in Canada use it too.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="see-it-in-action">See It in Action<a href="https://curling.io/blog/how-curling-canada-uses-curling-io#see-it-in-action" class="hash-link" aria-label="Direct link to See It in Action" title="Direct link to See It in Action">​</a></h2>
+<p>You can browse Curling Canada's competitions and results at <a href="https://canada.curling.io/" target="_blank" rel="noopener noreferrer">canada.curling.io</a>. Every draw schedule, scoreboard, and bracket you see there runs on Curling IO.</p>
+<p>If your club wants the same tools that power Canadian curling at the national level, <a href="https://curling.io/docs/getting-started/curling-club-managers">get started here</a>. There are no setup fees or monthly fees. Check out our <a href="https://curling.io/docs/getting-started/pricing">pricing page</a> for a full feature breakdown and cost calculator.</p>]]></content:encoded>
+            <category>curling-canada</category>
+            <category>national-competitions</category>
+            <category>live-scoring</category>
+        </item>
         <item>
             <title><![CDATA[Background Jobs Without the Baggage]]></title>
             <link>https://curling.io/blog/background-jobs-without-the-baggage</link>
