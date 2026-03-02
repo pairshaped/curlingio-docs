@@ -72,6 +72,37 @@
   vertical-align: middle;
 }
 
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.testimonial {
+  flex: 1 1 45%;
+  min-width: 280px;
+  background: #f8f9fa;
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  padding: 1.5rem;
+  text-align: left;
+}
+.testimonial blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #333;
+}
+.testimonial .testimonial-author {
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #555;
+}
+
 .markdown img {
   border: solid 1px #ccccce;
 }

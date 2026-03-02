@@ -95,6 +95,19 @@ const features = [
   },
 ];
 
+const testimonials = [
+  {
+    quote: 'After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.',
+    author: 'Alanna Routledge',
+    title: 'Executive Director of Curling Québec',
+  },
+  {
+    quote: "Stop trying to force other software onto your curling organization when it wasn't built for curling. I trust this company because they understand curling, and they also understand the fundamentals of the business side of curling.",
+    author: 'Dan Baldwin',
+    title: 'Executive Director of Nova Scotia Curling',
+  },
+];
+
 const orgs = [
   {
     title: 'Curl PEI',
@@ -228,10 +241,41 @@ function Home() {
               "operatingSystem": "Web"
             },
             "author": {
-              "@type": "Organization",
-              "name": "Curling Québec"
+              "@type": "Person",
+              "name": "Alanna Routledge",
+              "jobTitle": "Executive Director",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Curling Québec"
+              }
             },
             "reviewBody": "After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "SoftwareApplication",
+              "name": "Curling IO",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Dan Baldwin",
+              "jobTitle": "Executive Director",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Nova Scotia Curling"
+              }
+            },
+            "reviewBody": "Stop trying to force other software onto your curling organization when it wasn't built for curling. I trust this company because they understand curling, and they also understand the fundamentals of the business side of curling.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5"
@@ -290,16 +334,16 @@ function Home() {
                       <Org key={idx} {...props} />
                     ))}
                   </div>
-                  <br />
-                  <p>
-                    <i>
-                      "After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it."
-                      <br />
-                      - Curling Québec
-                    </i>
-                  </p>
                 </div>
               </div>
+            </div>
+            <div className="testimonials">
+              {testimonials.map((t, idx) => (
+                <div key={idx} className="testimonial">
+                  <blockquote>"{t.quote}"</blockquote>
+                  <div className="testimonial-author">{t.author}, {t.title}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
