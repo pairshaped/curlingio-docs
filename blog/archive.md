@@ -30,3 +30,8 @@
   [ - ](/blog/why-we-chose-sqlite.md)
   <!-- -->
   [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
+* [March 2](/blog/what-to-look-for-in-curling-club-management-software.md)
+  <!-- -->
+  [ - ](/blog/what-to-look-for-in-curling-club-management-software.md)
+  <!-- -->
+  [What to Look for in Curling Club Management Software](/blog/what-to-look-for-in-curling-club-management-software.md)

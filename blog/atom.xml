@@ -2,12 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://curling.io/blog</id>
     <title>Curling IO Dev Blog</title>
-    <updated>2026-02-27T00:00:00.000Z</updated>
+    <updated>2026-03-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://curling.io/blog"/>
     <subtitle>Developer insights on building and enhancing Curling IO</subtitle>
     <icon>https://curling.io/img/favicon.ico</icon>
     <rights>Copyright © 2026 Curling IO</rights>
+    <entry>
+        <title type="html"><![CDATA[What to Look for in Curling Club Management Software]]></title>
+        <id>https://curling.io/blog/what-to-look-for-in-curling-club-management-software</id>
+        <link href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software"/>
+        <updated>2026-03-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A practical guide to evaluating club management software for curling clubs: what matters, what to watch for, and the questions worth asking before you commit.]]></summary>
+        <content type="html"><![CDATA[<p>If your curling club is shopping for management software, or wondering whether it's time to replace what you've got, the wrong choice can mean years of workarounds. Here's what to look for.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="purpose-built-for-curling">Purpose-Built for Curling<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#purpose-built-for-curling" class="hash-link" aria-label="Direct link to Purpose-Built for Curling" title="Direct link to Purpose-Built for Curling">​</a></h2>
+<p>Generic sports platforms and website builders can handle basic registration, but curling has concepts that most software doesn't account for: ends, hammer, draw schedules, round robins with pools, page playoffs, spare management, rental ice, bonspiels, waitlists, and online waivers.</p>
+<p>If the software you're evaluating doesn't understand these things natively, you'll spend your time working around it instead of working with it. Ask whether you can schedule a draw across four sheets, score a game end-by-end, or run a triple knockout bracket without manual intervention.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="management-first-not-a-cms">Management First, Not a CMS<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#management-first-not-a-cms" class="hash-link" aria-label="Direct link to Management First, Not a CMS" title="Direct link to Management First, Not a CMS">​</a></h2>
+<p>Some club management software is really just an extension of a content management system (CMS), focused on building websites like it's still 1999. Building a nice website is already a solved problem. Squarespace, Wix, WordPress, and hundreds of others already have that covered. Look for software that has the curling-specific depth you need, not a website builder with registration bolted on. Most clubs are better off with a simple website any volunteer can update than a giant CMS no one remembers how to administer.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="modern-and-fast">Modern and Fast<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#modern-and-fast" class="hash-link" aria-label="Direct link to Modern and Fast" title="Direct link to Modern and Fast">​</a></h2>
+<p>Performance matters more than people think. If the platform feels slow when a curler is trying to register and pay, they notice. Pages need to feel snappy, not just functional. If the platform is also used for provincial or national competitions, it's already proven it can handle real traffic, not a few dozen people checking scores at the same time.</p>
+<p>More than half of web traffic comes from phones now. Volunteers entering scores, curlers checking draw times, spectators following results: most of that happens on a phone. The platform needs to work well on smaller screens, desktops included but not prioritized.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pricing-transparency">Pricing Transparency<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#pricing-transparency" class="hash-link" aria-label="Direct link to Pricing Transparency" title="Direct link to Pricing Transparency">​</a></h2>
+<p>Pricing models vary widely. Some platforms charge setup fees, monthly fees, per-member fees, or some combination. Others take a percentage of transactions. Before you sign up, make sure you understand:</p>
+<ul>
+<li>Is there a cost just to get started?</li>
+<li>Are there ongoing fees regardless of usage?</li>
+<li>What does payment processing actually cost, all-in?</li>
+<li>Are there per-member or per-registration charges on top?</li>
+</ul>
+<p>Clubs are often volunteer-run with tight budgets. A platform that costs hundreds of dollars a month before a single curler registers doesn't make sense for a 4-sheet club with 120 members.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="online-registration-and-payments">Online Registration and Payments<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#online-registration-and-payments" class="hash-link" aria-label="Direct link to Online Registration and Payments" title="Direct link to Online Registration and Payments">​</a></h2>
+<p>If your members can't register and pay online, you're creating work for yourself. Curlers should be able to browse events, register, and pay in one flow. No filling out PDFs, emailing forms, or bringing cheques to the club.</p>
+<p>The payment processing should be built in, not bolted on through a third-party plugin. And it should handle what curling clubs deal with: membership fees, family registrations, multiple events in one cart, early bird pricing, discounts, and partial refunds.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="league-and-competition-management">League and Competition Management<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#league-and-competition-management" class="hash-link" aria-label="Direct link to League and Competition Management" title="Direct link to League and Competition Management">​</a></h2>
+<p>You should be able to:</p>
+<ul>
+<li>Generate round robin draw schedules across sheets and time slots</li>
+<li>Score games live with optional end scores</li>
+<li>Automatically calculate standings with head-to-head tiebreakers</li>
+<li>Run playoff brackets that advance teams based on results</li>
+<li>Share live scoreboards that spectators and curlers can follow from home</li>
+</ul>
+<p>If the platform can't handle a standard 8-team round robin on 4 sheets without manual scheduling, it's not built for curling.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="data-portability-and-accounting-integration">Data Portability and Accounting Integration<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#data-portability-and-accounting-integration" class="hash-link" aria-label="Direct link to Data Portability and Accounting Integration" title="Direct link to Data Portability and Accounting Integration">​</a></h2>
+<p>Your data should be yours. Look for the ability to export registration data, financial records, and member information. If you ever want to switch platforms, you shouldn't be locked in.</p>
+<p>For clubs that track finances seriously, look for accrual, double-entry accounting and integration with software like QuickBooks, Xero, or Sage. Ask whether the platform can export transactions in a format your bookkeeper can actually use.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="track-record-development-and-support">Track Record, Development, and Support<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#track-record-development-and-support" class="hash-link" aria-label="Direct link to Track Record, Development, and Support" title="Direct link to Track Record, Development, and Support">​</a></h2>
+<p>Who else is using the platform? A tool used by a handful of clubs is a different proposition than one trusted by national organizations and hundreds of clubs. Is the software still being actively improved? How often do updates ship? Some platforms haven't changed in years, and it shows.</p>
+<p>Support turnaround matters too. When something breaks during league night or a bonspiel weekend, you need a response in hours, not weeks. Ask other clubs what their experience has been. Community adoption also means your curlers are more likely to already have an account, which makes registration smoother for everyone.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-ready">AI Ready<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#ai-ready" class="hash-link" aria-label="Direct link to AI Ready" title="Direct link to AI Ready">​</a></h2>
+<p>Are you already using chatbots like ChatGPT to help with day-to-day tasks? A lot of club managers are. As these tools get more capable, they'll be able to do more than just answer questions. Look for a platform that's ready for this. Setting up a draw, checking registration numbers, pulling a financial report: these are things your AI assistant should eventually be able to do for you, if the software supports it. Your members could benefit too, using their own chatbots to register for events or set up reminders for upcoming matches.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ask-the-right-questions">Ask the Right Questions<a href="https://curling.io/blog/what-to-look-for-in-curling-club-management-software#ask-the-right-questions" class="hash-link" aria-label="Direct link to Ask the Right Questions" title="Direct link to Ask the Right Questions">​</a></h2>
+<p>Full disclosure: we built <a href="https://curling.io/" target="_blank" rel="noopener noreferrer">Curling IO</a> to check all of these boxes. But regardless of what you choose, these are the questions worth asking.</p>]]></content>
+        <author>
+            <name>Dave Rapin</name>
+        </author>
+        <category label="club-management" term="club-management"/>
+        <category label="buyers-guide" term="buyers-guide"/>
+        <category label="choosing-software" term="choosing-software"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why We Chose SQLite]]></title>
         <id>https://curling.io/blog/why-we-chose-sqlite</id>

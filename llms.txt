@@ -50,6 +50,9 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 - [4 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [One post tagged with "beam"](/blog/tags/beam.md)
+- [One post tagged with "buyers-guide"](/blog/tags/buyers-guide.md)
+- [One post tagged with "choosing-software"](/blog/tags/choosing-software.md)
+- [One post tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
 - [5 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [5 posts tagged with "gleam"](/blog/tags/gleam.md)
@@ -66,6 +69,12 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
 
 - [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md): We're building the next version of Curling IO - same features, same experience, stronger foundation. After over a decade of serving hundreds of curling organizations across Canada, the US, and internationally, we're investing in technical upgrades that set Curling IO up for the next 20+ years.
+
+### what-to-look-for-in-curling-club-management-software
+
+A practical guide to evaluating club management software for curling clubs: what matters, what to watch for, and the questions worth asking before you commit.
+
+- [What to Look for in Curling Club Management Software](/blog/what-to-look-for-in-curling-club-management-software.md): A practical guide to evaluating club management software for curling clubs: what matters, what to watch for, and the questions worth asking before you commit.
 
 ### why-we-chose-sqlite
 
