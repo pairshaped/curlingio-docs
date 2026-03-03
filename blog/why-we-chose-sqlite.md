@@ -187,7 +187,7 @@ But so far, Litestream plus in-process SQLite has been one of the best decisions
 
 ***
 
-*This is Part 5 of the Curling IO Foundation series. Next up: test isolation for free with SQLite.*
+*This is Part 5 of the Curling IO Foundation series. Next up: [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md).*
 
 **Tags:**
 

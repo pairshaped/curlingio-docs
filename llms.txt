@@ -44,17 +44,23 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 
 - [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md): Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a short-lived login code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
 
+### sqlite-test-isolation
+
+Most web frameworks treat test database isolation as a hard problem. Rails has database_cleaner with three strategies. Django wraps every test in a transaction it rolls back. Phoenix does the same with its SQL sandbox. They all exist because tests share a single database server, and that shared state is the root of flaky tests and ordering dependencies, the kind where a test passes alone but fails in the suite.
+
+- [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md): Most web frameworks treat test database isolation as a hard problem. Rails has database_cleaner with three strategies. Django wraps every test in a transaction it rolls back. Phoenix does the same with its SQL sandbox. They all exist because tests share a single database server, and that shared state is the root of flaky tests and ordering dependencies, the kind where a test passes alone but fails in the suite.
+
 ### tags
 
 - [Tags](/blog/tags.md)
-- [4 posts tagged with "architecture"](/blog/tags/architecture.md)
+- [5 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [One post tagged with "beam"](/blog/tags/beam.md)
 - [One post tagged with "buyers-guide"](/blog/tags/buyers-guide.md)
 - [One post tagged with "choosing-software"](/blog/tags/choosing-software.md)
 - [One post tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
-- [5 posts tagged with "foundation"](/blog/tags/foundation.md)
+- [6 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [5 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
 - [One post tagged with "live-scoring"](/blog/tags/live-scoring.md)
@@ -62,7 +68,8 @@ Curling IO has been passwordless since Version 2. No passwords to remember, no p
 - [One post tagged with "otp"](/blog/tags/otp.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
-- [2 posts tagged with "sqlite"](/blog/tags/sqlite.md)
+- [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
+- [One post tagged with "testing"](/blog/tags/testing.md)
 
 ### the-next-version-of-curling-io
 

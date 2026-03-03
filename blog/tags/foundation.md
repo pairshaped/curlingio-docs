@@ -1,10 +1,10 @@
-## [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
+## [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md)
 
-February 27, 2026 ·
+March 3, 2026 ·
 
 <!-- -->
 
-11 min read
+9 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,15 @@ Dave Rapin
 
 Founder @ Curling IO
 
-We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
+Most web frameworks treat test database isolation as a hard problem. Rails has `database_cleaner` with three strategies. Django wraps every test in a transaction it rolls back. Phoenix does the same with its SQL sandbox. They all exist because tests share a single database server, and that shared state is the root of flaky tests and ordering dependencies, the kind where a test passes alone but fails in the suite.
 
-Then we looked at what "self-hosting Postgres" actually involves, compared it to what Litestream does for SQLite, and changed our minds. This post covers the decision, the architecture, the trade-offs, and why we'd make the same call again.
+Curling IO Version 3 doesn't have this problem. Each test gets its own database. Not a transaction. Not a truncated copy. A completely independent in-memory SQLite database, cloned from a template in microseconds using SQLite's backup API.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
 * [sqlite](/blog/tags/sqlite.md)
+* [testing](/blog/tags/testing.md)
 * [architecture](/blog/tags/architecture.md)
-* [gleam](/blog/tags/gleam.md)
 
-[**Read more**](/blog/why-we-chose-sqlite.md)
+[**Read more**](/blog/sqlite-test-isolation.md)
