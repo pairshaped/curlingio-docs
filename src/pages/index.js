@@ -106,6 +106,11 @@ const testimonials = [
     author: 'Dan Baldwin',
     title: 'Executive Director of Nova Scotia Curling',
   },
+  {
+    quote: "Curling IO has completely modernized our club operations. We've seen a massive boost in efficiency and improved cashflow, our members love having instant access to schedules and results, and the development team is incredibly responsive.",
+    author: 'Mike Buckley',
+    title: "Manager, Thistle-St. Andrew's Curling Club",
+  },
 ];
 
 const orgs = [
@@ -276,6 +281,32 @@ function Home() {
               }
             },
             "reviewBody": "Stop trying to force other software onto your curling organization when it wasn't built for curling. I trust this company because they understand curling, and they also understand the fundamentals of the business side of curling.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+              "@type": "SoftwareApplication",
+              "name": "Curling IO",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Mike Buckley",
+              "jobTitle": "Manager",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Thistle-St. Andrew's Curling Club"
+              }
+            },
+            "reviewBody": "Curling IO has completely modernized our club operations. We've seen a massive boost in efficiency and improved cashflow, our members love having instant access to schedules and results, and the development team is incredibly responsive.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5"
