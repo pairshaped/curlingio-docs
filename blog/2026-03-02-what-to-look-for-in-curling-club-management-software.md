@@ -2,7 +2,7 @@
 slug: what-to-look-for-in-curling-club-management-software
 title: 'What to Look for in Curling Club Management Software'
 description: 'A practical guide to evaluating club management software for curling clubs: what matters, what to watch for, and the questions worth asking before you commit.'
-authors: [dave]
+authors: [chris]
 tags: [club-management, buyers-guide, choosing-software]
 ---
 

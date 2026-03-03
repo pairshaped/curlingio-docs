@@ -2,7 +2,7 @@
 slug: how-curling-canada-uses-curling-io
 title: 'How Curling Canada Uses Curling IO for National Competitions'
 description: 'Curling Canada runs all of their national championships through Curling IO, from the Brier to the Scotties to the Trials. The same platform is available to any curling club.'
-authors: [dave]
+authors: [chris]
 tags: [curling-canada, national-competitions, live-scoring]
 ---
 
