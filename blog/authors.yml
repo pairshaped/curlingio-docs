@@ -2,3 +2,8 @@ dave:
   name: Dave Rapin
   title: Founder @ Curling IO
   image_url: https://avatars.githubusercontent.com/u/1202?v=4
+
+chris:
+  name: Chris
+  title: Product @ Curling IO
+  image_url: https://api.dicebear.com/9.x/icons/svg?icon=megaphone
