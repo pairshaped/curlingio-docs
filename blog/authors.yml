@@ -6,4 +6,4 @@ dave:
 chris:
   name: Chris
   title: Product @ Curling IO
-  image_url: https://api.dicebear.com/9.x/icons/svg?icon=megaphone
+  image_url: /img/chris-avatar.svg
