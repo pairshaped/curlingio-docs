@@ -6,11 +6,11 @@ February 26, 2026 ·
 
 3 min read
 
-![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+![Chris](/img/chris-avatar.svg)
 
-Dave Rapin
+Chris
 
-Founder @ Curling IO
+Product @ Curling IO
 
 If you've ever checked a scoreboard during the Brier or the Scotties Tournament of Hearts, you've seen Curling IO in action. Since 2014, Curling Canada has used Curling IO to manage their national competitions, and the same platform is available to any curling club.
 

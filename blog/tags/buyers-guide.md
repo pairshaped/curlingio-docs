@@ -6,11 +6,11 @@ March 2, 2026 ·
 
 5 min read
 
-![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+![Chris](/img/chris-avatar.svg)
 
-Dave Rapin
+Chris
 
-Founder @ Curling IO
+Product @ Curling IO
 
 If your curling club is shopping for management software, or wondering whether it's time to replace what you've got, the wrong choice can mean years of workarounds. Here's what to look for.
 
