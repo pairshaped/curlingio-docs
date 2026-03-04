@@ -69,7 +69,7 @@ Support turnaround matters too. When something breaks during league night or a b
 
 ## AI Ready
 
-Are you already using chatbots like ChatGPT to help with day-to-day tasks? A lot of club managers are. As these tools get more capable, they'll be able to do more than just answer questions. Look for a platform that's ready for this. Setting up a draw, checking registration numbers, pulling a financial report: these are things your AI assistant should eventually be able to do for you, if the software supports it. Your members could benefit too, using their own chatbots to register for events or set up reminders for upcoming matches.
+Are you already using chatbots like Claude.ai to help with day-to-day tasks? A lot of club managers are. As these tools get more capable, they'll be able to do more than just answer questions. Look for a platform that's ready for this. Setting up a draw, checking registration numbers, pulling a financial report: these are things your AI assistant should eventually be able to do for you, if the software supports it. Your members could benefit too, using their own chatbots to register for events or set up reminders for upcoming matches.
 
 ## Ask the Right Questions
 
