@@ -30,7 +30,7 @@ Because we're planning to be here for the long haul. This new foundation ensures
 
 **Three key reasons:**
 
-1. **AI Agent APIs** - We're adding new APIs specifically designed for AI agents to work with easily. Your existing web interface isn't changing - these are additional capabilities on top of what you already use. As AI assistants become ubiquitous (whether you love them or not), we're designing for that reality. Users are already asking ChatGPT and Claude to help them register for leagues or check schedules - we want those interactions to work reliably.
+1. **AI Agent APIs** - We're adding new APIs specifically designed for AI agents to work with easily. Your existing web interface isn't changing - these are additional capabilities on top of what you already use. As AI assistants become ubiquitous (whether you love them or not), we're designing for that reality. Users are already asking Claude.ai and Google's Gemini to help them register for leagues or check schedules - we want those interactions to work reliably.
 
 2. **Concurrency and correctness** - As the platform grows, we need stronger guarantees around correctness and performance. We want a tech stack that can handle massive concurrency - both during peak registration periods and during large traffic spikes for scoring and results at provincial and national competitions like the Scotties and Brier. It needs to prevent runtime errors and scale efficiently as the sport grows.
 
