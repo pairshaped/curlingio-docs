@@ -1,0 +1,89 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureImage {
+  height: 200px;
+  width: 200px;
+}
+
+.pricing {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.pricingGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.pricingCard {
+  flex: 1 1 280px;
+  max-width: 400px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricingCard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.pricingAmount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin: 0.5rem 0;
+}
+
+.ctaFooter {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: rgb(68, 73, 80);
+}
+
+.ctaFooter h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaFooter p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.ctaFooter a.ctaLink {
+  color: var(--ifm-color-primary-lighter);
+  display: inline-block;
+  margin-top: 1rem;
+}
