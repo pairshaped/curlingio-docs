@@ -98,6 +98,12 @@ We assumed PostgreSQL for Version 3. After a decade running Postgres in producti
 
 - [Why We Chose SQLite](/blog/why-we-chose-sqlite.md): We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
 
+## curling-club-management-software
+
+All-in-one curling club management software. Online registration and payments, league management, club website, accounting, rental bookings, and waivers. Trusted by Curling Canada, every provincial association, and hundreds of clubs.
+
+- [Curling Club Management Software](/curling-club-management-software.md): All-in-one curling club management software. Online registration and payments, league management, club website, accounting, rental bookings, and waivers. Trusted by Curling Canada, every provincial association, and hundreds of clubs.
+
 ## privacy
 
 Section 1 - What Do We Do With Your Information?

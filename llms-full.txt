@@ -98,6 +98,12 @@ We assumed PostgreSQL for Version 3. After a decade running Postgres in producti
 
 - [Why We Chose SQLite](/blog/why-we-chose-sqlite.md): We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
 
+## curling-club-management-software
+
+All-in-one curling club management software. Online registration and payments, league management, club website, accounting, rental bookings, and waivers. Trusted by Curling Canada, every provincial association, and hundreds of clubs.
+
+- [Curling Club Management Software](/curling-club-management-software.md): All-in-one curling club management software. Online registration and payments, league management, club website, accounting, rental bookings, and waivers. Trusted by Curling Canada, every provincial association, and hundreds of clubs.
+
 ## privacy
 
 Section 1 - What Do We Do With Your Information?
@@ -2235,6 +2241,13 @@ But so far, Litestream plus in-process SQLite has been one of the best decisions
 * [sqlite](/blog/tags/sqlite.md)
 * [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
+
+
+---
+
+## Most clubs piece together spreadsheets, a separate website, a payment tool, and maybe an accounting package. None of them talk to each other, and none of them know what a bonspiel is.
+
+Curling IO replaces all of that with a single platform built for curling. Draws, ends, hammer, sheets, positions. It speaks your language because it was built by curlers, for curlers.
 
 
 ---
