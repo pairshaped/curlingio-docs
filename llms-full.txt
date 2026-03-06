@@ -32,6 +32,12 @@ Curling IO serves hundreds of clubs across Canada, where English and French aren
 
 - [Bilingual by Design](/blog/bilingual-by-design.md): Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
 
+### curling-io-powers-provincial-associations
+
+All 14 provincial and territorial curling associations, plus Curling Canada, run on Curling IO. Here is what that means for clubs and curlers.
+
+- [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md): All 14 provincial and territorial curling associations, plus Curling Canada, run on Curling IO. Here is what that means for clubs and curlers.
+
 ### how-curling-canada-uses-curling-io
 
 Curling Canada runs all of their national championships through Curling IO, from the Brier to the Scotties to the Trials. The same platform is available to any curling club.
@@ -59,6 +65,7 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "buyers-guide"](/blog/tags/buyers-guide.md)
 - [One post tagged with "choosing-software"](/blog/tags/choosing-software.md)
 - [One post tagged with "club-management"](/blog/tags/club-management.md)
+- [One post tagged with "curler-database"](/blog/tags/curler-database.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
 - [6 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [5 posts tagged with "gleam"](/blog/tags/gleam.md)
@@ -66,6 +73,8 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "live-scoring"](/blog/tags/live-scoring.md)
 - [One post tagged with "national-competitions"](/blog/tags/national-competitions.md)
 - [One post tagged with "otp"](/blog/tags/otp.md)
+- [One post tagged with "partnerships"](/blog/tags/partnerships.md)
+- [One post tagged with "provincial-associations"](/blog/tags/provincial-associations.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
 - [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
@@ -202,32 +211,29 @@ Acceptance of Terms of this Agreement through Use
 
 # Full Documentation Content
 
-## [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md)
+## [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
 
-March 3, 2026 ·
+March 6, 2026 ·
 
 <!-- -->
 
-9 min read
+4 min read
 
-![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+![Chris](/img/chris-avatar.svg)
 
-Dave Rapin
+Chris
 
-Founder @ Curling IO
+Product @ Curling IO
 
-Most web frameworks treat test database isolation as a hard problem. Rails has `database_cleaner` with three strategies. Django wraps every test in a transaction it rolls back. Phoenix does the same with its SQL sandbox. They all exist because tests share a single database server, and that shared state is the root of flaky tests and ordering dependencies, the kind where a test passes alone but fails in the suite.
-
-Curling IO Version 3 doesn't have this problem. Each test gets its own database. Not a transaction. Not a truncated copy. A completely independent in-memory SQLite database, cloned from a template in microseconds using SQLite's backup API.
+Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
 
 **Tags:**
 
-* [foundation](/blog/tags/foundation.md)
-* [sqlite](/blog/tags/sqlite.md)
-* [testing](/blog/tags/testing.md)
-* [architecture](/blog/tags/architecture.md)
+* [provincial-associations](/blog/tags/provincial-associations.md)
+* [partnerships](/blog/tags/partnerships.md)
+* [curler-database](/blog/tags/curler-database.md)
 
-[**Read more**](/blog/sqlite-test-isolation.md)
+[**Read more**](/blog/curling-io-powers-provincial-associations.md)
 
 
 ---
@@ -274,6 +280,11 @@ Curling IO Version 3 doesn't have this problem. Each test gets its own database.
   [ - ](/blog/sqlite-test-isolation.md)
   <!-- -->
   [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md)
+* [March 6](/blog/curling-io-powers-provincial-associations.md)
+  <!-- -->
+  [ - ](/blog/curling-io-powers-provincial-associations.md)
+  <!-- -->
+  [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
 
 
 ---
@@ -292,7 +303,7 @@ Curling IO Version 3 doesn't have this problem. Each test gets its own database.
 
   ## Chris
 
-  2
+  3
 
   Product @ Curling IO
 
@@ -620,6 +631,81 @@ The i18n foundation is in place. As we build out more features (admin interfaces
 * [i18n](/blog/tags/i-18-n.md)
 * [gleam](/blog/tags/gleam.md)
 * [architecture](/blog/tags/architecture.md)
+
+
+---
+
+# Every Provincial and Territorial Curling Association in Canada Uses Curling IO
+
+March 6, 2026 ·
+
+<!-- -->
+
+4 min read
+
+![Chris](/img/chris-avatar.svg)
+
+Chris
+
+Product @ Curling IO
+
+Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
+
+## The Full List[​](#the-full-list "Direct link to The Full List")
+
+* [Curling Canada](https://canada.curling.io)
+* [Curling Alberta](https://ab.curling.io)
+* [Curl BC](https://bc.curling.io)
+* [CurlManitoba](https://mb.curling.io)
+* [CURLSASK](https://sk.curling.io)
+* [Curling Ontario](https://on.curling.io)
+* [Northern Ontario Curling Association](https://noca.curling.io)
+* [Curling Québec](https://qc.curling.io)
+* [New Brunswick Curling Association](https://nb.curling.io)
+* [Nova Scotia Curling](https://ns.curling.io)
+* [Newfoundland & Labrador Curling Association](https://nl.curling.io)
+* [Curl PEI](https://pe.curling.io)
+* [Curling NT](https://nt.curling.io)
+* [Nunavut Curling Association](https://nu.curling.io)
+* [Yukon Curling Association](https://yt.curling.io)
+
+## What Associations Use It For[​](#what-associations-use-it-for "Direct link to What Associations Use It For")
+
+Provincial associations use Curling IO to run their competitions: provincial championships, playdowns, regional qualifiers. They manage team registrations, schedule draws, score games live, and publish results. Fans and participants see brackets, standings, and scoreboards update in real time. For a closer look at how this works at the national level, see [how Curling Canada uses Curling IO](/blog/how-curling-canada-uses-curling-io.md).
+
+Associations also collect affiliate fees through the platform. When a curler registers at their local club, the club's registration fees and the association's affiliate fees are collected together in one transaction. Curling Canada's national fee, the provincial fee, and the club's own fees all appear on a single checkout. No separate invoicing, no manual reconciliation.
+
+The affiliate fee tie-in is optional. Clubs can use Curling IO independently without inheriting association fees or reporting member data. But clubs that do opt in get the fee collection and reporting handled automatically.
+
+The platform is fully bilingual (English and French), which matters for associations like Curling Québec and for clubs across the country with francophone members.
+
+## Why It Matters for Clubs[​](#why-it-matters-for-clubs "Direct link to Why It Matters for Clubs")
+
+When your provincial association is on Curling IO, a few things work in your favour.
+
+**Your curlers already have profiles.** A curler who registered for a provincial bonspiel or played in a championship already exists in the system. When they register at your club, they find their existing profile. No re-entering names, addresses, or emergency contacts.
+
+**Competitions connect.** A curler's results from club leagues, provincial playdowns, and national championships all live in the same system. Their profile carries from club leagues to provincial to national competitions.
+
+## Why It Matters for Curlers[​](#why-it-matters-for-curlers "Direct link to Why It Matters for Curlers")
+
+From a curler's perspective, Curling IO is one account. They register for their Tuesday night league at their local club, sign up for a weekend bonspiel at another club, and qualify for a provincial championship. Same login, same profile, same payment flow.
+
+There are currently around 150,000 curler profiles in the system across hundreds of active clubs and all 15 membership associations. That number grows every season as more clubs come online.
+
+## Getting Started[​](#getting-started "Direct link to Getting Started")
+
+If your club is under a Canadian provincial association, your association is already on Curling IO. Getting started means your affiliate fees and curler database are connected from day one. There's no setup fee, no monthly fee, and no contract.
+
+Clubs outside of Canada can use Curling IO too, just without the association tie-in.
+
+Check out our [getting started guide](/docs/getting-started/curling-club-managers.md) or visit your provincial association's Curling IO page to see it in action.
+
+**Tags:**
+
+* [provincial-associations](/blog/tags/provincial-associations.md)
+* [partnerships](/blog/tags/partnerships.md)
+* [curler-database](/blog/tags/curler-database.md)
 
 
 ---
@@ -1122,7 +1208,7 @@ That's the entire test infrastructure. No test framework plugins, no database cl
 
 ***
 
-*This is Part 6 of the Curling IO Foundation series.*
+*This is Part 6 of the Curling IO Foundation series. Next up: Roll Your Own Error Monitoring With Gleam.*
 
 **Tags:**
 
@@ -1312,6 +1398,33 @@ If your curling club is shopping for management software, or wondering whether i
 * [choosing-software](/blog/tags/choosing-software.md)
 
 [**Read more**](/blog/what-to-look-for-in-curling-club-management-software.md)
+
+
+---
+
+## [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
+
+March 6, 2026 ·
+
+<!-- -->
+
+4 min read
+
+![Chris](/img/chris-avatar.svg)
+
+Chris
+
+Product @ Curling IO
+
+Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
+
+**Tags:**
+
+* [provincial-associations](/blog/tags/provincial-associations.md)
+* [partnerships](/blog/tags/partnerships.md)
+* [curler-database](/blog/tags/curler-database.md)
+
+[**Read more**](/blog/curling-io-powers-provincial-associations.md)
 
 
 ---
@@ -1514,6 +1627,60 @@ Curling IO Version 3 runs on the BEAM (Erlang's virtual machine), and background
 * [architecture](/blog/tags/architecture.md)
 
 [**Read more**](/blog/background-jobs-without-the-baggage.md)
+
+
+---
+
+## [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
+
+March 6, 2026 ·
+
+<!-- -->
+
+4 min read
+
+![Chris](/img/chris-avatar.svg)
+
+Chris
+
+Product @ Curling IO
+
+Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
+
+**Tags:**
+
+* [provincial-associations](/blog/tags/provincial-associations.md)
+* [partnerships](/blog/tags/partnerships.md)
+* [curler-database](/blog/tags/curler-database.md)
+
+[**Read more**](/blog/curling-io-powers-provincial-associations.md)
+
+
+---
+
+## [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
+
+March 6, 2026 ·
+
+<!-- -->
+
+4 min read
+
+![Chris](/img/chris-avatar.svg)
+
+Chris
+
+Product @ Curling IO
+
+Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
+
+**Tags:**
+
+* [provincial-associations](/blog/tags/provincial-associations.md)
+* [partnerships](/blog/tags/partnerships.md)
+* [curler-database](/blog/tags/curler-database.md)
+
+[**Read more**](/blog/curling-io-powers-provincial-associations.md)
 
 
 ---
