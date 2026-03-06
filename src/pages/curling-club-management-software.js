@@ -360,13 +360,12 @@ function CurlingClubManagementSoftware() {
               Read the Getting Started Guide →
             </Link>
             <br />
-            <a
+            <Link
               className={styles.ctaLink}
-              href="https://curling.io/en/book-onboarding"
-              target="_blank"
+              to={useBaseUrl('docs/getting-started/book-an-onboarding-session')}
             >
               Or book a free onboarding session →
-            </a>
+            </Link>
           </div>
         </div>
       </main>
