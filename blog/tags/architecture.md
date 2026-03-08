@@ -1,10 +1,10 @@
-## [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md)
+## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
 
-March 3, 2026 ·
+March 8, 2026 ·
 
 <!-- -->
 
-9 min read
+5 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Most web frameworks treat test database isolation as a hard problem. Rails has `database_cleaner` with three strategies. Django wraps every test in a transaction it rolls back. Phoenix does the same with its SQL sandbox. They all exist because tests share a single database server, and that shared state is the root of flaky tests and ordering dependencies, the kind where a test passes alone but fails in the suite.
+While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
 
-Curling IO Version 3 doesn't have this problem. Each test gets its own database. Not a transaction. Not a truncated copy. A completely independent in-memory SQLite database, cloned from a template in microseconds using SQLite's backup API.
+Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [sqlite](/blog/tags/sqlite.md)
+* [gleam](/blog/tags/gleam.md)
+* [beam](/blog/tags/beam.md)
 * [testing](/blog/tags/testing.md)
 * [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/sqlite-test-isolation.md)
+[**Read more**](/blog/parallel-tests-for-free.md)

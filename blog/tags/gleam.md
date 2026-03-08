@@ -1,10 +1,10 @@
-## [Why We Chose SQLite](/blog/why-we-chose-sqlite.md)
+## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
 
-February 27, 2026 ·
+March 8, 2026 ·
 
 <!-- -->
 
-11 min read
+5 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-We assumed PostgreSQL for Version 3. After a decade running Postgres in production, why would we even consider something else? We knew the tooling, the failure modes, the operational playbook. Postgres is the safe choice for good reason.
+While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
 
-Then we looked at what "self-hosting Postgres" actually involves, compared it to what Litestream does for SQLite, and changed our minds. This post covers the decision, the architecture, the trade-offs, and why we'd make the same call again.
+Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [sqlite](/blog/tags/sqlite.md)
-* [architecture](/blog/tags/architecture.md)
 * [gleam](/blog/tags/gleam.md)
+* [beam](/blog/tags/beam.md)
+* [testing](/blog/tags/testing.md)
+* [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/why-we-chose-sqlite.md)
+[**Read more**](/blog/parallel-tests-for-free.md)

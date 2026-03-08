@@ -45,3 +45,8 @@
   [ - ](/blog/curling-io-powers-provincial-associations.md)
   <!-- -->
   [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
+* [March 8](/blog/parallel-tests-for-free.md)
+  <!-- -->
+  [ - ](/blog/parallel-tests-for-free.md)
+  <!-- -->
+  [Parallel Tests for Free](/blog/parallel-tests-for-free.md)

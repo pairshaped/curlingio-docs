@@ -1,23 +1,27 @@
-## [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md)
+## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
 
-March 6, 2026 ·
+March 8, 2026 ·
 
 <!-- -->
 
-4 min read
+5 min read
 
-![Chris](/img/chris-avatar.svg)
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
-Chris
+Dave Rapin
 
-Product @ Curling IO
+Founder @ Curling IO
 
-Every provincial and territorial curling association in Canada uses Curling IO, and so does the national body, Curling Canada. That's 15 membership associations, all on the same platform, along with their affiliated clubs.
+While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
+
+Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
 
 **Tags:**
 
-* [provincial-associations](/blog/tags/provincial-associations.md)
-* [partnerships](/blog/tags/partnerships.md)
-* [curler-database](/blog/tags/curler-database.md)
+* [foundation](/blog/tags/foundation.md)
+* [gleam](/blog/tags/gleam.md)
+* [beam](/blog/tags/beam.md)
+* [testing](/blog/tags/testing.md)
+* [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/curling-io-powers-provincial-associations.md)
+[**Read more**](/blog/parallel-tests-for-free.md)

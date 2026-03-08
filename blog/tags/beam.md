@@ -1,10 +1,10 @@
-## [Background Jobs Without the Baggage](/blog/background-jobs-without-the-baggage.md)
+## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
 
-February 25, 2026 ·
+March 8, 2026 ·
 
 <!-- -->
 
-6 min read
+5 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,16 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Curling IO Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
+While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
 
-Curling IO Version 3 runs on the BEAM (Erlang's virtual machine), and background jobs are just another process in the same runtime. No Redis. No separate worker. No additional infrastructure. This post covers how we built it, why we chose SQLite persistence over in-memory queues, and how the whole thing fits into a few hundred lines of Gleam.
+Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
 * [gleam](/blog/tags/gleam.md)
 * [beam](/blog/tags/beam.md)
-* [otp](/blog/tags/otp.md)
+* [testing](/blog/tags/testing.md)
 * [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/background-jobs-without-the-baggage.md)
+[**Read more**](/blog/parallel-tests-for-free.md)

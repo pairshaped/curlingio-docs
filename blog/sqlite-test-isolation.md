@@ -218,7 +218,7 @@ That's the entire test infrastructure. No test framework plugins, no database cl
 
 ***
 
-*This is Part 6 of the Curling IO Foundation series. Next up: Roll Your Own Error Monitoring With Gleam.*
+*This is Part 6 of the Curling IO Foundation series. Next up: [Parallel Tests for Free](/blog/parallel-tests-for-free.md).*
 
 **Tags:**
 
