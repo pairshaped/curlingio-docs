@@ -21,6 +21,5 @@ yarn-error.log*
 
 deploy.sh
 blog-posts-todo.md
-writing-guide.pdf
-email_template.md
+writing-guide.md
 *.future
