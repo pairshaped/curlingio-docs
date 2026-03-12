@@ -50,3 +50,8 @@
   [ - ](/blog/parallel-tests-for-free.md)
   <!-- -->
   [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
+* [March 12](/blog/21-reasons-ai-agents-love-gleam.md)
+  <!-- -->
+  [ - ](/blog/21-reasons-ai-agents-love-gleam.md)
+  <!-- -->
+  [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)

@@ -1,6 +1,7 @@
 ## A[​](#A "Direct link to A")
 
-* [architecture6](/blog/tags/architecture.md)
+* [ai1](/blog/tags/ai.md)
+* [architecture7](/blog/tags/architecture.md)
 * [authentication1](/blog/tags/authentication.md)
 
 ***

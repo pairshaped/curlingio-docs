@@ -24,12 +24,12 @@ Community
 
 * [Twitter](https://twitter.com/curlingio)
 * [Curling Canada](https://curling.ca)
+* [Curling Schedules](https://curlingschedules.com)
 
 More
 
 * [Blog](/blog.md)
 * [Terms](/terms.md)
 * [Privacy](/privacy.md)
-* [Curling Schedules](https://curlingschedules.com)
 
 Copyright © 2026 Curling IO

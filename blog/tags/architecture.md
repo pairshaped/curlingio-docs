@@ -1,10 +1,10 @@
-## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
+## [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
-March 8, 2026 ·
+March 12, 2026 ·
 
 <!-- -->
 
-5 min read
+12 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,16 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
+*Clickbait aside, we really do think agents love Gleam.*
 
-Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
+*Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
+
+AI coding agents like Claude Code, OpenAI Codex, and Google Gemini can write code, run it, read the errors, and try again. That loop is the whole game. The faster and more informative that loop is, the more useful the agent becomes. After building Curling IO Version 3 in Gleam alongside AI coding agents, I'm convinced Gleam is the best language for this workflow. Agents don't write better Gleam - there's less training data. But Gleam's compiler lets agents self-correct without waiting for a human.
 
 **Tags:**
 
-* [foundation](/blog/tags/foundation.md)
 * [gleam](/blog/tags/gleam.md)
-* [beam](/blog/tags/beam.md)
-* [testing](/blog/tags/testing.md)
+* [ai](/blog/tags/ai.md)
 * [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/parallel-tests-for-free.md)
+[**Read more**](/blog/21-reasons-ai-agents-love-gleam.md)
