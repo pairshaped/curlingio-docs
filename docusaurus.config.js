@@ -118,6 +118,10 @@ module.exports = {
               label: 'Curling Canada',
               href: 'https://curling.ca',
             },
+            {
+              label: 'Curling Schedules',
+              href: 'https://curlingschedules.com',
+            },
           ],
         },
         {
@@ -134,10 +138,6 @@ module.exports = {
             {
               label: 'Privacy',
               to: 'privacy',
-            },
-            {
-              label: 'Curling Schedules',
-              href: 'https://curlingschedules.com',
             },
           ],
         },
