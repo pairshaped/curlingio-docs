@@ -368,9 +368,9 @@ function CurlingClubManagementSoftware() {
             <br />
             <Link
               className={styles.ctaLink}
-              to={useBaseUrl('docs/getting-started/book-an-onboarding-session')}
+              href="https://www.youtube.com/@curlingio"
             >
-              Or book a free onboarding session →
+              Check out our tutorials on YouTube →
             </Link>
           </div>
         </div>
