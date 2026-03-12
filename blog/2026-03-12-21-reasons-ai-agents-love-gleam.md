@@ -128,7 +128,7 @@ But Gleam has a specific combination that makes it well-suited for agents:
 - Fast compilation for tight feedback loops
 - Canonical formatting so agent output looks like hand-written code
 - No nulls, eliminating one of the most common error classes
-- Exhaustive pattern matching so no cases get forgotten
+- Exhaustive pattern matching so no cases are forgotten
 - Whitespace-insensitive so formatting errors can't change behavior
 
 It also runs on the BEAM, which gives you fault tolerance and concurrency, but that's a [separate conversation](/blog/background-jobs-without-the-baggage).
