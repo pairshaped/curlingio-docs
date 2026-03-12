@@ -97,14 +97,19 @@ const features = [
 
 const testimonials = [
   {
-    quote: 'After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.',
-    author: 'Alanna Routledge',
-    title: 'Executive Director of Curling Québec',
+    quote: 'No two curling clubs operate in the same way. There are an endless multitude of different structures for leagues, programs, discounts, and so on. Curling I/O has evolved and grown for over a decade to become extremely versatile and flexible to meet the needs of our unique sport and business models. No tool comes close to Curling I/O at this time for sport registration.',
+    author: 'Patrick Prade',
+    title: 'Executive Director, Vancouver Curling Club Association',
   },
   {
     quote: "Stop trying to force other software onto your curling organization when it wasn't built for curling. I trust this company because they understand curling, and they also understand the fundamentals of the business side of curling.",
     author: 'Dan Baldwin',
     title: 'Executive Director of Nova Scotia Curling',
+  },
+  {
+    quote: 'After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.',
+    author: 'Alanna Routledge',
+    title: 'Executive Director of Curling Québec',
   },
   {
     quote: "Curling IO has completely modernized our club operations. We've seen a massive boost in efficiency and improved cashflow, our members love having instant access to schedules and results, and the development team is incredibly responsive.",
