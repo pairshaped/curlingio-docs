@@ -75,7 +75,7 @@
 <li>Fast compilation for tight feedback loops</li>
 <li>Canonical formatting so agent output looks like hand-written code</li>
 <li>No nulls, eliminating one of the most common error classes</li>
-<li>Exhaustive pattern matching so no cases get forgotten</li>
+<li>Exhaustive pattern matching so no cases are forgotten</li>
 <li>Whitespace-insensitive so formatting errors can't change behavior</li>
 </ul>
 <p>It also runs on the BEAM, which gives you fault tolerance and concurrency, but that's a <a href="https://curling.io/blog/background-jobs-without-the-baggage">separate conversation</a>.</p>
