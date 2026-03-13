@@ -12,9 +12,9 @@ Developer insights on building and enhancing Curling IO - architecture, features
 
 ### 21-reasons-ai-agents-love-gleam
 
-Clickbait aside, we really do think agents love Gleam.
+Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.
 
-- [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md): Clickbait aside, we really do think agents love Gleam.
+- [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md): Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.
 
 ### archive
 
@@ -234,7 +234,7 @@ Acceptance of Terms of this Agreement through Use
 
 # Full Documentation Content
 
-## [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+## [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
 March 12, 2026 ·
 
@@ -247,8 +247,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 
@@ -265,7 +263,7 @@ AI coding agents like Claude Code, OpenAI Codex, and Google Gemini can write cod
 
 ---
 
-# 21 Reasons AI Agents Love Gleam
+# AI Agents Love Gleam
 
 March 12, 2026 ·
 
@@ -278,8 +276,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 
@@ -510,7 +506,7 @@ After a year of building production software with AI coding agents, it works if 
   <!-- -->
   [ - ](/blog/21-reasons-ai-agents-love-gleam.md)
   <!-- -->
-  [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+  [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
 
 ---
@@ -1627,7 +1623,7 @@ That's the entire test infrastructure. No test framework plugins, no database cl
 
 ---
 
-## [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+## [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
 March 12, 2026 ·
 
@@ -1640,8 +1636,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 
@@ -1658,7 +1652,7 @@ AI coding agents like Claude Code, OpenAI Codex, and Google Gemini can write cod
 
 ---
 
-## [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+## [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
 March 12, 2026 ·
 
@@ -1671,8 +1665,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 
@@ -1916,7 +1908,7 @@ Turns out we could, and our server test suite went from \~4 seconds to \~0.85 se
 
 ---
 
-## [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+## [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
 
 March 12, 2026 ·
 
@@ -1929,8 +1921,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 

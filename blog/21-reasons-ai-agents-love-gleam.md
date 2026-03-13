@@ -1,4 +1,4 @@
-# 21 Reasons AI Agents Love Gleam
+# AI Agents Love Gleam
 
 March 12, 2026 ·
 
@@ -11,8 +11,6 @@ March 12, 2026 ·
 Dave Rapin
 
 Founder @ Curling IO
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 

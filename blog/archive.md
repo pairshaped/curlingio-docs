@@ -54,4 +54,4 @@
   <!-- -->
   [ - ](/blog/21-reasons-ai-agents-love-gleam.md)
   <!-- -->
-  [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+  [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)

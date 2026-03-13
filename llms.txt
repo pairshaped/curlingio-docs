@@ -12,9 +12,9 @@ Developer insights on building and enhancing Curling IO - architecture, features
 
 ### 21-reasons-ai-agents-love-gleam
 
-Clickbait aside, we really do think agents love Gleam.
+Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.
 
-- [21 Reasons AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md): Clickbait aside, we really do think agents love Gleam.
+- [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md): Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.
 
 ### archive
 

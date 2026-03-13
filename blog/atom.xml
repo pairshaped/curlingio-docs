@@ -9,13 +9,12 @@
     <icon>https://curling.io/img/favicon.ico</icon>
     <rights>Copyright © 2026 Curling IO</rights>
     <entry>
-        <title type="html"><![CDATA[21 Reasons AI Agents Love Gleam]]></title>
+        <title type="html"><![CDATA[AI Agents Love Gleam]]></title>
         <id>https://curling.io/blog/21-reasons-ai-agents-love-gleam</id>
         <link href="https://curling.io/blog/21-reasons-ai-agents-love-gleam"/>
         <updated>2026-03-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Clickbait aside, we really do think agents love Gleam.]]></summary>
-        <content type="html"><![CDATA[<p><em>Clickbait aside, we really do think agents love Gleam.</em></p>
-<p><em>Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.</em></p>
+        <summary type="html"><![CDATA[Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.]]></summary>
+        <content type="html"><![CDATA[<p><em>Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.</em></p>
 <p>AI coding agents like Claude Code, OpenAI Codex, and Google Gemini can write code, run it, read the errors, and try again. That loop is the whole game. The faster and more informative that loop is, the more useful the agent becomes. After building Curling IO Version 3 in Gleam alongside AI coding agents, I'm convinced Gleam is the best language for this workflow. Agents don't write better Gleam - there's less training data. But Gleam's compiler lets agents self-correct without waiting for a human.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-feedback-loop-that-matters">The Feedback Loop That Matters<a href="https://curling.io/blog/21-reasons-ai-agents-love-gleam#the-feedback-loop-that-matters" class="hash-link" aria-label="Direct link to The Feedback Loop That Matters" title="Direct link to The Feedback Loop That Matters">​</a></h2>
 <p>Every AI coding agent works the same way: write code, check if it works, fix what's broken, repeat. The quality of that "check if it works" step determines everything.</p>
