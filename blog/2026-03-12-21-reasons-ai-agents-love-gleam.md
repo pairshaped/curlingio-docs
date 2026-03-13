@@ -1,11 +1,9 @@
 ---
 slug: 21-reasons-ai-agents-love-gleam
-title: '21 Reasons AI Agents Love Gleam'
+title: 'AI Agents Love Gleam'
 authors: [dave]
 tags: [gleam, ai, architecture]
 ---
-
-*Clickbait aside, we really do think agents love Gleam.*
 
 *Fair warning: this post contains some opinions that are going to be controversial and may not age well. Here be dragons.*
 
