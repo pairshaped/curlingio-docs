@@ -149,7 +149,7 @@ Stepping back from the technical argument. AI-assisted coding is here to stay. E
 
 ### The Bar Is Higher, Not Lower
 
-Agents are good enough for a lot of business application work right now, but "good enough" comes with a big asterisk. Every diff needs scrutiny. The operator needs to be a domain expert, a security expert, and a programming expert. The speed at which code is produced has raised the expertise required from the operator, not lowered it.
+Agents are good enough for a lot of business application work right now, but "good enough" comes with a big asterisk. Every diff needs scrutiny. The developer needs to be a domain expert, a security expert, and a programming expert. The speed at which code is produced has raised the expertise required from the developer, not lowered it.
 
 ### Expect More Security Vulnerabilities
 
