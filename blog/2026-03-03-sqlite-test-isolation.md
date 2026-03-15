@@ -165,7 +165,7 @@ This also means:
 
 This isn't free of trade-offs. You're not testing against the same database engine you run in production... unless you also run SQLite in production, which we do. If you're using SQLite for tests but Postgres in production, you'd miss Postgres-specific behavior (custom types, advisory locks, jsonb operators, etc.).
 
-The other trade-off is that each test builds up its own data from scratch. There's no shared seed data that persists across tests. In practice this is a feature (every test explicitly declares its dependencies) but it does mean more setup code per test compared to a shared fixtures approach.
+The other trade-off is that in our setup, each test builds up its own data from scratch. In practice this is a feature (every test explicitly declares its dependencies) but it does mean more setup code per test compared to a shared fixtures approach. That said, this is a choice, not a limitation of the technique. You could just as easily insert seed data into the template database before caching it, and every clone would start with that data pre-loaded. If your test suite benefits from a well-defined set of standard users, organizations, or other reference data, seeding the template is a straightforward way to reduce per-test setup while keeping full isolation.
 
 ## This Isn't BEAM-Specific
 
