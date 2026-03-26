@@ -67,6 +67,10 @@ Who else is using the platform? A tool used by a handful of clubs is a different
 
 Support turnaround matters too. When something breaks during league night or a bonspiel weekend, you need a response in hours, not weeks. Ask other clubs what their experience has been. Community adoption also means your curlers are more likely to already have an account, which makes registration smoother for everyone.
 
+## Who Owns It
+
+It's worth looking past the product and asking who actually owns the company behind it. A platform built and run by people in the curling community is a different thing than one owned by an investment firm in another country. When a private equity group acquires a software company, the priorities tend to shift: prices go up, support gets outsourced, and development slows down or focuses on whatever makes the numbers look good for the next quarter. The curling world is small and mostly volunteer-driven. You want the people making decisions about your software to understand that.
+
 ## AI Ready
 
 Are you already using chatbots like Claude.ai to help with day-to-day tasks? A lot of club managers are. As these tools get more capable, they'll be able to do more than just answer questions. Look for a platform that's ready for this. Setting up a draw, checking registration numbers, pulling a financial report: these are things your AI assistant should eventually be able to do for you, if the software supports it. Your members could benefit too, using their own chatbots to register for events or set up reminders for upcoming matches.
