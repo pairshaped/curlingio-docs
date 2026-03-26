@@ -124,7 +124,7 @@ None of this was planned. We chose per-test SQLite databases because they elimin
 
 ***
 
-*This is Part 7 of the Curling IO Foundation series.*
+*This is Part 7 of the Curling IO Foundation series. Next up: [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md).*
 
 **Tags:**
 

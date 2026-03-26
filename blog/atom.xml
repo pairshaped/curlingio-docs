@@ -233,7 +233,7 @@
 <p>None of this was planned. We chose per-test SQLite databases because they eliminated cleanup code, ordering dependencies, and flaky tests from leaked state. We're still a bit surprised that a permanent 4.7x speedup, one we'll benefit from for the lifetime of this project, took an afternoon and 25 lines of Erlang.</p>
 <p>37 lines total (counting the 12-line FFI module from the previous post) for per-test database isolation and parallel execution across all available CPU cores. No test framework plugins. No configuration. The whole thing compiles with <code>gleam build</code> and runs with <code>gleam test</code>.</p>
 <hr>
-<p><em>This is Part 7 of the Curling IO Foundation series.</em></p>]]></content>
+<p><em>This is Part 7 of the Curling IO Foundation series. Next up: <a href="https://curling.io/blog/live-admin-without-javascript">A Live Admin Panel Without Writing JavaScript</a>.</em></p>]]></content>
         <author>
             <name>Dave Rapin</name>
         </author>
