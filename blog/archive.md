@@ -55,3 +55,8 @@
   [ - ](/blog/21-reasons-ai-agents-love-gleam.md)
   <!-- -->
   [AI Agents Love Gleam](/blog/21-reasons-ai-agents-love-gleam.md)
+* [March 26](/blog/live-admin-without-javascript.md)
+  <!-- -->
+  [ - ](/blog/live-admin-without-javascript.md)
+  <!-- -->
+  [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)

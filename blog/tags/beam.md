@@ -1,10 +1,10 @@
-## [Parallel Tests for Free](/blog/parallel-tests-for-free.md)
+## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
 
-March 8, 2026 ·
+March 26, 2026 ·
 
 <!-- -->
 
-5 min read
+11 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,16 +12,16 @@ Dave Rapin
 
 Founder @ Curling IO
 
-While writing the [previous post](/blog/sqlite-test-isolation.md) about our per-test SQLite databases, I was describing how each test gets its own in-memory database, no shared connections, no shared state. And I thought: wait, if nothing is shared, can we just run them all at the same time?
+Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
 
-Turns out we could, and our server test suite went from \~4 seconds to \~0.85 seconds for around 800 tests. Zero code changes to the tests themselves. One 25-line Erlang module.
+Version 3's admin is a single Lustre server component running on the BEAM. One WebSocket connection, one long-lived Erlang process per session. Every interaction goes over that WebSocket and comes back as a DOM patch. The page never reloads, and there's no client-side JavaScript framework. The entire admin UI is written in Gleam, compiled to Erlang, and runs server-side.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
 * [gleam](/blog/tags/gleam.md)
 * [beam](/blog/tags/beam.md)
-* [testing](/blog/tags/testing.md)
+* [lustre](/blog/tags/lustre.md)
 * [architecture](/blog/tags/architecture.md)
 
-[**Read more**](/blog/parallel-tests-for-free.md)
+[**Read more**](/blog/live-admin-without-javascript.md)
