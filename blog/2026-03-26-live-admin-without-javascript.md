@@ -120,6 +120,10 @@ Things we explicitly don't do in the server component: timers, drag-and-drop, an
 
 **Flash messages disappearing.** Save operations on discounts and affiliate fees navigate to the list page and show a flash. But we also added "clear flash on navigation." The save set the flash, then called `NavigateTo`, which cleared it. The fix was to set the flash *after* the navigation resolved.
 
+## What We Got for Free
+
+BEAM's hot code loading applies to server components. When the dev watcher recompiles a module, the running process picks up the new code on the next message. The WebSocket stays connected, the session state is preserved, and the next click or navigation renders the updated view. We didn't build this. We didn't configure it. We noticed it working one day during development and realized the BEAM had been doing it the whole time.
+
 ## Why Not SSR or a SPA?
 
 ### Over SSR
