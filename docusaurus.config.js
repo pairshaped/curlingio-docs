@@ -30,6 +30,7 @@ module.exports = {
   organizationName: 'pairshaped', // Usually your GitHub org/user name.
   projectName: 'curlingio-docs', // Usually your repo name.
   plugins: [
+    'docusaurus-plugin-image-zoom',
     [
       '@docusaurus/plugin-client-redirects',
       {
@@ -57,6 +58,9 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    zoom: {
+      selector: '.markdown img',
+    },
     colorMode: {
       disableSwitch: true,
     },
