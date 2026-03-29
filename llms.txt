@@ -44,6 +44,12 @@ All 14 provincial and territorial curling associations, plus Curling Canada, run
 
 - [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md): All 14 provincial and territorial curling associations, plus Curling Canada, run on Curling IO. Here is what that means for clubs and curlers.
 
+### drag-and-drop-registration-forms
+
+A first look at the drag-and-drop form builder in Curling IO v3. Club admins design registration forms by arranging questions on a visual canvas.
+
+- [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md): A first look at the drag-and-drop form builder in Curling IO v3. Club admins design registration forms by arranging questions on a visual canvas.
+
 ### how-curling-canada-uses-curling-io
 
 Curling Canada runs all of their national championships through Curling IO, from the Brier to the Scotties to the Trials. The same platform is available to any curling club.
@@ -90,6 +96,7 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curler-database"](/blog/tags/curler-database.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
+- [One post tagged with "form-builder"](/blog/tags/form-builder.md)
 - [8 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [8 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
@@ -99,10 +106,13 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "otp"](/blog/tags/otp.md)
 - [One post tagged with "partnerships"](/blog/tags/partnerships.md)
 - [One post tagged with "provincial-associations"](/blog/tags/provincial-associations.md)
+- [One post tagged with "registration"](/blog/tags/registration.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
+- [One post tagged with "sneak-peek"](/blog/tags/sneak-peek.md)
 - [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
 - [2 posts tagged with "testing"](/blog/tags/testing.md)
+- [One post tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 

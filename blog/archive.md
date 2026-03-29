@@ -60,3 +60,8 @@
   [ - ](/blog/live-admin-without-javascript.md)
   <!-- -->
   [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+* [March 28](/blog/drag-and-drop-registration-forms.md)
+  <!-- -->
+  [ - ](/blog/drag-and-drop-registration-forms.md)
+  <!-- -->
+  [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)

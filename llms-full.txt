@@ -44,6 +44,12 @@ All 14 provincial and territorial curling associations, plus Curling Canada, run
 
 - [Every Provincial and Territorial Curling Association in Canada Uses Curling IO](/blog/curling-io-powers-provincial-associations.md): All 14 provincial and territorial curling associations, plus Curling Canada, run on Curling IO. Here is what that means for clubs and curlers.
 
+### drag-and-drop-registration-forms
+
+A first look at the drag-and-drop form builder in Curling IO v3. Club admins design registration forms by arranging questions on a visual canvas.
+
+- [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md): A first look at the drag-and-drop form builder in Curling IO v3. Club admins design registration forms by arranging questions on a visual canvas.
+
 ### how-curling-canada-uses-curling-io
 
 Curling Canada runs all of their national championships through Curling IO, from the Brier to the Scotties to the Trials. The same platform is available to any curling club.
@@ -90,6 +96,7 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curler-database"](/blog/tags/curler-database.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
+- [One post tagged with "form-builder"](/blog/tags/form-builder.md)
 - [8 posts tagged with "foundation"](/blog/tags/foundation.md)
 - [8 posts tagged with "gleam"](/blog/tags/gleam.md)
 - [One post tagged with "i18n"](/blog/tags/i-18-n.md)
@@ -99,10 +106,13 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "otp"](/blog/tags/otp.md)
 - [One post tagged with "partnerships"](/blog/tags/partnerships.md)
 - [One post tagged with "provincial-associations"](/blog/tags/provincial-associations.md)
+- [One post tagged with "registration"](/blog/tags/registration.md)
 - [One post tagged with "scaling"](/blog/tags/scaling.md)
 - [One post tagged with "security"](/blog/tags/security.md)
+- [One post tagged with "sneak-peek"](/blog/tags/sneak-peek.md)
 - [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
 - [2 posts tagged with "testing"](/blog/tags/testing.md)
+- [One post tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 
@@ -241,13 +251,13 @@ Acceptance of Terms of this Agreement through Use
 
 # Full Documentation Content
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
 
-March 26, 2026 ·
+March 28, 2026 ·
 
 <!-- -->
 
-11 min read
+3 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -255,19 +265,18 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
 
-Version 3's admin is a single Lustre server component running on the BEAM. One WebSocket connection, one long-lived Erlang process per session. Every interaction goes over that WebSocket and comes back as a DOM patch. The page never reloads, and there's no client-side JavaScript framework. The entire admin UI is written in Gleam, compiled to Erlang, and runs server-side.
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
 
 **Tags:**
 
-* [foundation](/blog/tags/foundation.md)
-* [gleam](/blog/tags/gleam.md)
-* [beam](/blog/tags/beam.md)
-* [lustre](/blog/tags/lustre.md)
-* [architecture](/blog/tags/architecture.md)
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
 
-[**Read more**](/blog/live-admin-without-javascript.md)
+[**Read more**](/blog/drag-and-drop-registration-forms.md)
 
 
 ---
@@ -521,6 +530,11 @@ After a year of building production software with AI coding agents, it works if 
   [ - ](/blog/live-admin-without-javascript.md)
   <!-- -->
   [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+* [March 28](/blog/drag-and-drop-registration-forms.md)
+  <!-- -->
+  [ - ](/blog/drag-and-drop-registration-forms.md)
+  <!-- -->
+  [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
 
 
 ---
@@ -531,7 +545,7 @@ After a year of building production software with AI coding agents, it works if 
 
   ## Dave Rapin
 
-  9
+  10
 
   Founder @ Curling IO
 
@@ -946,6 +960,64 @@ Check out our [getting started guide](/docs/getting-started/curling-club-manager
 
 ---
 
+# Custom Registration Forms Are Coming to Curling IO
+
+March 28, 2026 ·
+
+<!-- -->
+
+3 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+
+## How it works[​](#how-it-works "Direct link to How it works")
+
+The form builder is a drag-and-drop tool inside the product admin. You start with a panel of available questions on the left and an empty canvas on the right. Drag a question onto the canvas and it becomes part of the registration form. Drag it back to remove it. Reorder by dragging within the canvas.
+
+![Form builder admin interface](/assets/images/form-builder-admin-f73eab20ba1adf72a20fd039b7c2cfab.png)
+
+Questions have a defined column width (1, 2, or 3 columns) that controls how they sit in the grid. A one-column question like "Shoe Size" takes up a third of the row. A two-column question like "Street Address" spans two thirds. A three-column question like "Notes" takes the full width. The layout uses a masonry grid, so questions pack together without leaving gaps.
+
+Separators let you break the form into visual sections. Questions above a separator stay above it. Below it, a new section starts fresh.
+
+Each question can be toggled between required and optional. Required questions show an asterisk on the public form and are enforced on submission.
+
+## What curlers see[​](#what-curlers-see "Direct link to What curlers see")
+
+The public registration form renders the layout the admin designed. Questions float their labels above the input when you start typing, keeping the form compact. Hints appear as info icons that expand on hover.
+
+![Public registration form](/assets/images/form-builder-public-601b03d3dd5f0920af4c1443ad9b4705.png)
+
+The form is responsive. On a phone, everything stacks into a single column. On a tablet, two columns. On a desktop, the full three-column layout shows.
+
+## Available questions[​](#available-questions "Direct link to Available questions")
+
+The form builder ships with a catalog of predefined questions covering contact info, emergency contacts, medical details, sport-specific questions, apparel sizes, dietary restrictions, and more. Clubs can also create their own custom questions to collect whatever else they need. The list is searchable, and any combination of predefined and custom questions can be used on any product.
+
+Some questions are tied to event settings. If an admin configures a team name label in the event settings, the team name question appears on the form builder canvas automatically and is locked in place. Same for the lineup question when a lineup option is selected. Turn those settings off and the locked questions disappear from the builder.
+
+Gaps and separators are layout tools, not data questions. Add a gap to leave an empty cell in the grid. Add a separator to visually divide the form into sections.
+
+The form builder is part of Curling IO v3. We'll share more v3 features as we get closer to launch.
+
+**Tags:**
+
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
+
+
+---
+
 # How Curling Canada Uses Curling IO for National Competitions
 
 February 26, 2026 ·
@@ -1192,13 +1264,13 @@ The server component covers the 95% of admin pages that are forms, tables, and c
 
 ---
 
-## [Bilingual by Design](/blog/bilingual-by-design.md)
+## [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md)
 
-February 15, 2026 ·
+February 20, 2026 ·
 
 <!-- -->
 
-7 min read
+11 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -1206,18 +1278,18 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Curling IO serves hundreds of clubs across Canada, where English and French aren't optional, they're official languages. A club in Quebec needs a fully French experience. A national organization like Curling Canada needs both. Rails has mature i18n support and Version 2 has been fully bilingual from the start, but after a decade of maintaining around 10,000 YAML translation keys, we've hit the limits of what that approach can catch: missing keys, missing translations, and unused keys that accumulate silently over time.
+Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a short-lived login code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
 
-In Version 3, we wanted compile-time guarantees that make those problems impossible. This post covers how we designed the i18n system, why we split it into two layers, and what we changed from Version 2.
+But first, let's talk about why we made this **controversial decision** in the first place.
 
 **Tags:**
 
 * [foundation](/blog/tags/foundation.md)
-* [i18n](/blog/tags/i-18-n.md)
+* [authentication](/blog/tags/authentication.md)
 * [gleam](/blog/tags/gleam.md)
-* [architecture](/blog/tags/architecture.md)
+* [security](/blog/tags/security.md)
 
-[**Read more**](/blog/bilingual-by-design.md)
+[**Read more**](/blog/passwordless-auth-done-right.md)
 
 
 ---
@@ -2073,6 +2145,36 @@ If you've ever checked a scoreboard during the Brier or the Scotties Tournament 
 
 ---
 
+## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+
+March 28, 2026 ·
+
+<!-- -->
+
+3 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+
+**Tags:**
+
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
+
+[**Read more**](/blog/drag-and-drop-registration-forms.md)
+
+
+---
+
 ## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
@@ -2335,6 +2437,36 @@ Every provincial and territorial curling association in Canada uses Curling IO, 
 
 ---
 
+## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+
+March 28, 2026 ·
+
+<!-- -->
+
+3 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+
+**Tags:**
+
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
+
+[**Read more**](/blog/drag-and-drop-registration-forms.md)
+
+
+---
+
 ## [The Next Version of Curling IO](/blog/the-next-version-of-curling-io.md)
 
 February 12, 2026 ·
@@ -2396,6 +2528,36 @@ But first, let's talk about why we made this **controversial decision** in the f
 
 ---
 
+## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+
+March 28, 2026 ·
+
+<!-- -->
+
+3 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+
+**Tags:**
+
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
+
+[**Read more**](/blog/drag-and-drop-registration-forms.md)
+
+
+---
+
 ## [Test Isolation for Free with SQLite](/blog/sqlite-test-isolation.md)
 
 March 3, 2026 ·
@@ -2453,6 +2615,36 @@ Turns out we could, and our server test suite went from \~4 seconds to \~0.85 se
 * [architecture](/blog/tags/architecture.md)
 
 [**Read more**](/blog/parallel-tests-for-free.md)
+
+
+---
+
+## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+
+March 28, 2026 ·
+
+<!-- -->
+
+3 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+
+In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+
+**Tags:**
+
+* [v3](/blog/tags/v-3.md)
+* [registration](/blog/tags/registration.md)
+* [form-builder](/blog/tags/form-builder.md)
+* [sneak-peek](/blog/tags/sneak-peek.md)
+
+[**Read more**](/blog/drag-and-drop-registration-forms.md)
 
 
 ---

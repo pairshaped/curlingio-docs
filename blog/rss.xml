@@ -4,11 +4,39 @@
         <title>Curling IO Dev Blog</title>
         <link>https://curling.io/blog</link>
         <description>Developer insights on building and enhancing Curling IO</description>
-        <lastBuildDate>Thu, 26 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Curling IO</copyright>
+        <item>
+            <title><![CDATA[Custom Registration Forms Are Coming to Curling IO]]></title>
+            <link>https://curling.io/blog/drag-and-drop-registration-forms</link>
+            <guid>https://curling.io/blog/drag-and-drop-registration-forms</guid>
+            <pubDate>Sat, 28 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A first look at the drag-and-drop form builder in Curling IO v3. Club admins design registration forms by arranging questions on a visual canvas.]]></description>
+            <content:encoded><![CDATA[<p>Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.</p>
+<p>In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How it works<a href="https://curling.io/blog/drag-and-drop-registration-forms#how-it-works" class="hash-link" aria-label="Direct link to How it works" title="Direct link to How it works">​</a></h2>
+<p>The form builder is a drag-and-drop tool inside the product admin. You start with a panel of available questions on the left and an empty canvas on the right. Drag a question onto the canvas and it becomes part of the registration form. Drag it back to remove it. Reorder by dragging within the canvas.</p>
+<p><img decoding="async" loading="lazy" alt="Form builder admin interface" src="https://curling.io/assets/images/form-builder-admin-f73eab20ba1adf72a20fd039b7c2cfab.png" width="2921" height="1645" class="img_ev3q"></p>
+<p>Questions have a defined column width (1, 2, or 3 columns) that controls how they sit in the grid. A one-column question like "Shoe Size" takes up a third of the row. A two-column question like "Street Address" spans two thirds. A three-column question like "Notes" takes the full width. The layout uses a masonry grid, so questions pack together without leaving gaps.</p>
+<p>Separators let you break the form into visual sections. Questions above a separator stay above it. Below it, a new section starts fresh.</p>
+<p>Each question can be toggled between required and optional. Required questions show an asterisk on the public form and are enforced on submission.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-curlers-see">What curlers see<a href="https://curling.io/blog/drag-and-drop-registration-forms#what-curlers-see" class="hash-link" aria-label="Direct link to What curlers see" title="Direct link to What curlers see">​</a></h2>
+<p>The public registration form renders the layout the admin designed. Questions float their labels above the input when you start typing, keeping the form compact. Hints appear as info icons that expand on hover.</p>
+<p><img decoding="async" loading="lazy" alt="Public registration form" src="https://curling.io/assets/images/form-builder-public-601b03d3dd5f0920af4c1443ad9b4705.png" width="2582" height="1538" class="img_ev3q"></p>
+<p>The form is responsive. On a phone, everything stacks into a single column. On a tablet, two columns. On a desktop, the full three-column layout shows.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="available-questions">Available questions<a href="https://curling.io/blog/drag-and-drop-registration-forms#available-questions" class="hash-link" aria-label="Direct link to Available questions" title="Direct link to Available questions">​</a></h2>
+<p>The form builder ships with a catalog of predefined questions covering contact info, emergency contacts, medical details, sport-specific questions, apparel sizes, dietary restrictions, and more. Clubs can also create their own custom questions to collect whatever else they need. The list is searchable, and any combination of predefined and custom questions can be used on any product.</p>
+<p>Some questions are tied to event settings. If an admin configures a team name label in the event settings, the team name question appears on the form builder canvas automatically and is locked in place. Same for the lineup question when a lineup option is selected. Turn those settings off and the locked questions disappear from the builder.</p>
+<p>Gaps and separators are layout tools, not data questions. Add a gap to leave an empty cell in the grid. Add a separator to visually divide the form into sections.</p>
+<p>The form builder is part of Curling IO v3. We'll share more v3 features as we get closer to launch.</p>]]></content:encoded>
+            <category>v3</category>
+            <category>registration</category>
+            <category>form-builder</category>
+            <category>sneak-peek</category>
+        </item>
         <item>
             <title><![CDATA[A Live Admin Panel Without Writing JavaScript]]></title>
             <link>https://curling.io/blog/live-admin-without-javascript</link>
