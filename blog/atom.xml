@@ -40,7 +40,7 @@
         <category label="sneak-peek" term="sneak-peek"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[A Live Admin Panel Without Writing JavaScript]]></title>
+        <title type="html"><![CDATA[LiveView Admin Panel w/ Gleam and Lustre]]></title>
         <id>https://curling.io/blog/live-admin-without-javascript</id>
         <link href="https://curling.io/blog/live-admin-without-javascript"/>
         <updated>2026-03-26T00:00:00.000Z</updated>

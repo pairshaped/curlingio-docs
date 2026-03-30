@@ -1,4 +1,4 @@
-# A Live Admin Panel Without Writing JavaScript
+# LiveView Admin Panel w/ Gleam and Lustre
 
 March 26, 2026 ·
 

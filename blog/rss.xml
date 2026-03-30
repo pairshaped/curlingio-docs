@@ -38,7 +38,7 @@
             <category>sneak-peek</category>
         </item>
         <item>
-            <title><![CDATA[A Live Admin Panel Without Writing JavaScript]]></title>
+            <title><![CDATA[LiveView Admin Panel w/ Gleam and Lustre]]></title>
             <link>https://curling.io/blog/live-admin-without-javascript</link>
             <guid>https://curling.io/blog/live-admin-without-javascript</guid>
             <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>

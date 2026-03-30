@@ -60,7 +60,7 @@ Curling Canada runs all of their national championships through Curling IO, from
 
 Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
 
-- [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md): Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
+- [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md): Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
 
 ### page
 

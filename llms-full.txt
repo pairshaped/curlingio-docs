@@ -60,7 +60,7 @@ Curling Canada runs all of their national championships through Curling IO, from
 
 Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
 
-- [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md): Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
+- [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md): Curling IO's admin panel has dozens of pages: product configuration, discount rules, affiliate fees, registrations, event scheduling, reports. In Version 2, every form submission reloads the page. Click save, wait for the round trip. It works, but it's slow when you're editing multiple sections on the same product, and it makes features like live toggle switches or inline editing impossible without sprinkling in JavaScript.
 
 ### page
 
@@ -529,7 +529,7 @@ After a year of building production software with AI coding agents, it works if 
   <!-- -->
   [ - ](/blog/live-admin-without-javascript.md)
   <!-- -->
-  [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+  [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 * [March 28](/blog/drag-and-drop-registration-forms.md)
   <!-- -->
   [ - ](/blog/drag-and-drop-registration-forms.md)
@@ -1083,7 +1083,7 @@ If your club wants the same tools that power Canadian curling at the national le
 
 ---
 
-# A Live Admin Panel Without Writing JavaScript
+# LiveView Admin Panel w/ Gleam and Lustre
 
 March 26, 2026 ·
 
@@ -1918,7 +1918,7 @@ AI coding agents like Claude Code, OpenAI Codex, and Google Gemini can write cod
 
 ---
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 
@@ -1979,7 +1979,7 @@ But first, let's talk about why we made this **controversial decision** in the f
 
 ---
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 
@@ -2175,7 +2175,7 @@ In v2, admins can already choose which questions appear and create custom ones. 
 
 ---
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 
@@ -2206,7 +2206,7 @@ Version 3's admin is a single Lustre server component running on the BEAM. One W
 
 ---
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 
@@ -2294,7 +2294,7 @@ If you've ever checked a scoreboard during the Brier or the Scotties Tournament 
 
 ---
 
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 

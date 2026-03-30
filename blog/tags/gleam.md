@@ -1,4 +1,4 @@
-## [A Live Admin Panel Without Writing JavaScript](/blog/live-admin-without-javascript.md)
+## [LiveView Admin Panel w/ Gleam and Lustre](/blog/live-admin-without-javascript.md)
 
 March 26, 2026 ·
 
