@@ -1,6 +1,6 @@
 ---
 slug: live-admin-without-javascript
-title: 'A Live Admin Panel Without Writing JavaScript'
+title: 'LiveView Admin Panel w/ Gleam and Lustre'
 authors: [dave]
 tags: [foundation, gleam, beam, lustre, architecture]
 ---
