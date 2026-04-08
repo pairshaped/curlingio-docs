@@ -84,7 +84,7 @@ const features = [
 const testimonials = [
   {
     quote:
-      'No two curling clubs operate in the same way. There are an endless multitude of different structures for leagues, programs, discounts, and so on. Curling I/O has evolved and grown for over a decade to become extremely versatile and flexible to meet the needs of our unique sport and business models. No tool comes close to Curling I/O at this time for sport registration.',
+      'No two curling clubs operate in the same way. There are an endless multitude of different structures for leagues, programs, discounts, and so on. Curling IO has evolved and grown for over a decade to become extremely versatile and flexible to meet the needs of our unique sport and business models. No tool comes close to Curling IO at this time for sport registration.',
     author: 'Patrick Prade',
     title: 'Executive Director, Vancouver Curling Club Association',
   },
@@ -105,6 +105,12 @@ const testimonials = [
       "Curling IO has completely modernized our club operations. We've seen a massive boost in efficiency and improved cashflow, our members love having instant access to schedules and results, and the development team is incredibly responsive.",
     author: 'Mike Buckley',
     title: "Manager, Thistle-St. Andrew's Curling Club",
+  },
+  {
+    quote:
+      "This past season, we fully implemented and embraced Curling IO, and I believe it contributed to our club's 26% membership growth, thanks to the straightforward web presence and the ease of registration.",
+    author: 'Kenny Robichaud',
+    title: 'Manager',
   },
 ];
 
