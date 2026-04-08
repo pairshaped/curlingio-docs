@@ -110,7 +110,7 @@ const testimonials = [
     quote:
       "This past season, we fully implemented and embraced Curling IO, and I believe it contributed to our club's 26% membership growth, thanks to the straightforward web presence and the ease of registration.",
     author: 'Kenny Robichaud',
-    title: 'Manager',
+    title: 'Manager, Summerside Curling Club',
   },
 ];
 
