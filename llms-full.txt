@@ -276,7 +276,7 @@ Imagine you're a club manager setting up next season. You open your AI agent and
 
 > Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
 
-Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is how it will work.
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 **Tags:**
 
@@ -590,7 +590,7 @@ Imagine you're a club manager setting up next season. You open your AI agent and
 
 > Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
 
-Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is how it will work.
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 ## The Agent in Action[​](#the-agent-in-action "Direct link to The Agent in Action")
 
@@ -2071,7 +2071,7 @@ Imagine you're a club manager setting up next season. You open your AI agent and
 
 > Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
 
-Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is how it will work.
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 **Tags:**
 
@@ -2101,7 +2101,7 @@ Imagine you're a club manager setting up next season. You open your AI agent and
 
 > Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
 
-Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is how it will work.
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 **Tags:**
 
