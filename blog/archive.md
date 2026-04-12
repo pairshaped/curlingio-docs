@@ -65,3 +65,8 @@
   [ - ](/blog/drag-and-drop-registration-forms.md)
   <!-- -->
   [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+* [April 12](/blog/automate-club-management-with-ai.md)
+  <!-- -->
+  [ - ](/blog/automate-club-management-with-ai.md)
+  <!-- -->
+  [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)

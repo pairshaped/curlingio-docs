@@ -26,6 +26,12 @@ Archive
 
 - [Authors](/blog/authors.md)
 
+### automate-club-management-with-ai
+
+Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
+
+- [Automate Club Management With AI](/blog/automate-club-management-with-ai.md): Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
+
 ### background-jobs-without-the-baggage
 
 In most web stacks, adding background jobs means adding infrastructure: Redis, Sidekiq, a separate worker process, a monitoring dashboard, another thing to deploy and keep running. Curling IO Version 2 uses Delayed Job backed by PostgreSQL, which works well but requires a separate worker daemon alongside the web process.
@@ -87,7 +93,8 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 ### tags
 
 - [Tags](/blog/tags.md)
-- [One post tagged with "ai"](/blog/tags/ai.md)
+- [One post tagged with "agents"](/blog/tags/agents.md)
+- [2 posts tagged with "ai"](/blog/tags/ai.md)
 - [8 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [3 posts tagged with "beam"](/blog/tags/beam.md)
