@@ -21,6 +21,8 @@ Five seconds later, it's done. No browser tabs, no forms, no clicking through me
 **Tags:**
 
 * [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
 
 [**Read more**](/blog/automate-club-management-with-ai.md)

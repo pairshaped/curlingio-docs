@@ -93,14 +93,13 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 ### tags
 
 - [Tags](/blog/tags.md)
-- [One post tagged with "agents"](/blog/tags/agents.md)
 - [2 posts tagged with "ai"](/blog/tags/ai.md)
 - [8 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [3 posts tagged with "beam"](/blog/tags/beam.md)
 - [One post tagged with "buyers-guide"](/blog/tags/buyers-guide.md)
 - [One post tagged with "choosing-software"](/blog/tags/choosing-software.md)
-- [One post tagged with "club-management"](/blog/tags/club-management.md)
+- [2 posts tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curler-database"](/blog/tags/curler-database.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
 - [One post tagged with "form-builder"](/blog/tags/form-builder.md)
@@ -119,7 +118,8 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "sneak-peek"](/blog/tags/sneak-peek.md)
 - [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
 - [2 posts tagged with "testing"](/blog/tags/testing.md)
-- [One post tagged with "v3"](/blog/tags/v-3.md)
+- [One post tagged with "ui"](/blog/tags/ui.md)
+- [2 posts tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 

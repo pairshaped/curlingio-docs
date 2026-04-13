@@ -64,7 +64,9 @@
 <p>Club management software has always been built for humans navigating web interfaces. That's the right design for most users most of the time. But administrators have repetitive, structured work: setting up a new season, bulk-updating pricing, generating reports, approving registration queues. Work that an agent can handle.</p>
 <p>Most clubs aren't thinking about this yet, but we believe they will be within the next few years as AI tools and agents become more prominent. In the near term it'll probably be just a handful of technically oriented club managers who give it a try, and will probably never go back.</p>]]></content:encoded>
             <category>ai</category>
-            <category>agents</category>
+            <category>v3</category>
+            <category>ui</category>
+            <category>club-management</category>
         </item>
         <item>
             <title><![CDATA[Custom Registration Forms Are Coming to Curling IO]]></title>

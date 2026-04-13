@@ -66,7 +66,9 @@
             <name>Dave Rapin</name>
         </author>
         <category label="ai" term="ai"/>
-        <category label="agents" term="agents"/>
+        <category label="v3" term="v3"/>
+        <category label="ui" term="ui"/>
+        <category label="club-management" term="club-management"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Custom Registration Forms Are Coming to Curling IO]]></title>

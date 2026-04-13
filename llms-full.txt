@@ -93,14 +93,13 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 ### tags
 
 - [Tags](/blog/tags.md)
-- [One post tagged with "agents"](/blog/tags/agents.md)
 - [2 posts tagged with "ai"](/blog/tags/ai.md)
 - [8 posts tagged with "architecture"](/blog/tags/architecture.md)
 - [One post tagged with "authentication"](/blog/tags/authentication.md)
 - [3 posts tagged with "beam"](/blog/tags/beam.md)
 - [One post tagged with "buyers-guide"](/blog/tags/buyers-guide.md)
 - [One post tagged with "choosing-software"](/blog/tags/choosing-software.md)
-- [One post tagged with "club-management"](/blog/tags/club-management.md)
+- [2 posts tagged with "club-management"](/blog/tags/club-management.md)
 - [One post tagged with "curler-database"](/blog/tags/curler-database.md)
 - [One post tagged with "curling-canada"](/blog/tags/curling-canada.md)
 - [One post tagged with "form-builder"](/blog/tags/form-builder.md)
@@ -119,7 +118,8 @@ Most web frameworks treat test database isolation as a hard problem. Rails has d
 - [One post tagged with "sneak-peek"](/blog/tags/sneak-peek.md)
 - [3 posts tagged with "sqlite"](/blog/tags/sqlite.md)
 - [2 posts tagged with "testing"](/blog/tags/testing.md)
-- [One post tagged with "v3"](/blog/tags/v-3.md)
+- [One post tagged with "ui"](/blog/tags/ui.md)
+- [2 posts tagged with "v3"](/blog/tags/v-3.md)
 
 ### the-next-version-of-curling-io
 
@@ -281,7 +281,9 @@ Five seconds later, it's done. No browser tabs, no forms, no clicking through me
 **Tags:**
 
 * [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
 
 [**Read more**](/blog/automate-club-management-with-ai.md)
 
@@ -717,7 +719,9 @@ Most clubs aren't thinking about this yet, but we believe they will be within th
 **Tags:**
 
 * [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
 
 
 ---
@@ -2043,7 +2047,6 @@ That's the entire test infrastructure. No test framework plugins, no database cl
 
 ## A[​](#A "Direct link to A")
 
-* [agents1](/blog/tags/agents.md)
 * [ai2](/blog/tags/ai.md)
 * [architecture8](/blog/tags/architecture.md)
 * [authentication1](/blog/tags/authentication.md)
@@ -2076,37 +2079,9 @@ Five seconds later, it's done. No browser tabs, no forms, no clicking through me
 **Tags:**
 
 * [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
-
-[**Read more**](/blog/automate-club-management-with-ai.md)
-
-
----
-
-## [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)
-
-April 12, 2026 ·
-
-<!-- -->
-
-5 min read
-
-![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
-
-Dave Rapin
-
-Founder @ Curling IO
-
-Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
-
-> Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
-
-Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
-
-**Tags:**
-
-* [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
 
 [**Read more**](/blog/automate-club-management-with-ai.md)
 
@@ -2259,29 +2234,34 @@ If your curling club is shopping for management software, or wondering whether i
 
 ---
 
-## [What to Look for in Curling Club Management Software](/blog/what-to-look-for-in-curling-club-management-software.md)
+## [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)
 
-March 2, 2026 ·
+April 12, 2026 ·
 
 <!-- -->
 
 5 min read
 
-![Chris](/img/chris-avatar.svg)
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
-Chris
+Dave Rapin
 
-Product @ Curling IO
+Founder @ Curling IO
 
-If your curling club is shopping for management software, or wondering whether it's time to replace what you've got, the wrong choice can mean years of workarounds. Here's what to look for.
+Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
+
+> Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
+
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 **Tags:**
 
+* [ai](/blog/tags/ai.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
 * [club-management](/blog/tags/club-management.md)
-* [buyers-guide](/blog/tags/buyers-guide.md)
-* [choosing-software](/blog/tags/choosing-software.md)
 
-[**Read more**](/blog/what-to-look-for-in-curling-club-management-software.md)
+[**Read more**](/blog/automate-club-management-with-ai.md)
 
 
 ---
@@ -2814,13 +2794,13 @@ Turns out we could, and our server test suite went from \~4 seconds to \~0.85 se
 
 ---
 
-## [Custom Registration Forms Are Coming to Curling IO](/blog/drag-and-drop-registration-forms.md)
+## [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)
 
-March 28, 2026 ·
+April 12, 2026 ·
 
 <!-- -->
 
-3 min read
+5 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -2828,18 +2808,52 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Registration forms in Curling IO have always collected the basics: team name, lineup, skill level, contact info. But every club runs things a little differently. Some need emergency contacts. Others want dietary restrictions for banquet planning. A bonspiel might ask for team contact information while a league doesn't.
+Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
 
-In v2, admins can already choose which questions appear and create custom ones. What's new in v3 is control over the layout: where each question sits, how wide it is, and how the form is organized into sections.
+> Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
+
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
 
 **Tags:**
 
+* [ai](/blog/tags/ai.md)
 * [v3](/blog/tags/v-3.md)
-* [registration](/blog/tags/registration.md)
-* [form-builder](/blog/tags/form-builder.md)
-* [sneak-peek](/blog/tags/sneak-peek.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
 
-[**Read more**](/blog/drag-and-drop-registration-forms.md)
+[**Read more**](/blog/automate-club-management-with-ai.md)
+
+
+---
+
+## [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)
+
+April 12, 2026 ·
+
+<!-- -->
+
+5 min read
+
+![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
+
+Dave Rapin
+
+Founder @ Curling IO
+
+Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
+
+> Set up early bird pricing for the Tuesday Night League. 15% off if they register before September 1st.
+
+Five seconds later, it's done. No browser tabs, no forms, no clicking through menus. With Curling IO v3, this is something you'll be able to do.
+
+**Tags:**
+
+* [ai](/blog/tags/ai.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
+
+[**Read more**](/blog/automate-club-management-with-ai.md)
 
 
 ---

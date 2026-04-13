@@ -143,4 +143,6 @@ Most clubs aren't thinking about this yet, but we believe they will be within th
 **Tags:**
 
 * [ai](/blog/tags/ai.md)
-* [agents](/blog/tags/agents.md)
+* [v3](/blog/tags/v-3.md)
+* [ui](/blog/tags/ui.md)
+* [club-management](/blog/tags/club-management.md)
