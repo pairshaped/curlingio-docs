@@ -2,7 +2,7 @@
 slug: automate-club-management-with-ai
 title: 'Automate Club Management With AI'
 authors: [dave]
-tags: [ai, agents]
+tags: [ai, v3, ui, club-management]
 ---
 
 Imagine you're a club manager setting up next season. You open your AI agent and type (or just say):
