@@ -1,10 +1,10 @@
-## [Passwordless Auth, Done Right](/blog/passwordless-auth-done-right.md)
+## [Why Your Curling Club Shouldn't Use a CMS](/blog/why-your-curling-club-shouldnt-use-a-cms.md)
 
-February 20, 2026 ·
+April 14, 2026 ·
 
 <!-- -->
 
-11 min read
+9 min read
 
 ![Dave Rapin](https://avatars.githubusercontent.com/u/1202?v=4)
 
@@ -12,15 +12,12 @@ Dave Rapin
 
 Founder @ Curling IO
 
-Curling IO has been passwordless since Version 2. No passwords to remember, no passwords to steal, no password reset flows. You enter your email, we send you a short-lived login code, and you're in. It's been working well for over a decade, and for Version 3 we're keeping the same approach while fixing some rough edges and adding multi-email support.
-
-But first, let's talk about why we made this **controversial decision** in the first place.
+We know that many of our clubs use WordPress or Joomla for their curling websites. These are popular platforms, and for good reason: they're flexible and there's no shortage of tutorials and plugins. But that popularity comes with a serious downside. General-purpose CMS platforms are massive targets for hackers, and the threat has been escalating rapidly. Here's what you need to be aware of.
 
 **Tags:**
 
-* [foundation](/blog/tags/foundation.md)
-* [authentication](/blog/tags/authentication.md)
-* [gleam](/blog/tags/gleam.md)
+* [club-management](/blog/tags/club-management.md)
 * [security](/blog/tags/security.md)
+* [website](/blog/tags/website.md)
 
-[**Read more**](/blog/passwordless-auth-done-right.md)
+[**Read more**](/blog/why-your-curling-club-shouldnt-use-a-cms.md)

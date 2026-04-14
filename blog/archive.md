@@ -70,3 +70,8 @@
   [ - ](/blog/automate-club-management-with-ai.md)
   <!-- -->
   [Automate Club Management With AI](/blog/automate-club-management-with-ai.md)
+* [April 14](/blog/why-your-curling-club-shouldnt-use-a-cms.md)
+  <!-- -->
+  [ - ](/blog/why-your-curling-club-shouldnt-use-a-cms.md)
+  <!-- -->
+  [Why Your Curling Club Shouldn't Use a CMS](/blog/why-your-curling-club-shouldnt-use-a-cms.md)
