@@ -362,7 +362,7 @@ function CurlingClubManagementSoftware() {
                 <div key={idx} className="testimonial">
                   <blockquote>"{t.quote}"</blockquote>
                   <div className="testimonial-author">
-                    {t.author}, <a href={t.link} target="_blank" rel="noopener noreferrer">{t.title}</a>
+                    {t.author}, <a href={t.link} target="_blank" rel="noopener">{t.title}</a>
                   </div>
                 </div>
               ))}

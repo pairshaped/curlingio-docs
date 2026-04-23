@@ -393,7 +393,7 @@ function Home() {
               {testimonials.map((t, idx) => (
                 <div key={idx} className="testimonial">
                   <blockquote>"{t.quote}"</blockquote>
-                  <div className="testimonial-author">{t.author}, <a href={t.link} target="_blank" rel="noopener noreferrer">{t.title}</a></div>
+                  <div className="testimonial-author">{t.author}, <a href={t.link} target="_blank" rel="noopener">{t.title}</a></div>
                 </div>
               ))}
             </div>
