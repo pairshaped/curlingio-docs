@@ -87,30 +87,42 @@ const testimonials = [
       'No two curling clubs operate in the same way. There are an endless multitude of different structures for leagues, programs, discounts, and so on. Curling IO has evolved and grown for over a decade to become extremely versatile and flexible to meet the needs of our unique sport and business models. No tool comes close to Curling IO at this time for sport registration.',
     author: 'Patrick Prade',
     title: 'Executive Director, Vancouver Curling Club Association',
+    link: 'https://vancouver.curling.io',
+  },
+  {
+    quote:
+      'We have used Curling IO since 2017 and it has been a fantastic platform to manage our registrations, leagues and bonspiels. The online payment module works very well, is secure and is very competitive with rates. No hidden fees or charges. What I really like is that they are constantly adding new features to make it easier for clubs to manage and members to use. We will continue to use Curling IO for all our club registration needs.',
+    author: 'Kirk Mearns',
+    title: 'General Manager, Lethbridge Curling Club',
+    link: 'https://lethbridge.curling.io',
   },
   {
     quote:
       "Stop trying to force other software onto your curling organization when it wasn't built for curling. I trust this company because they understand curling, and they also understand the fundamentals of the business side of curling.",
     author: 'Dan Baldwin',
     title: 'Executive Director of Nova Scotia Curling',
-  },
-  {
-    quote:
-      'After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.',
-    author: 'Alanna Routledge',
-    title: 'Executive Director of Curling Québec',
+    link: 'https://ns.curling.io',
   },
   {
     quote:
       "Curling IO has completely modernized our club operations. We've seen a massive boost in efficiency and improved cashflow, our members love having instant access to schedules and results, and the development team is incredibly responsive.",
     author: 'Mike Buckley',
     title: "Manager, Thistle-St. Andrew's Curling Club",
+    link: 'https://tsa.curling.io',
   },
   {
     quote:
       "This past season, we fully implemented and embraced Curling IO, and I believe it contributed to our club's 26% membership growth, thanks to the straightforward web presence and the ease of registration.",
     author: 'Kenny Robichaud',
     title: 'Manager, Summerside Curling Club',
+    link: 'https://silver-fox.curling.io',
+  },
+  {
+    quote:
+      'After using it for over a year, I can truthfully say that it works extremely well and I would definitely recommend it.',
+    author: 'Alanna Routledge',
+    title: 'Executive Director of Curling Québec',
+    link: 'https://qc.curling.io',
   },
 ];
 
@@ -350,7 +362,7 @@ function CurlingClubManagementSoftware() {
                 <div key={idx} className="testimonial">
                   <blockquote>"{t.quote}"</blockquote>
                   <div className="testimonial-author">
-                    {t.author}, {t.title}
+                    {t.author}, <a href={t.link} target="_blank" rel="noopener noreferrer">{t.title}</a>
                   </div>
                 </div>
               ))}
