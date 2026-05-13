@@ -204,6 +204,7 @@ Acceptance of Terms of this Agreement through Use
 - [Leagues & Competitions](/docs/club-management/leagues.md): Walkthrough Video
 - [Linking your Website to Curling IO Registration](/docs/club-management/linking-to-registration.md): If you are not using Curling IO to host your website, you'll still want to link to your Curling IO site for registrations.
 - [Managers](/docs/club-management/managers.md): Clubs can have multiple managers for Curling IO.
+- [Multi-Session League Registration](/docs/club-management/multi-session-league-registration.md): Some leagues have several ways to participate. Common examples include fall or winter sessions, Tuesday or Thursday draws, or a full-season option.
 - [Orders](/docs/club-management/orders.md): Walkthrough Video
 - [Products and Addons](/docs/club-management/products.md): Walkthrough Video
 - [Profile Fields](/docs/club-management/profile-fields.md): You can customize which fields are required, optional, or not asked for profiles at your club.
