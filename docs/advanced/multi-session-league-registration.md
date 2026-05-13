@@ -1,14 +1,14 @@
 ---
 id: multi-session-league-registration
 title: Multi-Session League Registration
-slug: /club-management/multi-session-league-registration
+slug: /advanced/multi-session-league-registration
 ---
 
 Some leagues have several ways to participate. Common examples include fall or winter sessions, Tuesday or Thursday draws, or a full-season option.
 
 The best setup depends on how you will manage the curling after registration closes. Start with the league structure first, then decide how pricing and discounts should work.
 
-> **Using a chatbot?** Give it the link to this page, or to `https://curling.io/llms.txt`, and ask it for help as if it were a Curling IO support person. Tell it what kind of league you are setting up, how members can participate, whether you need separate teams or standings, and whether there are discounts for playing more than one session. For example: "I'm trying to decide how our Fall and Winter leagues should be split up for registration. Here's what our curlers used to do: they could play Fall, Winter, or both. Each session has new standings, and we may offer a discount for playing both. What are the setup options, what are the tradeoffs, and what questions should I answer before choosing?"
+> **Using a chatbot?** Give it the link to this page, or to `https://curling.io/llms-full.txt`, and ask it for help as if it were a Curling IO support person. Tell it what kind of league you are setting up, how members can participate, whether you need separate teams or standings, and whether there are discounts for playing more than one session. For example: "I'm trying to decide how our Fall and Winter leagues should be split up for registration. Here's what our curlers used to do: they could play Fall, Winter, or both. Each session has new standings, and we may offer a discount for playing both. What are the setup options, what are the tradeoffs, and what questions should I answer before choosing?"
 
 ## Start With Operations
 

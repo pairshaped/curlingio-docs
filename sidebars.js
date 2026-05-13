@@ -69,7 +69,7 @@ module.exports = {
     "Advanced Features": [
       'advanced/curlingschedules',
       'advanced/augmenting-curler-profiles',
-      'club-management/multi-session-league-registration',
+      'advanced/multi-session-league-registration',
     ],
     "Member Data": [
       'member-data/import',

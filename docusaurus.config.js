@@ -50,7 +50,7 @@ module.exports = {
         depth: 2,
         content: {
           includeDocs: true,
-          includeBlog: true,
+          includeBlog: false,
           includePages: true,
           enableLlmsFullTxt: true,
         },
