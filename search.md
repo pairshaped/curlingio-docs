@@ -4,7 +4,7 @@
 
 [**Curling IO**](/index.md)
 
-[Docs](/docs/getting-started/curling-club-managers.md)[Blog](/blog.md)[Find your Club](https://clubs.curling.io)
+[Docs](/docs/getting-started/curling-club-managers.md)[Blog](/blog)[Find your Club](https://clubs.curling.io)
 
 Search
 
@@ -28,7 +28,7 @@ Community
 
 More
 
-* [Blog](/blog.md)
+* [Blog](/blog)
 * [Terms](/terms.md)
 * [Privacy](/privacy.md)
 
