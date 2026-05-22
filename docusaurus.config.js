@@ -5,6 +5,14 @@ const defaultAlgoliaApiKey = 'd4c292bfdc67172d839f0f3a6da64bfb';
 const resolvedAlgoliaAppId = process.env.ALGOLIA_APP_ID || defaultAlgoliaAppId;
 const resolvedAlgoliaIndexName = process.env.ALGOLIA_INDEX_NAME || defaultAlgoliaIndexName;
 const resolvedAlgoliaApiKey = process.env.ALGOLIA_SEARCH_API_KEY || defaultAlgoliaApiKey;
+const googleAdsTrackingId = 'AW-1016652572';
+const defaultGoogleAdsOnboardingConversionLabel = '4lEDCIaW5LEcEJzG4-QD';
+// Google Ads creates a conversion label for each conversion action.
+const googleAdsOnboardingConversionLabel =
+  process.env.GOOGLE_ADS_ONBOARDING_CONVERSION_LABEL || defaultGoogleAdsOnboardingConversionLabel;
+const googleAdsOnboardingConversionSendTo =
+  process.env.GOOGLE_ADS_ONBOARDING_CONVERSION_SEND_TO ||
+  (googleAdsOnboardingConversionLabel ? `${googleAdsTrackingId}/${googleAdsOnboardingConversionLabel}` : undefined);
 
 const algoliaConfig = resolvedAlgoliaApiKey
   ? {
@@ -29,6 +37,10 @@ module.exports = {
   trailingSlash: false,
   organizationName: 'pairshaped', // Usually your GitHub org/user name.
   projectName: 'curlingio-docs', // Usually your repo name.
+  customFields: {
+    googleAdsOnboardingConversionPath: '/docs/getting-started/book-an-onboarding-session',
+    googleAdsOnboardingConversionSendTo,
+  },
   plugins: [
     'docusaurus-plugin-image-zoom',
     [
@@ -178,7 +190,7 @@ module.exports = {
           priority: 0.5,
         },
         gtag: {
-          trackingID: 'AW-1016652572',
+          trackingID: googleAdsTrackingId,
           anonymizeIP: false,
         },
       },
