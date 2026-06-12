@@ -122,7 +122,7 @@ If you already own a custom domain, configure your registrar to redirect it to y
 
 If you want a second set of eyes before you launch, our support team is happy to walk through the setup with you.
 
-- Open `Club → Support` in Curling IO and submit a ticket using the *Website* category. The [Support guide](/docs/club-management/support) has the full ticket walkthrough if you need a refresher.
+- Open `Club → Support` in Curling IO and submit a support request. The [Support guide](/docs/club-management/support) has the full walkthrough if you need a refresher.
 - Gather answers to these questions ahead of time—we need them to help you (mark "not applicable" only if you do not have an existing site):
   - Do you already have a website live, and what is the URL?
   - Is it built on a platform like WordPress, Wix, or another site builder?

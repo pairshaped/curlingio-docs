@@ -8,13 +8,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 You can submit support and feedback requests from within Curling IO. Requests submitted any other way may be missed or at a minimum will take longer for a response.
 
 
-## Finding Support and Feedback Requests
+## Contacting Support
 
 Within your admin area, click on the **Club** dropdown menu in the top bar and then click on **Support**.
 
 ![Navigation](/img/docs/club-management/support/navigation.png)
 
-To submit a request click on the **Contact Support** button.
+The **Support** tab contains the support request form. Fill it out and submit it from that page.
+
+After you submit the form, your request is sent to Curling IO. We will review your submission and reply by email if we need more information or have an update.
+
+The **Feature Requests** tab is still available for browsing and voting on feature requests.
 
 
 ## Submitting Support and Feedback Requests
@@ -57,10 +61,8 @@ Providing a screenshot of the issue you are experiencing can be extremely useful
 
 ### Body
 
-Describe the support issue or feature request in as much detail as you can. The more detail you can provide the faster we can identify and address it.
+Describe the support issue in as much detail as you can. The more detail you can provide the faster we can identify and address it.
 
 ## If you do not have admin access yet
 
 You can alternatively reach out to us directly via email: support@curling.io
-
-Please note that direct email requests will take longer to respond to than requests sent via the app.
