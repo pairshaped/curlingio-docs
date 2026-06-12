@@ -20,7 +20,7 @@ Yes. We have a handful of clubs that are using Curling IO just for offline payme
 
 We are introducing some premium only features that will be available to all clubs that are using online payments or as a yearly fee for clubs who are not. [These premium only features are not required to use Curling IO.](/docs/getting-started/premium.md)
 
-Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible. Every support ticket has a cost for us, and our documentation should cover all of your support needs.
+Please keep in mind that we need to manage our support costs for clubs that are using our platform for free, and that you'll need to self-serve as much as possible. Every support request has a cost for us, and our documentation should cover all of your support needs.
 
 ### Does Curling IO include a website?[​](#does-curling-io-include-a-website "Direct link to Does Curling IO include a website?")
 

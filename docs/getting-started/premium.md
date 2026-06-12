@@ -28,7 +28,7 @@ We also want to build new, potentially resource intensive features without worry
 
 ### Priority Support[​](#priority-support "Direct link to Priority Support")
 
-Premium tier clubs are prioritized when submitting support tickets.
+Premium tier clubs are prioritized when submitting support requests.
 
 ### Waitlisting[​](#waitlisting "Direct link to Waitlisting")
 
